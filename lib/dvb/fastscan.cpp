@@ -11,6 +11,8 @@
 #include <lib/base/estring.h>
 #include <lib/base/nconfig.h>
 
+#define BRASIL_NET_LOGICAL_CHANNEL_DESCRIPTOR 0x82
+
 FastScanLogicalChannel::FastScanLogicalChannel(const uint8_t *const buffer)
 {
 	serviceId = UINT16(&buffer[0]);
@@ -168,6 +170,7 @@ FastScanTransportStream::FastScanTransportStream(const uint8_t *const buffer)
 		switch (buffer[pos])
 		{
 		case LOGICAL_CHANNEL_DESCRIPTOR:
+		case BRASIL_NET_LOGICAL_CHANNEL_DESCRIPTOR:
 			logicalChannels = new FastScanLogicalChannelDescriptor(&buffer[pos]);
 			break;
 		case SATELLITE_DELIVERY_SYSTEM_DESCRIPTOR:
