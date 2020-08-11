@@ -696,10 +696,12 @@ def getKeyDescription(key):
 			idx = 9
 		elif rcType == 16:	# Pace 7241
 			idx = 10
-		elif rcType == 17:	# VIP2_1
+		elif rcType == 17:	# Edision argus
 			idx = 11
-		elif rcType == 18:	# Forever
+		elif rcType == 18:	# HL101
 			idx = 12
+		elif rcType == 19:	# Forever
+			idx = 13
 		else:
 			idx = 2
 	return keyDescriptions[idx].get(key)
