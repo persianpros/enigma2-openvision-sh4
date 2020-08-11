@@ -312,7 +312,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("14", _("vitamin")),
 			("15", _("adb")),
 			("16", _("pace7241")),
-			("vip", 17),
+			("17", _("vip")),
 			("18", _("hl101")),
 			("19", _("forever"))
 		]
