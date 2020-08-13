@@ -1,26 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
-from enigma import getBoxType
 from Tools.Directories import SCOPE_SKIN, resolveFilename
+from boxbranding import getRCName
 
 class RcModel:
-	RcModels = {}
-
 	def __init__(self):
-		self.model = getBoxType()
-		# cfg files has modelname rcname entries.
-		# modelname is boxname optionally followed by .rctype
-		for line in open((resolveFilename(SCOPE_SKIN, 'rc_models/rc_models.cfg')), 'r'):
-			if line.startswith(self.model):
-				m, r = line.strip().split()
-				self.RcModels[m] = r
+		pass
 
 	def getRcFile(self, ext):
-		if self.model in self.RcModels.keys():
-			remote = self.RcModels[self.model]
-		else:
-			remote = "spark"
+		remote = getRCName()
 		f = resolveFilename(SCOPE_SKIN, 'rc_models/' + remote + '.' + ext)
 		if not os.path.exists(f):
 			f = resolveFilename(SCOPE_SKIN, 'rc_models/spark.' + ext)
