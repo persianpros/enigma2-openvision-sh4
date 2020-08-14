@@ -17,11 +17,18 @@ static time_t prev_time;
 
 void setRTC(time_t time)
 {
+	eDebug("[eDVBLocalTimerHandler] set RTC Time");
 	FILE *f = fopen("/proc/stb/fp/rtc", "w");
 	if (f)
 	{
 		if (fprintf(f, "%u", (unsigned int)time))
+		{
+#ifdef HAVE_NO_RTC
+			prev_time = 0; //sorry no RTC
+#else
 			prev_time = time;
+#endif
+		}
 		else
 			eDebug("[eDVBLocalTimeHandler] write /proc/stb/fp/rtc failed: %m");
 		fclose(f);
@@ -51,7 +58,11 @@ time_t getRTC()
 		if (fscanf(f, "%u", &tmp) != 1)
 			eDebug("[eDVBLocalTimeHandler] read /proc/stb/fp/rtc failed: %m");
 		else
+#ifdef HAVE_NO_RTC
+			rtc_time=0; // sorry no RTC
+#else
 			rtc_time=tmp;
+#endif
 		fclose(f);
 	}
 	else
@@ -234,8 +245,12 @@ eDVBLocalTimeHandler::~eDVBLocalTimeHandler()
 	instance=0;
 	if (ready())
 	{
+#ifdef HAVE_NO_RTC
+		eDebug("[eDVBLocalTimeHandler] Don't set RTC to previous valid time");
+#else
 		eDebug("[eDVBLocalTimeHandler] set RTC to previous valid time");
 		setRTC(::time(0));
+#endif
 	}
 }
 
