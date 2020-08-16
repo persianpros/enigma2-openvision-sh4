@@ -633,9 +633,9 @@ Components.AVSwitch.InitAVSwitch()
 profile("FanControl")
 from Components.FanControl import fancontrol
 
-profile("HdmiRecord")
-import Components.HdmiRecord
-Components.HdmiRecord.InitHdmiRecord()
+#profile("HdmiRecord")
+#import Components.HdmiRecord
+#Components.HdmiRecord.InitHdmiRecord()
 
 profile("RecordingConfig")
 import Components.RecordingConfig

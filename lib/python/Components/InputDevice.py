@@ -200,7 +200,7 @@ config.plugins.remotecontroltype.rctype = ConfigInteger(default = int(getRCType(
 
 class RcTypeControl():
 	def __init__(self):
-		if SystemInfo["RcTypeChangable"]:
+		if SystemInfo["RcTypeChangable"] and config.usage.multirc.value is True:
 			self.isSupported = True
 			if config.plugins.remotecontroltype.rctype.value != 0:
 				self.writeRcType(config.plugins.remotecontroltype.rctype.value)

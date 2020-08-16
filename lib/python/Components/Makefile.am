@@ -22,7 +22,7 @@ install_PYTHON = \
 	Keyboard.py Sensors.py FanControl.py HdmiCec.py RcModel.py \
 	Netlink.py InputHotplug.py \
 	ImportChannels.py ChannelsImporter.py ClientMode.py \
-	HdmiRecord.py NetworkTime.py StackTrace.py PowerTimerList.py EpgLoadSave.py
+	NetworkTime.py StackTrace.py PowerTimerList.py EpgLoadSave.py
 
 if ENABLE_QBOXHD
 install_PYTHON += SenseWheel.py
