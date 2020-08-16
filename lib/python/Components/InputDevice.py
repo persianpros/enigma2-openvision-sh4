@@ -197,10 +197,11 @@ iInputDevices = inputDevices()
 
 config.plugins.remotecontroltype = ConfigSubsection()
 config.plugins.remotecontroltype.rctype = ConfigInteger(default = int(getRCType()))
+config.plugins.remotecontroltype.multirc = ConfigYesNo(default = False)
 
 class RcTypeControl():
 	def __init__(self):
-		if SystemInfo["RcTypeChangable"] and config.usage.multirc.value is True:
+		if SystemInfo["RcTypeChangable"] and config.plugins.remotecontroltype.multirc is True:
 			self.isSupported = True
 			if config.plugins.remotecontroltype.rctype.value != 0:
 				self.writeRcType(config.plugins.remotecontroltype.rctype.value)
