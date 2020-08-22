@@ -720,7 +720,7 @@ def queryKeyBinding(context, action):
 		return []
 
 def getKeyDescription(key):
-	rcType = getRCType()
+	rcType = int(getRCType())
 	print("[KeyBindings] RC type is:", rcType)
 	if rcType == 10:	# Spark
 		idx = 3
