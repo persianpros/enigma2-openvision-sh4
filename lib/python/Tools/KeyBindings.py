@@ -721,7 +721,7 @@ def queryKeyBinding(context, action):
 
 def getKeyDescription(key):
 	rcType = getRCType()
-	print("[Keybindings.py] RC type is:", rcType)
+	print("[KeyBindings] RC type is:", rcType)
 	if rcType == 10:	# Spark
 		idx = 3
 	elif rcType == 7:	# Fortis FS9000/FS9200/HS8200
