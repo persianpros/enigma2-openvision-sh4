@@ -30,9 +30,6 @@ class StartWizard(WizardLanguage, Rc):
 		self["wizard"] = Pixmap()
 
 	def markDone(self):
-		config.misc.rcused.value = 1
-		config.misc.rcused.save()
-
 		config.misc.firstrun.value = 0
 		config.misc.firstrun.save()
 		configfile.save()
