@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from keyids import KEYIDS
-from Components.config import config
+from boxbranding import getRCType
 
 keyBindings = {}
 
@@ -719,9 +720,8 @@ def queryKeyBinding(context, action):
 		return []
 
 def getKeyDescription(key):
-	rcType = config.plugins.remotecontroltype.rctype.value
-	# rcType = config.misc.inputdevices.rcType.value
-	print "[Keybindings.py] RC type is:", rcType
+	rcType = getRCType()
+	print("[Keybindings.py] RC type is:", rcType)
 	if rcType == 10:	# Spark
 		idx = 3
 	elif rcType == 7:	# Fortis FS9000/FS9200/HS8200
