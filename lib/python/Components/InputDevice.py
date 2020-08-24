@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSlider, ConfigSubsection, ConfigYesNo, ConfigText, ConfigInteger
-from Components.SystemInfo import SystemInfo
 import errno
 import xml.etree.cElementTree
 from enigma import eRCInput
@@ -256,11 +255,11 @@ iInputDevices = inputDevices()
 
 config.plugins.remotecontroltype = ConfigSubsection()
 config.plugins.remotecontroltype.rctype = ConfigInteger(default = int(getRCType()))
-config.plugins.remotecontroltype.multirc = ConfigYesNo(default = False)
+config.plugins.remotecontroltype.multirc = ConfigYesNo(default = True)
 
 class RcTypeControl():
 	def __init__(self):
-		if SystemInfo["RcTypeChangable"] and config.plugins.remotecontroltype.multirc.value is True:
+		if config.plugins.remotecontroltype.multirc.value is True:
 			self.isSupported = True
 			if config.plugins.remotecontroltype.rctype.value != 0:
 				self.writeRcType(config.plugins.remotecontroltype.rctype.value)
@@ -272,12 +271,12 @@ class RcTypeControl():
 
 	def writeRcType(self, rctype):
 		if self.isSupported and rctype > 0:
-			open('/proc/stb/ir/rc/type', 'w').write('%d' % rctype)
+			open('/etc/openvision/rctype', 'w').write('%d' % rctype)
 
 	def readRcType(self):
 		rc = 0
 		if self.isSupported:
-			rc = open('/proc/stb/ir/rc/type', 'r').read().strip()
+			rc = open('/etc/openvision/rctype', 'r').read().strip()
 		return int(rc)
 
 iRcTypeControl = RcTypeControl()
