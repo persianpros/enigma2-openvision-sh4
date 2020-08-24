@@ -277,7 +277,7 @@ class RcTypeControl():
 	def readRcType(self):
 		rc = 0
 		if self.isSupported:
-			rc = open('/etc/openvision/rctype', 'r').read().strip()
+			rc = open('/proc/stb/ir/rc/type', 'r').read().strip()
 		return int(rc)
 
 iRcTypeControl = RcTypeControl()
