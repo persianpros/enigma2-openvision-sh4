@@ -18,7 +18,7 @@ from Tools.Directories import mediafilesInUse
 from Tools import Notifications
 from time import time, localtime
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService, getBoxBrand
+from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService
 
 inStandby = None
 infoBarInstance = None
@@ -109,11 +109,10 @@ class RealStandby(Screen):
 		else:
 			self.avswitch.setInput("AUX")
 
-		if getBoxBrand() == "fulan":
-			try:
-				open("/proc/stb/hdmi/output", "w").write("off")
-			except:
-				pass
+		try:
+			open("/proc/stb/hdmi/output", "w").write("off")
+		except:
+			pass
 
 		Console().ePopen("/bin/vdstandby -a &")
 
@@ -174,11 +173,10 @@ class RealStandby(Screen):
 		if os.path.exists("/usr/script/StandbyLeave.sh"):
 			Console().ePopen("/usr/script/StandbyLeave.sh")
 
-		if getBoxBrand() == "fulan":
-			try:
-				open("/proc/stb/hdmi/output", "w").write("on")
-			except:
-				pass
+		try:
+			open("/proc/stb/hdmi/output", "w").write("on")
+		except:
+			pass
 
 	def setMute(self):
 		self.wasMuted = eDVBVolumecontrol.getInstance().isMuted()

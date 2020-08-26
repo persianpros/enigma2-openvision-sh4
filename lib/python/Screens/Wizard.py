@@ -16,9 +16,7 @@ from enigma import eTimer, eEnv
 
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
-#+++>
 from enigma import evfd
-#+++<
 
 class WizardSummary(Screen):
 	def __init__(self, session, parent):
@@ -356,9 +354,8 @@ class Wizard(Screen):
 				if self.updateValues in self.onShown:
 					self.onShown.remove(self.updateValues)
 
-#+++>
 		open("/proc/progress", "w").write("100")
-#+++<
+
 		if print_now:
 			print("[Wizard] Now: " + str(self.currStep))
 
@@ -456,10 +453,10 @@ class Wizard(Screen):
 			if "onselect" in self.wizard[self.currStep]:
 				self.selection = self["list"].current[-1]
 				print("[Wizard] self.selection:", self.selection)
-#+++>
+
 				if self.selection:
-					evfd.getInstance().vfd_write_string("-> " + self.selection)
-#+++<
+					evfd.getInstance().vfd_write_string(self.selection)
+
 				exec("self." + self.wizard[self.currStep]["onselect"] + "()")
 
 	def resetCounter(self):

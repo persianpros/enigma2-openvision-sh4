@@ -33,7 +33,9 @@ class OCSection : public LongCrcSection
 		{
 			data = malloc(getSectionLength());
 			if (data != NULL)
+			{
 				memcpy(data, buffer, getSectionLength());
+			}
 		}
 		~OCSection()
 		{

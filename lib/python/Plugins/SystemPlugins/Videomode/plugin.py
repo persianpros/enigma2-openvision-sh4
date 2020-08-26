@@ -94,14 +94,14 @@ class VideoSetup(Screen, ConfigListScreen):
 			self.list.append(getConfigListEntry(_("Display 16:9 content as"), config.av.policy_169, _("When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture.")))
 
 #		if config.av.videoport.value == "DVI":
-#+++>
+
 		if config.av.videoport.value == "Component":
 			self.list.append(getConfigListEntry(_("Color format"), config.av.colorformat_yuv))
 
 		if config.av.videoport.value == "HDMI":
 			self.list.append(getConfigListEntry(_("Color format"), config.av.colorformat_hdmi))
 			self.list.append(getConfigListEntry(_("Audio source"), config.av.hdmi_audio_source))
-#+++<
+
 		if config.av.videoport.value == "Scart":
 			self.list.append(getConfigListEntry(_("Color format"), config.av.colorformat, _("Configure which color format should be used on the SCART output.")))
 			if level >= 1:
