@@ -308,7 +308,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("16", _("Pace HDS7241")),
 			("17", _("Edision argus")),
 			("18", _("HL-101")),
-			("19", _("Forever")),
+			("19", _("Forever"))
 		]
 
 	def __init__(self, session):
