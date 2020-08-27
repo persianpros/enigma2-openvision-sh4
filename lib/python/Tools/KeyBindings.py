@@ -691,7 +691,7 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_RED"]: ("RED",),
 	KEYIDS["KEY_GREEN"]: ("GREEN",),
 	KEYIDS["KEY_YELLOW"]: ("YELLOW",),
-	KEYIDS["KEY_BLUE"]: ("BLUE",),
+	KEYIDS["KEY_BLUE"]: ("BLUE",)
 }]
 
 def addKeyBinding(domain, key, context, action, flags):
