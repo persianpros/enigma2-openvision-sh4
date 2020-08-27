@@ -1,58 +1,58 @@
 <rcs>
 	<!-- Showbox Vitamin HD5000 -->
 	<rc id="2">
-		<button name="STANDBY"     pos="73,35" />	<!-- KEY_POWER-->
-		<button name="TV_STB"      pos="36,50" />	<!-- KEY_STB-->
+		<button name="TV/STB"      pos="36,50" />	<!-- KEY_AUX-->
+		<button name="POWER"       pos="73,35" />	<!-- KEY_POWER-->
 		<button name="MUTE"        pos="112,50" />	<!-- KEY_MUTE-->
 		<button name="TEXT"        pos="36,71" />	<!-- KEY_TEXT-->
 		<button name="SUBTITLE"    pos="73,68" />	<!-- KEY_SUBTITLE-->
-		<button name="SIGNAL"      pos="110,71" />	<!-- KEY_SIGNAL-->
-		<button name="CAPTURE"     pos="37,89" />	<!-- KEY_???-->
-		<button name="BOOKMARK"    pos="73,86" />	<!-- KEY_???-->
-		<button name="BOOKMJUMP"   pos="110,89" />	<!-- KEY_???-->
+		<button name="SIGNAL"      pos="110,71" />	<!-- KEY_F3-->
+		<button name="CAPTURE"     pos="37,89" />	<!-- KEY_PROGRAM-->
+		<button name="BOOK_M"      pos="73,86" />	<!-- KEY_F5-->
+		<button name="BOOK_J"      pos="110,89" />	<!-- KEY_F6-->
 		<button name="PREVIOUS"    pos="32,125" />	<!-- KEY_PREVIOUS-->
 		<button name="REWIND"      pos="59,116" />	<!-- KEY_REWIND-->
 		<button name="FASTFORWARD" pos="87,116" />	<!-- KEY_FASTFORWARD-->
 		<button name="NEXT"        pos="115,125" />	<!-- KEY_NEXT-->
-		<button name="REPEAT"      pos="32,149" />	<!-- KEY_REPEAT-->
-		<button name="PLAY"        pos="59,138" />	<!-- KEY_PLAY-->
+		<button name="REPEAT"      pos="32,149" />	<!-- KEY_AGAIN-->
+		<button name="PLAY/PAUSE"  pos="59,138" />	<!-- KEY_PLAY-->
 		<button name="STOP"        pos="87,138" />	<!-- KEY_STOP-->
 		<button name="RECORD"      pos="115,149" />	<!-- KEY_RECORD-->
 		<button name="MENU"        pos="53,168" />	<!-- KEY_MENU-->
-		<button name="EXIT"        pos="93,168" />	<!-- KEY_HOME-->
-		<button name="CHANNELUP"   pos="28,192" />	<!-- KEY_CHANNELUP-->
+		<button name="EXIT"        pos="93,168" />	<!-- KEY_EXIT-->
+		<button name="CHUP"        pos="28,192" />	<!-- KEY_CHANNELUP-->
 		<button name="UP"          pos="73,186" />	<!-- KEY_UP-->
-		<button name="VOLUMEUP"    pos="116,192" />	<!-- KEY_VOLUMEUP-->
+		<button name="VOLUP"       pos="116,192" />	<!-- KEY_VOLUMEUP-->
 		<button name="LEFT"        pos="47,211" />	<!-- KEY_LEFT-->
 		<button name="OK"          pos="73,211" />	<!-- KEY_OK-->
 		<button name="RIGHT"       pos="97,211" />	<!-- KEY_RIGHT-->
-		<button name="CHANNELDOWN" pos="24,221" />	<!-- KEY_CHANNELDOWN-->
-		<button name="VOLUMEDOWN"  pos="121,221" />	<!-- KEY_VOLUMEDOWN-->
+		<button name="CHDOWN"      pos="24,221" />	<!-- KEY_CHANNELDOWN-->
+		<button name="VOLDOWN"     pos="121,221" />	<!-- KEY_VOLUMEDOWN-->
 		<button name="DOWN"        pos="73,236" />	<!-- KEY_DOWN-->
-		<button name="INFO"        pos="38,250" />	<!-- KEY_HELP THIS IS WRONG SHOULD BE KEY_INFO -->
-		<button name="EPG"         pos="73,230" />	<!-- KEY_EPG-->
-		<button name="RECALL"      pos="105,250" />	<!-- KEY_MEMO-->
-		<button name="FAVORITES"   pos="37,279" />	<!-- KEY_FAVORITES-->
-		<button name="SAT"         pos="72,282" />	<!-- KEY_EPG-->
-		<button name="MOSAIC"      pos="106,279" />	<!-- KEY_???-->
-		<button name="FEED"        pos="47,329" />	<!-- KEY_???-->
-		<button name="TVRADIO"     pos="71,303" />	<!-- KEY_MODE-->
-		<button name="ARCHIVE"     pos="106,302" />	<!-- KEY_ARCHIVE-->
+		<button name="INFO"        pos="38,250" />	<!-- KEY_INFO -->
+		<button name="EPG"         pos="73,255" />	<!-- KEY_EPG-->
+		<button name="RECALL"      pos="105,250" />	<!-- KEY_BACK-->
+		<button name="FAV"         pos="37,279" />	<!-- KEY_FAVORITES-->
+		<button name="SAT"         pos="72,282" />	<!-- KEY_SAT-->
+		<button name="MOSAIC"      pos="106,279" />	<!-- KEY_WWW-->
+		<button name="FEED"        pos="47,329" />	<!-- KEY_F11-->
+		<button name="TV/RADIO"    pos="71,303" />	<!-- KEY_TV2-->
+		<button name="PLAYLIST"    pos="106,302" />	<!-- KEY_FILE-->
 		<button name="RED"         pos="33,330" />	<!-- KEY_RED-->
 		<button name="GREEN"       pos="58,337" />	<!-- KEY_GREEN-->
 		<button name="YELLOW"      pos="84,337" />	<!-- KEY_YELLOW-->
 		<button name="BLUE"        pos="109,330" />	<!-- KEY_BLUE-->
-		<button name="1BUTTON"     pos="37,359" />	<!-- KEY_1-->
-		<button name="2BUTTON"     pos="72,362" />	<!-- KEY_2-->
-		<button name="3BUTTON"     pos="116,359" />	<!-- KEY_3-->
-		<button name="4BUTTON"     pos="38,382" />	<!-- KEY_4-->
-		<button name="5BUTTON"     pos="71,384" />	<!-- KEY_5-->
-		<button name="6BUTTON"     pos="104,382" />	<!-- KEY_6-->
-		<button name="7BUTTON"     pos="38,404" />	<!-- KEY_7-->
-		<button name="8BUTTON"     pos="71,406" />	<!-- KEY_8-->
-		<button name="9BUTTON"     pos="103,404" />	<!-- KEY_9-->
+		<button name="1"           pos="37,359" />	<!-- KEY_1-->
+		<button name="2"           pos="72,362" />	<!-- KEY_2-->
+		<button name="3"           pos="104,359" />	<!-- KEY_3-->
+		<button name="4"           pos="38,382" />	<!-- KEY_4-->
+		<button name="5"           pos="71,384" />	<!-- KEY_5-->
+		<button name="6"           pos="104,382" />	<!-- KEY_6-->
+		<button name="7"           pos="38,404" />	<!-- KEY_7-->
+		<button name="8"           pos="71,406" />	<!-- KEY_8-->
+		<button name="9"           pos="103,404" />	<!-- KEY_9-->
 		<button name="F1"          pos="40,427" />	<!-- KEY_F1-->
-		<button name="0BUTTON"     pos="72,429" />	<!-- KEY_0-->
+		<button name="0"           pos="72,429" />	<!-- KEY_0-->
 		<button name="F2"          pos="102,427" />	<!-- KEY_F2-->
 	</rc>
 </rcs>
