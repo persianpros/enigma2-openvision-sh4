@@ -381,6 +381,7 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_PROGRAM"]: ("TIMER",),
 }, {  # id=6 - Kathrein UFS912, UFS913
 	KEYIDS["KEY_HELP"]: ("HELP",),
+	KEYIDS["KEY_TV2"]: ("TVRADIO",),
 	KEYIDS["KEY_POWER"]: ("POWER",),
 	KEYIDS["KEY_1"]: ("1",),
 	KEYIDS["KEY_2"]: ("2",),
@@ -410,9 +411,10 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_LEFT"]: ("LEFT",),
 	KEYIDS["KEY_OK"]: ("OK",),
 	KEYIDS["KEY_RIGHT"]: ("RIGHT",),
-	KEYIDS["KEY_EXIT"]: ("BACK",),
+	KEYIDS["KEY_EXIT"]: ("EXIT",),
 	KEYIDS["KEY_DOWN"]: ("DOWN",),
 	KEYIDS["KEY_MEDIA"]: ("MEDIA",),
+	KEYIDS["KEY_WWW"]: ("PORTAL",),
 	KEYIDS["KEY_REWIND"]: ("REWIND",),
 	KEYIDS["KEY_PLAY"]: ("PLAY",),
 	KEYIDS["KEY_FASTFORWARD"]: ("FASTFORWARD",),
@@ -573,7 +575,7 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_0"]: ("0",),
 	KEYIDS["KEY_HELP"]: ("STAR",)
 }, {  # id=10 - Pace HDS7241
-}, {  # id=11 - VIP2_1
+}, {  # id=11 - VIP2
 	KEYIDS["KEY_POWER"]: ("POWER",),
 	KEYIDS["KEY_SWITCHVIDEOMODE"]: ("V.FORMAT",),
 	KEYIDS["KEY_PROGRAM"]: ("TIME",),
@@ -732,7 +734,11 @@ def getKeyDescription(key):
 		idx = 11
 	elif rcType == 18:	# HL101
 		idx = 12
-	elif rcType == 19:	# Forever
+	elif rcType == 19:	# Kathrein UFS910, UFS922
+		idx = 6
+	elif rcType == 20:	# Kathrein UFS913
+		idx = 6
+	elif rcType == 21:	# Forever
 		idx = 13
 	else:
 		idx = 2

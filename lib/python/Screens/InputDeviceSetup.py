@@ -301,14 +301,16 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("9", _("Fortis mini")),
 			("10", _("Spark")),
 			("11", _("Topfield TF77X0HDPVR")),
-			("12", _("Kathrein UFS")),
+			("12", _("Kathrein RC671 (UFS912")),
 			("13", _("Cuberevo universal")),
 			("14", _("Vitamin 5000HD")),
 			("15", _("ADB XMP")),
 			("16", _("Pace HDS7241")),
 			("17", _("Edision argus")),
 			("18", _("HL-101")),
-			("19", _("Forever"))
+			("19", _("Kathrein RC660 (UFS910/922")),
+			("20", _("Kathrein RC675 (UFS913)")),
+			("21", _("Forever"))
 		]
 
 	def __init__(self, session):

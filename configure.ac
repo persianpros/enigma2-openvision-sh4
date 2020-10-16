@@ -385,6 +385,14 @@ if test "$enable_ufs922" = "yes"; then
 	AC_DEFINE(ENABLE_UFS922, 1, [enable ufs922 stuff])
 fi
 
+AC_ARG_ENABLE(vip1_v1,
+	[  --enable-vip1_v1            enable vip1_v1 stuff],
+	[AC_DEFINE(ENABLE_VIP1_V1, 1, [enable vip1_v1 stuff])])
+AM_CONDITIONAL(ENABLE_VIP1_V1, test "$enable_vip1_v1" = "yes")
+if test "$enable_vip1_v1" = "yes"; then
+	AC_DEFINE(ENABLE_VIP1_V1, 1, [enable vip1_v1 stuff])
+fi
+
 AC_ARG_ENABLE(vip1_v2,
 	[  --enable-vip1_v2            enable vip1_v2 stuff],
 	[AC_DEFINE(ENABLE_VIP1_V2, 1, [enable vip1_v2 stuff])])
@@ -393,12 +401,12 @@ if test "$enable_vip1_v2" = "yes"; then
 	AC_DEFINE(ENABLE_VIP1_V2, 1, [enable vip1_v2 stuff])
 fi
 
-AC_ARG_ENABLE(vip2_v1,
-	[  --enable-vip2_v1            enable vip2_v1 stuff],
-	[AC_DEFINE(ENABLE_VIP2_V1, 1, [enable vip2_v1 stuff])])
-AM_CONDITIONAL(ENABLE_VIP2_V1, test "$enable_vip2_v1" = "yes")
-if test "$enable_vip2_v1" = "yes"; then
-	AC_DEFINE(ENABLE_VIP2_V1, 1, [enable vip2_v1 stuff])
+AC_ARG_ENABLE(vip2,
+	[  --enable-vip2            enable vip2 stuff],
+	[AC_DEFINE(ENABLE_VIP2, 1, [enable vip2 stuff])])
+AM_CONDITIONAL(ENABLE_VIP2, test "$enable_vip2" = "yes")
+if test "$enable_vip2" = "yes"; then
+	AC_DEFINE(ENABLE_VIP2, 1, [enable vip2 stuff])
 fi
 
 AC_ARG_ENABLE(vitamin_hd5000,
