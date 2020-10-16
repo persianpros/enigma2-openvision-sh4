@@ -66,6 +66,18 @@ if ENABLE_SPARK
 SUBDIRS += sparkVFD
 endif
 
+if ENABLE_VIP1_V1
+SUBDIRS += spark7162VFD
+endif
+
+if ENABLE_VIP1_V2
+SUBDIRS += spark7162VFD
+endif
+
+if ENABLE_VIP2
+SUBDIRS += spark7162VFD
+endif
+
 if ENABLE_PACE7241
 SUBDIRS += pace7241VFD
 endif

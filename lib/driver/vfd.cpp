@@ -905,4 +905,3 @@ void evfd::vfd_set_CENTER(bool id)
 {
 	VFD_CENTER = id;
 }
-// vim:ts=4
