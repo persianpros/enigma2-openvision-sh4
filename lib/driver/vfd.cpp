@@ -42,6 +42,7 @@
  * 20170313 Audioniek       Kathrein UFS910/912 added.
  * 20190317 Audioniek       Several CubeRevo's added.
  * 20190518 Audioniek       vitamin_hd5000 added.
+ * 20200214 Audioniek       Add Fortis 4G models.
  * 20200417 Audioniek       adb_box added.
  * 20200508 Audioniek       pace7241 added.
  * 20200719 Audioniek       hl101, vip1_v2 and vip2_v1 added.
@@ -63,7 +64,7 @@
 #include <lib/driver/vfd.h>
 
 #if defined (ENABLE_TF7700)
-#include "../../../tools/tffpctl/frontpanel.h"
+#include "frontpanel.h"
 #endif
 
 // global variables
@@ -130,8 +131,7 @@ evfd::evfd()
 	vfd_type = 12;
 #elif defined (ENABLE_CUBEREVO)
 	vfd_type = 13;
-#elif defined (ENABLE_CUBEREVO_MINI_FTA) \
-   || defined (ENABLE_CUBEREVO_250HD)
+#elif defined (ENABLE_CUBEREVO_250HD)
 	vfd_type = 14;
 #elif defined (ENABLE_CUBEREVO_MINI) \
    || defined (ENABLE_CUBEREVO_MINI2) \
@@ -142,9 +142,13 @@ evfd::evfd()
 	vfd_type = 16;
 #elif defined (ENABLE_VITAMIN_HD5000)
 	vfd_type = 17;
-#elif defined (ENABLE_ADB_BOX)
+#elif defined (ENABLE_FOREVER_NANOSMART) \
+   || defined (ENABLE_FOREVER_2424HD) \
+   || defined (ENABLE_ADB_BOX)
 	vfd_type = 18;
-#elif defined (ENABLE_PACE7241)
+#elif defined (ENABLE_FOREVER_3434HD) \
+   || defined (ENABLE_FOREVER_9898HD) \
+   || defined (ENABLE_PACE7241)
 	vfd_type = 19;
 #else
 	vfd_type = -1;
@@ -273,7 +277,7 @@ void *start_loop (void *arg)
 
 	return NULL;
 }
-#else  // next code for boxes other than Topfield TF77X0HDPVR
+#else  // next code for boxes other than Topfield TF7700
 
 void *start_loop(void *arg)
 {
@@ -293,7 +297,6 @@ void *start_loop(void *arg)
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
@@ -306,6 +309,10 @@ void *start_loop(void *arg)
 	 && !defined (ENABLE_HS7429) \
 	 && !defined (ENABLE_HS7810A) \
 	 && !defined (ENABLE_HS7819) \
+	 && !defined (ENABLE_FOREVER_3434HD) \
+	 && !defined (ENABLE_FOREVER_NANOSMART) \
+	 && !defined (ENABLE_FOREVER_9898HD) \
+	 && !defined (ENABLE_FOREVER_2424HD) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
 	 && !defined (ENABLE_ADB_BOX) \
 	 && !defined (ENABLE_PACE7241) \
@@ -391,10 +398,11 @@ void *start_loop(void *arg)
 	#if !defined (ENABLE_FORTIS_HDBOX) \
 	 && !defined (ENABLE_OCTAGON1008) \
 	 && !defined (ENABLE_ATEVIO7500) \
+	 && !defined (ENABLE_FOREVER_3434HD) \
+	 && !defined (ENABLE_FOREVER_9898HD) \
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
@@ -430,13 +438,16 @@ void *start_loop(void *arg)
  || defined (ENABLE_CUBEREVO) \
  || defined (ENABLE_CUBEREVO_MINI) \
  || defined (ENABLE_CUBEREVO_MINI2) \
- || defined (ENABLE_CUBEREVO_MINI_FTA) \
  || defined (ENABLE_CUBEREVO_250HD) \
  || defined (ENABLE_CUBEREVO_2000HD) \
  || defined (ENABLE_CUBEREVO_3000HD) \
  || defined (ENABLE_CUBEREVO_9500HD) \
  || defined (ENABLE_SPARK) \
  || defined (ENABLE_SPARK7162) \
+ || defined (ENABLE_FOREVER_3434HD) \
+ || defined (ENABLE_FOREVER_NANOSMART) \
+ || defined (ENABLE_FOREVER_9898HD) \
+ || defined (ENABLE_FOREVER_2424HD) \
  || defined (ENABLE_VITAMIN_HD5000) \
  || defined (ENABLE_ADB_BOX) \
  || defined (ENABLE_PACE7241) \

@@ -133,5 +133,4 @@ protected:
 		void vfd_set_fan(int speed);
 };
 
-#endif // VFD_H_
-// vim:ts=4
+#endif
