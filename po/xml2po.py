@@ -28,7 +28,7 @@ class parseXML(ContentHandler, LexicalHandler):
 			self.last_comment = comment
 
 	def startElement(self, name, attrs):
--		for x in ["text", "title", "value", "caption", "summary", "description", "menuTitle"]:
+		for x in ["text", "title", "value", "caption", "summary", "description", "menuTitle"]:
 			try:
 				k = str(attrs[x].encode('utf-8'))
 				if k.strip() != "" and not self.ishex.match(k):
