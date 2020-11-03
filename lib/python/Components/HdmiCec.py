@@ -8,7 +8,7 @@ from Tools.StbHardware import getFPWasTimerWakeup
 import NavigationInstance
 from enigma import eTimer
 from os import sys
-from sys import maxint
+from sys import maxsize
 
 LOGPATH="/hdd/"
 LOGFILE="hdmicec.log"
