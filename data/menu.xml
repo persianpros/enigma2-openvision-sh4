@@ -174,12 +174,13 @@ self.session.openWithCallback(msgClosed, EpgDeleteMsg)
 		</menu>
 		<item level="2" text="Change video port" entryID="ChangeVideoPort" configcondition="config.usage.show_vcr_scart" requires="ScartSwitch">
 			<code>
+from __future__ import print_function
 from Plugins.SystemPlugins.Videomode.VideoHardware import video_hw
 if config.av.videoport.value == "HDMI":
 	port = "Scart"
 else:
 	port = "HDMI"
-print "[menu] Change video port to", port
+print("[menu] Change video port to", port)
 config.av.videoport.value = port
 mode = config.av.videomode[port].value
 rate = config.av.videorate[mode].value
