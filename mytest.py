@@ -562,6 +562,13 @@ def runScreenTest():
 
 	profile("RunReactor")
 	profile_final()
+
+	if brand == "fulan":
+		from Components.Console import Console
+		print("kill showiframe if it is running (fulan hack)")
+		Console = Console()
+		Console.ePopen('killall -9 showiframe')
+
 	runReactor()
 
 	profile("wakeup")
