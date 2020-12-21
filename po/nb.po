@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 18:27+0330\n"
+"POT-Creation-Date: 2020-12-22 00:46+0330\n"
 "PO-Revision-Date: 2020-12-06 11:59+0100\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -168,9 +168,8 @@ msgstr ""
 msgid "%-d-%b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d-%b-%Y"
-msgstr "%d-%b-%Y %-H:%M"
+msgstr ""
 
 #, fuzzy
 msgid "%-d. %B %Y"
@@ -526,21 +525,17 @@ msgstr ""
 msgid "%Y %b %d"
 msgstr ""
 
-#, fuzzy
 msgid "%Y-%B-%-d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%B-%d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%b-%-d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%b-%d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
 msgid "%Y/%-m/%-d"
 msgstr ""
@@ -1026,7 +1021,7 @@ msgstr "%d-%m"
 
 #, fuzzy
 msgid "%d-%b-%Y"
-msgstr "%d-%b-%Y %-H:%M"
+msgstr "%d-%m"
 
 msgid "%d-%m"
 msgstr "%d-%m"
@@ -1655,8 +1650,9 @@ msgid "About"
 msgstr "Om"
 
 #
+#, fuzzy
 msgid "About..."
-msgstr "Om..."
+msgstr "Om"
 
 #
 msgid "Accesspoint:"
@@ -2317,9 +2313,8 @@ msgstr "Lyd valg..."
 msgid "Audio plugins"
 msgstr "Lyd utvidelser"
 
-#, fuzzy
 msgid "Audio source"
-msgstr "HDMI-lydkilde"
+msgstr ""
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2611,10 +2606,9 @@ msgstr "Belize"
 msgid "Benchmark"
 msgstr "Danmark"
 
-#
 #, fuzzy
 msgid "Benchmark information"
-msgstr "Hierarki informasjon"
+msgstr "Programvareadministrasjon"
 
 msgid "Benin"
 msgstr "Benin"
@@ -2660,7 +2654,7 @@ msgstr "Lysstyrke"
 #
 #, fuzzy
 msgid "Blue long"
-msgstr "Blå boost"
+msgstr "Blå"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolivia"
@@ -4016,15 +4010,12 @@ msgstr "Kroatia"
 msgid "Croatian"
 msgstr "Kroatisk"
 
-#
-#, fuzzy
 msgid "Cron Manager"
-msgstr "Filmbehandling"
+msgstr ""
 
-#
 #, fuzzy
 msgid "Cron manager"
-msgstr "Filmbehandling"
+msgstr "ingen ressursforvalter"
 
 #
 #, fuzzy
@@ -5060,6 +5051,9 @@ msgstr "Ikke zap og deaktiver timer"
 
 msgid "Don't zap and remove timer"
 msgstr "Ikke zap og fjern timer"
+
+msgid "Donate: "
+msgstr ""
 
 msgid "Done"
 msgstr "Utført"
@@ -6393,8 +6387,8 @@ msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI må startes på nytt for aktivering av nytt utseende\n"
-"Starte på nytt nå?"
+"GUI må startes på nytt for aktivering av et nytt språk\n"
+"Starte GUI på nytt nå?"
 
 msgid "Gabon"
 msgstr "Gabon"
@@ -6427,10 +6421,9 @@ msgstr "Sjanger"
 msgid "Geolocation"
 msgstr "Opptaksmappe"
 
-#
 #, fuzzy
 msgid "Geolocation information"
-msgstr "Hierarki informasjon"
+msgstr "Programvareadministrasjon"
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -7481,9 +7474,10 @@ msgstr "Tastaturoppsett"
 msgid "Keymap"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Velger for Enigma2 utseende"
+msgstr "Angre"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -8138,7 +8132,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "MiniDLNA setup"
-msgstr "Oppsett utseende"
+msgstr "PiP-bilde i bilde oppsett"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -8412,11 +8406,6 @@ msgstr "MultiType"
 msgid "Multiboot image selector"
 msgstr "Multiboot valg"
 
-#
-#, fuzzy
-msgid "Multiboot: "
-msgstr "Multistream"
-
 msgid "Multichannel PCM"
 msgstr "Multikanal PCM lyd"
 
@@ -8499,7 +8488,7 @@ msgstr "INS"
 #
 #, fuzzy
 msgid "NFS setup"
-msgstr "Oppsett utseende"
+msgstr "Innstilling"
 
 msgid "NIM & Type"
 msgstr "Tuner modul - type"
@@ -9286,10 +9275,9 @@ msgstr "PGS fil"
 msgid "PGS file"
 msgstr "PGS fil"
 
-#
 #, fuzzy
 msgid "PID"
-msgstr "PIDs"
+msgstr "PDC"
 
 msgid "PID Filtering"
 msgstr "PID filtrering"
@@ -9502,10 +9490,9 @@ msgstr "Spill av DVDer"
 msgid "Play as picture in picture"
 msgstr "Start opp bilde i bilde visning"
 
-#
 #, fuzzy
 msgid "Play audio in background"
-msgstr "Fortsett i bakgrunnen"
+msgstr "Spill av lyd i liste modus"
 
 msgid "Play audio-CD..."
 msgstr "Spill av lyd CD..."
@@ -9949,7 +9936,7 @@ msgstr "Posisjonerers oppsetts logg"
 
 #, fuzzy
 msgid "Power"
-msgstr "Av/på meny"
+msgstr "Strøm-LED"
 
 msgid "Power LED"
 msgstr "Strøm-LED"
@@ -11008,7 +10995,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "SABnzbd setup"
-msgstr "Oppsett utseende"
+msgstr "Veiviser oppsett"
 
 msgid "SCAN"
 msgstr ""
@@ -11744,10 +11731,9 @@ msgstr ""
 msgid "Select your country. If not available select 'all'."
 msgstr "Velg ditt land. Hvis ikke tilgjengelig velg 'alle'."
 
-#
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Velg et utseende"
+msgstr "Velg opptak"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Velg leverandør og region. Hvis den ikke finnes i listen må du velge en av de andre 'skannings tjenestetypene'."
@@ -12004,7 +11990,7 @@ msgstr "Angi bruker-IDen for OpenWebif fra reserve tuneren"
 #
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Velge standardinnstillinger?"
+msgstr "Velg sorteringsmetode:"
 
 #
 #, fuzzy
@@ -12735,6 +12721,9 @@ msgstr "Sosial/Politisk/Økonomisk"
 
 msgid "SocketMMI"
 msgstr "SocketMMI"
+
+msgid "Soft multiboot: "
+msgstr ""
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -13655,7 +13644,7 @@ msgstr "Bakkenett"
 #
 #, fuzzy
 msgid "Test"
-msgstr "Testtype"
+msgstr "Testmodus"
 
 #
 msgid "Test DiSEqC settings"
@@ -15298,9 +15287,10 @@ msgstr "Virtuelt tastatur"
 msgid "Vitamin 5000HD"
 msgstr ""
 
+#
 #, fuzzy, python-format
 msgid "Vol: %s"
-msgstr ": %s"
+msgstr "Video: %s bilder per sekund"
 
 #
 msgid "Voltage mode"
@@ -16215,7 +16205,7 @@ msgstr "Timer logg"
 #
 #, fuzzy
 msgid "ZeroTier setup"
-msgstr "Motorinnstilling"
+msgstr "Navneserver innstilling"
 
 msgid "ZeroTierVPN"
 msgstr ""
@@ -17164,9 +17154,8 @@ msgstr "bare fra helt avslått"
 msgid "only from standby"
 msgstr "bare fra avslått"
 
-#, fuzzy
 msgid "open Info..."
-msgstr "Kopier til..."
+msgstr ""
 
 #
 msgid "open nameserver configuration"
@@ -17247,9 +17236,10 @@ msgstr "bemerkelsesverdige mennesker"
 msgid "remove after this position"
 msgstr "slett etter denne posisjon"
 
+#
 #, fuzzy
 msgid "remove all"
-msgstr "fjern bokmerke"
+msgstr "Fjern overskrift"
 
 msgid "remove before this position"
 msgstr "slett før denne posisjonen"
@@ -17330,7 +17320,7 @@ msgstr "sekunder"
 #
 #, fuzzy
 msgid "select "
-msgstr "velg"
+msgstr "Angre"
 
 #
 msgid "select CAId's"

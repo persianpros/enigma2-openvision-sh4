@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-13 18:27+0330\n"
+"POT-Creation-Date: 2020-12-22 00:46+0330\n"
 "PO-Revision-Date: 2019-10-16 22:14+0200\n"
 "Last-Translator: Kuatto\n"
 "Language-Team: Álvaro <mi casa>\n"
@@ -1333,7 +1333,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "por defecto"
+msgstr "Establecer por defecto"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1356,7 +1356,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "por defecto"
+msgstr "Establecer por defecto"
 
 msgid "6"
 msgstr "6"
@@ -1594,8 +1594,9 @@ msgstr "abortar edición de favoritos"
 msgid "About"
 msgstr "Acerca de"
 
+#, fuzzy
 msgid "About..."
-msgstr "Acerca de..."
+msgstr "Acerca de"
 
 msgid "Accesspoint:"
 msgstr "Punto de acceso:"
@@ -1606,9 +1607,8 @@ msgstr "Activar HbbTV (Botón Rojo)"
 msgid "Activate IPv6 configuration"
 msgstr "Activar la configuración de IPv6"
 
-#, fuzzy
 msgid "Activate Keymap now?"
-msgstr "Modo activado"
+msgstr ""
 
 msgid "Activate MAC address configuration"
 msgstr "Activar la configuración de la dirección MAC"
@@ -2120,7 +2120,7 @@ msgstr "Preguntar al usuario (con valor predeterminado 'si')"
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Lista de satélites …"
+msgstr "Relación de aspecto"
 
 msgid "Aspect ratio"
 msgstr "Relación de aspecto"
@@ -2186,7 +2186,7 @@ msgstr "Plugins de audio"
 
 #, fuzzy
 msgid "Audio source"
-msgstr "Fuente de corte:"
+msgstr "Sincronizar Audio"
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2266,7 +2266,7 @@ msgstr "modo reposo automático"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "no disponible"
+msgstr "Sintonizador no disponible."
 
 msgid "Autoinstalling Completed"
 msgstr "Autoinstalación completada"
@@ -3918,8 +3918,9 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
+#, fuzzy
 msgid "DVD"
-msgstr ""
+msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr "Quemar DVD"
@@ -4113,8 +4114,9 @@ msgstr "Reposo Profundo"
 msgid "Deep standby"
 msgstr "Reposo profundo"
 
+#, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr ""
+msgstr "Reposo Profundo"
 
 msgid "Default"
 msgstr "Por defecto"
@@ -4651,6 +4653,10 @@ msgstr "No cambiar canal y desactivar temporizador"
 msgid "Don't zap and remove timer"
 msgstr "No cambiar canal y borrar temporizador"
 
+#, fuzzy
+msgid "Donate: "
+msgstr "Región: "
+
 msgid "Done"
 msgstr "Realizada"
 
@@ -4881,7 +4887,7 @@ msgstr "Activar OpenTV EPG"
 
 #, fuzzy
 msgid "Enable VFD display"
-msgstr "Habilitar el historial de Zap"
+msgstr "Activado"
 
 msgid "Enable ViaSat EPG"
 msgstr "Activar Viasat EPG"
@@ -6832,7 +6838,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Abrir selección"
+msgstr "Deseleccionar"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6866,8 +6872,9 @@ msgstr "Brillo"
 msgid "LED configuration"
 msgstr "Configuración"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "Normal"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6886,8 +6893,9 @@ msgstr "Configuración manual"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr ""
+msgstr "Configuración manual"
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7328,7 +7336,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Reproductor MediaPlayer"
+msgstr "Editar Canales"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr "Reproducción de medios Restante/Transcurrido como"
@@ -7635,8 +7643,9 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Mezcla múltiple de canales"
+msgstr "PCM Multicanal"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7654,10 +7663,6 @@ msgstr "MultiTipo"
 
 msgid "Multiboot image selector"
 msgstr "Seleccionar imagen Multiboot"
-
-#, fuzzy
-msgid "Multiboot: "
-msgstr "Multistream"
 
 msgid "Multichannel PCM"
 msgstr "PCM Multicanal"
@@ -8368,7 +8373,7 @@ msgstr "Estado del LED de encendido durante modo de espera profundo."
 
 #, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Color del LED durante modo reposo"
+msgstr "Estado del LED de encendido en modo Reposo"
 
 #, fuzzy
 msgid "Operating LED colour status while running."
@@ -8785,7 +8790,7 @@ msgstr "Seleccionar un subservicio…"
 
 #, fuzzy
 msgid "Please select an 3D modus..."
-msgstr "Seleccionar un subservicio…"
+msgstr "Seleccione resolución..."
 
 msgid "Please select an aspect ratio..."
 msgstr "Seleccione el modo pantalla deseado..."
@@ -9494,7 +9499,7 @@ msgstr "Color del LED durante la grabación"
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Cuando está en modo de espera profundo"
+msgstr "Estado del LED de encendido durante modo de espera profundo."
 
 #, fuzzy
 msgid "Red LED on in standby"
@@ -9739,7 +9744,7 @@ msgstr "ID de Usuario"
 
 #, fuzzy
 msgid "Reseller name: "
-msgstr "nombre del dispositivo: "
+msgstr "Nombre de usuario"
 
 msgid "Reserved"
 msgstr "Reservado"
@@ -10631,7 +10636,7 @@ msgstr "Seleccione su país. Si no está disponible seleccione “todo”."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Seleccione su skin"
+msgstr "Seleccionar entrada menu"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Seleccione su proveedor y región. Si no está presente en esta lista, deberá seleccionar uno de los otros ‘tipos de búsqueda de canal’."
@@ -11189,7 +11194,7 @@ msgstr "Mostrar picons en pantalla"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Mostrar iconos en Display"
+msgstr "Control Encendido display en modo reposo"
 
 #, fuzzy
 msgid "Show on display"
@@ -11197,7 +11202,7 @@ msgstr "Encender pantalla"
 
 #, fuzzy
 msgid "Show on display in standby"
-msgstr "Mostrar en modo reposo"
+msgstr "Control Encendido display en modo reposo"
 
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Mostrar u ocultar la descripción extendida."
@@ -11501,6 +11506,10 @@ msgstr "Social/Política/Economía"
 
 msgid "SocketMMI"
 msgstr ""
+
+#, fuzzy
+msgid "Soft multiboot: "
+msgstr "Seleccionar Multiboot"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam & CI"
@@ -12325,7 +12334,7 @@ msgstr "Terrestre"
 
 #, fuzzy
 msgid "Test"
-msgstr "Tipo de test"
+msgstr "Modo test"
 
 msgid "Test DiSEqC settings"
 msgstr "Test de los ajustes Diseqc"
@@ -13238,9 +13247,8 @@ msgstr "Tipo de dispositivo LNB"
 msgid "Type of scan"
 msgstr "Tipo de búsqueda"
 
-#, fuzzy
 msgid "Typematic delay"
-msgstr "Retraso en el servicio"
+msgstr ""
 
 msgid "Typematic rate"
 msgstr ""
@@ -14886,11 +14894,11 @@ msgstr "Cambiar temporizador"
 
 #, fuzzy
 msgid "channel name"
-msgstr "nombre uShare"
+msgstr "Canal"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Número de canal y picon"
+msgstr "Canal"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15513,7 +15521,7 @@ msgstr "en medio de SOLO LECTURA."
 
 #, fuzzy
 msgid "on all mounts"
-msgstr "Desmontar Realmente "
+msgstr "mostrar todas las etiquetas"
 
 msgid "on hdd"
 msgstr ""
@@ -15533,9 +15541,8 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "abrir la configuración del servidor de nombres"
 
-#, fuzzy
 msgid "orange"
-msgstr "Búsqueda Rango"
+msgstr ""
 
 msgid "original"
 msgstr "original"
@@ -15546,9 +15553,8 @@ msgstr "idioma original"
 msgid "pace7241VFD"
 msgstr ""
 
-#, fuzzy
 msgid "partial"
-msgstr "coincidencia parcial"
+msgstr ""
 
 msgid "pass"
 msgstr "pasar"
@@ -15676,7 +15682,7 @@ msgstr "segundos"
 
 #, fuzzy
 msgid "select "
-msgstr "seleccionar"
+msgstr "Deseleccionar"
 
 msgid "select CAId's"
 msgstr "seleccionar CAIds"
@@ -15880,11 +15886,11 @@ msgstr "Receptor iniciado desde hace:"
 
 #, fuzzy
 msgid "time (with seconds)"
-msgstr "Tiempo de espera emergente en segundos"
+msgstr "Actualizar intervalo (segundos)"
 
 #, fuzzy
 msgid "time (without seconds)"
-msgstr "Tiempo de espera emergente en segundos"
+msgstr "Actualizar intervalo (segundos)"
 
 #, fuzzy
 msgid "time and date"
