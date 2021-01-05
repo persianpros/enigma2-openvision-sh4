@@ -216,7 +216,7 @@ void eDVBCISession::createSession(eDVBCISlot *slot, const unsigned char *resourc
 	case 0x00100041:
 //		session=new eDVBCIAuthSession;
 		eDebug("[CI SESS] AuthSession");
-//		break;
+		[[fallthrough]];
 	case 0x00240041:
 		if (!eDVBCIInterfaces::getInstance()->isClientConnected())
 		{
@@ -224,6 +224,22 @@ void eDVBCISession::createSession(eDVBCISlot *slot, const unsigned char *resourc
 			eDebug("[CI SESS] DATE-TIME");
 			break;
 		}
+		[[fallthrough]];
+	case 0x00800041://EBU Teletext 00800041       128        1           1
+		printf("create EBU teletext session, but no support now .\n");
+		session=0;
+		status=0xF0;
+		break;
+	case 0x00700041://ca card data 00700041       112        *           1
+		eDebug("[CI SESS] unknown resource type %02x %02x %02x %02x", resource_identifier[0], resource_identifier[1], resource_identifier[2],resource_identifier[3]);
+		printf("create read ca card data session, but no support now .\n");
+		session=0;
+		status=0xF0;
+		break;
+	case 0x00780041://EPG event  00780041       120        *           1
+		printf("create EPG event session, but no support now .\n");
+		session=0;
+		status=0xF0;
 		break;
 	default:
 		eDebug("[CI SESS] unknown resource type %02x %02x %02x %02x", resource_identifier[0], resource_identifier[1], resource_identifier[2],resource_identifier[3]);

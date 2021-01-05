@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-22 00:46+0330\n"
-"PO-Revision-Date: 2020-12-06 11:59+0100\n"
+"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"PO-Revision-Date: 2020-12-21 17:45+0100\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
 "Language: nb\n"
@@ -168,8 +168,9 @@ msgstr ""
 msgid "%-d-%b"
 msgstr ""
 
+#, fuzzy
 msgid "%-d-%b-%Y"
-msgstr ""
+msgstr "%d-%b-%Y %-H:%M"
 
 #, fuzzy
 msgid "%-d. %B %Y"
@@ -525,17 +526,21 @@ msgstr ""
 msgid "%Y %b %d"
 msgstr ""
 
+#, fuzzy
 msgid "%Y-%B-%-d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%B-%d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%b-%-d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%b-%d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
 msgid "%Y/%-m/%-d"
 msgstr ""
@@ -1021,7 +1026,7 @@ msgstr "%d-%m"
 
 #, fuzzy
 msgid "%d-%b-%Y"
-msgstr "%d-%m"
+msgstr "%d-%b-%Y %-H:%M"
 
 msgid "%d-%m"
 msgstr "%d-%m"
@@ -1366,7 +1371,7 @@ msgstr "422"
 #
 #, fuzzy
 msgid "450 (default)"
-msgstr "standard"
+msgstr "Sett standard"
 
 #
 msgid "4:3"
@@ -1393,7 +1398,7 @@ msgstr "50 MB/s"
 #
 #, fuzzy
 msgid "540 (default)"
-msgstr "standard"
+msgstr "Sett standard"
 
 #
 msgid "6"
@@ -1577,7 +1582,7 @@ msgstr ""
 "Slå av TV og prøv igjen?\n"
 
 msgid "A/V settings"
-msgstr "Lyd og bilde innstilling"
+msgstr "A/V innstilling"
 
 msgid "AAC downmix"
 msgstr "AAC nedskalering"
@@ -2244,7 +2249,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Underleverandør liste..."
+msgstr "Bildeforhold"
 
 #
 msgid "Aspect ratio"
@@ -2281,7 +2286,7 @@ msgid "Audio"
 msgstr "Lyd"
 
 msgid "Audio / Video"
-msgstr "Hoved innstilling"
+msgstr "Lyd / Bilde"
 
 msgid "Audio PID"
 msgstr "Lyd PID"
@@ -2313,8 +2318,9 @@ msgstr "Lyd valg..."
 msgid "Audio plugins"
 msgstr "Lyd utvidelser"
 
+#, fuzzy
 msgid "Audio source"
-msgstr ""
+msgstr "HDMI-lydkilde"
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2387,7 +2393,7 @@ msgid "Auto focus commencing ..."
 msgstr "Auto fokusering begynner ..."
 
 msgid "Auto language selection"
-msgstr "Språk innstilling"
+msgstr "Automatisk språk innstilling"
 
 msgid "Auto play blu-ray file"
 msgstr "Spill av automatisk blu-ray fil"
@@ -2406,7 +2412,7 @@ msgstr "Ikke slå av"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "utilgjengelig"
+msgstr "Tuner er ikke tilgjengelig."
 
 msgid "Autoinstalling Completed"
 msgstr "Autoinstallasjonen er ferdig"
@@ -2606,9 +2612,10 @@ msgstr "Belize"
 msgid "Benchmark"
 msgstr "Danmark"
 
+#
 #, fuzzy
 msgid "Benchmark information"
-msgstr "Programvareadministrasjon"
+msgstr "Hierarki informasjon"
 
 msgid "Benin"
 msgstr "Benin"
@@ -2654,7 +2661,7 @@ msgstr "Lysstyrke"
 #
 #, fuzzy
 msgid "Blue long"
-msgstr "Blå"
+msgstr "Blå boost"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolivia"
@@ -4010,12 +4017,15 @@ msgstr "Kroatia"
 msgid "Croatian"
 msgstr "Kroatisk"
 
+#
+#, fuzzy
 msgid "Cron Manager"
-msgstr ""
+msgstr "Filmbehandling"
 
+#
 #, fuzzy
 msgid "Cron manager"
-msgstr "ingen ressursforvalter"
+msgstr "Filmbehandling"
 
 #
 #, fuzzy
@@ -4233,8 +4243,9 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
+#, fuzzy
 msgid "DVD"
-msgstr ""
+msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr "DVD brenn"
@@ -4792,14 +4803,14 @@ msgid "Display EPG list for current channel"
 msgstr "Vis EPG-listen for aktuell kanal"
 
 msgid "Display Skin"
-msgstr "Display Skin"
+msgstr "Display Utseende"
 
 msgid "Display and userinterface"
-msgstr "Skjerm og oppsett"
+msgstr "Display og oppsett"
 
 #, fuzzy
 msgid "Display brightness"
-msgstr "Display Skin"
+msgstr "Display Utseende"
 
 msgid "Display message before playing next movie"
 msgstr "Vis melding før neste avspilling starter"
@@ -5311,8 +5322,10 @@ msgstr "Aktiver OK for kanalvalg"
 msgid "Enable OpenTV EPG"
 msgstr "Aktiver OpenTV EPG"
 
+#
+#, fuzzy
 msgid "Enable VFD display"
-msgstr ""
+msgstr "Aktivert"
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktiver ViaSat EPG"
@@ -6332,7 +6345,7 @@ msgstr "Fra:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Opptakslistevalg"
+msgstr "Slå på display"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6373,22 +6386,22 @@ msgid "GUI Settings"
 msgstr "GUI innstilling"
 
 msgid "GUI Skin"
-msgstr "GUI innstilling"
+msgstr "GUI Utseende"
 
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI må startes på nytt for aktivering av et nytt språk\n"
-"Starte GUI på nytt nå?"
+"GUI trenger en omstart for å bruke et nytt språk\n"
+"Vil du starte GUI på nytt nå?"
 
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI må startes på nytt for aktivering av et nytt språk\n"
-"Starte GUI på nytt nå?"
+"GUI må startes på nytt for aktivering av nytt utseende\n"
+"Starte på nytt nå?"
 
 msgid "Gabon"
 msgstr "Gabon"
@@ -6421,9 +6434,10 @@ msgstr "Sjanger"
 msgid "Geolocation"
 msgstr "Opptaksmappe"
 
+#
 #, fuzzy
 msgid "Geolocation information"
-msgstr "Programvareadministrasjon"
+msgstr "Hierarki informasjon"
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -7515,8 +7529,9 @@ msgstr "Lysstyrke"
 msgid "LED configuration"
 msgstr "Konfigurasjon"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "Normal"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7526,7 +7541,7 @@ msgstr ""
 
 #, fuzzy
 msgid "LED display"
-msgstr "Display Skin"
+msgstr "Display Utseende"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7535,8 +7550,9 @@ msgstr "Opptakslistevalg"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr ""
+msgstr "Opptakslistevalg"
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8049,7 +8065,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Mediespiller"
+msgstr "Legg til kanal"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8132,7 +8148,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "MiniDLNA setup"
-msgstr "PiP-bilde i bilde oppsett"
+msgstr "Oppsett utseende"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -8384,8 +8400,9 @@ msgstr "Mosambik"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Nedskalering av flerkanals lyd"
+msgstr "Multikanal PCM lyd"
 
 #
 #, fuzzy
@@ -8488,7 +8505,7 @@ msgstr "INS"
 #
 #, fuzzy
 msgid "NFS setup"
-msgstr "Innstilling"
+msgstr "Oppsett utseende"
 
 msgid "NIM & Type"
 msgstr "Tuner modul - type"
@@ -9275,9 +9292,10 @@ msgstr "PGS fil"
 msgid "PGS file"
 msgstr "PGS fil"
 
+#
 #, fuzzy
 msgid "PID"
-msgstr "PDC"
+msgstr "PIDs"
 
 msgid "PID Filtering"
 msgstr "PID filtrering"
@@ -9490,9 +9508,10 @@ msgstr "Spill av DVDer"
 msgid "Play as picture in picture"
 msgstr "Start opp bilde i bilde visning"
 
+#
 #, fuzzy
 msgid "Play audio in background"
-msgstr "Spill av lyd i liste modus"
+msgstr "Fortsett i bakgrunnen"
 
 msgid "Play audio-CD..."
 msgstr "Spill av lyd CD..."
@@ -9936,14 +9955,13 @@ msgstr "Posisjonerers oppsetts logg"
 
 #, fuzzy
 msgid "Power"
-msgstr "Strøm-LED"
+msgstr "Av/på meny"
 
 msgid "Power LED"
-msgstr "Strøm-LED"
+msgstr ""
 
-#, fuzzy
 msgid "Power LED colour"
-msgstr "Strøm-LED"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Strømstyring. Se i din mottakers bruksanvisning for mer informasjon."
@@ -10472,17 +10490,18 @@ msgstr "Opptaks innstilling"
 msgid "Red"
 msgstr "Rød"
 
-msgid "Red LED during recording"
-msgstr ""
-
 #
 #, fuzzy
+msgid "Red LED during recording"
+msgstr "Mappe for direkte opptak"
+
+#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "slå helt av"
+msgstr "Slå på LED lampen i dyp standby."
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Slå av TV"
+msgstr "Slå på LED lampen i standby-modus."
 
 msgid "Red button..."
 msgstr "Rød tast..."
@@ -10748,8 +10767,10 @@ msgstr "Leser partisjonstabellen på nytt"
 msgid "Reseller ID: "
 msgstr "Bruker ID"
 
+#
+#, fuzzy
 msgid "Reseller name: "
-msgstr ""
+msgstr "Gi nytt navn"
 
 msgid "Reserved"
 msgstr "Reservert"
@@ -10995,7 +11016,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "SABnzbd setup"
-msgstr "Veiviser oppsett"
+msgstr "Oppsett utseende"
 
 msgid "SCAN"
 msgstr ""
@@ -11731,9 +11752,10 @@ msgstr ""
 msgid "Select your country. If not available select 'all'."
 msgstr "Velg ditt land. Hvis ikke tilgjengelig velg 'alle'."
 
+#
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Velg opptak"
+msgstr "velg meny"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Velg leverandør og region. Hvis den ikke finnes i listen må du velge en av de andre 'skannings tjenestetypene'."
@@ -11990,7 +12012,7 @@ msgstr "Angi bruker-IDen for OpenWebif fra reserve tuneren"
 #
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Velg sorteringsmetode:"
+msgstr "Velge standardinnstillinger?"
 
 #
 #, fuzzy
@@ -12143,7 +12165,7 @@ msgstr "Vis alternativer"
 #
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Vis krypterings indikator"
+msgstr "Liten framdriftsbar"
 
 #
 msgid "Show InfoBar"
@@ -12208,10 +12230,9 @@ msgstr "Vis opptattvarsel når systemet er opptatt."
 msgid "Show channel numbers in channel selection"
 msgstr "Vis kanalnummer i kanallisten"
 
-#
 #, fuzzy
 msgid "Show clock"
-msgstr "Vis kolonner"
+msgstr "Vis hjelp"
 
 #
 msgid "Show columns"
@@ -12360,7 +12381,7 @@ msgstr "Vis kanallogo (picon) i display"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Slå på displayet under standby-modus"
+msgstr "LED-status i standby-modus"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12722,8 +12743,10 @@ msgstr "Sosial/Politisk/Økonomisk"
 msgid "SocketMMI"
 msgstr "SocketMMI"
 
+#
+#, fuzzy
 msgid "Soft multiboot: "
-msgstr ""
+msgstr "Velg multiboot"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -13483,7 +13506,7 @@ msgstr "System"
 
 #
 msgid "System & Modulation"
-msgstr "System - Modulasjon"
+msgstr "System & Modulasjon"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -13519,7 +13542,7 @@ msgstr "Detaljer for utvidelser: "
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Oversettelse til norsk bokmål oppdatert: 06.12.2020"
+msgstr "Oversettelse til norsk bokmål oppdatert: 21.12.2020"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -13635,7 +13658,7 @@ msgstr "Nettverks instillinger"
 
 #
 msgid "Temperature and fan control"
-msgstr "Temperatur og kjølevifte styring"
+msgstr "Temperatur- og viftekontroll"
 
 #
 msgid "Terrestrial"
@@ -13665,7 +13688,7 @@ msgid "Testscreens"
 msgstr "Prøvebilder"
 
 msgid "Testscreens that are helpfull to fine-tune your display"
-msgstr "Prøvebilder som kan brukes til å finjustere din TV"
+msgstr "Prøvebilder som kan brukes til å finjustere skjermen"
 
 msgid "Text"
 msgstr ""
@@ -13725,7 +13748,7 @@ msgid "The PIN code has been saved successfully."
 msgstr "PIN koden har blitt lagret."
 
 msgid "The PIN codes you entered are different."
-msgstr "Feil PIN kode er tastet."
+msgstr "PIN-kodene du har angitt, er forskjellige."
 
 #
 #, fuzzy
@@ -13793,9 +13816,9 @@ msgid ""
 "\n"
 "Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
 msgstr ""
-"Veiviseren for bildestørrelse hjelper deg å stille inn din TV på riktig måte.\n"
+"Veiviseren for ekte bildestørrelse hjelper deg å stille inn din TV på riktig måte.\n"
 "\n"
-"De fleste TV merker har som standard fabrikkinnstilling valgt et forstørret bilde. Dette betyr at du alltid ser på et \"oppblåst\" bilde der deler av det grafiske HD utseende (skin) blir borte, istedenfor et ekte HD bilde.\n"
+"De fleste TV-er har som standard fabrikkinnstilling valgt et forstørret bilde. Dette betyr at du alltid ser på et \"oppblåst\" bilde der deler av det grafiske HD utseende (skin) blir borte, istedenfor et ekte HD bilde.\n"
 "\n"
 "Den gule rammen betyr at 5% av området for full HD bilde blir borte.\n"
 "Den grønne rammen betyr at 10% av området for full HD bilde blir borte.\n"
@@ -14479,7 +14502,7 @@ msgstr "Oversetting:"
 
 #
 msgid "Translations"
-msgstr "Oversettelser"
+msgstr "Oversettelse"
 
 #
 msgid "Transmission mode"
@@ -14869,7 +14892,7 @@ msgstr "Uruguay"
 
 #
 msgid "Usage Setup"
-msgstr "Bruker innstilling"
+msgstr "Bruker valg"
 
 #
 msgid "Use"
@@ -15287,10 +15310,9 @@ msgstr "Virtuelt tastatur"
 msgid "Vitamin 5000HD"
 msgstr ""
 
-#
 #, fuzzy, python-format
 msgid "Vol: %s"
-msgstr "Video: %s bilder per sekund"
+msgstr ": %s"
 
 #
 msgid "Voltage mode"
@@ -16205,7 +16227,7 @@ msgstr "Timer logg"
 #
 #, fuzzy
 msgid "ZeroTier setup"
-msgstr "Navneserver innstilling"
+msgstr "Motorinnstilling"
 
 msgid "ZeroTierVPN"
 msgstr ""
@@ -16431,11 +16453,12 @@ msgstr "Endre timer"
 #
 #, fuzzy
 msgid "channel name"
-msgstr "Kanal info"
+msgstr "Kanal"
 
+#
 #, fuzzy
 msgid "channel number"
-msgstr "Kanalnummer og kanallogo"
+msgstr "Kanal"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17236,10 +17259,9 @@ msgstr "bemerkelsesverdige mennesker"
 msgid "remove after this position"
 msgstr "slett etter denne posisjon"
 
-#
 #, fuzzy
 msgid "remove all"
-msgstr "Fjern overskrift"
+msgstr "fjern bokmerke"
 
 msgid "remove before this position"
 msgstr "slett før denne posisjonen"
@@ -17541,15 +17563,19 @@ msgstr "denne kanalen er beskyttet av en foreldrekontroll kode"
 msgid "time"
 msgstr "Oppetid"
 
+#
+#, fuzzy
 msgid "time (with seconds)"
-msgstr ""
+msgstr "Bildevisnings intervall (sek.)"
 
+#
+#, fuzzy
 msgid "time (without seconds)"
-msgstr ""
+msgstr "Bildevisnings intervall (sek.)"
 
 #, fuzzy
 msgid "time and date"
-msgstr "Ja og lagre"
+msgstr "Oppstart til Android operativsystem"
 
 msgid "time, day and date"
 msgstr ""

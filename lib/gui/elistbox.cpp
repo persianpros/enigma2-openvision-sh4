@@ -126,7 +126,7 @@ void eListbox::moveSelection(long dir)
 	{
 	case moveEnd:
 		m_content->cursorEnd();
-		// falltrough
+		[[fallthrough]];
 	case moveUp:
 		do
 		{
@@ -154,11 +154,11 @@ void eListbox::moveSelection(long dir)
 		break;
 	case moveTop:
 		m_content->cursorHome();
-		// falltrough
+		[[fallthrough]];
 	case justCheck:
 		if (m_content->cursorValid() && m_content->currentCursorSelectable())
 			break;
-		// falltrough
+		[[fallthrough]];
 	case moveDown:
 		do
 		{

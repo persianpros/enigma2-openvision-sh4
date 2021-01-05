@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-22 00:46+0330\n"
+"POT-Creation-Date: 2021-01-05 15:07+0330\n"
 "PO-Revision-Date: 2020-11-22 09:44+0100\n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: OpenPLi\n"
@@ -1327,7 +1327,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Standard"
+msgstr "Als Standard setzen"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1349,7 +1349,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Standard"
+msgstr "Als Standard setzen"
 
 msgid "6"
 msgstr "6"
@@ -2114,7 +2114,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Unterkanal-Liste…"
+msgstr "Seitenverhältnis"
 
 msgid "Aspect ratio"
 msgstr "Seitenverhältnis"
@@ -2259,7 +2259,7 @@ msgstr "Kein Standby"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Nicht verfügbar"
+msgstr "Tuner nicht verfügbar."
 
 msgid "Autoinstalling Completed"
 msgstr "Automatische Installation abgeschlossen"
@@ -3936,8 +3936,9 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
+#, fuzzy
 msgid "DVD"
-msgstr ""
+msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr "DVD Brennen"
@@ -4667,8 +4668,9 @@ msgstr "Nicht umschalten und Timer deaktivieren"
 msgid "Don't zap and remove timer"
 msgstr "Nicht umschalten und Timer löschen"
 
+#, fuzzy
 msgid "Donate: "
-msgstr ""
+msgstr "Bitrate:"
 
 msgid "Done"
 msgstr "ausgeführt"
@@ -4901,8 +4903,9 @@ msgstr "Aktiviere OK für Kanalauswahl"
 msgid "Enable OpenTV EPG"
 msgstr "Aktiviere OpenTV EPG"
 
+#, fuzzy
 msgid "Enable VFD display"
-msgstr ""
+msgstr "Eingeschaltet"
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktiviere ViaSat EPG"
@@ -5822,7 +5825,7 @@ msgstr "Von:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Filmlisten Einstellungen"
+msgstr "Display einschalten"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6898,8 +6901,9 @@ msgstr "Helligkeit"
 msgid "LED configuration"
 msgstr "Konfiguration"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "Normal"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6918,8 +6922,9 @@ msgstr "Filmlisten Einstellungen"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr ""
+msgstr "Filmlisten Einstellungen"
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7369,7 +7374,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Media Player"
+msgstr "Kanal hinzufügen"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7672,8 +7677,9 @@ msgstr "Mosambik"
 msgid "Multi EPG"
 msgstr "Multi-EPG"
 
+#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multi channel downmix"
+msgstr "Multikanal PCM"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -9053,14 +9059,13 @@ msgstr "Positioner-Setup-Protokoll"
 
 #, fuzzy
 msgid "Power"
-msgstr "Power-LED"
+msgstr "Power Menü"
 
 msgid "Power LED"
-msgstr "Power-LED"
+msgstr ""
 
-#, fuzzy
 msgid "Power LED colour"
-msgstr "Power-LED"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Energieverwaltung. Weitere Informationen finden Sie in der Bedienungsanleitung Ihres Receivers."
@@ -9548,16 +9553,17 @@ msgstr "Aufnahme Einstellungen"
 msgid "Red"
 msgstr "Rot"
 
+#, fuzzy
 msgid "Red LED during recording"
-msgstr ""
+msgstr "Verzeichnis für Sofortaufnahmen"
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "In Deep Standby gehen"
+msgstr "Die LED im Standy-Modus ausschalten."
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Fernseher in den Standby versetzen"
+msgstr "Die LED im Standy-Modus ausschalten."
 
 msgid "Red button..."
 msgstr "Rote Taste…"
@@ -9798,8 +9804,9 @@ msgstr "Partitionstabelle erneut einlesen"
 msgid "Reseller ID: "
 msgstr "Benutzer ID"
 
+#, fuzzy
 msgid "Reseller name: "
-msgstr ""
+msgstr "Umbenennen"
 
 msgid "Reserved"
 msgstr "Reserviert"
@@ -10694,7 +10701,7 @@ msgstr "Wähle dein Land. Wenn nicht verfügbar, wählen Sie “Alle”."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Filmauswahl"
+msgstr "Wählen Sie einen Menüpunkt"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Wählen Sie Ihren Anbieter und die Region aus. Wenn Sie in dieser Liste nicht vorhanden sind, müssen Sie einen der anderen Service-Scan-Typen auswählen."
@@ -11069,7 +11076,7 @@ msgstr "Alternativen anzeigen"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Verschlüsselungs-Symbole anzeigen"
+msgstr "Geringer Fortschritt"
 
 msgid "Show InfoBar"
 msgstr "Infoleiste anzeigen"
@@ -11129,7 +11136,7 @@ msgstr "Kanalnummer in Kanalauswahlliste anzeigen"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Spalten anzeigen"
+msgstr "Hilfe anzeigen"
 
 msgid "Show columns"
 msgstr "Spalten anzeigen"
@@ -11261,7 +11268,7 @@ msgstr "Picons im Display anzeigen"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Display im Standby anschalten"
+msgstr "Status LED im Standy"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -11586,8 +11593,9 @@ msgstr "Soziales/Politik/Wirtschaft"
 msgid "SocketMMI"
 msgstr "Socket-MMI"
 
+#, fuzzy
 msgid "Soft multiboot: "
-msgstr ""
+msgstr "Multisat"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -15004,11 +15012,11 @@ msgstr "Timer ändern"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Senderinformation"
+msgstr "Kanal"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanalnummer und Picon"
+msgstr "Kanal"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15998,15 +16006,17 @@ msgstr "Dieser Kanal ist durch einen Jugendschutz-PIN-Code geschützt."
 msgid "time"
 msgstr "Betriebszeit"
 
+#, fuzzy
 msgid "time (with seconds)"
-msgstr ""
+msgstr "Diaschau-Intervall (Sek.)"
 
+#, fuzzy
 msgid "time (without seconds)"
-msgstr ""
+msgstr "Diaschau-Intervall (Sek.)"
 
 #, fuzzy
 msgid "time and date"
-msgstr "Ja und Speichern"
+msgstr "Android Booten (Hochfahren)"
 
 msgid "time, day and date"
 msgstr ""

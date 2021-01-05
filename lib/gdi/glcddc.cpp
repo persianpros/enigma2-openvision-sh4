@@ -117,6 +117,7 @@ void gLCDDC::exec(const gOpcode *o)
 		}
 #else
 		lcd->update();
+		[[fallthrough]];
 #endif
 	default:
 		gDC::exec(o);

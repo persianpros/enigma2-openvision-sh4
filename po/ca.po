@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-22 00:46+0330\n"
+"POT-Creation-Date: 2021-01-05 15:07+0330\n"
 "PO-Revision-Date: 2020-11-30 18:56+0100\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: angelodos angelo2807@hotmail.com\n"
@@ -1411,7 +1411,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "per defecte"
+msgstr "Instal · lat per defecte"
 
 #
 msgid "4:3"
@@ -1438,7 +1438,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "per defecte"
+msgstr "Instal · lat per defecte"
 
 msgid "6"
 msgstr "6"
@@ -2294,7 +2294,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Llista de subserveis..."
+msgstr "Relació d'aspecteRelació d’aspecte"
 
 #
 msgid "Aspect ratio"
@@ -2454,7 +2454,7 @@ msgstr "Sense standby"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "no disponible"
+msgstr "Sintonitzador no disponible."
 
 msgid "Autoinstalling Completed"
 msgstr "S’ha completat la instal·lació automàtica"
@@ -4280,8 +4280,9 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
+#, fuzzy
 msgid "DVD"
-msgstr ""
+msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr "DVD Burn"
@@ -5115,8 +5116,10 @@ msgstr "No activeu i desactiveu el temporitzador"
 msgid "Don't zap and remove timer"
 msgstr "No elimineu ni traieu el temporitzador"
 
+#
+#, fuzzy
 msgid "Donate: "
-msgstr ""
+msgstr "Bitrate:"
 
 msgid "Done"
 msgstr "Fet"
@@ -5382,8 +5385,10 @@ msgstr "Activa OK per a la selecció del canal"
 msgid "Enable OpenTV EPG"
 msgstr "Habilita EPG de OpenTV"
 
+#
+#, fuzzy
 msgid "Enable VFD display"
-msgstr ""
+msgstr "Activat"
 
 msgid "Enable ViaSat EPG"
 msgstr "Habilita ViaSat EPG"
@@ -6392,10 +6397,9 @@ msgstr "Divendres"
 msgid "From:"
 msgstr "De:"
 
-#
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Configuració de la llista de pel·lícules"
+msgstr "Potència en pantalla"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -7565,8 +7569,9 @@ msgstr "Brillantor"
 msgid "LED configuration"
 msgstr "Configuració"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "Normal"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7587,8 +7592,10 @@ msgstr "Configuració de la llista de pel·lícules"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
+#
+#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr ""
+msgstr "Configuració de la llista de pel·lícules"
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8098,7 +8105,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Reproductor"
+msgstr "Afegir canal"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8441,8 +8448,9 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Downmix multicanal"
+msgstr "Multicanal PCM"
 
 #
 #, fuzzy
@@ -10002,14 +10010,13 @@ msgstr "Posicionador (selecció de satèl·lits)"
 
 #, fuzzy
 msgid "Power"
-msgstr "Alimentació LED"
+msgstr "PowerMenu"
 
 msgid "Power LED"
-msgstr "Alimentació LED"
+msgstr ""
 
-#, fuzzy
 msgid "Power LED colour"
-msgstr "Alimentació LED"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Gestió d’energia. Consulteu el manual del vostre receptor per obtenir més informació."
@@ -10552,17 +10559,18 @@ msgstr "Configuració de l’enregistrament"
 msgid "Red"
 msgstr "Xarxa"
 
-msgid "Red LED during recording"
-msgstr ""
-
 #
 #, fuzzy
+msgid "Red LED during recording"
+msgstr "Ubicació per a enregistraments instantanis"
+
+#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "aturar completament"
+msgstr "Enceneu el LED d’alimentació durant el mode d’espera profunda."
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Posa la televisió en espera"
+msgstr "Enceneu el LED d’alimentació durant el mode d’espera."
 
 msgid "Red button..."
 msgstr "Xarxa boto:"
@@ -10827,8 +10835,10 @@ msgstr "Taula de particions que es dirigeix"
 msgid "Reseller ID: "
 msgstr "ID d’usuari"
 
+#
+#, fuzzy
 msgid "Reseller name: "
-msgstr ""
+msgstr "Canviar el nom"
 
 msgid "Reserved"
 msgstr "Reservat"
@@ -11841,7 +11851,7 @@ msgstr "Seleccioneu el vostre país. Si no està disponible, seleccioneu “tot�
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Selecciona la pel·lícula"
+msgstr "selecciona l’entrada del menú"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Seleccioneu el vostre proveïdor i la vostra regió. Si no apareix en aquesta llista, haureu de seleccionar un dels altres “tipus d’exploració de serveis”."
@@ -12252,7 +12262,7 @@ msgstr "Mostrar alternatives"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Mostra les icones crypto"
+msgstr "Petits avenços"
 
 msgid "Show InfoBar"
 msgstr "Mostra Infobar"
@@ -12315,7 +12325,7 @@ msgstr "Mostra els números de canal a la selecció del canal"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostra les columnes"
+msgstr "Mostra ajuda"
 
 msgid "Show columns"
 msgstr "Mostra les columnes"
@@ -12454,7 +12464,7 @@ msgstr "Mostra els picons a la pantalla"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles"
+msgstr "Funcionament de l’estat del LED en mode d’espera"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12809,8 +12819,10 @@ msgstr "Social / Política / Economia"
 msgid "SocketMMI"
 msgstr "SocketMMI"
 
+#
+#, fuzzy
 msgid "Soft multiboot: "
-msgstr ""
+msgstr "Multisat"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -16528,13 +16540,15 @@ msgstr "centrat, embolicat"
 msgid "change sides"
 msgstr "Canvia el temporitzador"
 
+#
 #, fuzzy
 msgid "channel name"
-msgstr "Informació del canal"
+msgstr "Canal"
 
+#
 #, fuzzy
 msgid "channel number"
-msgstr "Nombre de canal i picon"
+msgstr "Canal"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17642,15 +17656,19 @@ msgstr "aquest canal està protegit per un pin de control parental"
 msgid "time"
 msgstr "Horaris"
 
+#
+#, fuzzy
 msgid "time (with seconds)"
-msgstr ""
+msgstr "Interval de presentació de diapositives (seg.)"
 
+#
+#, fuzzy
 msgid "time (without seconds)"
-msgstr ""
+msgstr "Interval de presentació de diapositives (seg.)"
 
 #, fuzzy
 msgid "time and date"
-msgstr "Sí i  grabar"
+msgstr "Arrenca a la imatge d’Android"
 
 msgid "time, day and date"
 msgstr ""
