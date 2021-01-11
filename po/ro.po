@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -973,6 +973,10 @@ msgid ""
 msgstr ""
 
 #, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "Setari implicite"
+
+#, fuzzy, python-format
 msgid "%s %s free disk space"
 msgstr "spatiu liber pe disk"
 
@@ -1075,6 +1079,9 @@ msgstr "(afiseaza optional pe DVD audio menu)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "necunoscut"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* Disponibil doar in cazul in care mai mult de o interfata este activa."
@@ -1380,9 +1387,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -2021,9 +2025,6 @@ msgstr ""
 msgid "Audio"
 msgstr "Audio"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr ""
 
@@ -2321,9 +2322,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #, fuzzy
 msgid "Benchmark information"
 msgstr "Informatii"
@@ -2526,9 +2524,6 @@ msgstr "Asignarea CI"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2607,6 +2602,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "Anuleaza"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2719,9 +2720,6 @@ msgid "Change step size"
 msgstr ""
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 msgid "Channel"
@@ -2935,10 +2933,6 @@ msgstr "init modul"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "Configurare tuner"
-
 msgid "Clients"
 msgstr ""
 
@@ -3026,6 +3020,10 @@ msgstr "Common Interface"
 #, fuzzy
 msgid "Common Interface assignment"
 msgstr "Atribuirea pentru Common Interface"
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "Alege locatia copiei de siguranta"
 
 msgid "Communication"
 msgstr "Comunicare"
@@ -3629,10 +3627,6 @@ msgid "Cron manager"
 msgstr "Manager pachet"
 
 #, fuzzy
-msgid "Cron timers"
-msgstr "Momentul incheierii"
-
-#, fuzzy
 msgid "Cross brightness"
 msgstr "Luminozitate"
 
@@ -3759,10 +3753,6 @@ msgid "DUAL LAYER DVD"
 msgstr ""
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-S"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "Versiune noua:"
 
@@ -3820,10 +3810,6 @@ msgstr ""
 
 #, fuzzy
 msgid "DVB-T: "
-msgstr "DVB-S"
-
-#, fuzzy
-msgid "DVD"
 msgstr "DVB-S"
 
 msgid "DVD Burn"
@@ -4054,6 +4040,10 @@ msgstr "Tip Timer"
 msgid "Default+Picon"
 msgstr "Setari implicite"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "Setari implicite"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4127,16 +4117,18 @@ msgid "Delete"
 msgstr "Sterge"
 
 #, fuzzy
-msgid "Delete EPG"
-msgstr "Sterge"
-
-#, fuzzy
 msgid "Delete Image"
 msgstr "sterge file"
 
 #, fuzzy
 msgid "Delete all the text"
 msgstr "sterge intrare playlist"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "Sterge articol"
@@ -4232,10 +4224,6 @@ msgstr "NIMuri detectate:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "NIMuri detectate:"
-
-#, fuzzy
-msgid "Device"
-msgstr "Serviciu"
 
 msgid "Device mounts"
 msgstr ""
@@ -4367,11 +4355,17 @@ msgstr "Configurare afisaj"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 #, fuzzy
 msgid "Display setup"
 msgstr "Configurare afisaj"
 
 msgid "Display the EIT now/next eventdata in infobar."
+msgstr ""
+
+msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #, fuzzy
@@ -5274,10 +5268,6 @@ msgstr "Expert"
 msgid "Expert mode"
 msgstr "Expert"
 
-#, fuzzy
-msgid "Expert settings"
-msgstr "Editare setari"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -5405,9 +5395,6 @@ msgstr ""
 msgid "FTA TV"
 msgstr ""
 
-msgid "FTP"
-msgstr ""
-
 msgid "FTP connection failure"
 msgstr ""
 
@@ -5425,9 +5412,6 @@ msgstr "Restaurare setari de fabrica"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "Restaurare setari de fabrica"
-
-msgid "Factory reset"
 msgstr "Restaurare setari de fabrica"
 
 msgid ""
@@ -5473,9 +5457,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -5560,9 +5541,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr ""
-
 msgid "Final position at"
 msgstr ""
 
@@ -5608,10 +5586,6 @@ msgstr "Flash"
 
 #, fuzzy
 msgid "Flash Image"
-msgstr "Flash"
-
-#, fuzzy
-msgid "Flash image"
 msgstr "Flash"
 
 #, fuzzy
@@ -5762,10 +5736,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "Setari"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6410,9 +6380,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6524,9 +6491,6 @@ msgstr ""
 msgid "Initial signal quality:"
 msgstr ""
 
-msgid "Initialization"
-msgstr ""
-
 msgid "Initialize"
 msgstr "Se initializeaza"
 
@@ -6547,9 +6511,6 @@ msgid "Input Stream ID"
 msgstr ""
 
 msgid "Input device setup"
-msgstr ""
-
-msgid "Input devices"
 msgstr ""
 
 msgid "Install"
@@ -6721,6 +6682,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr "dai la sfarsitul listei"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #, fuzzy
 msgid "Jump to next marked position"
 msgstr "dai la urmatoarea pozitie marcata"
@@ -6768,9 +6735,6 @@ msgstr "Versiune noua:"
 
 msgid "Key Events"
 msgstr ""
-
-msgid "Keyboard"
-msgstr "Tastatura"
 
 #, fuzzy
 msgid "Keyboard data entry"
@@ -7030,10 +6994,6 @@ msgid "Live decoder"
 msgstr ""
 
 msgid "Load"
-msgstr "Incarca"
-
-#, fuzzy
-msgid "Load EPG"
 msgstr "Incarca"
 
 msgid "Load only specific days in EPG"
@@ -7304,6 +7264,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7379,9 +7342,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "sterge file"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7486,9 +7446,6 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
-msgid "Mounts"
-msgstr ""
-
 #, fuzzy
 msgid "Mounts setup"
 msgstr "Software"
@@ -7505,6 +7462,14 @@ msgstr "muta pip la imagine principala"
 
 msgid "Move Picture in Picture"
 msgstr "Muta picture in picture"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "muta jos la ultima intrare"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "muta jos la ultima intrare"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7547,6 +7512,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "muta sus la prima intrare"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "muta jos la urmatoarea intrare"
+
 msgid "Move to position X"
 msgstr ""
 
@@ -7564,6 +7537,14 @@ msgstr "deruleaza la capitolul anterior"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "muta sus la anterioara intrare"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "muta sus la prima intrare"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "muta sus la anterioara intrare"
 
 #, fuzzy
@@ -7712,9 +7693,6 @@ msgstr "dezactivat"
 
 msgid "NEXT"
 msgstr "URMATORUL"
-
-msgid "NFS"
-msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8356,9 +8334,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8447,9 +8422,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "Este nevoie de codul pin"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -8459,9 +8431,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Mod"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -8963,9 +8932,6 @@ msgstr ""
 
 msgid "Plugin manager help"
 msgstr ""
-
-msgid "Plugins"
-msgstr "Plugin-uri"
 
 msgid "Poland"
 msgstr ""
@@ -9827,12 +9793,6 @@ msgstr "incepe decupare aici"
 msgid "Restart enigma"
 msgstr ""
 
-msgid "Restart enigma in debug mode"
-msgstr ""
-
-msgid "Restart enigma in standard mode"
-msgstr ""
-
 msgid "Restart network"
 msgstr "Restart retea"
 
@@ -9992,15 +9952,9 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video Setup"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10017,9 +9971,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10109,6 +10060,10 @@ msgstr ""
 msgid "Sat"
 msgstr "Sat"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "Software"
+
 msgid "Satellite"
 msgstr "Satelit"
 
@@ -10147,11 +10102,10 @@ msgstr "Salvare"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
-msgid "Save EPG"
-msgstr "EPG Individual"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #, fuzzy
@@ -10196,9 +10150,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -10621,6 +10572,12 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "selecteaza calea filmului"
 
+msgid "Select the next item in list or move cursor right"
+msgstr ""
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -10716,6 +10673,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr ""
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -10777,9 +10737,6 @@ msgstr "Serviciu"
 #, fuzzy
 msgid "Servers"
 msgstr "Servicii"
-
-msgid "Service"
-msgstr "Serviciu"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -11445,9 +11402,6 @@ msgstr "Nu exista tag-uri stabilite pentru aceste filme."
 msgid "Shuffle playlist"
 msgstr "amesteca plylist"
 
-msgid "Shutdown"
-msgstr ""
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -11550,10 +11504,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr "Sleep timer"
 
-#, fuzzy
-msgid "Sleep timer"
-msgstr "Sleep timer"
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -11622,9 +11572,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Multisat"
-
-msgid "SoftCam / CI"
-msgstr ""
 
 #, fuzzy
 msgid "Softcam Setup"
@@ -11846,10 +11793,6 @@ msgid "Standby"
 msgstr "Asteptare"
 
 #, fuzzy
-msgid "Standby / restart"
-msgstr "Asteptare / Restart"
-
-#, fuzzy
 msgid "Standby LED"
 msgstr "Asteptare"
 
@@ -11953,6 +11896,9 @@ msgid "Startup to Standby"
 msgstr ""
 
 msgid "State: "
+msgstr ""
+
+msgid "Static IP or Custom"
 msgstr ""
 
 msgid "Status"
@@ -12459,9 +12405,6 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "Foloseste Interfata"
@@ -12704,6 +12647,9 @@ msgid "There are at least %s updates available."
 msgstr ""
 
 msgid "There are currently no outstanding actions."
+msgstr ""
+
+msgid "There are no items currently available for this screen."
 msgstr ""
 
 #, fuzzy
@@ -13071,10 +13017,6 @@ msgstr "Tip Timer"
 msgid "Timer:"
 msgstr "Timer"
 
-#, fuzzy
-msgid "Timers"
-msgstr "Timer"
-
 msgid "Timeshift"
 msgstr "Timeshift"
 
@@ -13298,9 +13240,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr ""
 
-msgid "Tuner configuration"
-msgstr "Configurare tuner"
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -13322,9 +13261,6 @@ msgid "Tuner status:"
 msgstr "Stare tuner"
 
 msgid "Tuner type"
-msgstr ""
-
-msgid "Tuners & scanning"
 msgstr ""
 
 msgid "Tunisia"
@@ -13761,14 +13697,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #, fuzzy
 msgid "VFD brightness"
@@ -14810,9 +14740,6 @@ msgstr "Inregistrare timer"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Configurare nume server"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16011,9 +15938,6 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "Tipul de test"
-
-msgid "uShare"
-msgstr ""
 
 msgid "uShare config is missing!"
 msgstr ""

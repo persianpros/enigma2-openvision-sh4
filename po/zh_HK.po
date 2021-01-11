@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -1036,6 +1036,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "預設"
+
 #, python-format
 msgid "%s %s free disk space"
 msgstr ""
@@ -1138,6 +1142,9 @@ msgstr "(顯示可選的DVD音頻功能表)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "未知"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* 僅在一個或多個網卡啟動才有效."
@@ -1447,9 +1454,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 msgid "AFP setup"
@@ -2044,9 +2048,6 @@ msgstr ""
 msgid "Audio"
 msgstr "音頻"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr ""
 
@@ -2341,10 +2342,6 @@ msgid "Belize"
 msgstr ""
 
 #, fuzzy
-msgid "Benchmark"
-msgstr "週末標記:"
-
-#, fuzzy
 msgid "Benchmark information"
 msgstr "資訊"
 
@@ -2545,9 +2542,6 @@ msgstr "CI-證書"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2625,6 +2619,12 @@ msgstr "加拿大"
 
 msgid "Cancel"
 msgstr "取消"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2737,9 +2737,6 @@ msgid "Change step size"
 msgstr "調整"
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 msgid "Channel"
@@ -2948,10 +2945,6 @@ msgstr "模組初始化"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "調諧器配置"
-
 msgid "Clients"
 msgstr ""
 
@@ -3038,6 +3031,10 @@ msgstr "通用介面 (CI)"
 
 msgid "Common Interface assignment"
 msgstr ""
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "選擇位置"
 
 msgid "Communication"
 msgstr "通訊"
@@ -3628,10 +3625,6 @@ msgid "Cron manager"
 msgstr "軟體管理器"
 
 #, fuzzy
-msgid "Cron timers"
-msgstr "結束時間"
-
-#, fuzzy
 msgid "Cross brightness"
 msgstr "亮度"
 
@@ -3757,10 +3750,6 @@ msgid "DUAL LAYER DVD"
 msgstr "雙層DVD"
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-S"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "新版本:"
 
@@ -3817,10 +3806,6 @@ msgstr ""
 
 #, fuzzy
 msgid "DVB-T: "
-msgstr "DVB-S"
-
-#, fuzzy
-msgid "DVD"
 msgstr "DVB-S"
 
 msgid "DVD Burn"
@@ -4044,6 +4029,10 @@ msgstr "定時類型"
 msgid "Default+Picon"
 msgstr "預設設定"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "預設"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4117,16 +4106,18 @@ msgid "Delete"
 msgstr "刪除"
 
 #, fuzzy
-msgid "Delete EPG"
-msgstr "刪除"
-
-#, fuzzy
 msgid "Delete Image"
 msgstr "選擇Image"
 
 #, fuzzy
 msgid "Delete all the text"
 msgstr "刪除失敗."
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "刪除項目"
@@ -4220,10 +4211,6 @@ msgstr "測驗到的調諧器:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "測驗到的調諧器:"
-
-#, fuzzy
-msgid "Device"
-msgstr "頻道"
 
 msgid "Device mounts"
 msgstr ""
@@ -4351,10 +4338,16 @@ msgstr "亮度"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 msgid "Display setup"
 msgstr ""
 
 msgid "Display the EIT now/next eventdata in infobar."
+msgstr ""
+
+msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #, fuzzy
@@ -5236,10 +5229,6 @@ msgstr "高級"
 msgid "Expert mode"
 msgstr "高級"
 
-#, fuzzy
-msgid "Expert settings"
-msgstr "編輯設定"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -5368,9 +5357,6 @@ msgstr ""
 msgid "FTA TV"
 msgstr ""
 
-msgid "FTP"
-msgstr ""
-
 msgid "FTP connection failure"
 msgstr ""
 
@@ -5387,9 +5373,6 @@ msgstr "出廠設定"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "出廠設定"
-
-msgid "Factory reset"
 msgstr "出廠設定"
 
 msgid ""
@@ -5435,9 +5418,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -5522,9 +5502,6 @@ msgstr ""
 msgid "Filename"
 msgstr "檔案名"
 
-msgid "Filesystem check"
-msgstr ""
-
 msgid "Final position at"
 msgstr ""
 
@@ -5571,10 +5548,6 @@ msgstr "安裝失敗"
 
 #, fuzzy
 msgid "Flash Image"
-msgstr "安裝失敗"
-
-#, fuzzy
-msgid "Flash image"
 msgstr "安裝失敗"
 
 #, fuzzy
@@ -5725,10 +5698,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "設定"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6363,9 +6332,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6471,9 +6437,6 @@ msgstr ""
 msgid "Initial signal quality:"
 msgstr ""
 
-msgid "Initialization"
-msgstr ""
-
 msgid "Initialize"
 msgstr "初始化"
 
@@ -6494,9 +6457,6 @@ msgid "Input Stream ID"
 msgstr ""
 
 msgid "Input device setup"
-msgstr ""
-
-msgid "Input devices"
 msgstr ""
 
 msgid "Install"
@@ -6656,6 +6616,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr ""
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 msgid "Jump to next marked position"
 msgstr ""
 
@@ -6699,9 +6665,6 @@ msgstr ""
 #, fuzzy
 msgid "Key Events"
 msgstr "事件"
-
-msgid "Keyboard"
-msgstr "鍵盤佈局"
 
 msgid "Keyboard data entry"
 msgstr ""
@@ -6953,10 +6916,6 @@ msgid "Live decoder"
 msgstr ""
 
 msgid "Load"
-msgstr "載入"
-
-#, fuzzy
-msgid "Load EPG"
 msgstr "載入"
 
 msgid "Load only specific days in EPG"
@@ -7217,6 +7176,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7290,9 +7252,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "選擇Image"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7395,10 +7354,6 @@ msgid "Mount"
 msgstr "安裝(Mount)"
 
 #, fuzzy
-msgid "Mounts"
-msgstr "安裝(Mount)"
-
-#, fuzzy
 msgid "Mounts setup"
 msgstr "保護設定"
 
@@ -7413,6 +7368,14 @@ msgstr ""
 
 msgid "Move Picture in Picture"
 msgstr "移動畫中畫"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "向下移動到最後項目"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "向下移動到最後項目"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7455,6 +7418,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "向上移動到第一個項目"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "向下移動到下一個項目"
+
 msgid "Move to position X"
 msgstr ""
 
@@ -7472,6 +7443,14 @@ msgstr "退回上一個章節"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "向上移動到上一個項目"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "向上移動到第一個項目"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "向上移動到上一個項目"
 
 #, fuzzy
@@ -7620,9 +7599,6 @@ msgstr "不可用"
 
 msgid "NEXT"
 msgstr "下一個"
-
-msgid "NFS"
-msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8254,9 +8230,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8342,9 +8315,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr ""
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -8354,9 +8324,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "設定模式"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -8847,9 +8814,6 @@ msgstr "插件管理活動資訊"
 
 msgid "Plugin manager help"
 msgstr "插件管理幫助"
-
-msgid "Plugins"
-msgstr "插件"
 
 msgid "Poland"
 msgstr "波蘭"
@@ -9701,12 +9665,6 @@ msgstr "從這裏開始剪輯"
 msgid "Restart enigma"
 msgstr ""
 
-msgid "Restart enigma in debug mode"
-msgstr ""
-
-msgid "Restart enigma in standard mode"
-msgstr ""
-
 msgid "Restart network"
 msgstr "重啟網路"
 
@@ -9865,13 +9823,7 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 msgid "SABnzbd setup"
-msgstr ""
-
-msgid "SCAN"
 msgstr ""
 
 msgid "SCPC optimized search range"
@@ -9889,9 +9841,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "OSD"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -9981,6 +9930,10 @@ msgstr ""
 msgid "Sat"
 msgstr "星期六"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "保護設定"
+
 msgid "Satellite"
 msgstr "衛星"
 
@@ -10017,11 +9970,10 @@ msgstr "保存"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
-msgid "Save EPG"
-msgstr "單個-EPG"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #, fuzzy
@@ -10065,9 +10017,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -10472,6 +10421,13 @@ msgstr ""
 msgid "Select the movie path"
 msgstr ""
 
+#, fuzzy
+msgid "Select the next item in list or move cursor right"
+msgstr "選擇位置:"
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -10567,6 +10523,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr "選擇位置:"
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -10628,9 +10587,6 @@ msgstr "頻道"
 
 #, fuzzy
 msgid "Servers"
-msgstr "頻道"
-
-msgid "Service"
 msgstr "頻道"
 
 msgid "Service & PIDs"
@@ -11271,9 +11227,6 @@ msgstr ""
 msgid "Shuffle playlist"
 msgstr ""
 
-msgid "Shutdown"
-msgstr "關機"
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -11373,9 +11326,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr ""
 
-msgid "Sleep timer"
-msgstr ""
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -11442,9 +11392,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "多星"
-
-msgid "SoftCam / CI"
-msgstr ""
 
 #, fuzzy
 msgid "Softcam Setup"
@@ -11659,9 +11606,6 @@ msgstr ""
 msgid "Standby"
 msgstr "待機"
 
-msgid "Standby / restart"
-msgstr ""
-
 #, fuzzy
 msgid "Standby LED"
 msgstr "待機"
@@ -11767,6 +11711,9 @@ msgstr ""
 #, fuzzy
 msgid "State: "
 msgstr "誤碼率:"
+
+msgid "Static IP or Custom"
+msgstr ""
 
 msgid "Status"
 msgstr ""
@@ -12253,9 +12200,6 @@ msgstr "選擇位置:"
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "選擇介面"
@@ -12491,6 +12435,10 @@ msgstr ""
 
 msgid "There are currently no outstanding actions."
 msgstr "目前沒有異常."
+
+#, fuzzy
+msgid "There are no items currently available for this screen."
+msgstr "這裏沒有可用更新."
 
 #, fuzzy
 msgid "There are no saved playlists to delete!"
@@ -12839,10 +12787,6 @@ msgstr "定時類型"
 msgid "Timer:"
 msgstr "計時器"
 
-#, fuzzy
-msgid "Timers"
-msgstr "計時器"
-
 msgid "Timeshift"
 msgstr "時光平移"
 
@@ -13063,9 +13007,6 @@ msgstr "調諧器"
 msgid "Tuner Configuration"
 msgstr ""
 
-msgid "Tuner configuration"
-msgstr "調諧器配置"
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -13086,9 +13027,6 @@ msgid "Tuner status:"
 msgstr "調諧器資訊"
 
 msgid "Tuner type"
-msgstr ""
-
-msgid "Tuners & scanning"
 msgstr ""
 
 msgid "Tunisia"
@@ -13515,14 +13453,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-msgid "VCR scart"
-msgstr "錄影機"
 
 #, fuzzy
 msgid "VFD brightness"
@@ -14542,9 +14474,6 @@ msgstr "計時器日誌"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "極軸設定(DiSEqC 1.2)"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -15736,10 +15665,6 @@ msgstr ""
 
 msgid "type"
 msgstr ""
-
-#, fuzzy
-msgid "uShare"
-msgstr "銳化"
 
 msgid "uShare config is missing!"
 msgstr ""

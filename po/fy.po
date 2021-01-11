@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -1123,6 +1123,11 @@ msgstr ""
 
 #
 #, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "Wyzigje ynstellingen"
+
+#
+#, fuzzy, python-format
 msgid "%s %s free disk space"
 msgstr "freie skiif rûmte"
 
@@ -1233,6 +1238,9 @@ msgstr "(opsje DVD lûd menu sjen litte)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "<net bekend>"
+
+msgid "* = Restart Required"
+msgstr ""
 
 #
 msgid "* Only available if more than one interface is active."
@@ -1586,9 +1594,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #
@@ -2297,9 +2302,6 @@ msgstr ""
 msgid "Audio"
 msgstr "Lûd"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr ""
 
@@ -2639,9 +2641,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Benchmark information"
@@ -2864,9 +2863,6 @@ msgstr ""
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2949,6 +2945,12 @@ msgstr ""
 #
 msgid "Cancel"
 msgstr "Ôfbrekke"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -3075,9 +3077,6 @@ msgid "Change step size"
 msgstr ""
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 #
@@ -3318,11 +3317,6 @@ msgstr "CI-Module initialisearje"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "Tuner ynstellingen"
-
 msgid "Clients"
 msgstr ""
 
@@ -3424,6 +3418,11 @@ msgstr "Common Interface"
 #, fuzzy
 msgid "Common Interface assignment"
 msgstr "Common Interface"
+
+#
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "Kies Lokaasje"
 
 #
 msgid "Communication"
@@ -4075,11 +4074,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Cron timers"
-msgstr "Eintiid"
-
-#
-#, fuzzy
 msgid "Cross brightness"
 msgstr "Helderens"
 
@@ -4224,11 +4218,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-S"
-
-#
-#, fuzzy
 msgid "DVB API version: "
 msgstr "Nije ferzje:"
 
@@ -4293,11 +4282,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "DVB-T: "
-msgstr "DVB-S"
-
-#
-#, fuzzy
-msgid "DVD"
 msgstr "DVB-S"
 
 msgid "DVD Burn"
@@ -4546,6 +4530,11 @@ msgstr "Tiidsbarren type"
 msgid "Default+Picon"
 msgstr "Wyzigje ynstellingen"
 
+#
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "Wyzigje ynstellingen"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4621,11 +4610,6 @@ msgstr "Ferwiderje"
 
 #
 #, fuzzy
-msgid "Delete EPG"
-msgstr "Ferwiderje"
-
-#
-#, fuzzy
 msgid "Delete Image"
 msgstr "triem ferwiderje"
 
@@ -4633,6 +4617,12 @@ msgstr "triem ferwiderje"
 #, fuzzy
 msgid "Delete all the text"
 msgstr "ofspiellyst rigele ferwiderje"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 #
 msgid "Delete entry"
@@ -4742,11 +4732,6 @@ msgstr "Fûne Tuners:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "Fûne Tuners:"
-
-#
-#, fuzzy
-msgid "Device"
-msgstr "Kanaal ynfo"
 
 msgid "Device mounts"
 msgstr ""
@@ -4900,12 +4885,18 @@ msgstr "Ynstellingen sjen litte"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Display setup"
 msgstr "Ynstellingen sjen litte"
 
 msgid "Display the EIT now/next eventdata in infobar."
+msgstr ""
+
+msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #
@@ -5928,11 +5919,6 @@ msgstr "Avansearre"
 msgid "Expert mode"
 msgstr "Avansearre"
 
-#
-#, fuzzy
-msgid "Expert settings"
-msgstr "Wyzigje ynstellingen"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -6076,9 +6062,6 @@ msgstr ""
 msgid "FTA TV"
 msgstr ""
 
-msgid "FTP"
-msgstr ""
-
 msgid "FTP connection failure"
 msgstr ""
 
@@ -6100,10 +6083,6 @@ msgstr "Fabryks ynstellingen"
 #
 #, fuzzy
 msgid "Factory release: "
-msgstr "Fabryks ynstellingen"
-
-#
-msgid "Factory reset"
 msgstr "Fabryks ynstellingen"
 
 msgid ""
@@ -6150,9 +6129,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -6249,9 +6225,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr ""
-
 msgid "Final position at"
 msgstr ""
 
@@ -6304,11 +6277,6 @@ msgstr "Flash"
 #
 #, fuzzy
 msgid "Flash Image"
-msgstr "Flash"
-
-#
-#, fuzzy
-msgid "Flash image"
 msgstr "Flash"
 
 #
@@ -6479,11 +6447,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#
-#, fuzzy
-msgid "GUI Settings"
-msgstr "Ynstellingen"
 
 #
 #, fuzzy
@@ -7178,9 +7141,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -7308,10 +7268,6 @@ msgid "Initial signal quality:"
 msgstr ""
 
 #
-msgid "Initialization"
-msgstr ""
-
-#
 msgid "Initialize"
 msgstr "Formattearje HDD"
 
@@ -7334,9 +7290,6 @@ msgid "Input Stream ID"
 msgstr ""
 
 msgid "Input device setup"
-msgstr ""
-
-msgid "Input devices"
 msgstr ""
 
 #
@@ -7528,6 +7481,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr "spring nei ein fan lyst"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Jump to next marked position"
@@ -7579,10 +7538,6 @@ msgid "Kernel version: "
 msgstr "Nije ferzje:"
 
 msgid "Key Events"
-msgstr ""
-
-#
-msgid "Keyboard"
 msgstr ""
 
 #
@@ -7877,11 +7832,6 @@ msgstr ""
 
 #
 msgid "Load"
-msgstr "Laad"
-
-#
-#, fuzzy
-msgid "Load EPG"
 msgstr "Laad"
 
 msgid "Load only specific days in EPG"
@@ -8189,6 +8139,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -8275,9 +8228,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "triem ferwiderje"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -8396,9 +8346,6 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
-msgid "Mounts"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Mounts setup"
@@ -8418,6 +8365,16 @@ msgstr "ferplaats PiP nei haad skerm"
 #
 msgid "Move Picture in Picture"
 msgstr "Ferpleats Byld yn Byld"
+
+#
+#, fuzzy
+msgid "Move down a line"
+msgstr "Nei it lêste menu item gean"
+
+#
+#, fuzzy
+msgid "Move down a screen"
+msgstr "Nei it lêste menu item gean"
 
 #
 #, fuzzy
@@ -8466,6 +8423,16 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "Neit it earste menu item gean"
+
+#
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "Nei it folgende menu item gean"
+
 msgid "Move to position X"
 msgstr ""
 
@@ -8487,6 +8454,16 @@ msgstr "werom spile nei it foarige haadstik"
 #
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "Nei it foarige menu item "
+
+#
+#, fuzzy
+msgid "Move up a line"
+msgstr "Neit it earste menu item gean"
+
+#
+#, fuzzy
+msgid "Move up a screen"
 msgstr "Nei it foarige menu item "
 
 #
@@ -8656,9 +8633,6 @@ msgstr "útskeakele"
 #
 msgid "NEXT"
 msgstr "Folgende"
-
-msgid "NFS"
-msgstr ""
 
 #
 #, fuzzy
@@ -9378,9 +9352,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -9474,9 +9445,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "Pinkode is needich"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -9487,9 +9455,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Moadus"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -10082,10 +10047,6 @@ msgstr ""
 #
 msgid "Plugin manager help"
 msgstr ""
-
-#
-msgid "Plugins"
-msgstr "Ynstekkers"
 
 msgid "Poland"
 msgstr ""
@@ -11067,12 +11028,6 @@ msgstr "start stik hjirre"
 msgid "Restart enigma"
 msgstr ""
 
-msgid "Restart enigma in debug mode"
-msgstr ""
-
-msgid "Restart enigma in standard mode"
-msgstr ""
-
 #
 msgid "Restart network"
 msgstr "Netwurk nij starte"
@@ -11259,16 +11214,10 @@ msgstr ""
 msgid "S-Video"
 msgstr "S Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Fideo ynstellingen"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -11286,9 +11235,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -11388,6 +11334,11 @@ msgid "Sat"
 msgstr "Sneon"
 
 #
+#, fuzzy
+msgid "SatPI setup"
+msgstr "Toetseboerd Ynstellingen"
+
+#
 msgid "Satellite"
 msgstr "Satellyt"
 
@@ -11434,12 +11385,10 @@ msgstr "Opslaan"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Save EPG"
-msgstr "Inkele EPG"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #
@@ -11488,9 +11437,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -11969,6 +11915,12 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "kies it film paad"
 
+msgid "Select the next item in list or move cursor right"
+msgstr ""
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -12071,6 +12023,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr ""
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -12140,10 +12095,6 @@ msgstr "Kanaal ynfo"
 #, fuzzy
 msgid "Servers"
 msgstr "Kanalen"
-
-#
-msgid "Service"
-msgstr "Kanaal ynfo"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -12884,10 +12835,6 @@ msgstr "Gjin merkers oanwêzig op dizze films"
 msgid "Shuffle playlist"
 msgstr "meitsje willekeurige ôfspiellyst"
 
-#
-msgid "Shutdown"
-msgstr ""
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -13007,11 +12954,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr "Tiidstjoering"
 
-#
-#, fuzzy
-msgid "Sleep timer"
-msgstr "Tiidstjoering"
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -13088,9 +13030,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Multisat"
-
-msgid "SoftCam / CI"
-msgstr ""
 
 msgid "Softcam Setup"
 msgstr ""
@@ -13328,11 +13267,6 @@ msgstr "Paraatmode"
 
 #
 #, fuzzy
-msgid "Standby / restart"
-msgstr "Paraatmode / Nijstart"
-
-#
-#, fuzzy
 msgid "Standby LED"
 msgstr "Paraatmode"
 
@@ -13451,6 +13385,9 @@ msgid "Startup to Standby"
 msgstr ""
 
 msgid "State: "
+msgstr ""
+
+msgid "Static IP or Custom"
 msgstr ""
 
 msgid "Status"
@@ -14010,9 +13947,6 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Telnet"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Telnet interface"
@@ -14285,6 +14219,9 @@ msgstr ""
 
 #
 msgid "There are currently no outstanding actions."
+msgstr ""
+
+msgid "There are no items currently available for this screen."
 msgstr ""
 
 #
@@ -14692,11 +14629,6 @@ msgid "Timer:"
 msgstr "Tiidssjtoering"
 
 #
-#, fuzzy
-msgid "Timers"
-msgstr "Tiidssjtoering"
-
-#
 msgid "Timeshift"
 msgstr "Tiidsskowen"
 
@@ -14949,10 +14881,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr ""
 
-#
-msgid "Tuner configuration"
-msgstr "Tuner ynstellingen"
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -14977,9 +14905,6 @@ msgstr "Tuner status"
 
 #
 msgid "Tuner type"
-msgstr ""
-
-msgid "Tuners & scanning"
 msgstr ""
 
 msgid "Tunisia"
@@ -15467,15 +15392,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-#
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #
 #, fuzzy
@@ -16606,9 +16524,6 @@ msgstr "Tiidsbarren log"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Nammeserver Ynstellingen"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -17965,9 +17880,6 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "Test moadus"
-
-msgid "uShare"
-msgstr ""
 
 msgid "uShare config is missing!"
 msgstr ""

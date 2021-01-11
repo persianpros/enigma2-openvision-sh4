@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1053,6 +1053,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "ברירת מחדל"
+
 #
 #, fuzzy, python-format
 msgid "%s %s free disk space"
@@ -1158,6 +1162,9 @@ msgstr "(הצג תפריטי קול אפשריים לדי וי די)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "לא ידוע"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "אפשרי רק מעל לממשק אחד פעיל *"
@@ -1485,9 +1492,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -2158,9 +2162,6 @@ msgstr ""
 msgid "Audio"
 msgstr "קול"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr ""
 
@@ -2478,9 +2479,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Benchmark information"
@@ -2696,9 +2694,6 @@ msgstr ""
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2778,6 +2773,12 @@ msgstr ""
 #
 msgid "Cancel"
 msgstr "בטל"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2896,9 +2897,6 @@ msgid "Change step size"
 msgstr "Change step size"
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 #
@@ -3123,10 +3121,6 @@ msgstr "init module"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "Tuner הגדרת"
-
 msgid "Clients"
 msgstr ""
 
@@ -3215,6 +3209,10 @@ msgstr "ממשק משותף"
 #, fuzzy
 msgid "Common Interface assignment"
 msgstr "הקצאת ממשק משותף"
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "בחר מקום גיבוי"
 
 msgid "Communication"
 msgstr "תקשורת"
@@ -3834,11 +3832,6 @@ msgstr "Packet manager"
 
 #
 #, fuzzy
-msgid "Cron timers"
-msgstr "שעת סיום"
-
-#
-#, fuzzy
 msgid "Cross brightness"
 msgstr "בהירות"
 
@@ -3964,10 +3957,6 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "Dual Layer DVD"
 
-#, fuzzy
-msgid "DVB"
-msgstr "DVB-S"
-
 #
 #, fuzzy
 msgid "DVB API version: "
@@ -4029,10 +4018,6 @@ msgstr ""
 
 #, fuzzy
 msgid "DVB-T: "
-msgstr "DVB-S"
-
-#, fuzzy
-msgid "DVD"
 msgstr "DVB-S"
 
 msgid "DVD Burn"
@@ -4266,6 +4251,10 @@ msgstr "סוג הטיימר"
 msgid "Default+Picon"
 msgstr "הגדרות ברירת מחדל"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "ברירת מחדל"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4339,11 +4328,6 @@ msgstr ""
 msgid "Delete"
 msgstr "מחק"
 
-#
-#, fuzzy
-msgid "Delete EPG"
-msgstr "מחק"
-
 #, fuzzy
 msgid "Delete Image"
 msgstr "מחק קובץ"
@@ -4351,6 +4335,12 @@ msgstr "מחק קובץ"
 #, fuzzy
 msgid "Delete all the text"
 msgstr "delete playlist entry"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "מחק רשומה"
@@ -4452,11 +4442,6 @@ msgstr "Detected NIMs:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "Detected NIMs:"
-
-#
-#, fuzzy
-msgid "Device"
-msgstr "שירות"
 
 msgid "Device mounts"
 msgstr ""
@@ -4596,11 +4581,17 @@ msgstr "הצג הגדרות"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 #, fuzzy
 msgid "Display setup"
 msgstr "הצג הגדרות"
 
 msgid "Display the EIT now/next eventdata in infobar."
+msgstr ""
+
+msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #, fuzzy
@@ -5551,11 +5542,6 @@ msgstr "הגדרות מומחים"
 msgid "Expert mode"
 msgstr "הגדרות מומחים"
 
-#
-#, fuzzy
-msgid "Expert settings"
-msgstr "ערוך הגדרות"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -5688,9 +5674,6 @@ msgstr ""
 msgid "FTA TV"
 msgstr ""
 
-msgid "FTP"
-msgstr ""
-
 #, fuzzy
 msgid "FTP connection failure"
 msgstr "חיבור רשת"
@@ -5710,9 +5693,6 @@ msgstr "שיחזור להגדרות יצרן"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "שיחזור להגדרות יצרן"
-
-msgid "Factory reset"
 msgstr "שיחזור להגדרות יצרן"
 
 msgid ""
@@ -5758,9 +5738,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -5856,9 +5833,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr ""
-
 msgid "Final position at"
 msgstr ""
 
@@ -5905,10 +5879,6 @@ msgstr "Flash"
 
 #, fuzzy
 msgid "Flash Image"
-msgstr "Flash"
-
-#, fuzzy
-msgid "Flash image"
 msgstr "Flash"
 
 #, fuzzy
@@ -6070,10 +6040,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "הגדרות"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6741,9 +6707,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6863,9 +6826,6 @@ msgstr ""
 msgid "Initial signal quality:"
 msgstr ""
 
-msgid "Initialization"
-msgstr ""
-
 #
 msgid "Initialize"
 msgstr "מאתחל"
@@ -6887,9 +6847,6 @@ msgid "Input Stream ID"
 msgstr ""
 
 msgid "Input device setup"
-msgstr ""
-
-msgid "Input devices"
 msgstr ""
 
 #
@@ -7068,6 +7025,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr "jump to listend"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Jump to next marked position"
@@ -7118,9 +7081,6 @@ msgstr ":גרסה חדשה"
 
 msgid "Key Events"
 msgstr ""
-
-msgid "Keyboard"
-msgstr "מקלדת"
 
 #
 #, fuzzy
@@ -7406,11 +7366,6 @@ msgstr ""
 
 #
 msgid "Load"
-msgstr "טען"
-
-#
-#, fuzzy
-msgid "Load EPG"
 msgstr "טען"
 
 msgid "Load only specific days in EPG"
@@ -7704,6 +7659,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7785,9 +7743,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "מחק קובץ"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7904,9 +7859,6 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
-msgid "Mounts"
-msgstr ""
-
 #, fuzzy
 msgid "Mounts setup"
 msgstr "תוכנה"
@@ -7923,6 +7875,14 @@ msgstr "move PiP to main picture"
 
 msgid "Move Picture in Picture"
 msgstr "Move Picture in Picture"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "move down to last entry"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "move down to last entry"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7965,6 +7925,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "move up to first entry"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "move down to next entry"
+
 msgid "Move to position X"
 msgstr ""
 
@@ -7982,6 +7950,14 @@ msgstr "rewind to the previous chapter"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "move up to previous entry"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "move up to first entry"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "move up to previous entry"
 
 #, fuzzy
@@ -8140,9 +8116,6 @@ msgstr "disabled"
 #
 msgid "NEXT"
 msgstr "הבא"
-
-msgid "NFS"
-msgstr ""
 
 #
 #, fuzzy
@@ -8823,9 +8796,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8915,9 +8885,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "קוד נדרש"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -8928,9 +8895,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "מוד"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -9465,10 +9429,6 @@ msgstr "Plugin manager activity information"
 #
 msgid "Plugin manager help"
 msgstr "Plugin manager help"
-
-#
-msgid "Plugins"
-msgstr "פלאגינים"
 
 msgid "Poland"
 msgstr ""
@@ -10378,12 +10338,6 @@ msgstr "התחל גזירה כאן"
 msgid "Restart enigma"
 msgstr ""
 
-msgid "Restart enigma in debug mode"
-msgstr ""
-
-msgid "Restart enigma in standard mode"
-msgstr ""
-
 msgid "Restart network"
 msgstr "איתחול רשת"
 
@@ -10549,16 +10503,10 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video הגדרת"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10576,9 +10524,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10675,6 +10620,10 @@ msgstr ""
 msgid "Sat"
 msgstr "Sat"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "תוכנה"
+
 #
 msgid "Satellite"
 msgstr "לוויין"
@@ -10719,11 +10668,10 @@ msgstr "שמור"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
-msgid "Save EPG"
-msgstr " יחיד EPG"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #, fuzzy
@@ -10768,9 +10716,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -11215,6 +11160,12 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "select the movie path"
 
+msgid "Select the next item in list or move cursor right"
+msgstr ""
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -11312,6 +11263,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr ""
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -11379,10 +11333,6 @@ msgstr "שירות"
 #, fuzzy
 msgid "Servers"
 msgstr "שירותים"
-
-#
-msgid "Service"
-msgstr "שירות"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -12085,10 +12035,6 @@ msgstr ""
 msgid "Shuffle playlist"
 msgstr "clear playlist"
 
-#
-msgid "Shutdown"
-msgstr "כיבוי"
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -12203,11 +12149,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr "טיימר שינה"
 
-#
-#, fuzzy
-msgid "Sleep timer"
-msgstr "טיימר שינה"
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -12283,9 +12224,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Multisat"
-
-msgid "SoftCam / CI"
-msgstr ""
 
 #, fuzzy
 msgid "Softcam Setup"
@@ -12516,10 +12454,6 @@ msgid "Standby"
 msgstr "המתנה"
 
 #, fuzzy
-msgid "Standby / restart"
-msgstr " איתחול / המתנה"
-
-#, fuzzy
 msgid "Standby LED"
 msgstr "המתנה"
 
@@ -12632,6 +12566,9 @@ msgid "Startup to Standby"
 msgstr ""
 
 msgid "State: "
+msgstr ""
+
+msgid "Static IP or Custom"
 msgstr ""
 
 msgid "Status"
@@ -13181,9 +13118,6 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "בחר ממשק"
@@ -13444,6 +13378,10 @@ msgstr ".אין עדכונים זמינים"
 #
 msgid "There are currently no outstanding actions."
 msgstr ""
+
+#, fuzzy
+msgid "There are no items currently available for this screen."
+msgstr ".אין עדכונים זמינים"
 
 #, fuzzy
 msgid "There are no saved playlists to delete!"
@@ -13825,11 +13763,6 @@ msgid "Timer:"
 msgstr "טיימר"
 
 #
-#, fuzzy
-msgid "Timers"
-msgstr "טיימר"
-
-#
 msgid "Timeshift"
 msgstr "Timeshift"
 
@@ -14075,9 +14008,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr ""
 
-msgid "Tuner configuration"
-msgstr "Tuner הגדרת"
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -14100,9 +14030,6 @@ msgstr "Tuner מצב ה"
 
 msgid "Tuner type"
 msgstr "Tuner סוג ה"
-
-msgid "Tuners & scanning"
-msgstr ""
 
 msgid "Tunisia"
 msgstr ""
@@ -14559,15 +14486,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-#
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #
 #, fuzzy
@@ -15649,9 +15569,6 @@ msgstr "טיימר לוג"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Nameserver Setup"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16899,10 +16816,6 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "Test Type"
-
-#, fuzzy
-msgid "uShare"
-msgstr "חדות"
 
 msgid "uShare config is missing!"
 msgstr ""

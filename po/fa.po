@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -1086,6 +1086,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "پیش فرض"
+
 #, python-format
 msgid "%s %s free disk space"
 msgstr ""
@@ -1189,6 +1193,9 @@ msgstr "(نمایش منوی اختیای صدای DVD)"
 
 msgid "(unknown)"
 msgstr "(نامشخص)"
+
+msgid "* = Restart Required"
+msgstr ""
 
 #
 msgid "* Only available if more than one interface is active."
@@ -1502,9 +1509,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -2145,9 +2149,6 @@ msgstr ""
 msgid "Audio"
 msgstr "صدا"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr "PID صدا"
 
@@ -2449,9 +2450,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #, fuzzy
 msgid "Benchmark information"
 msgstr "اطلاعات مدیریت نرم افزار"
@@ -2657,9 +2655,6 @@ msgstr "CI وظیفه"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2738,6 +2733,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "انصراف"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2854,9 +2855,6 @@ msgid "Change step size"
 msgstr "تغییر اندازه step"
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 msgid "Channel"
@@ -3071,10 +3069,6 @@ msgstr "حالت تست"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "پیکربندی تیونر"
-
 msgid "Clients"
 msgstr ""
 
@@ -3162,6 +3156,10 @@ msgstr "رابط مشترک"
 #, fuzzy
 msgid "Common Interface assignment"
 msgstr "تخصیص رابط مشترک"
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "انتخاب محل نسخه پشتیبان"
 
 msgid "Communication"
 msgstr "ارتباط"
@@ -3769,10 +3767,6 @@ msgid "Cron manager"
 msgstr "مدیریت بسته های نرم افزاری"
 
 #, fuzzy
-msgid "Cron timers"
-msgstr "زمان پایان"
-
-#, fuzzy
 msgid "Cross brightness"
 msgstr "روشنایی"
 
@@ -3899,10 +3893,6 @@ msgid "DUAL LAYER DVD"
 msgstr "DVD دو لایه"
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-C"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "نسخه کرنل: "
 
@@ -3961,10 +3951,6 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
-
-#, fuzzy
-msgid "DVD"
-msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr ""
@@ -4194,6 +4180,10 @@ msgstr "نوع لیست"
 msgid "Default+Picon"
 msgstr "تنظیمات پیش فرض"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "پیش فرض"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4267,16 +4257,18 @@ msgid "Delete"
 msgstr "حذف"
 
 #, fuzzy
-msgid "Delete EPG"
-msgstr "حذف"
-
-#, fuzzy
 msgid "Delete Image"
 msgstr "حذف ناموفق"
 
 #, fuzzy
 msgid "Delete all the text"
 msgstr "حذف مورد"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "حذف مورد"
@@ -4372,10 +4364,6 @@ msgstr "NIM های شناسایی شده:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "NIM های شناسایی شده:"
-
-#, fuzzy
-msgid "Device"
-msgstr "کانال"
 
 msgid "Device mounts"
 msgstr ""
@@ -4508,12 +4496,18 @@ msgstr "تنظیمات تصویر"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 msgid "Display setup"
 msgstr "تنظیمات تصویر"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "نمایش EIT الان/بعدی در نوار اطلاعات"
+
+msgid "Display the virtual keyboard for data entry"
+msgstr ""
 
 #, fuzzy
 msgid "Display type: "
@@ -5416,9 +5410,6 @@ msgstr "تخصصی"
 msgid "Expert mode"
 msgstr "تخصصی"
 
-msgid "Expert settings"
-msgstr "تنظیمات کارشناس"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -5551,10 +5542,6 @@ msgid "FTA TV"
 msgstr ""
 
 #, fuzzy
-msgid "FTP"
-msgstr "FTA"
-
-#, fuzzy
 msgid "FTP connection failure"
 msgstr "ارتباط LAN"
 
@@ -5571,9 +5558,6 @@ msgstr "بازگشت به حالت کارخانه ای"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "بازگشت به حالت کارخانه ای"
-
-msgid "Factory reset"
 msgstr "بازگشت به حالت کارخانه ای"
 
 msgid ""
@@ -5619,9 +5603,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -5707,9 +5688,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr "بررسی سیستم فایل"
-
 msgid "Final position at"
 msgstr "موقعیت نهایی در"
 
@@ -5757,9 +5735,6 @@ msgstr "فلش"
 #, fuzzy
 msgid "Flash Image"
 msgstr "فلش"
-
-msgid "Flash image"
-msgstr "فلش ایمیج"
 
 #, fuzzy
 msgid "Flash type: "
@@ -5911,10 +5886,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "تنظیمات"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6568,9 +6539,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6680,9 +6648,6 @@ msgstr "آماده سازی کیفیت سیگنال"
 msgid "Initial signal quality:"
 msgstr "آماده سازی کیفیت سیگنال:"
 
-msgid "Initialization"
-msgstr "مقدار دهی اولیه"
-
 msgid "Initialize"
 msgstr "مقدار دهی اولیه"
 
@@ -6704,9 +6669,6 @@ msgstr ""
 
 msgid "Input device setup"
 msgstr "تنظیم دستگاه ورودی"
-
-msgid "Input devices"
-msgstr "وسیله های ورودی"
 
 msgid "Install"
 msgstr "نصب"
@@ -6882,6 +6844,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr "برو بالای لیست"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #, fuzzy
 msgid "Jump to next marked position"
 msgstr "موقعیت متن سفارشی"
@@ -6926,9 +6894,6 @@ msgstr "نسخه کرنل: "
 
 msgid "Key Events"
 msgstr ""
-
-msgid "Keyboard"
-msgstr "صفحه کلید"
 
 #, fuzzy
 msgid "Keyboard data entry"
@@ -7179,10 +7144,6 @@ msgid "Live decoder"
 msgstr ""
 
 msgid "Load"
-msgstr "آماده سازی"
-
-#, fuzzy
-msgid "Load EPG"
 msgstr "آماده سازی"
 
 msgid "Load only specific days in EPG"
@@ -7451,6 +7412,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7526,9 +7490,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "حذف ناموفق"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7635,9 +7596,6 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
-msgid "Mounts"
-msgstr ""
-
 #, fuzzy
 msgid "Mounts setup"
 msgstr "تنظیم سافتکم"
@@ -7654,6 +7612,14 @@ msgstr "جابجایی تصویر در تصویر"
 
 msgid "Move Picture in Picture"
 msgstr "جابجایی تصویر در تصویر"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "برو پایین لیست"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "برو پایین لیست"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7694,6 +7660,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "مراجعه به اولین کانال"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "برو پایین لیست"
+
 msgid "Move to position X"
 msgstr "جابجایی به موقعت X"
 
@@ -7709,6 +7683,14 @@ msgstr "مراجعه به رخداد قبلی"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "مراجعه به رخداد قبلی"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "مراجعه به اولین کانال"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "مراجعه به رخداد قبلی"
 
 #, fuzzy
@@ -7860,9 +7842,6 @@ msgstr "غیر فعال شد"
 
 msgid "NEXT"
 msgstr "بعدی"
-
-msgid "NFS"
-msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8501,9 +8480,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8592,9 +8568,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "رمز مورد نیاز است"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -8604,9 +8577,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "حالت"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -9105,9 +9075,6 @@ msgstr "اطلاعات فعالیت مدیریت پلاگین"
 #
 msgid "Plugin manager help"
 msgstr "راهنمای مدیریت پلاگین"
-
-msgid "Plugins"
-msgstr "پلاگین ها"
 
 msgid "Poland"
 msgstr ""
@@ -9981,14 +9948,6 @@ msgstr "راه اندازی دوباره شبکه"
 msgid "Restart enigma"
 msgstr "راه اندازی مجدد انیگما"
 
-#, fuzzy
-msgid "Restart enigma in debug mode"
-msgstr "راه اندازی مجدد انیگما"
-
-#, fuzzy
-msgid "Restart enigma in standard mode"
-msgstr "راه اندازی مجدد انیگما"
-
 msgid "Restart network"
 msgstr "راه اندازی دوباره شبکه"
 
@@ -10152,15 +10111,9 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "تنظیمات تصویر"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10177,9 +10130,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "کیفیت سیگنال"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10270,6 +10220,10 @@ msgstr ""
 msgid "Sat"
 msgstr "ماهواره"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "تنظیم سافتکم"
+
 msgid "Satellite"
 msgstr "ماهواره"
 
@@ -10307,11 +10261,10 @@ msgstr "ذخیره"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
-msgid "Save EPG"
-msgstr "یک EPG"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #, fuzzy
@@ -10356,9 +10309,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -10771,6 +10721,12 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "لطفا مسیر فیلم را انتخاب کنید"
 
+msgid "Select the next item in list or move cursor right"
+msgstr ""
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -10867,6 +10823,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr ""
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -10930,9 +10889,6 @@ msgstr "کانال"
 #, fuzzy
 msgid "Servers"
 msgstr "کانال ها"
-
-msgid "Service"
-msgstr "کانال"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -11600,9 +11556,6 @@ msgstr "هیچ برچسبی برای این فیلم ها تنظیم نشده ا
 msgid "Shuffle playlist"
 msgstr "ذخیره لیست پخش"
 
-msgid "Shutdown"
-msgstr "خاموش کردن"
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -11708,9 +11661,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr "زمان خواب"
 
-msgid "Sleep timer"
-msgstr "زمان خواب"
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -11777,9 +11727,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "چندین ماهواره"
-
-msgid "SoftCam / CI"
-msgstr "SoftCam / CI"
 
 msgid "Softcam Setup"
 msgstr "تنظیم سافتکم"
@@ -12002,9 +11949,6 @@ msgstr ""
 msgid "Standby"
 msgstr "خاموشی موقت"
 
-msgid "Standby / restart"
-msgstr "خاموشی موقت / راه اندازی مجدد"
-
 #, fuzzy
 msgid "Standby LED"
 msgstr "چراغ حالت خاموش"
@@ -12114,6 +12058,9 @@ msgstr ""
 #, fuzzy
 msgid "State: "
 msgstr "میزان ارسال"
+
+msgid "Static IP or Custom"
+msgstr ""
 
 msgid "Status"
 msgstr ""
@@ -12618,9 +12565,6 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr "رنگ زیرنویس تله تکست"
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "انتخاب رابط"
@@ -12869,6 +12813,9 @@ msgid "There are at least %s updates available."
 msgstr "به روز رسانی های در دسترس"
 
 msgid "There are currently no outstanding actions."
+msgstr ""
+
+msgid "There are no items currently available for this screen."
 msgstr ""
 
 #, fuzzy
@@ -13205,10 +13152,6 @@ msgstr "نوع لیست"
 msgid "Timer:"
 msgstr "نوع لیست"
 
-#, fuzzy
-msgid "Timers"
-msgstr "نوع لیست"
-
 msgid "Timeshift"
 msgstr ""
 
@@ -13427,9 +13370,6 @@ msgstr "تیونر"
 msgid "Tuner Configuration"
 msgstr "پیکربندی تیونر"
 
-msgid "Tuner configuration"
-msgstr ""
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -13449,9 +13389,6 @@ msgid "Tuner status:"
 msgstr ""
 
 msgid "Tuner type"
-msgstr ""
-
-msgid "Tuners & scanning"
 msgstr ""
 
 msgid "Tunisia"
@@ -13868,14 +13805,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr "ازبکستان"
-
-msgid "VCR scart"
-msgstr ""
 
 #, fuzzy
 msgid "VFD brightness"
@@ -14885,9 +14816,6 @@ msgstr ""
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Nameserver تنظیمات"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16075,11 +16003,6 @@ msgstr ""
 
 msgid "type"
 msgstr "نوع"
-
-#
-#, fuzzy
-msgid "uShare"
-msgstr "Sharpness"
 
 msgid "uShare config is missing!"
 msgstr ""

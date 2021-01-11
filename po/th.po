@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -1044,6 +1044,10 @@ msgid ""
 msgstr ""
 
 #, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "ค่าเริ่มต้น"
+
+#, fuzzy, python-format
 msgid "%s %s free disk space"
 msgstr "เนื้อที่เหลือยู่"
 
@@ -1146,6 +1150,9 @@ msgstr "(เมนูเสียงของดีวีดี)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "ไม่มีข้อมูล"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* ต้องมีอย่างน้อย 1 อินเตอร์เฟซใช้งานอยู่"
@@ -1455,9 +1462,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -2092,9 +2096,6 @@ msgstr ""
 msgid "Audio"
 msgstr "เสียง"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr ""
 
@@ -2392,9 +2393,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #, fuzzy
 msgid "Benchmark information"
 msgstr "ข้อมูล"
@@ -2598,9 +2596,6 @@ msgstr "CI assignment"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2679,6 +2674,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "ยกเลิก"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2792,9 +2793,6 @@ msgid "Change step size"
 msgstr "เปลี่ยน Step"
 
 msgid "Change timer"
-msgstr ""
-
-msgid "Change video port"
 msgstr ""
 
 msgid "Channel"
@@ -3008,10 +3006,6 @@ msgstr "เริ่มต้นโมดูล"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "ตั้งค่า Tuner"
-
 msgid "Clients"
 msgstr ""
 
@@ -3099,6 +3093,10 @@ msgstr "อินเตอร์เฟซพื้นฐาน"
 #, fuzzy
 msgid "Common Interface assignment"
 msgstr "กำหนดอินเตอร์เฟซพื้นฐาน"
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "เลือกที่ที่จะสำรอง"
 
 msgid "Communication"
 msgstr "ติดต่อสื่อสาร"
@@ -3709,10 +3707,6 @@ msgid "Cron manager"
 msgstr "ตัวจัดการส่วนประกอบ"
 
 #, fuzzy
-msgid "Cron timers"
-msgstr "เวลาสิ้นสุด"
-
-#, fuzzy
 msgid "Cross brightness"
 msgstr "ความสว่าง"
 
@@ -3842,10 +3836,6 @@ msgid "DUAL LAYER DVD"
 msgstr ""
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-S"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "เวอร์ชั่นใหม่:"
 
@@ -3903,10 +3893,6 @@ msgstr ""
 
 #, fuzzy
 msgid "DVB-T: "
-msgstr "DVB-S"
-
-#, fuzzy
-msgid "DVD"
 msgstr "DVB-S"
 
 msgid "DVD Burn"
@@ -4137,6 +4123,10 @@ msgstr "ประเภทการตั้งเวลา"
 msgid "Default+Picon"
 msgstr "ตั้งค่าเริ่มต้น"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "ค่าเริ่มต้น"
+
 msgid "Delay after change voltage before switch command"
 msgstr ""
 
@@ -4210,16 +4200,18 @@ msgid "Delete"
 msgstr "ลบ"
 
 #, fuzzy
-msgid "Delete EPG"
-msgstr "ลบ"
-
-#, fuzzy
 msgid "Delete Image"
 msgstr "ลบไฟล์"
 
 #, fuzzy
 msgid "Delete all the text"
 msgstr "ลบรายการนี้"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "ลบรายการ"
@@ -4315,10 +4307,6 @@ msgstr "NIMs ที่พบ:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "NIMs ที่พบ:"
-
-#, fuzzy
-msgid "Device"
-msgstr "บริการ"
 
 msgid "Device mounts"
 msgstr ""
@@ -4450,11 +4438,17 @@ msgstr "ตั้งค่าการแสดงผล"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 #, fuzzy
 msgid "Display setup"
 msgstr "ตั้งค่าการแสดงผล"
 
 msgid "Display the EIT now/next eventdata in infobar."
+msgstr ""
+
+msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #, fuzzy
@@ -5360,10 +5354,6 @@ msgstr "ชำนาญ"
 msgid "Expert mode"
 msgstr "ชำนาญ"
 
-#, fuzzy
-msgid "Expert settings"
-msgstr "แก้ไขการตั้งค่า"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -5494,9 +5484,6 @@ msgstr ""
 msgid "FTA TV"
 msgstr ""
 
-msgid "FTP"
-msgstr ""
-
 msgid "FTP connection failure"
 msgstr ""
 
@@ -5514,9 +5501,6 @@ msgstr "ตั้งค่าจากโรงงาน"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "ตั้งค่าจากโรงงาน"
-
-msgid "Factory reset"
 msgstr "ตั้งค่าจากโรงงาน"
 
 msgid ""
@@ -5562,9 +5546,6 @@ msgid "Fallback remote receiver for DVB-C"
 msgstr ""
 
 msgid "Fallback remote receiver for DVB-T"
-msgstr ""
-
-msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
@@ -5649,9 +5630,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr ""
-
 msgid "Final position at"
 msgstr ""
 
@@ -5697,10 +5675,6 @@ msgstr "แฟรช"
 
 #, fuzzy
 msgid "Flash Image"
-msgstr "แฟรช"
-
-#, fuzzy
-msgid "Flash image"
 msgstr "แฟรช"
 
 #, fuzzy
@@ -5851,10 +5825,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "การตั้งค่า"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6505,9 +6475,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6619,9 +6586,6 @@ msgstr ""
 msgid "Initial signal quality:"
 msgstr ""
 
-msgid "Initialization"
-msgstr ""
-
 msgid "Initialize"
 msgstr "เตรียมการ"
 
@@ -6642,9 +6606,6 @@ msgid "Input Stream ID"
 msgstr ""
 
 msgid "Input device setup"
-msgstr ""
-
-msgid "Input devices"
 msgstr ""
 
 msgid "Install"
@@ -6817,6 +6778,12 @@ msgstr ""
 msgid "Jump to end of list"
 msgstr "ไปส่วนรายการสุดท้าย"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #, fuzzy
 msgid "Jump to next marked position"
 msgstr "ไปส่วนต่อไป"
@@ -6864,9 +6831,6 @@ msgstr "เวอร์ชั่นใหม่:"
 
 msgid "Key Events"
 msgstr ""
-
-msgid "Keyboard"
-msgstr "แป้นพิมพ์"
 
 #, fuzzy
 msgid "Keyboard data entry"
@@ -7127,10 +7091,6 @@ msgid "Live decoder"
 msgstr ""
 
 msgid "Load"
-msgstr "โหลด"
-
-#, fuzzy
-msgid "Load EPG"
 msgstr "โหลด"
 
 msgid "Load only specific days in EPG"
@@ -7402,6 +7362,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7477,9 +7440,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "ลบไฟล์"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7584,9 +7544,6 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
-msgid "Mounts"
-msgstr ""
-
 #, fuzzy
 msgid "Mounts setup"
 msgstr "ซอพท์แวร์"
@@ -7603,6 +7560,14 @@ msgstr "สลับให้ PiP เต็มจอ"
 
 msgid "Move Picture in Picture"
 msgstr "ย้ายภาพซ้อนภาพ"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "ย้ายลงไปท้ายสุด"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "ย้ายลงไปท้ายสุด"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7645,6 +7610,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "ย้ายไปบนสุด"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "ย้ายลงไป"
+
 msgid "Move to position X"
 msgstr ""
 
@@ -7662,6 +7635,14 @@ msgstr "กลับไปตอนที่แล้ว"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "ย้ายไปก่อนหน้านี้"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "ย้ายไปบนสุด"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "ย้ายไปก่อนหน้านี้"
 
 #, fuzzy
@@ -7811,9 +7792,6 @@ msgstr "ไม่ใช้แล้ว"
 
 msgid "NEXT"
 msgstr "ต่อไป"
-
-msgid "NFS"
-msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8457,9 +8435,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8548,9 +8523,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "ต้องการรหัสผ่าน"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr ""
 
@@ -8560,9 +8532,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "โหมด"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -9074,9 +9043,6 @@ msgstr "ข้อมูลการทำงานของตัวจัดก
 
 msgid "Plugin manager help"
 msgstr "ช่วยเหลือตัวจัดการปลั๊กอิน"
-
-msgid "Plugins"
-msgstr "ปลั๊กอิน"
 
 msgid "Poland"
 msgstr ""
@@ -9939,12 +9905,6 @@ msgstr "ตัดตรงนี้"
 msgid "Restart enigma"
 msgstr ""
 
-msgid "Restart enigma in debug mode"
-msgstr ""
-
-msgid "Restart enigma in standard mode"
-msgstr ""
-
 msgid "Restart network"
 msgstr "เริ่มการทำงานเครือข่ายใหม่"
 
@@ -10104,15 +10064,9 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "ตั้งค่าวีดีโอ"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10129,9 +10083,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10221,6 +10172,10 @@ msgstr ""
 msgid "Sat"
 msgstr "เสา."
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "ซอพท์แวร์"
+
 msgid "Satellite"
 msgstr "ดาวเทียม"
 
@@ -10259,11 +10214,10 @@ msgstr "บันทึก"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
-msgid "Save EPG"
-msgstr "ผังรายการเดี่ยว"
-
 msgid "Save EPG data"
+msgstr ""
+
+msgid "Save all changed settings and exit"
 msgstr ""
 
 #, fuzzy
@@ -10308,9 +10262,6 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
-msgstr ""
-
-msgid "Save-Load-Delete"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -10733,6 +10684,12 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "เลือกพาธของภาพยนต์"
 
+msgid "Select the next item in list or move cursor right"
+msgstr ""
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -10828,6 +10785,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr ""
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -10890,9 +10850,6 @@ msgstr "บริการ"
 #, fuzzy
 msgid "Servers"
 msgstr "บริการต่างๆ"
-
-msgid "Service"
-msgstr "บริการ"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -11560,9 +11517,6 @@ msgstr "ไม่พบป้ายใดๆ กับภาพยนต์ช�
 msgid "Shuffle playlist"
 msgstr "สลับรายการในสารบัญ"
 
-msgid "Shutdown"
-msgstr ""
-
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -11666,10 +11620,6 @@ msgstr ""
 msgid "Sleep delay"
 msgstr "ตั้งเวลาปิดเครื่อง"
 
-#, fuzzy
-msgid "Sleep timer"
-msgstr "ตั้งเวลาปิดเครื่อง"
-
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -11740,9 +11690,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Multisat"
-
-msgid "SoftCam / CI"
-msgstr ""
 
 #, fuzzy
 msgid "Softcam Setup"
@@ -11964,10 +11911,6 @@ msgid "Standby"
 msgstr "Standby"
 
 #, fuzzy
-msgid "Standby / restart"
-msgstr "ปิดเครื่อง"
-
-#, fuzzy
 msgid "Standby LED"
 msgstr "Standby"
 
@@ -12073,6 +12016,9 @@ msgstr ""
 #, fuzzy
 msgid "State: "
 msgstr "บิทเรท:"
+
+msgid "Static IP or Custom"
+msgstr ""
 
 msgid "Status"
 msgstr ""
@@ -12578,9 +12524,6 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "เลือกอินเตอร์เฟซ"
@@ -12818,6 +12761,9 @@ msgid "There are at least %s updates available."
 msgstr " มีรายการปรับปรุง"
 
 msgid "There are currently no outstanding actions."
+msgstr ""
+
+msgid "There are no items currently available for this screen."
 msgstr ""
 
 #, fuzzy
@@ -13188,10 +13134,6 @@ msgstr "ประเภทการตั้งเวลา"
 msgid "Timer:"
 msgstr "ตั้งเวลา"
 
-#, fuzzy
-msgid "Timers"
-msgstr "ตั้งเวลา"
-
 msgid "Timeshift"
 msgstr "ควบคุมรายการสด"
 
@@ -13415,9 +13357,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr ""
 
-msgid "Tuner configuration"
-msgstr "ตั้งค่า Tuner"
-
 msgid "Tuner is not supported"
 msgstr ""
 
@@ -13439,9 +13378,6 @@ msgid "Tuner status:"
 msgstr "สถานะของ Tuner"
 
 msgid "Tuner type"
-msgstr ""
-
-msgid "Tuners & scanning"
 msgstr ""
 
 msgid "Tunisia"
@@ -13878,14 +13814,8 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #, fuzzy
 msgid "VFD brightness"
@@ -14936,9 +14866,6 @@ msgstr "ข้อมูลการตั้งเวลา"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "ตั้งค่า Nameserver"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16141,10 +16068,6 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "ประเภทการทดสอบ"
-
-#, fuzzy
-msgid "uShare"
-msgstr "ความคม"
 
 msgid "uShare config is missing!"
 msgstr ""

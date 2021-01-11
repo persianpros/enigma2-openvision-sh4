@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2020-12-21 17:45+0100\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -1125,6 +1125,11 @@ msgstr ""
 "Trykk OK for valg av multiboot \n"
 "Trykk exit for å lukke"
 
+#
+#, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "Standard"
+
 #, python-format
 msgid "%s %s free disk space"
 msgstr "%s %s ledig diskplass"
@@ -1234,6 +1239,9 @@ msgstr "(vis valgfri DVD lydmeny)"
 #
 msgid "(unknown)"
 msgstr "(ukjent)"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* Kun tilgjengelig hvis flere nettverkskort er i bruk."
@@ -1600,9 +1608,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #
@@ -2285,9 +2290,6 @@ msgstr ""
 msgid "Audio"
 msgstr "Lyd"
 
-msgid "Audio / Video"
-msgstr "Lyd / Bilde"
-
 msgid "Audio PID"
 msgstr "Lyd PID"
 
@@ -2608,10 +2610,6 @@ msgstr "Belgia"
 msgid "Belize"
 msgstr "Belize"
 
-#, fuzzy
-msgid "Benchmark"
-msgstr "Danmark"
-
 #
 #, fuzzy
 msgid "Benchmark information"
@@ -2834,9 +2832,6 @@ msgstr "CI tildeling"
 msgid "CI slot: "
 msgstr "CI spor: "
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2933,6 +2928,14 @@ msgstr "Canada"
 #
 msgid "Cancel"
 msgstr "Tilbake"
+
+#, fuzzy
+msgid "Cancel any changed settings and exit"
+msgstr "Avbryt eventuelle tekst endringer og avslutt"
+
+#, fuzzy
+msgid "Cancel any changed settings and exit all menus"
+msgstr "Avbryt eventuelle endringer i det aktive utseende og avslutt alle menyer"
 
 msgid "Cancel any changes to the currently active skin"
 msgstr "Avbryt eventuelle endringer i det aktive utseende"
@@ -3056,11 +3059,6 @@ msgstr "Endre trinn lengde"
 
 #
 msgid "Change timer"
-msgstr "Endre timer"
-
-#
-#, fuzzy
-msgid "Change video port"
 msgstr "Endre timer"
 
 #
@@ -3295,10 +3293,6 @@ msgstr "igangsett modul"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "Tunerinnstilling"
-
 msgid "Clients"
 msgstr ""
 
@@ -3396,6 +3390,11 @@ msgstr "Common Interface"
 
 msgid "Common Interface assignment"
 msgstr "Tildeling av Cam modul"
+
+#
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "Handlinger for valg av skin"
 
 #
 msgid "Communication"
@@ -4029,11 +4028,6 @@ msgstr "Filmbehandling"
 
 #
 #, fuzzy
-msgid "Cron timers"
-msgstr "Endre timer"
-
-#
-#, fuzzy
 msgid "Cross brightness"
 msgstr "Lysstyrke"
 
@@ -4176,10 +4170,6 @@ msgid "DUAL LAYER DVD"
 msgstr "To lags DVD"
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-C"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "DVB driver versjon: "
 
@@ -4242,10 +4232,6 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
-
-#, fuzzy
-msgid "DVD"
-msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr "DVD brenn"
@@ -4479,6 +4465,11 @@ msgstr "Standard timer type"
 msgid "Default+Picon"
 msgstr "Standard+Kanallogo"
 
+#
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "Standard"
+
 msgid "Delay after change voltage before switch command"
 msgstr "Forsinkelse etter voltendring før kommando til switch"
 
@@ -4553,17 +4544,20 @@ msgid "Delete"
 msgstr "Slett"
 
 #
-#, fuzzy
-msgid "Delete EPG"
-msgstr "Slett"
-
-#
 msgid "Delete Image"
 msgstr "Slett operativsystemet"
 
 #
 msgid "Delete all the text"
 msgstr "Slett all teksten"
+
+#, fuzzy
+msgid "Delete character to left of cursor or select AM times"
+msgstr "Slette tegnet til venstre for tekstmarkøren"
+
+#, fuzzy
+msgid "Delete character under cursor or select PM times"
+msgstr "Slette tegnet under tekstmarkøren"
 
 #
 msgid "Delete entry"
@@ -4669,11 +4663,6 @@ msgstr "Tuner type:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "Tuner type:"
-
-#
-#, fuzzy
-msgid "Device"
-msgstr "Kanal"
 
 msgid "Device mounts"
 msgstr ""
@@ -4815,12 +4804,18 @@ msgstr "Display Utseende"
 msgid "Display message before playing next movie"
 msgstr "Vis melding før neste avspilling starter"
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 msgid "Display setup"
 msgstr "Display innstilling"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Vis EIT nå/neste i informasjonslinjen"
+
+msgid "Display the virtual keyboard for data entry"
+msgstr ""
 
 #, fuzzy
 msgid "Display type: "
@@ -5834,9 +5829,6 @@ msgstr "Ekspert"
 msgid "Expert mode"
 msgstr "Ekspert"
 
-msgid "Expert settings"
-msgstr "Ekspert innstilling"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr "Utvid dvale timer med 15 minutter"
 
@@ -5992,10 +5984,6 @@ msgid "FTA TV"
 msgstr ""
 
 #, fuzzy
-msgid "FTP"
-msgstr "Fri"
-
-#, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN tilkoblet"
 
@@ -6015,9 +6003,6 @@ msgstr "Nullstill mottaker"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "Nullstill mottaker"
-
-msgid "Factory reset"
 msgstr "Nullstill mottaker"
 
 msgid ""
@@ -6069,9 +6054,6 @@ msgstr "Reserve DVB-C fjern mottaker"
 
 msgid "Fallback remote receiver for DVB-T"
 msgstr "Reserve DVB-T fjern mottaker"
-
-msgid "Fallback remote receiver setup"
-msgstr "Innstilling for eksternmottaker"
 
 msgid "Fallback tuner setup"
 msgstr "Ekstern tuner innstilling"
@@ -6163,9 +6145,6 @@ msgstr ""
 msgid "Filename"
 msgstr "Filnavn"
 
-msgid "Filesystem check"
-msgstr "Filsystemkontroll"
-
 msgid "Final position at"
 msgstr "Siste posisjon ved"
 
@@ -6214,9 +6193,6 @@ msgstr "Last ned operativsystem"
 
 msgid "Flash Image"
 msgstr "Last ned operativsystem"
-
-msgid "Flash image"
-msgstr "Installer operativsystem"
 
 #, fuzzy
 msgid "Flash type: "
@@ -6381,9 +6357,6 @@ msgstr "Flere innstillinger"
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-msgid "GUI Settings"
-msgstr "GUI innstilling"
 
 msgid "GUI Skin"
 msgstr "GUI Utseende"
@@ -7075,9 +7048,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Inaktiv dvale timer"
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -7202,10 +7172,6 @@ msgid "Initial signal quality:"
 msgstr "Signal kvalitet:"
 
 #
-msgid "Initialization"
-msgstr "Oppstart"
-
-#
 msgid "Initialize"
 msgstr "Igangsetting"
 
@@ -7229,9 +7195,6 @@ msgstr "Still inn Stream ID"
 
 msgid "Input device setup"
 msgstr "Enhetsinnstilling"
-
-msgid "Input devices"
-msgstr "Enhets innstilling"
 
 #
 msgid "Install"
@@ -7419,6 +7382,12 @@ msgstr "Gå til starten av liste"
 msgid "Jump to end of list"
 msgstr "Gå til slutten av liste"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 #
 msgid "Jump to next marked position"
 msgstr "Gå til neste markerte posisjon"
@@ -7468,10 +7437,6 @@ msgstr "Linuxkjerne versjon: "
 
 msgid "Key Events"
 msgstr "Viktige hendelser"
-
-#
-msgid "Keyboard"
-msgstr "Tastatur"
 
 #
 msgid "Keyboard data entry"
@@ -7752,11 +7717,6 @@ msgstr "Dekoder ibruk"
 
 #
 msgid "Load"
-msgstr "Last inn"
-
-#
-#, fuzzy
-msgid "Load EPG"
 msgstr "Last inn"
 
 msgid "Load only specific days in EPG"
@@ -8056,6 +8016,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Kanskje årsaken er et pågående opptak.. Stopp opptaket før konfigurering av motor posisjonerer."
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr "Mayotte"
 
@@ -8135,9 +8098,6 @@ msgstr "Mikronesia"
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "Slett programvare"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -8252,10 +8212,6 @@ msgid "Mount"
 msgstr "Monter"
 
 #, fuzzy
-msgid "Mounts"
-msgstr "Monter"
-
-#, fuzzy
 msgid "Mounts setup"
 msgstr "Softcam innstilling"
 
@@ -8272,6 +8228,16 @@ msgstr "Flytt PiP til hovedbilde"
 #
 msgid "Move Picture in Picture"
 msgstr "Flytt bilde i bilde"
+
+#
+#, fuzzy
+msgid "Move down a line"
+msgstr "gå til til siste oppføring"
+
+#
+#, fuzzy
+msgid "Move down a screen"
+msgstr "gå til til siste oppføring"
 
 #
 #, fuzzy
@@ -8316,6 +8282,16 @@ msgstr "Flytt tekstmarkøren til det første tegnet"
 msgid "Move the text cursor to the last character"
 msgstr "Flytt tekstmarkøren til det siste tegnet"
 
+#
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "gå til til første oppføring"
+
+#
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "Gå til neste skin"
+
 msgid "Move to position X"
 msgstr "Flytt til posisjon X"
 
@@ -8333,6 +8309,16 @@ msgstr "Flytt til forrige side"
 #
 msgid "Move to the previous skin"
 msgstr "Gå til forrige skin"
+
+#
+#, fuzzy
+msgid "Move up a line"
+msgstr "gå til til første oppføring"
+
+#
+#, fuzzy
+msgid "Move up a screen"
+msgstr "gå til til forrige oppføring"
 
 #
 #, fuzzy
@@ -8497,10 +8483,6 @@ msgstr "styrke deaktivert"
 #
 msgid "NEXT"
 msgstr "NESTE"
-
-#, fuzzy
-msgid "NFS"
-msgstr "INS"
 
 #
 #, fuzzy
@@ -9202,9 +9184,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -9304,9 +9283,6 @@ msgstr "PID filtrering"
 msgid "PIN code needed"
 msgstr "PIN-kode nødvendig"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr "PLP ID"
 
@@ -9316,9 +9292,6 @@ msgstr "PLS kode"
 #
 msgid "PLS Mode"
 msgstr "PLS modus"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -9879,10 +9852,6 @@ msgstr "Aktivitets informasjon for utvidelser"
 
 msgid "Plugin manager help"
 msgstr "Hjelp for utvidelser"
-
-#
-msgid "Plugins"
-msgstr "Utvidelser"
 
 msgid "Poland"
 msgstr "Polen"
@@ -10830,12 +10799,6 @@ msgstr "Restart cardserver"
 msgid "Restart enigma"
 msgstr "Start enigma2 på nytt"
 
-msgid "Restart enigma in debug mode"
-msgstr "Start enigma i feilsøkingsmodus"
-
-msgid "Restart enigma in standard mode"
-msgstr "Restart Enigma i standard modus"
-
 msgid "Restart network"
 msgstr "Start nettverket på nytt"
 
@@ -11010,16 +10973,10 @@ msgstr "Rwanda"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Oppsett utseende"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr "SCPC optimalisert søkeområde"
@@ -11037,9 +10994,6 @@ msgstr "SCR Unicable"
 
 msgid "SDR"
 msgstr "SDR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -11136,6 +11090,10 @@ msgstr "Sao Tome og Principe"
 msgid "Sat"
 msgstr "Lør"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "Softcam innstilling"
+
 msgid "Satellite"
 msgstr "Satellitt"
 
@@ -11176,14 +11134,13 @@ msgstr "Lagre"
 msgid "Save / Enter text and exit"
 msgstr "Lagre/Skriv inn tekst og avslutt"
 
-#
-#, fuzzy
-msgid "Save EPG"
-msgstr "Kanal EPG"
-
 #, fuzzy
 msgid "Save EPG data"
 msgstr "Lagre innstillinger og EPG data"
+
+#, fuzzy
+msgid "Save all changed settings and exit"
+msgstr "Lagre/Skriv inn tekst og avslutt"
 
 msgid "Save and activate the currently selected skin"
 msgstr "Lagre og aktiver det valgte skin"
@@ -11232,9 +11189,6 @@ msgstr "Lagre timeskift filen i opptaksmappen"
 #
 msgid "Save timeshift only for current event"
 msgstr "Lagre timeskift bare for denne handlingen"
-
-msgid "Save-Load-Delete"
-msgstr ""
 
 #, fuzzy
 msgid "Saving EPG Cache..."
@@ -11673,6 +11627,13 @@ msgstr "Velg modellnummeret på din SCR enhet. Hvis modellnummeret ikke er oppf�
 msgid "Select the movie path"
 msgstr "Velg målmappe for opptak"
 
+#, fuzzy
+msgid "Select the next item in list or move cursor right"
+msgstr "Velg tidssonen i området eller region."
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Velg protokollen for din SCR enhet. Valgene er 'SCR Unicable' (Unicable) eller 'SCR JESS' (JESS, også kjent som Unicable II)."
 
@@ -11770,6 +11731,9 @@ msgstr "Velg din region. Hvis ikke tilgjengelig kan du endre 'Land' til 'alle' o
 msgid "Select your time zone area or region."
 msgstr "Velg din tidssone."
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Velger satellitene 1 (USALS)"
 
@@ -11838,10 +11802,6 @@ msgstr "Kanal"
 #, fuzzy
 msgid "Servers"
 msgstr "Kanaler"
-
-#
-msgid "Service"
-msgstr "Kanal"
 
 #
 msgid "Service & PIDs"
@@ -12559,9 +12519,6 @@ msgstr "Ingen merker er satt på disse opptakene."
 msgid "Shuffle playlist"
 msgstr "Miks avspillingsliste"
 
-msgid "Shutdown"
-msgstr "Slå av"
-
 msgid "Shutdown when in Standby"
 msgstr "Slå av når i standby"
 
@@ -12672,9 +12629,6 @@ msgstr "Hopp over Internett-tilkoblingen (deaktiverer automatisk installasjon av
 msgid "Sleep delay"
 msgstr "Rulle forsinkelse"
 
-msgid "Sleep timer"
-msgstr "Dvale timer"
-
 msgid "SleepTimer Configuration"
 msgstr "Dvale timer innstilling"
 
@@ -12747,9 +12701,6 @@ msgstr "SocketMMI"
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Velg multiboot"
-
-msgid "SoftCam / CI"
-msgstr "SoftCam / CI"
 
 msgid "Softcam Setup"
 msgstr "Softcam innstilling"
@@ -12981,9 +12932,6 @@ msgstr "Standard liste"
 msgid "Standby"
 msgstr "Slå av"
 
-msgid "Standby / restart"
-msgstr "Av/på strømvalg"
-
 msgid "Standby LED"
 msgstr "Standby LED"
 
@@ -13103,6 +13051,9 @@ msgstr "Slå på til standby"
 #, fuzzy
 msgid "State: "
 msgstr "Bithastighet:"
+
+msgid "Static IP or Custom"
+msgstr ""
 
 msgid "Status"
 msgstr ""
@@ -13639,9 +13590,6 @@ msgstr "Velg horisontal oppløsning:"
 msgid "Teletext subtitle color"
 msgstr "Undertekst farge"
 
-msgid "Telnet"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Telnet interface"
@@ -13930,6 +13878,10 @@ msgstr "Det er minst %s oppdateringer tilgjengelig."
 #
 msgid "There are currently no outstanding actions."
 msgstr "Det finnes ingen utestående handlinger nå."
+
+#, fuzzy
+msgid "There are no items currently available for this screen."
+msgstr "Det finnes ingen nye oppdateringer."
 
 #
 msgid "There are no saved playlists to delete!"
@@ -14334,11 +14286,6 @@ msgid "Timer:"
 msgstr "Timer:"
 
 #
-#, fuzzy
-msgid "Timers"
-msgstr "Timer"
-
-#
 msgid "Timeshift"
 msgstr "Timeskift"
 
@@ -14589,9 +14536,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr "Tuner innstilling"
 
-msgid "Tuner configuration"
-msgstr "Tunerinnstilling"
-
 msgid "Tuner is not supported"
 msgstr "Tuner er ikke støttet"
 
@@ -14617,9 +14561,6 @@ msgstr "Tuner status:"
 #
 msgid "Tuner type"
 msgstr "Tuner"
-
-msgid "Tuners & scanning"
-msgstr "Tunere & skanning"
 
 msgid "Tunisia"
 msgstr "Tunisia"
@@ -15076,16 +15017,8 @@ msgstr "Bruker tuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Vanligvis når undertekstspråket er det samme som lydspråket, vil undertekstene ikke brukes. Aktiver dette alternativet for å tillate at disse undertekstene kan brukes."
 
-#
-#, fuzzy
-msgid "Utilities"
-msgstr "Funksjoner: "
-
 msgid "Uzbekistan"
 msgstr "Usbekistan"
-
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #
 #, fuzzy
@@ -16228,9 +16161,6 @@ msgstr "Timer logg"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Motorinnstilling"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
@@ -17594,11 +17524,6 @@ msgstr "sant"
 
 msgid "type"
 msgstr "type"
-
-#
-#, fuzzy
-msgid "uShare"
-msgstr "Skarphet"
 
 msgid "uShare config is missing!"
 msgstr ""

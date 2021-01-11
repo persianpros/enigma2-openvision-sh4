@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 15:07+0330\n"
+"POT-Creation-Date: 2021-01-11 23:26+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1092,6 +1092,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (Default: %s)"
+msgstr "Varsayılan"
+
 #, python-format
 msgid "%s %s free disk space"
 msgstr "%s %s boş disk alanı"
@@ -1196,6 +1200,9 @@ msgstr "(DVD Ses menüsünü göster)"
 #, fuzzy
 msgid "(unknown)"
 msgstr "Bilinmiyor"
+
+msgid "* = Restart Required"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* Yalnızca birden fazla arayüz olduğunda kullanılabilir."
@@ -1528,9 +1535,6 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
-msgstr ""
-
-msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -2145,9 +2149,6 @@ msgstr "Dikkat, tekrarlanan zamanlayıcı! Ne yapmak istiyorsun?"
 msgid "Audio"
 msgstr "Ses"
 
-msgid "Audio / Video"
-msgstr ""
-
 msgid "Audio PID"
 msgstr "Ses PID"
 
@@ -2443,9 +2444,6 @@ msgstr ""
 msgid "Belize"
 msgstr ""
 
-msgid "Benchmark"
-msgstr ""
-
 #, fuzzy
 msgid "Benchmark information"
 msgstr "Yazılım Yöneticisi bilgileri"
@@ -2650,9 +2648,6 @@ msgstr "CI Ataması"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIFS/Samba"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2730,6 +2725,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "Vazgeç"
+
+msgid "Cancel any changed settings and exit"
+msgstr ""
+
+msgid "Cancel any changed settings and exit all menus"
+msgstr ""
 
 msgid "Cancel any changes to the currently active skin"
 msgstr ""
@@ -2843,10 +2844,6 @@ msgid "Change step size"
 msgstr "Ayar yapılırken atlama boyutu"
 
 msgid "Change timer"
-msgstr "Saati değiştir"
-
-#, fuzzy
-msgid "Change video port"
 msgstr "Saati değiştir"
 
 msgid "Channel"
@@ -3059,10 +3056,6 @@ msgstr "Modülü Başlat"
 msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
 msgstr ""
 
-#, fuzzy
-msgid "Client tuner configuration"
-msgstr "Tuner ayarları"
-
 msgid "Clients"
 msgstr ""
 
@@ -3150,6 +3143,10 @@ msgstr "Kart/Modül"
 
 msgid "Common Interface assignment"
 msgstr "Kart/Modül Ayarları"
+
+#, fuzzy
+msgid "Common Setup Actions"
+msgstr "Eylem seçimi"
 
 msgid "Communication"
 msgstr "İletişim"
@@ -3757,10 +3754,6 @@ msgid "Cron manager"
 msgstr "Kaynak Yöneticisi bulunamadı."
 
 #, fuzzy
-msgid "Cron timers"
-msgstr "Saati değiştir"
-
-#, fuzzy
 msgid "Cross brightness"
 msgstr "Parlaklık"
 
@@ -3888,10 +3881,6 @@ msgid "DUAL LAYER DVD"
 msgstr "ÇİFT KATMAN DVD"
 
 #, fuzzy
-msgid "DVB"
-msgstr "DVB-C"
-
-#, fuzzy
 msgid "DVB API version: "
 msgstr "DVB sürücüleri: "
 
@@ -3950,10 +3939,6 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
-
-#, fuzzy
-msgid "DVD"
-msgstr "DVB-C"
 
 msgid "DVD Burn"
 msgstr ""
@@ -4177,6 +4162,10 @@ msgstr "Zamanlayıcıyı sil"
 msgid "Default+Picon"
 msgstr "Varsayılan ayarlar"
 
+#, fuzzy, python-format
+msgid "Default: '%s'."
+msgstr "Varsayılan"
+
 msgid "Delay after change voltage before switch command"
 msgstr "Anahtar konumundan önce voltaj geldikten sonra gecikme"
 
@@ -4250,16 +4239,18 @@ msgid "Delete"
 msgstr "Sil"
 
 #, fuzzy
-msgid "Delete EPG"
-msgstr "Sil"
-
-#, fuzzy
 msgid "Delete Image"
 msgstr "Zamanlayıcıyı sil"
 
 #, fuzzy
 msgid "Delete all the text"
 msgstr "Çalma listesi girdisini silin"
+
+msgid "Delete character to left of cursor or select AM times"
+msgstr ""
+
+msgid "Delete character under cursor or select PM times"
+msgstr ""
 
 msgid "Delete entry"
 msgstr "Seçimi sil"
@@ -4356,10 +4347,6 @@ msgstr "TUNER:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "TUNER:"
-
-#, fuzzy
-msgid "Device"
-msgstr "Kanal"
 
 msgid "Device mounts"
 msgstr ""
@@ -4491,12 +4478,18 @@ msgstr "Ekran kurulumu"
 msgid "Display message before playing next movie"
 msgstr "Sonraki filmi oynamadan önce mesaj görüntüler"
 
+msgid "Display selection list as a selection menu"
+msgstr ""
+
 msgid "Display setup"
 msgstr "Ekran kurulumu"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Şimdi/Sonraki bilgi çubuğunda EIT'yi göster."
+
+msgid "Display the virtual keyboard for data entry"
+msgstr ""
 
 #, fuzzy
 msgid "Display type: "
@@ -5400,10 +5393,6 @@ msgstr "Uzman"
 msgid "Expert mode"
 msgstr "Uzman"
 
-#, fuzzy
-msgid "Expert settings"
-msgstr "Ayarları düzenle"
-
 msgid "Extend sleeptimer 15 minutes"
 msgstr "Uyku zamanlayıcısını 15 dakika uzatın"
 
@@ -5536,10 +5525,6 @@ msgid "FTA TV"
 msgstr ""
 
 #, fuzzy
-msgid "FTP"
-msgstr "FTA"
-
-#, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN bağlantısı"
 
@@ -5557,9 +5542,6 @@ msgstr "Fabrika ayarlarına dön (RESET)"
 
 #, fuzzy
 msgid "Factory release: "
-msgstr "Fabrika ayarlarına dön (RESET)"
-
-msgid "Factory reset"
 msgstr "Fabrika ayarlarına dön (RESET)"
 
 msgid ""
@@ -5611,10 +5593,6 @@ msgstr "Yedek cihaz  URL"
 
 #, fuzzy
 msgid "Fallback remote receiver for DVB-T"
-msgstr "Yedek cihaz  URL"
-
-#, fuzzy
-msgid "Fallback remote receiver setup"
 msgstr "Yedek cihaz  URL"
 
 #, fuzzy
@@ -5700,9 +5678,6 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Filesystem check"
-msgstr "Dosya sistemi kontrolü"
-
 msgid "Final position at"
 msgstr "Son pozisyonunda"
 
@@ -5749,10 +5724,6 @@ msgstr "Flaş"
 
 #, fuzzy
 msgid "Flash Image"
-msgstr "Flaş"
-
-#, fuzzy
-msgid "Flash image"
 msgstr "Flaş"
 
 #, fuzzy
@@ -5904,10 +5875,6 @@ msgstr ""
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
-
-#, fuzzy
-msgid "GUI Settings"
-msgstr "Ayarlar"
 
 #, fuzzy
 msgid "GUI Skin"
@@ -6563,9 +6530,6 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Uyku Zamanlayıcısı Devre Dışı"
 
-msgid "Inadyn"
-msgstr ""
-
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6674,9 +6638,6 @@ msgstr "İlk sinyal kalitesi"
 msgid "Initial signal quality:"
 msgstr "Başlangıç sinyal kalitesi:"
 
-msgid "Initialization"
-msgstr "Başlatma"
-
 msgid "Initialize"
 msgstr "Başlat"
 
@@ -6699,9 +6660,6 @@ msgstr ""
 
 msgid "Input device setup"
 msgstr "Kumanda kurulumu"
-
-msgid "Input devices"
-msgstr "Giriş aygıtları"
 
 msgid "Install"
 msgstr "Yükle"
@@ -6862,6 +6820,12 @@ msgstr "Listenin başına atlar"
 msgid "Jump to end of list"
 msgstr "Listenin sonuna atlar"
 
+msgid "Jump to first item in list or the start of text"
+msgstr ""
+
+msgid "Jump to last item in list or the end of text"
+msgstr ""
+
 msgid "Jump to next marked position"
 msgstr "Sonraki işaretli pozisyona atla"
 
@@ -6905,9 +6869,6 @@ msgstr "Çekirdek sürümü:"
 
 msgid "Key Events"
 msgstr ""
-
-msgid "Keyboard"
-msgstr "Klavye"
 
 #, fuzzy
 msgid "Keyboard data entry"
@@ -7159,10 +7120,6 @@ msgid "Live decoder"
 msgstr ""
 
 msgid "Load"
-msgstr "Yükle"
-
-#, fuzzy
-msgid "Load EPG"
 msgstr "Yükle"
 
 msgid "Load only specific days in EPG"
@@ -7428,6 +7385,9 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Kayıt devam ediyor. Lütfen pozisyoner yapılandırmasını denemeden önce kaydı durdurun."
 
+msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
+msgstr ""
+
 msgid "Mayotte"
 msgstr ""
 
@@ -7502,9 +7462,6 @@ msgstr ""
 #, fuzzy
 msgid "Middle - Lite image"
 msgstr "Zamanlayıcıyı sil"
-
-msgid "MiniDLNA"
-msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7608,10 +7565,6 @@ msgid "Mount"
 msgstr "Bağla"
 
 #, fuzzy
-msgid "Mounts"
-msgstr "Bağla"
-
-#, fuzzy
 msgid "Mounts setup"
 msgstr "SoftCam Kurulumu"
 
@@ -7626,6 +7579,14 @@ msgstr "Resim içinde resimi (RiR) ana ekrana taşı"
 
 msgid "Move Picture in Picture"
 msgstr "Resim içinde resim (RiR)'i taşı"
+
+#, fuzzy
+msgid "Move down a line"
+msgstr "En sona taşı"
+
+#, fuzzy
+msgid "Move down a screen"
+msgstr "En sona taşı"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7668,6 +7629,14 @@ msgstr ""
 msgid "Move the text cursor to the last character"
 msgstr ""
 
+#, fuzzy
+msgid "Move to first line / screen"
+msgstr "En üste taşı"
+
+#, fuzzy
+msgid "Move to last line / screen"
+msgstr "Bir alta taşı"
+
 msgid "Move to position X"
 msgstr "'X' pozisyonuna taşı"
 
@@ -7685,6 +7654,14 @@ msgstr "Önceki bölüme geri git"
 
 #, fuzzy
 msgid "Move to the previous skin"
+msgstr "Bir üste taşı"
+
+#, fuzzy
+msgid "Move up a line"
+msgstr "En üste taşı"
+
+#, fuzzy
+msgid "Move up a screen"
 msgstr "Bir üste taşı"
 
 #, fuzzy
@@ -7836,9 +7813,6 @@ msgstr "Devre dışı"
 
 msgid "NEXT"
 msgstr "SONRA"
-
-msgid "NFS"
-msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8477,9 +8451,6 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-msgid "OpenVPN"
-msgstr ""
-
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8571,9 +8542,6 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "PIN kodu gerekli"
 
-msgid "PLAY"
-msgstr ""
-
 msgid "PLP ID"
 msgstr "PLP ID"
 
@@ -8583,9 +8551,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Tipi"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -9084,9 +9049,6 @@ msgstr "Eklenti yönetimi aktivite bilgisi"
 
 msgid "Plugin manager help"
 msgstr "Eklenti yönetimi yardımı"
-
-msgid "Plugins"
-msgstr "Eklentiler"
 
 msgid "Poland"
 msgstr ""
@@ -9953,14 +9915,6 @@ msgstr "Başlangıç kanalı yap."
 msgid "Restart enigma"
 msgstr "Enigma'yı yeniden başlat"
 
-#, fuzzy
-msgid "Restart enigma in debug mode"
-msgstr "Enigma'yı yeniden başlat"
-
-#, fuzzy
-msgid "Restart enigma in standard mode"
-msgstr "Enigma'yı yeniden başlat"
-
 msgid "Restart network"
 msgstr "Ağı yeniden başlat"
 
@@ -10120,15 +10074,9 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SABnzbd"
-msgstr ""
-
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video ayarları"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10145,9 +10093,6 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10237,6 +10182,10 @@ msgstr ""
 msgid "Sat"
 msgstr "Ctesi"
 
+#, fuzzy
+msgid "SatPI setup"
+msgstr "SoftCam Kurulumu"
+
 msgid "Satellite"
 msgstr "Uydu"
 
@@ -10274,12 +10223,12 @@ msgstr "Kaydet"
 msgid "Save / Enter text and exit"
 msgstr "Kaydet ve çık"
 
-#, fuzzy
-msgid "Save EPG"
-msgstr "Tekli EPG"
-
 msgid "Save EPG data"
 msgstr ""
+
+#, fuzzy
+msgid "Save all changed settings and exit"
+msgstr "Kaydet ve çık"
 
 #, fuzzy
 msgid "Save and activate the currently selected skin"
@@ -10323,9 +10272,6 @@ msgstr "Zaman Kaydırmayı Film klasörüne kaydet"
 
 msgid "Save timeshift only for current event"
 msgstr "Zaman Kaydırmayı kaydet geçerli olay için"
-
-msgid "Save-Load-Delete"
-msgstr ""
 
 msgid "Saving EPG Cache..."
 msgstr ""
@@ -10729,6 +10675,13 @@ msgstr ""
 msgid "Select the movie path"
 msgstr "Film yolunu seçin"
 
+#, fuzzy
+msgid "Select the next item in list or move cursor right"
+msgstr "Seçileni sıralama yöntemi:"
+
+msgid "Select the previous item in list or move cursor left"
+msgstr ""
+
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
@@ -10825,6 +10778,9 @@ msgstr ""
 msgid "Select your time zone area or region."
 msgstr "Seçileni sıralama yöntemi:"
 
+msgid "Select, toggle, process or edit the current entry"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Seçilen uydular 1 (USALS)"
 
@@ -10887,9 +10843,6 @@ msgstr "Kanal"
 #, fuzzy
 msgid "Servers"
 msgstr "Kanallar"
-
-msgid "Service"
-msgstr "Kanal"
 
 msgid "Service & PIDs"
 msgstr ""
@@ -11547,9 +11500,6 @@ msgstr "Bu filmler için etiket tanımlanmamış"
 msgid "Shuffle playlist"
 msgstr "Karışık çalma listesi"
 
-msgid "Shutdown"
-msgstr "Kapat"
-
 msgid "Shutdown when in Standby"
 msgstr "Kapat. Bekleme Modunda"
 
@@ -11651,9 +11601,6 @@ msgstr "Internet bağlantı kontrolünü atla. (otomatik paket yükleme devre d�
 msgid "Sleep delay"
 msgstr "Kaydırma gecikme"
 
-msgid "Sleep timer"
-msgstr "Uyku zamanlayıcı"
-
 msgid "SleepTimer Configuration"
 msgstr "Uyku Zamanlayıcı Yapılandırması"
 
@@ -11720,9 +11667,6 @@ msgstr ""
 #, fuzzy
 msgid "Soft multiboot: "
 msgstr "Çoklu Uydu"
-
-msgid "SoftCam / CI"
-msgstr "SoftCam / CI"
 
 #, fuzzy
 msgid "Softcam Setup"
@@ -11940,9 +11884,6 @@ msgstr "Standart Liste"
 msgid "Standby"
 msgstr "Hazırda beklet"
 
-msgid "Standby / restart"
-msgstr "Kapatma"
-
 #, fuzzy
 msgid "Standby LED"
 msgstr "Bekleme LED'i"
@@ -12049,6 +11990,9 @@ msgstr "H.Bekle olarak çalıştır"
 #, fuzzy
 msgid "State: "
 msgstr "Bit Hızı:"
+
+msgid "Static IP or Custom"
+msgstr ""
 
 msgid "Status"
 msgstr ""
@@ -12553,9 +12497,6 @@ msgstr "Seçileni sıralama yöntemi:"
 msgid "Teletext subtitle color"
 msgstr "Teletext alt yazı rengi"
 
-msgid "Telnet"
-msgstr ""
-
 #, fuzzy
 msgid "Telnet interface"
 msgstr "Arayüz seçimi"
@@ -12806,6 +12747,10 @@ msgstr "Yeni %s güncellemeler bulundu."
 
 msgid "There are currently no outstanding actions."
 msgstr "Seçilmiş bir görev yok."
+
+#, fuzzy
+msgid "There are no items currently available for this screen."
+msgstr "Yeni güncelleme yok."
 
 #, fuzzy
 msgid "There are no saved playlists to delete!"
@@ -13187,10 +13132,6 @@ msgstr "Zamanlayıcı tipi"
 msgid "Timer:"
 msgstr "Zamanlayıcı"
 
-#, fuzzy
-msgid "Timers"
-msgstr "Zamanlayıcı"
-
 msgid "Timeshift"
 msgstr "Zaman Kaydırma"
 
@@ -13413,9 +13354,6 @@ msgstr "Tuner"
 msgid "Tuner Configuration"
 msgstr "Tuner Ayarları"
 
-msgid "Tuner configuration"
-msgstr "Tuner ayarları"
-
 msgid "Tuner is not supported"
 msgstr "Tuner desteklenmiyor."
 
@@ -13437,10 +13375,6 @@ msgstr "Tuner durumu"
 
 msgid "Tuner type"
 msgstr "Tuner tipi"
-
-#, fuzzy
-msgid "Tuners & scanning"
-msgstr "Tarama yapılırken hata"
 
 msgid "Tunisia"
 msgstr ""
@@ -13877,14 +13811,8 @@ msgstr "Tuner %s kullanarak"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Genellikle altyazı dili ses diliyle aynı olduğu zaman, alt yazı kullanılmayacaktır. Altyazı  kullanımı etkin olduğunda bu seçeneği etkinleştirin."
 
-msgid "Utilities"
-msgstr ""
-
 msgid "Uzbekistan"
 msgstr ""
-
-msgid "VCR scart"
-msgstr "VCR scart"
 
 #, fuzzy
 msgid "VFD brightness"
@@ -14966,9 +14894,6 @@ msgstr "Zamanlayıcı günlüğü"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "İsim sunucusu (DNS) kurulumu"
-
-msgid "ZeroTierVPN"
-msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16191,10 +16116,6 @@ msgstr "Doğru"
 #, fuzzy
 msgid "type"
 msgstr "Liste tipi"
-
-#, fuzzy
-msgid "uShare"
-msgstr "Keskinlik"
 
 msgid "uShare config is missing!"
 msgstr ""
