@@ -64,6 +64,10 @@ class About(Screen):
 			adbvariant = open("/proc/stb/info/adb_variant", "r").read().strip()
 			AboutText += _("ADB variant: ") + adbvariant + "\n"
 
+		stbid = os.popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
+		if stbid is not None and stbid != "":
+			AboutText += _("STB ID: ") + stbid + "\n"
+
 		procmodeltype = getBoxProcType()
 		if procmodeltype is not None and procmodeltype != "unknown":
 			AboutText += _("Hardware type: ") + procmodeltype + "\n"
