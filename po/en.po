@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 23:26+0330\n"
+"POT-Creation-Date: 2021-01-15 14:24+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: satdreamgr\n"
 "Language-Team: \n"
@@ -1376,6 +1376,10 @@ msgstr "<Default movie location>"
 msgid "<Last timer location>"
 msgstr "<Last timer location>"
 
+#, fuzzy
+msgid "<Press OK to perform action>"
+msgstr "Press OK to toggle the selection."
+
 msgid "<unknown>"
 msgstr "<unknown>"
 
@@ -1516,6 +1520,10 @@ msgstr ""
 "A timer failed to record!\n"
 "Disable TV and try again?\n"
 
+#, fuzzy
+msgid "A/V Setup"
+msgstr "Setup"
+
 msgid "A/V settings"
 msgstr "A/V settings"
 
@@ -1535,6 +1543,9 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
+msgstr ""
+
+msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -1864,12 +1875,6 @@ msgstr "Allow subtitles for hearing impaired"
 msgid "Allow unsupported modes"
 msgstr "not supported"
 
-msgid "Allows receiver to read the stored EPG data regularly."
-msgstr ""
-
-msgid "Allows receiver to store the EPG data regularly."
-msgstr ""
-
 #, fuzzy
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Use TV remote control"
@@ -1889,6 +1894,12 @@ msgstr ""
 #, fuzzy
 msgid "Allows you to show images."
 msgstr "Do you want to download the image to %s ?"
+
+msgid "Allows your %s %s to read the stored EPG data regularly."
+msgstr ""
+
+msgid "Allows your %s %s to store the EPG data regularly."
+msgstr ""
 
 msgid "Alpha"
 msgstr "Alpha"
@@ -1938,7 +1949,7 @@ msgstr ""
 msgid "Always include ECM in recordings"
 msgstr ""
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your %s %s. Default: off."
 msgstr ""
 
 msgid "American Samoa"
@@ -2149,6 +2160,9 @@ msgstr ""
 msgid "Audio"
 msgstr "Audio"
 
+msgid "Audio & Video"
+msgstr ""
+
 msgid "Audio PID"
 msgstr "Audio PID"
 
@@ -2222,6 +2236,10 @@ msgstr ""
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr ""
+
+#, fuzzy
+msgid "Auto Language Setup"
+msgstr "Auto language selection"
 
 #, fuzzy
 msgid "Auto Timers"
@@ -2444,6 +2462,10 @@ msgid "Belize"
 msgstr ""
 
 #, fuzzy
+msgid "Benchmark"
+msgstr "Softwaremanager information"
+
+#, fuzzy
 msgid "Benchmark information"
 msgstr "Softwaremanager information"
 
@@ -2646,6 +2668,9 @@ msgstr "CI assignment"
 msgid "CI slot: "
 msgstr ""
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2844,6 +2869,10 @@ msgstr "Change step size"
 msgid "Change timer"
 msgstr ""
 
+#, fuzzy
+msgid "Change video port"
+msgstr "Change step size"
+
 msgid "Channel"
 msgstr "Channel"
 
@@ -2985,10 +3014,10 @@ msgstr ""
 msgid "Choose the location for crash and debug logs folder."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when your %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose which tuner to configure."
@@ -3043,6 +3072,10 @@ msgstr ""
 #, fuzzy
 msgid "Client Mode"
 msgstr "User defined"
+
+#, fuzzy
+msgid "Client Tuner Configuration"
+msgstr "Exit nameserver configuration"
 
 msgid "Client is streaming from this box!"
 msgstr ""
@@ -3509,7 +3542,8 @@ msgstr "Configure the type of status indication icons shown in the movielist."
 msgid "Configure the video output mode (or resolution)."
 msgstr "Configure the video output mode (or resolution)."
 
-msgid "Configure the way in which the receiver changes channels."
+#, fuzzy
+msgid "Configure the way in which your %s %s changes channels."
 msgstr "Configure the way in which the receiver changes channels."
 
 msgid "Configure the width of the TrueType font letters used for teletext."
@@ -3743,6 +3777,10 @@ msgid "Cron Manager"
 msgstr ""
 
 #, fuzzy
+msgid "Cron Timers"
+msgstr "Auto flesh"
+
+#, fuzzy
 msgid "Cron manager"
 msgstr "Packet manager"
 
@@ -3872,6 +3910,10 @@ msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
 #, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
 msgid "DVB API version: "
 msgstr "Kernel version: "
 
@@ -3930,6 +3972,9 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
+
+msgid "DVD"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr ""
@@ -4119,6 +4164,10 @@ msgid "Debug to file"
 msgstr "Delete file"
 
 #, fuzzy
+msgid "Deep Standby"
+msgstr "Deep standby"
+
+#, fuzzy
 msgid "Deep Standby LED"
 msgstr "Deep standby"
 
@@ -4230,6 +4279,10 @@ msgid "Delete"
 msgstr "Delete"
 
 #, fuzzy
+msgid "Delete EPG Cache"
+msgstr "Delete file"
+
+#, fuzzy
 msgid "Delete Image"
 msgstr "Delete file"
 
@@ -4334,6 +4387,10 @@ msgstr "Detected NIMs:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "Detected NIMs:"
+
+#, fuzzy
+msgid "Device"
+msgstr "Services"
 
 msgid "Device mounts"
 msgstr ""
@@ -4645,12 +4702,13 @@ msgstr ""
 msgid "Do you want to update the package:\n"
 msgstr "Do you want to update the package:\n"
 
-#, python-format
-msgid "Do you want to update your receiver to %s?"
+#, fuzzy, python-format
+msgid "Do you want to update to %s"
 msgstr "Do you want to update your receiver to %s?"
 
-msgid "Do you want to update your receiver?"
-msgstr "Do you want to update your receiver?"
+#, fuzzy, python-format
+msgid "Do you want to update your %s %s?"
+msgstr "Do you want to update your receiver to %s?"
 
 #, fuzzy
 msgid "Documentary"
@@ -4765,6 +4823,10 @@ msgstr "EPG"
 
 msgid "EPG Cache Check"
 msgstr ""
+
+#, fuzzy
+msgid "EPG Setup"
+msgstr "Setup"
 
 #, fuzzy
 msgid "EPG filename"
@@ -5506,6 +5568,10 @@ msgid "FTA TV"
 msgstr ""
 
 #, fuzzy
+msgid "FTP"
+msgstr "FTA"
+
+#, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN connection"
 
@@ -5519,6 +5585,10 @@ msgstr "PiP setup"
 
 #, fuzzy
 msgid "Factory RC type: "
+msgstr "Factory reset"
+
+#, fuzzy
+msgid "Factory Reset"
 msgstr "Factory reset"
 
 #, fuzzy
@@ -5544,6 +5614,9 @@ msgid "Failed:"
 msgstr ""
 
 msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
+msgid "Fallback Remote Receiver Setup"
 msgstr ""
 
 msgid "Fallback Timer"
@@ -5649,6 +5722,9 @@ msgid ""
 msgstr ""
 
 msgid "Filename"
+msgstr ""
+
+msgid "Filesystem Check"
 msgstr ""
 
 msgid "Final position at"
@@ -5809,6 +5885,10 @@ msgstr "Friday"
 
 msgid "From:"
 msgstr "From:"
+
+#, fuzzy
+msgid "Front Panel Display"
+msgstr "open nameserver configuration"
 
 #, fuzzy
 msgid "Front panel display configuration"
@@ -6493,6 +6573,10 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
+#, fuzzy
+msgid "Inadyn"
+msgstr "Video setup"
+
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6544,6 +6628,10 @@ msgstr "Indonesian"
 #, fuzzy
 msgid "Indonesian"
 msgstr "Indonesian"
+
+#, fuzzy
+msgid "Inetd Recovery"
+msgstr "Exit editor"
 
 msgid "Inetd recovery"
 msgstr ""
@@ -6602,6 +6690,10 @@ msgstr "Initial signal quality"
 msgid "Initial signal quality:"
 msgstr "Initial signal quality:"
 
+#, fuzzy
+msgid "Initialization"
+msgstr "Initialize"
+
 msgid "Initialize"
 msgstr "Initialize"
 
@@ -6618,6 +6710,10 @@ msgstr "Input"
 #, fuzzy
 msgid "Input "
 msgstr "Input"
+
+#, fuzzy
+msgid "Input Devices"
+msgstr "Input device setup"
 
 msgid "Input Stream ID"
 msgstr ""
@@ -6835,6 +6931,10 @@ msgid "Key Events"
 msgstr ""
 
 #, fuzzy
+msgid "Keyboard"
+msgstr "Keyboard map"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Keyboard setup"
 
@@ -6875,6 +6975,10 @@ msgstr "LAN adapter"
 
 msgid "LAN connection"
 msgstr "LAN connection"
+
+#, fuzzy
+msgid "LCD Setup"
+msgstr "Setup"
 
 #, fuzzy
 msgid "LED brightness"
@@ -6922,6 +7026,10 @@ msgid "Label"
 msgstr ""
 
 msgid "Language"
+msgstr "Language"
+
+#, fuzzy
+msgid "Language Setup"
 msgstr "Language"
 
 msgid "Language selection"
@@ -7087,6 +7195,10 @@ msgstr ""
 msgid "Load"
 msgstr "Load"
 
+#, fuzzy
+msgid "Load EPG Cache"
+msgstr "Reloading bouquets and services..."
+
 msgid "Load only specific days in EPG"
 msgstr ""
 
@@ -7145,6 +7257,10 @@ msgstr "Brightness"
 
 msgid "Logs"
 msgstr ""
+
+#, fuzzy
+msgid "Logs Setup"
+msgstr "Setup"
 
 #, fuzzy
 msgid "Logs folder location"
@@ -7228,6 +7344,10 @@ msgstr ""
 msgid "Madagascar"
 msgstr ""
 
+#, fuzzy
+msgid "Main Menu"
+msgstr "Main menu"
+
 msgid "Main menu"
 msgstr "Main menu"
 
@@ -7299,10 +7419,14 @@ msgstr ""
 msgid "Manufacturer"
 msgstr "Manufacturer"
 
+#, fuzzy, python-format
 msgid ""
 "Manufacturer reset in progress\n"
-"Please wait until enigma2 restarts"
+"Please wait until your %s %s restarts"
 msgstr ""
+"Unattended update in progress\n"
+"Please wait until your receiver reboots\n"
+"This may take a few minutes"
 
 msgid "Margin after recording (minutes)"
 msgstr "Margin after recording (minutes)"
@@ -7427,6 +7551,10 @@ msgstr ""
 msgid "Middle - Lite image"
 msgstr "Delete file"
 
+#, fuzzy
+msgid "MiniDLNA"
+msgstr "PiP setup"
+
 msgid "MiniDLNA config is missing!"
 msgstr ""
 
@@ -7527,6 +7655,10 @@ msgid "Motor running timeout"
 msgstr ""
 
 msgid "Mount"
+msgstr "Mount"
+
+#, fuzzy
+msgid "Mounts"
 msgstr "Mount"
 
 #, fuzzy
@@ -7709,6 +7841,10 @@ msgid "MultiType"
 msgstr "Multimedia"
 
 #, fuzzy
+msgid "Multiboot Image Selector"
+msgstr "Auto language selection"
+
+#, fuzzy
 msgid "Multiboot image selector"
 msgstr "Auto language selection"
 
@@ -7777,6 +7913,9 @@ msgstr "disabled"
 
 msgid "NEXT"
 msgstr "NEXT"
+
+msgid "NFS"
+msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8413,6 +8552,10 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
+#, fuzzy
+msgid "OpenVPN"
+msgstr "PiP setup"
+
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8500,6 +8643,9 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "PIN code needed"
 
+msgid "PLAY"
+msgstr ""
+
 msgid "PLP ID"
 msgstr ""
 
@@ -8509,6 +8655,9 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Mode"
+
+msgid "PLUGINS"
+msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -8558,6 +8707,10 @@ msgstr ""
 
 msgid "Parent directory"
 msgstr "Parent directory"
+
+#, fuzzy
+msgid "Parental Control Setup"
+msgstr "Parental control setup"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
@@ -9007,6 +9160,10 @@ msgstr "Plugin manager activity information"
 msgid "Plugin manager help"
 msgstr "Plugin manager help"
 
+#, fuzzy
+msgid "Plugins"
+msgstr "Plugin browser"
+
 msgid "Poland"
 msgstr ""
 
@@ -9074,6 +9231,10 @@ msgstr ""
 
 msgid "Power LED colour"
 msgstr ""
+
+#, fuzzy
+msgid "Power Timers"
+msgstr "Timer edit"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
@@ -9416,6 +9577,10 @@ msgstr ""
 msgid "REC symbol in use"
 msgstr ""
 
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF output"
+
 msgid "RF output"
 msgstr "RF output"
 
@@ -9511,12 +9676,6 @@ msgstr ""
 msgid "Receiver or driver does not support FCC"
 msgstr ""
 
-msgid "Receiver reads the stored EPG data every (hours)."
-msgstr ""
-
-msgid "Receiver stores the EPG data every (hours)."
-msgstr ""
-
 msgid "Reception settings"
 msgstr "Reception settings"
 
@@ -9529,6 +9688,14 @@ msgstr "Record time limited due to conflicting timer %s"
 
 msgid "Recording"
 msgstr "Recording"
+
+#, fuzzy
+msgid "Recording & Playback Setup"
+msgstr "Resuming playback"
+
+#, fuzzy
+msgid "Recording Paths"
+msgstr "Recording paths"
 
 msgid "Recording Setup"
 msgstr ""
@@ -9549,6 +9716,10 @@ msgid "Recordings"
 msgstr "Recordings"
 
 msgid "Recordings always have priority"
+msgstr "Recordings always have priority"
+
+#, fuzzy
+msgid "Recordings, Playback & Timeshift"
 msgstr "Recordings always have priority"
 
 #, fuzzy
@@ -9850,6 +10021,14 @@ msgstr "Restart"
 msgid "Restart GUI"
 msgstr "Restart GUI now?"
 
+#, fuzzy
+msgid "Restart GUI in debug mode"
+msgstr "Really restart now?"
+
+#, fuzzy
+msgid "Restart GUI in standard mode"
+msgstr "Restart GUI now?"
+
 msgid "Restart GUI now?"
 msgstr "Restart GUI now?"
 
@@ -10024,8 +10203,15 @@ msgid "S-Video"
 msgstr "S-Video"
 
 #, fuzzy
+msgid "SABnzbd"
+msgstr "Video setup"
+
+#, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video setup"
+
+msgid "SCAN"
+msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -10042,6 +10228,9 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
+
+msgid "SETUP"
+msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10079,6 +10268,9 @@ msgstr ""
 
 msgid "SSID:"
 msgstr "SSID:"
+
+msgid "STB ID: "
+msgstr ""
 
 #, fuzzy
 msgid "STMicroelectronics"
@@ -10171,6 +10363,10 @@ msgstr "Save"
 msgid "Save / Enter text and exit"
 msgstr ""
 
+#, fuzzy
+msgid "Save EPG Cache"
+msgstr "Reloading bouquets and services..."
+
 msgid "Save EPG data"
 msgstr ""
 
@@ -10218,6 +10414,9 @@ msgid "Save timeshift file in movie directory"
 msgstr ""
 
 msgid "Save timeshift only for current event"
+msgstr ""
+
+msgid "Save, Load & Delete EPG Cache"
 msgstr ""
 
 msgid "Saving EPG Cache..."
@@ -10788,6 +10987,10 @@ msgstr "Service"
 
 #, fuzzy
 msgid "Servers"
+msgstr "Services"
+
+#, fuzzy
+msgid "Service"
 msgstr "Services"
 
 msgid "Service & PIDs"
@@ -11445,6 +11648,10 @@ msgstr "No tags are set on these movies."
 msgid "Shuffle playlist"
 msgstr "Shuffle playlist"
 
+#, fuzzy
+msgid "Shutdown"
+msgstr "shut down"
+
 msgid "Shutdown when in Standby"
 msgstr ""
 
@@ -11530,6 +11737,10 @@ msgstr "Select backup location"
 msgid "Skin Setting"
 msgstr "Settings"
 
+#, fuzzy
+msgid "Skin Setup"
+msgstr "Settings"
+
 msgid "SkinSelector: Restart GUI"
 msgstr ""
 
@@ -11541,6 +11752,10 @@ msgstr "Skip empty services"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Skip internet connection check (disables automatic package installation)"
+
+#, fuzzy
+msgid "Sleep Timer"
+msgstr "Sleep timer"
 
 #, fuzzy
 msgid "Sleep delay"
@@ -11614,6 +11829,10 @@ msgid "Soft multiboot: "
 msgstr "Multisat"
 
 #, fuzzy
+msgid "Softcam"
+msgstr "Softcam type"
+
+#, fuzzy
 msgid "Softcam Setup"
 msgstr "Softcam type"
 
@@ -11623,6 +11842,10 @@ msgstr "Softcam type"
 
 msgid "Software"
 msgstr "Software"
+
+#, fuzzy
+msgid "Software Update"
+msgstr "Software update"
 
 msgid "Software management"
 msgstr "Software management"
@@ -11829,6 +12052,10 @@ msgstr ""
 
 msgid "Standby"
 msgstr "Standby"
+
+#, fuzzy
+msgid "Standby & Restart"
+msgstr "until standby/restart"
 
 #, fuzzy
 msgid "Standby LED"
@@ -12056,6 +12283,9 @@ msgstr "Stop using as startup service"
 msgid "Stopped"
 msgstr "Stopped"
 
+msgid "Storage"
+msgstr ""
+
 msgid "Store at index"
 msgstr "Store at index"
 
@@ -12079,6 +12309,10 @@ msgstr "Stream"
 msgid "Streaming"
 msgstr "Stream"
 
+#, fuzzy
+msgid "Streaming Clients"
+msgstr "Stream"
+
 msgid "Streaming clients info"
 msgstr ""
 
@@ -12100,6 +12334,10 @@ msgstr "Subtitles"
 
 msgid "Subtitle Quickmenu"
 msgstr ""
+
+#, fuzzy
+msgid "Subtitle Setup"
+msgstr "Subtitles"
 
 msgid "Subtitle alignment"
 msgstr "Subtitle alignment"
@@ -12437,6 +12675,10 @@ msgid "Teletext subtitle color"
 msgstr "Teletext subtitle color"
 
 #, fuzzy
+msgid "Telnet"
+msgstr "winter sport"
+
+#, fuzzy
 msgid "Telnet interface"
 msgstr "Select interface"
 
@@ -12628,11 +12870,12 @@ msgstr ""
 "The software management extension is not installed!\n"
 "Please install it."
 
-msgid "The speed of the fan when receiver is in normal use."
-msgstr ""
+#, fuzzy
+msgid "The speed of the fan when your %s %s is in normal use."
+msgstr "The user interface of your receiver is restarting"
 
 #, fuzzy
-msgid "The speed of the fan when receiver is in standby mode."
+msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr "The user interface of your receiver is restarting"
 
 #, fuzzy, python-format
@@ -12649,18 +12892,20 @@ msgstr "The timer file (timers.xml) is corrupt and could not be loaded."
 msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
-msgid "The user interface of your receiver is restarting"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr "The user interface of your receiver is restarting"
 
+#, fuzzy, python-format
 msgid ""
-"The user interface of your receiver is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 "The user interface of your receiver is restarting\n"
 "due to an error in mytest.py"
 
-#, fuzzy
-msgid "The user interface of your receiver is restarting in debug mode"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting in debug mode"
 msgstr "The user interface of your receiver is restarting"
 
 msgid ""
@@ -12737,7 +12982,7 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted."
+msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -13052,6 +13297,10 @@ msgstr "Timer type"
 msgid "Timer:"
 msgstr "Timer"
 
+#, fuzzy
+msgid "Timers"
+msgstr "Timer"
+
 msgid "Timeshift"
 msgstr "Timeshift"
 
@@ -13296,6 +13545,10 @@ msgstr "Tuner status"
 msgid "Tuner type"
 msgstr "Tuner type"
 
+#, fuzzy
+msgid "Tuners & Scanning"
+msgstr "Scanning..."
+
 msgid "Tunisia"
 msgstr ""
 
@@ -13400,9 +13653,10 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, fuzzy, python-format
 msgid ""
 "Unattended update in progress\n"
-"Please wait until your receiver reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Unattended update in progress\n"
@@ -13517,7 +13771,8 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] "Update completed, %d package was installed."
 msgstr[1] "Update completed, %d packages were installed."
 
-msgid "Update completed. Do you want to reboot your receiver?"
+#, fuzzy, python-format
+msgid "Update completed. Do you want to reboot your %s %s?"
 msgstr "Update completed. Do you want to reboot your receiver?"
 
 msgid "Update failed. Your receiver does not have a working internet connection."
@@ -13691,7 +13946,19 @@ msgid "User ID"
 msgstr "User defined"
 
 #, fuzzy
+msgid "User Interface"
+msgstr "User interface"
+
+#, fuzzy
+msgid "User Interface Setup"
+msgstr "User interface"
+
+#, fuzzy
 msgid "User Mode"
+msgstr "User defined"
+
+#, fuzzy
+msgid "User Mode Setup"
 msgstr "User defined"
 
 msgid "User defined"
@@ -13724,7 +13991,13 @@ msgstr "Using tuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 
+msgid "Utilities"
+msgstr ""
+
 msgid "Uzbekistan"
+msgstr ""
+
+msgid "VCR Scart"
 msgstr ""
 
 #, fuzzy
@@ -14315,21 +14588,6 @@ msgstr "When enabled, the lenght of each recording will be shown in the movielis
 msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr "When enabled, the lenght of each recording will be shown in the movielist (this might cause some additional loading time)."
 
-msgid "When enabled, the receiver will automatically use the audio track which you selected before."
-msgstr "When enabled, the receiver will automatically use the audio track which you selected before."
-
-msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
-msgstr "When enabled, the receiver will automatically use the subtitles which you selected before."
-
-msgid "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-msgstr "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-
-msgid "When enabled, the receiver will select an AC3 track (when available)."
-msgstr "When enabled, the receiver will select an AC3 track (when available)."
-
-msgid "When enabled, the receiver will select an AC3+ track (when available)."
-msgstr ""
-
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr ""
 
@@ -14347,6 +14605,26 @@ msgstr ""
 
 msgid "When enabled, you will see the available revision on github"
 msgstr ""
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the audio track which you selected before."
+msgstr "When enabled, the receiver will automatically use the audio track which you selected before."
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the subtitles which you selected before."
+msgstr "When enabled, the receiver will automatically use the subtitles which you selected before."
+
+#, fuzzy
+msgid "When enabled, your %s %s will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+msgstr "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3 track (when available)."
+msgstr "When enabled, the receiver will select an AC3 track (when available)."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3+ track (when available)."
+msgstr "When enabled, the receiver will select an AC3 track (when available)."
 
 #, fuzzy
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
@@ -14622,6 +14900,24 @@ msgstr ""
 msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr "Your receiver does not have an internet connection"
 
+#, fuzzy, python-format
+msgid "Your %s %s is rebooting"
+msgstr "Your receiver is rebooting"
+
+#, fuzzy, python-format
+msgid "Your %s %s is shutting down"
+msgstr "Your receiver is shutting down"
+
+msgid "Your %s %s reads the stored EPG data every (hours)."
+msgstr ""
+
+msgid "Your %s %s stores the EPG data every (hours)."
+msgstr ""
+
+#, python-format
+msgid "Your %s %s?"
+msgstr ""
+
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr ""
 
@@ -14631,10 +14927,10 @@ msgstr "Your collection exceeds the size of a single layer medium, you will need
 msgid "Your current collection will get lost!"
 msgstr "Your current collection will get lost!"
 
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
-"Your front processor will be updated\n"
-"Please wait until your receiver reboots\n"
+"Your frontprocessor will be updated\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Your frontprocessor will be updated\n"
@@ -14694,13 +14990,8 @@ msgstr ""
 "\n"
 "Please press OK to continue."
 
-msgid "Your receiver is rebooting"
-msgstr "Your receiver is rebooting"
-
-msgid "Your receiver is shutting down"
-msgstr "Your receiver is shutting down"
-
-msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
+#, fuzzy, python-format
+msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
 msgstr "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 
 #, fuzzy, python-format
@@ -14803,6 +15094,10 @@ msgstr "Timer log"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Nameserver setup"
+
+#, fuzzy
+msgid "ZeroTierVPN"
+msgstr "Timer log"
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16020,6 +16315,10 @@ msgstr "true"
 #, fuzzy
 msgid "type"
 msgstr "List type"
+
+#, fuzzy
+msgid "uShare"
+msgstr "Sharpness"
 
 msgid "uShare config is missing!"
 msgstr ""

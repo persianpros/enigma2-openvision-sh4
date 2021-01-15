@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 23:26+0330\n"
+"POT-Creation-Date: 2021-01-15 14:24+0330\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -1395,6 +1395,10 @@ msgstr "<Місце відео по дефолту>"
 msgid "<Last timer location>"
 msgstr "<Місце останнього таймера>"
 
+#, fuzzy
+msgid "<Press OK to perform action>"
+msgstr "Натисніть ОК для підтвердження або скасування."
+
 msgid "<unknown>"
 msgstr "<невідомий>"
 
@@ -1535,6 +1539,10 @@ msgstr ""
 "Таймер не може почати запис!\n"
 "Відключити поточний сервіс і спробувати ще раз?\n"
 
+#, fuzzy
+msgid "A/V Setup"
+msgstr "Налаштування"
+
 msgid "A/V settings"
 msgstr "Аудіо/Відео налаштування"
 
@@ -1554,6 +1562,9 @@ msgid "ADB variant: "
 msgstr ""
 
 msgid "ADBVFD"
+msgstr ""
+
+msgid "AFP"
 msgstr ""
 
 #, fuzzy
@@ -1887,12 +1898,6 @@ msgstr "Субтитри для людей з ослабленим слухом"
 msgid "Allow unsupported modes"
 msgstr "невідома"
 
-msgid "Allows receiver to read the stored EPG data regularly."
-msgstr ""
-
-msgid "Allows receiver to store the EPG data regularly."
-msgstr ""
-
 #, fuzzy
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Використовувати Тип пульта ДУ"
@@ -1912,6 +1917,12 @@ msgstr ""
 #, fuzzy
 msgid "Allows you to show images."
 msgstr "Ви хочете це зробити?"
+
+msgid "Allows your %s %s to read the stored EPG data regularly."
+msgstr ""
+
+msgid "Allows your %s %s to store the EPG data regularly."
+msgstr ""
 
 msgid "Alpha"
 msgstr "Прозорість"
@@ -1961,7 +1972,8 @@ msgstr "Завжди приховувати інформаційну панел�
 msgid "Always include ECM in recordings"
 msgstr "Завжди включайте ECM в записах"
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+#, fuzzy
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your %s %s. Default: off."
 msgstr "Завжди включайте ECM повідомлень в записах.Це скасовує окремі настройки таймера на глобальному рівні.Це дозволяє записам завжди бути розшифровані згодом ( іноді називають відсутнє декодування ), якщо ця функція підтримується вашим приймачем.За замовчуванням:викл."
 
 msgid "American Samoa"
@@ -2170,6 +2182,9 @@ msgstr ""
 msgid "Audio"
 msgstr "Аудіо"
 
+msgid "Audio & Video"
+msgstr ""
+
 msgid "Audio PID"
 msgstr "Аудіо PID"
 
@@ -2244,6 +2259,10 @@ msgstr "Авто Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Авто EXIF обертання орієнтація / гортати"
+
+#, fuzzy
+msgid "Auto Language Setup"
+msgstr "Авто вибір мови"
 
 #, fuzzy
 msgid "Auto Timers"
@@ -2466,6 +2485,10 @@ msgid "Belize"
 msgstr ""
 
 #, fuzzy
+msgid "Benchmark"
+msgstr "Інформація менеджера софта"
+
+#, fuzzy
 msgid "Benchmark information"
 msgstr "Інформація менеджера софта"
 
@@ -2670,6 +2693,9 @@ msgstr "Призначення CI"
 msgid "CI slot: "
 msgstr "CI слот: "
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2868,6 +2894,10 @@ msgstr "Зміна розміру кроку"
 msgid "Change timer"
 msgstr "Зміна таймера"
 
+#, fuzzy
+msgid "Change video port"
+msgstr "Зміна таймера"
+
 msgid "Channel"
 msgstr "Канал"
 
@@ -3011,10 +3041,10 @@ msgstr ""
 msgid "Choose the location for crash and debug logs folder."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when your %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose which tuner to configure."
@@ -3069,6 +3099,10 @@ msgstr ""
 #, fuzzy
 msgid "Client Mode"
 msgstr "Визначено користувачем"
+
+#, fuzzy
+msgid "Client Tuner Configuration"
+msgstr "Конфігурація тюнера"
 
 msgid "Client is streaming from this box!"
 msgstr ""
@@ -3539,7 +3573,8 @@ msgstr "Налаштування виду значків індикації ст
 msgid "Configure the video output mode (or resolution)."
 msgstr "Налаштування режиму відеовиходу (або роздільної здатності)."
 
-msgid "Configure the way in which the receiver changes channels."
+#, fuzzy
+msgid "Configure the way in which your %s %s changes channels."
 msgstr "Налаштуйте поведінку ресивера при перемиканні каналів."
 
 msgid "Configure the width of the TrueType font letters used for teletext."
@@ -3776,6 +3811,10 @@ msgid "Cron Manager"
 msgstr ""
 
 #, fuzzy
+msgid "Cron Timers"
+msgstr "Авто пам'ять"
+
+#, fuzzy
 msgid "Cron manager"
 msgstr "немає менеджера ресурсів"
 
@@ -3907,6 +3946,10 @@ msgid "DUAL LAYER DVD"
 msgstr "Двошаровий DVD"
 
 #, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
 msgid "DVB API version: "
 msgstr "DVB драйвера: "
 
@@ -3965,6 +4008,9 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
+
+msgid "DVD"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Запис DVD"
@@ -4154,6 +4200,10 @@ msgid "Debug to file"
 msgstr "Видалити файл"
 
 #, fuzzy
+msgid "Deep Standby"
+msgstr "Глубокий Режим очікування"
+
+#, fuzzy
 msgid "Deep Standby LED"
 msgstr "Глубокий Режим очікування"
 
@@ -4265,6 +4315,10 @@ msgid "Delete"
 msgstr "Видалити"
 
 #, fuzzy
+msgid "Delete EPG Cache"
+msgstr "Видалити таймер"
+
+#, fuzzy
 msgid "Delete Image"
 msgstr "Видалити таймер"
 
@@ -4373,6 +4427,10 @@ msgstr "Знайдено тюнер:"
 #, fuzzy
 msgid "Detected tuners:"
 msgstr "Знайдено тюнер:"
+
+#, fuzzy
+msgid "Device"
+msgstr "Сервіси"
 
 msgid "Device mounts"
 msgstr ""
@@ -4686,12 +4744,13 @@ msgstr "Ви хочете вибрати інший скін?"
 msgid "Do you want to update the package:\n"
 msgstr "Ви хочете оновити пакети:\n"
 
-#, python-format
-msgid "Do you want to update your receiver to %s?"
+#, fuzzy, python-format
+msgid "Do you want to update to %s"
 msgstr "Ви хочете оновити ваш ресивер від %s?"
 
-msgid "Do you want to update your receiver?"
-msgstr "Ви хочете оновити ваш ресивер?"
+#, fuzzy, python-format
+msgid "Do you want to update your %s %s?"
+msgstr "Ви хочете оновити ваш ресивер від %s?"
 
 #, fuzzy
 msgid "Documentary"
@@ -4808,6 +4867,10 @@ msgstr "EPG"
 
 msgid "EPG Cache Check"
 msgstr ""
+
+#, fuzzy
+msgid "EPG Setup"
+msgstr "Налаштування"
 
 #, fuzzy
 msgid "EPG filename"
@@ -5555,6 +5618,10 @@ msgid "FTA TV"
 msgstr ""
 
 #, fuzzy
+msgid "FTP"
+msgstr "FTA"
+
+#, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN з'єднання"
 
@@ -5568,6 +5635,10 @@ msgstr "Налаштування PiP"
 
 #, fuzzy
 msgid "Factory RC type: "
+msgstr "Заводські параметри"
+
+#, fuzzy
+msgid "Factory Reset"
 msgstr "Заводські параметри"
 
 #, fuzzy
@@ -5594,6 +5665,10 @@ msgstr "Помилка:"
 
 msgid "Falkland Islands (Malvinas)"
 msgstr ""
+
+#, fuzzy
+msgid "Fallback Remote Receiver Setup"
+msgstr "Запасний URL віддаленого приймача"
 
 msgid "Fallback Timer"
 msgstr ""
@@ -5707,6 +5782,9 @@ msgstr ""
 
 msgid "Filename"
 msgstr "Назва файлу"
+
+msgid "Filesystem Check"
+msgstr ""
 
 msgid "Final position at"
 msgstr "Підсумкова позиція"
@@ -5864,6 +5942,10 @@ msgstr "П'ятниця"
 
 msgid "From:"
 msgstr "Від:"
+
+#, fuzzy
+msgid "Front Panel Display"
+msgstr "Захист конфігурації"
 
 #, fuzzy
 msgid "Front panel display configuration"
@@ -6562,6 +6644,10 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Таймер неактивності"
 
+#, fuzzy
+msgid "Inadyn"
+msgstr "Налаштування відео"
+
 msgid "Inadyn config is missing!"
 msgstr ""
 
@@ -6611,6 +6697,10 @@ msgstr ""
 
 msgid "Indonesian"
 msgstr ""
+
+#, fuzzy
+msgid "Inetd Recovery"
+msgstr "Миттєвий запис"
 
 #, fuzzy
 msgid "Inetd recovery"
@@ -6670,6 +6760,10 @@ msgstr "Початкова якість сигналу"
 msgid "Initial signal quality:"
 msgstr "Початкова якість сигналу:"
 
+#, fuzzy
+msgid "Initialization"
+msgstr "Ініціалізація"
+
 msgid "Initialize"
 msgstr "Ініціалізація"
 
@@ -6686,6 +6780,10 @@ msgstr "Вхід"
 #, fuzzy
 msgid "Input "
 msgstr "Вхід"
+
+#, fuzzy
+msgid "Input Devices"
+msgstr "Налаштування пристрою введення"
 
 msgid "Input Stream ID"
 msgstr ""
@@ -6912,6 +7010,10 @@ msgid "Key Events"
 msgstr ""
 
 #, fuzzy
+msgid "Keyboard"
+msgstr "Розкладка клавіатури"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Налаштування клавіатури"
 
@@ -6952,6 +7054,10 @@ msgstr "LAN адаптер"
 
 msgid "LAN connection"
 msgstr "LAN з'єднання"
+
+#, fuzzy
+msgid "LCD Setup"
+msgstr "Налаштування"
 
 #, fuzzy
 msgid "LED brightness"
@@ -6999,6 +7105,10 @@ msgid "Label"
 msgstr ""
 
 msgid "Language"
+msgstr "Вибір мови"
+
+#, fuzzy
+msgid "Language Setup"
 msgstr "Вибір мови"
 
 msgid "Language selection"
@@ -7165,6 +7275,10 @@ msgstr ""
 msgid "Load"
 msgstr "Завантажити"
 
+#, fuzzy
+msgid "Load EPG Cache"
+msgstr "Оновлення фаворитів і сервісів...."
+
 msgid "Load only specific days in EPG"
 msgstr ""
 
@@ -7224,6 +7338,10 @@ msgstr "Яскравість"
 
 msgid "Logs"
 msgstr ""
+
+#, fuzzy
+msgid "Logs Setup"
+msgstr "Індивідуальні налаштування"
 
 #, fuzzy
 msgid "Logs folder location"
@@ -7307,6 +7425,10 @@ msgstr ""
 msgid "Madagascar"
 msgstr ""
 
+#, fuzzy
+msgid "Main Menu"
+msgstr "Головне меню"
+
 msgid "Main menu"
 msgstr "Головне меню"
 
@@ -7378,10 +7500,14 @@ msgstr ""
 msgid "Manufacturer"
 msgstr "Виробник"
 
+#, fuzzy, python-format
 msgid ""
 "Manufacturer reset in progress\n"
-"Please wait until enigma2 restarts"
+"Please wait until your %s %s restarts"
 msgstr ""
+"Автоматичне оновлення в процесі\n"
+"Дочекайтеся перезавантаження ресивера\n"
+"Це може тривати кілька хвилин"
 
 msgid "Margin after recording (minutes)"
 msgstr "Об'єднати після запису (у хвилинах)"
@@ -7506,6 +7632,10 @@ msgstr ""
 msgid "Middle - Lite image"
 msgstr "Видалити таймер"
 
+#, fuzzy
+msgid "MiniDLNA"
+msgstr "Налаштування PiP"
+
 msgid "MiniDLNA config is missing!"
 msgstr ""
 
@@ -7605,6 +7735,10 @@ msgid "Motor running timeout"
 msgstr "Швидкість обертання мотора"
 
 msgid "Mount"
+msgstr "Перегляд підключень"
+
+#, fuzzy
+msgid "Mounts"
 msgstr "Перегляд підключень"
 
 #, fuzzy
@@ -7789,6 +7923,10 @@ msgid "MultiType"
 msgstr "Мультимедіа"
 
 #, fuzzy
+msgid "Multiboot Image Selector"
+msgstr "Всі відразу супутники"
+
+#, fuzzy
 msgid "Multiboot image selector"
 msgstr "Всі відразу супутники"
 
@@ -7857,6 +7995,9 @@ msgstr "вимкнено"
 
 msgid "NEXT"
 msgstr "ДАЛІ"
+
+msgid "NFS"
+msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -8495,6 +8636,10 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
+#, fuzzy
+msgid "OpenVPN"
+msgstr "Відкрити налаштування тюнера"
+
 msgid "OpenVPN log"
 msgstr ""
 
@@ -8587,6 +8732,9 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "Необхідний PIN-код"
 
+msgid "PLAY"
+msgstr ""
+
 msgid "PLP ID"
 msgstr "PLP ID"
 
@@ -8596,6 +8744,9 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Режим"
+
+msgid "PLUGINS"
+msgstr ""
 
 msgid "PMT PID"
 msgstr "РМТ PID"
@@ -8645,6 +8796,10 @@ msgstr ""
 
 msgid "Parent directory"
 msgstr "Батьківський каталог"
+
+#, fuzzy
+msgid "Parental Control Setup"
+msgstr "Налаштування батьківського контролю"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
@@ -9095,6 +9250,10 @@ msgstr "Менеджер плагінів - інформація"
 msgid "Plugin manager help"
 msgstr "Менеджер плагінів - допомога"
 
+#, fuzzy
+msgid "Plugins"
+msgstr "Браузер Плагінів"
+
 msgid "Poland"
 msgstr ""
 
@@ -9164,6 +9323,10 @@ msgstr ""
 
 msgid "Power LED colour"
 msgstr ""
+
+#, fuzzy
+msgid "Power Timers"
+msgstr "Показати список сервісів"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
@@ -9508,6 +9671,10 @@ msgstr "Також в режимі очікування"
 msgid "REC symbol in use"
 msgstr ""
 
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF вихід"
+
 msgid "RF output"
 msgstr "RF вихід"
 
@@ -9604,12 +9771,6 @@ msgstr "Повернутися на Попередній сервіс"
 msgid "Receiver or driver does not support FCC"
 msgstr ""
 
-msgid "Receiver reads the stored EPG data every (hours)."
-msgstr ""
-
-msgid "Receiver stores the EPG data every (hours)."
-msgstr ""
-
 msgid "Reception settings"
 msgstr "Налаштування прийому"
 
@@ -9622,6 +9783,14 @@ msgstr "Час запису обмежений через конфлікт та�
 
 msgid "Recording"
 msgstr "Запис"
+
+#, fuzzy
+msgid "Recording & Playback Setup"
+msgstr "Налаштування запису"
+
+#, fuzzy
+msgid "Recording Paths"
+msgstr "Місце записів, таймшифта"
 
 msgid "Recording Setup"
 msgstr "Налаштування запису"
@@ -9642,6 +9811,10 @@ msgid "Recordings"
 msgstr "Записи"
 
 msgid "Recordings always have priority"
+msgstr "Записи завжди мають приорітет"
+
+#, fuzzy
+msgid "Recordings, Playback & Timeshift"
 msgstr "Записи завжди мають приорітет"
 
 #, fuzzy
@@ -9947,6 +10120,14 @@ msgstr "Перезавантаження"
 msgid "Restart GUI"
 msgstr "Рестарт GUI почати?"
 
+#, fuzzy
+msgid "Restart GUI in debug mode"
+msgstr "Дійсно рестарт зараз?"
+
+#, fuzzy
+msgid "Restart GUI in standard mode"
+msgstr "Рестарт GUI почати?"
+
 msgid "Restart GUI now?"
 msgstr "Рестарт GUI почати?"
 
@@ -10123,8 +10304,15 @@ msgid "S-Video"
 msgstr "S-Video"
 
 #, fuzzy
+msgid "SABnzbd"
+msgstr "Налаштування відео"
+
+#, fuzzy
 msgid "SABnzbd setup"
 msgstr "Налаштування відео"
+
+msgid "SCAN"
+msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr "SCPC оптимізований діапазон пошуку"
@@ -10141,6 +10329,9 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
+
+msgid "SETUP"
+msgstr ""
 
 msgid "SH4"
 msgstr ""
@@ -10180,6 +10371,9 @@ msgstr "SSA файл"
 
 msgid "SSID:"
 msgstr "SSID:"
+
+msgid "STB ID: "
+msgstr ""
 
 #, fuzzy
 msgid "STMicroelectronics"
@@ -10273,6 +10467,10 @@ msgstr "Зберегти"
 msgid "Save / Enter text and exit"
 msgstr "Збереження і вихід"
 
+#, fuzzy
+msgid "Save EPG Cache"
+msgstr "Зберегти зміни"
+
 msgid "Save EPG data"
 msgstr ""
 
@@ -10322,6 +10520,9 @@ msgstr "Зберегти файл таймшифту в каталог movie"
 
 msgid "Save timeshift only for current event"
 msgstr "Зберегти таймшифт тільки для поточної події"
+
+msgid "Save, Load & Delete EPG Cache"
+msgstr ""
 
 msgid "Saving EPG Cache..."
 msgstr ""
@@ -10899,6 +11100,10 @@ msgstr "Сервіс"
 
 #, fuzzy
 msgid "Servers"
+msgstr "Сервіси"
+
+#, fuzzy
+msgid "Service"
 msgstr "Сервіси"
 
 msgid "Service & PIDs"
@@ -11558,6 +11763,10 @@ msgstr "Немає тегів для цього відео."
 msgid "Shuffle playlist"
 msgstr "Перемішати плейлист"
 
+#, fuzzy
+msgid "Shutdown"
+msgstr "вимкнути"
+
 msgid "Shutdown when in Standby"
 msgstr "Виключення в режимі очікування"
 
@@ -11643,6 +11852,10 @@ msgstr "Виберіть дію"
 msgid "Skin Setting"
 msgstr "Налаштування"
 
+#, fuzzy
+msgid "Skin Setup"
+msgstr "Налаштування"
+
 msgid "SkinSelector: Restart GUI"
 msgstr ""
 
@@ -11654,6 +11867,10 @@ msgstr "Пропускати порожні сервіси"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Пропустити перевірку інтернет з'єднання (відключає автоматичну установку пакетів)"
+
+#, fuzzy
+msgid "Sleep Timer"
+msgstr "Таймер сну"
 
 #, fuzzy
 msgid "Sleep delay"
@@ -11727,6 +11944,10 @@ msgid "Soft multiboot: "
 msgstr "Декілька супутників"
 
 #, fuzzy
+msgid "Softcam"
+msgstr "Тип емулятора"
+
+#, fuzzy
 msgid "Softcam Setup"
 msgstr "Тип емулятора"
 
@@ -11736,6 +11957,10 @@ msgstr "Тип емулятора"
 
 msgid "Software"
 msgstr "Софт"
+
+#, fuzzy
+msgid "Software Update"
+msgstr "Оновлення софта"
 
 msgid "Software management"
 msgstr "Менеджер управіння софтом"
@@ -11943,6 +12168,10 @@ msgstr "Стандартний список"
 
 msgid "Standby"
 msgstr "Режим очікування"
+
+#, fuzzy
+msgid "Standby & Restart"
+msgstr "Режим очікування через "
 
 #, fuzzy
 msgid "Standby LED"
@@ -12172,6 +12401,9 @@ msgstr "Відключити від автостарту сервіс"
 msgid "Stopped"
 msgstr "Зупинено"
 
+msgid "Storage"
+msgstr ""
+
 msgid "Store at index"
 msgstr "Зберегти номер"
 
@@ -12195,6 +12427,10 @@ msgstr "Порт стрімінгу"
 msgid "Streaming"
 msgstr "Порт стрімінгу"
 
+#, fuzzy
+msgid "Streaming Clients"
+msgstr "Потокові клієнти інфо"
+
 msgid "Streaming clients info"
 msgstr "Потокові клієнти інфо"
 
@@ -12215,6 +12451,10 @@ msgid "Subtitle"
 msgstr "Субтитри"
 
 msgid "Subtitle Quickmenu"
+msgstr "Налаштування субтитрів"
+
+#, fuzzy
+msgid "Subtitle Setup"
 msgstr "Налаштування субтитрів"
 
 msgid "Subtitle alignment"
@@ -12551,6 +12791,10 @@ msgid "Teletext subtitle color"
 msgstr "Колір телетексту субтитрів"
 
 #, fuzzy
+msgid "Telnet"
+msgstr "зимовий спорт"
+
+#, fuzzy
 msgid "Telnet interface"
 msgstr "Виберіть інтерфейс"
 
@@ -12763,11 +13007,12 @@ msgstr ""
 "Плагін Witeless LAN не встановлений!\n"
 "Будь ласка, встановіть його."
 
-msgid "The speed of the fan when receiver is in normal use."
-msgstr ""
+#, fuzzy
+msgid "The speed of the fan when your %s %s is in normal use."
+msgstr "Вкажіть час закінчення, щоб ігнорувати таймер виключення, коли ресивер знаходиться в режимі очікування"
 
 #, fuzzy
-msgid "The speed of the fan when receiver is in standby mode."
+msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr "Вкажіть час закінчення, щоб ігнорувати таймер виключення, коли ресивер знаходиться в режимі очікування"
 
 #, fuzzy, python-format
@@ -12784,18 +13029,20 @@ msgstr "Файл таймерів (timers.xml) пошкоджений і не м
 msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr "Інтерфейс приймача перезавантажиться, щоб вибрати обраний скін"
 
-msgid "The user interface of your receiver is restarting"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr "Рестарт GUI ресивера"
 
+#, fuzzy, python-format
 msgid ""
-"The user interface of your receiver is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 "Рестарт GUI ресивера\n"
 "через помилку в mytest.py"
 
-#, fuzzy
-msgid "The user interface of your receiver is restarting in debug mode"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting in debug mode"
 msgstr "Рестарт GUI ресивера"
 
 msgid ""
@@ -12872,7 +13119,7 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted."
+msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -13215,6 +13462,10 @@ msgstr "Тип таймера"
 msgid "Timer:"
 msgstr "Таймер"
 
+#, fuzzy
+msgid "Timers"
+msgstr "Таймер"
+
 msgid "Timeshift"
 msgstr "Таймшифт"
 
@@ -13459,6 +13710,10 @@ msgstr "Статус тюнера %s"
 msgid "Tuner type"
 msgstr "Тюнер"
 
+#, fuzzy
+msgid "Tuners & Scanning"
+msgstr "Сканування..."
+
 msgid "Tunisia"
 msgstr ""
 
@@ -13566,9 +13821,10 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, fuzzy, python-format
 msgid ""
 "Unattended update in progress\n"
-"Please wait until your receiver reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Автоматичне оновлення в процесі\n"
@@ -13688,7 +13944,8 @@ msgstr[0] "Оновлення закінчено, %d пакет встановл
 msgstr[1] "Оновлення закінчено, %d пакета встановлено."
 msgstr[2] "Оновлення закінчено, %d пакетів встановлено."
 
-msgid "Update completed. Do you want to reboot your receiver?"
+#, fuzzy, python-format
+msgid "Update completed. Do you want to reboot your %s %s?"
 msgstr "Оновлення закінчено. Хочете перезавантажити ресивер?"
 
 msgid "Update failed. Your receiver does not have a working internet connection."
@@ -13863,7 +14120,19 @@ msgid "User ID"
 msgstr "Визначено користувачем"
 
 #, fuzzy
+msgid "User Interface"
+msgstr "Розширене налаштування"
+
+#, fuzzy
+msgid "User Interface Setup"
+msgstr "Розширене налаштування"
+
+#, fuzzy
 msgid "User Mode"
+msgstr "Визначено користувачем"
+
+#, fuzzy
+msgid "User Mode Setup"
 msgstr "Визначено користувачем"
 
 msgid "User defined"
@@ -13896,7 +14165,14 @@ msgstr "Використовується тюнер %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Зазвичай коли мова субтитрів збігається з мовою Аудіо, субтитри НЕ показуються. Цей вибір дозволяє показувати субтитри, коли вони збігаються."
 
+#, fuzzy
+msgid "Utilities"
+msgstr "Можливості:"
+
 msgid "Uzbekistan"
+msgstr ""
+
+msgid "VCR Scart"
 msgstr ""
 
 #, fuzzy
@@ -14503,21 +14779,6 @@ msgstr "Показати довжину записів в списку філь�
 msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr "Показати довжину записів в списку фільмів (може знадобитися додатковий час для завантаження списку)"
 
-msgid "When enabled, the receiver will automatically use the audio track which you selected before."
-msgstr "Якщо увімкнено, ресивер буде використовувати субтитри, які були обрані раніше"
-
-msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
-msgstr "Якщо увімкнено, ресивер буде використовувати субтитри, які були обрані раніше"
-
-msgid "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-msgstr "При включенні, ресивер більше не буде стежити за можливими змінами на транспондері. Не змінюйте цю опцію, якщо не знаєте, що робите."
-
-msgid "When enabled, the receiver will select an AC3 track (when available)."
-msgstr "Якщо встановлено значення 'так', то ресивер буде використовувати AC3 звук (якщо доступно)."
-
-msgid "When enabled, the receiver will select an AC3+ track (when available)."
-msgstr "Якщо ця функція включена , приймач буде вибирати AC3+ доріжку ( якщо є )."
-
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr ""
 "Коли ввімкнено цей параметр, то він має більшу перевагу, ніж\n"
@@ -14539,6 +14800,26 @@ msgstr ""
 
 msgid "When enabled, you will see the available revision on github"
 msgstr ""
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the audio track which you selected before."
+msgstr "Якщо увімкнено, ресивер буде використовувати субтитри, які були обрані раніше"
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the subtitles which you selected before."
+msgstr "Якщо увімкнено, ресивер буде використовувати субтитри, які були обрані раніше"
+
+#, fuzzy
+msgid "When enabled, your %s %s will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+msgstr "При включенні, ресивер більше не буде стежити за можливими змінами на транспондері. Не змінюйте цю опцію, якщо не знаєте, що робите."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3 track (when available)."
+msgstr "Якщо встановлено значення 'так', то ресивер буде використовувати AC3 звук (якщо доступно)."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3+ track (when available)."
+msgstr "Якщо ця функція включена , приймач буде вибирати AC3+ доріжку ( якщо є )."
 
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Якщо це включено, Ваш ресивер визначатиме активність на вході VCR SCART."
@@ -14827,6 +15108,24 @@ msgstr ""
 msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr "Оновлення не вдалося. У вашому ресивері немає працюючого інтернет-з'єднання."
 
+#, fuzzy, python-format
+msgid "Your %s %s is rebooting"
+msgstr "Перезавантаження ресивера"
+
+#, fuzzy, python-format
+msgid "Your %s %s is shutting down"
+msgstr "Ваш ресивер переходить в глибокий режим Очікування"
+
+msgid "Your %s %s reads the stored EPG data every (hours)."
+msgstr ""
+
+msgid "Your %s %s stores the EPG data every (hours)."
+msgstr ""
+
+#, python-format
+msgid "Your %s %s?"
+msgstr ""
+
 #, fuzzy
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr "Ваш PIN-код зараз 0000. Це код за замовчуванням і відключення батьківського\n"
@@ -14837,10 +15136,10 @@ msgstr "Ваша колекція перевищує розмір одношар
 msgid "Your current collection will get lost!"
 msgstr "Ваша поточна колекція буде загублена!"
 
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
-"Your front processor will be updated\n"
-"Please wait until your receiver reboots\n"
+"Your frontprocessor will be updated\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Ваш фронтпроцессор оновлюється\n"
@@ -14901,13 +15200,8 @@ msgstr ""
 "\n"
 "Натисніть ОК для продовження."
 
-msgid "Your receiver is rebooting"
-msgstr "Перезавантаження ресивера"
-
-msgid "Your receiver is shutting down"
-msgstr "Ваш ресивер переходить в глибокий режим Очікування"
-
-msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
+#, fuzzy, python-format
+msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
 msgstr "Зараз ваш ресивер може бути непридатним для використання. Зверніться доінструкції для отримання додаткової допомоги до його перезавантаження."
 
 #, fuzzy, python-format
@@ -15011,6 +15305,10 @@ msgstr "Лог таймера"
 #, fuzzy
 msgid "ZeroTier setup"
 msgstr "Налаштування DNS"
+
+#, fuzzy
+msgid "ZeroTierVPN"
+msgstr "Лог таймера"
 
 msgid "Zimbabwe"
 msgstr ""
@@ -16235,6 +16533,10 @@ msgstr "так"
 #, fuzzy
 msgid "type"
 msgstr "DVB тип"
+
+#, fuzzy
+msgid "uShare"
+msgstr "Різкість"
 
 msgid "uShare config is missing!"
 msgstr ""
