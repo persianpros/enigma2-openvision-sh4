@@ -180,7 +180,7 @@ class ConfigElement(object):
 		pass
 
 	def onDeselect(self, session):
-		if not self.last_value == self.value:
+		if self.last_value != self.value:
 			self.changedFinal()
 			self.last_value = self.value
 
@@ -844,7 +844,7 @@ class ConfigMacText(ConfigElement, NumericalTextInput):
 		if self.help_window:
 			session.deleteDialog(self.help_window)
 			self.help_window = None
-		if not self.last_value == self.value:
+		if self.last_value != self.value:
 			self.changedFinal()
 			self.last_value = self.value
 
@@ -1831,7 +1831,7 @@ class ConfigText(ConfigElement, NumericalTextInput):
 		if self.help_window:
 			session.deleteDialog(self.help_window)
 			self.help_window = None
-		if not self.last_value == self.value:
+		if self.last_value != self.value:
 			self.changedFinal()
 			self.last_value = self.value
 
@@ -1940,7 +1940,7 @@ class ConfigNumber(ConfigText):
 	def onDeselect(self, session):
 		self.marked_pos = 0
 		self.offset = 0
-		if not self.last_value == self.value:
+		if self.last_value != self.value:
 			self.changedFinal()
 			self.last_value = self.value
 
