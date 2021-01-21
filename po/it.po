@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 14:24+0330\n"
+"POT-Creation-Date: 2021-01-20 16:52+0330\n"
 "PO-Revision-Date: 2020-05-16 18:46+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1112,9 +1112,9 @@ msgstr ""
 "Premere ok per selezionare il multiboot\n"
 "Premi Exit per uscire"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s  (Default: %s)"
-msgstr "Predefinito"
+msgstr ""
 
 #, python-format
 msgid "%s %s free disk space"
@@ -1221,8 +1221,9 @@ msgstr "(mostrare il menu audio opzionale del DVD)"
 msgid "(unknown)"
 msgstr "(sconosciuto)"
 
+#, fuzzy
 msgid "* = Restart Required"
-msgstr ""
+msgstr "Non Richiesto"
 
 msgid "* Only available if more than one interface is active."
 msgstr "* Disponibile solo se più di un'interfaccia è attiva."
@@ -1340,7 +1341,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Ripristinare i valori"
+msgstr "Predefinito"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1363,7 +1364,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Ripristinare i valori"
+msgstr "Predefinito"
 
 msgid "6"
 msgstr "6"
@@ -2142,7 +2143,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Rapporto d'aspetto"
+msgstr "Elenco dei sottocanali..."
 
 msgid "Aspect ratio"
 msgstr "Rapporto d'aspetto"
@@ -2175,8 +2176,9 @@ msgstr ""
 msgid "Audio"
 msgstr "Audio"
 
+#, fuzzy
 msgid "Audio & Video"
-msgstr ""
+msgstr "Audio / Video"
 
 msgid "Audio PID"
 msgstr "PID audio"
@@ -2292,7 +2294,7 @@ msgstr "Nessuna sospensione"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Sintonizzatore non disponibile."
+msgstr "Non disponibile"
 
 msgid "Autoinstalling Completed"
 msgstr "Installazione completata"
@@ -2496,6 +2498,10 @@ msgstr "Schermo nero"
 
 msgid "Black screen till locked"
 msgstr "Schermo nero fino al segnale"
+
+#, fuzzy
+msgid "Blacklist"
+msgstr "Lista vietati"
 
 msgid "Blinking REC"
 msgstr ""
@@ -3590,10 +3596,6 @@ msgstr "Impostare il tipo preferenziale di sintonizzatore da utilizzarsi quando 
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr "Impostare il sintonizzatore preferenziale da utilizzarsi quando più di un sintonizzatore risultasse disponibile. L'opzione \"Automatico\" assegnerà la priorità al sintonizzatore sul quale risulta configurato il minor numero di canali/satelliti."
 
-#, fuzzy
-msgid "Configure your NTP server."
-msgstr "Configurare i server dei nomi (DNS)"
-
 msgid "Configure your internal LAN"
 msgstr "Configurare la rete locale (cablata)."
 
@@ -3770,7 +3772,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Cron Timers"
-msgstr "Correzione automatica colore incarnato"
+msgstr "Timer"
 
 #, fuzzy
 msgid "Cron manager"
@@ -4379,7 +4381,7 @@ msgstr "Sintonizzatori rilevati:"
 
 #, fuzzy
 msgid "Device"
-msgstr "Canali"
+msgstr "Informazioni sul canale"
 
 msgid "Device mounts"
 msgstr ""
@@ -4508,6 +4510,9 @@ msgstr "Display"
 
 msgid "Display message before playing next movie"
 msgstr "Visualizzare un messaggio prima di riprodurre il video successivo"
+
+msgid "Display oscam information."
+msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
@@ -4711,6 +4716,10 @@ msgstr "Dominica"
 msgid "Dominican Republic"
 msgstr "Repubblica Dominicana"
 
+#, fuzzy
+msgid "Don't restart"
+msgstr "Gestione stato"
+
 msgid "Don't save and stop timeshift"
 msgstr "Non salvare ed arrestare il timeshift"
 
@@ -4730,9 +4739,8 @@ msgstr "Non cambiare canale e disabilitare il timer"
 msgid "Don't zap and remove timer"
 msgstr "Non cambiare canale ed eliminare il timer"
 
-#, fuzzy
 msgid "Donate: "
-msgstr "Bitrate:"
+msgstr ""
 
 msgid "Done"
 msgstr "Fatto"
@@ -4969,9 +4977,8 @@ msgstr "Abilitare il tasto OK per la selezione del canale"
 msgid "Enable OpenTV EPG"
 msgstr "Abilitare OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Abilitato"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Abilitare l'EPG ViaSat"
@@ -5595,14 +5602,6 @@ msgstr "Ripristino configurazioni di fabbrica"
 msgid "Factory release: "
 msgstr "Ripristino configurazioni di fabbrica"
 
-msgid ""
-"Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
-"\n"
-"Do you really want to proceed?"
-msgstr ""
-"Il ripristino della configurazione di fabbrica riporterà il ricevitore alla sua configurazione predefinita. Tutte le impostazioni utente, comprese la configurazione dei sintonizzatori, i bouquet, i canali ed i plugin verranno eliminate. Le registrazioni e gli altri file archiviati sul disco rigido rimarranno intatti. Al termine il sistema si riavvierà automaticamente!\n"
-"Si desidera veramente proseguire?"
-
 msgid "Fade the infobar when hiding"
 msgstr ""
 
@@ -5620,7 +5619,7 @@ msgstr "Isole Falkland (Malvinas)"
 
 #, fuzzy
 msgid "Fallback Remote Receiver Setup"
-msgstr "Ricevitore remoto Fallback"
+msgstr "Impostazioni del ricevitore remoto di fallback"
 
 msgid "Fallback Timer"
 msgstr "Timer del ricevitore remoto di fallback"
@@ -5727,8 +5726,9 @@ msgstr ""
 msgid "Filename"
 msgstr "Nome file"
 
+#, fuzzy
 msgid "Filesystem Check"
-msgstr ""
+msgstr "Verifica del filesystem"
 
 msgid "Final position at"
 msgstr "Posizione finale a"
@@ -5888,13 +5888,12 @@ msgstr "Venerdì"
 msgid "From:"
 msgstr "Da:"
 
-#, fuzzy
 msgid "Front Panel Display"
-msgstr "Schermata di accensione"
+msgstr ""
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Schermata di accensione"
+msgstr "Impostazioni dell'elenco dei video"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -5905,6 +5904,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Front processor version: %s"
 msgstr "Versione del frontprocessor: %s"
+
+#, fuzzy
+msgid "Full factory reset"
+msgstr "Ripristino configurazioni di fabbrica"
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 msgid "Full screen"
@@ -6371,9 +6374,6 @@ msgstr "Tasto per cambio canale"
 msgid "Hotplug"
 msgstr ""
 
-msgid "Hour"
-msgstr ""
-
 msgid "Hourly"
 msgstr ""
 
@@ -6543,6 +6543,9 @@ msgstr ""
 msgid "Image: "
 msgstr "Immagine: "
 
+msgid "Immediately restart selected devices."
+msgstr ""
+
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Importare i canali e/o l'EPG dall'URL del ricevitore remoto anche quando il ricevitore sta uscendo dalla sospensione"
 
@@ -6578,9 +6581,8 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Timer di spegnimento per inutilizzo"
 
-#, fuzzy
 msgid "Inadyn"
-msgstr "Configurazione guidata"
+msgstr ""
 
 msgid "Inadyn config is missing!"
 msgstr ""
@@ -6631,9 +6633,8 @@ msgstr "Indonesia"
 msgid "Indonesian"
 msgstr "Indonesiano"
 
-#, fuzzy
 msgid "Inetd Recovery"
-msgstr "Registrazione immediata"
+msgstr ""
 
 #, fuzzy
 msgid "Inetd recovery"
@@ -6693,9 +6694,8 @@ msgstr "Qualità iniziale del segnale"
 msgid "Initial signal quality:"
 msgstr "Qualità iniziale del segnale:"
 
-#, fuzzy
 msgid "Initialization"
-msgstr "Inizializzare"
+msgstr "Inizializzazione"
 
 msgid "Initialize"
 msgstr "Inizializzare"
@@ -6715,7 +6715,7 @@ msgstr "Ingresso "
 
 #, fuzzy
 msgid "Input Devices"
-msgstr "Impostazioni della periferica di ingresso"
+msgstr "Periferiche di ingresso"
 
 msgid "Input Stream ID"
 msgstr "Inserire l'ID del flusso"
@@ -6786,6 +6786,9 @@ msgstr "Solo disco rigido interno"
 #, fuzzy
 msgid "Internet"
 msgstr "Interno"
+
+msgid "Internet (ntp)"
+msgstr ""
 
 msgid "Interval between keys when repeating:"
 msgstr "Intervallo tra i tasti durante la ripetizione:"
@@ -6935,9 +6938,8 @@ msgstr "Versione Kernel: "
 msgid "Key Events"
 msgstr "Eventi chiave"
 
-#, fuzzy
 msgid "Keyboard"
-msgstr "Formato della tastiera"
+msgstr "Tastiera"
 
 msgid "Keyboard data entry"
 msgstr "Inserimento dati da tastiera"
@@ -6991,9 +6993,8 @@ msgstr "Luminosità"
 msgid "LED configuration"
 msgstr "Impostazioni"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normale"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7012,9 +7013,8 @@ msgstr "Impostazioni dell'elenco dei video"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Impostazioni dell'elenco dei video"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7481,7 +7481,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Aggiungere un canale"
+msgstr "Lettore multimediale"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7547,9 +7547,8 @@ msgstr "Micronesia (Stati Federati di)"
 msgid "Middle - Lite image"
 msgstr "Eliminare l'immagine"
 
-#, fuzzy
 msgid "MiniDLNA"
-msgstr "Configurazione del PIP"
+msgstr ""
 
 msgid "MiniDLNA config is missing!"
 msgstr ""
@@ -7671,7 +7670,7 @@ msgstr "Spostare il PIP"
 
 #, fuzzy
 msgid "Move down a line"
-msgstr "Andare all'ultima voce"
+msgstr "Scorrere l'elenco in giù"
 
 #, fuzzy
 msgid "Move down a screen"
@@ -7726,7 +7725,7 @@ msgstr "Spostare il cursore di testo del buffer sull'ultimo carattere"
 
 #, fuzzy
 msgid "Move to first line / screen"
-msgstr "Andare alla prima voce"
+msgstr "Andare alla voce successiva"
 
 #, fuzzy
 msgid "Move to last line / screen"
@@ -7753,11 +7752,10 @@ msgstr "Andare alla voce precedente"
 
 #, fuzzy
 msgid "Move up a line"
-msgstr "Andare alla prima voce"
+msgstr "Spostato all'indice della posizione"
 
-#, fuzzy
 msgid "Move up a screen"
-msgstr "Andare alla voce precedente"
+msgstr ""
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7821,9 +7819,8 @@ msgstr "Mozambico"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multicanale PCM"
+msgstr "Downmix audio multicanale"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7928,12 +7925,8 @@ msgstr "NO"
 msgid "NOW"
 msgstr "IN ONDA"
 
-msgid "NTP"
+msgid "NTP Hostname"
 msgstr ""
-
-#, fuzzy
-msgid "NTP server"
-msgstr "Server dei nomi (DNS)"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -8037,6 +8030,10 @@ msgstr "Configurazione guidata di rete"
 
 msgid "Network:"
 msgstr "Rete:"
+
+#, fuzzy
+msgid "Never"
+msgstr "Mai"
 
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Se questa impostazione è attivata, durante le registrazioni il contenuto non viene mai decodificato e le impostazioni dei singoli timer sono ignorate dappertutto. Le registrazioni vengono salvate in formato criptato e devono essere decodificate a posteriori (operazione talvolta denominata 'decodifica offline'). L'impostazione predefinita è 'No'."
@@ -8447,9 +8444,6 @@ msgstr "Alla fine del video (come menu)"
 msgid "On valid ONIDs, ignore frequency sub network part"
 msgstr "In caso di ONID validi, ignorare la parte di frequenza della sottorete."
 
-msgid "Once per day"
-msgstr ""
-
 msgid "One"
 msgstr "Uno"
 
@@ -8543,9 +8537,8 @@ msgstr ""
 msgid "OpenDNS Home"
 msgstr ""
 
-#, fuzzy
 msgid "OpenVPN"
-msgstr "Accedere alla configurazione del sintonizzatore "
+msgstr ""
 
 msgid "OpenVPN log"
 msgstr ""
@@ -8558,13 +8551,11 @@ msgstr "Accedere alla configurazione del sintonizzatore "
 msgid "OpenVision"
 msgstr "Estensioni"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Accendere il LED durante lo standby."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Attivare il LED di accensione durante la sospensione."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
@@ -8701,14 +8692,15 @@ msgid "Parent directory"
 msgstr "Cartella superiore"
 
 #, fuzzy
+msgid "Parental Control"
+msgstr "Controllo genitori"
+
+#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Configurazione del Controllo genitori"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
-
-msgid "Parental control"
-msgstr "Controllo genitori"
 
 msgid "Parental control services editor"
 msgstr "Editor dei canali del Controllo genitori"
@@ -9117,13 +9109,8 @@ msgstr "Verifica della rete in corso. Attendere..."
 msgid "Please wait while your network is restarting..."
 msgstr "Riavvio della rete in corso. Attendere..."
 
-msgid "Please wait, restarting cardserver."
-msgstr "Riavvio del cardserver. Attendere..."
-
-msgid "Please wait, restarting softcam and cardserver."
-msgstr "Riavvio della SoftCam e del cardserver. Attendere..."
-
-msgid "Please wait, restarting softcam."
+#, fuzzy, python-format
+msgid "Please wait, restarting %s."
 msgstr "Riavvio della SoftCam. Attendere..."
 
 msgid "Please wait..."
@@ -9144,9 +9131,8 @@ msgstr "Informazioni sull'attività del gestore plugin..."
 msgid "Plugin manager help"
 msgstr "Aiuto sul gestore plugin..."
 
-#, fuzzy
 msgid "Plugins"
-msgstr "Elenco plugin"
+msgstr "Plugin"
 
 msgid "Poland"
 msgstr "Polonia"
@@ -9207,17 +9193,17 @@ msgstr "Registro della configurazione del motore"
 
 #, fuzzy
 msgid "Power"
-msgstr "Menu Accensione"
+msgstr "Accendere LED"
 
 msgid "Power LED"
-msgstr ""
-
-msgid "Power LED colour"
-msgstr ""
+msgstr "Accendere LED"
 
 #, fuzzy
+msgid "Power LED colour"
+msgstr "Accendere LED"
+
 msgid "Power Timers"
-msgstr "Mostrare la lista canali"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Gestione dell'alimentazione. Consultare il manuale del ricevitore per ulteriori informazioni."
@@ -9715,17 +9701,16 @@ msgstr "Impostazioni di registrazione"
 msgid "Red"
 msgstr "Rosso"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Percorso delle registrazioni immediate"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Accendere il LED durante lo standby."
+msgstr "Spegnimento"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Attivare il LED di accensione durante la sospensione."
+msgstr "Mettere la TV in sospensione"
 
 msgid "Red button..."
 msgstr "Tasto Rosso..."
@@ -9818,11 +9803,46 @@ msgstr "Eliminare un server dei nomi (DNS)"
 msgid "Remove all alternatives"
 msgstr "Eliminare tutte le alternative"
 
+msgid "Remove all bouquet/tuning data"
+msgstr ""
+
+#, fuzzy
+msgid "Remove all keymap data"
+msgstr "Eliminare un marcatore"
+
 msgid "Remove all logfiles"
 msgstr "Eliminare tutti i file di registro"
 
+#, fuzzy
+msgid "Remove all network data"
+msgstr "Eliminare tutti i nuovi marcatori trovati"
+
 msgid "Remove all new found flags"
 msgstr "Eliminare tutti i nuovi marcatori trovati"
+
+#, fuzzy
+msgid "Remove all other data"
+msgstr "Eliminare tutte le alternative"
+
+#, fuzzy
+msgid "Remove all plugin setting data"
+msgstr "Eliminare plugin"
+
+#, fuzzy
+msgid "Remove all resume point data"
+msgstr "Eliminare tutti i nuovi marcatori trovati"
+
+#, fuzzy
+msgid "Remove all settings data"
+msgstr "Salvare le impostazioni e i dati EPG"
+
+#, fuzzy
+msgid "Remove all skin data"
+msgstr "Eliminare tutti i nuovi marcatori trovati"
+
+#, fuzzy
+msgid "Remove all timer data"
+msgstr "Eliminare tutte le alternative"
 
 msgid "Remove bookmark"
 msgstr "Eliminare un percorso preferito"
@@ -9961,9 +9981,8 @@ msgstr "Rilettura della tabella delle partizioni in corso..."
 msgid "Reseller ID: "
 msgstr "ID Utente"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Rinominare"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Riservato"
@@ -9987,6 +10006,9 @@ msgstr "Ripristinare il codice PIN permanente"
 msgid "Reset playback position"
 msgstr "Ripristinare la posizione di riproduzione"
 
+msgid "Reset the selected devices when the GREEN button is pressed."
+msgstr ""
+
 msgid "Reset video enhancement settings to system defaults?"
 msgstr "Ripristinare le impostazioni del miglioramento immagine ai valori predefiniti?"
 
@@ -10008,11 +10030,11 @@ msgstr "Riavviare l'interfaccia utente?"
 
 #, fuzzy
 msgid "Restart GUI in debug mode"
-msgstr "Riavviare in modalità debug?"
+msgstr "Riavvia Enigma2 in modalità debug"
 
 #, fuzzy
 msgid "Restart GUI in standard mode"
-msgstr "Riavviare l'interfaccia utente?"
+msgstr "Riavvia Enigma2 in modalità standard"
 
 msgid "Restart GUI now?"
 msgstr "Riavviare l'interfaccia utente?"
@@ -10183,9 +10205,8 @@ msgstr "Ruanda"
 msgid "S-Video"
 msgstr "S-Video"
 
-#, fuzzy
 msgid "SABnzbd"
-msgstr "Configurazione guidata"
+msgstr ""
 
 #, fuzzy
 msgid "SABnzbd setup"
@@ -10304,7 +10325,7 @@ msgstr "Sab"
 
 #, fuzzy
 msgid "SatPI setup"
-msgstr "Impostazioni SoftCam"
+msgstr "Configurazione del PIP"
 
 msgid "Satellite"
 msgstr "Satellite"
@@ -10344,7 +10365,7 @@ msgstr "Inserire / Salvare e uscire"
 
 #, fuzzy
 msgid "Save EPG Cache"
-msgstr "Percorso del file EPG"
+msgstr "Salvare le modifiche"
 
 #, fuzzy
 msgid "Save EPG data"
@@ -10587,6 +10608,36 @@ msgstr "Selezionare \"A\" o \"B\" se l'impianto lo richiede, altrimenti selezion
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Selezionare 'FBC SCR' sè questo sintonizzatore utilizza un dispositivo Unicable. Per tutte le altre configurazioni selezionare 'FBC automatico'."
 
+msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
+msgstr ""
+
+msgid "Select 'Yes' to remove all main settings configuration data. Selecting this option will set all Enigma2 settings back to their default values.  This will also cause Enigma2 to run the Welcome Wizard on restart."
+msgstr ""
+
+msgid "Select 'Yes' to remove all media player resume data. Selecting this option will remove the data used to allow playback of media files to resume from the position where playback was last stopped. Playback position of recordings is not affected."
+msgstr ""
+
+msgid "Select 'Yes' to remove all network data. Selecting this option will remove all network data including automounts and network connection data including connection accounts and passwords. This could cause some Enigma2 functions to fail if they are configured to use these network resources."
+msgstr ""
+
+msgid "Select 'Yes' to remove all other files and directories not covered by the options above."
+msgstr ""
+
+msgid "Select 'Yes' to remove all plugin configuration data. Selecting this option will remove all plugin configuration data that is stored in the Enigma2 configuration folder. This will cause all affected plugins to return to their default settings. This could cause some plugins to not function until configured."
+msgstr ""
+
+msgid "Select 'Yes' to remove all settings, tuning data, timers, resume pointers etc. Selecting this option will restore the configuration to the initial settings before any configuration settings were applied. This is the most reliable form of Factory Reset."
+msgstr ""
+
+msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and power timers."
+msgstr ""
+
+msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove all tuning and bouquet data and will make timers non functional until the receiver is retuned."
+msgstr ""
+
+msgid "Select 'Yes' to remove all user customisations of skin data. Selecting this option will remove all user based skin customisations. All affected skins will return to their standard settings. This will also clear any customied boot logos and backdrops."
+msgstr ""
+
 msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr "Selezionare 'Sì' per configurare il sintonizzatore ATSC"
 
@@ -10635,9 +10686,6 @@ msgstr "Selezionare \"Sì\" per inviare il comando DiSEqC solo quando si passa d
 msgid "Select CAId"
 msgstr "Selezionare il CAId"
 
-msgid "Select Card Server"
-msgstr "Selezionare il cardserver"
-
 msgid "Select Channel"
 msgstr "Selezionare un canale"
 
@@ -10647,17 +10695,21 @@ msgstr "Selezionare \"DiSEqC veloce\" se l'impianto lo supporta. Nel dubbio sele
 msgid "Select HDD"
 msgstr "Selezionare il disco rigido"
 
-msgid "Select Softcam"
-msgstr "Selezionare la SoftCam"
-
 msgid "Select a bouquet"
 msgstr "Selezionare un bouquet"
+
+msgid "Select a cardserver from the available list."
+msgstr ""
 
 msgid "Select a movie"
 msgstr "Selezionare un video"
 
 msgid "Select a network adapter"
 msgstr "Selezionare una scheda di rete"
+
+#, fuzzy
+msgid "Select a softcam from the available list."
+msgstr "Selezionare il paese. Se non è presente nell'elenco selezionare \"Tutti\"."
 
 msgid "Select a tuner"
 msgstr "Selezionare un sintonizzatore"
@@ -10686,6 +10738,10 @@ msgstr "Selezionare la destinazione dei backup"
 
 msgid "Select between entering an IP address or a domain."
 msgstr ""
+
+#, fuzzy
+msgid "Select cardserver"
+msgstr "Selezionare il cardserver"
 
 msgid "Select channel"
 msgstr "Selezionare un canale"
@@ -10724,6 +10780,9 @@ msgstr "Selezionare la velocità con la quale la parabola si sposta tra i satell
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr "Selezionare come è fatto l'impianto satellitare, ad es. parabola fissa, LNB singolo, switch DiSEqC, motore, ecc."
 
+msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
+msgstr ""
+
 msgid "Select input device"
 msgstr "Selezionare la periferica di ingresso"
 
@@ -10760,6 +10819,10 @@ msgstr "Selezionare il canale da aggiungere..."
 
 msgid "Select slot"
 msgstr "Selezionare lo slot"
+
+#, fuzzy
+msgid "Select softcam"
+msgstr "Selezionare la SoftCam"
 
 msgid "Select sort method:"
 msgstr "Selezionare il metodo di ordinamento:"
@@ -10886,7 +10949,7 @@ msgstr "Selezionare il paese. Se non è presente nell'elenco selezionare \"Tutti
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Selezionare una voce del menu"
+msgstr "Selezionare il video"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Selezionare il provider e la regione. Se non è presente nell'elenco è necessario selezionare uno degli altri \"Tipi di scansione dei canali\"."
@@ -10967,9 +11030,8 @@ msgstr "Informazioni sul canale"
 msgid "Servers"
 msgstr "Canali"
 
-#, fuzzy
 msgid "Service"
-msgstr "Canali"
+msgstr "Informazioni sul canale"
 
 msgid "Service & PIDs"
 msgstr "Canale e PID"
@@ -11199,9 +11261,6 @@ msgstr "Menu impostazioni"
 msgid "Setup mode"
 msgstr "Modalità di configurazione"
 
-msgid "Setup network time synchronization interval."
-msgstr ""
-
 msgid "Setup your positioner"
 msgstr "Configurare il motore"
 
@@ -11266,7 +11325,7 @@ msgstr "Mostrare le alternative"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Barra di avanzamento corta"
+msgstr "Mostrare i simboli del canale codificato"
 
 msgid "Show InfoBar"
 msgstr "Mostrare l'infobar"
@@ -11326,7 +11385,7 @@ msgstr "Mostrare il numero del canale nella selezione dei canali"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostrare la guida"
+msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
 
 msgid "Show columns"
 msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
@@ -11458,7 +11517,7 @@ msgstr "Mostrare i Picon sul display"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Spegnere se messo in sospensione"
+msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -11620,9 +11679,8 @@ msgstr "Nessuna etichetta è stata assegnata a questi video."
 msgid "Shuffle playlist"
 msgstr "Riproduzione casuale"
 
-#, fuzzy
 msgid "Shutdown"
-msgstr "Spegnimento"
+msgstr "Spegnere"
 
 msgid "Shutdown when in Standby"
 msgstr "Spegnere se messo in sospensione"
@@ -11792,18 +11850,18 @@ msgstr "Sociale/Politica/Economia"
 msgid "SocketMMI"
 msgstr ""
 
-#, fuzzy
 msgid "Soft multiboot: "
-msgstr "Multisat"
+msgstr ""
 
 #, fuzzy
 msgid "Softcam"
 msgstr "Impostazioni SoftCam"
 
-msgid "Softcam Setup"
-msgstr "Impostazioni SoftCam"
+#, fuzzy
+msgid "Softcam Actions"
+msgstr "Opzioni di ricerca"
 
-msgid "Softcam setup"
+msgid "Softcam Setup"
 msgstr "Impostazioni SoftCam"
 
 msgid "Software"
@@ -12018,7 +12076,7 @@ msgstr "Sospensione"
 
 #, fuzzy
 msgid "Standby & Restart"
-msgstr "In sospensione tra "
+msgstr "Gestione stato"
 
 msgid "Standby LED"
 msgstr "LED in Sospensione"
@@ -12483,17 +12541,8 @@ msgstr "Symbol rate e FEC"
 msgid "Symbol rate:"
 msgstr "Symbol rate:"
 
-msgid "Sync NTP every (minutes)"
-msgstr ""
-
 msgid "Sync failure moving back to origin !"
 msgstr "Sincronizzazione non riuscita ritornando all'origine!"
-
-msgid "Sync time using"
-msgstr ""
-
-msgid "Synchronize system time using transponder or internet."
-msgstr ""
 
 msgid "Syrian Arab Republic"
 msgstr "Repubblica Araba Siriana"
@@ -12631,9 +12680,8 @@ msgstr "Selezionare la risoluzione orizzontale:"
 msgid "Teletext subtitle color"
 msgstr "Colore dei sottotitoli del televideo"
 
-#, fuzzy
 msgid "Telnet"
-msgstr "Sport invernali"
+msgstr ""
 
 #, fuzzy
 msgid "Telnet interface"
@@ -12724,6 +12772,10 @@ msgstr "Lo standard DVD non è compatibile con i flussi video H.264 (HDTV). Crea
 msgid "The MovieCut plugin is not installed."
 msgstr "Questo plugin non è installato."
 
+#, fuzzy
+msgid "The PIN code entered is incorrect."
+msgstr "I codici PIN inseriti sono differenti."
+
 msgid "The PIN code has been changed successfully."
 msgstr "Il codice PIN è stato aggiornato con successo."
 
@@ -12762,6 +12814,9 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Trovati i seguenti file..."
+
+msgid "The hostname or the IP address of the NTP server to synchronise the time with."
+msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12843,13 +12898,11 @@ msgstr ""
 "L'estensione Gestione del Software non è installata.\n"
 "E' necessario installarla."
 
-#, fuzzy
 msgid "The speed of the fan when your %s %s is in normal use."
-msgstr "Specificare l'orario finale per ignorare il timer di spegnimento quando il ricevitore è in stato di sospensione."
+msgstr ""
 
-#, fuzzy
 msgid "The speed of the fan when your %s %s is in standby mode."
-msgstr "Specificare l'orario finale per ignorare il timer di spegnimento quando il ricevitore è in stato di sospensione."
+msgstr ""
 
 #, python-format
 msgid "The status of the current image could not be checked because %s can not be reached."
@@ -12940,6 +12993,12 @@ msgstr ""
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr "Questo campo consente di ricercare dei symbol rate aggiuntivi fino a %s."
+
+msgid ""
+"This image is intended for developers and testers.\n"
+"No support will be provided!\n"
+"Do you understand this?"
+msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
@@ -13211,6 +13270,9 @@ msgstr "Scala del tempo"
 msgid "Time style"
 msgstr "Scala del tempo"
 
+msgid "Time synchronization method"
+msgstr ""
+
 msgid "Time to execute command or script"
 msgstr ""
 
@@ -13442,7 +13504,7 @@ msgid "Transponder"
 msgstr "Transponder"
 
 #, fuzzy
-msgid "Transponder time"
+msgid "Transponder Time"
 msgstr "Transponder"
 
 msgid "Transport Stream Type"
@@ -13533,7 +13595,7 @@ msgstr "Tipo di sintonizzatore"
 
 #, fuzzy
 msgid "Tuners & Scanning"
-msgstr "Ricerca in corso..."
+msgstr "Tuner e scansione"
 
 msgid "Tunisia"
 msgstr "Tunisia"
@@ -13723,6 +13785,10 @@ msgstr "Unmount"
 
 msgid "Unsupported"
 msgstr "Non supportato"
+
+#, fuzzy
+msgid "Until standby/restart"
+msgstr "Fino a Sospensione/Riavvio"
 
 msgid "Unzipping Image"
 msgstr "Decomprimi Immagine"
@@ -13977,8 +14043,9 @@ msgstr "Funzioni supportate: "
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
+#, fuzzy
 msgid "VCR Scart"
-msgstr ""
+msgstr "SCART VCR"
 
 #, fuzzy
 msgid "VFD brightness"
@@ -15085,9 +15152,8 @@ msgstr "Registro del timer"
 msgid "ZeroTier setup"
 msgstr "Configurazione del server dei nomi (DNS)"
 
-#, fuzzy
 msgid "ZeroTierVPN"
-msgstr "Registro del timer"
+msgstr ""
 
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
@@ -15164,6 +15230,10 @@ msgstr "Alternativo"
 msgid "always"
 msgstr "Sempre"
 
+#, fuzzy
+msgid "and"
+msgstr "Banda"
+
 msgid "and never ask in this session again"
 msgstr "e non chiederlo più in questa sessione"
 
@@ -15231,9 +15301,6 @@ msgstr "Nero"
 msgid "black & white"
 msgstr "Bianco e Nero"
 
-msgid "blacklist"
-msgstr "Lista vietati"
-
 msgid "blank"
 msgstr ""
 
@@ -15263,6 +15330,10 @@ msgstr "Cavo"
 msgid "cancel"
 msgstr "Annullare"
 
+#, fuzzy
+msgid "cardserver"
+msgstr "Riavviare il cardserver"
+
 msgid "cartoon/puppets"
 msgstr "Cartoni/Pupazzi"
 
@@ -15281,11 +15352,11 @@ msgstr "Modificare il timer"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Canale"
+msgstr "Informazioni canale"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Canale"
+msgstr "Numero e Picon del canale"
 
 #, fuzzy
 msgid "channel number and name"
@@ -16185,6 +16256,10 @@ msgstr "Sociale/Politica/Economia (generale)"
 msgid "social/spiritual science"
 msgstr "Sociale/Spiritualità"
 
+#, fuzzy
+msgid "softcam"
+msgstr "Riavviare la SoftCam"
+
 msgid "spark7162VFD"
 msgstr ""
 
@@ -16274,17 +16349,15 @@ msgstr "Questo canale è protetto con il PIN del Controllo genitori"
 msgid "time"
 msgstr "Timer di spegnimento"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Intervallo tra le immagini (sec.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Intervallo tra le immagini (sec.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Avvia l'immagine Android"
+msgstr "Sì e salvare"
 
 msgid "time, day and date"
 msgstr ""
@@ -16350,9 +16423,6 @@ msgstr "Non pubblicato"
 
 msgid "untestable"
 msgstr "Non verificabile"
-
-msgid "until standby/restart"
-msgstr "Fino a Sospensione/Riavvio"
 
 msgid "user defined"
 msgstr "Definito dall'utente"
