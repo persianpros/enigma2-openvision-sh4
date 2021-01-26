@@ -483,6 +483,7 @@ extern void addFont(const char *filename, const char *alias, int scale_factor, i
 extern const char *getEnigmaVersionString();
 extern const char *getBoxType();
 extern const char *getBoxBrand();
+extern const char *getE2Rev();
 extern void dump_malloc_stats(void);
 extern void pauseInit(void);
 extern void resumeInit(void);
@@ -496,6 +497,7 @@ extern eApplication *getApplication();
 extern const char *getEnigmaVersionString();
 extern const char *getBoxType();
 extern const char *getBoxBrand();
+extern const char *getE2Rev();
 extern void dump_malloc_stats(void);
 extern void pauseInit(void);
 extern void resumeInit(void);
