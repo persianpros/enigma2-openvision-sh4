@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -62,6 +62,11 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "eyða klippingu"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1428,9 +1433,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 msgid "<Current movielist location>"
 msgstr "<Núverandi staður bíómyndalista>"
 
@@ -1650,6 +1652,11 @@ msgstr "Hætta við að breyta eftirlætis lista"
 
 msgid "About"
 msgstr "Um"
+
+#
+#, fuzzy
+msgid "About Information"
+msgstr "Upplýsingar"
 
 #, fuzzy
 msgid "About..."
@@ -2387,9 +2394,6 @@ msgstr ""
 msgid "Auto focus commencing ..."
 msgstr ""
 
-msgid "Auto language selection"
-msgstr ""
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2600,6 +2604,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Upplýsingar hugbúnaðar umsýslu"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2990,7 +2998,7 @@ msgstr "Uppsetning nafnaþjóns"
 msgid "Change Language"
 msgstr "Tungumál"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 msgid "Change VFD display settings"
@@ -3511,9 +3519,6 @@ msgstr ""
 msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr ""
 
@@ -3814,10 +3819,6 @@ msgstr "Tengd við"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Stillingar safns"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -4102,6 +4103,11 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#
+#, fuzzy
+msgid "DVB Information"
+msgstr "Upplýsingar"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4623,6 +4629,11 @@ msgstr "Fann NIM:"
 msgid "Device"
 msgstr "Rás"
 
+#
+#, fuzzy
+msgid "Device Information"
+msgstr "Upplýsingar"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4760,6 +4771,11 @@ msgstr "Sýna upplýsinga borða við breytingu á atriði"
 
 #
 #, fuzzy
+msgid "Display Setup"
+msgstr "Uppsetning skjás"
+
+#
+#, fuzzy
 msgid "Display Skin"
 msgstr "Uppsetning skjás"
 
@@ -4781,11 +4797,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Display setup"
-msgstr "Uppsetning skjás"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr ""
@@ -5158,9 +5169,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "EPG val"
 
-msgid "EPG settings"
-msgstr ""
-
 msgid "EPG:"
 msgstr ""
 
@@ -5485,6 +5493,11 @@ msgstr "Ný útgáfa:"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Ný útgáfa:"
 
 #
 #, fuzzy
@@ -6036,16 +6049,16 @@ msgstr "Vifta %d PWM"
 msgid "Fan %d voltage"
 msgstr "Viftu %d Spenna"
 
+#
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Foreldrastýring"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Fan speed control"
-msgstr "Foreldrastýring"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -6390,6 +6403,10 @@ msgid "Geolocation"
 msgstr "Staðsetning"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Upplýsingar hugbúnaðar umsýslu"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Upplýsingar hugbúnaðar umsýslu"
 
@@ -6643,13 +6660,13 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Hard disk"
-msgstr "Harður diskur"
+msgid "Hard Disk Setup"
+msgstr "Uppsetning harða disks"
 
 #
 #, fuzzy
-msgid "Hard disk setup"
-msgstr "Uppsetning harða disks"
+msgid "Hard disk"
+msgstr "Harður diskur"
 
 #
 #, fuzzy
@@ -7444,6 +7461,11 @@ msgstr "Ný útgáfa:"
 
 #
 #, fuzzy
+msgid "Kernel module layout: "
+msgstr "Ný útgáfa:"
+
+#
+#, fuzzy
 msgid "Kernel version: "
 msgstr "Ný útgáfa:"
 
@@ -7456,6 +7478,11 @@ msgstr "Lyklaborð"
 
 #
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "Uppsetning lyklaborðs"
+
+#
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Uppsetning lyklaborðs"
 
@@ -7463,11 +7490,6 @@ msgstr "Uppsetning lyklaborðs"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "Lyklaborðs stilling"
-
-#
-#, fuzzy
-msgid "Keyboard setup"
-msgstr "Uppsetning lyklaborðs"
 
 msgid "Keymap"
 msgstr ""
@@ -7824,9 +7846,6 @@ msgstr "Birta"
 msgid "Logo brightness *"
 msgstr "Birta"
 
-msgid "Logs"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Logs Setup"
@@ -8112,6 +8131,11 @@ msgstr ""
 
 msgid "Memory Info"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Memory Information"
+msgstr "Upplýsingar"
 
 msgid "Memory index"
 msgstr ""
@@ -8658,8 +8682,18 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Network Information"
+msgstr "Stilling nettengingar..."
+
+#
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Virkja netkerfis stillingar"
+
+#
+#, fuzzy
+msgid "Network Setup"
+msgstr "Stillingar netkerfis"
 
 msgid "Network configuration"
 msgstr ""
@@ -9122,6 +9156,11 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Uppsetning"
+
 msgid "OSD name request"
 msgstr ""
 
@@ -9228,6 +9267,11 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Ný útgáfa:"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -10453,10 +10497,6 @@ msgid "RF Output Setup"
 msgstr "Loftnetsrás"
 
 #
-msgid "RF output"
-msgstr "Loftnetsrás"
-
-#
 msgid "RGB"
 msgstr "RGB"
 
@@ -11355,7 +11395,7 @@ msgstr "Gervihnöttur"
 
 #
 #, fuzzy
-msgid "Satellite dish setup"
+msgid "Satellite Dish Setup"
 msgstr "Uppsetning Gervihnattabúnaðar"
 
 msgid "Satellite equipment"
@@ -12070,6 +12110,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -12256,7 +12302,7 @@ msgstr "Rásir"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -13705,9 +13751,6 @@ msgstr "Velja undirtexta"
 msgid "Subtitle selection..."
 msgstr ""
 
-msgid "Subtitle settings"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Subtitle show/hide..."
@@ -14620,6 +14663,11 @@ msgstr "ekki stutt"
 msgid "Time"
 msgstr "Tími"
 
+#
+#, fuzzy
+msgid "Time Setup"
+msgstr "Uppsetning nafnaþjóns"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -15465,11 +15513,6 @@ msgstr "Nota netkort"
 
 #
 #, fuzzy
-msgid "User Mode"
-msgstr "Stillt af notanda"
-
-#
-#, fuzzy
 msgid "User Mode Setup"
 msgstr "Stillt af notanda"
 
@@ -16276,7 +16319,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Mynd uppsetning"
 
 msgid "Wizard to arrange the overscan"

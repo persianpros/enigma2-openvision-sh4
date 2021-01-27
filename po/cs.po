@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -68,6 +68,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr ": 0000 - výchozí (zakázáno)"
 
 msgid " (0 - all networks)"
 msgstr " (0 - všechny sítě)"
@@ -1450,9 +1454,6 @@ msgstr "8bit"
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - výchozí (zakázáno)"
-
 #
 msgid "<Current movielist location>"
 msgstr "<současný seznam souborů>"
@@ -1700,6 +1701,11 @@ msgstr "Zrušit úpravu oblíbených"
 #
 msgid "About"
 msgstr "O přijímači"
+
+#
+#, fuzzy
+msgid "About Information"
+msgstr "Informace"
 
 #
 #, fuzzy
@@ -2472,10 +2478,6 @@ msgstr "Auto fokus"
 msgid "Auto focus commencing ..."
 msgstr "Auto fokus zahájen ..."
 
-#
-msgid "Auto language selection"
-msgstr "Automatický výběr jazyka"
-
 msgid "Auto play blu-ray file"
 msgstr "Automaticky přehrávat blue-ray soubor"
 
@@ -2702,6 +2704,10 @@ msgstr "Belize"
 #, fuzzy
 msgid "Benchmark"
 msgstr "Dánsko"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Info správy software"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -3126,8 +3132,8 @@ msgstr "Změnit nastavení opakování a zpoždění"
 msgid "Change Language"
 msgstr "Změna jazyka"
 
-msgid "Change PIN"
-msgstr "Změnit PIN"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #
 #, fuzzy
@@ -3691,9 +3697,6 @@ msgstr "Nastavuje barvu externích titulků - alternativní (normální bíle, k
 msgid "Configure the color of the teletext subtitles."
 msgstr "Nastavuje barvu teletextových titulků."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Nastavuje úroveň kontrastu předního displeje."
 
@@ -4008,11 +4011,6 @@ msgstr "Připojeno k"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Připojené překódování, omezení - bez PiP!"
 
-#
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Nastavení kompilace"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -4322,6 +4320,11 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "DVB CI zpoždění"
+
+#
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informace"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "DVB titulky - PID & jazyk"
@@ -4838,6 +4841,11 @@ msgstr "Detekované tunery:"
 msgid "Device"
 msgstr "O programu"
 
+#
+#, fuzzy
+msgid "Device Information"
+msgstr "Informace"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4981,6 +4989,11 @@ msgid "Display EPG list for current channel"
 msgstr "Zobrazení EPG aktuálního kanálu"
 
 #
+#, fuzzy
+msgid "Display Setup"
+msgstr "Nastavení displeje"
+
+#
 msgid "Display Skin"
 msgstr "Skin pro LCD"
 
@@ -5001,10 +5014,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#
-msgid "Display setup"
-msgstr "Nastavení displeje"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -5383,9 +5392,6 @@ msgstr "Pouze EPG"
 msgid "EPG selection"
 msgstr "Výběr EPG"
 
-msgid "EPG settings"
-msgstr "Nastavení EPG"
-
 msgid "EPG:"
 msgstr "EPG:"
 
@@ -5725,6 +5731,10 @@ msgid "Enigma2 debug level: %d\n"
 msgstr ""
 "Enigma debug level: %d\n"
 "\n"
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Enigma verze: "
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -6309,14 +6319,14 @@ msgstr "PWM ventilátoru %d"
 msgid "Fan %d voltage"
 msgstr "Napětí ventilátoru %d"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Rychlost ventilátoru"
+
 msgid "Fan operation"
 msgstr "Režim ventilátoru"
 
 msgid "Fan speed"
-msgstr "Rychlost ventilátoru"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "Rychlost ventilátoru"
 
 msgid "Faroe Islands"
@@ -6663,6 +6673,10 @@ msgid "Geolocation"
 msgstr "Umístění"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Info správy software"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Info správy software"
 
@@ -6903,13 +6917,13 @@ msgstr "Zachytávat standby z TV"
 msgid "Handle wakeup from TV"
 msgstr "Zachytávat probouzení z TV"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Nastavení pevného disku"
+
 #
 msgid "Hard disk"
 msgstr "Pevný disk"
-
-#
-msgid "Hard disk setup"
-msgstr "Nastavení pevného disku"
 
 #
 msgid "Hard disk standby after"
@@ -7710,6 +7724,10 @@ msgstr "Keňa"
 msgid "Kernel file: "
 msgstr "Verze jádra: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Verze jádra: "
+
 msgid "Kernel version: "
 msgstr "Verze jádra: "
 
@@ -7721,16 +7739,17 @@ msgid "Keyboard"
 msgstr "Klávesnice"
 
 #
+#, fuzzy
+msgid "Keyboard Setup"
+msgstr "Nastavení klávesnice"
+
+#
 msgid "Keyboard data entry"
 msgstr "Zadání dat klávesnice"
 
 #
 msgid "Keyboard map"
 msgstr "Rozložení kláves"
-
-#
-msgid "Keyboard setup"
-msgstr "Nastavení klávesnice"
 
 msgid "Keymap"
 msgstr ""
@@ -8084,9 +8103,6 @@ msgstr "Jas"
 msgid "Logo brightness *"
 msgstr "Jas"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Přizpůsobení"
@@ -8373,6 +8389,11 @@ msgstr "Paměť"
 
 msgid "Memory Info"
 msgstr "Informace o paměti"
+
+#
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informace"
 
 msgid "Memory index"
 msgstr "Pozice (index) paměti"
@@ -8909,8 +8930,18 @@ msgstr "Síťové informace:"
 
 #
 #, fuzzy
+msgid "Network Information"
+msgstr "Nastavení sítě"
+
+#
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktivovat nastavení sítě"
+
+#
+#, fuzzy
+msgid "Network Setup"
+msgstr "Nastavení sítě"
 
 #
 msgid "Network configuration"
@@ -9365,6 +9396,11 @@ msgstr "OSD 3D nastavení"
 msgid "OSD Adjustment"
 msgstr ""
 
+#
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Nastavení"
+
 msgid "OSD name request"
 msgstr "Požadavek OSD názvu"
 
@@ -9473,6 +9509,10 @@ msgstr "Zvolte pouze 'Ano', pokud používáte multiswitch, který vyžaduje DiS
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Otevřít zvolené umístění"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -10716,10 +10756,6 @@ msgid "RF Output Setup"
 msgstr "RF výstup"
 
 #
-msgid "RF output"
-msgstr "RF výstup"
-
-#
 msgid "RGB"
 msgstr "RGB"
 
@@ -11615,7 +11651,8 @@ msgid "Satellite"
 msgstr "Satelit"
 
 #
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Nastavení paraboly"
 
 #
@@ -12330,6 +12367,12 @@ msgstr "Vyberte oblast nebo region Vašeho časového pásma."
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 #
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Výběr satelitů 1 (USALS)"
@@ -12505,8 +12548,8 @@ msgstr "Programy"
 msgid "Set CI assignment for detection of available services."
 msgstr "Nastavte CI přiřazení pro zjištění dostupných programů."
 
-msgid "Set PIN"
-msgstr "Zadat PIN"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr ""
@@ -13950,10 +13993,6 @@ msgid "Subtitle selection..."
 msgstr "Výběr titulků..."
 
 #
-msgid "Subtitle settings"
-msgstr "Nastavení titulků"
-
-#
 msgid "Subtitle show/hide..."
 msgstr "Titulky zobrazit/skrýt..."
 
@@ -14874,6 +14913,10 @@ msgstr "nepodporováno"
 msgid "Time"
 msgstr "Čas"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Nastavení nahrávání"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -15713,10 +15756,6 @@ msgid "User Interface Setup"
 msgstr "Uživatelské rozhraní"
 
 #
-msgid "User Mode"
-msgstr "Uživatelsky mód"
-
-#
 #, fuzzy
 msgid "User Mode Setup"
 msgstr "Uživatelsky mód"
@@ -16530,7 +16569,8 @@ msgid "Without popup"
 msgstr "Bez dialogu"
 
 #
-msgid "Wizard setup"
+#, fuzzy
+msgid "Wizard Setup"
 msgstr "Pomocník nastavení"
 
 msgid "Wizard to arrange the overscan"

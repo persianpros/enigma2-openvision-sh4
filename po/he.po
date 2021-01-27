@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -67,6 +67,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "delete cut"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1333,9 +1337,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 #
 msgid "<Current movielist location>"
 msgstr "<מיקום רשימת סרטים בפועל>"
@@ -1552,6 +1553,11 @@ msgstr "Abort favourites edit"
 #
 msgid "About"
 msgstr "אודות"
+
+#
+#, fuzzy
+msgid "About Information"
+msgstr "מידע"
 
 #
 #, fuzzy
@@ -2279,9 +2285,6 @@ msgstr ""
 msgid "Auto focus commencing ..."
 msgstr ""
 
-msgid "Auto language selection"
-msgstr ""
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2498,6 +2501,11 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "מידע"
 
 #
 #, fuzzy
@@ -2894,7 +2902,7 @@ msgstr "Nameserver settings"
 msgid "Change Language"
 msgstr "שפה"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 msgid "Change VFD display settings"
@@ -3424,9 +3432,6 @@ msgstr ""
 msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr ""
 
@@ -3720,10 +3725,6 @@ msgstr "מחובר אל"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "הגדרות האוסף"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -4005,6 +4006,11 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#
+#, fuzzy
+msgid "DVB Information"
+msgstr "מידע"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4497,6 +4503,11 @@ msgstr "Detected NIMs:"
 msgid "Device"
 msgstr "שירות"
 
+#
+#, fuzzy
+msgid "Device Information"
+msgstr "מידע"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4621,6 +4632,10 @@ msgid "Display EPG list for current channel"
 msgstr "Show infobar on event change"
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "הצג הגדרות"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "הצג הגדרות"
 
@@ -4640,10 +4655,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#, fuzzy
-msgid "Display setup"
-msgstr "הצג הגדרות"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr ""
@@ -4986,9 +4997,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "EPG בחירת"
 
-msgid "EPG settings"
-msgstr ""
-
 msgid "EPG:"
 msgstr ""
 
@@ -5309,6 +5317,11 @@ msgstr ":גרסה חדשה"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr ":גרסה חדשה"
 
 #
 #, fuzzy
@@ -5830,16 +5843,16 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr " מאוורר %d מתח"
 
+#
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "בקרת הורים"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Fan speed control"
-msgstr "בקרת הורים"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -6164,6 +6177,11 @@ msgstr ""
 msgid "Geolocation"
 msgstr "מיקום"
 
+#
+#, fuzzy
+msgid "Geolocation Information"
+msgstr "מידע"
+
 msgid "Geolocation information"
 msgstr ""
 
@@ -6406,14 +6424,14 @@ msgstr ""
 msgid "Handle wakeup from TV"
 msgstr ""
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "הגדרת כונן קשיח"
+
 #
 #, fuzzy
 msgid "Hard disk"
 msgstr "כונן קשיח"
-
-#, fuzzy
-msgid "Hard disk setup"
-msgstr "הגדרת כונן קשיח"
 
 #, fuzzy
 msgid "Hard disk standby after"
@@ -7171,6 +7189,11 @@ msgstr ":גרסה חדשה"
 
 #
 #, fuzzy
+msgid "Kernel module layout: "
+msgstr ":גרסה חדשה"
+
+#
+#, fuzzy
 msgid "Kernel version: "
 msgstr ":גרסה חדשה"
 
@@ -7182,6 +7205,11 @@ msgstr "מקלדת"
 
 #
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "הגדרת מקלדת"
+
+#
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "הגדרת מקלדת"
 
@@ -7189,11 +7217,6 @@ msgstr "הגדרת מקלדת"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "מיפוי מקלדת"
-
-#
-#, fuzzy
-msgid "Keyboard setup"
-msgstr "הגדרת מקלדת"
 
 msgid "Keymap"
 msgstr ""
@@ -7539,9 +7562,6 @@ msgstr "בהירות"
 msgid "Logo brightness *"
 msgstr "בהירות"
 
-msgid "Logs"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Logs Setup"
@@ -7821,6 +7841,11 @@ msgstr ""
 
 msgid "Memory Info"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Memory Information"
+msgstr "מידע"
 
 msgid "Memory index"
 msgstr ""
@@ -8324,10 +8349,18 @@ msgstr ""
 msgid "Network Info:"
 msgstr ""
 
+#, fuzzy
+msgid "Network Information"
+msgstr "...הגדרת רשת"
+
 #
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "הפעל הגדרות רשת"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Network setup"
 
 msgid "Network configuration"
 msgstr ""
@@ -8761,6 +8794,11 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#
+#, fuzzy
+msgid "OSD Setup"
+msgstr "הגדרות"
+
 msgid "OSD name request"
 msgstr ""
 
@@ -8865,6 +8903,11 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision Information"
+msgstr ":גרסה חדשה"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -10011,9 +10054,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "RF output"
 
-msgid "RF output"
-msgstr "RF output"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10840,7 +10880,7 @@ msgstr "לוויין"
 
 #
 #, fuzzy
-msgid "Satellite dish setup"
+msgid "Satellite Dish Setup"
 msgstr "הגדרת ציוד לוויין"
 
 msgid "Satellite equipment"
@@ -11520,6 +11560,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -11696,7 +11742,7 @@ msgstr "שירותים"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -13084,9 +13130,6 @@ msgstr "בחירת תרגום"
 msgid "Subtitle selection..."
 msgstr ""
 
-msgid "Subtitle settings"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Subtitle show/hide..."
@@ -13960,6 +14003,10 @@ msgstr "לא נתמך"
 msgid "Time"
 msgstr "זמן"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Nameserver Setup"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -14773,11 +14820,6 @@ msgstr "Use Interface"
 
 #
 #, fuzzy
-msgid "User Mode"
-msgstr "User defined"
-
-#
-#, fuzzy
 msgid "User Mode Setup"
 msgstr "User defined"
 
@@ -15547,7 +15589,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Video הגדרת"
 
 msgid "Wizard to arrange the overscan"

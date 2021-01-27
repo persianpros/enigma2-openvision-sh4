@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2021-01-09 00:32+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -67,6 +67,10 @@ msgstr ""
 
 msgid " "
 msgstr " "
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr ": 0000 - numatytasis (išjungta)"
 
 msgid " (0 - all networks)"
 msgstr " (0 - visi tinklai)"
@@ -1264,9 +1268,6 @@ msgstr "8 bitų"
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - numatytasis (išjungta)"
-
 msgid "<Current movielist location>"
 msgstr "<Dabartinė filmų sąrašo vieta>"
 
@@ -1477,6 +1478,10 @@ msgstr "Nutraukti mėgstamų redagavimą"
 
 msgid "About"
 msgstr "Apie"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Informacija"
 
 #, fuzzy
 msgid "About..."
@@ -2125,9 +2130,6 @@ msgstr "Automatinis fokusavimas"
 msgid "Auto focus commencing ..."
 msgstr "Pradedamas auto fokusavimas..."
 
-msgid "Auto language selection"
-msgstr "Automatinis kalbos pasirinkimas"
-
 msgid "Auto play blu-ray file"
 msgstr "Bluray failo automatinis paleidimas"
 
@@ -2316,6 +2318,10 @@ msgstr "Belizas"
 
 msgid "Benchmark"
 msgstr "Etalonas"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Lyginamoji informacija"
 
 msgid "Benchmark information"
 msgstr "Lyginamoji informacija"
@@ -2701,8 +2707,8 @@ msgstr "Keisti pakartojimo ir delsos nustatymus?"
 msgid "Change Language"
 msgstr "Pakeisti kalbą"
 
-msgid "Change PIN"
-msgstr "Keisti PIN kodą"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3183,9 +3189,6 @@ msgstr "Nustatykite spalvas išoriniams subtitrams, alternatyvios spalvos (norma
 msgid "Configure the color of the teletext subtitles."
 msgstr "Nustatykite teleteksto subtitrų spalvą."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Nustatykite kontrasto lygį priekinio skydelio ekranui."
 
@@ -3470,10 +3473,6 @@ msgstr "Prijungta prie"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Pajungtas perkodavimas. PiP negalimas!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Kolekcijos nustatymai"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr "Prisijungti, naudojant pateiktus FTP parametrus, nepavyko. Išsamiai patikrinkite nustatymus ir bandykite dar kartą."
 
@@ -3732,6 +3731,10 @@ msgstr "DVB API: "
 
 msgid "DVB CI Delay"
 msgstr "DVB CI delsa"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "DVB informacija"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "DVB subtitrai PID ir kalba"
@@ -4184,6 +4187,10 @@ msgstr "Aptikti imtuvai:"
 msgid "Device"
 msgstr "Įrenginys"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Informacija"
+
 msgid "Device mounts"
 msgstr "Įrenginių pajungimai"
 
@@ -4294,6 +4301,10 @@ msgstr "Rodyti EPG informaciją apie dabartinį įvykį"
 msgid "Display EPG list for current channel"
 msgstr "Rodyti dabartinio kanalo EPG sąrašą"
 
+#, fuzzy
+msgid "Display Setup"
+msgstr "Monitoriaus nustatymas"
+
 msgid "Display Skin"
 msgstr "Ekrano tema"
 
@@ -4313,9 +4324,6 @@ msgstr "Geografinės vietos informacija"
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Monitoriaus nustatymas"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Rodyti EIT dabar/kitas įvykio duomenis info juostoje."
@@ -4621,9 +4629,6 @@ msgstr "Tik EPG"
 msgid "EPG selection"
 msgstr "EPG pasirinkimas"
 
-msgid "EPG settings"
-msgstr "EPG nustatymai"
-
 msgid "EPG:"
 msgstr "EPG:"
 
@@ -4905,6 +4910,10 @@ msgstr "Enigma2 paleidimų skaičius: %d\n"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr "Enigma2 derinimo lygis: %d\n"
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Enigma2 versija: "
 
 msgid "Enigma2 version: "
 msgstr "Enigma2 versija: "
@@ -5396,14 +5405,15 @@ msgstr "Ventiliatoriaus %d PWM"
 msgid "Fan %d voltage"
 msgstr "Ventiliatoriaus %d įtampa"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Aušintuvo greitis"
+
 msgid "Fan operation"
 msgstr "Aušintuvo darbas"
 
 msgid "Fan speed"
 msgstr "Aušintuvo greitis"
-
-msgid "Fan speed control"
-msgstr "Ventiliatoriaus greičio valdymas"
 
 msgid "Faroe Islands"
 msgstr "Farerų salos"
@@ -5704,6 +5714,10 @@ msgstr "Žanras"
 msgid "Geolocation"
 msgstr "Geografinė vieta"
 
+#, fuzzy
+msgid "Geolocation Information"
+msgstr "Geografinės vietos informacija"
+
 msgid "Geolocation information"
 msgstr "Geografinės vietos informacija"
 
@@ -5926,11 +5940,12 @@ msgstr "Išjungti signalu iš televizoriaus"
 msgid "Handle wakeup from TV"
 msgstr "Pažadinti signalu iš televizoriaus"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "HDD valdymas"
+
 msgid "Hard disk"
 msgstr "Kietasis diskas"
-
-msgid "Hard disk setup"
-msgstr "Kietojo disko valdymas"
 
 msgid "Hard disk standby after"
 msgstr "Kieto disko atjungimas po"
@@ -6627,6 +6642,10 @@ msgstr "Kenija"
 msgid "Kernel file: "
 msgstr "Branduolio failas: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Branduolio failas: "
+
 msgid "Kernel version: "
 msgstr "Branduolio versija: "
 
@@ -6636,14 +6655,15 @@ msgstr "Pagrindiniai įvykiai"
 msgid "Keyboard"
 msgstr "Klaviatūra"
 
+#, fuzzy
+msgid "Keyboard Setup"
+msgstr "Klaviatūros nustatymas"
+
 msgid "Keyboard data entry"
 msgstr "Klaviatūros duomenų įvedimas"
 
 msgid "Keyboard map"
 msgstr "Klaviatūros raidyno išdėstymas"
-
-msgid "Keyboard setup"
-msgstr "Klaviatūros nustatymas"
 
 msgid "Keymap"
 msgstr ""
@@ -6948,9 +6968,6 @@ msgstr "Šviesumas"
 msgid "Logo brightness *"
 msgstr "Šviesumas"
 
-msgid "Logs"
-msgstr "Žurnalai"
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Naudojimo nustatymas"
@@ -7189,6 +7206,10 @@ msgstr "Atmintis"
 
 msgid "Memory Info"
 msgstr "Atminties informacija"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informacija"
 
 msgid "Memory index"
 msgstr "Atminties indeksas"
@@ -7631,8 +7652,16 @@ msgstr "Tinklo ID"
 msgid "Network Info:"
 msgstr "Tinklo informacija:"
 
+#, fuzzy
+msgid "Network Information"
+msgstr "Tinklo konfigūracija"
+
 msgid "Network MAC settings"
 msgstr "Tinklo MAC nustatymai"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Tinklo sąranka"
 
 msgid "Network configuration"
 msgstr "Tinklo konfigūracija"
@@ -8016,6 +8045,10 @@ msgstr "OSD 3D sąranka"
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "LCD nustatymas"
+
 msgid "OSD name request"
 msgstr "OSD pavadinimo užklausa"
 
@@ -8109,6 +8142,10 @@ msgstr "Pasirinkite tik \"taip\", jei naudojate \"multiswich\", kurio komandinis
 
 msgid "Open Vision"
 msgstr "Open Vision"
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Open Vision informacija"
 
 msgid "Open Vision RC ID number: "
 msgstr "Open Vision nuotolinio valdymo pulto ID numeris: "
@@ -9151,9 +9188,6 @@ msgstr "Naudojamas REC simbolis"
 msgid "RF Output Setup"
 msgstr "RF išvestis"
 
-msgid "RF output"
-msgstr "RF išvestis"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -9909,7 +9943,8 @@ msgstr "Samba valdymas"
 msgid "Satellite"
 msgstr "Palydovas"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Palydovinės antenos konfigūravimas"
 
 msgid "Satellite equipment"
@@ -10538,6 +10573,12 @@ msgstr "Pasirinkite laiko juostos teritoriją arba regioną."
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Pasirenkami palydovai 1 (USALS)"
 
@@ -10687,8 +10728,8 @@ msgstr "Kanalai"
 msgid "Set CI assignment for detection of available services."
 msgstr "Prieinamų kanalų aptikimui, įtraukti ir CI priskyrimą."
 
-msgid "Set PIN"
-msgstr "Nustatyti PIN"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr "Nustatykite laikiną šio katalogo rūšiavimo metodą"
@@ -11910,9 +11951,6 @@ msgstr "Subtitrų pasirinkimas"
 msgid "Subtitle selection..."
 msgstr "Subtitrų pasirinkimas..."
 
-msgid "Subtitle settings"
-msgstr "Subtitrų nustatymai"
-
 msgid "Subtitle show/hide..."
 msgstr "Subtitrų rodymas / slėpimas..."
 
@@ -12744,6 +12782,10 @@ msgstr "TiVo palaikymas"
 msgid "Time"
 msgstr "Laikas"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "ZeroTier sąranka"
+
 msgid "Time import should start"
 msgstr "Importo pradžios laikas"
 
@@ -13467,9 +13509,6 @@ msgstr "Vartotojo sąsaja"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "Vartotojo sąsaja"
-
-msgid "User Mode"
-msgstr "Vartotojo režimas"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -14202,7 +14241,8 @@ msgstr "Pasirinkę šią parinktį galite perjungti šviesos diodo spalvą arba 
 msgid "Without popup"
 msgstr "Be iškylančio pranešimo"
 
-msgid "Wizard setup"
+#, fuzzy
+msgid "Wizard Setup"
 msgstr "Vedlio sąranka"
 
 msgid "Wizard to arrange the overscan"

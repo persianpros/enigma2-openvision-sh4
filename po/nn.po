@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -63,6 +63,11 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "slette klipp"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1280,9 +1285,6 @@ msgstr ""
 msgid "9"
 msgstr ""
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 msgid "<Current movielist location>"
 msgstr "<Gjeldende spilliste>"
 
@@ -1518,6 +1520,11 @@ msgstr "Avbryt favorittliste redigering"
 #
 msgid "About"
 msgstr "Om"
+
+#
+#, fuzzy
+msgid "About Information"
+msgstr "Informasjon"
 
 #
 #, fuzzy
@@ -2255,9 +2262,6 @@ msgstr "Auto fokus"
 msgid "Auto focus commencing ..."
 msgstr "Auto fokus begynner ..."
 
-msgid "Auto language selection"
-msgstr "Språkvalg innstilling"
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2479,6 +2483,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Programvareadministrasjon"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2886,7 +2894,7 @@ msgstr "Endre forsinkelses innstilling?"
 msgid "Change Language"
 msgstr "Språk"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 #, fuzzy
@@ -3443,9 +3451,6 @@ msgstr "Still inn fargen på tekst-TV undertekster. Alternativ (normal på hvit,
 msgid "Configure the color of the teletext subtitles."
 msgstr "Still inn fargen på tekst-TV undertekst."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Still inn lysstyrken på frontpanel."
 
@@ -3748,11 +3753,6 @@ msgstr "Koblet til"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Samlingsinnstilling"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -4051,6 +4051,11 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informasjon"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4557,6 +4562,11 @@ msgstr "Gjenkjent modul:"
 msgid "Device"
 msgstr "Kanal"
 
+#
+#, fuzzy
+msgid "Device Information"
+msgstr "Informasjon"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4684,6 +4694,10 @@ msgid "Display EPG list for current channel"
 msgstr "Vis EPG for nåværende kanal..."
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "Frontpanel"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "Frontpanel"
 
@@ -4702,9 +4716,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Frontpanel"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -5077,9 +5088,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "EPG valg"
 
-msgid "EPG settings"
-msgstr "EPG innstilling"
-
 msgid "EPG:"
 msgstr ""
 
@@ -5406,6 +5414,11 @@ msgstr "Linuxkjerne versjon: "
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Linuxkjerne versjon: "
 
 #
 #, fuzzy
@@ -5958,16 +5971,16 @@ msgstr "Vifte %d PWM"
 msgid "Fan %d voltage"
 msgstr "Vifte %d spenning"
 
+#
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Foreldrekontroll"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Fan speed control"
-msgstr "Foreldrekontroll"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -6297,6 +6310,10 @@ msgid "Geolocation"
 msgstr "Plassering"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Programvareadministrasjon"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Programvareadministrasjon"
 
@@ -6543,11 +6560,12 @@ msgstr "Håndtere 'slå av' fra TV"
 msgid "Handle wakeup from TV"
 msgstr "Håndtere 'oppvåkning' fra TV"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Disk oppsett"
+
 msgid "Hard disk"
 msgstr "Disk"
-
-msgid "Hard disk setup"
-msgstr "Disk oppsett"
 
 msgid "Hard disk standby after"
 msgstr "Slå av disk etter"
@@ -7325,6 +7343,11 @@ msgid "Kernel file: "
 msgstr "Linuxkjerne versjon: "
 
 #
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Linuxkjerne versjon: "
+
+#
 msgid "Kernel version: "
 msgstr "Linuxkjerne versjon: "
 
@@ -7337,16 +7360,17 @@ msgstr "Tastatur"
 
 #
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "Tastaturoppsett"
+
+#
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Tastaturoppsett"
 
 #
 msgid "Keyboard map"
 msgstr "Tastaturspråk"
-
-#
-msgid "Keyboard setup"
-msgstr "Tastaturoppsett"
 
 msgid "Keymap"
 msgstr ""
@@ -7697,9 +7721,6 @@ msgstr "Lysstyrke"
 msgid "Logo brightness *"
 msgstr "Lysstyrke"
 
-msgid "Logs"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Logs Setup"
@@ -7980,6 +8001,11 @@ msgstr "Minne"
 
 msgid "Memory Info"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informasjon"
 
 msgid "Memory index"
 msgstr "Minne oversikt"
@@ -8512,8 +8538,18 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Network Information"
+msgstr "Nettverksinnstilling..."
+
+#
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktivere nettverksinnstillinger"
+
+#
+#, fuzzy
+msgid "Network Setup"
+msgstr "Nettverksinstillinger"
 
 msgid "Network configuration"
 msgstr ""
@@ -8960,6 +8996,11 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Innstilling"
+
 msgid "OSD name request"
 msgstr "OSD navn forespørsel"
 
@@ -9065,6 +9106,11 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Linuxkjerne versjon: "
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -10231,10 +10277,6 @@ msgid "RF Output Setup"
 msgstr "RF utgang"
 
 #
-msgid "RF output"
-msgstr "RF utgang"
-
-#
 msgid "RGB"
 msgstr "RGB"
 
@@ -11088,7 +11130,8 @@ msgstr "PiP-bilde i bilde oppsett"
 msgid "Satellite"
 msgstr "Satellittliste"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Paraboloppsett"
 
 msgid "Satellite equipment"
@@ -11759,6 +11802,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -11930,7 +11979,7 @@ msgstr "Kanaler"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -13318,9 +13367,6 @@ msgstr "Undertekst valg"
 msgid "Subtitle selection..."
 msgstr "Undertekst valg..."
 
-msgid "Subtitle settings"
-msgstr "Undertekst innstilling"
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "Undertekst valg..."
@@ -14212,6 +14258,11 @@ msgstr "ikke støttet"
 msgid "Time"
 msgstr "Tid"
 
+#
+#, fuzzy
+msgid "Time Setup"
+msgstr "Oppsett for navneserver"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -15040,11 +15091,6 @@ msgstr "Innstilling"
 
 #
 #, fuzzy
-msgid "User Mode"
-msgstr "Brukerdefinert"
-
-#
-#, fuzzy
 msgid "User Mode Setup"
 msgstr "Brukerdefinert"
 
@@ -15837,7 +15883,7 @@ msgstr "Uten varsel"
 
 #
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Videooppsett"
 
 msgid "Wizard to arrange the overscan"

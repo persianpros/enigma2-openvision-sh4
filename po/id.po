@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -61,6 +61,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr ": 0000 - bawaan (dimatikan)"
 
 msgid " (0 - all networks)"
 msgstr " (0 - semua jaringan)"
@@ -1377,9 +1381,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - bawaan (dimatikan)"
-
 msgid "<Current movielist location>"
 msgstr "<Lokasi daftar film saat ini>"
 
@@ -1604,6 +1605,10 @@ msgstr "Batalkan ubah favorit"
 
 msgid "About"
 msgstr "Tentang"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Informasi"
 
 #, fuzzy
 msgid "About..."
@@ -2280,9 +2285,6 @@ msgstr "Fokus otomatis"
 msgid "Auto focus commencing ..."
 msgstr "Memulai fokus otomatis ..."
 
-msgid "Auto language selection"
-msgstr "Pemilihan bahasa otomatis"
-
 msgid "Auto play blu-ray file"
 msgstr "Putar otomatis berkas blu-ray"
 
@@ -2482,6 +2484,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Info pengelola perangkat lunak"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2866,8 +2872,8 @@ msgstr "Ubah penyetelan ulang dan penundaan?"
 msgid "Change Language"
 msgstr "Ganti Bahasa"
 
-msgid "Change PIN"
-msgstr "Ganti PIN"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3375,9 +3381,6 @@ msgstr "Atur warna terjemahan dari luar, alternatif (normal warna putih, miring 
 msgid "Configure the color of the teletext subtitles."
 msgstr "Atur warna terjemahan teleteks."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Atur tingkat kontras display panel depan."
 
@@ -3674,10 +3677,6 @@ msgstr "Terhubung ke"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Transcoding terhubung, batasan - tak ada PiP!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Penyetelan koleksi"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3954,6 +3953,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "Tunda CI DVB"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informasi"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "PID Terjemahan & bhs DVB"
@@ -4432,6 +4435,10 @@ msgstr "NIMs terdeteksi:"
 msgid "Device"
 msgstr "Kanal"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Informasi"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4548,6 +4555,10 @@ msgid "Display EPG list for current channel"
 msgstr "Tampilkan EPG pada kanal sekarang..."
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "Atur display"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "Atur display"
 
@@ -4566,9 +4577,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Atur display"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -4896,9 +4904,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "Pemilihan EPG"
 
-msgid "EPG settings"
-msgstr "Pengaturan EPG"
-
 msgid "EPG:"
 msgstr ""
 
@@ -5196,6 +5201,10 @@ msgstr "Enigma (re)starts: %d\n"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Kernel version: "
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5737,14 +5746,14 @@ msgstr "Kipas %d PWM"
 msgid "Fan %d voltage"
 msgstr "Voltase kipas %d"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Kecepatan kipas"
+
 msgid "Fan operation"
 msgstr "Operasi kipas"
 
 msgid "Fan speed"
-msgstr "Kecepatan kipas"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "Kecepatan kipas"
 
 msgid "Faroe Islands"
@@ -6059,6 +6068,10 @@ msgid "Geolocation"
 msgstr "Lokasi"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Info pengelola perangkat lunak"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Info pengelola perangkat lunak"
 
@@ -6292,11 +6305,12 @@ msgstr "Tangani standby dari TV"
 msgid "Handle wakeup from TV"
 msgstr "Tangani bangun dari TV"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Pengaturan Harddisk"
+
 msgid "Hard disk"
 msgstr "Hard disk"
-
-msgid "Hard disk setup"
-msgstr "Pengaturan harddisk"
 
 msgid "Hard disk standby after"
 msgstr "Standby harddisk setelah"
@@ -7026,6 +7040,10 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Versi kernel: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Versi kernel: "
+
 msgid "Kernel version: "
 msgstr "Versi kernel: "
 
@@ -7036,14 +7054,15 @@ msgid "Keyboard"
 msgstr "Papankunci"
 
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "Pengaturan papankunci"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Entri data papankunci"
 
 msgid "Keyboard map"
 msgstr "Peta papankunci"
-
-msgid "Keyboard setup"
-msgstr "Pengaturan papankunci"
 
 msgid "Keymap"
 msgstr ""
@@ -7355,9 +7374,6 @@ msgstr "Kecerahan"
 msgid "Logo brightness *"
 msgstr "Kecerahan"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Pengaturan Penggunaan"
@@ -7613,6 +7629,10 @@ msgstr "Memori"
 
 msgid "Memory Info"
 msgstr "Info Memori"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informasi"
 
 msgid "Memory index"
 msgstr "Indeks memori"
@@ -8094,8 +8114,16 @@ msgid "Network Info:"
 msgstr "Info Jaringan:"
 
 #, fuzzy
+msgid "Network Information"
+msgstr "Pengaturan jaringan"
+
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktifkan penyetelan jaringan"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Atur Jaringan"
 
 msgid "Network configuration"
 msgstr "Pengaturan jaringan"
@@ -8501,6 +8529,10 @@ msgstr "Atur 3D OSD"
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Pengaturan"
+
 msgid "OSD name request"
 msgstr "meminta nama OSD"
 
@@ -8598,6 +8630,10 @@ msgstr "Hanya pilih 'ya' jika anda menggunakan saklarmulti yang membutuhkan siny
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Buka lokasi yg dipilih"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9683,9 +9719,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "Keluaran RF"
 
-msgid "RF output"
-msgstr "Keluaran RF"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10475,7 +10508,8 @@ msgstr "Atur PiP"
 msgid "Satellite"
 msgstr "Satelit"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Pengaturan Parabola"
 
 msgid "Satellite equipment"
@@ -11122,6 +11156,12 @@ msgstr "Pilih resolusi horizontal:"
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Memilih satelit 1 (USALS)"
 
@@ -11282,8 +11322,8 @@ msgstr "Layanan"
 msgid "Set CI assignment for detection of available services."
 msgstr "Set penetapan CI untuk deteksi ketersediaan layanan."
 
-msgid "Set PIN"
-msgstr "Atur PIN"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr ""
@@ -12569,9 +12609,6 @@ msgstr "Pemilihan terjemahan"
 msgid "Subtitle selection..."
 msgstr "Pemilihan terjemahan..."
 
-msgid "Subtitle settings"
-msgstr "Pengaturan terjemahan"
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "Pemilihan terjemahan..."
@@ -13440,6 +13477,10 @@ msgstr "tidak didukung"
 msgid "Time"
 msgstr "Waktu"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Pengaturan Rekam"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -14193,10 +14234,6 @@ msgstr "Antarmuka pengguna"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "Antarmuka pengguna"
-
-#, fuzzy
-msgid "User Mode"
-msgstr "Mode Pengguna"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -14958,7 +14995,7 @@ msgid "Without popup"
 msgstr "Tanpa popup"
 
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Atur video"
 
 msgid "Wizard to arrange the overscan"

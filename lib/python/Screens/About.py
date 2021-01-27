@@ -142,7 +142,7 @@ class About(Screen):
 		if modulelayout is not None and modulelayout != "":
 			AboutText += _("Kernel module layout: ") + modulelayout + "\n"
 		else:
-			AboutText += _("Kernel module layout: ") + _("N/A") + "\n"	
+			AboutText += _("Kernel module layout: ") + _("N/A") + "\n"
 
 		GStreamerVersion = _("Media framework: ") + about.getGStreamerVersionString(cpu)
 		self["GStreamerVersion"] = StaticText(GStreamerVersion)

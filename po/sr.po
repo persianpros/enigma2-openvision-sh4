@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -65,6 +65,11 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "obriši rez"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1439,9 +1444,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 #
 msgid "<Current movielist location>"
 msgstr "<Trenutna lokacija liste filmova>"
@@ -1672,6 +1674,11 @@ msgstr "Odustani od uređivanja favorita"
 #
 msgid "About"
 msgstr "O programu"
+
+#
+#, fuzzy
+msgid "About Information"
+msgstr "Informacije"
 
 #
 #, fuzzy
@@ -2456,9 +2463,6 @@ msgstr ""
 msgid "Auto focus commencing ..."
 msgstr ""
 
-msgid "Auto language selection"
-msgstr ""
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2694,6 +2698,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Informacije upravljača softvera"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -3105,7 +3113,7 @@ msgstr "Postavke nejmservera"
 msgid "Change Language"
 msgstr "Jezik"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 msgid "Change VFD display settings"
@@ -3685,9 +3693,6 @@ msgstr ""
 msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr ""
 
@@ -3999,11 +4004,6 @@ msgstr "Povezan sa"
 
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Postavke kolekcije"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4322,6 +4322,11 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informacije"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4846,6 +4851,11 @@ msgstr "Primećeni NIMs:"
 msgid "Device"
 msgstr "Kanal"
 
+#
+#, fuzzy
+msgid "Device Information"
+msgstr "Informacije"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4984,6 +4994,11 @@ msgstr "Prikaži info traku pri promeni događaja"
 
 #
 #, fuzzy
+msgid "Display Setup"
+msgstr "Postavke displeja"
+
+#
+#, fuzzy
 msgid "Display Skin"
 msgstr "Postavke displeja"
 
@@ -5005,11 +5020,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Display setup"
-msgstr "Postavke displeja"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr ""
@@ -5394,9 +5404,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "EPG selektor "
 
-msgid "EPG settings"
-msgstr ""
-
 msgid "EPG:"
 msgstr ""
 
@@ -5730,6 +5737,11 @@ msgstr "Nova verzija:"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Nova verzija:"
 
 #
 #, fuzzy
@@ -6295,16 +6307,16 @@ msgstr "Ventil. %d PWM"
 msgid "Fan %d voltage"
 msgstr "Ventil. %d Napona"
 
+#
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Roditeljska zaštita"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Fan speed control"
-msgstr "Roditeljska zaštita"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -6655,6 +6667,10 @@ msgid "Geolocation"
 msgstr "Lokacija"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Informacije upravljača softvera"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Informacije upravljača softvera"
 
@@ -6911,13 +6927,13 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Hard disk"
-msgstr "Hard disk"
+msgid "Hard Disk Setup"
+msgstr "Postavke hard diska"
 
 #
 #, fuzzy
-msgid "Hard disk setup"
-msgstr "Postavke hard diska"
+msgid "Hard disk"
+msgstr "Hard disk"
 
 #
 #, fuzzy
@@ -7723,6 +7739,11 @@ msgstr "Nova verzija:"
 
 #
 #, fuzzy
+msgid "Kernel module layout: "
+msgstr "Nova verzija:"
+
+#
+#, fuzzy
 msgid "Kernel version: "
 msgstr "Nova verzija:"
 
@@ -7735,6 +7756,11 @@ msgstr "Tastatura"
 
 #
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "Postavke tastature"
+
+#
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Postavke tastature"
 
@@ -7742,11 +7768,6 @@ msgstr "Postavke tastature"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "Mapa tastature"
-
-#
-#, fuzzy
-msgid "Keyboard setup"
-msgstr "Postavke tastature"
 
 msgid "Keymap"
 msgstr ""
@@ -8111,9 +8132,6 @@ msgstr "Osvetljenje"
 msgid "Logo brightness *"
 msgstr "Osvetljenje"
 
-msgid "Logs"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Logs Setup"
@@ -8405,6 +8423,11 @@ msgstr ""
 
 msgid "Memory Info"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informacije"
 
 msgid "Memory index"
 msgstr ""
@@ -8953,8 +8976,18 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Network Information"
+msgstr "Mrežna konfiguracija..."
+
+#
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktiviraj mrežne postavke"
+
+#
+#, fuzzy
+msgid "Network Setup"
+msgstr "Mrežne postavke "
 
 msgid "Network configuration"
 msgstr ""
@@ -9418,6 +9451,11 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Podešavanje"
+
 msgid "OSD name request"
 msgstr ""
 
@@ -9525,6 +9563,11 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Nova verzija:"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -10773,10 +10816,6 @@ msgid "RF Output Setup"
 msgstr "RF Izlaz"
 
 #
-msgid "RF output"
-msgstr "RF Izlaz"
-
-#
 msgid "RGB"
 msgstr "RGB"
 
@@ -11682,7 +11721,7 @@ msgstr "Satelit"
 
 #
 #, fuzzy
-msgid "Satellite dish setup"
+msgid "Satellite Dish Setup"
 msgstr "Postavke satelitske opreme"
 
 #
@@ -12413,6 +12452,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -12601,7 +12646,7 @@ msgstr "Kanali"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -14070,9 +14115,6 @@ msgstr "Izbor subtitlova"
 msgid "Subtitle selection..."
 msgstr ""
 
-msgid "Subtitle settings"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Subtitle show/hide..."
@@ -14999,6 +15041,11 @@ msgstr "nije podržano"
 msgid "Time"
 msgstr "Vreme"
 
+#
+#, fuzzy
+msgid "Time Setup"
+msgstr "Postavke nejmservera"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -15861,11 +15908,6 @@ msgstr "Koristi interfejs"
 
 #
 #, fuzzy
-msgid "User Mode"
-msgstr "Definisano od korisnika"
-
-#
-#, fuzzy
 msgid "User Mode Setup"
 msgstr "Definisano od korisnika"
 
@@ -16678,7 +16720,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Video postavke"
 
 msgid "Wizard to arrange the overscan"

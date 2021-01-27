@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2019-10-16 22:14+0200\n"
 "Last-Translator: Kuatto\n"
 "Language-Team: Álvaro <mi casa>\n"
@@ -68,6 +68,9 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+msgid "  Default: 0000 (disabled)"
+msgstr "  Por Defecto: 0000 (desactivado)"
 
 msgid " (0 - all networks)"
 msgstr " (0 - todas las redes)"
@@ -1385,9 +1388,6 @@ msgstr "8bit"
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - por defecto (desactivado)"
-
 msgid "<Current movielist location>"
 msgstr "<ubicacion lista peliculas>"
 
@@ -1537,12 +1537,12 @@ msgstr ""
 "Un temporizador de grabación falló!\n"
 "Desactivar TV y reintentar?\n"
 
-#, fuzzy
 msgid "A/V Setup"
-msgstr "Configurar AFP"
-
-msgid "A/V settings"
 msgstr "Ajustes A/V"
+
+#, fuzzy
+msgid "A/V settings"
+msgstr "Editar ajustes"
 
 msgid "AAC downmix"
 msgstr "Mezla AAC"
@@ -1608,6 +1608,10 @@ msgstr "abortar edición de favoritos"
 
 msgid "About"
 msgstr "Acerca de"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Información de Montajes"
 
 msgid "About..."
 msgstr "Acerca de..."
@@ -2241,9 +2245,8 @@ msgstr "Auto Diseqc"
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Rotación / giro automático de orientación EXIF"
 
-#, fuzzy
 msgid "Auto Language Setup"
-msgstr "Selección de idioma automático"
+msgstr "Ajustes de subtítulos"
 
 #, fuzzy
 msgid "Auto Timers"
@@ -2264,9 +2267,6 @@ msgstr "Auto focus"
 
 msgid "Auto focus commencing ..."
 msgstr "Auto focus comenzando …"
-
-msgid "Auto language selection"
-msgstr "Selección de idioma automático"
 
 msgid "Auto play blu-ray file"
 msgstr "Auto reproducir fichero Blu-ray"
@@ -2360,7 +2360,7 @@ msgid "BT 709"
 msgstr "BT 709"
 
 msgid "Back"
-msgstr "Trasero"
+msgstr "Atrás"
 
 msgid "Background"
 msgstr "Segundo plano"
@@ -2460,6 +2460,10 @@ msgstr "Belice"
 #, fuzzy
 msgid "Benchmark"
 msgstr "Dinamarca"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Información"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2852,8 +2856,8 @@ msgstr "Cambiar grabación (repetición y ajustes de demora)"
 msgid "Change Language"
 msgstr "Cambiar idioma"
 
-msgid "Change PIN"
-msgstr "Cambiar PIN"
+msgid "Change PIN Pressing [OK]"
+msgstr "Cambiar PIN Presionando [OK]"
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3344,9 +3348,6 @@ msgstr "Configure el color de los subtítulos externos, alternativos (normal en 
 msgid "Configure the color of the teletext subtitles."
 msgstr "Configure el color de los subtítulos del teletexto."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Configure el nivel de contraste de la pantalla del display."
 
@@ -3630,10 +3631,6 @@ msgstr "Conectado a"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Transcodificado conectado, límite - no PiP!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Ajustes de la colección"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr "Falló la conexión utilizando los parámetros FTP suministrados. Por favor, vuelva a comprobar los detalles y vuelva a intentarlo."
 
@@ -3897,6 +3894,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "Retardo del DVB CI"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "Información"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "Subtítulos DVB PID lenguaje"
@@ -4361,6 +4362,10 @@ msgstr "Sintonizadores Detectados:"
 msgid "Device"
 msgstr "Dispositivo"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Información"
+
 msgid "Device mounts"
 msgstr "Montajes dispositivos"
 
@@ -4474,6 +4479,9 @@ msgstr "Mostrar información EPG para canal actual"
 msgid "Display EPG list for current channel"
 msgstr "Mostrar Lista EPG para canal actual"
 
+msgid "Display Setup"
+msgstr "Ajustes Display"
+
 #, fuzzy
 msgid "Display Skin"
 msgstr "Skin Display"
@@ -4494,9 +4502,6 @@ msgstr "Mostrar información oscam."
 msgid "Display selection list as a selection menu"
 msgstr ""
 
-msgid "Display setup"
-msgstr "Configuración Display"
-
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Visualizar datos ahora/siguiente EIT en la barra de información."
 
@@ -4506,7 +4511,7 @@ msgstr "Mover el cursor del teclado virtual hacia abajo"
 
 #, fuzzy
 msgid "Display type: "
-msgstr "Configuración Display"
+msgstr "Ajustes Display"
 
 msgid "Djibouti"
 msgstr "Djibouti"
@@ -4786,9 +4791,8 @@ msgstr "EPG"
 msgid "EPG Cache Check"
 msgstr "Comprobar EPG cache"
 
-#, fuzzy
 msgid "EPG Setup"
-msgstr "Configurar AFP"
+msgstr "Ajustes EPG"
 
 msgid "EPG filename"
 msgstr "Nombre del archivo EPG"
@@ -4807,9 +4811,6 @@ msgstr "Solo EPG"
 
 msgid "EPG selection"
 msgstr "Selección de EPG"
-
-msgid "EPG settings"
-msgstr "Configuración EPG"
 
 msgid "EPG:"
 msgstr ""
@@ -5103,6 +5104,10 @@ msgstr "Reinicios E2 & Completos: %d\n"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Versión de Enigma: "
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5615,14 +5620,13 @@ msgstr "Ventilador %d PWM"
 msgid "Fan %d voltage"
 msgstr "Ventilador %d tensión"
 
+msgid "Fan Speed Setup"
+msgstr "Ajustes Velocidad Ventilador"
+
 msgid "Fan operation"
 msgstr "Funcionamiento del ventilador"
 
 msgid "Fan speed"
-msgstr "Velocidad del ventilador"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "Velocidad del ventilador"
 
 msgid "Faroe Islands"
@@ -5935,6 +5939,10 @@ msgstr "Género"
 msgid "Geolocation"
 msgstr "Geolocalización"
 
+#, fuzzy
+msgid "Geolocation Information"
+msgstr "Información Geolocalización"
+
 msgid "Geolocation information"
 msgstr "Información Geolocalización"
 
@@ -6160,11 +6168,11 @@ msgstr "Manejar el modo de reposo desde la TV"
 msgid "Handle wakeup from TV"
 msgstr "Manejar el despertar desde la TV"
 
+msgid "Hard Disk Setup"
+msgstr "Ajustes Disco Duro"
+
 msgid "Hard disk"
 msgstr "Disco Duro"
-
-msgid "Hard disk setup"
-msgstr "Configuración de Disco Duro"
 
 msgid "Hard disk standby after"
 msgstr "Poner el Disco Duro en reposo tras"
@@ -6879,6 +6887,9 @@ msgstr "Kenia"
 msgid "Kernel file: "
 msgstr "Versión de kernel: "
 
+msgid "Kernel module layout: "
+msgstr ""
+
 msgid "Kernel version: "
 msgstr "Versión de kernel: "
 
@@ -6888,15 +6899,15 @@ msgstr "Eventos clave"
 msgid "Keyboard"
 msgstr "Teclado"
 
+msgid "Keyboard Setup"
+msgstr "Ajustes del teclado"
+
 #, fuzzy
 msgid "Keyboard data entry"
-msgstr "Configuración de teclado"
+msgstr "Ajustes del teclado"
 
 msgid "Keyboard map"
 msgstr "Mapa de teclado"
-
-msgid "Keyboard setup"
-msgstr "Configuración de teclado"
 
 msgid "Keymap"
 msgstr ""
@@ -6931,7 +6942,7 @@ msgstr "Conexión LAN"
 
 #, fuzzy
 msgid "LCD Setup"
-msgstr "Configuración LCD"
+msgstr "Ajustes LED"
 
 #, fuzzy
 msgid "LED brightness"
@@ -6981,7 +6992,7 @@ msgstr "Idioma"
 
 #, fuzzy
 msgid "Language Setup"
-msgstr "Idioma"
+msgstr "Ajustes de subtítulos"
 
 msgid "Language selection"
 msgstr "Selección de idioma"
@@ -7200,12 +7211,8 @@ msgstr "Brillo"
 msgid "Logo brightness *"
 msgstr "Brillo"
 
-msgid "Logs"
-msgstr ""
-
-#, fuzzy
 msgid "Logs Setup"
-msgstr "Configuración de uso"
+msgstr "Ajustes Registros"
 
 msgid "Logs folder location"
 msgstr "Carpeta localización Logs"
@@ -7447,6 +7454,10 @@ msgstr "Memoria"
 
 msgid "Memory Info"
 msgstr "Información de memoria"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Información"
 
 msgid "Memory index"
 msgstr "Índice de memoria"
@@ -7910,8 +7921,15 @@ msgstr "ID de Red"
 msgid "Network Info:"
 msgstr "Información de red:"
 
+#, fuzzy
+msgid "Network Information"
+msgstr "Configuración de red"
+
 msgid "Network MAC settings"
 msgstr "Configuración de red MAC"
+
+msgid "Network Setup"
+msgstr "Configuración de red"
 
 msgid "Network configuration"
 msgstr "Configuración de red"
@@ -7938,6 +7956,7 @@ msgstr "Búsqueda de redes"
 msgid "Network servers:"
 msgstr "Servidores de Red:"
 
+#, fuzzy
 msgid "Network setup"
 msgstr "Configuración de red"
 
@@ -8302,11 +8321,15 @@ msgstr "Ajustes de OSD 3D"
 msgid "OSD Adjustment"
 msgstr ""
 
+msgid "OSD Setup"
+msgstr "Ajustes OSD"
+
 msgid "OSD name request"
 msgstr "Solicitud de nombre OSD"
 
+#, fuzzy
 msgid "OSD settings"
-msgstr "Configuración de OSD"
+msgstr "Ajustes"
 
 msgid "OSD transparency"
 msgstr "Transparencia OSD"
@@ -8400,6 +8423,10 @@ msgstr "Solo seleccione ‘sí’ si está usando un multiswich que requiere una
 #, fuzzy
 msgid "Open Vision"
 msgstr "abrir opciones lista"
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Información Geolocalización"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8865,7 +8892,7 @@ msgid "Please enter the name of the new directory"
 msgstr "Por favor ingrese el nombre del nuevo directorio"
 
 msgid "Please enter the new PIN code"
-msgstr "Introducir el nievo código PIN"
+msgstr "Introducir el nuevo código PIN"
 
 msgid "Please enter the old PIN code"
 msgstr "Introducir el antiguo PIN"
@@ -9458,12 +9485,8 @@ msgstr "Símbolo REC en reposo"
 msgid "REC symbol in use"
 msgstr "Símbolo REC en uso"
 
-#, fuzzy
 msgid "RF Output Setup"
-msgstr "Salida RF"
-
-msgid "RF output"
-msgstr "Salida RF"
+msgstr "Ajustes Salida RF"
 
 msgid "RGB"
 msgstr "RGB"
@@ -9560,8 +9583,9 @@ msgstr ""
 msgid "Reception settings"
 msgstr "Configuración de recepción"
 
+#, fuzzy
 msgid "Record"
-msgstr "Grabación & Reproducción"
+msgstr "grabar"
 
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
@@ -9572,7 +9596,7 @@ msgstr "Grabando"
 
 #, fuzzy
 msgid "Recording & Playback Setup"
-msgstr "Configuración de la grabación"
+msgstr "Grabación & Reproducción"
 
 #, fuzzy
 msgid "Recording Paths"
@@ -9601,7 +9625,7 @@ msgstr "Las grabaciones siempre tienen prioridad"
 
 #, fuzzy
 msgid "Recordings, Playback & Timeshift"
-msgstr "Las grabaciones siempre tienen prioridad"
+msgstr "Grabación & Reproducción"
 
 msgid "Recover"
 msgstr "Recuperar"
@@ -10233,8 +10257,8 @@ msgstr "Configurar Samba"
 msgid "Satellite"
 msgstr "Satélite"
 
-msgid "Satellite dish setup"
-msgstr "Configuración de la parabólica"
+msgid "Satellite Dish Setup"
+msgstr "Ajustes Antena Satélite"
 
 msgid "Satellite equipment"
 msgstr "Equipo de satélite"
@@ -10862,6 +10886,12 @@ msgstr "Seleccione su zona horaria o región."
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Seleccionando satélites 1 (USALS)"
 
@@ -11014,8 +11044,8 @@ msgstr "Servicios"
 msgid "Set CI assignment for detection of available services."
 msgstr "Establecer asignación de CI para la detección de servicios disponibles."
 
-msgid "Set PIN"
-msgstr "Establezca PIN"
+msgid "Set PIN Pressing [OK]"
+msgstr "Establezca PIN Presionando [OK]"
 
 msgid "Set a temporary sort method for this directory"
 msgstr "Establecer un método de clasificación temporal para este directorio"
@@ -11638,7 +11668,7 @@ msgstr "Ajuste en Skin"
 
 #, fuzzy
 msgid "Skin Setup"
-msgstr "Ajuste en Skin"
+msgstr "Ajustes OSD"
 
 #, fuzzy
 msgid "SkinSelector: Restart GUI"
@@ -12259,9 +12289,6 @@ msgstr "Selección de subtítulos"
 
 msgid "Subtitle selection..."
 msgstr "Selección de subtítulos…"
-
-msgid "Subtitle settings"
-msgstr "Ajustes de subtítulos"
 
 #, fuzzy
 msgid "Subtitle show/hide..."
@@ -13099,7 +13126,11 @@ msgstr "Jueves"
 msgid "TiVo support"
 msgstr "Soporte TiVo"
 
+#, fuzzy
 msgid "Time"
+msgstr "Temporizadores Grabaciones"
+
+msgid "Time Setup"
 msgstr "Horario"
 
 #, fuzzy
@@ -13838,18 +13869,13 @@ msgstr "ID de Usuario"
 
 #, fuzzy
 msgid "User Interface"
-msgstr "Interfaz de Usuario"
+msgstr "Usar interfaz"
 
-#, fuzzy
 msgid "User Interface Setup"
 msgstr "Interfaz de Usuario"
 
-msgid "User Mode"
-msgstr "Modo Usuario"
-
-#, fuzzy
 msgid "User Mode Setup"
-msgstr "Modo Usuario"
+msgstr "Ajustes Modo Usuario"
 
 msgid "User defined"
 msgstr "Definido por el usuario"
@@ -13857,8 +13883,9 @@ msgstr "Definido por el usuario"
 msgid "User defined transponder"
 msgstr "Transpondedor definido por el usuario"
 
+#, fuzzy
 msgid "User interface"
-msgstr "Interfaz de Usuario"
+msgstr "Usar interfaz"
 
 msgid "Username"
 msgstr "Nombre de usuario"
@@ -14583,8 +14610,8 @@ msgstr ""
 msgid "Without popup"
 msgstr "Sin ventana emergente"
 
-msgid "Wizard setup"
-msgstr "Configuración del asistente"
+msgid "Wizard Setup"
+msgstr "Ajustes del asistente"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Asistente para ajustar el overscan"
@@ -14798,9 +14825,8 @@ msgstr "Su %s %s almacena los datos guardados en EPG cada (horas)."
 msgid "Your %s %s?"
 msgstr "Su %s %s?"
 
-#, fuzzy
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
-msgstr "Su código PIN es 0000. ¡Este es el código PIN predeterminado y deshabilita el control parental!\n"
+msgstr "Su código PIN es 0000. ¡Este es el código PIN por defecto y deshabilita el control parental!\n"
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Su colección excede el tamaño de un medio de una capa, ¡necesitará un DVD de doble capa en blanco!"

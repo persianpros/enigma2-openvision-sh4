@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2020-05-12 14:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -65,6 +65,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr ": 0000 - predvolené (vypnuté)"
 
 msgid " (0 - all networks)"
 msgstr " (0 - všetky siete)"
@@ -1388,9 +1392,6 @@ msgstr "8bit"
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - predvolené (vypnuté)"
-
 msgid "<Current movielist location>"
 msgstr "<Aktuálne umiestnenie zoznamu filmov>"
 
@@ -1611,6 +1612,10 @@ msgstr "Zrušiť úpravu obľúbených"
 
 msgid "About"
 msgstr "O prijímači"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Informácie"
 
 #, fuzzy
 msgid "About..."
@@ -2275,9 +2280,6 @@ msgstr "Automatické zaostrenie"
 msgid "Auto focus commencing ..."
 msgstr "Automatické zaostrenie spustením ..."
 
-msgid "Auto language selection"
-msgstr "Automatický výber jazyka"
-
 msgid "Auto play blu-ray file"
 msgstr "Automatické prehrávanie blu-ray súboru"
 
@@ -2473,6 +2475,10 @@ msgstr "Belize"
 #, fuzzy
 msgid "Benchmark"
 msgstr "Dánsko"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Informácie správcu softvéru"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2866,8 +2872,8 @@ msgstr "Zmeniť nastavenia opakovania a oneskorenia?"
 msgid "Change Language"
 msgstr "Zmena jazyka"
 
-msgid "Change PIN"
-msgstr "Zmeniť PIN kód"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3360,9 +3366,6 @@ msgstr "Nastaviť farbu externých titulkov, alternatívy (normálne bielou farb
 msgid "Configure the color of the teletext subtitles."
 msgstr "Nastavenie farby teletextových titulkov."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Nastavenie kontrastu predného panelu prijímača."
 
@@ -3654,10 +3657,6 @@ msgstr "Pripojené k"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Pripojený transcoding. Obmedzenie - bez PiP!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Nastavenie zostavy"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3930,6 +3929,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "DVB CI oneskorenie"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informácie"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "DVB titulky, PID a jazyk"
@@ -4395,6 +4398,10 @@ msgstr "Zistené tunery:"
 msgid "Device"
 msgstr "O stanici"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Informácie"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4509,6 +4516,10 @@ msgstr "Zobraziť EPG informáciu pre aktuálny program"
 msgid "Display EPG list for current channel"
 msgstr "Zobraziť EPG zoznam pre aktuálnú stanicu"
 
+#, fuzzy
+msgid "Display Setup"
+msgstr "Nastavenie displeja"
+
 msgid "Display Skin"
 msgstr "Zobraziť vzhľad"
 
@@ -4527,9 +4538,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Nastavenie displeja"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -4851,9 +4859,6 @@ msgstr "Iba EPG"
 msgid "EPG selection"
 msgstr "Výber EPG"
 
-msgid "EPG settings"
-msgstr "Nastavenie EPG"
-
 msgid "EPG:"
 msgstr "EPG:"
 
@@ -5148,6 +5153,10 @@ msgstr "Počet (re)štartov Enigmy: %d\n"
 #, fuzzy, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr "Úroveň ladenia Enigmy: %d\n"
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Verzia Enigmy: "
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5669,14 +5678,14 @@ msgstr "PWM ventilátora %d"
 msgid "Fan %d voltage"
 msgstr "Napätie ventilátora %d"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Rýchlosť ventilátora"
+
 msgid "Fan operation"
 msgstr "Prevádzka ventilátora"
 
 msgid "Fan speed"
-msgstr "Rýchlosť ventilátora"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "Rýchlosť ventilátora"
 
 msgid "Faroe Islands"
@@ -5985,6 +5994,10 @@ msgid "Geolocation"
 msgstr "Umiestnenie"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Informácie správcu softvéru"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Informácie správcu softvéru"
 
@@ -6211,11 +6224,12 @@ msgstr "Uspať prijímač signálom z TV"
 msgid "Handle wakeup from TV"
 msgstr "Prebudiť prijímač signálom z TV"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Nastavenie pevného disku"
+
 msgid "Hard disk"
 msgstr "Pevný disk"
-
-msgid "Hard disk setup"
-msgstr "Nastavenie pevného disku"
 
 msgid "Hard disk standby after"
 msgstr "Uspať pevný disk po"
@@ -6935,6 +6949,10 @@ msgstr "Keňa"
 msgid "Kernel file: "
 msgstr "Verzia jadra: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Verzia jadra: "
+
 msgid "Kernel version: "
 msgstr "Verzia jadra: "
 
@@ -6944,14 +6962,15 @@ msgstr "Kľúčové udalosti"
 msgid "Keyboard"
 msgstr "Klávesnica"
 
+#, fuzzy
+msgid "Keyboard Setup"
+msgstr "Nastavenie klávesnice"
+
 msgid "Keyboard data entry"
 msgstr "Vstupné údaje klávesnice"
 
 msgid "Keyboard map"
 msgstr "Rozloženie kláves"
-
-msgid "Keyboard setup"
-msgstr "Nastavenie klávesnice"
 
 msgid "Keymap"
 msgstr ""
@@ -7259,9 +7278,6 @@ msgstr "Jas"
 msgid "Logo brightness *"
 msgstr "Jas"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Nastavenie používania"
@@ -7510,6 +7526,10 @@ msgstr "Pamäť"
 
 msgid "Memory Info"
 msgstr "Informácie o pamäti"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informácie"
 
 msgid "Memory index"
 msgstr "Index pamäťe"
@@ -7974,8 +7994,16 @@ msgid "Network Info:"
 msgstr "Informácie o sieti:"
 
 #, fuzzy
+msgid "Network Information"
+msgstr "Nastavenie siete"
+
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktivovať nastavenia siete"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Nastavenie siete"
 
 msgid "Network configuration"
 msgstr "Nastavenie siete"
@@ -8372,6 +8400,10 @@ msgstr "Nastavenie 3D OSD"
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Nastavenie"
+
 msgid "OSD name request"
 msgstr "Názov OSD"
 
@@ -8469,6 +8501,10 @@ msgstr "Vyberte 'áno' iba v prípade, ak používate multiprepínač ktorý vy�
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Otvoriť voľbu umiestnenia"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9546,9 +9582,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "VF výstup"
 
-msgid "RF output"
-msgstr "VF výstup"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10323,7 +10356,8 @@ msgstr "Nastavenie PiP"
 msgid "Satellite"
 msgstr "Satelit"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Nastavenie paraboly"
 
 msgid "Satellite equipment"
@@ -10957,6 +10991,12 @@ msgstr "Vyberte vašu časovú zónu lokality alebo regiónu."
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Výber satelitov 1 (USALS)"
 
@@ -11113,8 +11153,8 @@ msgstr "Stanice"
 msgid "Set CI assignment for detection of available services."
 msgstr "Nastaviť priradenie CI kvôli detekcii dostupných kanálov."
 
-msgid "Set PIN"
-msgstr "Nastaviť PIN"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr ""
@@ -12384,9 +12424,6 @@ msgstr "Výber titulkov"
 msgid "Subtitle selection..."
 msgstr "Výber titulkov..."
 
-msgid "Subtitle settings"
-msgstr "Nastavenie titulkov"
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "Výber titulkov..."
@@ -13246,6 +13283,10 @@ msgstr "nepodporované"
 msgid "Time"
 msgstr "Čas"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Nastavenie nahrávania"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -13981,9 +14022,6 @@ msgstr "Užívateľské rozhranie"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "Užívateľské rozhranie"
-
-msgid "User Mode"
-msgstr "Užívateľský režim"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -14735,7 +14773,8 @@ msgstr "Táto voľba umožňuje prepnúť farbu LED alebo ju deaktivovať."
 msgid "Without popup"
 msgstr "Bez vyskakovacieho okna"
 
-msgid "Wizard setup"
+#, fuzzy
+msgid "Wizard Setup"
 msgstr "Sprievodca nastavením"
 
 msgid "Wizard to arrange the overscan"

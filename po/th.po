@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -63,6 +63,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "ลบส่วนตัดต่อ"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1313,9 +1317,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 msgid "<Current movielist location>"
 msgstr ""
 
@@ -1517,6 +1518,10 @@ msgstr "ยกเลิกการแก้ไขรายการโปรด
 
 msgid "About"
 msgstr "เกี่ยวกับ"
+
+#, fuzzy
+msgid "About Information"
+msgstr "ข้อมูล"
 
 #, fuzzy
 msgid "About..."
@@ -2206,9 +2211,6 @@ msgstr ""
 msgid "Auto focus commencing ..."
 msgstr ""
 
-msgid "Auto language selection"
-msgstr ""
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2411,6 +2413,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "ข้อมูล"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2791,7 +2797,7 @@ msgstr "ตั้งค่า Nameserver"
 msgid "Change Language"
 msgstr "ภาษา"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 msgid "Change VFD display settings"
@@ -3304,9 +3310,6 @@ msgstr ""
 msgid "Configure the color of the teletext subtitles."
 msgstr ""
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr ""
 
@@ -3600,10 +3603,6 @@ msgstr "เชื่อมต่อแล้วกับ"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "ตั้งค่าคอลเลคชั่น"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3880,6 +3879,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "ข้อมูล"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4359,6 +4362,10 @@ msgstr "NIMs ที่พบ:"
 msgid "Device"
 msgstr "บริการ"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "ข้อมูล"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4475,6 +4482,10 @@ msgid "Display EPG list for current channel"
 msgstr "แสดงแถบรายการเมื่อมีการเปลี่ยนรายการ"
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "ตั้งค่าการแสดงผล"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "ตั้งค่าการแสดงผล"
 
@@ -4494,10 +4505,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#, fuzzy
-msgid "Display setup"
-msgstr "ตั้งค่าการแสดงผล"
 
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr ""
@@ -4826,9 +4833,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "เลือกผังรายการ"
 
-msgid "EPG settings"
-msgstr ""
-
 msgid "EPG:"
 msgstr ""
 
@@ -5122,6 +5126,10 @@ msgstr "เวอร์ชั่นใหม่:"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "เวอร์ชั่นใหม่:"
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5631,15 +5639,15 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr "เพิ่ม Voltage"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "ควบคุมอายุ"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#, fuzzy
-msgid "Fan speed control"
-msgstr "ควบคุมอายุ"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -5945,6 +5953,10 @@ msgstr "ชนิด"
 msgid "Geolocation"
 msgstr "สถานที่"
 
+#, fuzzy
+msgid "Geolocation Information"
+msgstr "ข้อมูล"
+
 msgid "Geolocation information"
 msgstr ""
 
@@ -6181,12 +6193,12 @@ msgid "Handle wakeup from TV"
 msgstr ""
 
 #, fuzzy
-msgid "Hard disk"
-msgstr "ฮาร์ดดิสก์"
+msgid "Hard Disk Setup"
+msgstr "ตั้งค่าฮาร์ดดิสก์"
 
 #, fuzzy
-msgid "Hard disk setup"
-msgstr "ตั้งค่าฮาร์ดดิสก์"
+msgid "Hard disk"
+msgstr "ฮาร์ดดิสก์"
 
 #, fuzzy
 msgid "Hard disk standby after"
@@ -6917,6 +6929,10 @@ msgid "Kernel file: "
 msgstr "เวอร์ชั่นใหม่:"
 
 #, fuzzy
+msgid "Kernel module layout: "
+msgstr "เวอร์ชั่นใหม่:"
+
+#, fuzzy
 msgid "Kernel version: "
 msgstr "เวอร์ชั่นใหม่:"
 
@@ -6927,16 +6943,16 @@ msgid "Keyboard"
 msgstr "แป้นพิมพ์"
 
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "ตั้งค่าแป้นพิมพ์"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "ตั้งค่าแป้นพิมพ์"
 
 #, fuzzy
 msgid "Keyboard map"
 msgstr "การวางแป้นพิมพ์"
-
-#, fuzzy
-msgid "Keyboard setup"
-msgstr "ตั้งค่าแป้นพิมพ์"
 
 msgid "Keymap"
 msgstr ""
@@ -7254,9 +7270,6 @@ msgstr "ความสว่าง"
 msgid "Logo brightness *"
 msgstr "ความสว่าง"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "ตั้งค่า"
@@ -7512,6 +7525,10 @@ msgstr ""
 
 msgid "Memory Info"
 msgstr ""
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "ข้อมูล"
 
 msgid "Memory index"
 msgstr ""
@@ -7988,7 +8005,15 @@ msgid "Network Info:"
 msgstr ""
 
 #, fuzzy
+msgid "Network Information"
+msgstr "ตั้งค่าเครือข่าย..."
+
+#, fuzzy
 msgid "Network MAC settings"
+msgstr "ตั้งค่าเครือข่าย"
+
+#, fuzzy
+msgid "Network Setup"
 msgstr "ตั้งค่าเครือข่าย"
 
 msgid "Network configuration"
@@ -8397,6 +8422,10 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "ตั้งค่า"
+
 msgid "OSD name request"
 msgstr ""
 
@@ -8495,6 +8524,10 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "เวอร์ชั่นใหม่:"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9589,9 +9622,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "RF output"
 
-msgid "RF output"
-msgstr "RF output"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10378,7 +10408,7 @@ msgid "Satellite"
 msgstr "ดาวเทียม"
 
 #, fuzzy
-msgid "Satellite dish setup"
+msgid "Satellite Dish Setup"
 msgstr "ตั้งค่าอุปกรณ์ดาวเทียม"
 
 msgid "Satellite equipment"
@@ -11031,6 +11061,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -11193,7 +11229,7 @@ msgstr "บริการต่างๆ"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -12495,9 +12531,6 @@ msgstr "เลือกซับไตเติ้ล"
 msgid "Subtitle selection..."
 msgstr ""
 
-msgid "Subtitle settings"
-msgstr ""
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "ซับไตเติ้ล"
@@ -13325,6 +13358,10 @@ msgstr "ไม่รองรับ"
 msgid "Time"
 msgstr "เวลา"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "ตั้งค่า Nameserver"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -14083,10 +14120,6 @@ msgid "User Interface Setup"
 msgstr "เลือกใช้อินเตอร์เฟซนี้"
 
 #, fuzzy
-msgid "User Mode"
-msgstr "ผู้ใช้กำหนด"
-
-#, fuzzy
 msgid "User Mode Setup"
 msgstr "ผู้ใช้กำหนด"
 
@@ -14829,7 +14862,7 @@ msgid "Without popup"
 msgstr ""
 
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "ตั้งค่าวีดีโอ"
 
 msgid "Wizard to arrange the overscan"

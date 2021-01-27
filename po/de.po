@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2020-11-22 09:44+0100\n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: OpenPLi\n"
@@ -65,6 +65,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr ": 0000 - Standard (deaktiviert)"
 
 msgid " (0 - all networks)"
 msgstr "(0 - alle Netzwerke)"
@@ -1377,9 +1381,6 @@ msgstr "8bit"
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ": 0000 - Standard (deaktiviert)"
-
 msgid "<Current movielist location>"
 msgstr "<Aktuelles Filmlisten-Verzeichnis>"
 
@@ -1601,6 +1602,10 @@ msgstr "Favoriteneditor abbrechen"
 
 msgid "About"
 msgstr "Über"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Informationen"
 
 #, fuzzy
 msgid "About..."
@@ -2263,9 +2268,6 @@ msgstr "Auto Fokus"
 msgid "Auto focus commencing ..."
 msgstr "Auto-Fokusierung beginnt …"
 
-msgid "Auto language selection"
-msgstr "Automatische Sprachauswahl"
-
 msgid "Auto play blu-ray file"
 msgstr "Autoplay Bluray Datei"
 
@@ -2460,6 +2462,10 @@ msgstr "Belize"
 #, fuzzy
 msgid "Benchmark"
 msgstr "Dänemark"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Softwaremanager Information"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2853,8 +2859,8 @@ msgstr "Einstellung für Wiederholung und Verzögerung anpassen?"
 msgid "Change Language"
 msgstr "Sprache ändern"
 
-msgid "Change PIN"
-msgstr "PIN ändern"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3347,9 +3353,6 @@ msgstr "Konfiguration externe Untertitel Farbe, Alternativ (normal in Weiß, kur
 msgid "Configure the color of the teletext subtitles."
 msgstr "Farbe der Teletext-Untertitel bestimmen."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Kontrast des Frontdisplays."
 
@@ -3645,10 +3648,6 @@ msgstr "Verbunden mit"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Angeschlossene Transkodierung, Limit - kein PiP!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Zusammenstellungs-Einstellungen"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3920,6 +3919,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr "DVB CI-Verzögerung"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "Informationen"
 
 msgid "DVB Subtitles PID & lang"
 msgstr "DVB-Untertitel PID & Sprache"
@@ -4383,6 +4386,10 @@ msgstr "Erkannte Tuner:"
 msgid "Device"
 msgstr "Kanal"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Informationen"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4497,6 +4504,10 @@ msgstr "Timeshift nur für aktuelle Sendung speichern"
 msgid "Display EPG list for current channel"
 msgstr "EPG für aktuellen Kanal anzeigen…"
 
+#, fuzzy
+msgid "Display Setup"
+msgstr "Display-Einstellungen"
+
 msgid "Display Skin"
 msgstr "Display Skin"
 
@@ -4515,9 +4526,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Display-Einstellungen"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -4832,9 +4840,6 @@ msgstr "Nur EPG"
 msgid "EPG selection"
 msgstr "EPG-Auswahl"
 
-msgid "EPG settings"
-msgstr "EPG-Einstellungen"
-
 msgid "EPG:"
 msgstr ""
 
@@ -5131,6 +5136,10 @@ msgstr "Benutzeroberfläche (Enigma) startet neu: %d\n"
 #, fuzzy, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr "Enigma Debug Level: %d\n"
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Enigma-Version:"
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5652,14 +5661,14 @@ msgstr "Lüfter %d PWM"
 msgid "Fan %d voltage"
 msgstr "Lüfter %d Spannung"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Lüftergeschwindigkeit"
+
 msgid "Fan operation"
 msgstr "Lüfterbetriebszustand"
 
 msgid "Fan speed"
-msgstr "Lüftergeschwindigkeit"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "Lüftergeschwindigkeit"
 
 msgid "Faroe Islands"
@@ -5968,6 +5977,10 @@ msgid "Geolocation"
 msgstr "Zielverzeichnis"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Softwaremanager Information"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Softwaremanager Information"
 
@@ -6192,11 +6205,12 @@ msgstr "Receiver mit Fernseher in den Standby versetzen"
 msgid "Handle wakeup from TV"
 msgstr "Receiver mit Fernseher aufwachen"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Festplatten Einstellungen"
+
 msgid "Hard disk"
 msgstr "Festplatte"
-
-msgid "Hard disk setup"
-msgstr "Festplatten-Einstellungen"
 
 msgid "Hard disk standby after"
 msgstr "Festplatten-Standby nach"
@@ -6915,6 +6929,10 @@ msgstr "Kenia"
 msgid "Kernel file: "
 msgstr "Kernel-Version: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Kernel-Version: "
+
 msgid "Kernel version: "
 msgstr "Kernel-Version: "
 
@@ -6924,14 +6942,15 @@ msgstr "Schlüsselereignisse"
 msgid "Keyboard"
 msgstr "Tastatur"
 
+#, fuzzy
+msgid "Keyboard Setup"
+msgstr "Tastatureinstellung"
+
 msgid "Keyboard data entry"
 msgstr "Tastatureingabe"
 
 msgid "Keyboard map"
 msgstr "Tastaturlayout"
-
-msgid "Keyboard setup"
-msgstr "Tastatureinstellung"
 
 msgid "Keymap"
 msgstr ""
@@ -7238,9 +7257,6 @@ msgstr "Helligkeit"
 msgid "Logo brightness *"
 msgstr "Helligkeit"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Benutzereinstellungen"
@@ -7489,6 +7505,10 @@ msgstr "Speicher"
 
 msgid "Memory Info"
 msgstr "Speicher Informationen"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Informationen"
 
 msgid "Memory index"
 msgstr "Index speichern"
@@ -7953,8 +7973,16 @@ msgid "Network Info:"
 msgstr "Netzwerk-Information: "
 
 #, fuzzy
+msgid "Network Information"
+msgstr "Netzwerk-Konfiguration"
+
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktiviere Netzwerkeinstellungen"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Netzwerkeinstellungen"
 
 msgid "Network configuration"
 msgstr "Netzwerk-Konfiguration"
@@ -8353,6 +8381,10 @@ msgstr "OSD 3D Einstellungen"
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Einstellungen"
+
 msgid "OSD name request"
 msgstr "Benutzeroberflächen Anfrage"
 
@@ -8450,6 +8482,10 @@ msgstr "Wählen Sie nur “Ja”, wenn Sie einen Multiswitch verwenden, der ein 
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Öffne den ausgewählten Ort"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9527,9 +9563,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "RF-Ausgang"
 
-msgid "RF output"
-msgstr "RF-Ausgang"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10311,7 +10344,8 @@ msgstr "Bild im Bild (PiP) - Einstellung"
 msgid "Satellite"
 msgstr "Satellit"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Einstellungen der Satellitenschüssel"
 
 msgid "Satellite equipment"
@@ -10942,6 +10976,12 @@ msgstr "Wählen Sie die aktuelle Zeitzone"
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Wähle Satelliten 1 (USALS)"
 
@@ -11098,8 +11138,8 @@ msgstr "Kanäle"
 msgid "Set CI assignment for detection of available services."
 msgstr "Stellen Sie die CI-Zuweisung für die Erkennung verfügbarer Dienste ein."
 
-msgid "Set PIN"
-msgstr "PIN speichern"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr ""
@@ -12371,9 +12411,6 @@ msgstr "Untertitel-Auswahl"
 msgid "Subtitle selection..."
 msgstr "Untertitel-Auswahl…"
 
-msgid "Subtitle settings"
-msgstr "Untertitel-Einstellungen"
-
 msgid "Subtitle show/hide..."
 msgstr "Untertitel anzeigen/ausblenden..."
 
@@ -13229,6 +13266,10 @@ msgstr "Nicht unterstützt"
 msgid "Time"
 msgstr "Zeit"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Aufnahme Einstellungen"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -13959,9 +14000,6 @@ msgstr "Benutzeroberfläche"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "Benutzeroberfläche"
-
-msgid "User Mode"
-msgstr "Benutzermodus"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -14716,7 +14754,8 @@ msgstr "Mit dieser Option können Sie die LED Farbe ändern oder die LED ausscha
 msgid "Without popup"
 msgstr "ohne Popup"
 
-msgid "Wizard setup"
+#, fuzzy
+msgid "Wizard Setup"
 msgstr "Einrichtungsassistent"
 
 msgid "Wizard to arrange the overscan"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Kurdish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2013-04-22 04:29+0330\n"
 "Last-Translator: dimili21\n"
 "Language-Team: \n"
@@ -64,6 +64,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr "delete cut"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1371,9 +1375,6 @@ msgstr ""
 msgid "9"
 msgstr "9"
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 msgid "<Current movielist location>"
 msgstr "<konuma listekén filma>"
 
@@ -1597,6 +1598,10 @@ msgstr "Abort favourites edit"
 
 msgid "About"
 msgstr "Heqé wi"
+
+#, fuzzy
+msgid "About Information"
+msgstr "Hakké İmagéda"
 
 #, fuzzy
 msgid "About..."
@@ -2269,9 +2274,6 @@ msgstr "Auto focus"
 msgid "Auto focus commencing ..."
 msgstr "Auto netkirin ..."
 
-msgid "Auto language selection"
-msgstr "Auto Ziman Çékirin"
-
 msgid "Auto play blu-ray file"
 msgstr ""
 
@@ -2471,6 +2473,10 @@ msgstr ""
 
 msgid "Benchmark"
 msgstr ""
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "Softwaremanager information"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2851,7 +2857,7 @@ msgstr "Change repeat and delay settings?"
 msgid "Change Language"
 msgstr "Ziman"
 
-msgid "Change PIN"
+msgid "Change PIN Pressing [OK]"
 msgstr ""
 
 #, fuzzy
@@ -3354,9 +3360,6 @@ msgstr ""
 msgid "Configure the color of the teletext subtitles."
 msgstr "Configure the color of the teletext subtitles."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "Configure the contrast level of the front panel display."
 
@@ -3651,10 +3654,6 @@ msgstr "Girédi "
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Eyara Kolleksiyon"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3927,6 +3926,10 @@ msgstr ""
 
 msgid "DVB CI Delay"
 msgstr ""
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "Hakké İmagéda"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4397,6 +4400,10 @@ msgstr "Detected NIMs:"
 msgid "Device"
 msgstr "Hizmeti"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "Hakké İmagéda"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4512,6 +4519,10 @@ msgid "Display EPG list for current channel"
 msgstr "Show EPG for current channel..."
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "Çékirina Roniya Ekran"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "Çékirina Roniya Ekran"
 
@@ -4530,9 +4541,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-msgid "Display setup"
-msgstr "Çékirina Roniya Ekran"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -4859,9 +4867,6 @@ msgstr ""
 msgid "EPG selection"
 msgstr "EPG selection"
 
-msgid "EPG settings"
-msgstr "EPG Çékirin"
-
 msgid "EPG:"
 msgstr ""
 
@@ -5158,6 +5163,10 @@ msgstr "Kernel version: "
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "Kernel version: "
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5666,15 +5675,15 @@ msgstr "Fan %d PWM"
 msgid "Fan %d voltage"
 msgstr "Fan %d voltage"
 
+#, fuzzy
+msgid "Fan Speed Setup"
+msgstr "Kilita Gede"
+
 msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
 msgstr ""
-
-#, fuzzy
-msgid "Fan speed control"
-msgstr "Kilita Gede"
 
 msgid "Faroe Islands"
 msgstr ""
@@ -5980,6 +5989,10 @@ msgid "Geolocation"
 msgstr "Location"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "Softwaremanager information"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "Softwaremanager information"
 
@@ -6210,11 +6223,12 @@ msgstr "Handle standby from TV"
 msgid "Handle wakeup from TV"
 msgstr "Handle wakeup from TV"
 
+#, fuzzy
+msgid "Hard Disk Setup"
+msgstr "Hard disk setup"
+
 msgid "Hard disk"
 msgstr "Hard disk"
-
-msgid "Hard disk setup"
-msgstr "Hard disk setup"
 
 msgid "Hard disk standby after"
 msgstr "Hard disk standby after"
@@ -6930,6 +6944,10 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Kernel version: "
 
+#, fuzzy
+msgid "Kernel module layout: "
+msgstr "Kernel version: "
+
 msgid "Kernel version: "
 msgstr "Kernel version: "
 
@@ -6940,14 +6958,15 @@ msgid "Keyboard"
 msgstr "Keyboard"
 
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "Keyboard setup"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "Keyboard setup"
 
 msgid "Keyboard map"
 msgstr "Keyboard map"
-
-msgid "Keyboard setup"
-msgstr "Keyboard setup"
 
 msgid "Keymap"
 msgstr ""
@@ -7257,9 +7276,6 @@ msgstr "Ronahi"
 msgid "Logo brightness *"
 msgstr "Ronahi"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "Çékirin"
@@ -7512,6 +7528,10 @@ msgstr "Memory"
 
 msgid "Memory Info"
 msgstr ""
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "Hakké İmagéda"
 
 msgid "Memory index"
 msgstr "Memory index"
@@ -7988,8 +8008,16 @@ msgid "Network Info:"
 msgstr ""
 
 #, fuzzy
+msgid "Network Information"
+msgstr "Network configuration..."
+
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "Eyare Networké Aktif bike"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "Network setup"
 
 msgid "Network configuration"
 msgstr ""
@@ -8393,6 +8421,10 @@ msgstr ""
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "Çékirin"
+
 msgid "OSD name request"
 msgstr "OSD name request"
 
@@ -8490,6 +8522,10 @@ msgstr ""
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "Kernel version: "
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9568,9 +9604,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "RF output"
 
-msgid "RF output"
-msgstr "RF output"
-
 msgid "RGB"
 msgstr "RGB"
 
@@ -10352,7 +10385,8 @@ msgstr "PiP setup"
 msgid "Satellite"
 msgstr "Satellite"
 
-msgid "Satellite dish setup"
+#, fuzzy
+msgid "Satellite Dish Setup"
 msgstr "Satellite dish setup"
 
 msgid "Satellite equipment"
@@ -10986,6 +11020,12 @@ msgstr ""
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr ""
 
@@ -11145,7 +11185,7 @@ msgstr "Services"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-msgid "Set PIN"
+msgid "Set PIN Pressing [OK]"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -12424,9 +12464,6 @@ msgstr "Subtitle selection"
 msgid "Subtitle selection..."
 msgstr "Subtitle selection..."
 
-msgid "Subtitle settings"
-msgstr "Çékirina Bin nivisi"
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "Subtitle selection..."
@@ -13260,6 +13297,10 @@ msgstr "not supported"
 msgid "Time"
 msgstr "Time"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "Nameserver setup"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -14005,10 +14046,6 @@ msgstr "Çékirina te"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "Çékirina te"
-
-#, fuzzy
-msgid "User Mode"
-msgstr "User defined"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -14764,7 +14801,7 @@ msgid "Without popup"
 msgstr ""
 
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "Video setup"
 
 msgid "Wizard to arrange the overscan"

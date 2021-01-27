@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-20 16:52+0330\n"
+"POT-Creation-Date: 2021-01-27 05:54+0330\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -64,6 +64,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid "  Default: 0000 (disabled)"
+msgstr " (معطل)"
 
 msgid " (0 - all networks)"
 msgstr " (0-جميع الشبكات)"
@@ -1428,9 +1432,6 @@ msgstr "ثمانية بت"
 msgid "9"
 msgstr ""
 
-msgid ": 0000 - default (disabled)"
-msgstr ""
-
 msgid "<Current movielist location>"
 msgstr "<موقع قائمة الافلام الحاليه>"
 
@@ -1661,6 +1662,10 @@ msgstr "إلغاء تعديل المفضلات"
 
 msgid "About"
 msgstr "حول"
+
+#, fuzzy
+msgid "About Information"
+msgstr "معلومات"
 
 #, fuzzy
 msgid "About..."
@@ -2357,10 +2362,6 @@ msgstr "التركيز التلقائي"
 msgid "Auto focus commencing ..."
 msgstr "يبدأ التركيز التلقائي ..."
 
-#, fuzzy
-msgid "Auto language selection"
-msgstr "اختيار لغة الصوت الأولى"
-
 msgid "Auto play blu-ray file"
 msgstr "التشغيل التلقائي لملف البلوراي"
 
@@ -2566,6 +2567,10 @@ msgstr "بيليز"
 #, fuzzy
 msgid "Benchmark"
 msgstr "الدنمارك"
+
+#, fuzzy
+msgid "Benchmark Information"
+msgstr "معلومات إدارة البرنامج التشغيلي"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2952,8 +2957,8 @@ msgstr "تغيير إعدادات التكرار والتاخير ؟"
 msgid "Change Language"
 msgstr "اللغـة"
 
-msgid "Change PIN"
-msgstr "تغيير الرقم السري"
+msgid "Change PIN Pressing [OK]"
+msgstr ""
 
 #, fuzzy
 msgid "Change VFD display settings"
@@ -3481,9 +3486,6 @@ msgstr "إعدادات لون الترجمة في الوسائط الخارجي�
 msgid "Configure the color of the teletext subtitles."
 msgstr "إعدادات لون الترجمة النصية."
 
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
-
 msgid "Configure the contrast level of the front panel display."
 msgstr "إعدادات مستوى تباين وضوح شاشة لوحة التحكم الأمامية ."
 
@@ -3805,10 +3807,6 @@ msgstr "متصل بـ"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "بث القنوات عبر الشبكة متصل, بلا نهاية -لا تعمل خاصية قناة داخل قناة!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "إعدادات المجموعة"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -4090,6 +4088,10 @@ msgstr ""
 #, fuzzy
 msgid "DVB CI Delay"
 msgstr "مدة تأخير قنوات الكامة الداخلية"
+
+#, fuzzy
+msgid "DVB Information"
+msgstr "معلومات"
 
 msgid "DVB Subtitles PID & lang"
 msgstr ""
@@ -4569,6 +4571,10 @@ msgstr "الكشف عن التيونرات:"
 msgid "Device"
 msgstr "قنوات"
 
+#, fuzzy
+msgid "Device Information"
+msgstr "معلومات"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4688,6 +4694,10 @@ msgid "Display EPG list for current channel"
 msgstr "عرض دليل البرامج الإلكتروني للقناة الحالية..."
 
 #, fuzzy
+msgid "Display Setup"
+msgstr "اعداد الاستخدام"
+
+#, fuzzy
 msgid "Display Skin"
 msgstr "لوحة تحكم عرض الإضاءة"
 
@@ -4707,10 +4717,6 @@ msgstr ""
 
 msgid "Display selection list as a selection menu"
 msgstr ""
-
-#, fuzzy
-msgid "Display setup"
-msgstr "اعداد الاستخدام"
 
 #, fuzzy
 msgid "Display the EIT now/next eventdata in infobar."
@@ -5053,9 +5059,6 @@ msgstr "موقع دليل البرامج اليومية"
 msgid "EPG selection"
 msgstr "موقع دليل البرامج اليومية"
 
-msgid "EPG settings"
-msgstr "إعدادات دليل البرامج الإلكترونية"
-
 msgid "EPG:"
 msgstr ""
 
@@ -5368,6 +5371,10 @@ msgstr "تشغيل وإعادة تشغيل الانجما2:\t%s\n"
 #, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr ""
+
+#, fuzzy
+msgid "Enigma2 revision: "
+msgstr "إصدار جديد:"
 
 #, fuzzy
 msgid "Enigma2 version: "
@@ -5902,15 +5909,15 @@ msgid "Fan %d voltage"
 msgstr "فولت زائد"
 
 #, fuzzy
+msgid "Fan Speed Setup"
+msgstr "السرعه السابقه"
+
+#, fuzzy
 msgid "Fan operation"
 msgstr "خيارات البحث"
 
 #, fuzzy
 msgid "Fan speed"
-msgstr "السرعه السابقه"
-
-#, fuzzy
-msgid "Fan speed control"
 msgstr "السرعه السابقه"
 
 msgid "Faroe Islands"
@@ -6226,6 +6233,10 @@ msgid "Geolocation"
 msgstr "مكان"
 
 #, fuzzy
+msgid "Geolocation Information"
+msgstr "معلومات إدارة البرنامج التشغيلي"
+
+#, fuzzy
 msgid "Geolocation information"
 msgstr "معلومات إدارة البرنامج التشغيلي"
 
@@ -6472,11 +6483,11 @@ msgid "Handle wakeup from TV"
 msgstr "التعامل مع وضع الإستيقاظ  من التلفزيون"
 
 #, fuzzy
-msgid "Hard disk"
+msgid "Hard Disk Setup"
 msgstr "ضبط القرص الصلب"
 
 #, fuzzy
-msgid "Hard disk setup"
+msgid "Hard disk"
 msgstr "ضبط القرص الصلب"
 
 msgid "Hard disk standby after"
@@ -7221,6 +7232,10 @@ msgid "Kernel file: "
 msgstr "إصدار جديد:"
 
 #, fuzzy
+msgid "Kernel module layout: "
+msgstr "إصدار جديد:"
+
+#, fuzzy
 msgid "Kernel version: "
 msgstr "إصدار جديد:"
 
@@ -7231,15 +7246,15 @@ msgid "Keyboard"
 msgstr "لوحة المفاتيح"
 
 #, fuzzy
+msgid "Keyboard Setup"
+msgstr "إعدادات لوحة المفاتيح"
+
+#, fuzzy
 msgid "Keyboard data entry"
 msgstr "خريطة لوحة المفاتيح"
 
 msgid "Keyboard map"
 msgstr "خريطة لوحة المفاتيح"
-
-#, fuzzy
-msgid "Keyboard setup"
-msgstr "إعدادات لوحة المفاتيح"
 
 msgid "Keymap"
 msgstr ""
@@ -7557,9 +7572,6 @@ msgstr "الإضاءه"
 msgid "Logo brightness *"
 msgstr "الإضاءه"
 
-msgid "Logs"
-msgstr ""
-
 #, fuzzy
 msgid "Logs Setup"
 msgstr "اعداد الاستخدام"
@@ -7816,6 +7828,10 @@ msgstr "الذاكرة"
 #, fuzzy
 msgid "Memory Info"
 msgstr "الذاكرة"
+
+#, fuzzy
+msgid "Memory Information"
+msgstr "معلومات"
 
 msgid "Memory index"
 msgstr "مؤشر الذاكرة"
@@ -8295,8 +8311,16 @@ msgid "Network Info:"
 msgstr "معرف شبكه الاتصال"
 
 #, fuzzy
+msgid "Network Information"
+msgstr "حماية التكوين"
+
+#, fuzzy
 msgid "Network MAC settings"
 msgstr "تفعيل إعدادات الشبكة"
+
+#, fuzzy
+msgid "Network Setup"
+msgstr "ضبط الشبـكة"
 
 #, fuzzy
 msgid "Network configuration"
@@ -8719,6 +8743,10 @@ msgstr "ضبط شاشة العرض ثلاثية الابعاد"
 msgid "OSD Adjustment"
 msgstr ""
 
+#, fuzzy
+msgid "OSD Setup"
+msgstr "الضبط"
+
 msgid "OSD name request"
 msgstr "طلب الاسم في شاشة العرض"
 
@@ -8820,6 +8848,10 @@ msgstr "حدد فقط 'نعم' إذا كنت تستخدم جهاز القسام 
 
 msgid "Open Vision"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision Information"
+msgstr "حدد الموقع"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9933,10 +9965,6 @@ msgstr ""
 msgid "RF Output Setup"
 msgstr "مخرج 12 ف"
 
-#, fuzzy
-msgid "RF output"
-msgstr "مخرج 12 ف"
-
 msgid "RGB"
 msgstr "أحمر أخضر أزرق"
 
@@ -10750,7 +10778,7 @@ msgid "Satellite"
 msgstr "قمر صناعي"
 
 #, fuzzy
-msgid "Satellite dish setup"
+msgid "Satellite Dish Setup"
 msgstr "إعدادات طبق الأقمار الصناعية"
 
 msgid "Satellite equipment"
@@ -11437,6 +11465,12 @@ msgstr "إعداد توقيت المنطقة الزمنية الخاصة بك."
 msgid "Select, toggle, process or edit the current entry"
 msgstr ""
 
+msgid ""
+"Selecting 'Yes' will delete the currently selected user data. This action can't be undone. You may want to create a backup before continuing.\n"
+"\n"
+"Are you sure you want to continue with the factory reset?"
+msgstr ""
+
 msgid "Selecting satellites 1 (USALS)"
 msgstr "اختيار الأقمار الصناعية 1 (نظام مواقع الأقمار الصناعية العالمية )"
 
@@ -11605,9 +11639,8 @@ msgstr "القنوات"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
-#, fuzzy
-msgid "Set PIN"
-msgstr "أعاده إدخال الرقم السري"
+msgid "Set PIN Pressing [OK]"
+msgstr ""
 
 msgid "Set a temporary sort method for this directory"
 msgstr ""
@@ -12939,9 +12972,6 @@ msgstr "إختيار الترجمة الفرعية"
 msgid "Subtitle selection..."
 msgstr "إختيار الترجمة..."
 
-msgid "Subtitle settings"
-msgstr "إعدادات الترجمة"
-
 #, fuzzy
 msgid "Subtitle show/hide..."
 msgstr "إختيار الترجمة..."
@@ -13818,6 +13848,10 @@ msgstr "غير معتمد"
 msgid "Time"
 msgstr "الوقت"
 
+#, fuzzy
+msgid "Time Setup"
+msgstr "نوع التسجيل"
+
 msgid "Time import should start"
 msgstr ""
 
@@ -14595,10 +14629,6 @@ msgstr "استخدم واجهة المستخدم"
 #, fuzzy
 msgid "User Interface Setup"
 msgstr "استخدم واجهة المستخدم"
-
-#, fuzzy
-msgid "User Mode"
-msgstr "يحددها المستخدم"
 
 #, fuzzy
 msgid "User Mode Setup"
@@ -15380,7 +15410,7 @@ msgid "Without popup"
 msgstr "دون المنبثقة"
 
 #, fuzzy
-msgid "Wizard setup"
+msgid "Wizard Setup"
 msgstr "ضبط كلمة السر"
 
 msgid "Wizard to arrange the overscan"
