@@ -138,6 +138,12 @@ class About(Screen):
 		AboutText += _("Drivers version: ") + about.getDriverInstalledDate() + "\n"
 		AboutText += _("Kernel version: ") + boxbranding.getKernelVersion() + "\n"
 
+		modulelayout = popen('find /lib/modules/ -type f -name "openvision.ko" -exec modprobe --dump-modversions {} \; | grep "module_layout" | cut -c-11').read().strip()
+		if modulelayout is not None and modulelayout != "":
+			AboutText += _("Kernel module layout: ") + modulelayout + "\n"
+		else:
+			AboutText += _("Kernel module layout: ") + _("N/A") + "\n"	
+
 		GStreamerVersion = _("Media framework: ") + about.getGStreamerVersionString(cpu)
 		self["GStreamerVersion"] = StaticText(GStreamerVersion)
 		AboutText += "\n" + GStreamerVersion + "\n"
