@@ -759,6 +759,8 @@ lib/python/Plugins/Extensions/MediaPlayer/Makefile
 lib/python/Plugins/Extensions/MediaPlayer/meta/Makefile
 lib/python/Plugins/Extensions/MediaScanner/Makefile
 lib/python/Plugins/Extensions/MediaScanner/meta/Makefile
+lib/python/Plugins/Extensions/opt9600VFD/Makefile
+lib/python/Plugins/Extensions/opt9600VFD/meta/Makefile
 lib/python/Plugins/Extensions/pace7241VFD/Makefile
 lib/python/Plugins/Extensions/pace7241VFD/meta/Makefile
 lib/python/Plugins/Extensions/PicturePlayer/Makefile
@@ -801,6 +803,8 @@ lib/python/Plugins/SystemPlugins/SoftwareManager/Makefile
 lib/python/Plugins/SystemPlugins/SoftwareManager/meta/Makefile
 lib/python/Plugins/SystemPlugins/SparkUnionTunerType/Makefile
 lib/python/Plugins/SystemPlugins/SparkUnionTunerType/meta/Makefile
+lib/python/Plugins/SystemPlugins/SystemOptions/Makefile
+lib/python/Plugins/SystemPlugins/SystemOptions/meta/Makefile
 lib/python/Plugins/SystemPlugins/TempFanControl/Makefile
 lib/python/Plugins/SystemPlugins/TempFanControl/meta/Makefile
 lib/python/Plugins/SystemPlugins/VFD-Icons/Makefile

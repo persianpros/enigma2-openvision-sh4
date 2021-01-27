@@ -11,6 +11,7 @@ from Components.Sources.StaticText import StaticText
 from Plugins.Plugin import PluginDescriptor
 from os import path as os_path
 import fileinput
+
 option = 'options spark7162 UnionTunerType='
 filename = '/etc/modprobe.d/_spark7162.conf'
 

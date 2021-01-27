@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-# for localized messages
-
 from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor
 from Components.Console import Console
@@ -13,7 +11,6 @@ from Components.config import config, configfile, ConfigSubsection, getConfigLis
 from Components.ConfigList import ConfigListScreen
 from enigma import getBoxType
 import Screens.Standby
-
 
 config.plugins.booster = ConfigSubsection()
 if getBoxType() == "spark":
@@ -181,4 +178,3 @@ def sessionstart(reason, **kwargs):
 def Plugins(**kwargs):
 	return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
 		PluginDescriptor(name = _("SH4 Booster Control"), description = _("Change CPU speed settings"), where = PluginDescriptor.WHERE_MENU, fnc = main) ]
-

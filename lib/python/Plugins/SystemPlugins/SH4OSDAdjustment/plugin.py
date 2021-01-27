@@ -8,6 +8,7 @@ from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 from enigma import getDesktop, fbClass
 from os import path as os_path
+
 config.OSDAdjustment = ConfigSubsection()
 config.OSDAdjustment.top = ConfigInteger(default=0)
 config.OSDAdjustment.bottom = ConfigInteger(default=0)

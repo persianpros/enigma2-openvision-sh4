@@ -82,5 +82,9 @@ if ENABLE_PACE7241
 SUBDIRS += pace7241VFD
 endif
 
+if ENABLE_OPT9600
+SUBDIRS += opt9600VFD
+endif
+
 install_PYTHON =	\
 	__init__.py
