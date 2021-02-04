@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -66,8 +66,60 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Encryption Kaai"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP Adres"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP Adres"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmasker"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "ferwiderje stik"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Encryption"
+
+#
+#, fuzzy
+msgid "  Link mode:"
+msgstr "CI-Module initialisearje"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Moadus"
+
+msgid "  SSID:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Oerstjoeren type"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1290,7 +1342,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 #
@@ -1342,6 +1433,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1364,6 +1461,12 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1374,10 +1477,16 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 msgid "450 (default)"
+msgstr ""
+
+msgid "450 MHz"
 msgstr ""
 
 #
@@ -1404,20 +1513,56 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 msgid "540 (default)"
+msgstr ""
+
+msgid "540 MHz (default)"
 msgstr ""
 
 #
 msgid "6"
 msgstr "6"
 
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
+
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 #, fuzzy
@@ -2696,11 +2841,6 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "swarte lyst"
-
 msgid "Blinking REC"
 msgstr ""
 
@@ -2906,6 +3046,9 @@ msgid "CPU benchmark: "
 msgstr ""
 
 msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU clock frequency:"
 msgstr ""
 
 msgid "CPU: "
@@ -4248,6 +4391,9 @@ msgstr ""
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 #
 msgid "DUAL LAYER DVD"
 msgstr ""
@@ -5097,6 +5243,11 @@ msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Wolle jo echt boekmerk fan %s ferwiderje ?"
 
 #
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Wolle jo wier %s ferwiderje?"
+
+#
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Wolle jo wier %s ferwiderje?"
@@ -5465,6 +5616,16 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "5V ynskeakelje foar hjoeddeiske antenne"
 
+#
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "op it punt om te starten"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Ynskeakelje"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -5491,6 +5652,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -5511,6 +5675,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -5543,6 +5710,11 @@ msgstr "Bewurkjen favorieten oan"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Ynskeakele"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5565,6 +5737,11 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Ynskeakelje"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -6241,10 +6418,8 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr "Ferheeche spanning"
 
-#
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "Alderlik tasjoch"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -6599,8 +6774,19 @@ msgstr "Doel"
 msgid "Geolocation Information"
 msgstr "Ynformaasje"
 
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
+
 msgid "Geolocation information"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Inkele ynstekkers binne net anwêzig:\n"
 
 msgid "Georgia"
 msgstr ""
@@ -7655,10 +7841,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Nije ferzje:"
 
-#
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Nije ferzje:"
+msgstr ""
 
 #
 #, fuzzy
@@ -8955,11 +9139,6 @@ msgstr "Netwurk gûcheler"
 msgid "Network:"
 msgstr "Netwurk:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "nea"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -9344,6 +9523,9 @@ msgstr ""
 msgid "OK"
 msgstr "Ok"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr ""
 
@@ -9467,7 +9649,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Nije ferzje:"
+msgstr "Ynformaasje"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9704,16 +9886,15 @@ msgstr "Boppelizzende map"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Alderlik tasjoch"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Alderlik tasjoch"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Alderlik tasjoch"
 
 #
 #, fuzzy
@@ -10140,8 +10321,14 @@ msgstr "ynstelle fan tuner B"
 
 #
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "ynstelle fan tuner B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10797,6 +10984,9 @@ msgstr ""
 #
 msgid "Reboot"
 msgstr "kompleet nei starte"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #
 #, fuzzy
@@ -11476,6 +11666,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Fideo ynstellingen"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Ynstelle"
 
 msgid "SCAN"
 msgstr ""
@@ -13626,6 +13824,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "Helderens"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -13866,6 +14067,9 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -14033,6 +14237,11 @@ msgstr "Pip en haad skerm wikselje"
 msgid "Swap services"
 msgstr "Kanalen wikselje"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Kanalen wikselje"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -14141,6 +14350,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -14150,6 +14362,26 @@ msgstr "Systeem"
 
 msgid "System & Modulation"
 msgstr ""
+
+#
+#, fuzzy
+msgid "System configuration options"
+msgstr "Tuner ynstellingen"
+
+#
+#, fuzzy
+msgid "System option configuration"
+msgstr "Tuner ynstellingen"
+
+#
+#, fuzzy
+msgid "System options"
+msgstr "Posysje opslaan"
+
+#
+#, fuzzy
+msgid "System options configuration"
+msgstr "Tuner ynstellingen"
 
 msgid "T2MI PID"
 msgstr ""
@@ -14320,6 +14552,11 @@ msgstr ""
 msgid "Test mode"
 msgstr "Test moadus"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Test moadus"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -14384,11 +14621,6 @@ msgid "The MovieCut plugin is not installed."
 msgstr ""
 "De WLAN ynstekker is net ynstallearre!\n"
 "Ynstallearje dizze earst."
-
-#
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "De ynjûne pinkode is ferkeard."
 
 msgid "The PIN code has been changed successfully."
 msgstr ""
@@ -14474,6 +14706,12 @@ msgstr "It paad %s bestiit al."
 #
 msgid "The pin code you entered is wrong."
 msgstr "De ynjûne pinkode is ferkeard."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14878,7 +15116,12 @@ msgstr "Tiid"
 #
 #, fuzzy
 msgid "Time Setup"
-msgstr "Nammeserver Ynstellingen"
+msgstr "Tiidsbarren bewurkje"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Tiidsbarren seleksje"
 
 msgid "Time import should start"
 msgstr ""
@@ -15243,6 +15486,11 @@ msgstr "Ofstimme mislearre !"
 msgid "Tuner"
 msgstr "Tuner"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tiidsbarren type"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -15487,11 +15735,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "Paraatmode / Nijstart"
-
-#
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Binnenheljen fan"
 
@@ -15586,6 +15829,11 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "feroarje opnim tiiden"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15632,6 +15880,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -15800,6 +16051,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15829,6 +16083,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -16073,6 +16330,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr ""
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "LAN oanslúting"
 
 #
 msgid "WPA"
@@ -16980,6 +17242,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -17103,6 +17368,10 @@ msgstr "swart"
 msgid "black & white"
 msgstr ""
 
+#
+msgid "blacklist"
+msgstr "swarte lyst"
+
 msgid "blank"
 msgstr ""
 
@@ -17131,6 +17400,9 @@ msgstr "sortearje op datum"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17584,6 +17856,9 @@ msgstr ""
 msgid "infotainment (general)"
 msgstr ""
 
+msgid "infrastructure"
+msgstr ""
+
 #
 msgid "init module"
 msgstr "CI-Module initialisearje"
@@ -17876,6 +18151,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "Iepenje nammeserver konfiguraasje"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18248,6 +18526,11 @@ msgid "terrestrial"
 msgstr "Ether"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Ether"
+
+#
 msgid "testing"
 msgstr ""
 
@@ -18346,6 +18629,10 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
+msgstr ""
+
+#
+msgid "until standby/restart"
 msgstr ""
 
 #

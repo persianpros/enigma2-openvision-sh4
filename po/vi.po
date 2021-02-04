@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -66,8 +66,54 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Khóa mã hóa"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Nhập địa chỉ IP"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "Địa chỉ IP"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
+#, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - mặc định (bị tắt)"
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Mã hóa:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Chế độ danh sách"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Chế độ"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Chế độ truyền"
 
 msgid " (0 - all networks)"
 msgstr " (0 - tất cả các mạng)"
@@ -1261,8 +1307,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 msgid "12V output"
 msgstr "Đầu ra 12V"
@@ -1303,6 +1388,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1324,6 +1416,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1333,12 +1431,19 @@ msgstr "Chế độ 3d"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "mặc định"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1359,18 +1464,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "mặc định"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2467,7 +2608,7 @@ msgstr "Đan mạch"
 
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Thông tin về phần mềm"
+msgstr "Thông tin"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2493,10 +2634,6 @@ msgstr "Màn hình đen"
 
 msgid "Black screen till locked"
 msgstr "Màn hình đen cho đến khi bị khóa"
-
-#, fuzzy
-msgid "Blacklist"
-msgstr "danh sách đen"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2686,6 +2823,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Tất cả tần số"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -3906,6 +4047,10 @@ msgstr "Hỗ trợ HLG"
 msgid "DTS downmix"
 msgstr "DTS downmix"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS downmix"
+
 msgid "DUAL LAYER DVD"
 msgstr "DVD DUAL LAYER"
 
@@ -4650,6 +4795,10 @@ msgstr "Bạn có thực sự muốn xóa thư mục%s khỏi đĩa không?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Bạn có thực sự muốn xóa dấu trang của%s không?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Bạn có muốn khởi động lại máy thu của bạn?"
+
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Bạn có thực sự muốn dừng sự kiện hiện tại và xóa bộ đếm thời gian%s không?"
@@ -4963,6 +5112,14 @@ msgstr "Cho phép kiểm soát zap kiểu 'neutrino'"
 msgid "Enable 5V for active antenna"
 msgstr "Kích hoạt 5V cho ăng ten hoạt động"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Cho phép tự động quét nhanh"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Kích hoạt"
+
 msgid "Enable EIT EPG"
 msgstr "Kích hoạt EIT EPG"
 
@@ -4989,6 +5146,10 @@ msgstr "Cho phép OK làm bản xem trước trong lựa chọn kênh"
 msgid "Enable OK for channel selection"
 msgstr "Cho phép OK để chọn kênh"
 
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Kích hoạt OpenTV EPG"
+
 msgid "Enable OpenTV EPG"
 msgstr "Kích hoạt OpenTV EPG"
 
@@ -5011,6 +5172,10 @@ msgstr "Cho phép tự động quét nhanh"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Cho phép tự động quét nhanh cho%s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Cho phép quét cáp tự động"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5037,6 +5202,10 @@ msgstr "Cho phép chỉnh sửa yêu thích"
 msgid "Enable import timer from fallback tuner"
 msgstr "Kích hoạt tính năng hẹn giờ nhập từ bộ điều chỉnh dự phòng"
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Đã bật"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5059,6 +5228,10 @@ msgstr "Cho phép bảo vệ cha mẹ"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Cho phép máy thu enigma2 từ xa cố gắng điều chỉnh các dịch vụ không thể điều chỉnh cục bộ (ví dụ: bộ điều chỉnh bị chiếm dụng hoặc loại dịch vụ không khả dụng trên bộ điều chỉnh cục bộ. Chỉ định URL hoàn chỉnh bao gồm http: // và số cổng (thông thường ...: 8001 ), ví dụ http: // second_box: 8001."
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Kích hoạt"
 
 msgid "Enable teletext caching"
 msgstr "Kích hoạt bộ đệm ẩn teletext"
@@ -6000,11 +6173,21 @@ msgstr "Vị trí"
 
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Thông tin về phần mềm"
+msgstr "Thông tin"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Thông tin về phần mềm"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Bộ chỉnh không có sẵn."
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -6954,9 +7137,8 @@ msgstr "Nước Kenya"
 msgid "Kernel file: "
 msgstr "Phiên bản hạt nhân: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Phiên bản hạt nhân: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Phiên bản hạt nhân: "
@@ -8068,10 +8250,6 @@ msgstr "Số dách mạng"
 msgid "Network:"
 msgstr "Mạng:"
 
-#, fuzzy
-msgid "Never"
-msgstr "không bao giờ"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Không bao giờ giải mã nội dung trong khi ghi. Điều này ghi đè cài đặt hẹn giờ riêng trên toàn cầu. Nếu được bật, các bản ghi được lưu trữ trong bản trình bày được mã hóa và phải được giải mã sau đó (đôi khi được gọi là giải mã ngoại tuyến). Mặc định: tắt."
 
@@ -8409,6 +8587,9 @@ msgstr ""
 msgid "OK"
 msgstr "Đồng ý"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -8420,7 +8601,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Thiết lập"
+msgstr "Thiết lập OSD 3D"
 
 msgid "OSD name request"
 msgstr "Yêu cầu tên OSD"
@@ -8522,7 +8703,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Mở chọn địa điểm"
+msgstr "Thông tin"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8738,15 +8919,14 @@ msgid "Parent directory"
 msgstr "Thư mục phụ huynh"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "Kiểm soát của cha mẹ"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Thiết lập kiểm soát của cha mẹ"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "Kiểm soát của cha mẹ"
 
 msgid "Parental control services editor"
 msgstr "Biên tập dịch vụ kiểm soát của phụ huynh"
@@ -9104,8 +9284,15 @@ msgstr "Vui lòng thiết lập bộ chỉnh tần số Q"
 msgid "Please set up tuner R"
 msgstr "Vui lòng thiết lập bộ chỉnh tần số R"
 
-msgid "Please set your time zone"
+#, fuzzy
+msgid "Please set your time options"
 msgstr "Vui lòng đặt múi giờ của bạn"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr "Vui lòng thiết lập các cấu hình cơ bản sau đây!"
@@ -9679,6 +9866,10 @@ msgstr "Thực sự nâng cấp hộp giải quyết của bạn và khởi đ�
 
 msgid "Reboot"
 msgstr "Khởi động lại"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Thư mục gốc"
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10257,6 +10448,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Thiết lập số dách"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Thiết lập"
 
 msgid "SCAN"
 msgstr ""
@@ -12150,6 +12348,9 @@ msgstr "Chờ sau sự kiện hiện tại"
 msgid "Standby brightness"
 msgstr "Chờ trong "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Quạt chờ%d PWM"
@@ -12357,6 +12558,9 @@ msgstr "Ngừng sử dụng làm dịch vụ khởi động"
 msgid "Stopped"
 msgstr "Ngừng"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12502,6 +12706,10 @@ msgstr "Hoán đổi PiP và hình ảnh chính"
 msgid "Swap services"
 msgstr "Dịch vụ hoán đổi"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Dịch vụ hoán đổi"
+
 msgid "Swaziland"
 msgstr "Swaziland"
 
@@ -12595,6 +12803,9 @@ msgstr "Tỷ lệ biểu tượng:"
 msgid "Sync failure moving back to origin !"
 msgstr "Lỗi đồng bộ di chuyển trở lại nguồn gốc!"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Cộng Hòa Arab Syrian"
 
@@ -12603,6 +12814,22 @@ msgstr "Hệ thống"
 
 msgid "System & Modulation"
 msgstr "Hệ thống & điều chế"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Ghi đè tập tin cấu hình?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Cấu hình mạng"
+
+#, fuzzy
+msgid "System options"
+msgstr "Hệ thống & điều chế"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Cấu hình mạng"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -12760,6 +12987,10 @@ msgstr "Kiểm tra cài đặt DiSEqC"
 msgid "Test mode"
 msgstr "Chế độ kiểm tra"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "Chế độ kiểm tra"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Kiểm tra cấu hình mạng của máy thu của bạn.\n"
 
@@ -12820,10 +13051,6 @@ msgstr "Chuẩn DVD không hỗ trợ luồng video H.264 (HDTV). Bạn có mu�
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Plugin này chưa được cài đặt."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Mã PIN bạn đã nhập là khác nhau."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Mã PIN đã được thay đổi thành công."
@@ -12923,6 +13150,12 @@ msgstr "Đường dẫn%s đã tồn tại."
 
 msgid "The pin code you entered is wrong."
 msgstr "Mã pin bạn nhập là sai."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13307,7 +13540,11 @@ msgstr "Thời gian"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "Thiết lập ghi âm"
+msgstr "Chỉnh sửa hẹn giờ"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Lựa chọn hẹn giờ"
 
 msgid "Time import should start"
 msgstr ""
@@ -13618,6 +13855,10 @@ msgstr "Điều chỉnh thất bại!"
 msgid "Tuner"
 msgstr "Bộ chỉnh"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Loại điều chỉnh"
+
 msgid "Tuner Configuration"
 msgstr "Cấu hình bộ chỉnh"
 
@@ -13835,10 +14076,6 @@ msgstr "Vô song"
 msgid "Unsupported"
 msgstr "Không được hỗ trợ"
 
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "cho đến khi chờ / khởi động lại"
-
 msgid "Unzipping Image"
 msgstr "Giải nén hình ảnh"
 
@@ -13921,6 +14158,10 @@ msgstr "Sử dụng thông tin EIT EPG khi có sẵn."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Sử dụng thông tin FreeSat EPG khi có sẵn."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Địa điểm chiếu phim"
+
 msgid "Use HDMI pre-emphasis"
 msgstr "Sử dụng ưu tiên HDMI"
 
@@ -13965,6 +14206,9 @@ msgstr "Sử dụng đánh số kênh fastscan"
 
 msgid "Use frequency or channel"
 msgstr "Sử dụng tần số hoặc kênh"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Sử dụng các cài đặt riêng cho từng thư mục"
@@ -14103,6 +14347,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "Đâu đia DVD"
@@ -14130,6 +14377,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14327,6 +14577,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Kết nối mạng WLAN"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Bộ điều hợp mạng LAN"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15236,6 +15490,9 @@ msgstr "chỉ thời gian thực tế"
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "phim / phim người lớn"
 
@@ -15346,6 +15603,9 @@ msgstr "đen"
 msgid "black & white"
 msgstr "đen trắng"
 
+msgid "blacklist"
+msgstr "danh sách đen"
+
 msgid "blank"
 msgstr ""
 
@@ -15370,6 +15630,9 @@ msgstr "theo ngày"
 #, fuzzy
 msgid "cable"
 msgstr "Cáp"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15784,6 +16047,10 @@ msgstr "thông tin / giáo dục / chương trình học"
 msgid "infotainment (general)"
 msgstr "thể thao (nói chung)"
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "Nhà chế tạo"
+
 msgid "init module"
 msgstr "mô-đun init"
 
@@ -16043,6 +16310,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "mở cấu hình máy chủ tên"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16378,6 +16648,10 @@ msgstr "quần vợt / bóng quần"
 msgid "terrestrial"
 msgstr "TH mặt đất"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "TH mặt đất"
+
 msgid "testing"
 msgstr "đang làm việc"
 
@@ -16468,6 +16742,9 @@ msgstr "chưa được công bố"
 
 msgid "untestable"
 msgstr "không thể kiểm chứng"
+
+msgid "until standby/restart"
+msgstr "cho đến khi chờ / khởi động lại"
 
 msgid "user defined"
 msgstr "đã xác định người dùng"

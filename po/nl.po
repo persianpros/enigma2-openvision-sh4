@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tech <tech@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -66,8 +66,54 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Coderingssleutel"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Voer een IPadres in"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP-adres:"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask:"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
+#, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ":0000 - standaard (uitgeschakeld)"
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Codering:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Lijstmode"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Modus"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Transmissiemodus"
 
 msgid " (0 - all networks)"
 msgstr " (0 - alle netwerken)"
@@ -1261,8 +1307,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10 bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 msgid "12V output"
 msgstr "12V uitgang"
@@ -1303,6 +1388,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1324,6 +1416,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1333,12 +1431,19 @@ msgstr "3d modus"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "standaard"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1358,18 +1463,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "standaard"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 msgid "8K"
 msgstr "8K"
@@ -2473,7 +2614,7 @@ msgstr "Denemarken"
 
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Softwarebeheerinformatie"
+msgstr "Informatie"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2499,10 +2640,6 @@ msgstr "Zwart beeld"
 
 msgid "Black screen till locked"
 msgstr "Zwart beeld tot de zender gelockt is"
-
-#, fuzzy
-msgid "Blacklist"
-msgstr "zwarte lijst"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2694,6 +2831,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Alle frequenties"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -4106,6 +4247,10 @@ msgstr "HLG ondersteuning"
 msgid "DTS downmix"
 msgstr "DTS downmix"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS downmix"
+
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
@@ -4842,6 +4987,10 @@ msgstr "Weet u zeker dat u de map %s van de harde schijf wilt wissen?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "De markering %s echt verwijderen?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Wilt u de ontvanger opnieuw opstarten?"
+
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Wilt u het huidige programma afbreken en de timer %s verwijderen?"
@@ -5169,6 +5318,14 @@ msgstr "Gebruik de ‘Neutrino manier' van zappen"
 msgid "Enable 5V for active antenna"
 msgstr "5V voor actieve antenne inschakelen"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Wilt u de automatische Fastscan activeren"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Aan"
+
 msgid "Enable EIT EPG"
 msgstr "EIT EPG inschakelen"
 
@@ -5195,6 +5352,10 @@ msgstr "Activeer 'Ok' om de preview optie te activeren"
 msgid "Enable OK for channel selection"
 msgstr "Zenderlijst openen met de 'Ok' toets"
 
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Activeer OpenTV EPG"
+
 msgid "Enable OpenTV EPG"
 msgstr "Activeer OpenTV EPG"
 
@@ -5216,6 +5377,10 @@ msgstr "Wilt u de automatische Fastscan activeren"
 #, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Activeer automatische fastscan voor %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Activeer de automatische kabelscan"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5242,6 +5407,10 @@ msgstr "Favorieten bewerken activeren"
 msgid "Enable import timer from fallback tuner"
 msgstr "Activeer de import van timers van de Fallback tuner"
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Ingeschakeld"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5263,6 +5432,10 @@ msgstr "Kinderslot inschakelen"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Indien geactiveerd, dan wordt er een link naar een externe enigma2 receiver actief  waarmee er, naast de huidige locale tuners, een extra tuner beschikbaar komt. Hiermee wordt de flexibiliteit om meer kanalen simultaan vanaf één ontvanger te kunnen opnemen aanzienlijk vergroot. De opties worden hierna uitgelegd."
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Aan"
 
 msgid "Enable teletext caching"
 msgstr "Teletext caching inschakelen"
@@ -6200,11 +6373,21 @@ msgstr "Locatie"
 
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Softwarebeheerinformatie"
+msgstr "Informatie"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Softwarebeheerinformatie"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Tuner niet beschikbaar"
 
 msgid "Georgia"
 msgstr "Georgië"
@@ -7161,9 +7344,8 @@ msgstr "Kenia"
 msgid "Kernel file: "
 msgstr "Kernel versie: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Kernel versie: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Kernel versie: "
@@ -8261,10 +8443,6 @@ msgstr "Netwerkwizard"
 msgid "Network:"
 msgstr "Netwerk:"
 
-#, fuzzy
-msgid "Never"
-msgstr "nooit"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 "Indien geactiveerd decodeert u een lopende opname nooit. Dit overschrijft de algemene instelling van een individueel ingestelde timer. Indien geactiveerd worden opnames gecodeerd opgeslagen en moeten achteraf worden gedecodeerd. Dit wordt ook wel offline decoding genoemd.\n"
@@ -8609,6 +8787,9 @@ msgstr ""
 msgid "OK"
 msgstr "Bevestigen"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -8620,7 +8801,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Instellingen"
+msgstr "OSD 3D instelling"
 
 msgid "OSD name request"
 msgstr "OSD naam aanvragen"
@@ -8722,7 +8903,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Open selectie locatie"
+msgstr "Informatie"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8941,15 +9122,14 @@ msgid "Parent directory"
 msgstr "Bovengelegen map"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "Kinderslot"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Kinderslotinstellingen"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "Kinderslot"
 
 msgid "Parental control services editor"
 msgstr "Kinderslot zendereditor"
@@ -9326,8 +9506,15 @@ msgstr "Stel aub Tuner Q in"
 msgid "Please set up tuner R"
 msgstr "Stel aub Tuner R in"
 
-msgid "Please set your time zone"
+#, fuzzy
+msgid "Please set your time options"
 msgstr "Voer uw tijdzone in"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -9908,6 +10095,10 @@ msgid "Reboot"
 msgstr "Herstarten"
 
 #, fuzzy
+msgid "Reboot receiver"
+msgstr "Hoofddirectory"
+
+#, fuzzy
 msgid "Rec LED brightness"
 msgstr "Helderheid display indien actief"
 
@@ -10486,6 +10677,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Installatiewizard"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Instellingen"
 
 msgid "SCAN"
 msgstr ""
@@ -12387,6 +12585,9 @@ msgstr "Stand-by na de huidige actie"
 msgid "Standby brightness"
 msgstr "Stand-by na "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Stand-by ventilator %d PWM"
@@ -12597,6 +12798,9 @@ msgstr "Stop met het gebruiken als opstartzender"
 msgid "Stopped"
 msgstr "Gestopt"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12741,6 +12945,10 @@ msgstr "Wissel tussen PIP & hoofdscherm"
 msgid "Swap services"
 msgstr "Zenders omwisselen"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Zenders omwisselen"
+
 msgid "Swaziland"
 msgstr "Swaziland"
 
@@ -12831,6 +13039,9 @@ msgstr "Symbol rate:"
 msgid "Sync failure moving back to origin !"
 msgstr "Sync probleem bij draaiing naar nulpunt !"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Syrië"
 
@@ -12839,6 +13050,22 @@ msgstr "Systeem"
 
 msgid "System & Modulation"
 msgstr "Systeem & Modulatie"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Configuratie bestanden overschrijven?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Netwerk configuratie"
+
+#, fuzzy
+msgid "System options"
+msgstr "Systeem & Modulatie"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Netwerk configuratie"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -12999,6 +13226,10 @@ msgstr "Test DiSEqC instellingen"
 msgid "Test mode"
 msgstr "Test modus"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "Test modus"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 "Test de netwerkconfiguratie.\n"
@@ -13061,10 +13292,6 @@ msgstr "De DVD standaard ondersteunt geen H.264 (HDTV) videostreams. Wilt u een 
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Deze plugin is niet geïnstalleerd."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "De ingevoerde pincodes zijn niet gelijk."
 
 msgid "The PIN code has been changed successfully."
 msgstr "De pincode is gewijzigd."
@@ -13166,6 +13393,12 @@ msgstr "Het pad %s bestaat al."
 
 msgid "The pin code you entered is wrong."
 msgstr "De ingevoerde pincode is onjuist."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13556,7 +13789,11 @@ msgstr "Tijd"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "Instellingen t.b.v. de opnames"
+msgstr "Timer bewerken"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Timerselectie"
 
 msgid "Time import should start"
 msgstr ""
@@ -13862,6 +14099,10 @@ msgstr "Afstemmen mislukt!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tunertype"
+
 msgid "Tuner Configuration"
 msgstr "Tunerconfiguratie"
 
@@ -14077,10 +14318,6 @@ msgstr "Ontkoppel"
 msgid "Unsupported"
 msgstr "Niet ondersteund"
 
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "tot stand-by / herstart"
-
 msgid "Unzipping Image"
 msgstr "Het image wordt uitgepakt"
 
@@ -14162,6 +14399,10 @@ msgstr "Indien geactiveerd kunt u, indien deze beschikbaar is, de EIT EPG inform
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Indien geactiveerd kunt u, indien deze beschikbaar is, de Freesat EPG informatie inschakelen."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Opnamelocatie"
+
 # Graag een acceptabele correctie.
 msgid "Use HDMI pre-emphasis"
 msgstr "Gebruik de HDMI pre-emphasis"
@@ -14207,6 +14448,9 @@ msgstr "Wilt u de Fastscan zendervolgorde gebruiken"
 
 msgid "Use frequency or channel"
 msgstr "Gebruik frequentie of kanaal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Gebruik afzonderlijke instellingen voor iedere directory"
@@ -14350,6 +14594,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "DVD-speler"
@@ -14377,6 +14624,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14579,6 +14829,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN connectie"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "LANadapter"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15522,6 +15776,9 @@ msgstr "enkel de actuele tijd"
 msgid "additional cable of rotor"
 msgstr "extra kabel vanaf de motor"
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "Erotiek/Drama"
 
@@ -15632,6 +15889,9 @@ msgstr "zwart"
 msgid "black & white"
 msgstr "zwart & wit"
 
+msgid "blacklist"
+msgstr "zwarte lijst"
+
 msgid "blank"
 msgstr ""
 
@@ -15656,6 +15916,9 @@ msgstr "op datum"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -16074,6 +16337,10 @@ msgstr "Informatief/Educatief/School TV"
 msgid "infotainment (general)"
 msgstr "Sport (Algemeen)"
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "Fabrikant"
+
 msgid "init module"
 msgstr "module initialiseren"
 
@@ -16333,6 +16600,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "Open nameserver-configuratie"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16667,6 +16937,10 @@ msgstr "Tennis/Squash"
 msgid "terrestrial"
 msgstr "Terrestrial"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Terrestrial"
+
 msgid "testing"
 msgstr "bezig"
 
@@ -16757,6 +17031,9 @@ msgstr "niet gepubliceerd"
 
 msgid "untestable"
 msgstr "niet te testen"
+
+msgid "until standby/restart"
+msgstr "tot stand-by / herstart"
 
 msgid "user defined"
 msgstr "Door gebruiker bepaald"

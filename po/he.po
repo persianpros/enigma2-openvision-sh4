@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -69,8 +69,59 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "מפתח קידוד"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP כתובת"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP כתובת"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "delete cut"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr ":קידוד"
+
+#
+#, fuzzy
+msgid "  Link mode:"
+msgstr "init module"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "מוד"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Transmission mode"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1208,7 +1259,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 #
@@ -1256,6 +1346,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1277,6 +1373,12 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1286,12 +1388,18 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "ברירת מחדל"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1314,18 +1422,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "ברירת מחדל"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2534,10 +2678,6 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
-#, fuzzy
-msgid "Blacklist"
-msgstr "blacklist"
-
 msgid "Blinking REC"
 msgstr ""
 
@@ -2736,6 +2876,9 @@ msgid "CPU benchmark: "
 msgstr ""
 
 msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU clock frequency:"
 msgstr ""
 
 msgid "CPU: "
@@ -3989,6 +4132,9 @@ msgstr "לא נתמך"
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 msgid "DUAL LAYER DVD"
 msgstr "Dual Layer DVD"
 
@@ -4776,6 +4922,10 @@ msgstr "? מהכונן %s האם ברצונך למחוק את התיקיה"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "%s ?האם ברצונך להסיר את הסימניה "
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "? %s האם ברצוך למחוק את"
+
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "? %s האם ברצוך למחוק את"
@@ -5115,6 +5265,15 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "Enable 5V for active antenna"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "about to start"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "אפשר"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -5141,6 +5300,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -5161,6 +5323,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -5193,6 +5358,11 @@ msgstr "Enable favourites edit"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "אפשר"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5215,6 +5385,11 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "אפשר"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -5843,10 +6018,8 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr " מאוורר %d מתח"
 
-#
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "בקרת הורים"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -6182,8 +6355,19 @@ msgstr "מיקום"
 msgid "Geolocation Information"
 msgstr "מידע"
 
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
+
 msgid "Geolocation information"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Updatefeed not available."
 
 msgid "Georgia"
 msgstr ""
@@ -7187,10 +7371,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr ":גרסה חדשה"
 
-#
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr ":גרסה חדשה"
+msgstr ""
 
 #
 #, fuzzy
@@ -8414,10 +8596,6 @@ msgstr "אשף הרשת"
 msgid "Network:"
 msgstr ":רשת"
 
-#, fuzzy
-msgid "Never"
-msgstr "לעולם"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -8785,6 +8963,9 @@ msgstr ""
 msgid "OK"
 msgstr "אשר"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr ""
 
@@ -8907,7 +9088,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Open Vision Information"
-msgstr ":גרסה חדשה"
+msgstr "מידע"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9132,16 +9313,15 @@ msgstr "Parent Directory"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "בקרת הורים"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "הגדרת בקרת הורים"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "בקרת הורים"
 
 #, fuzzy
 msgid "Parental control services editor"
@@ -9531,8 +9711,14 @@ msgid "Please set up tuner R"
 msgstr "Please set up tuner B"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Please set up tuner B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10137,6 +10323,9 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "איתחול"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #
 #, fuzzy
@@ -10748,6 +10937,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video הגדרת"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "הגדרות"
 
 msgid "SCAN"
 msgstr ""
@@ -12797,6 +12994,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "בהירות"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -13029,6 +13229,9 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13194,6 +13397,11 @@ msgstr "move PiP to main picture"
 msgid "Swap services"
 msgstr "שירותים"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "שירותים"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -13302,6 +13510,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -13311,6 +13522,22 @@ msgstr "מערכת"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Tuner הגדרת"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Tuner הגדרת"
+
+#, fuzzy
+msgid "System options"
+msgstr "Store position"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Tuner הגדרת"
 
 msgid "T2MI PID"
 msgstr ""
@@ -13474,6 +13701,11 @@ msgstr "Test DiSEqC settings"
 msgid "Test mode"
 msgstr "Test mode"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Test mode"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -13537,11 +13769,6 @@ msgstr ""
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr ".הפלאגין הזה לא הותקן"
-
-#
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr ".הקוד שהכנסת שגוי"
 
 msgid "The PIN code has been changed successfully."
 msgstr ""
@@ -13626,6 +13853,12 @@ msgstr "The path %s already exists."
 #
 msgid "The pin code you entered is wrong."
 msgstr ".הקוד שהכנסת שגוי"
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14003,9 +14236,15 @@ msgstr "לא נתמך"
 msgid "Time"
 msgstr "זמן"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Nameserver Setup"
+msgstr "עריכת טיימר"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "בחירת טיימר"
 
 msgid "Time import should start"
 msgstr ""
@@ -14356,6 +14595,10 @@ msgstr "Tune failed!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tuner סוג ה"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -14583,11 +14826,6 @@ msgstr ""
 msgid "Unsupported"
 msgstr "לא נתמך"
 
-#
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "until standby/restart"
-
 #, fuzzy
 msgid "Unzipping Image"
 msgstr "מוריד"
@@ -14679,6 +14917,10 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "מיקום סרטים"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -14725,6 +14967,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -14877,6 +15122,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "DVD נגן"
@@ -14904,6 +15152,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -15128,6 +15379,11 @@ msgstr ""
 
 msgid "WLAN connection"
 msgstr "WLAN connection"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "מתאם רשת"
 
 #
 msgid "WPA"
@@ -16003,6 +16259,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -16116,6 +16375,9 @@ msgstr "black"
 msgid "black & white"
 msgstr ""
 
+msgid "blacklist"
+msgstr "blacklist"
+
 msgid "blank"
 msgstr ""
 
@@ -16141,6 +16403,9 @@ msgstr "מיין לפי תאריך"
 #, fuzzy
 msgid "cable"
 msgstr "Cable"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -16567,6 +16832,10 @@ msgstr ""
 msgid "infotainment (general)"
 msgstr ""
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "יצרן"
+
 #
 msgid "init module"
 msgstr "init module"
@@ -16834,6 +17103,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "open nameserver configuration"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -17170,6 +17442,9 @@ msgstr ""
 msgid "terrestrial"
 msgstr ""
 
+msgid "terrestrial (DVB-T)"
+msgstr ""
+
 msgid "testing"
 msgstr "עובד"
 
@@ -17266,6 +17541,10 @@ msgstr ""
 
 msgid "untestable"
 msgstr ""
+
+#
+msgid "until standby/restart"
+msgstr "until standby/restart"
 
 #
 msgid "user defined"

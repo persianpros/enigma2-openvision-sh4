@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -63,8 +63,52 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Cheie de criptare"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP Address"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP Address"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "sterge decupare"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Criptare"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "init modul"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Mod"
+
+msgid "  SSID:"
+msgstr ""
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Mod transmisie"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1125,7 +1169,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 msgid "12V output"
@@ -1167,6 +1250,12 @@ msgstr ""
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1188,6 +1277,12 @@ msgstr ""
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1197,10 +1292,16 @@ msgstr ""
 msgid "4"
 msgstr ""
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 msgid "450 (default)"
+msgstr ""
+
+msgid "450 MHz"
 msgstr ""
 
 msgid "4:3"
@@ -1221,16 +1322,52 @@ msgstr ""
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 msgid "540 (default)"
+msgstr ""
+
+msgid "540 MHz (default)"
 msgstr ""
 
 msgid "6"
 msgstr ""
 
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
+
 msgid "7"
 msgstr ""
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
+msgstr ""
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
 msgstr ""
 
 msgid "8K"
@@ -2372,10 +2509,6 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
-#, fuzzy
-msgid "Blacklist"
-msgstr "lista neagra"
-
 msgid "Blinking REC"
 msgstr ""
 
@@ -2563,6 +2696,9 @@ msgid "CPU benchmark: "
 msgstr ""
 
 msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU clock frequency:"
 msgstr ""
 
 msgid "CPU: "
@@ -3781,6 +3917,9 @@ msgstr ""
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 msgid "DUAL LAYER DVD"
 msgstr ""
 
@@ -4541,6 +4680,10 @@ msgstr "Confirmati stergerea directorului %s de pe disc?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Confirmati stergerea semnului de carte %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Confirmati stergerea %s?"
+
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Confirmati stergerea %s?"
@@ -4858,6 +5001,14 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "Activeaza 5V pentru antena activa"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "in curs de incepere"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Activeaza"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -4883,6 +5034,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -4903,6 +5057,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -4931,6 +5088,10 @@ msgstr "Activeaza editare favorite"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Activat"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -4951,6 +5112,10 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Activeaza"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -5552,9 +5717,8 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr "Voltaj marit"
 
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "Control parental"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -5870,8 +6034,18 @@ msgstr "Locatie"
 msgid "Geolocation Information"
 msgstr "Informatii"
 
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
+
 msgid "Geolocation information"
 msgstr ""
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Descrierea nu este disponibila"
 
 msgid "Georgia"
 msgstr ""
@@ -6834,9 +7008,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Versiune noua:"
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Versiune noua:"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version: "
@@ -7967,10 +8140,6 @@ msgstr "Wizard de retea"
 msgid "Network:"
 msgstr "Retea"
 
-#, fuzzy
-msgid "Never"
-msgstr "niciodata"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -8315,6 +8484,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr ""
 
@@ -8428,7 +8600,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Versiune noua:"
+msgstr "Informatii"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8648,15 +8820,14 @@ msgid "Parent directory"
 msgstr "Directorul sursa"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "Control parental"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Configurare control parental"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "Control parental"
 
 #, fuzzy
 msgid "Parental control services editor"
@@ -9017,8 +9188,14 @@ msgid "Please set up tuner R"
 msgstr "Va rugam configurati tuner-ul B"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Va rugam configurati tuner-ul B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -9594,6 +9771,9 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "Repornire sistem"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10176,6 +10356,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video Setup"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Configurare"
 
 msgid "SCAN"
 msgstr ""
@@ -12112,6 +12299,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "Luminozitate"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -12322,6 +12512,9 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12470,6 +12663,10 @@ msgstr "schimba pip si imagine principala"
 msgid "Swap services"
 msgstr "Schimbare servicii"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Schimbare servicii"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -12571,6 +12768,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -12579,6 +12779,22 @@ msgstr "Sistem"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Configurare tuner"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Configurare tuner"
+
+#, fuzzy
+msgid "System options"
+msgstr "Memoreaza pozitia"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Configurare tuner"
 
 msgid "T2MI PID"
 msgstr ""
@@ -12734,6 +12950,10 @@ msgstr "Test setari DiSEqC"
 msgid "Test mode"
 msgstr "Mod de testare"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "Mod de testare"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -12793,10 +13013,6 @@ msgid "The MovieCut plugin is not installed."
 msgstr ""
 "Plugin-ul LAN wireless nu este instalat!\n"
 "Va rugam sa-l instalati."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Codul pin introdus este gresit."
 
 msgid "The PIN code has been changed successfully."
 msgstr ""
@@ -12876,6 +13092,12 @@ msgstr "Directia %s exista deja."
 
 msgid "The pin code you entered is wrong."
 msgstr "Codul pin introdus este gresit."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13245,7 +13467,11 @@ msgstr "Ora"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "Configurare nume server"
+msgstr "Editare timer"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Selectare timer"
 
 msgid "Time import should start"
 msgstr ""
@@ -13562,6 +13788,10 @@ msgstr "Acordare esuata!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tip Timer"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -13782,10 +14012,6 @@ msgid "Unsupported"
 msgstr ""
 
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "Asteptare / Restart"
-
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Se descarca"
 
@@ -13869,6 +14095,10 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "schimba inregistrare (durata)"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -13913,6 +14143,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -14059,6 +14292,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "Player DVD"
@@ -14086,6 +14322,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14295,6 +14534,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr ""
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Adaptor LAN"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15143,6 +15386,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -15254,6 +15500,9 @@ msgstr "negru"
 msgid "black & white"
 msgstr ""
 
+msgid "blacklist"
+msgstr "lista neagra"
+
 msgid "blank"
 msgstr ""
 
@@ -15279,6 +15528,9 @@ msgstr "sorteaza dupa data"
 #, fuzzy
 msgid "cable"
 msgstr "Cablu"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15684,6 +15936,10 @@ msgstr ""
 msgid "infotainment (general)"
 msgstr ""
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "Fabricant"
+
 msgid "init module"
 msgstr "init modul"
 
@@ -15938,6 +16194,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "deschide configurarea nameserverului"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16267,6 +16526,10 @@ msgstr ""
 msgid "terrestrial"
 msgstr "Terestru"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Terestru"
+
 msgid "testing"
 msgstr "lucreaza"
 
@@ -16354,6 +16617,9 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
+msgstr ""
+
+msgid "until standby/restart"
 msgstr ""
 
 msgid "user defined"

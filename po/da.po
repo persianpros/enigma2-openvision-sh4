@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -69,9 +69,64 @@ msgstr ""
 msgid " "
 msgstr ""
 
+#
+#, fuzzy
+msgid "    Encryption key:"
+msgstr "Kodnings nøgle"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP adresse"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP adresse"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmaske"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 #, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - standard (deaktiveret)"
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Kryptering:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Listningsmetode"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Modus [ Satellit konfigurations modus]"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Transmissions type"
 
 msgid " (0 - all networks)"
 msgstr "(0 - alle netværk)"
@@ -1288,7 +1343,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 msgid "12V output"
@@ -1335,6 +1429,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1357,6 +1458,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1367,6 +1474,10 @@ msgstr "3d tilstand"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
@@ -1374,6 +1485,9 @@ msgstr "422"
 #, fuzzy
 msgid "450 (default)"
 msgstr "standard"
+
+msgid "450 MHz"
+msgstr ""
 
 #
 msgid "4:3"
@@ -1397,22 +1511,58 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "standard"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 #
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 #, fuzzy
@@ -2671,9 +2821,10 @@ msgstr ""
 msgid "Benchmark"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Softwarehåndterings information"
+msgstr "Information"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2700,11 +2851,6 @@ msgstr "Sort Skærm"
 
 msgid "Black screen till locked"
 msgstr "Sort Skærm indtil låst"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "sortlist"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2914,6 +3060,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Alle frekvenser"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -4262,6 +4412,10 @@ msgstr "ikke supporteret"
 msgid "DTS downmix"
 msgstr "DTS downmix"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS downmix"
+
 #
 msgid "DUAL LAYER DVD"
 msgstr "DL DVD"
@@ -5106,6 +5260,10 @@ msgstr "Vil du virkelig fjerne mappen %s fra disken?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Vil du virkelig fjerne dit bogmærke af %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Vil du genstarte din receiver?"
+
 #
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5471,6 +5629,15 @@ msgstr "Aktiver 'neutrino' zap styrings stil"
 msgid "Enable 5V for active antenna"
 msgstr "Aktiver 5V for aktiv antenne"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Aktiver auto hurtig scan"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Aktiver"
+
 msgid "Enable EIT EPG"
 msgstr "Aktiver EIT EPG"
 
@@ -5500,6 +5667,10 @@ msgid "Enable OK for channel selection"
 msgstr "Anvend OK for kanal valg"
 
 #, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Aktiver EIT EPG"
+
+#, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Aktiver EIT EPG"
 
@@ -5522,6 +5693,10 @@ msgstr "Aktiver auto hurtig scan"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Aktiver auto hurtig skan for %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Aktiver auto kabel skan"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5551,6 +5726,11 @@ msgstr "Åbne favoritredigering"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Aktiveret"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5575,6 +5755,11 @@ msgstr "Aktiver forældrebeskyttelse"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Aktiver trådløs enigma2 receiver for at prøve at tune ind til services der ikke kan tunes ind på lokalt (f.eks. tuner er optaget eller service typen er ikke tilgængelig på den lokale tuner. Specificer komplet URL inkluderet http:// og port nummer (normalt ...:8001), f.eks. http://second_box:8001."
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Aktiver"
 
 msgid "Enable teletext caching"
 msgstr "Aktiver TekstTV lagring"
@@ -6612,13 +6797,24 @@ msgstr "Genre"
 msgid "Geolocation"
 msgstr "Placering"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Softwarehåndterings information"
+msgstr "Information"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Softwarehåndterings information"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Tuner ikke tilgængelig."
 
 msgid "Georgia"
 msgstr ""
@@ -7664,10 +7860,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Kernel version:"
 
-#
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Kernel version:"
+msgstr ""
 
 #
 msgid "Kernel version: "
@@ -8949,11 +9143,6 @@ msgstr "Netværks opsætningshjælper"
 msgid "Network:"
 msgstr "Netværk:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "aldrig"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Aldrig dekrypter indholdet under optagelsen. Dette tilsidesætter de individuelle timer indstillinger globalt. Hvis aktiveret, bliver optagelser gemt krypteret og skal dekrypteres bagefter (nogen gange kaldt offline decoding). Standardindstilling: fra."
 
@@ -9340,6 +9529,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9349,10 +9541,9 @@ msgstr "OSD 3D setup"
 msgid "OSD Adjustment"
 msgstr ""
 
-#
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Indstillinger"
+msgstr "OSD 3D setup"
 
 msgid "OSD name request"
 msgstr "OSD navne forespørgsel"
@@ -9460,9 +9651,10 @@ msgstr ""
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Åben valgte placering"
+msgstr "Information"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9695,16 +9887,15 @@ msgstr "Øvre mappe"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Forældre Kontrol"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Forældrekontrol opsætning"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Forældre Kontrol"
 
 #
 msgid "Parental control services editor"
@@ -10129,8 +10320,14 @@ msgstr "Venligst indstil tuner A"
 
 #
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Venligst indstil tuner A"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10785,6 +10982,10 @@ msgstr "Opdater boksen og genstart nu?"
 #
 msgid "Reboot"
 msgstr "Genstart"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "root mappe"
 
 #
 #, fuzzy
@@ -11456,6 +11657,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video opsætning"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Indstillinger"
 
 msgid "SCAN"
 msgstr ""
@@ -13571,6 +13780,9 @@ msgstr "Standby efter nuværende begivenhed"
 msgid "Standby brightness"
 msgstr "Standby om"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #
 #, python-format
 msgid "Standby fan %d PWM"
@@ -13811,6 +14023,9 @@ msgstr "Stop brug som startkanal"
 msgid "Stopped"
 msgstr "Stoppet"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13969,6 +14184,11 @@ msgstr "Byt BiB og hovedbillede"
 msgid "Swap services"
 msgstr "Bytte kanaler"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Bytte kanaler"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -14076,6 +14296,9 @@ msgstr "Symbol rate:"
 msgid "Sync failure moving back to origin !"
 msgstr "Synkronationsfejl, går tilbage!"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -14085,6 +14308,22 @@ msgstr "System"
 
 msgid "System & Modulation"
 msgstr "System & Modulation"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Overskriv konfigurations filer"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Netværkskonfiguration"
+
+#, fuzzy
+msgid "System options"
+msgstr "System & Modulation"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Netværkskonfiguration"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -14262,6 +14501,11 @@ msgstr "Afprøv DiSEqC indstillinger"
 msgid "Test mode"
 msgstr "Test modus"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Test modus"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Test netværkskonfiguration på din receiver.\n"
 
@@ -14329,10 +14573,6 @@ msgstr "DVD standarden understøtter ikke H.264 (HDTV) video streams. Vil du lav
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Dette plugin er ikke installeret"
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "PIN koderne du tastede er ikke ens."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN koden er ændret med succes."
@@ -14427,6 +14667,12 @@ msgstr "Stien %s findes allerede."
 #
 msgid "The pin code you entered is wrong."
 msgstr "Din indtastede pin kode er forkert."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14859,9 +15105,15 @@ msgstr "ikke supporteret"
 msgid "Time"
 msgstr "Tid"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Optagelses Setup"
+msgstr "Timer redigering"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Timer valg"
 
 msgid "Time import should start"
 msgstr ""
@@ -15217,6 +15469,11 @@ msgstr "Tuning fejlede!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tuner type"
+
 msgid "Tuner Configuration"
 msgstr "Tuner Konfiguration"
 
@@ -15468,11 +15725,6 @@ msgstr "Ikke understøttet"
 
 #
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "indtil standby/genstart"
-
-#
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Henter"
 
@@ -15566,6 +15818,11 @@ msgstr "Brug EIT EPG information når det er tilgængeligt."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Brug FreeSat EPG information når det er tilgængeligt."
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Placering af film"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15612,6 +15869,9 @@ msgstr "Brug hurtigsøgning kanalnumre"
 
 msgid "Use frequency or channel"
 msgstr "Brug frekvens eller kanal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Brug individuelle indstillinger for hver mappe."
@@ -15769,6 +16029,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15797,6 +16060,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -16037,6 +16303,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN forbindelse"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "LAN adapter"
 
 #
 msgid "WPA"
@@ -17001,6 +17272,9 @@ msgstr "Aktuel tid kun"
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "voksen film/drama"
 
@@ -17124,6 +17398,10 @@ msgstr "sort"
 msgid "black & white"
 msgstr "sort & hvid"
 
+#
+msgid "blacklist"
+msgstr "sortlist"
+
 msgid "blank"
 msgstr ""
 
@@ -17151,6 +17429,9 @@ msgstr "efter dato"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17615,6 +17896,11 @@ msgid "infotainment (general)"
 msgstr "sport"
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Fabrikant"
+
+#
 msgid "init module"
 msgstr "initialiser modul"
 
@@ -17911,6 +18197,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "åbn navneserver opsætning"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18288,6 +18577,11 @@ msgid "terrestrial"
 msgstr "DVB T"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "DVB T"
+
+#
 msgid "testing"
 msgstr "fungerer"
 
@@ -18388,6 +18682,10 @@ msgstr "ikke udgivet"
 
 msgid "untestable"
 msgstr "ikke muligt at teste"
+
+#
+msgid "until standby/restart"
+msgstr "indtil standby/genstart"
 
 #
 msgid "user defined"

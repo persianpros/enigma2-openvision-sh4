@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -65,8 +65,60 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Kóðunar lykill"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP Netfang"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP Netfang"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmaski"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "eyða klippingu"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Kóðun:"
+
+#
+#, fuzzy
+msgid "  Link mode:"
+msgstr "stilli einingu"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Hamur"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Sendi stilling"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1288,7 +1340,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 #
@@ -1340,6 +1431,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1362,6 +1459,12 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1372,6 +1475,9 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
@@ -1379,6 +1485,9 @@ msgstr ""
 #, fuzzy
 msgid "450 (default)"
 msgstr "Venjulegt"
+
+msgid "450 MHz"
+msgstr ""
 
 #
 msgid "4:3"
@@ -1404,22 +1513,58 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "Venjulegt"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 #
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 #, fuzzy
@@ -2605,9 +2750,10 @@ msgstr ""
 msgid "Benchmark"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Upplýsingar"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2633,11 +2779,6 @@ msgstr ""
 
 msgid "Black screen till locked"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "svarti listi"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2832,6 +2973,9 @@ msgid "CPU benchmark: "
 msgstr ""
 
 msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU clock frequency:"
 msgstr ""
 
 msgid "CPU: "
@@ -4086,6 +4230,9 @@ msgstr "ekki stutt"
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 msgid "DUAL LAYER DVD"
 msgstr "Tveggja laga DVD"
 
@@ -4934,6 +5081,11 @@ msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Viltu örugglega eyða bókamerkinu %s?"
 
 #
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Viltu virkilega eyða %s?"
+
+#
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Viltu virkilega eyða %s?"
@@ -5290,6 +5442,16 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "Kveikja á 5V fyrir loftnet með magnara"
 
+#
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "er að byrja"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Virkja"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -5316,6 +5478,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -5336,6 +5501,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -5367,6 +5535,11 @@ msgstr "Virkja breytingu eftirlætis lista"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Virkt"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5389,6 +5562,11 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Virkja"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -6049,10 +6227,8 @@ msgstr "Vifta %d PWM"
 msgid "Fan %d voltage"
 msgstr "Viftu %d Spenna"
 
-#
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "Foreldrastýring"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -6402,13 +6578,24 @@ msgstr "Gerð"
 msgid "Geolocation"
 msgstr "Staðsetning"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Upplýsingar"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Upplýsingar hugbúnaðar umsýslu"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Uppfærslur á fæðirásum ekki tiltækar."
 
 msgid "Georgia"
 msgstr ""
@@ -7459,10 +7646,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Ný útgáfa:"
 
-#
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Ný útgáfa:"
+msgstr ""
 
 #
 #, fuzzy
@@ -8753,11 +8938,6 @@ msgstr "Netkerfis ráðgjafi"
 msgid "Network:"
 msgstr "Nettenging:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "aldrei"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -9147,6 +9327,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9271,7 +9454,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Ný útgáfa:"
+msgstr "Upplýsingar"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9506,16 +9689,15 @@ msgstr "Hýsingar mappa"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Foreldrastýring"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Uppsetning á foreldrastýringu"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Foreldrastýring"
 
 #
 #, fuzzy
@@ -9941,8 +10123,14 @@ msgstr "Vinsamlega settu upp móttakara B"
 
 #
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Vinsamlega settu upp móttakara B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10590,6 +10778,9 @@ msgstr ""
 #
 msgid "Reboot"
 msgstr "Endurræsi"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -11261,6 +11452,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Mynd uppsetning"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Uppsetning"
 
 msgid "SCAN"
 msgstr ""
@@ -13408,6 +13607,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "Birta"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Standby fan %d PWM"
 msgstr "Vifta í biðstöðu %d PWM"
@@ -13649,6 +13851,9 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13816,6 +14021,11 @@ msgstr "skipta á PiP og aðal mynd"
 msgid "Swap services"
 msgstr "Skipta á rásum"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Skipta á rásum"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -13930,6 +14140,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -13939,6 +14152,23 @@ msgstr "Kerfi"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Skrifa yfir stillinga skrár ?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Handvirk stilling"
+
+#
+#, fuzzy
+msgid "System options"
+msgstr "Vista staðsetningu"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Handvirk stilling"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -14109,6 +14339,11 @@ msgstr "Prufa DiSEqC stillingar"
 msgid "Test mode"
 msgstr "Prufu hamur"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Prufu hamur"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -14176,10 +14411,6 @@ msgstr ""
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Þetta íforrit er ekki sett upp."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "PIN númerin sem að þú slóst inn eru ekki eins."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Það tókst að breyta PIN kóðanum."
@@ -14265,6 +14496,12 @@ msgstr "Slóðin %s er þegar til."
 #
 msgid "The pin code you entered is wrong."
 msgstr "Kóðinn sem þú slóst inn er rangur."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14666,7 +14903,12 @@ msgstr "Tími"
 #
 #, fuzzy
 msgid "Time Setup"
-msgstr "Uppsetning nafnaþjóns"
+msgstr "Breyta Tímastillingu"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Tímastillinga val"
 
 msgid "Time import should start"
 msgstr ""
@@ -15028,6 +15270,10 @@ msgstr "Tókst ekki að stilla inn!"
 msgid "Tuner"
 msgstr "Móttakari"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Gerð móttakara"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -15266,10 +15512,6 @@ msgid "Unsupported"
 msgstr "Ekki stutt"
 
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "bíða til biðstöðu/endurræsingu"
-
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Hleð niður"
 
@@ -15361,6 +15603,10 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Staðsetning bíómynda"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15407,6 +15653,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -15571,6 +15820,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15599,6 +15851,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -15844,6 +16099,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN nettenging"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Netkort"
 
 #
 msgid "WPA"
@@ -16758,6 +17018,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -16879,6 +17142,10 @@ msgstr "svartur"
 msgid "black & white"
 msgstr ""
 
+#
+msgid "blacklist"
+msgstr "svarti listi"
+
 msgid "blank"
 msgstr ""
 
@@ -16906,6 +17173,9 @@ msgstr "raða eftir dagsetningu"
 #, fuzzy
 msgid "cable"
 msgstr "Kapalkerfi"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -17362,6 +17632,11 @@ msgid "infotainment (general)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Framleiðandi"
+
+#
 msgid "init module"
 msgstr "stilli einingu"
 
@@ -17652,6 +17927,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "opna nafnaþjóns stillingar"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18023,6 +18301,11 @@ msgid "terrestrial"
 msgstr "Stafrænt í lofti"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Stafrænt í lofti"
+
+#
 msgid "testing"
 msgstr "er að vinna"
 
@@ -18124,6 +18407,9 @@ msgstr ""
 
 msgid "untestable"
 msgstr ""
+
+msgid "until standby/restart"
+msgstr "bíða til biðstöðu/endurræsingu"
 
 #
 msgid "user defined"

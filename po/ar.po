@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -66,8 +66,53 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "مفتاح التشفير"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "عنوان الأيبي"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "عنوان الأيبي"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "إختفاء الشبكة"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "برتوكول تكوين المضيف آليا"
+
 msgid "  Default: 0000 (disabled)"
-msgstr " (معطل)"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "التشفير:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "وضع الاختبار"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "النظام"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "معرف مجموعة القنوات :"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "وضع الإنتقال"
 
 msgid " (0 - all networks)"
 msgstr " (0-جميع الشبكات)"
@@ -1308,8 +1353,47 @@ msgstr "10 ميغا بايت/ثانيه"
 msgid "100 MB/s"
 msgstr "100 ميجا بايت/ثانيه"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "عشرة بت"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 msgid "12V output"
 msgstr "مخرج 12 ف"
@@ -1351,6 +1435,13 @@ msgstr "24"
 msgid "20 MB/s"
 msgstr "20 ميغا بايت/ثانيه"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1373,6 +1464,12 @@ msgstr "30"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1384,12 +1481,19 @@ msgstr "شكل التنقل"
 msgid "4"
 msgstr "24"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "الإفتراضي"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1410,17 +1514,53 @@ msgstr "25"
 msgid "50 MB/s"
 msgstr "50 ميجا بايت/ثانيه"
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "الإفتراضي"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
+msgstr ""
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
 msgstr ""
 
 msgid "7"
 msgstr ""
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
+msgstr ""
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
 msgstr ""
 
 msgid "8K"
@@ -2570,7 +2710,7 @@ msgstr "الدنمارك"
 
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "معلومات"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2596,10 +2736,6 @@ msgstr "شاشة سوداء"
 
 msgid "Black screen till locked"
 msgstr "شاشة سوداء مقفلة"
-
-#, fuzzy
-msgid "Blacklist"
-msgstr "القائمه السوداء"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2791,6 +2927,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "كل الترددات"
 
 #, fuzzy
 msgid "CPU: "
@@ -4071,6 +4211,10 @@ msgstr "دعم مشاركة الملفات على الشبكة المحلية"
 msgid "DTS downmix"
 msgstr "الصوت الدولبي / نظام المسرح الرقمي المزدوج"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "الصوت الدولبي / نظام المسرح الرقمي المزدوج"
+
 msgid "DUAL LAYER DVD"
 msgstr "ديفيدي ثنائي الشاشة"
 
@@ -4831,6 +4975,10 @@ msgstr "هل تريد فعلا حذف الدليل %s من القرص؟"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "هل تريد فعلا حذف المرجعية %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "هل تريد أعاده تشغيل جهاز الاستقبال الخاص بك ؟"
+
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "هل تريد حقا حذف المؤقت %s?"
@@ -5176,6 +5324,14 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "تفعيل بقوة خمسة فولت للهوائي النشط"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "تمكين البحث السريع الآلي"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "تفعيل"
+
 msgid "Enable EIT EPG"
 msgstr "تمكين جدول معلومات الحدث في دليل البرامج الإلكتروني"
 
@@ -5205,6 +5361,10 @@ msgstr "التنقل باللمسة الأولى في قائمة القنوات"
 msgid "Enable OK for channel selection"
 msgstr "إختيار القناة"
 
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "تفعيل دليل البرامج الالكتروينة للقنوات المفتوحة"
+
 msgid "Enable OpenTV EPG"
 msgstr "تفعيل دليل البرامج الالكتروينة للقنوات المفتوحة"
 
@@ -5227,6 +5387,10 @@ msgstr "تمكين البحث السريع الآلي"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "تفعيل البحث التلقائي السريع %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "تفعيل البحث التلقائي لقنوات الكيبل"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5255,6 +5419,10 @@ msgstr "تفعيل تحرير المفضله"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "تمكين"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5277,6 +5445,10 @@ msgstr "تمكين الحماية الأبوية"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "تفعيل"
 
 msgid "Enable teletext caching"
 msgstr "تمكين الترجمة المختبئة"
@@ -6234,11 +6406,21 @@ msgstr "مكان"
 
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "معلومات"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "معلومات إدارة البرنامج التشغيلي"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "المؤالف غير متوفر."
 
 msgid "Georgia"
 msgstr "جورجيا"
@@ -7231,9 +7413,8 @@ msgstr "كينيا"
 msgid "Kernel file: "
 msgstr "إصدار جديد:"
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "إصدار جديد:"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version: "
@@ -8372,10 +8553,6 @@ msgstr "نافذة ضبط شبكة الإنترنت"
 msgid "Network:"
 msgstr "الشبكة:"
 
-#, fuzzy
-msgid "Never"
-msgstr "أبدا"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -8733,6 +8910,9 @@ msgstr ""
 msgid "OK"
 msgstr "موافق"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "معرف الشبكة الاصلي"
 
@@ -8745,7 +8925,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OSD Setup"
-msgstr "الضبط"
+msgstr "ضبط شاشة العرض ثلاثية الابعاد"
 
 msgid "OSD name request"
 msgstr "طلب الاسم في شاشة العرض"
@@ -8851,7 +9031,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "حدد الموقع"
+msgstr "معلومات"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9078,15 +9258,14 @@ msgid "Parent directory"
 msgstr "الدليل الرئيسي"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "الرقابة الأبوية"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "الرقابة الأبوية"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "الرقابة الأبوية"
 
 #, fuzzy
 msgid "Parental control services editor"
@@ -9453,8 +9632,14 @@ msgid "Please set up tuner R"
 msgstr "من فضلك أضبط المؤالف ي"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "من فضلك أضبط المؤالف أ"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10050,6 +10235,10 @@ msgstr "هل حقا تريد الترقية %s %s وإعادة التشغيل ا
 
 msgid "Reboot"
 msgstr "إعادة التشغيل"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "دليل الملفات"
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10653,6 +10842,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "ضبط كلمة السر"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "الضبط"
 
 msgid "SCAN"
 msgstr ""
@@ -12662,6 +12858,9 @@ msgstr "إضافة مؤقت تلقائي للحدث الحالي"
 msgid "Standby brightness"
 msgstr "وضع الإستعداد"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Standby fan %d PWM"
 msgstr "وضع الاستعداد و إعادة التشغيل"
@@ -12878,6 +13077,9 @@ msgstr "إيقاف إستخدام القناة المختارة بعد التش�
 msgid "Stopped"
 msgstr "توقفت"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13027,6 +13229,10 @@ msgstr "تبادل قناة داخل قناة من القناة الرئيسية
 msgid "Swap services"
 msgstr "القنوات المبادلة"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "القنوات المبادلة"
+
 msgid "Swaziland"
 msgstr "سوازيلاند"
 
@@ -13128,6 +13334,9 @@ msgstr "معدل الترميز"
 msgid "Sync failure moving back to origin !"
 msgstr "فشل المزامنة الانتقال مره أخرى إلى الأصل !"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "الجمهورية العربية السورية"
 
@@ -13136,6 +13345,22 @@ msgstr "النـظام"
 
 msgid "System & Modulation"
 msgstr "النظام والتحوير"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "الكتابة فوق ملفات الاعدادات؟"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "حماية التكوين"
+
+#, fuzzy
+msgid "System options"
+msgstr "النظام والتحوير"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "حماية التكوين"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -13298,6 +13523,10 @@ msgid "Test mode"
 msgstr "وضع الاختبار"
 
 #, fuzzy
+msgid "Test overclock"
+msgstr "وضع الاختبار"
+
+#, fuzzy
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 "إختبار إعدادات شبكة الإنترنت الخاصة بك %s %s.\n"
@@ -13361,10 +13590,6 @@ msgstr "نظام ديفيدي القياسى لا يدعم الفيديو H.264 
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "هذا البلج إنز غير مثبت."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "الرقم السري الذي قمت بإدخاله مختلف."
 
 msgid "The PIN code has been changed successfully."
 msgstr "تم تغيير الرقم السري بنجاح."
@@ -13445,6 +13670,12 @@ msgstr "المسار %s موجود مسبقا."
 
 msgid "The pin code you entered is wrong."
 msgstr "الرقم السري الذي قمت بإدخاله غير صحيح."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The results have been written to %s"
@@ -13850,7 +14081,11 @@ msgstr "الوقت"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "نوع التسجيل"
+msgstr "قائمة المؤقت"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "إختيار المؤقت"
 
 msgid "Time import should start"
 msgstr ""
@@ -14175,6 +14410,10 @@ msgid "Tuner"
 msgstr "المؤالف"
 
 #, fuzzy
+msgid "Tuner C type:"
+msgstr "نوع المؤالف"
+
+#, fuzzy
 msgid "Tuner Configuration"
 msgstr "إعدادات المؤالف"
 
@@ -14402,10 +14641,6 @@ msgstr "الغاء الارتباط"
 msgid "Unsupported"
 msgstr "غير مدعم"
 
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "حتى وضع الانتظار/إعادة التشغيل"
-
 msgid "Unzipping Image"
 msgstr ""
 
@@ -14499,6 +14734,10 @@ msgstr "إستخدام جداول معلومات الأحداث لمعلومات
 msgid "Use FreeSat EPG information when it is available."
 msgstr "إستخدام معلومات دليل البرامج الإلكترونية للأقمار المجانية عندما تكون متوفرة."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "مكان الفيلم"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -14543,6 +14782,9 @@ msgstr "إستخدم البحث السريع بأرقام القنوات"
 
 msgid "Use frequency or channel"
 msgstr "استخدام التردد أو القناة"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "استخدام الإعدادات الفردية لكل دليل"
@@ -14686,6 +14928,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "مشغل الديفيدي"
@@ -14713,6 +14958,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14917,6 +15165,10 @@ msgstr "مفتاح الخصوصية السلكية المتكافئة"
 
 msgid "WLAN connection"
 msgstr "إتصال شبكة عبر الوايفاي"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "محول كيبل شكبة إنترنت"
 
 msgid "WPA"
 msgstr "الدخول المحمي لشبكة الوايفاي"
@@ -15846,6 +16098,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "فيلم الكبار/الدراما"
 
@@ -15964,6 +16219,9 @@ msgstr "أسود"
 msgid "black & white"
 msgstr "أسود و أبيض"
 
+msgid "blacklist"
+msgstr "القائمه السوداء"
+
 msgid "blank"
 msgstr ""
 
@@ -15988,6 +16246,9 @@ msgstr "حسب التاريخ"
 #, fuzzy
 msgid "cable"
 msgstr "كيبل"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -16411,6 +16672,10 @@ msgid "infotainment (general)"
 msgstr "الرياضة (عام)"
 
 #, fuzzy
+msgid "infrastructure"
+msgstr "الشركة المصنعة"
+
+#, fuzzy
 msgid "init module"
 msgstr "تثبيت الوحدة"
 
@@ -16683,6 +16948,9 @@ msgstr ""
 #, fuzzy
 msgid "open nameserver configuration"
 msgstr "فتح تكوين أسم الخادم"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -17024,6 +17292,10 @@ msgid "terrestrial"
 msgstr "أرضي"
 
 #, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "أرضي"
+
+#, fuzzy
 msgid "testing"
 msgstr "سؤال"
 
@@ -17116,6 +17388,9 @@ msgstr "غير منشورة"
 #, fuzzy
 msgid "untestable"
 msgstr "تفعيل"
+
+msgid "until standby/restart"
+msgstr "حتى وضع الانتظار/إعادة التشغيل"
 
 msgid "user defined"
 msgstr "محدده من قبل المستخدم"

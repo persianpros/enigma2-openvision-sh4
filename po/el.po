@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -67,8 +67,54 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Κλειδί ασφαλείας"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Εισαγωγή διεύθυνσης IP"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "Διεύθυνση IP"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Μάσκα δικτύου"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
+#, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - προεπιλογή (ανενεργό)"
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Κωδικοποίηση:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Λειτουργία λίστας"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Λειτουργία"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Λειτουργία μετάδοσης"
 
 msgid " (0 - all networks)"
 msgstr " (0 - όλα τα δίκτυα)"
@@ -1262,8 +1308,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 msgid "12V output"
 msgstr "έξοδος 12V"
@@ -1304,6 +1389,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1325,6 +1417,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1334,12 +1432,19 @@ msgstr "Λειτουργία 3D"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "προεπιλογή"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1359,18 +1464,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "προεπιλογή"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 msgid "8K"
 msgstr "8K"
@@ -2461,7 +2602,7 @@ msgstr "Δανία"
 
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Πληροφορίες διαχείρισης λογισμικού"
+msgstr "Πληροφορίες"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2487,10 +2628,6 @@ msgstr "Μαύρη οθόνη"
 
 msgid "Black screen till locked"
 msgstr "Μαύρη οθόνη ως το κλείδωμα"
-
-#, fuzzy
-msgid "Blacklist"
-msgstr "μαύρη λίστα"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2679,6 +2816,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Όλες οι συχνότητες"
 
 msgid "CPU: "
 msgstr "Επεξεργαστής: "
@@ -3895,6 +4036,10 @@ msgstr "Υποστήριξη HLG"
 msgid "DTS downmix"
 msgstr "Αποκωδικοποίηση & μίξη DTS"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "Αποκωδικοποίηση & μίξη DTS"
+
 msgid "DUAL LAYER DVD"
 msgstr "DVD ΔΙΠΛΗΣ ΣΤΡΩΣΗΣ"
 
@@ -4631,6 +4776,10 @@ msgstr "Θέλετε πραγματικά να αφαιρέσετε τον φά�
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Θέλετε να αφαιρέσετε τον σελιδοδείκτη του %s;"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Θέλετε να γίνει επανεκκίνηση του δέκτη σας;"
+
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Θέλετε πραγματικά να διακόψετε το τρέχον πρόγραμμα και να διαγράψετε τον χρονοδιακόπτη %s;"
@@ -4944,6 +5093,14 @@ msgstr "Ενεργοποίηση στυλ ελέγχου ζάπινγκ 'neutrin
 msgid "Enable 5V for active antenna"
 msgstr "Ενεργοποίηση των 5V για την ενεργή κεραία"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Ενεργοποίηση της αυτόματης γρήγορης ανίχνευσης"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Ενεργοποίηση"
+
 msgid "Enable EIT EPG"
 msgstr "Ενεργοποίηση EIT EPG"
 
@@ -4970,6 +5127,10 @@ msgstr "Ενεργοποίηση OK ως προεπισκόπηση στην ε�
 msgid "Enable OK for channel selection"
 msgstr "Ενεργοποίηση ΟΚ για επιλογή καναλιών"
 
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Ενεργοποίηση OpenTV EPG"
+
 msgid "Enable OpenTV EPG"
 msgstr "Ενεργοποίηση OpenTV EPG"
 
@@ -4992,6 +5153,10 @@ msgstr "Ενεργοποίηση της αυτόματης γρήγορης αν
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Ενεργοποίηση αυτόματης γρήγορης ανίχνευσης για το %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Ενεργοποίηση αυτόματης καλωδιακής ανίχνευσης"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5018,6 +5183,10 @@ msgstr "Eνεργοποίηση επεξεργασίας αγαπημένων"
 msgid "Enable import timer from fallback tuner"
 msgstr "Ενεργοποίηση εισαγωγής χρονοδιακόπτη από το εφεδρικό tuner"
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Ενεργό"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5040,6 +5209,10 @@ msgstr "Ενεργοποίηση γονικής προστασίας"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Χρήση απομακρυσμένου enigma2 δέκτη για υπηρεσίες που δεν δύναται να συντονιστούν τοπικά (π.χ. το tuner είναι απασχολημένο ή ο τύπος της υπηρεσίας δεν είναι διαθέσιμος στο τοπικό tuner). Πρέπει να οριστεί μία διεύθυνση URL που να συμπεριλαμβάνει το http:// και τον αριθμό θύρας (συνήθως ...:8001), π.χ. http://δεύτερος_δέκτης:8001."
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Ενεργοποίηση"
 
 msgid "Enable teletext caching"
 msgstr "Ενεργοποίηση αποθήκευσης τηλεκειμένου"
@@ -5973,11 +6146,21 @@ msgstr "Τοποθεσία"
 
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Πληροφορίες διαχείρισης λογισμικού"
+msgstr "Πληροφορίες"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Πληροφορίες διαχείρισης λογισμικού"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Μη διαθέσιμο tuner."
 
 msgid "Georgia"
 msgstr "Γεωργία"
@@ -6925,9 +7108,8 @@ msgstr "Κένυα"
 msgid "Kernel file: "
 msgstr "Έκδοση kernel: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Έκδοση kernel: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Έκδοση kernel: "
@@ -8025,10 +8207,6 @@ msgstr "Οδηγός δικτύου"
 msgid "Network:"
 msgstr "Δίκτυο:"
 
-#, fuzzy
-msgid "Never"
-msgstr "ποτέ"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Να μη γίνεται ποτέ αποκωδικοποίηση του περιεχομένου κατά την εγγραφή. Αυτό παρακάμπτει όλες τις ιδιαίτερες ρυθμίσεις χρονοδιακοπτών γενικά. Όταν είναι ενεργό, οι εγγραφές αποθηκεύονται ως κωδικοποιημένες και πρέπει να αποκωδικοποιηθούν μετέπειτα (ενίοτε ονομάζεται κωδικοποίηση εκτός σύνδεσης). Προεπιλογή: ανενεργό."
 
@@ -8366,6 +8544,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -8377,7 +8558,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Ρυθμίσεις"
+msgstr "Ρυθμίσεις OSD 3D"
 
 msgid "OSD name request"
 msgstr "Απαίτηση ονόματος OSD"
@@ -8479,7 +8660,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Άνοιγμα επιλεγμένης θέσης"
+msgstr "Πληροφορίες"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8698,15 +8879,14 @@ msgid "Parent directory"
 msgstr "Γονικός φάκελος"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "Γονικός έλεγχος"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Παραμετροποίηση γονικού ελέγχου"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "Γονικός έλεγχος"
 
 msgid "Parental control services editor"
 msgstr "Επεξεργασία υπηρεσιών γονικού έλεγχου"
@@ -9063,8 +9243,15 @@ msgstr "Ρυθμίστε το tuner Q"
 msgid "Please set up tuner R"
 msgstr "Ρυθμίστε το tuner R"
 
-msgid "Please set your time zone"
+#, fuzzy
+msgid "Please set your time options"
 msgstr "Ρυθμίστε τη ζώνη ώρας"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr "Ρυθμίστε τις ακόλουθες βασικές παραμετροποιήσεις!"
@@ -9637,6 +9824,10 @@ msgstr "Να γίνει σίγουρα ενημέρωση του δέκτη κα
 
 msgid "Reboot"
 msgstr "Επανεκκίνηση"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Αρχικός φάκελος"
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10213,6 +10404,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Ρύθμιση οδηγού"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Ρυθμίσεις"
 
 msgid "SCAN"
 msgstr ""
@@ -12096,6 +12294,9 @@ msgstr "Αναμονή μετά το τρέχον πρόγραμμα"
 msgid "Standby brightness"
 msgstr "Αναμονή σε "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Αναμονή ανεμιστήρα %d PWM"
@@ -12303,6 +12504,9 @@ msgstr "Τέλος χρήσης ως υπηρεσία εκκίνησης"
 msgid "Stopped"
 msgstr "Σταματημένο"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12447,6 +12651,10 @@ msgstr "Εναλλαγή PiP και κύριας εικόνας"
 msgid "Swap services"
 msgstr "Αντιμετάθεση υπηρεσιών"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Αντιμετάθεση υπηρεσιών"
+
 msgid "Swaziland"
 msgstr "Σουαζιλάνδη"
 
@@ -12537,6 +12745,9 @@ msgstr "Ρυθμός συμβόλων:"
 msgid "Sync failure moving back to origin !"
 msgstr "Αποτυχία συγχρονισμού, επιστροφή στην αρχική θέση !"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Συριακή Αραβική Δημοκρατία"
 
@@ -12545,6 +12756,22 @@ msgstr "Σύστημα"
 
 msgid "System & Modulation"
 msgstr "Σύστημα & διαμόρφωση"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Αντικατάσταση αρχείων ρυθμίσεων;"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Ρύθμιση δικτύου"
+
+#, fuzzy
+msgid "System options"
+msgstr "Σύστημα & διαμόρφωση"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Ρύθμιση δικτύου"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -12704,6 +12931,10 @@ msgstr "Έλεγχος ρυθμίσεων DiSEqC"
 msgid "Test mode"
 msgstr "Κατάσταση ελέγχου"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "Κατάσταση ελέγχου"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Έλεγχος των ρυθμίσεων δικτύου του δέκτη σας.\n"
 
@@ -12764,10 +12995,6 @@ msgstr "Το πρότυπο DVD δεν υποστηρίζει ροές βίντ�
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Αυτό το πρόσθετο δεν είναι εγκατεστημένο."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Οι κωδικοί PIN που εισάγατε είναι διαφορετικοί."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Ο κωδικός PIN άλλαξε με επιτυχία."
@@ -12867,6 +13094,12 @@ msgstr "Η διαδρομή %s υπάρχει ήδη."
 
 msgid "The pin code you entered is wrong."
 msgstr "Ο κωδικός pin που εισάγατε είναι λάθος."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13250,7 +13483,11 @@ msgstr "Ώρα"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "Ρυθμίσεις εγγραφών"
+msgstr "Επεξεργασία χρονοδιακόπτη"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Επιλογή χρονοδιακόπτη"
 
 msgid "Time import should start"
 msgstr ""
@@ -13556,6 +13793,10 @@ msgstr "Αποτυχία συντονισμού!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Τύπος tuner"
+
 msgid "Tuner Configuration"
 msgstr "Ρυθμίσεις Tuner"
 
@@ -13771,10 +14012,6 @@ msgstr "Αποπροσάρτηση"
 msgid "Unsupported"
 msgstr "Δεν υποστηρίζεται"
 
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "μέχρι την αναμονή/επανεκκίνηση"
-
 msgid "Unzipping Image"
 msgstr "Αποσυμπίεση Image"
 
@@ -13856,6 +14093,10 @@ msgstr "Χρήση πληροφοριών EIT EPG όταν είναι διαθέ
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Χρήση πληροφοριών FreeSat EPG όταν είναι διαθέσιμες."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Τοποθεσία ταινιών"
+
 msgid "Use HDMI pre-emphasis"
 msgstr "Χρήση προέμφασης HDMI"
 
@@ -13900,6 +14141,9 @@ msgstr "Χρήση αριθμοδότησης γρήγορης ανίχνευσ�
 
 msgid "Use frequency or channel"
 msgstr "Χρήση συχνότητας ή καναλιού"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Χρήση ξεχωριστών ρυθμίσεων για κάθε φάκελο"
@@ -14038,6 +14282,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "Αναπαραγωγή DVD"
@@ -14065,6 +14312,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14262,6 +14512,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Σύνδεση WLAN"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Προσαρμογέας LAN"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15167,6 +15421,9 @@ msgstr "μόνο ο πραγματικός χρόνος"
 msgid "additional cable of rotor"
 msgstr "πρόσθετο καλώδιο μοτέρ"
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "ταινία ενηλίκων/δράμα"
 
@@ -15277,6 +15534,9 @@ msgstr "μαύρο"
 msgid "black & white"
 msgstr "άσπρο & μαύρο"
 
+msgid "blacklist"
+msgstr "μαύρη λίστα"
+
 msgid "blank"
 msgstr ""
 
@@ -15301,6 +15561,9 @@ msgstr "κατά ημερομηνία"
 #, fuzzy
 msgid "cable"
 msgstr "Καλωδιακό"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15715,6 +15978,10 @@ msgstr "ειδήσεις/εκπαίδευση/σχολικό πρόγραμμα"
 msgid "infotainment (general)"
 msgstr "αθλητικά (γενικά)"
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "Κατασκευαστής"
+
 msgid "init module"
 msgstr "αρχικοποίηση αρθρώματος"
 
@@ -15974,6 +16241,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "άνοιγμα της ρύθμισης διακομιστών ονομάτων"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16308,6 +16578,10 @@ msgstr "τένις/σκουώς"
 msgid "terrestrial"
 msgstr "Επίγειο"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Επίγειο"
+
 msgid "testing"
 msgstr "υπό έλεγχο"
 
@@ -16398,6 +16672,9 @@ msgstr "ανέκδοτο"
 
 msgid "untestable"
 msgstr "μη εφικτός έλεγχος"
+
+msgid "until standby/restart"
+msgstr "μέχρι την αναμονή/επανεκκίνηση"
 
 msgid "user defined"
 msgstr "ορισμένο από τον χρήστη"

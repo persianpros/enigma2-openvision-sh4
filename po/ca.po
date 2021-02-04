@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2020-11-30 18:56+0100\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: angelodos angelo2807@hotmail.com\n"
@@ -73,8 +73,62 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Clau de xifrat"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Introduïu l’adreça IP"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "Adreça ip"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Màscara"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
+#, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - predeterminat (desactivat)"
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Xifrat"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Mode de llista"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Mode"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Mode transmissió"
 
 msgid " (0 - all networks)"
 msgstr " (0 - all networks)"
@@ -1334,8 +1388,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 #
 msgid "12V output"
@@ -1386,6 +1479,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1408,6 +1508,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1418,12 +1524,19 @@ msgstr "3d mode"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "per defecte"
+
+msgid "450 MHz"
+msgstr ""
 
 #
 msgid "4:3"
@@ -1448,20 +1561,56 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "per defecte"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 msgid "8K"
@@ -2687,9 +2836,10 @@ msgstr "Belize"
 msgid "Benchmark"
 msgstr "Dinamarca"
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Informació del gestor de programari"
+msgstr "Informació"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2716,11 +2866,6 @@ msgstr "Pantalla negra"
 
 msgid "Black screen till locked"
 msgstr "Pantalla negra bloquejada"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "llista negra"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2925,6 +3070,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Tot freqüència"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -4243,6 +4392,10 @@ msgstr "Suport HLG"
 msgid "DTS downmix"
 msgstr "DTS downmix"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS downmix"
+
 #
 msgid "DUAL LAYER DVD"
 msgstr "DVD DE CAPA DUAL"
@@ -5073,6 +5226,10 @@ msgstr "Realment voleu eliminar el directori% s del disc?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Voleu suprimir el marcador de% s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Voleu reiniciar el receptor?"
+
 #
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5435,6 +5592,15 @@ msgstr "Habilita el control de zap estil “neutrino”"
 msgid "Enable 5V for active antenna"
 msgstr "Activar 5V per a antena activa"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Activa l’exploració ràpida automàtica"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Activar"
+
 msgid "Enable EIT EPG"
 msgstr "Activa EIT EPG"
 
@@ -5462,6 +5628,10 @@ msgstr "Activa OK com a previsualització en la selecció del canal"
 msgid "Enable OK for channel selection"
 msgstr "Activa OK per a la selecció del canal"
 
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Habilita EPG de OpenTV"
+
 msgid "Enable OpenTV EPG"
 msgstr "Habilita EPG de OpenTV"
 
@@ -5483,6 +5653,10 @@ msgstr "Activa l’exploració ràpida automàtica"
 #, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Activa l’exploració ràpida automàtica per a% s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Activa la exploració automàtica de cable"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5513,6 +5687,11 @@ msgstr "Activar l'edició dels preferits"
 msgid "Enable import timer from fallback tuner"
 msgstr "Activa el temporitzador d’importació des del sintonitzador de reserva"
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Activat"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5536,6 +5715,11 @@ msgstr "Habilita la protecció dels pares"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Habiliteu el receptor enigma2 remot per intentar sintonitzar serveis que no es poden ajustar localment (per exemple, el sintonitzador està ocupat o el tipus de servei no està disponible al sintonitzador local. Especifiqueu l’URL complet inclòs el número http: // i el port (normalment …: 8001 ), per exemple, http: // second_box: 8001."
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Activar"
 
 msgid "Enable teletext caching"
 msgstr "Activa la memòria catxe del teletext"
@@ -6564,13 +6748,24 @@ msgstr "Gènere"
 msgid "Geolocation"
 msgstr "Localitzar"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Informació del gestor de programari"
+msgstr "Informació"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Informació del gestor de programari"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Sintonitzador no disponible."
 
 msgid "Georgia"
 msgstr "Geòrgia"
@@ -7595,10 +7790,8 @@ msgstr "Kenya"
 msgid "Kernel file: "
 msgstr "Nova versió"
 
-#
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Nova versió"
+msgstr ""
 
 #
 msgid "Kernel version: "
@@ -8849,11 +9042,6 @@ msgstr "Assistent de xarxa"
 msgid "Network:"
 msgstr "Xarxa:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "mai"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "No desxifreu el contingut mentre enregistreu. Això substitueix les configuracions del temporitzador individual a nivell mundial. Si està habilitat, les gravacions s’emmagatzemen en presentació encriptada i s’han de desxifrar després (de vegades es denomina descodificació fora de línia). Per defecte: desactivat."
 
@@ -9228,6 +9416,9 @@ msgstr ""
 msgid "OK"
 msgstr "Bé"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9237,10 +9428,9 @@ msgstr "OSD configuració 3D"
 msgid "OSD Adjustment"
 msgstr ""
 
-#
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Configuració"
+msgstr "OSD configuració 3D"
 
 msgid "OSD name request"
 msgstr "Sol·licitud de nom OSD"
@@ -9347,9 +9537,10 @@ msgstr "Seleccioneu només “sí” si utilitzeu un interruptor multiswitch que
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Obre la ubicació seleccionada"
+msgstr "Informació"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9581,16 +9772,15 @@ msgstr "Directori /var"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Control parental"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Configuració control parental"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Control parental"
 
 #
 msgid "Parental control services editor"
@@ -10004,8 +10194,15 @@ msgid "Please set up tuner R"
 msgstr "Configura el sintonitzador R"
 
 #
-msgid "Please set your time zone"
+#, fuzzy
+msgid "Please set your time options"
 msgstr "Definiu el vostre fus horari"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr "Configureu les configuracions bàsiques següents."
@@ -10653,6 +10850,10 @@ msgstr "Actualitzeu realment la caixa de configuració i reinicieu ara?"
 
 msgid "Reboot"
 msgstr "Reinicieu"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Root directory"
 
 #
 #, fuzzy
@@ -11314,6 +11515,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Configuració de l’assistent"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Configuració"
 
 msgid "SCAN"
 msgstr ""
@@ -13378,6 +13587,9 @@ msgstr "Espera després de l’esdeveniment actual"
 msgid "Standby brightness"
 msgstr "Espera"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Ventilador en espera% d PWM"
@@ -13614,6 +13826,9 @@ msgstr "Deixeu d’utilitzar com a servei d’inici"
 msgid "Stopped"
 msgstr "Aturat"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13772,6 +13987,11 @@ msgstr "Swap PiP i imatge principal"
 msgid "Swap services"
 msgstr "Swap canals"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Swap canals"
+
 msgid "Swaziland"
 msgstr "Swazilàndia"
 
@@ -13872,6 +14092,9 @@ msgstr "Índex de símbol:"
 msgid "Sync failure moving back to origin !"
 msgstr "Error de sincronització en tornar a l’origen"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "República Àrab Siriana"
 
@@ -13881,6 +14104,23 @@ msgstr "Sistema"
 
 msgid "System & Modulation"
 msgstr "Sistema & Modulacio"
+
+#
+#, fuzzy
+msgid "System configuration options"
+msgstr "Configuració del sintonitzador?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Xarxa configuracio"
+
+#, fuzzy
+msgid "System options"
+msgstr "Sistema & Modulacio"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Xarxa configuracio"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -14054,6 +14294,11 @@ msgstr "Prova la configuració de DiSEqC"
 msgid "Test mode"
 msgstr "Mode test"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Mode test"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Prova la configuració de xarxa del receptor.\n"
 
@@ -14118,10 +14363,6 @@ msgstr "L’estàndard de DVD no admet els fluxos de vídeo H.264 (HDTV). Voleu 
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Aquest complement no està instal·lat."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Els codis PIN que heu introduït són diferents."
 
 msgid "The PIN code has been changed successfully."
 msgstr "El codi PIN s’ha canviat correctament"
@@ -14226,6 +14467,12 @@ msgstr "La ruta% s ja existeix."
 #
 msgid "The pin code you entered is wrong."
 msgstr "El pin és incorrecte"
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14629,9 +14876,15 @@ msgstr "no suport"
 msgid "Time"
 msgstr "Hora"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Configuració de l’enregistrament"
+msgstr "Edició del temporitzador"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Selecció de gravació"
 
 msgid "Time import should start"
 msgstr ""
@@ -14985,6 +15238,11 @@ msgstr "Ha fallat la sintonització!"
 msgid "Tuner"
 msgstr "Sintonitzador"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tipus sintonitzador"
+
 msgid "Tuner Configuration"
 msgstr "Sintonitzador configuracio"
 
@@ -15222,11 +15480,6 @@ msgid "Unsupported"
 msgstr "No és compatible"
 
 #
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "fins que s’iniciï el mode d’espera / reinici"
-
-#
 msgid "Unzipping Image"
 msgstr "Com descomprimir la imatge"
 
@@ -15318,6 +15571,11 @@ msgstr "Utilitzeu la informació d’EIT EPG quan estigui disponible."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Utilitzeu la informació EPS de FreeSat quan estigui disponible."
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Ubicació de la pel·lícula"
+
 msgid "Use HDMI pre-emphasis"
 msgstr "Utilitzeu l’èmfasi previ de HDMI"
 
@@ -15364,6 +15622,9 @@ msgstr "Utilitzeu la numeració de canals de fastscan"
 
 msgid "Use frequency or channel"
 msgstr "Utilitzeu freqüència o canal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Utilitzeu la configuració individual per a cada directori"
@@ -15520,6 +15781,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15549,6 +15813,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -15777,6 +16044,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Connexió WLAN"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Adaptador de red"
 
 #
 msgid "WPA"
@@ -16733,6 +17004,9 @@ msgstr "temps real només"
 msgid "additional cable of rotor"
 msgstr "cable addicional de rotor"
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "pel·lícula / drama per a adults"
 
@@ -16854,6 +17128,10 @@ msgstr "negre"
 msgid "black & white"
 msgstr "negre & blanc"
 
+#
+msgid "blacklist"
+msgstr "llista negra"
+
 msgid "blank"
 msgstr ""
 
@@ -16880,6 +17158,9 @@ msgstr "per data"
 #, fuzzy
 msgid "cable"
 msgstr "Cable"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17337,6 +17618,11 @@ msgid "infotainment (general)"
 msgstr "esports (general)"
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Fabricant"
+
+#
 msgid "init module"
 msgstr "iniciar mòdul"
 
@@ -17633,6 +17919,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "configuració del servidor  obert"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18008,6 +18297,11 @@ msgid "terrestrial"
 msgstr "Terrestre"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Terrestre"
+
+#
 msgid "testing"
 msgstr "proves"
 
@@ -18109,6 +18403,10 @@ msgstr "inèdit"
 
 msgid "untestable"
 msgstr "indestable"
+
+#
+msgid "until standby/restart"
+msgstr "fins que s’iniciï el mode d’espera / reinici"
 
 #
 msgid "user defined"

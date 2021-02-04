@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -58,8 +58,50 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "加密系統:"
+
+msgid "    Gateway IP address:"
+msgstr ""
+
+msgid "    IP address:"
+msgstr ""
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "子網路遮罩"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "刪除剪輯"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "加密系統:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "模組初始化"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "型號:"
+
+msgid "  SSID:"
+msgstr ""
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "傳輸模式"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1188,7 +1230,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 msgid "12V output"
@@ -1230,6 +1311,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1251,6 +1338,12 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1260,12 +1353,18 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "預設"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1286,18 +1385,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "預設"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2392,10 +2527,6 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
-#, fuzzy
-msgid "Blacklist"
-msgstr "黑名單"
-
 msgid "Blinking REC"
 msgstr ""
 
@@ -2583,6 +2714,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "頻率:"
 
 msgid "CPU: "
 msgstr ""
@@ -3778,6 +3913,10 @@ msgstr "不支援的"
 msgid "DTS downmix"
 msgstr ""
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "AC3 縮減混音"
+
 msgid "DUAL LAYER DVD"
 msgstr "雙層DVD"
 
@@ -4384,9 +4523,8 @@ msgstr ""
 msgid "Display EPG list for current channel"
 msgstr ""
 
-#, fuzzy
 msgid "Display Setup"
-msgstr "顯示4:3內容"
+msgstr ""
 
 msgid "Display Skin"
 msgstr ""
@@ -4514,6 +4652,10 @@ msgstr " 是否從磁片上刪除目錄%s ?"
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr " 是否刪除 %s 書簽?"
+
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr " 是否刪除 %s?"
 
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -4830,6 +4972,14 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "為有源天線啟用5V供電"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "立即開始"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "啟用"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -4855,6 +5005,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -4875,6 +5028,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -4902,6 +5058,10 @@ msgstr "允許編輯喜愛頻道"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "啟用的"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -4922,6 +5082,10 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "啟用"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -5513,9 +5677,8 @@ msgstr "Fan %d PWM"
 msgid "Fan %d voltage"
 msgstr ""
 
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "家長控制"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -5830,8 +5993,18 @@ msgstr "位置"
 msgid "Geolocation Information"
 msgstr "資訊"
 
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
+
 msgid "Geolocation information"
 msgstr ""
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "無可用的描述."
 
 msgid "Georgia"
 msgstr ""
@@ -6064,7 +6237,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Hard Disk Setup"
-msgstr "網路設定"
+msgstr "硬碟"
 
 msgid "Hard disk"
 msgstr ""
@@ -7872,10 +8045,6 @@ msgstr ""
 msgid "Network:"
 msgstr "網路:"
 
-#, fuzzy
-msgid "Never"
-msgstr "從不"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -8216,6 +8385,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr ""
 
@@ -8328,7 +8500,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "反向:"
+msgstr "資訊"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8541,15 +8713,14 @@ msgid "Parent directory"
 msgstr ""
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "家長控制"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "家長控制設定"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "家長控制"
 
 msgid "Parental control services editor"
 msgstr ""
@@ -8904,8 +9075,14 @@ msgid "Please set up tuner R"
 msgstr "請選擇調諧器 B."
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "請選擇調諧器 B."
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -9472,6 +9649,9 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "重新啟動"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10048,6 +10228,13 @@ msgstr ""
 
 msgid "SABnzbd setup"
 msgstr ""
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "設定"
 
 msgid "SCAN"
 msgstr ""
@@ -11925,6 +12112,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "亮度"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -12131,6 +12321,9 @@ msgstr ""
 msgid "Stopped"
 msgstr "停止"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12274,6 +12467,9 @@ msgstr ""
 msgid "Swap services"
 msgstr ""
 
+msgid "Swap size:"
+msgstr ""
+
 #, fuzzy
 msgid "Swaziland"
 msgstr "新西蘭"
@@ -12366,6 +12562,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -12374,6 +12573,22 @@ msgstr "系統設定"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "調諧器配置"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "調諧器配置"
+
+#, fuzzy
+msgid "System options"
+msgstr "存貯位置"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "調諧器配置"
 
 msgid "T2MI PID"
 msgstr ""
@@ -12527,6 +12742,10 @@ msgstr "測驗DiSEqC設定"
 msgid "Test mode"
 msgstr "測驗模式"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "測驗模式"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -12584,10 +12803,6 @@ msgstr ""
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "這個插件未安裝."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "密碼輸入有誤."
 
 msgid "The PIN code has been changed successfully."
 msgstr ""
@@ -12666,6 +12881,12 @@ msgstr "路徑 %s 已經存在."
 
 msgid "The pin code you entered is wrong."
 msgstr "密碼輸入有誤."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13022,7 +13243,11 @@ msgstr "時間"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "極軸設定(DiSEqC 1.2)"
+msgstr "定時類型"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "計時器選擇"
 
 msgid "Time import should start"
 msgstr ""
@@ -13331,6 +13556,10 @@ msgstr "調製失敗!"
 msgid "Tuner"
 msgstr "調諧器"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "定時類型"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -13550,9 +13779,6 @@ msgstr "解除安裝(Unmount)"
 msgid "Unsupported"
 msgstr "不支援的"
 
-msgid "Until standby/restart"
-msgstr ""
-
 #, fuzzy
 msgid "Unzipping Image"
 msgstr "下載中"
@@ -13635,6 +13861,10 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "電影位置"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -13678,6 +13908,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -13815,6 +14048,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 msgid "VFD display"
 msgstr ""
 
@@ -13841,6 +14077,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14033,6 +14272,9 @@ msgid "WEP"
 msgstr "WEP"
 
 msgid "WLAN connection"
+msgstr ""
+
+msgid "WLAN driver:"
 msgstr ""
 
 msgid "WPA"
@@ -14472,9 +14714,8 @@ msgstr ""
 msgid "Without popup"
 msgstr ""
 
-#, fuzzy
 msgid "Wizard Setup"
-msgstr "設定"
+msgstr ""
 
 msgid "Wizard to arrange the overscan"
 msgstr ""
@@ -14878,6 +15119,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -14987,6 +15231,9 @@ msgstr "黑色"
 msgid "black & white"
 msgstr ""
 
+msgid "blacklist"
+msgstr "黑名單"
+
 msgid "blank"
 msgstr ""
 
@@ -15011,6 +15258,9 @@ msgstr ""
 #, fuzzy
 msgid "cable"
 msgstr "有線"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15416,6 +15666,10 @@ msgstr ""
 msgid "infotainment (general)"
 msgstr ""
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "製造商"
+
 msgid "init module"
 msgstr "模組初始化"
 
@@ -15671,6 +15925,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "打開DNS設定"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -15998,6 +16255,10 @@ msgstr ""
 msgid "terrestrial"
 msgstr "地面波"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "地面波"
+
 msgid "testing"
 msgstr ""
 
@@ -16085,6 +16346,9 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
+msgstr ""
+
+msgid "until standby/restart"
 msgstr ""
 
 msgid "user defined"

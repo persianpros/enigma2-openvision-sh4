@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -65,8 +65,53 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "คีย์สำหรับเข้ารหัส"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP Address"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP Address"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "ลบส่วนตัดต่อ"
+msgstr ""
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "การเข้ารหัส:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "เริ่มต้นโมดูล"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "โหมด"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "โหมดการถ่ายทอด"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1196,7 +1241,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 msgid "12V output"
@@ -1238,6 +1322,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr ""
 
@@ -1259,6 +1349,12 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1268,12 +1364,18 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "ค่าเริ่มต้น"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1294,18 +1396,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "ค่าเริ่มต้น"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2443,10 +2581,6 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
-#, fuzzy
-msgid "Blacklist"
-msgstr "รายการต้องห้าม"
-
 msgid "Blinking REC"
 msgstr ""
 
@@ -2635,6 +2769,9 @@ msgid "CPU benchmark: "
 msgstr ""
 
 msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU clock frequency:"
 msgstr ""
 
 msgid "CPU: "
@@ -3863,6 +4000,9 @@ msgstr "ไม่รองรับ"
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 msgid "DUAL LAYER DVD"
 msgstr ""
 
@@ -4623,6 +4763,10 @@ msgstr "ท่านต้องการที่จะลบโฟล์เด
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "ท่านต้องการที่ลบบุ๊คมาร์ค %s ออกไปหรือไม่?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
+
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
@@ -4941,6 +5085,14 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "เปิดใช้งาน 5V สำหรับเสาอากาศนี้"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "กำลังจะเริ่ม"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "เปิดใช้"
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -4966,6 +5118,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenSSH:"
+msgstr ""
+
 msgid "Enable OpenTV EPG"
 msgstr ""
 
@@ -4986,6 +5141,9 @@ msgstr ""
 
 #, python-format
 msgid "Enable auto fastscan for %s"
+msgstr ""
+
+msgid "Enable auto telnet login:"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -5014,6 +5172,10 @@ msgstr "แก้ไขรายการโปรด"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "เปิดใช้งาน"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5034,6 +5196,10 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "เปิดใช้"
 
 msgid "Enable teletext caching"
 msgstr ""
@@ -5639,9 +5805,8 @@ msgstr ""
 msgid "Fan %d voltage"
 msgstr "เพิ่ม Voltage"
 
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "ควบคุมอายุ"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -5957,8 +6122,18 @@ msgstr "สถานที่"
 msgid "Geolocation Information"
 msgstr "ข้อมูล"
 
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
+
 msgid "Geolocation information"
 msgstr ""
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "ไม่มีรายละเอียดเพิ่มเติม"
 
 msgid "Georgia"
 msgstr ""
@@ -6928,9 +7103,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "เวอร์ชั่นใหม่:"
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "เวอร์ชั่นใหม่:"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version: "
@@ -8064,10 +8238,6 @@ msgstr "ตัวช่วยเครือข่าย"
 msgid "Network:"
 msgstr "เครือข่าย:"
 
-#, fuzzy
-msgid "Never"
-msgstr "ไม่เลย"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -8413,6 +8583,9 @@ msgstr ""
 msgid "OK"
 msgstr "ตกลง"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr ""
 
@@ -8527,7 +8700,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "เวอร์ชั่นใหม่:"
+msgstr "ข้อมูล"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8747,15 +8920,14 @@ msgid "Parent directory"
 msgstr "โฟล์เดอร์ก่อนหน้า"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "ควบคุมอายุ"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "ตั้งค่าการควบคุมอายุ"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "ควบคุมอายุ"
 
 #, fuzzy
 msgid "Parental control services editor"
@@ -9126,8 +9298,14 @@ msgid "Please set up tuner R"
 msgstr "กรุณาตั้งค่า Tuner B"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "กรุณาตั้งค่า Tuner B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -9703,6 +9881,9 @@ msgstr ""
 
 msgid "Reboot"
 msgstr "เริ่มระบบใหม่ (Reboot)"
+
+msgid "Reboot receiver"
+msgstr ""
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10286,6 +10467,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "ตั้งค่าวีดีโอ"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "ตั้งค่า"
 
 msgid "SCAN"
 msgstr ""
@@ -12228,6 +12416,9 @@ msgstr ""
 msgid "Standby brightness"
 msgstr "ความสว่าง"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -12439,6 +12630,9 @@ msgstr ""
 msgid "Stopped"
 msgstr ""
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12587,6 +12781,10 @@ msgstr "สลับภาพรายการ"
 msgid "Swap services"
 msgstr "สลับบริการ"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "สลับบริการ"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -12688,6 +12886,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -12696,6 +12897,22 @@ msgstr "ระบบ"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "ตั้งค่า Tuner"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "ตั้งค่า Tuner"
+
+#, fuzzy
+msgid "System options"
+msgstr "บันทึกตำแหน่ง"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "ตั้งค่า Tuner"
 
 msgid "T2MI PID"
 msgstr ""
@@ -12851,6 +13068,10 @@ msgstr "ทดสอบการตั้งค่า DiSEqC"
 msgid "Test mode"
 msgstr "โหมดทดสอบ"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "โหมดทดสอบ"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -12911,10 +13132,6 @@ msgstr ""
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "ปลั๊กอินตัวนี้ยังไม่ได้ติดตั้ง"
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "รหัสที่ป้อนผิด"
 
 msgid "The PIN code has been changed successfully."
 msgstr ""
@@ -12990,6 +13207,12 @@ msgstr "พาธ %s นี้มีแล้วในระบบ"
 
 msgid "The pin code you entered is wrong."
 msgstr "รหัสที่ป้อนผิด"
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13360,7 +13583,11 @@ msgstr "เวลา"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "ตั้งค่า Nameserver"
+msgstr "แก้ไขการตั้งเวลา"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "เลือกการตั้งเวลา"
 
 msgid "Time import should start"
 msgstr ""
@@ -13677,6 +13904,10 @@ msgstr "ปรับค่าล้มเหลว!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "ประเภทการตั้งเวลา"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -13897,10 +14128,6 @@ msgid "Unsupported"
 msgstr "ไม่รองรับ"
 
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "ปิดเครื่อง"
-
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "กำลังดาวน์โหลด"
 
@@ -13984,6 +14211,10 @@ msgstr ""
 msgid "Use FreeSat EPG information when it is available."
 msgstr ""
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "เปลี่ยนแปลงการบันทึก (ช่วงเวลา)"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -14028,6 +14259,9 @@ msgid "Use fastscan channel numbering"
 msgstr ""
 
 msgid "Use frequency or channel"
+msgstr ""
+
+msgid "Use geolocation to set the current time zone location"
 msgstr ""
 
 msgid "Use individual settings for each directory"
@@ -14174,6 +14408,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "เครื่องเล่นดีวีดี"
@@ -14201,6 +14438,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14410,6 +14650,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr ""
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "แลนอะแด๊ปเตอร์"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15267,6 +15511,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -15378,6 +15625,9 @@ msgstr "ดำ"
 msgid "black & white"
 msgstr ""
 
+msgid "blacklist"
+msgstr "รายการต้องห้าม"
+
 msgid "blank"
 msgstr ""
 
@@ -15403,6 +15653,9 @@ msgstr "เรียงตามวันที่"
 #, fuzzy
 msgid "cable"
 msgstr "เคเบิ้ล"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15812,6 +16065,10 @@ msgstr ""
 msgid "infotainment (general)"
 msgstr ""
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "ผู้ผลิต"
+
 msgid "init module"
 msgstr "เริ่มต้นโมดูล"
 
@@ -16066,6 +16323,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "ตั้งค่า Nameserver"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16396,6 +16656,10 @@ msgstr ""
 msgid "terrestrial"
 msgstr "ภาคพื้นดิน"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "ภาคพื้นดิน"
+
 msgid "testing"
 msgstr "กำลังทำงาน"
 
@@ -16484,6 +16748,9 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
+msgstr ""
+
+msgid "until standby/restart"
 msgstr ""
 
 msgid "user defined"

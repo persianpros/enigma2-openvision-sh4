@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -69,9 +69,62 @@ msgstr ""
 msgid " "
 msgstr ""
 
+#
+#, fuzzy
+msgid "    Encryption key:"
+msgstr "Šifrovací klíč"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Zadejte IP adresu"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP adresa"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Síťová maska"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 #, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - výchozí (zakázáno)"
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Zabezpečení:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Seznam"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Režim"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Přenosový mód"
 
 msgid " (0 - all networks)"
 msgstr " (0 - všechny sítě)"
@@ -1310,8 +1363,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 #
 msgid "12V output"
@@ -1362,6 +1454,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1384,6 +1483,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1395,6 +1500,10 @@ msgstr "3D mód"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
@@ -1402,6 +1511,9 @@ msgstr "422"
 #, fuzzy
 msgid "450 (default)"
 msgstr "Výchozí"
+
+msgid "450 MHz"
+msgstr ""
 
 #
 msgid "4:3"
@@ -1426,22 +1538,58 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "Výchozí"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 #
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 msgid "8K"
@@ -2705,9 +2853,10 @@ msgstr "Belize"
 msgid "Benchmark"
 msgstr "Dánsko"
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Info správy software"
+msgstr "Informace"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2734,11 +2883,6 @@ msgstr "Černá obrazovka"
 
 msgid "Black screen till locked"
 msgstr "Černá obrazovka do uzamčení"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "blacklist"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2942,6 +3086,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Všechny frekvence"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -4303,6 +4451,10 @@ msgstr "Podpora HLG"
 msgid "DTS downmix"
 msgstr "DTS downmix"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS downmix"
+
 #
 msgid "DUAL LAYER DVD"
 msgstr "DVOUVRSTVÉ DVD"
@@ -5149,6 +5301,10 @@ msgstr "Chcete opravdu odstranit z disku adresář %s?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Chcete opravdu smazat Vaši záložku z %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Chcete přijímač restartovat?"
+
 #
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5514,6 +5670,15 @@ msgstr "Povolit 'neutrino' styl přepínání"
 msgid "Enable 5V for active antenna"
 msgstr "Povolit 5V pro aktivní anténu"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Povolit automatický fastscan"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Povolit"
+
 #
 msgid "Enable EIT EPG"
 msgstr "Povolit EIT EPG"
@@ -5546,6 +5711,11 @@ msgid "Enable OK for channel selection"
 msgstr "Povolit OK pro výběr kanálu"
 
 #
+#, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Povolit OpenTV EPG"
+
+#
 msgid "Enable OpenTV EPG"
 msgstr "Povolit OpenTV EPG"
 
@@ -5568,6 +5738,10 @@ msgstr "Povolit automatický fastscan"
 #, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Povolit automatický fastscan pro %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Povolit automatické prohledání kabelu"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5597,6 +5771,11 @@ msgstr "Povolit úpravu oblíbených"
 msgid "Enable import timer from fallback tuner"
 msgstr "Importovat časovače ze záložního tuneru"
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Povolen"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5622,6 +5801,11 @@ msgstr "Povolit rodičovskou ochranu"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Na vzdáleném přijímači se budou zkoušet naladit služby, které nelze naladit lokálně (např. tuner je obsazený nebo typ služby není k dispozici na místním tuneru). Zadejte úplnou URL adresu včetně http: // a číslo portu (normálně ...: 8001 ), například http: //druhy_box: 8001"
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Povolit"
 
 msgid "Enable teletext caching"
 msgstr "Povolit caching teletextu"
@@ -6672,13 +6856,24 @@ msgstr "Žánr"
 msgid "Geolocation"
 msgstr "Umístění"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Info správy software"
+msgstr "Informace"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Info správy software"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Tuner není dostupný."
 
 msgid "Georgia"
 msgstr "Gruzie"
@@ -7724,9 +7919,8 @@ msgstr "Keňa"
 msgid "Kernel file: "
 msgstr "Verze jádra: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Verze jádra: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Verze jádra: "
@@ -8999,11 +9193,6 @@ msgstr "Pomocník sítě"
 msgid "Network:"
 msgstr "Síť:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "Nikdy"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Nedekóduje obsah při nahrávání. Přepisuje globálně individuální nastavení časovače. Jestliže je povoleno, nahrávky se ukládají v kódované podobě a musí být později dekódovány (tzv. offline dekódování). Standardně vypnuto."
 
@@ -9387,6 +9576,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9396,10 +9588,9 @@ msgstr "OSD 3D nastavení"
 msgid "OSD Adjustment"
 msgstr ""
 
-#
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Nastavení"
+msgstr "OSD 3D nastavení"
 
 msgid "OSD name request"
 msgstr "Požadavek OSD názvu"
@@ -9510,9 +9701,10 @@ msgstr "Zvolte pouze 'Ano', pokud používáte multiswitch, který vyžaduje DiS
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Otevřít zvolené umístění"
+msgstr "Informace"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9749,16 +9941,15 @@ msgstr "Rodičovský adresář"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Rodičovský zámek"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Nastavení rodičovského zámku"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Rodičovský zámek"
 
 #
 msgid "Parental control services editor"
@@ -10183,8 +10374,15 @@ msgid "Please set up tuner R"
 msgstr "Prosím, nastavte tuner R"
 
 #
-msgid "Please set your time zone"
+#, fuzzy
+msgid "Please set your time options"
 msgstr "Prosím, nastavte časové pásmo"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr "Prosím, nastavte následující základní nastavení!"
@@ -10849,6 +11047,11 @@ msgstr "Skutečně aktualizovat přijímač a restartovat"
 
 msgid "Reboot"
 msgstr "Restart"
+
+#
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Kořenový adresář"
 
 #
 #, fuzzy
@@ -11521,6 +11724,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Pomocník nastavení"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Nastavení"
 
 msgid "SCAN"
 msgstr ""
@@ -13642,6 +13853,9 @@ msgstr "Standby po této události"
 msgid "Standby brightness"
 msgstr "Standby za "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #
 #, python-format
 msgid "Standby fan %d PWM"
@@ -13888,6 +14102,9 @@ msgstr "Zrušit nastavení po spuštění"
 msgid "Stopped"
 msgstr "Zastaveno"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -14050,6 +14267,11 @@ msgstr "Zaměnit PiP a hlavní obraz"
 msgid "Swap services"
 msgstr "Prohodit programy"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Prohodit programy"
+
 msgid "Swaziland"
 msgstr "Svazijsko"
 
@@ -14151,6 +14373,9 @@ msgstr "Symbol rate:"
 msgid "Sync failure moving back to origin !"
 msgstr "Selhání synchronizace přesouvá zpět na původní !"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Sýrie"
 
@@ -14160,6 +14385,24 @@ msgstr "Systém"
 
 msgid "System & Modulation"
 msgstr "Systém & Modulace"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Přepsat konfigurační soubory?"
+
+#
+#, fuzzy
+msgid "System option configuration"
+msgstr "Nastavení sítě"
+
+#, fuzzy
+msgid "System options"
+msgstr "Systém & Modulace"
+
+#
+#, fuzzy
+msgid "System options configuration"
+msgstr "Nastavení sítě"
 
 msgid "T2MI PID"
 msgstr "T2MI PID"
@@ -14200,7 +14443,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®15.1.2021"
+"®27.1.2021"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -14335,6 +14578,11 @@ msgstr "Test DiSEqC nastavení"
 msgid "Test mode"
 msgstr "Testovací mód"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Testovací mód"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Otestuje síťové nastavení přijímače.\n"
 
@@ -14399,10 +14647,6 @@ msgstr "DVD standard nepodporuje H.264 (HDTV) video streamy. Chcete místo toho 
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Plugin není nainstalován."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "PIN kód, který jste zadali, je odlišný."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN kód byl úspěšně změněn."
@@ -14506,6 +14750,12 @@ msgstr "Cesta %s již existuje."
 
 msgid "The pin code you entered is wrong."
 msgstr "Zadaný PIN kód je chybný."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14642,6 +14892,9 @@ msgid ""
 "No support will be provided!\n"
 "Do you understand this?"
 msgstr ""
+"Tento obraz je určen pro vývojáře a testery.\n"
+"Je bez jakékoliv podpory!\n"
+"Rozumíte tomu?"
 
 msgid ""
 "This info is for developers only.\n"
@@ -14913,9 +15166,15 @@ msgstr "nepodporováno"
 msgid "Time"
 msgstr "Čas"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Nastavení nahrávání"
+msgstr "Upravit časovač"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Výběr časovače"
 
 msgid "Time import should start"
 msgstr ""
@@ -15272,6 +15531,11 @@ msgstr "Ladění selhalo!"
 msgid "Tuner"
 msgstr "Tuner"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Typ tuneru"
+
 msgid "Tuner Configuration"
 msgstr "Konfigurace tuneru"
 
@@ -15511,11 +15775,6 @@ msgstr "Odpojit"
 msgid "Unsupported"
 msgstr "Nepodporováno"
 
-#
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "do standby/restartu"
-
 msgid "Unzipping Image"
 msgstr "Rozbalování image"
 
@@ -15609,6 +15868,11 @@ msgstr "Používat EIT EPG informace, jestliže jsou dostupné."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Používat FreeSat EPG informace, jestliže jsou dostupné."
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Umístění souboru"
+
 msgid "Use HDMI pre-emphasis"
 msgstr "Použít HDMI pre-emfázi"
 
@@ -15657,6 +15921,9 @@ msgstr "Použít fastscan číslování kanálů"
 #
 msgid "Use frequency or channel"
 msgstr "Použít frekvenci nebo kanál"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Používat vlastní nastavení pro každý adresář"
@@ -15816,6 +16083,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15844,6 +16114,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -16081,6 +16354,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN připojení"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Síťová karta"
 
 #
 msgid "WPA"
@@ -17048,6 +17326,9 @@ msgstr "Pouze aktuální čas"
 msgid "additional cable of rotor"
 msgstr "další kabel rotoru"
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "pro dospělé/drama"
 
@@ -17172,6 +17453,10 @@ msgstr "černá"
 msgid "black & white"
 msgstr "černobílé"
 
+#
+msgid "blacklist"
+msgstr "blacklist"
+
 msgid "blank"
 msgstr ""
 
@@ -17199,6 +17484,9 @@ msgstr "Podle data"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17664,6 +17952,11 @@ msgid "infotainment (general)"
 msgstr "sporty (obecně)"
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Výrobce"
+
+#
 msgid "init module"
 msgstr "inicializační modul"
 
@@ -17966,6 +18259,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "otevřít konfiguraci DNS"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18346,6 +18642,11 @@ msgid "terrestrial"
 msgstr "Pozemní"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Pozemní"
+
+#
 msgid "testing"
 msgstr "pracuji"
 
@@ -18449,6 +18750,10 @@ msgstr "nepublikováno"
 #
 msgid "untestable"
 msgstr "netestovatelné"
+
+#
+msgid "until standby/restart"
+msgstr "do standby/restartu"
 
 #
 msgid "user defined"

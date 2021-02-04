@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -69,8 +69,58 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Suojausavain"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Syötä IP-osoite"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP-osoite"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Verkkomaski"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DCHP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr " (ei käytössä)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Salaus:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Luettelotila"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Tila"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Lähetystapa"
 
 #
 msgid " (0 - all networks)"
@@ -1288,8 +1338,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 #
 msgid "12V output"
@@ -1338,6 +1427,13 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+#, fuzzy
+msgid "20%"
+msgstr "420"
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1359,6 +1455,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1368,6 +1470,10 @@ msgstr "3D-tila"
 msgid "4"
 msgstr "4"
 
+#, fuzzy
+msgid "40%"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
 
@@ -1375,6 +1481,9 @@ msgstr "422"
 #, fuzzy
 msgid "450 (default)"
 msgstr "Oletus"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1397,19 +1506,55 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "Oletus"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2635,9 +2780,10 @@ msgstr "Belize"
 msgid "Benchmark"
 msgstr "Tanska"
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Ohjelmiston hallinnan tiedot"
+msgstr "Tietoja"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2664,11 +2810,6 @@ msgstr "Musta ruutu"
 
 msgid "Black screen till locked"
 msgstr "Musta ruutu kunnes lukittu"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "Kielletyt"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2870,6 +3011,11 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Kaikki taajuudet"
 
 msgid "CPU: "
 msgstr ""
@@ -4179,6 +4325,10 @@ msgstr "HDR10 tuki"
 msgid "DTS downmix"
 msgstr "DTS muunnos stereoksi"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "DTS muunnos stereoksi"
+
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
@@ -5011,6 +5161,10 @@ msgstr "Haluatko poistaa levyltä hakemiston %s?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Haluatko poistaa kirjanmerkin %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Haluatko käynnistää vastaanottimen uudelleen?"
+
 #
 #, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5373,6 +5527,15 @@ msgstr "Käytä 'neutrino' -tyylistä kanavanvaihtoa"
 msgid "Enable 5V for active antenna"
 msgstr "Syötä 5 voltin käyttöjännite aktiiviantennille"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Ota käyttöön autom. pikahaku"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Ota käyttöön"
+
 msgid "Enable EIT EPG"
 msgstr "Ota käyttöön EIT EPG"
 
@@ -5401,6 +5564,10 @@ msgid "Enable OK for channel selection"
 msgstr "Käytä OK:ta kanavanvalintaan"
 
 #, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Ota käyttöön EIT EPG"
+
+#, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Ota käyttöön EIT EPG"
 
@@ -5423,6 +5590,10 @@ msgstr "Ota käyttöön autom. pikahaku"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Ota käyttöön automaattinen pikahaku -> %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Ota käyttöön autom. kaapelihaku"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5452,6 +5623,11 @@ msgstr "Suosikkien lisäys ja poisto"
 msgid "Enable import timer from fallback tuner"
 msgstr "Tuo ajastimet etävastaaottimelta"
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Käytössä"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5477,6 +5653,11 @@ msgstr "Ota käyttöön lapsilukko"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Ota käyttöön etävastaanotin. Etävastaanotinta kokeillaan kun paikallisia virittimiä ei voida käyttään - esimerkiksi kun virittimet ovat varattu, tai soveltuvia virittimiä ei ole. Määrittele koko URL mukaanlukien http:// ja portti (yleensä :8001), esimerkiksi http://toinen_laite:8001."
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Ota käyttöön"
 
 msgid "Enable teletext caching"
 msgstr "Ota käyttöön teksti-tv:n välimuisti"
@@ -6140,10 +6321,8 @@ msgstr "Tuuletin %d PWM"
 msgid "Fan %d voltage"
 msgstr "Tuulettimen %d jännite"
 
-#
-#, fuzzy
 msgid "Fan Speed Setup"
-msgstr "Lapsilukko"
+msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -6490,13 +6669,24 @@ msgstr "Laji"
 msgid "Geolocation"
 msgstr "Hakemisto"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Ohjelmiston hallinnan tiedot"
+msgstr "Tietoja"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Ohjelmiston hallinnan tiedot"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Viritin ei saatavilla"
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -7534,9 +7724,8 @@ msgstr "Kenia"
 msgid "Kernel file: "
 msgstr "Kernelin versio:"
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Kernelin versio:"
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Kernelin versio:"
@@ -8809,11 +8998,6 @@ msgstr "Ohjattu verkkoasennus"
 msgid "Network:"
 msgstr "Sovitin:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "Ei koskaan"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Älä pura salausta tallennettaessa. Tallennukset tallentuvat suojatussa tilassa ja ne pitää purkaa myöhemmin (offline decoding). Jos päällä, tämä asetus ohittaa aina ajastusten erilliset asetukset."
 
@@ -9198,6 +9382,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9207,10 +9394,9 @@ msgstr "3D kuva-asetukset"
 msgid "OSD Adjustment"
 msgstr ""
 
-#
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Asetukset"
+msgstr "3D kuva-asetukset"
 
 msgid "OSD name request"
 msgstr "Kuvaruutunäytön nimipyyntö"
@@ -9315,9 +9501,10 @@ msgstr ""
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Pythonin versio: "
+msgstr "Tietoja"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9541,16 +9728,15 @@ msgstr "Päähakemisto"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Lapsilukko"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Lapsilukon asetukset"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Lapsilukko"
 
 #
 msgid "Parental control services editor"
@@ -9969,8 +10155,14 @@ msgid "Please set up tuner R"
 msgstr "Määritä viritin-R"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Määritä viritin-A"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10635,6 +10827,10 @@ msgstr "Päivitetäänkö vastaanotin nyt ja käynnistetään uudelleen?"
 #
 msgid "Reboot"
 msgstr "Käynnistä laite uudelleen"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Päähakemisto"
 
 #
 #, fuzzy
@@ -11301,6 +11497,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Avustettu asennus"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Asetukset"
 
 msgid "SCAN"
 msgstr ""
@@ -13400,6 +13604,9 @@ msgstr "Aseta valmiustilaan menossa olevan ohjelman jälkeen"
 msgid "Standby brightness"
 msgstr "Valmiustilaan kun kulunut "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Valmiustilan tuuletin %d PWM"
@@ -13648,6 +13855,9 @@ msgstr "Lopeta käyttämästä käynnistyskanavana"
 msgid "Stopped"
 msgstr "Pysäytetty"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -13807,6 +14017,10 @@ msgstr "Vaihda PiP- ja pääkuva"
 msgid "Swap services"
 msgstr "Vaihda kanavat"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Vaihda kanavat"
+
 msgid "Swaziland"
 msgstr "Swaziland"
 
@@ -13913,6 +14127,9 @@ msgstr "Symbolinopeus:"
 msgid "Sync failure moving back to origin !"
 msgstr "Synkronointivirhe, palataan takaisin alkuperäiseen !"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Syrian Arab Republic"
 
@@ -13923,6 +14140,23 @@ msgstr "Järjestelmä"
 #
 msgid "System & Modulation"
 msgstr "Järjestelmä & modulaatio"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Korvaa asetustiedostot?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Verkon asetukset"
+
+#
+#, fuzzy
+msgid "System options"
+msgstr "Järjestelmä & modulaatio"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Verkon asetukset"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -14096,6 +14330,11 @@ msgstr "Testaa DiSEqC-asetukset"
 msgid "Test mode"
 msgstr "Virityskuvan lähetys"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Virityskuvan lähetys"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Testaa vastaanottimesi verkkomääritykset.\n"
 
@@ -14160,10 +14399,6 @@ msgstr "DVD standardi ei tue H.264 (HDTV) videota. Haluatko luoda erikoisformaat
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Tätä lisäosaa ei ole asennettu."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Syöttämäsi PIN-koodit olivat erilaiset."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN-koodin vaihto onnistui."
@@ -14267,6 +14502,12 @@ msgstr "Hakemisto %s on jo olemassa."
 #
 msgid "The pin code you entered is wrong."
 msgstr "Syötit virheellisen tunnusluvun."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -14670,9 +14911,15 @@ msgstr "Ei tuettu"
 msgid "Time"
 msgstr "Aika-asetukset"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Pikanäppäinasetukset"
+msgstr "Ajastuksen muokkaus"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Ajastinvalinta"
 
 msgid "Time import should start"
 msgstr ""
@@ -15026,6 +15273,10 @@ msgstr "Viritys epäonnistui!"
 msgid "Tuner"
 msgstr "Viritin"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Virittimen tyyppi"
+
 msgid "Tuner Configuration"
 msgstr "Virittimien asetukset"
 
@@ -15264,11 +15515,6 @@ msgid "Unsupported"
 msgstr "Ei tuettu"
 
 #
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "valmiustilaan/uudelleenkäynnistykseen asti"
-
-#
 msgid "Unzipping Image"
 msgstr "Puretaan ohjelmistokuvaa"
 
@@ -15357,6 +15603,10 @@ msgstr "Käytä ohjelmaoppaan EIT-tietoja, jos saatavilla."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Käytä Freesat-ohjelmaoppaan tietoja, jos saatavilla."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Tallennushakemisto"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15403,6 +15653,9 @@ msgstr "Käytä pikahaun kanavanumeroita"
 
 msgid "Use frequency or channel"
 msgstr "Käytä taajuutta tai kanavaa"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Käytä joka hakemistolle yksilöllisiä asetuksia"
@@ -15565,6 +15818,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15593,6 +15849,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -15819,6 +16078,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "WLAN-yhteys"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Verkkosovitin"
 
 #
 msgid "WPA"
@@ -16773,6 +17037,9 @@ msgstr "Vain nykyinen hetki"
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "aikuisviihde"
 
@@ -16896,6 +17163,10 @@ msgstr "Musta"
 msgid "black & white"
 msgstr "Mustavalkoinen"
 
+#
+msgid "blacklist"
+msgstr "Kielletyt"
+
 msgid "blank"
 msgstr ""
 
@@ -16922,6 +17193,9 @@ msgstr "Aikajärjestys"
 #, fuzzy
 msgid "cable"
 msgstr "Kaapeli (DVB-C)"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17376,6 +17650,11 @@ msgid "infotainment (general)"
 msgstr "urheilu (yleinen)"
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Valmistaja"
+
+#
 msgid "init module"
 msgstr "alusta moduuli"
 
@@ -17674,6 +17953,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "avaan nimipalvelimen asetus"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18055,6 +18337,11 @@ msgid "terrestrial"
 msgstr "Antennivastaanotto"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Antennivastaanotto"
+
+#
 msgid "testing"
 msgstr "Työskentelee"
 
@@ -18157,6 +18444,10 @@ msgstr "julkaisematon"
 
 msgid "untestable"
 msgstr ""
+
+#
+msgid "until standby/restart"
+msgstr "valmiustilaan/uudelleenkäynnistykseen asti"
 
 #
 msgid "user defined"

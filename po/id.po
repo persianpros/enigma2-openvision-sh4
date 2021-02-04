@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -63,8 +63,54 @@ msgid " "
 msgstr ""
 
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Kunci enkripsi"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP address"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "Alamat IP"
+
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Netmask"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
+#, fuzzy
 msgid "  Default: 0000 (disabled)"
 msgstr ": 0000 - bawaan (dimatikan)"
+
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Enkripsi:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Mode daftar"
+
+#, fuzzy
+msgid "  Mode:"
+msgstr "Mode"
+
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Mode transmisi"
 
 msgid " (0 - all networks)"
 msgstr " (0 - semua jaringan)"
@@ -1260,8 +1306,47 @@ msgstr "10 MB/s"
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
 msgstr "10bit"
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
+msgstr ""
 
 msgid "12V output"
 msgstr "keluaran 12V"
@@ -1302,6 +1387,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr "20 MB/s"
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1323,6 +1414,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1332,12 +1429,18 @@ msgstr "mode 3d"
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "bawaan"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1358,18 +1461,54 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #, fuzzy
 msgid "540 (default)"
 msgstr "bawaan"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2487,7 +2626,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Info pengelola perangkat lunak"
+msgstr "Informasi"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2513,10 +2652,6 @@ msgstr "Layar hitam"
 
 msgid "Black screen till locked"
 msgstr "Layar hitam sampai terkunci"
-
-#, fuzzy
-msgid "Blacklist"
-msgstr "daftar hitam"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2708,6 +2843,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Semua frekuensi"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -3937,6 +4076,10 @@ msgstr "mendukung HLG"
 msgid "DTS downmix"
 msgstr "downmix DTS"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "downmix DTS"
+
 msgid "DUAL LAYER DVD"
 msgstr "DVD Dua Lapis"
 
@@ -4695,6 +4838,10 @@ msgstr "Anda yakin ingin menghapus direktori %s dari perangkat?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Anda yakin ingin menghapus bookmark anda %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Anda ingin mereboot Rx anda?"
+
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Anda yakin ingin menghapus %s?"
@@ -5012,6 +5159,14 @@ msgstr "Aktifkan kontrol zap gaya 'neutrino'"
 msgid "Enable 5V for active antenna"
 msgstr "Aktifkan 5V pada antena aktif"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Aktifkan pelacakan cepat otomatis"
+
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Aktifkan"
+
 msgid "Enable EIT EPG"
 msgstr "Aktifkan EPG EIT"
 
@@ -5040,6 +5195,10 @@ msgid "Enable OK for channel selection"
 msgstr "Aktifkan OK pada pemilihan kanal"
 
 #, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Aktifkan EPG EIT"
+
+#, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Aktifkan EPG EIT"
 
@@ -5062,6 +5221,10 @@ msgstr "Aktifkan pelacakan cepat otomatis"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Aktifkan pelacakan cepat otomatis pada %s"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Aktifkan pelacakan kabel otomatis"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5088,6 +5251,10 @@ msgstr "Aktifkan ubah favorit"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Diaktifkan"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5110,6 +5277,10 @@ msgstr "Aktifkan perlindungan orangtua"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Aktifkan rx enigma2 dari jauh untuk mencoba menala layanan yang tidak bisa ditala secara lokal (misalnya penala sedang digunakan atau tipe layanan tidak tersedia pada penala lokal. Tentukan URL lengkap termasuk http:// dan nomor port (biasanya ...:8001), misalnya http://box_kedua:8001."
+
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Aktifkan"
 
 msgid "Enable teletext caching"
 msgstr "Aktifkan penyembunyian teleteks"
@@ -6069,11 +6240,21 @@ msgstr "Lokasi"
 
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Info pengelola perangkat lunak"
+msgstr "Informasi"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Info pengelola perangkat lunak"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Penala tidak tersedia."
 
 msgid "Georgia"
 msgstr ""
@@ -7040,9 +7221,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Versi kernel: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Versi kernel: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Versi kernel: "
@@ -8170,10 +8350,6 @@ msgstr "Wizard jaringan"
 msgid "Network:"
 msgstr "Jaringan:"
 
-#, fuzzy
-msgid "Never"
-msgstr "takpernah"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Jangan di-dekrip kontennya saat merekam. Hal ini akan mengabaikan pengaturan pewaktu masing-masing secara global. Jika diaktifkan, hasil rekaman disimpan dalam bentuk di-kripsi dan musti di-dekripsi setelah itu (kadang disebut dekoding offline). Bawaan: tidak."
 
@@ -8520,6 +8696,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -8531,7 +8710,7 @@ msgstr ""
 
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Pengaturan"
+msgstr "Atur 3D OSD"
 
 msgid "OSD name request"
 msgstr "meminta nama OSD"
@@ -8633,7 +8812,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Buka lokasi yg dipilih"
+msgstr "Informasi"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -8850,15 +9029,14 @@ msgid "Parent directory"
 msgstr "Direktori induk"
 
 #, fuzzy
-msgid "Parental Control"
-msgstr "Pengawasan Orangtua"
-
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Atur pengawasan orangtua"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+msgid "Parental control"
+msgstr "Pengawasan Orangtua"
 
 msgid "Parental control services editor"
 msgstr "Perobah kanal dalam pengawasan orangtua"
@@ -9222,8 +9400,14 @@ msgid "Please set up tuner R"
 msgstr "Mohon atur penala R"
 
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Mohon atur penala A"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr "Mohon atur setelan dasar berikut"
@@ -9802,6 +9986,10 @@ msgstr "Yakin meningkatkan Rx anda dan reboot sekarang?"
 
 msgid "Reboot"
 msgstr "Reboot"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Direktori root"
 
 #, fuzzy
 msgid "Rec LED brightness"
@@ -10387,6 +10575,13 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Atur video"
+
+msgid "SATPI"
+msgstr ""
+
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Pengaturan"
 
 msgid "SCAN"
 msgstr ""
@@ -12308,6 +12503,9 @@ msgstr "Standby setelah acara saat ini"
 msgid "Standby brightness"
 msgstr "Standby dalam"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "Kipas standby %d PWM"
@@ -12517,6 +12715,9 @@ msgstr "Berhenti gunakan sbg layanan mulai"
 msgid "Stopped"
 msgstr "Terhenti"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -12663,6 +12864,10 @@ msgstr "Tukarkan PiP dan gambar utama"
 msgid "Swap services"
 msgstr "Tukar layanan"
 
+#, fuzzy
+msgid "Swap size:"
+msgstr "Tukar layanan"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -12757,6 +12962,9 @@ msgstr ""
 msgid "Sync failure moving back to origin !"
 msgstr "Sinkronisasi pergerakan gagal kembali ke asal!"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr "Republik Arab Syria"
 
@@ -12765,6 +12973,22 @@ msgstr "Sistem"
 
 msgid "System & Modulation"
 msgstr "Sistem & Modulasi"
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Timpa file konfigurasi?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Pengaturan jaringan"
+
+#, fuzzy
+msgid "System options"
+msgstr "Sistem & Modulasi"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Pengaturan jaringan"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -12927,6 +13151,10 @@ msgstr "Pengaturan pengecekan DiSEqC"
 msgid "Test mode"
 msgstr "Mode pengetesan"
 
+#, fuzzy
+msgid "Test overclock"
+msgstr "Mode pengetesan"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Tes penyetelan jaringan Rx anda.\n"
 
@@ -12988,10 +13216,6 @@ msgstr "Standar DVB tidak mendukung stream video H.264 (HDTV). Anda ingin membua
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Plugin ini tidak terpasang."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Kode PIN yg anda masukkan berbeda."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Kode PIN telah berhasil diganti."
@@ -13091,6 +13315,12 @@ msgstr "Arahtuju %s telah ada."
 
 msgid "The pin code you entered is wrong."
 msgstr "Kode pin yg anda masukkan salah."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -13479,7 +13709,11 @@ msgstr "Waktu"
 
 #, fuzzy
 msgid "Time Setup"
-msgstr "Pengaturan Rekam"
+msgstr "Ubah pewaktu"
+
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Pilihan pewaktu"
 
 msgid "Time import should start"
 msgstr ""
@@ -13791,6 +14025,10 @@ msgstr "Penalaan gagal!"
 msgid "Tuner"
 msgstr "Penala"
 
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Jenis penala"
+
 msgid "Tuner Configuration"
 msgstr "Pengaturan Penala"
 
@@ -14019,10 +14257,6 @@ msgid "Unsupported"
 msgstr "Takdidukung"
 
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "sampai standby/mulai ulang"
-
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Meng-Unzip Image"
 
@@ -14107,6 +14341,10 @@ msgstr "Gunakan info EPG EIT ketika tersedia."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Gunakan info EPG FreeSat ketika tersedia."
 
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Lokasi film"
+
 msgid "Use HDMI pre-emphasis"
 msgstr "Gunakan pra-penekanan HDMI"
 
@@ -14151,6 +14389,9 @@ msgstr "Gunakan nomor kanal lacakcepat"
 
 msgid "Use frequency or channel"
 msgstr "Gunakan frekuensi atau kanal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Gunakan setelan individu untuk setiap direktori"
@@ -14290,6 +14531,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #, fuzzy
 msgid "VFD display"
 msgstr "Pemutar DVD"
@@ -14317,6 +14561,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -14519,6 +14766,10 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Koneksi WLAN"
+
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Adapter LAN"
 
 msgid "WPA"
 msgstr "WPA"
@@ -15439,6 +15690,9 @@ msgstr "waktu aktual saja"
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "film dewasa/drama"
 
@@ -15550,6 +15804,9 @@ msgstr "hitam"
 msgid "black & white"
 msgstr "hitam & putih"
 
+msgid "blacklist"
+msgstr "daftar hitam"
+
 msgid "blank"
 msgstr ""
 
@@ -15574,6 +15831,9 @@ msgstr "berdasarkan tanggal"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15993,6 +16253,10 @@ msgstr "program informasi/pendidikan/sekolah"
 msgid "infotainment (general)"
 msgstr "olahraga (umum)"
 
+#, fuzzy
+msgid "infrastructure"
+msgstr "Pabrikan"
+
 msgid "init module"
 msgstr "init module"
 
@@ -16253,6 +16517,9 @@ msgstr ""
 
 msgid "open nameserver configuration"
 msgstr "buka setelan namaserver"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -16588,6 +16855,10 @@ msgstr "tennis/squash"
 msgid "terrestrial"
 msgstr "Terrestrial"
 
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Terrestrial"
+
 msgid "testing"
 msgstr "berfungsi"
 
@@ -16679,6 +16950,9 @@ msgstr "takdipulikasikan"
 
 msgid "untestable"
 msgstr "takbisa dites"
+
+msgid "until standby/restart"
+msgstr "sampai standby/mulai ulang"
 
 msgid "user defined"
 msgstr "ditentukan pengguna"

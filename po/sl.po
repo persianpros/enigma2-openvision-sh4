@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2020-05-16 18:48+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -67,8 +67,59 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Šifrirni ključ"
+
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "IP naslov"
+
+#, fuzzy
+msgid "    IP address:"
+msgstr "IP naslov"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Omrežna maska"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  DHCP:"
+msgstr "Samodejno pridobivanje IP naslova - DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr "(onemogočeno)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Kodiranje:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Polni način"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Način"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Način posredovanja"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1312,7 +1363,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 #
@@ -1364,6 +1454,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1389,6 +1485,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1399,6 +1501,9 @@ msgstr "3D način"
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
@@ -1406,6 +1511,9 @@ msgstr ""
 #, fuzzy
 msgid "450 (default)"
 msgstr "Privzeto"
+
+msgid "450 MHz"
+msgstr ""
 
 #
 msgid "4:3"
@@ -1431,22 +1539,58 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "Privzeto"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 #
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 #
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 #
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #
 #, fuzzy
@@ -2719,9 +2863,10 @@ msgstr ""
 msgid "Benchmark"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Softwaremanager informacije"
+msgstr "Informacije"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2749,11 +2894,6 @@ msgstr "Črni zaslon"
 
 msgid "Black screen till locked"
 msgstr "Črni zaslon do sprejema signala"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "črni seznam"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2962,6 +3102,11 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Frekvenca:"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -4311,6 +4456,10 @@ msgstr "ni podprto"
 msgid "DTS downmix"
 msgstr "Pretvorba DTS zvoka v stereo"
 
+#, fuzzy
+msgid "DTS downmix:"
+msgstr "Pretvorba DTS zvoka v stereo"
+
 #
 msgid "DUAL LAYER DVD"
 msgstr "Dvo-slojni DVD"
@@ -5166,6 +5315,10 @@ msgstr "Ali res želite odstraniti mapo: %s iz trdega diska?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Ali res želite odstraniti zaznamek: %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Želite izvesti ponovni zagon sprejemnika?"
+
 #
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5539,6 +5692,15 @@ msgstr "Vklopi 'neutrino' način preklapljanja med kanali"
 msgid "Enable 5V for active antenna"
 msgstr "Omogoči 5V za potrebe aktivne antene"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Omogoči samodejno hitro iskanje"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "omogoči"
+
 #
 msgid "Enable EIT EPG"
 msgstr "EIT EPG sistem"
@@ -5575,6 +5737,11 @@ msgstr "Vklopi tipko OK za priklic izbirnika kanalov"
 
 #
 #, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "EIT EPG sistem"
+
+#
+#, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "EIT EPG sistem"
 
@@ -5599,6 +5766,10 @@ msgstr "Omogoči samodejno hitro iskanje"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Omogoči samodejno hitro iskanje"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Omogoči samodejno iskanje DVB-C kanalov"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5628,6 +5799,11 @@ msgstr "Urejanje priljubljenih paketov"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Omogočeno"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5654,6 +5830,11 @@ msgstr "Vklop starševskega nadzora"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Omogoči možnost, da se oddaljeni/rezervni enigma2 sprejemnik uporabi za gledanje kanalov, ki niso na voljo na primarnem sprejemniku ali pa je kanalnik zaseden s sprejemom nekega drugega kanala. Določite celoten naslov - EUR, vključno s \"http: //\". in številko vrat (običajno ...:8001 ), na primer http: // rezervni_sprejemnik:8001."
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "omogoči"
 
 #
 msgid "Enable teletext caching"
@@ -6699,13 +6880,24 @@ msgstr "Žanr"
 msgid "Geolocation"
 msgstr "Lokacija"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Softwaremanager informacije"
+msgstr "Informacije"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Softwaremanager informacije"
+
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Kanalnik ni na voljo."
 
 msgid "Georgia"
 msgstr ""
@@ -7759,9 +7951,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Verzija jedra: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Verzija jedra: "
+msgstr ""
 
 msgid "Kernel version: "
 msgstr "Verzija jedra: "
@@ -9051,11 +9242,6 @@ msgstr "Čarovnik za mrežo"
 msgid "Network:"
 msgstr "Omrežje:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "nikoli"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -9443,6 +9629,9 @@ msgstr ""
 msgid "OK"
 msgstr "Potrditev"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9452,10 +9641,9 @@ msgstr "OSD 3D nastavitve"
 msgid "OSD Adjustment"
 msgstr ""
 
-#
 #, fuzzy
 msgid "OSD Setup"
-msgstr "Nastavitve"
+msgstr "OSD 3D nastavitve"
 
 msgid "OSD name request"
 msgstr "Zahtevek za OSD ime"
@@ -9564,9 +9752,10 @@ msgstr ""
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Verzija pythona:"
+msgstr "Informacije"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9798,16 +9987,15 @@ msgstr "Prvotna mapa"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Starševska zaščita"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Nastavitve starševske zaščite"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Starševska zaščita"
 
 #
 msgid "Parental control services editor"
@@ -10234,8 +10422,14 @@ msgstr "Nastavite kanalnik B"
 
 #
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Nastavite kanalnik B"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10903,6 +11097,10 @@ msgstr "Res želite nadgraditi sprejemnik in ga ponovno zagnati?"
 #
 msgid "Reboot"
 msgstr "Ponovni zagon"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Izvorna mapa"
 
 #
 #, fuzzy
@@ -11582,6 +11780,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Video nastavitve"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Nastavitve"
 
 msgid "SCAN"
 msgstr ""
@@ -13756,6 +13962,9 @@ msgstr "Stanje pripravljenosti po trenutnem dogodku"
 msgid "Standby brightness"
 msgstr "Stanje pripravljenosti v"
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14003,6 +14212,9 @@ msgstr "Sprememba nastavitve začetnega kanala"
 msgid "Stopped"
 msgstr "Ustavljeno"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -14170,6 +14382,11 @@ msgstr "Menjava \"Slike v sliki\" z glavno sliko"
 msgid "Swap services"
 msgstr "Zamenjava kanala"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Zamenjava kanala"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -14281,6 +14498,9 @@ msgstr "Razmerje simbolov:"
 msgid "Sync failure moving back to origin !"
 msgstr ""
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -14290,6 +14510,22 @@ msgstr "Sistem "
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Prepis nastavitvenih datotek?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Nastavitve seznama posnetkov"
+
+#, fuzzy
+msgid "System options"
+msgstr "Možnosti iskanja"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Nastavitve seznama posnetkov"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -14468,6 +14704,11 @@ msgstr "Preizkušanje DiSEqC nastavitev"
 msgid "Test mode"
 msgstr "Testni način"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Testni način"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Preizkušanje omrežnih nastavitev vašega sprejemnika.\n"
 
@@ -14532,10 +14773,6 @@ msgstr ""
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Ta vtičnik ni nameščen."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Napačna PIN koda."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN koda je spremenjena."
@@ -14622,6 +14859,12 @@ msgstr "Pot %s že obstaja."
 #
 msgid "The pin code you entered is wrong."
 msgstr "Napačna PIN koda."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -15022,9 +15265,15 @@ msgstr "ni podprto"
 msgid "Time"
 msgstr "Čas"
 
+#
 #, fuzzy
 msgid "Time Setup"
-msgstr "Nastavitve snemanja"
+msgstr "Urejanje časovnika"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Izbira časovnika"
 
 msgid "Time import should start"
 msgstr ""
@@ -15387,6 +15636,11 @@ msgstr "Napaka v sprejemu!"
 msgid "Tuner"
 msgstr "Kanalnik"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Vrsta kanalnika"
+
 msgid "Tuner Configuration"
 msgstr "Nastavitev kanalnikov"
 
@@ -15634,11 +15888,6 @@ msgstr "Nepodprto"
 
 #
 #, fuzzy
-msgid "Until standby/restart"
-msgstr "do stanja pripravljenosti/resetiranja"
-
-#
-#, fuzzy
 msgid "Unzipping Image"
 msgstr "Nalaganje..."
 
@@ -15735,6 +15984,11 @@ msgstr "EIT EPG se uporablja v primerih, ko TV postaje oddajajo tudi spored. Pri
 msgid "Use FreeSat EPG information when it is available."
 msgstr "FreeSat EPG se uporablja v primerih, ko TV postaje oddajajo tudi spored. FreeSat sistem uporabljajo nekatere TV postaje iz Velike Britanije."
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Movie lokacija"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15781,6 +16035,9 @@ msgstr "Uporaba \"fastscan\" številčenja kanalov"
 
 msgid "Use frequency or channel"
 msgstr "Uporabi frekvenco ali kanal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Uporabi posamezne nastavitve za vsako mapo"
@@ -15940,6 +16197,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15968,6 +16228,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -16210,6 +16473,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Brezžična omrežna povezava"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Omrežni vmesnik"
 
 #
 msgid "WPA"
@@ -17178,6 +17446,9 @@ msgstr "samo trenutni čas"
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr ""
 
@@ -17302,6 +17573,10 @@ msgstr "črno"
 msgid "black & white"
 msgstr "črno/belo"
 
+#
+msgid "blacklist"
+msgstr "črni seznam"
+
 msgid "blank"
 msgstr ""
 
@@ -17329,6 +17604,9 @@ msgstr "razvrsčanje po datumu"
 #, fuzzy
 msgid "cable"
 msgstr "Kabel"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17787,6 +18065,11 @@ msgid "infotainment (general)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Proizvajalec"
+
+#
 msgid "init module"
 msgstr "zagon modula"
 
@@ -18083,6 +18366,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "Odprtje nastavitev imenskega strežnika"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18459,6 +18745,11 @@ msgid "terrestrial"
 msgstr "Zemeljski"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Zemeljski"
+
+#
 msgid "testing"
 msgstr "deluje"
 
@@ -18560,6 +18851,10 @@ msgstr ""
 
 msgid "untestable"
 msgstr ""
+
+#
+msgid "until standby/restart"
+msgstr "do stanja pripravljenosti/resetiranja"
 
 #
 msgid "user defined"

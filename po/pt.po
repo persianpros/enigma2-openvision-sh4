@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 05:54+0330\n"
+"POT-Creation-Date: 2021-02-04 12:15+0330\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -63,9 +63,62 @@ msgstr ""
 msgid " "
 msgstr ""
 
+#
 #, fuzzy
+msgid "    Encryption key:"
+msgstr "Chave de Encriptação"
+
+#
+#, fuzzy
+msgid "    Gateway IP address:"
+msgstr "Endereço IP"
+
+#
+#, fuzzy
+msgid "    IP address:"
+msgstr "Endereço IP"
+
+#
+#, fuzzy
+msgid "    Netmask:"
+msgstr "Máscara"
+
+msgid "    Pass phrase:"
+msgstr ""
+
+msgid "    WEP key index:"
+msgstr ""
+
+#, fuzzy
+msgid "  DHCP:"
+msgstr "DHCP"
+
 msgid "  Default: 0000 (disabled)"
-msgstr " (desactivado)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "  Encryption:"
+msgstr "Encriptação:"
+
+#, fuzzy
+msgid "  Link mode:"
+msgstr "Tipo de lista"
+
+#
+#, fuzzy
+msgid "  Mode:"
+msgstr "Modo"
+
+#
+#, fuzzy
+msgid "  SSID:"
+msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "  Transmitting power:"
+msgstr "Modo de Transmissão"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -1281,7 +1334,46 @@ msgstr ""
 msgid "100 MB/s"
 msgstr ""
 
+msgid "100%"
+msgstr ""
+
 msgid "10bit"
+msgstr ""
+
+msgid "11a-only"
+msgstr ""
+
+msgid "11a/b/g-mixed"
+msgstr ""
+
+msgid "11a/b/g/n-mixed"
+msgstr ""
+
+msgid "11a/g/n-mixed"
+msgstr ""
+
+msgid "11a/n-mixed"
+msgstr ""
+
+msgid "11b-only"
+msgstr ""
+
+msgid "11b/g-mixed"
+msgstr ""
+
+msgid "11b/g/n-mixed"
+msgstr ""
+
+msgid "11g-only"
+msgstr ""
+
+msgid "11g/n-mixed"
+msgstr ""
+
+msgid "11n-only"
+msgstr ""
+
+msgid "128 Mbyte"
 msgstr ""
 
 #
@@ -1328,6 +1420,12 @@ msgstr "2"
 msgid "20 MB/s"
 msgstr ""
 
+msgid "20%"
+msgstr ""
+
+msgid "200 MHz"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -1349,6 +1447,12 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+msgid "300 MHz"
+msgstr ""
+
+msgid "32 Mbyte"
+msgstr ""
+
 msgid "3D Modus"
 msgstr ""
 
@@ -1359,6 +1463,9 @@ msgstr "modo 3D"
 msgid "4"
 msgstr "4"
 
+msgid "40%"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
@@ -1366,6 +1473,9 @@ msgstr ""
 #, fuzzy
 msgid "450 (default)"
 msgstr "padrão"
+
+msgid "450 MHz"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1388,19 +1498,55 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+msgid "500 MHz"
+msgstr ""
+
 #
 #, fuzzy
 msgid "540 (default)"
 msgstr "padrão"
 
+msgid "540 MHz (default)"
+msgstr ""
+
 msgid "6"
 msgstr "6"
+
+msgid "60%"
+msgstr ""
+
+msgid "600 MHz"
+msgstr ""
+
+msgid "630 MHz"
+msgstr ""
+
+msgid "64 Mbyte"
+msgstr ""
+
+msgid "650 MHz"
+msgstr ""
 
 msgid "7"
 msgstr "7"
 
+msgid "700 MHz"
+msgstr ""
+
+msgid "710 MHz"
+msgstr ""
+
+msgid "775 MHz"
+msgstr ""
+
 msgid "8"
 msgstr "8"
+
+msgid "80%"
+msgstr ""
+
+msgid "800 MHz"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -2687,9 +2833,10 @@ msgstr ""
 msgid "Benchmark"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Benchmark Information"
-msgstr "Informação do Gestor de Software"
+msgstr "Informação"
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2716,11 +2863,6 @@ msgstr "Ecrã preto"
 
 msgid "Black screen till locked"
 msgstr "Ecrã preto até bloquear"
-
-#
-#, fuzzy
-msgid "Blacklist"
-msgstr "lista negra"
 
 msgid "Blinking REC"
 msgstr ""
@@ -2924,6 +3066,10 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
+
+#, fuzzy
+msgid "CPU clock frequency:"
+msgstr "Frequência:"
 
 msgid "CPU: "
 msgstr ""
@@ -4298,6 +4444,9 @@ msgstr "não suportado"
 msgid "DTS downmix"
 msgstr ""
 
+msgid "DTS downmix:"
+msgstr ""
+
 #
 msgid "DUAL LAYER DVD"
 msgstr "DVD de dupla face"
@@ -5148,6 +5297,10 @@ msgstr "Deseja mesmo remover o directório %s do disco?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Deseja mesmo remover o marcador %s?"
 
+#, fuzzy
+msgid "Do you really want to restart the receiver now?"
+msgstr "Deseja reiniciar o receptor?"
+
 #
 #, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
@@ -5513,6 +5666,15 @@ msgstr "Activar estilo 'neutrino' no controlo do zapping"
 msgid "Enable 5V for active antenna"
 msgstr "Activar saída de 5V para a antena"
 
+#, fuzzy
+msgid "Enable Autostart"
+msgstr "Activar pesquisa rápida automática"
+
+#
+#, fuzzy
+msgid "Enable CIFS:"
+msgstr "Activar"
+
 msgid "Enable EIT EPG"
 msgstr "Activar Guia de Programação EIT"
 
@@ -5542,6 +5704,10 @@ msgid "Enable OK for channel selection"
 msgstr "Activar OK para selecção de canal"
 
 #, fuzzy
+msgid "Enable OpenSSH:"
+msgstr "Activar Guia de Programação EIT"
+
+#, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Activar Guia de Programação EIT"
 
@@ -5564,6 +5730,10 @@ msgstr "Activar pesquisa rápida automática"
 #, fuzzy, python-format
 msgid "Enable auto fastscan for %s"
 msgstr "Activar pesquisa rápida automática"
+
+#, fuzzy
+msgid "Enable auto telnet login:"
+msgstr "Activar cache de teletexto"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -5594,6 +5764,11 @@ msgstr "Activar a edição dos favoritos"
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable inadyn:"
+msgstr "Activar"
+
 msgid "Enable infobar fade-out"
 msgstr ""
 
@@ -5618,6 +5793,11 @@ msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Enable swap:"
+msgstr "Activar"
 
 msgid "Enable teletext caching"
 msgstr "Activar cache de teletexto"
@@ -6646,13 +6826,25 @@ msgstr "Género"
 msgid "Geolocation"
 msgstr "Localização"
 
+#
 #, fuzzy
 msgid "Geolocation Information"
-msgstr "Informação do Gestor de Software"
+msgstr "Informação"
+
+msgid "Geolocation does not contain time zone information."
+msgstr ""
+
+msgid "Geolocation has been used to set the time zone."
+msgstr ""
 
 #, fuzzy
 msgid "Geolocation information"
 msgstr "Informação do Gestor de Software"
+
+#
+#, fuzzy
+msgid "Geolocation is not available."
+msgstr "Servidor de actualizações não disponível"
 
 msgid "Georgia"
 msgstr ""
@@ -7710,9 +7902,8 @@ msgstr ""
 msgid "Kernel file: "
 msgstr "Versão do Kernel: "
 
-#, fuzzy
 msgid "Kernel module layout: "
-msgstr "Versão do Kernel: "
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version: "
@@ -9012,11 +9203,6 @@ msgstr "Assistente de rede"
 msgid "Network:"
 msgstr "Rede:"
 
-#
-#, fuzzy
-msgid "Never"
-msgstr "nunca"
-
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
 
@@ -9411,6 +9597,9 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
+msgid "OK (reboots)"
+msgstr ""
+
 msgid "ONID"
 msgstr "ONID"
 
@@ -9534,9 +9723,10 @@ msgstr ""
 msgid "Open Vision"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Open Vision Information"
-msgstr "Versão do Kernel: "
+msgstr "Informação"
 
 msgid "Open Vision RC ID number: "
 msgstr ""
@@ -9772,16 +9962,15 @@ msgstr "Directório superior"
 
 #
 #, fuzzy
-msgid "Parental Control"
-msgstr "Controle paternal"
-
-#
-#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Definições de controle parental"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
+
+#
+msgid "Parental control"
+msgstr "Controle paternal"
 
 #
 #, fuzzy
@@ -10218,8 +10407,14 @@ msgstr "Por favor configure o sintonizador A"
 
 #
 #, fuzzy
-msgid "Please set your time zone"
+msgid "Please set your time options"
 msgstr "Por favor configure o sintonizador A"
+
+msgid ""
+"Please set your time options.\n"
+"\n"
+"Press YELLOW to set the time zone via geolocation."
+msgstr ""
 
 msgid "Please setup the following basic configs!"
 msgstr ""
@@ -10885,6 +11080,10 @@ msgstr "Actualizar o receptor e reiniciar agora?"
 #
 msgid "Reboot"
 msgstr "Reiniciar"
+
+#, fuzzy
+msgid "Reboot receiver"
+msgstr "Directório raíz"
 
 #
 #, fuzzy
@@ -11567,6 +11766,14 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Definições de vídeo"
+
+msgid "SATPI"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SATPI Setup"
+msgstr "Definições"
 
 msgid "SCAN"
 msgstr ""
@@ -13738,6 +13945,9 @@ msgstr "Colocar em Standby após o programa actual"
 msgid "Standby brightness"
 msgstr "Standby em "
 
+msgid "Standby clock frequency:"
+msgstr ""
+
 #
 #, fuzzy, python-format
 msgid "Standby fan %d PWM"
@@ -13983,6 +14193,9 @@ msgstr "Deixar de usar como canal inicial"
 msgid "Stopped"
 msgstr "Parado"
 
+msgid "Stop|Disable Autostart"
+msgstr ""
+
 msgid "Storage"
 msgstr ""
 
@@ -14148,6 +14361,11 @@ msgstr "Trocar PiP com imagem principal"
 msgid "Swap services"
 msgstr "Troca de canais"
 
+#
+#, fuzzy
+msgid "Swap size:"
+msgstr "Troca de canais"
+
 msgid "Swaziland"
 msgstr ""
 
@@ -14262,6 +14480,9 @@ msgstr "Symbol rate:"
 msgid "Sync failure moving back to origin !"
 msgstr "Sincronização falhou, a voltar para a origem!"
 
+msgid "Synchronise with internet time:"
+msgstr ""
+
 msgid "Syrian Arab Republic"
 msgstr ""
 
@@ -14271,6 +14492,23 @@ msgstr "Sistema"
 
 msgid "System & Modulation"
 msgstr ""
+
+#, fuzzy
+msgid "System configuration options"
+msgstr "Substituir os ficheiros de configuração?"
+
+#, fuzzy
+msgid "System option configuration"
+msgstr "Configuração da Lista de Vídeos"
+
+#
+#, fuzzy
+msgid "System options"
+msgstr "Guardar posição"
+
+#, fuzzy
+msgid "System options configuration"
+msgstr "Configuração da Lista de Vídeos"
 
 #, fuzzy
 msgid "T2MI PID"
@@ -14446,6 +14684,11 @@ msgstr "Testar as definições de DISEqC"
 msgid "Test mode"
 msgstr "Modo de teste"
 
+#
+#, fuzzy
+msgid "Test overclock"
+msgstr "Modo de teste"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Teste as configurações de rede do seu receptor.\n"
 
@@ -14515,10 +14758,6 @@ msgstr "A norma DVD não suporta fluxos H.264 (HDTV) de vídeo. Deseja criar um 
 #, fuzzy
 msgid "The MovieCut plugin is not installed."
 msgstr "Este Plugin não está instalado."
-
-#, fuzzy
-msgid "The PIN code entered is incorrect."
-msgstr "Os códigos PIN que introduziu são diferentes."
 
 msgid "The PIN code has been changed successfully."
 msgstr "O código PIN foi alterado com sucesso."
@@ -14608,6 +14847,12 @@ msgstr "O caminho %s já existe."
 #
 msgid "The pin code you entered is wrong."
 msgstr "O PIN que introduziu está errado."
+
+msgid ""
+"The receiver needs to be restarted to apply the new options.\n"
+" \n"
+"Rebooting in a moment!\n"
+msgstr ""
 
 #, python-format
 msgid "The results have been written to %s"
@@ -15019,7 +15264,12 @@ msgstr "Hora"
 #
 #, fuzzy
 msgid "Time Setup"
-msgstr "Configuração de servidor DNS"
+msgstr "Editar agendamento"
+
+#
+#, fuzzy
+msgid "Time Setup Actions"
+msgstr "Selecção do agendamento"
 
 msgid "Time import should start"
 msgstr ""
@@ -15384,6 +15634,11 @@ msgstr "Sintonização falhou!"
 msgid "Tuner"
 msgstr "Sintonizador"
 
+#
+#, fuzzy
+msgid "Tuner C type:"
+msgstr "Tipo de sintonizador"
+
 msgid "Tuner Configuration"
 msgstr ""
 
@@ -15631,11 +15886,6 @@ msgstr "Desmontar"
 msgid "Unsupported"
 msgstr "Não suportado"
 
-#
-#, fuzzy
-msgid "Until standby/restart"
-msgstr "até Standby/reiniciar"
-
 #, fuzzy
 msgid "Unzipping Image"
 msgstr "Descarregando"
@@ -15733,6 +15983,11 @@ msgstr "Usar informação EIT EPG quando está disponível."
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Usar informação FreeSat EPG quando está disponível."
 
+#
+#, fuzzy
+msgid "Use Geolocation"
+msgstr "Localização das gravações"
+
 msgid "Use HDMI pre-emphasis"
 msgstr ""
 
@@ -15780,6 +16035,9 @@ msgstr "Usar o número dos canais da pesquisa rápida"
 
 msgid "Use frequency or channel"
 msgstr "Usar a frequência ou o canal"
+
+msgid "Use geolocation to set the current time zone location"
+msgstr ""
 
 msgid "Use individual settings for each directory"
 msgstr "Usar definições individuais para cada directório"
@@ -15947,6 +16205,9 @@ msgstr ""
 msgid "VFD configuration for Fortis HS8200"
 msgstr ""
 
+msgid "VFD configuration for Opticum HD 9600 series"
+msgstr ""
+
 #
 #, fuzzy
 msgid "VFD display"
@@ -15975,6 +16236,9 @@ msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
 msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for Opticum HD 9600 series"
 msgstr ""
 
 msgid "VFD icons for Pace HDS-7241"
@@ -16222,6 +16486,11 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Ligação de rede sem fios"
+
+#
+#, fuzzy
+msgid "WLAN driver:"
+msgstr "Adaptador LAN"
 
 #
 msgid "WPA"
@@ -17189,6 +17458,9 @@ msgstr ""
 msgid "additional cable of rotor"
 msgstr ""
 
+msgid "adhoc"
+msgstr ""
+
 msgid "adult movie/drama"
 msgstr "filme adultos/drama"
 
@@ -17313,6 +17585,10 @@ msgstr "preto"
 msgid "black & white"
 msgstr "preto e branco"
 
+#
+msgid "blacklist"
+msgstr "lista negra"
+
 msgid "blank"
 msgstr ""
 
@@ -17341,6 +17617,9 @@ msgstr "ordenar por data"
 #, fuzzy
 msgid "cable"
 msgstr "Cabo"
+
+msgid "cable (DVB-C)"
+msgstr ""
 
 #
 #, fuzzy
@@ -17806,6 +18085,11 @@ msgid "infotainment (general)"
 msgstr "desporto"
 
 #
+#, fuzzy
+msgid "infrastructure"
+msgstr "Fabricante"
+
+#
 msgid "init module"
 msgstr "iniciar módulo"
 
@@ -18101,6 +18385,9 @@ msgstr ""
 #
 msgid "open nameserver configuration"
 msgstr "abrir a configuração do servidor de DNS"
+
+msgid "opt9600VFD"
+msgstr ""
 
 msgid "orange"
 msgstr ""
@@ -18478,6 +18765,11 @@ msgid "terrestrial"
 msgstr "Terrestre"
 
 #
+#, fuzzy
+msgid "terrestrial (DVB-T)"
+msgstr "Terrestre"
+
+#
 msgid "testing"
 msgstr "em curso"
 
@@ -18578,6 +18870,10 @@ msgstr "não publicado"
 
 msgid "untestable"
 msgstr ""
+
+#
+msgid "until standby/restart"
+msgstr "até Standby/reiniciar"
 
 #
 msgid "user defined"
