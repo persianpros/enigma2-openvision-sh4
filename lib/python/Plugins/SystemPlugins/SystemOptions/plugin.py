@@ -20,15 +20,15 @@ config.plugins.systemoptions = ConfigSubsection()
 config.plugins.systemoptions.wlan = ConfigSelection(default='0',
 	choices=[
 		('0', 'none'),
-		('mt7601Usta', 'MT7601U'),
+		('8712u', 'RTL8712U'),
 		('8188eu', 'RTL8188EU'),
 		('8192cu', 'RTL8192CU'),
 		('8192du', 'RTL8192DU'),
 		('8192eu', 'RTL8192EU'),
-		('8712u', 'RT8712U'),
+		('mt7601Usta', 'MT7601U'),
 		('rt2870sta', 'RT2870STA'),
 		('rt3070sta', 'RT3070STA'),
-		('rt5370sta', 'RT5370STA')
+		('rt5370sta', 'RT5370STA'),
 		])
 config.plugins.systemoptions.autologin = ConfigSelection(default='yes',
 	choices = [
@@ -84,29 +84,29 @@ if brand == "fulan":
 			('t', _('terrestrial (DVB-T)')),
 			('c', _('cable (DVB-C)'))
 			])
-	config.plugins.systemoptions.freq = ConfigSelection(default='540',
-		choices = [
-			('200', _('200 MHz')),
-			('300', _('300 MHz')),
-			('450', _('450 MHz')),
-			('500', _('500 MHz')),
-			('540', _('540 MHz (default)')),
-			('600', _('600 MHz')),
-			('630', _('630 MHz')),
-			('650', _('650 MHz')),
-			('700', _('700 MHz')),
-			('710', _('710 MHz')),
-			('775', _('775 MHz')),
-			('800', _('800 MHz'))
-			])
-	config.plugins.systemoptions.stbyfreq = ConfigSelection(default='540',
-		choices = [
-			('200', _('200 MHz')),
-			('300', _('300 MHz')),
-			('450', _('450 MHz')),
-			('500', _('500 MHz')),
-			('540', _('540 MHz (default)'))
-			])
+#	config.plugins.systemoptions.freq = ConfigSelection(default='540',
+#		choices = [
+#			('200', _('200 MHz')),
+#			('300', _('300 MHz')),
+#			('450', _('450 MHz')),
+#			('500', _('500 MHz')),
+#			('540', _('540 MHz (default)')),
+#			('600', _('600 MHz')),
+#			('630', _('630 MHz')),
+#			('650', _('650 MHz')),
+#			('700', _('700 MHz')),
+#			('710', _('710 MHz')),
+#			('775', _('775 MHz')),
+#			('800', _('800 MHz'))
+#			])
+#	config.plugins.systemoptions.stbyfreq = ConfigSelection(default='540',
+#		choices = [
+#			('200', _('200 MHz')),
+#			('300', _('300 MHz')),
+#			('450', _('450 MHz')),
+#			('500', _('500 MHz')),
+#			('540', _('540 MHz (default)'))
+#			])
 config.plugins.systemoptions.extMenu = ConfigYesNo(default=True)
 
 config.plugins.wireless = ConfigSubsection()
@@ -166,6 +166,7 @@ config.plugins.wireless.adapter.mask = ConfigIP(default=[255, 255, 255, 0])
 config.plugins.wireless.adapter.gateway = ConfigIP(default=[192, 168, 178, 1])
 
 class ConfigOptions(Screen, ConfigListScreen):
+
 	skin = """
 	<screen name="dummy" title="Setup" position="fill" flags="wfNoBorder">
 		<eLabel text="System options configuration" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
@@ -179,14 +180,10 @@ class ConfigOptions(Screen, ConfigListScreen):
 		self["key_red"] = self["red"] = Label(_("Cancel"))
 		if brand == "fulan":
 			self["key_green"] = self["green"] = Label(_("OK (reboots)"))
-			self["key_blue"] = self["blue"] = Label(_("Test overclock"))
+#			self["key_blue"] = self["blue"] = Label(_("Test overclock"))
 		else:
 			self["key_green"] = self["green"] = Label(_("OK"))
 		self["key_yellow"] = self["yellow"] = Label(_("Reboot receiver"))
-#		self["key_red"] = StaticText(_("Cancel"))
-#		self["key_green"] = StaticText(_("OK (reboots)"))
-#		self["key_yellow"] = StaticText(_("Reboot receiver"))
-#		self["key_blue"] = StaticText(_("Test overclock"))
 
 	        self.cfglist = []
 	        ConfigListScreen.__init__(self, self.cfglist)
@@ -202,8 +199,8 @@ class ConfigOptions(Screen, ConfigListScreen):
 				"ok": self.keySave,
 				"red": self.cancel,
 				"green": self.keySaveSpark,
-				"yellow": self.keyYellow,
-				"blue": self.keyBlue
+				"yellow": self.keyYellow
+#				"blue": self.keyBlue
 				}, -2)
 		else:
 			self["actions"] = ActionMap(['OkCancelActions', 'DirectionActions', 'InputActions', 'ColorActions'],
@@ -218,20 +215,13 @@ class ConfigOptions(Screen, ConfigListScreen):
 				"green": self.keySave,
 				"yellow": self.keyYellow,
 				}, -2)
-#	        self.cfglist = []
-#	        ConfigListScreen.__init__(self, self.cfglist)
 		self.createSetup()
-#		self.onLayoutFinish.append(self.layoutFinished)
-#		self.onClose.append(self.cleanup)
-
-#		self["HelpWindow"] = Pixmap()
-#		self["HelpWindow"].hide()
 
 	def createSetup(self):
 		self.cfglist = []
-		if brand == "fulan":
-			self.cfglist.append(getConfigListEntry(_('CPU clock frequency:'), config.plugins.systemoptions.freq))
-			self.cfglist.append(getConfigListEntry(_('Standby clock frequency:'), config.plugins.systemoptions.stbyfreq))
+#		if brand == "fulan":
+#			self.cfglist.append(getConfigListEntry(_('CPU clock frequency:'), config.plugins.systemoptions.freq))
+#			self.cfglist.append(getConfigListEntry(_('Standby clock frequency:'), config.plugins.systemoptions.stbyfreq))
 		if getBoxType() == 'spark7162':
 			self.cfglist.append(getConfigListEntry(_('Tuner C type:'), config.plugins.systemoptions.tunertype))
 		if os.path.isfile("/boot/audio_dts.elf"):
@@ -273,7 +263,7 @@ class ConfigOptions(Screen, ConfigListScreen):
 			if self.wlan_encryption != "no":
 				if self.wlan_encryption == "WPA2-AES":
 					listadd = [getConfigListEntry(_('    Pass phrase:'), config.plugins.wireless.encryption.key)]
-				if self.wlan_encryption != "WPA2-AES":
+				else:
 					listadd = [getConfigListEntry(_('    Encryption key:'), config.plugins.wireless.encryption.key)]
 				self.cfglist.extend(listadd)
 				if self.wlan_encryption == "WEP":
@@ -313,40 +303,40 @@ class ConfigOptions(Screen, ConfigListScreen):
 		restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('Do you really want to restart the receiver now?'), MessageBox.TYPE_YESNO)
 		restartbox.setTitle(_('Reboot receiver'))
 
-	if brand == "fulan":
-		def keyBlue(self):
-			#apply CPU clock frequency
-			if config.plugins.systemoptions.freq.value:
-				if config.plugins.systemoptions.freq.value == "200":
-					overclk=5123
-				elif config.plugins.systemoptions.freq.value == "300":
-					overclk=2561
-				elif config.plugins.systemoptions.freq.value == "450":
-					overclk=3841
-				elif config.plugins.systemoptions.freq.value == "500":
-					overclk=12803
-				elif config.plugins.systemoptions.freq.value == "540":
-					overclk=4609
-				elif config.plugins.systemoptions.freq.value == "600":
-					overclk=5121
-				elif config.plugins.systemoptions.freq.value == "630":
-					overclk=5377
-				elif config.plugins.systemoptions.freq.value == "650":
-					overclk=16643
-				elif config.plugins.systemoptions.freq.value == "700":
-					overclk=17923
-				elif config.plugins.systemoptions.freq.value == "710":
-					overclk=18179
-				elif config.plugins.systemoptions.freq.value == "750":
-					overclk=19203
-				elif config.plugins.systemoptions.freq.value == "775":
-					overclk=39686
-				elif config.plugins.systemoptions.freq.value == "800":
-					overclk=20483
-			else:
-				overclk=4609
-			print("[System options] Clockspeed =", config.plugins.systemoptions.freq.value, "MHz, PLL =", str(overclk))
-			open(pll0, 'w').write(str(overclk))
+#	if brand == "fulan":
+#		def keyBlue(self):
+#			#apply CPU clock frequency
+#			if config.plugins.systemoptions.freq.value:
+#				if config.plugins.systemoptions.freq.value == "200":
+#					overclk=5123
+#				elif config.plugins.systemoptions.freq.value == "300":
+#					overclk=2561
+#				elif config.plugins.systemoptions.freq.value == "450":
+#					overclk=3841
+#				elif config.plugins.systemoptions.freq.value == "500":
+#					overclk=12803
+#				elif config.plugins.systemoptions.freq.value == "540":
+#					overclk=4609
+#				elif config.plugins.systemoptions.freq.value == "600":
+#					overclk=5121
+#				elif config.plugins.systemoptions.freq.value == "630":
+#					overclk=5377
+#				elif config.plugins.systemoptions.freq.value == "650":
+#					overclk=16643
+#				elif config.plugins.systemoptions.freq.value == "700":
+#					overclk=17923
+#				elif config.plugins.systemoptions.freq.value == "710":
+#					overclk=18179
+#				elif config.plugins.systemoptions.freq.value == "750":
+#					overclk=19203
+#				elif config.plugins.systemoptions.freq.value == "775":
+#					overclk=39686
+#				elif config.plugins.systemoptions.freq.value == "800":
+#					overclk=20483
+#			else:
+#				overclk=4609
+#			print("[System options] Clockspeed =", config.plugins.systemoptions.freq.value, "MHz, PLL =", str(overclk))
+#			open(pll0, 'w').write(str(overclk))
 
 	def keyLeft(self):
 		self["config"].handleKey(KEY_LEFT)
