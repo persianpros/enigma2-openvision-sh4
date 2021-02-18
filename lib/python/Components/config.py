@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from copy import copy as shallowcopy
 from enigma import getPrevAsciiCode
 from os import fsync, rename

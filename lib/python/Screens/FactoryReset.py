@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from errno import ENOENT
 from os import _exit, listdir, remove, system
 from os.path import isdir, join as pathjoin
