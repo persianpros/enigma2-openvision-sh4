@@ -43,7 +43,7 @@ class CuberevoVFDSetup(ConfigListScreen, Screen):
 		self.onClose.append(self.abort)
 		
 		# create elements for the menu list
-		self.list = [ ]
+		self.list = []
 		self.list.append(getConfigListEntry(_("Show clock"), config.plugins.CuberevoVFD.showClock))
 #		self.list.append(getConfigListEntry(_("Daylight"), config.plugins.CuberevoVFD.setDaylight))
 		self.list.append(getConfigListEntry(_("Time mode"), config.plugins.CuberevoVFD.timeMode))
@@ -128,7 +128,7 @@ class CuberevoVFD:
 #---- CIVER end ----#
 		self.session = session
 		self.service = None
-		self.onClose = [ ]
+		self.onClose = []
 		self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 				iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
 				iPlayableService.evStart: self.__evStart,
@@ -343,5 +343,5 @@ def autostart(reason, **kwargs):
 	controlcubeVfd()
 
 def Plugins(**kwargs):
-	return [ PluginDescriptor(name=_("CuberevoVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
-		PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart) ]
+	return [PluginDescriptor(name=_("CuberevoVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+		PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart)]

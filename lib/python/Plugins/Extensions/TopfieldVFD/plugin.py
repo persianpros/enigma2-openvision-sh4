@@ -53,7 +53,7 @@ ioRecBothFlush = struct.pack('LLB', 0x3000, 0x0, 0x6)
 ioClockFlush = struct.pack('LLB', 0x20, 0x0, 0x6)
 ioClockOff = struct.pack('LLB', 0x20, 0x0, 0x0)
 ioHddClear =    struct.pack('LLB', 0x0, 0xff8000, 0x0)
-ioHddUsage = (  struct.pack('LLB', 0x0, 0x006000, 0xf),  # HDD empty
+ioHddUsage = (struct.pack('LLB', 0x0, 0x006000, 0xf),  # HDD empty
                 struct.pack('LLB', 0x0, 0x00e000, 0xf),
                 struct.pack('LLB', 0x0, 0x01e000, 0xf),
                 struct.pack('LLB', 0x0, 0x03e000, 0xf),
@@ -103,7 +103,7 @@ class TopfieldVFDSetup(ConfigListScreen, Screen):
                 self.onClose.append(self.abort)
 
                 # create elements for the menu list
-                self.list = [ ]
+                self.list = []
                 self.list.append(getConfigListEntry(_("Show clock"), config.plugins.TopfieldVFD.showClock))
                 self.list.append(getConfigListEntry(_("Show Ethernet activity"), config.plugins.TopfieldVFD.showEthernet))
                 self.list.append(getConfigListEntry(_("Brightness"), config.plugins.TopfieldVFD.brightness))
@@ -149,7 +149,7 @@ class TopfieldVFD:
                 #print("TopfieldVFD initializing")
                 self.session = session
                 self.service = None
-                self.onClose = [ ]
+                self.onClose = []
                 self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
                                 iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
                                 iPlayableService.evStart: self.__evStart,
@@ -463,5 +463,5 @@ def autostart(reason, **kwargs):
         controlTfVfd()
 
 def Plugins(**kwargs):
-        return [ PluginDescriptor(name=_("TopfieldVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
-                PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart) ]
+        return [PluginDescriptor(name=_("TopfieldVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+                PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart)]

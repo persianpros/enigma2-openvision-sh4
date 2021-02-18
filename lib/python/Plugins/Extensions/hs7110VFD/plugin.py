@@ -101,7 +101,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
-		evfd.getInstance().vfd_write_string( "VFD SETUP" )
+		evfd.getInstance().vfd_write_string("VFD SETUP")
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":

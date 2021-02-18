@@ -57,11 +57,11 @@ class KeymapSelector(Screen):
 
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "EPGSelectActions"],
 		{
-			"ok"    : self.ok,
-			"red"   : self.close,
-			"green" : self.ok,
+			"ok": self.ok,
+			"red": self.close,
+			"green": self.ok,
 			"cancel": self.close,
-			"info"  : self.info
+			"info": self.info
 		}, -1)
 
 	def getKeymapName(self, fname):
