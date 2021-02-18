@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 from enigma import eListbox, eListboxPythonConfigContent, ePoint, eRCInput, eTimer
 from skin import parameters
 

@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
 from gettext import dgettext
 from os.path import getmtime, join as pathjoin
 from six import PY2

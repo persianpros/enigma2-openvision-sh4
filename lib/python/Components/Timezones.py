@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
 from errno import ENOENT
 from os import environ, path, symlink, unlink, walk
 from six import PY2

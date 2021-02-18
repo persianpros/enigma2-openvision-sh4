@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
 from Components.ActionMap import ActionMap
 from Components.HelpMenuList import HelpMenuList
 from Components.Label import Label
