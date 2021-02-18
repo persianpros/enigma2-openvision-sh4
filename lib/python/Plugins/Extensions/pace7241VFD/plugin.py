@@ -374,7 +374,7 @@ class VFDIcons:
 					n = audio.getNumberOfTracks()
 					for x in range(n):
 						i = audio.getTrackInfo(x)
-						description = i.getDescription();
+						description = i.getDescription()
 						if description.find("AC3") != -1:
 							self.dolbyAvailable = True
 						if description.find("MP3") != -1:

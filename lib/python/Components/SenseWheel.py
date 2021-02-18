@@ -91,16 +91,16 @@ class SENSEWHEEL:
 		self.flag_enable_sense = value
 
 	def IsFlagSenseEnabled(self):
-		return self.flag_enable_sense;
+		return self.flag_enable_sense
 
 	def setStandbyPanelLeds(self, value):
-		self.standby_panel_leds = value;
+		self.standby_panel_leds = value
 
 	def setStandbyBoardLeds(self, value):
-		self.standby_board_leds = value;
+		self.standby_board_leds = value
 
 	def setStandbyPanel(self, value):
-		self.enable_standby_panel = value;
+		self.enable_standby_panel = value
 		eQBOXSenseWheel.getInstance().setStandbyOnPanel( self.enable_standby_panel )
 
 	def ConfirmFlagSenseEnabled(self):
@@ -198,16 +198,16 @@ def InitSenseWheel():
 		isensewheel.enableSense()
 
 	def setEnableFlag(configElement):
-		isensewheel.setEnableFlag( configElement.value );
+		isensewheel.setEnableFlag( configElement.value )
 
 	def setStandbyPanelLeds(configElement):
-		isensewheel.setStandbyPanelLeds( configElement.value );
+		isensewheel.setStandbyPanelLeds( configElement.value )
 
 	def setStandbyBoardLeds(configElement):
-		isensewheel.setStandbyBoardLeds( configElement.value );
+		isensewheel.setStandbyBoardLeds( configElement.value )
 
 	def setStandbyPanel(configElement):
-		isensewheel.setStandbyPanel( configElement.value );
+		isensewheel.setStandbyPanel( configElement.value )
 
 	def saveAndExitFromSensePlugin(configElement):
 		if ( isensewheel.IsFlagSenseEnabled() ):
@@ -228,46 +228,46 @@ def InitSenseWheel():
 			isensewheel.disableSense() #-<
 	# WHEEL -----------------------------------------------------------------------------------
 	config.sensewheel.ledpanelhue = ConfigSlider(default=150, increment=4, limits=(0, 359))
-	config.sensewheel.ledpanelhue.addNotifier(setPanelLedsHue);
+	config.sensewheel.ledpanelhue.addNotifier(setPanelLedsHue)
 	config.sensewheel.ledpanelhue.apply = lambda : setPanelLedsHue(config.sensewheel.ledpanelhue)
-	config.sensewheel.ledpanelhue.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledpanelhue.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledpanelhue.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledpanelhue.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledpanelsaturation = ConfigSlider(default=50, increment=2, limits=(0, 99))
-	config.sensewheel.ledpanelsaturation.addNotifier(setPanelLedsSaturation);
+	config.sensewheel.ledpanelsaturation.addNotifier(setPanelLedsSaturation)
 	config.sensewheel.ledpanelsaturation.apply = lambda : setPanelLedsSaturation(config.sensewheel.ledpanelsaturation)
-	config.sensewheel.ledpanelsaturation.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledpanelsaturation.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledpanelsaturation.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledpanelsaturation.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledpanelvalue = ConfigSlider(default=50, increment=2, limits=(0, 99))
-	config.sensewheel.ledpanelvalue.addNotifier(setPanelLedsValue);
+	config.sensewheel.ledpanelvalue.addNotifier(setPanelLedsValue)
 	config.sensewheel.ledpanelvalue.apply = lambda : setPanelLedsValue(config.sensewheel.ledpanelvalue)
-	config.sensewheel.ledpanelvalue.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledpanelvalue.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledpanelvalue.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledpanelvalue.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledpanelenabled = ConfigOnOff()
 	config.sensewheel.ledpanelenabled.addNotifier(setPanelLedsEnable)
 	config.sensewheel.ledpanelenabled.apply = lambda : setPanelLedsEnable(config.sensewheel.ledpanelenabled)
-	config.sensewheel.ledpanelenabled.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledpanelenabled.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledpanelenabled.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledpanelenabled.addNotifierSave(saveAndExitFromSensePlugin)
 	# BOARD -----------------------------------------------------------------------------------
 	config.sensewheel.ledboardhue = ConfigSlider(default=150, increment=4, limits=(0, 359))
-	config.sensewheel.ledboardhue.addNotifier(setBoardLedsHue);
+	config.sensewheel.ledboardhue.addNotifier(setBoardLedsHue)
 	config.sensewheel.ledboardhue.apply = lambda : setBoardLedsHue(config.sensewheel.ledboardhue)
-	config.sensewheel.ledboardhue.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledboardhue.addNotifierSave(saveAndExitFromSensePlugin);	
+	config.sensewheel.ledboardhue.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledboardhue.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledboardsaturation = ConfigSlider(default=50, increment=2, limits=(0, 99))
-	config.sensewheel.ledboardsaturation.addNotifier(setBoardLedsSaturation);
+	config.sensewheel.ledboardsaturation.addNotifier(setBoardLedsSaturation)
 	config.sensewheel.ledboardsaturation.apply = lambda : setBoardLedsSaturation(config.sensewheel.ledboardsaturation)
-	config.sensewheel.ledboardsaturation.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledboardsaturation.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledboardsaturation.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledboardsaturation.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledboardvalue = ConfigSlider(default=50, increment=2, limits=(0, 99))
-	config.sensewheel.ledboardvalue.addNotifier(setBoardLedsValue);
+	config.sensewheel.ledboardvalue.addNotifier(setBoardLedsValue)
 	config.sensewheel.ledboardvalue.apply = lambda : setBoardLedsValue(config.sensewheel.ledboardvalue)
-	config.sensewheel.ledboardvalue.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledboardvalue.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledboardvalue.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledboardvalue.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.ledboardenabled = ConfigOnOff()
 	config.sensewheel.ledboardenabled.addNotifier(setBoardLedsEnable)
 	config.sensewheel.ledboardenabled.apply = lambda : setBoardLedsEnable(config.sensewheel.ledboardenabled)
-	config.sensewheel.ledpanelenabled.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.ledpanelenabled.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.ledpanelenabled.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.ledpanelenabled.addNotifierSave(saveAndExitFromSensePlugin)
 	# TOUCH ----------------------------------------------------------------------------------
 	config.sensewheel.enabled = ConfigEnableDisable()
 	config.sensewheel.enabled.addNotifier(setEnableFlag)
@@ -282,20 +282,20 @@ def InitSenseWheel():
 		isensewheel.setPanelLedsEnable( False )
 		isensewheel.disableSense() #-<
 ############
-	config.sensewheel.enabled.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.enabled.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.enabled.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.enabled.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.standbypanelled = ConfigOnOff()
 	config.sensewheel.standbypanelled.addNotifier(setStandbyPanelLeds)
 	config.sensewheel.standbypanelled.apply = lambda : setStandbyPanelLeds(config.sensewheel.standbypanelled)
-	config.sensewheel.standbypanelled.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.standbypanelled.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.standbypanelled.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.standbypanelled.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.standbyboardled = ConfigOnOff()
 	config.sensewheel.standbyboardled.addNotifier(setStandbyBoardLeds)
 	config.sensewheel.standbyboardled.apply = lambda : setStandbyBoardLeds(config.sensewheel.standbyboardled)
-	config.sensewheel.standbyboardled.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.standbyboardled.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.standbyboardled.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.standbyboardled.addNotifierSave(saveAndExitFromSensePlugin)
 	config.sensewheel.enablepanelstandby = ConfigOnOff()
 	config.sensewheel.enablepanelstandby.addNotifier(setStandbyPanel)
 	config.sensewheel.enablepanelstandby.apply = lambda : setStandbyPanel(config.sensewheel.enablepanelstandby)
-	config.sensewheel.enablepanelstandby.addNotifierLoad(reloadAndExitFromSensePlugin);
-	config.sensewheel.enablepanelstandby.addNotifierSave(saveAndExitFromSensePlugin);
+	config.sensewheel.enablepanelstandby.addNotifierLoad(reloadAndExitFromSensePlugin)
+	config.sensewheel.enablepanelstandby.addNotifierSave(saveAndExitFromSensePlugin)

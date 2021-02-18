@@ -293,13 +293,13 @@ class TopfieldVFD:
                         print("[TopfieldVFD] determine HDD usage")
 
                 # determine the HDD usage
-                used = 0;
+                used = 0
                 try:
                         f = statvfs(defaultMoviePath())
                         # there are 8 HDD segments in the VFD
                         used = (f.f_blocks - f.f_bavail) * 8 / f.f_blocks
                 except:
-                        used = 0;
+                        used = 0
 
                 if self.hddUsed != used:
                         try:
@@ -309,7 +309,7 @@ class TopfieldVFD:
                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioHddUsage[used])
                                 if used == 8:
                                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioHddFull)
-                                fd.close();
+                                fd.close()
                         except IOError as e:
                                 self.hddUsed = used # dummy operation
                         self.hddUsed = used
