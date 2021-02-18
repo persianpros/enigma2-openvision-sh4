@@ -70,8 +70,8 @@ from Tools.Directories import InitFallbackFiles, SCOPE_PLUGINS, SCOPE_CURRENT_SK
 InitFallbackFiles()
 
 profile("config.misc")
-config.misc.radiopic = ConfigText(default = resolveFilename(SCOPE_CURRENT_SKIN, "radio.mvi"))
-config.misc.blackradiopic = ConfigText(default = resolveFilename(SCOPE_CURRENT_SKIN, "black.mvi"))
+config.misc.radiopic = ConfigText(default=resolveFilename(SCOPE_CURRENT_SKIN, "radio.mvi"))
+config.misc.blackradiopic = ConfigText(default=resolveFilename(SCOPE_CURRENT_SKIN, "black.mvi"))
 config.misc.startCounter = ConfigInteger(default=0) # number of e2 starts...
 config.misc.standbyCounter = NoSave(ConfigInteger(default=0)) # number of standby
 config.misc.DeepStandby = NoSave(ConfigYesNo(default=False)) # detect deepstandby
@@ -80,7 +80,7 @@ config.misc.prev_wakeup_time = ConfigInteger(default=0)
 #config.misc.prev_wakeup_time_type is only valid when wakeup_time is not 0
 config.misc.prev_wakeup_time_type = ConfigInteger(default=0)
 # 0 = RecordTimer, 1 = ZapTimer, 2 = Plugins, 3 = WakeupTimer
-config.misc.epgcache_filename = ConfigText(default = "/hdd/epg.dat", fixed_size = False)
+config.misc.epgcache_filename = ConfigText(default="/hdd/epg.dat", fixed_size=False)
 
 def setEPGCachePath(configElement):
 	if os.path.isdir(configElement.value) or os.path.islink(configElement.value):
@@ -117,7 +117,7 @@ except ImportError as e:
 
 try:
 	from twisted.python import log
-	config.misc.enabletwistedlog = ConfigYesNo(default = False)
+	config.misc.enabletwistedlog = ConfigYesNo(default=False)
 	if config.misc.enabletwistedlog.value == True:
 		log.startLogging(open('/tmp/twisted.log', 'w'))
 	else:
@@ -141,7 +141,7 @@ from Plugins.Plugin import PluginDescriptor
 profile("misc")
 had = dict()
 
-def dump(dir, p = ""):
+def dump(dir, p=""):
 	if isinstance(dir, dict):
 		for (entry, val) in dir.items():
 			dump(val, p + "(dict)/" + entry)
@@ -193,7 +193,7 @@ Screen.globalScreen = Globals()
 # * destroy screen
 
 class Session:
-	def __init__(self, desktop = None, summary_desktop = None, navigation = None):
+	def __init__(self, desktop=None, summary_desktop=None, navigation=None):
 		self.desktop = desktop
 		self.summary_desktop = summary_desktop
 		self.nav = navigation
@@ -234,7 +234,7 @@ class Session:
 		if callback is not None:
 			callback(*retval)
 
-	def execBegin(self, first=True, do_show = True):
+	def execBegin(self, first=True, do_show=True):
 		if self.in_exec:
 			raise AssertionError("already in exec")
 		self.in_exec = True
@@ -479,7 +479,7 @@ def runScreenTest():
 
 	profile("Init:Session")
 	nav = Navigation()
-	session = Session(desktop = enigma.getDesktop(0), summary_desktop = enigma.getDesktop(1), navigation = nav)
+	session = Session(desktop=enigma.getDesktop(0), summary_desktop=enigma.getDesktop(1), navigation=nav)
 
 	CiHandler.setSession(session)
 

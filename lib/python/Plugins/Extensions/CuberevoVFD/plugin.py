@@ -19,13 +19,13 @@ import os
 my_global_session = None
 
 config.plugins.CuberevoVFD = ConfigSubsection()
-config.plugins.CuberevoVFD.scroll = ConfigSelection(default = "once", choices = [("never"), ("once"), ("always")])
-config.plugins.CuberevoVFD.brightness = ConfigSelection(default = "bright", choices = [("dark"), ("medium"), ("bright")])
-config.plugins.CuberevoVFD.showClock = ConfigEnableDisable(default = True)
+config.plugins.CuberevoVFD.scroll = ConfigSelection(default="once", choices=[("never"), ("once"), ("always")])
+config.plugins.CuberevoVFD.brightness = ConfigSelection(default="bright", choices=[("dark"), ("medium"), ("bright")])
+config.plugins.CuberevoVFD.showClock = ConfigEnableDisable(default=True)
 #config.plugins.CuberevoVFD.setDaylight = ConfigEnableDisable(default = False)
-config.plugins.CuberevoVFD.timeMode = ConfigSelection(default = "24h", choices = [("12h"), ("24h")])
-config.plugins.CuberevoVFD.setLed = ConfigEnableDisable(default = False)
-config.plugins.CuberevoVFD.setFan = ConfigEnableDisable(default = True)
+config.plugins.CuberevoVFD.timeMode = ConfigSelection(default="24h", choices=[("12h"), ("24h")])
+config.plugins.CuberevoVFD.setLed = ConfigEnableDisable(default=False)
+config.plugins.CuberevoVFD.setFan = ConfigEnableDisable(default=True)
 
 class CuberevoVFDSetup(ConfigListScreen, Screen):
 	skin = """
@@ -38,7 +38,7 @@ class CuberevoVFDSetup(ConfigListScreen, Screen):
 		</screen>"""
 
 
-	def __init__(self, session, args = None):
+	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		self.onClose.append(self.abort)
 		
@@ -129,8 +129,7 @@ class CuberevoVFD:
 		self.session = session
 		self.service = None
 		self.onClose = [ ]
-		self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
-			{
+		self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 				iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
 				iPlayableService.evStart: self.__evStart,
 			})
@@ -344,5 +343,5 @@ def autostart(reason, **kwargs):
 	controlcubeVfd()
 
 def Plugins(**kwargs):
-	return [ PluginDescriptor(name = _("CuberevoVFD"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
-		PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc = autostart) ]
+	return [ PluginDescriptor(name=_("CuberevoVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+		PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart) ]

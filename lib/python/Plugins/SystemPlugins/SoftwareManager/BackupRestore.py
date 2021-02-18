@@ -19,7 +19,7 @@ from datetime import date
 from re import sub
 
 config.plugins.configurationbackup = ConfigSubsection()
-config.plugins.configurationbackup.backuplocation = ConfigText(default = '/media/hdd/', visible_width = 50, fixed_size = False)
+config.plugins.configurationbackup.backuplocation = ConfigText(default='/media/hdd/', visible_width=50, fixed_size=False)
 config.plugins.configurationbackup.backupdirs = ConfigLocations(default=[eEnv.resolve('${sysconfdir}/enigma2/'), '/etc/network/interfaces', '/etc/wpa_supplicant.conf', '/etc/wpa_supplicant.ath0.conf', '/etc/wpa_supplicant.wlan0.conf', '/etc/resolv.conf', '/etc/enigma2/nameserversdns.conf', '/etc/default_gw', '/etc/hostname'])
 
 def getBackupPath():
@@ -39,7 +39,7 @@ class BackupScreen(Screen, ConfigListScreen):
 		<widget name="config" position="10,10" size="330,250" transparent="1" scrollbarMode="showOnDemand" />
 		</screen>"""
 
-	def __init__(self, session, runBackup = False):
+	def __init__(self, session, runBackup=False):
 		Screen.__init__(self, session)
 		self.session = session
 		self.runBackup = runBackup
@@ -80,19 +80,19 @@ class BackupScreen(Screen, ConfigListScreen):
 					remove(self.newfilename)
 				rename(self.fullbackupfilename, self.newfilename)
 			if self.finished_cb:
-				self.session.openWithCallback(self.finished_cb, Console, title = _("Backup is running..."), cmdlist = ["tar -C / -czvf " + self.fullbackupfilename + " " + self.backupdirs], finishedCallback = self.backupFinishedCB, closeOnSuccess = True)
+				self.session.openWithCallback(self.finished_cb, Console, title=_("Backup is running..."), cmdlist=["tar -C / -czvf " + self.fullbackupfilename + " " + self.backupdirs], finishedCallback=self.backupFinishedCB, closeOnSuccess=True)
 			else:
-				self.session.open(Console, title = _("Backup is running..."), cmdlist = ["tar -C / -czvf " + self.fullbackupfilename + " " + self.backupdirs], finishedCallback = self.backupFinishedCB, closeOnSuccess = True)
+				self.session.open(Console, title=_("Backup is running..."), cmdlist=["tar -C / -czvf " + self.fullbackupfilename + " " + self.backupdirs], finishedCallback=self.backupFinishedCB, closeOnSuccess=True)
 		except OSError:
 			if self.finished_cb:
-				self.session.openWithCallback(self.finished_cb, MessageBox, _("Sorry, your backup destination is not writeable.\nPlease select a different one."), MessageBox.TYPE_INFO, timeout = 10 )
+				self.session.openWithCallback(self.finished_cb, MessageBox, _("Sorry, your backup destination is not writeable.\nPlease select a different one."), MessageBox.TYPE_INFO, timeout=10 )
 			else:
-				self.session.openWithCallback(self.backupErrorCB, MessageBox, _("Sorry, your backup destination is not writeable.\nPlease select a different one."), MessageBox.TYPE_INFO, timeout = 10 )
+				self.session.openWithCallback(self.backupErrorCB, MessageBox, _("Sorry, your backup destination is not writeable.\nPlease select a different one."), MessageBox.TYPE_INFO, timeout=10 )
 
-	def backupFinishedCB(self,retval = None):
+	def backupFinishedCB(self,retval=None):
 		self.close(True)
 
-	def backupErrorCB(self,retval = None):
+	def backupErrorCB(self,retval=None):
 		self.close(False)
 
 	def runAsync(self, finished_cb):
@@ -121,7 +121,7 @@ class BackupSelection(Screen):
 		self.selectedFiles = config.plugins.configurationbackup.backupdirs.value
 		defaultDir = '/'
 		inhibitDirs = ["/bin", "/boot", "/dev", "/autofs", "/lib", "/proc", "/sbin", "/sys", "/hdd", "/tmp", "/mnt", "/media"]
-		self.filelist = MultiFileSelectList(self.selectedFiles, defaultDir, inhibitDirs = inhibitDirs )
+		self.filelist = MultiFileSelectList(self.selectedFiles, defaultDir, inhibitDirs=inhibitDirs )
 		self["checkList"] = self.filelist
 
 		self["actions"] = ActionMap(["DirectionActions", "OkCancelActions", "ShortcutActions"],
@@ -262,10 +262,10 @@ class RestoreMenu(Screen):
 	def keyCancel(self):
 		self.close()
 
-	def startRestore(self, ret = False):
+	def startRestore(self, ret=False):
 		if (ret == True):
 			self.exe = True
-			self.session.open(Console, title = _("Restoring..."), cmdlist = ["tar -xzvf " + self.path + "/" + self.sel + " -C /", "killall -9 enigma2"])
+			self.session.open(Console, title=_("Restoring..."), cmdlist=["tar -xzvf " + self.path + "/" + self.sel + " -C /", "killall -9 enigma2"])
 
 	def deleteFile(self):
 		if (self.exe == False) and (self.entry == True):
@@ -274,7 +274,7 @@ class RestoreMenu(Screen):
 				self.val = self.path + "/" + self.sel
 				self.session.openWithCallback(self.startDelete, MessageBox, _("Are you sure you want to delete\nthe following backup:\n") + self.sel)
 
-	def startDelete(self, ret = False):
+	def startDelete(self, ret=False):
 		if (ret == True):
 			self.exe = True
 			print("[SoftwareManager] removing:", self.val)
@@ -289,7 +289,7 @@ class RestoreScreen(Screen, ConfigListScreen):
 		<widget name="config" position="10,10" size="330,250" transparent="1" scrollbarMode="showOnDemand" />
 		</screen>"""
 
-	def __init__(self, session, runRestore = False):
+	def __init__(self, session, runRestore=False):
 		Screen.__init__(self, session)
 		self.session = session
 		self.runRestore = runRestore
@@ -321,14 +321,14 @@ class RestoreScreen(Screen, ConfigListScreen):
 		else:
 			restorecmdlist = ["tar -xzvf " + self.fullbackupfilename + " -C /", "killall -9 enigma2"]
 		if self.finished_cb:
-			self.session.openWithCallback(self.finished_cb, Console, title = _("Restoring..."), cmdlist = restorecmdlist)
+			self.session.openWithCallback(self.finished_cb, Console, title=_("Restoring..."), cmdlist=restorecmdlist)
 		else:
-			self.session.open(Console, title = _("Restoring..."), cmdlist = restorecmdlist)
+			self.session.open(Console, title=_("Restoring..."), cmdlist=restorecmdlist)
 
-	def backupFinishedCB(self,retval = None):
+	def backupFinishedCB(self,retval=None):
 		self.close(True)
 
-	def backupErrorCB(self,retval = None):
+	def backupErrorCB(self,retval=None):
 		self.close(False)
 
 	def runAsync(self, finished_cb):

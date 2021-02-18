@@ -30,8 +30,8 @@ if DisplayTypevfd is None:
 		DisplayType = None
 
 config.plugins.vfdicon = ConfigSubsection()
-config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel",
-	choices = [
+config.plugins.vfdicon.displayshow = ConfigSelection(default="channel",
+	choices=[
 		("nothing", _("blank")),
 		("channel number", _("channel number")),
 		("channel", _("channel name")),
@@ -39,8 +39,8 @@ config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel",
 		("date", _("date")),
 		("day_date", _("day and date"))
 		])
-config.plugins.vfdicon.stbshow = ConfigSelection(default = "time",
-	choices = [
+config.plugins.vfdicon.stbshow = ConfigSelection(default="time",
+	choices=[
 		("nothing", _("nothing")),
 		("time", _("time")),
 		("date", _("date")),
@@ -49,14 +49,14 @@ config.plugins.vfdicon.stbshow = ConfigSelection(default = "time",
 config.plugins.vfdicon.contrast = ConfigSlider(default=4, limits=(0, 7))
 config.plugins.vfdicon.stbcontrast = ConfigSlider(default=2, limits=(0, 7))
 config.plugins.vfdicon.uppercase = ConfigYesNo(default=True)
-config.plugins.vfdicon.textscroll = ConfigSelection(default = "1",
-	choices = [
+config.plugins.vfdicon.textscroll = ConfigSelection(default="1",
+	choices=[
 		("0", _("no")),
 		("1", _("once")),
 		("2", _("continuous"))
 		])
-config.plugins.vfdicon.textcenter = ConfigSelection(default = "0",
-	choices = [
+config.plugins.vfdicon.textcenter = ConfigSelection(default="0",
+	choices=[
 		("0", _("no")),
 		("1", _("yes"))
 		])
@@ -102,7 +102,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				"red": self.cancel,
 			}, -2)
 		self.cfglist = []
-		ConfigListScreen.__init__(self, self.cfglist, session = session)
+		ConfigListScreen.__init__(self, self.cfglist, session=session)
 		self.setTitle(_("VFD display configuration"))
 		self.createSetup()
 
@@ -209,17 +209,15 @@ class VFDIcons:
 		print('[hs742xVFD] Hardware displaytype:', DisplayType)
 		print('[hs742xVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 11:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
 					iPlayableService.evStart: self.__evStart
 				})
 			session.nav.record_event.append(self.gotRecordEvent)
-			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
+			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call=False)
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evStart: self.writeName,
 				})
 		print('[hs742xVFD] Set text scrolling option')
@@ -388,19 +386,19 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs742xVFD"),
-		description = _("VFD display configuration"),
-		where = PluginDescriptor.WHERE_MENU,
-		fnc = VFDdisplaymenu),
+		name=_("hs742xVFD"),
+		description=_("VFD display configuration"),
+		where=PluginDescriptor.WHERE_MENU,
+		fnc=VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs742xVFD"),
-		description = _("VFD icons for Fortis HS7420 & HS7429"),
-		where = PluginDescriptor.WHERE_SESSIONSTART,
-		fnc = main)]
+		name=_("hs742xVFD"),
+		description=_("VFD icons for Fortis HS7420 & HS7429"),
+		where=PluginDescriptor.WHERE_SESSIONSTART,
+		fnc=main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs742xVFD"),
-			description = _("VFD display configuration for Fortis HS742X"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			fnc = opencfg))
+			name=_("hs742xVFD"),
+			description=_("VFD display configuration for Fortis HS742X"),
+			where=PluginDescriptor.WHERE_PLUGINMENU,
+			fnc=opencfg))
 	return l

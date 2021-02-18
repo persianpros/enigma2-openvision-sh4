@@ -31,8 +31,8 @@ if DisplayTypevfd is None:
 		DisplayType = None
 
 config.plugins.vfdicon = ConfigSubsection()
-config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel number",
-	choices = [
+config.plugins.vfdicon.displayshow = ConfigSelection(default="channel number",
+	choices=[
 		("nothing", _("blank")),
 		("channel number", _("channel number")),
 		("channel", _("channel name")),
@@ -40,22 +40,22 @@ config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel number",
 		("date", _("date")),
 		("day_date", _("day and date"))
 		])
-config.plugins.vfdicon.stbshow = ConfigSelection(default = "time",
-	choices = [
+config.plugins.vfdicon.stbshow = ConfigSelection(default="time",
+	choices=[
 		("nothing", _("nothing")),
 		("time", _("time")),
 		("date", _("date")),
 		("day_date", _("day and date"))
 		])
 config.plugins.vfdicon.uppercase = ConfigYesNo(default=True)
-config.plugins.vfdicon.textscroll = ConfigSelection(default = "1",
-	choices = [
+config.plugins.vfdicon.textscroll = ConfigSelection(default="1",
+	choices=[
 		("0", _("no")),
 		("1", _("once")),
 		("2", _("continuous"))
 		])
-config.plugins.vfdicon.textcenter = ConfigSelection(default = "0",
-	choices = [
+config.plugins.vfdicon.textcenter = ConfigSelection(default="0",
+	choices=[
 		("0", _("no")),
 		("1", _("yes"))
 		])
@@ -85,7 +85,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				"red": self.cancel,
 			}, -2)
 		self.cfglist = []
-		ConfigListScreen.__init__(self, self.cfglist, session = session)
+		ConfigListScreen.__init__(self, self.cfglist, session=session)
 		self.setTitle(_("LED display configuration"))
 		self.createSetup()
 
@@ -189,17 +189,15 @@ class VFDIcons:
 		print('[hs7810aVFD] Hardware displaytype:', DisplayType)
 		print('[hs7810aVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 9:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
 					iPlayableService.evStart: self.__evStart
 				})
-			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
+			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call=False)
 			session.nav.record_event.append(self.gotRecordEvent)
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evStart: self.writeName,
 				})
 		print('[hs7810aVFD] Set text scrolling option')
@@ -369,20 +367,20 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs7810aVFD"),
-		description = _("LED display configuration"),
-		where = PluginDescriptor.WHERE_MENU,
-		fnc = VFDdisplaymenu),
+		name=_("hs7810aVFD"),
+		description=_("LED display configuration"),
+		where=PluginDescriptor.WHERE_MENU,
+		fnc=VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs7810aVFD"),
-		description = _("LED control for Fortis HS7810A"),
-		where = PluginDescriptor.WHERE_SESSIONSTART,
-		fnc = main)]
+		name=_("hs7810aVFD"),
+		description=_("LED control for Fortis HS7810A"),
+		where=PluginDescriptor.WHERE_SESSIONSTART,
+		fnc=main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs7810aVFD"),
-			description = _("LED display configuration for Fortis HS7810A"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			fnc = opencfg))
+			name=_("hs7810aVFD"),
+			description=_("LED display configuration for Fortis HS7810A"),
+			where=PluginDescriptor.WHERE_PLUGINMENU,
+			fnc=opencfg))
 	return l
 

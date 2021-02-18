@@ -339,5 +339,5 @@ def menu(menuid, **kwargs):
 
 def Plugins(**kwargs):
     from Plugins.Plugin import PluginDescriptor
-    return [PluginDescriptor(name = _("SH4 OSD Position setup"), description = "", where = PluginDescriptor.WHERE_SESSIONSTART, fnc = sessionstart),
-            PluginDescriptor(name = _("SH4 OSD Position setup"), description = _("Wizard to arrange the overscan"), where = PluginDescriptor.WHERE_MENU, fnc = menu)]
+    return [PluginDescriptor(name=_("SH4 OSD Position setup"), description="", where=PluginDescriptor.WHERE_SESSIONSTART, fnc=sessionstart),
+            PluginDescriptor(name=_("SH4 OSD Position setup"), description=_("Wizard to arrange the overscan"), where=PluginDescriptor.WHERE_MENU, fnc=menu)]

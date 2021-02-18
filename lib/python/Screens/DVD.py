@@ -36,7 +36,7 @@ class DVDSummary(Screen):
 		self["Title"].setText(title)
 
 class DVDOverlay(Screen):
-	def __init__(self, session, args = None, height = None):
+	def __init__(self, session, args=None, height=None):
 		desktop_size = getDesktop(0).size()
 		w = desktop_size.width()
 		h = desktop_size.height()
@@ -139,11 +139,11 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		</widget>
 	</screen>"""
 
-	def __init__(self, session, dvd_device = None, dvd_filelist = [ ], args = None):
+	def __init__(self, session, dvd_device=None, dvd_filelist=[ ], args=None):
 		Screen.__init__(self, session)
 		InfoBarBase.__init__(self)
 		InfoBarNotifications.__init__(self)
-		InfoBarCueSheetSupport.__init__(self, actionmap = "MediaPlayerCueSheetActions")
+		InfoBarCueSheetSupport.__init__(self, actionmap="MediaPlayerCueSheetActions")
 		InfoBarShowHide.__init__(self)
 		InfoBarAudioSelection.__init__(self)
 		InfoBarSubtitleSupport.__init__(self)
@@ -170,8 +170,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		self.totalTitles = 0
 		self.currentTitle = 0
 
-		self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
-			{
+		self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 				iPlayableService.evEnd: self.__serviceStopped,
 				iPlayableService.evStopped: self.__serviceStopped,
 				iPlayableService.evUser: self.__timeUpdated,
@@ -454,7 +453,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 			cd = harddiskmanager.getAutofsMountpoint(harddiskmanager.getCD())
 			if cur and cur.toString()[-len(cd):] != cd:
 				choices.insert(0, (_("Play DVD"), "playPhysical"))
-		self.session.openWithCallback(self.exitCB, ChoiceBox, title=_("Leave DVD player?"), list = choices)
+		self.session.openWithCallback(self.exitCB, ChoiceBox, title=_("Leave DVD player?"), list=choices)
 
 	def sendKey(self, key):
 		keys = self.getServiceInterface("keys")

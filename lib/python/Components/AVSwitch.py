@@ -88,13 +88,13 @@ def InitAVSwitch():
 			"16_10_letterbox": _("16:10 Letterbox"),
 			"16_10_panscan": _("16:10 PanScan"),
 			"16_9_letterbox": _("16:9 Letterbox")},
-			default = "16_9")
+			default="16_9")
 	config.av.aspect = ConfigSelection(choices={
 			"4_3": _("4:3"),
 			"16_9": _("16:9"),
 			"16_10": _("16:10"),
 			"auto": _("Automatic")},
-			default = "auto")
+			default="auto")
 	policy2_choices = {
 	# TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 	"letterbox": _("Letterbox"),
@@ -114,7 +114,7 @@ def InitAVSwitch():
 			policy2_choices.update({"auto": _("Auto")})
 	except:
 		pass
-	config.av.policy_169 = ConfigSelection(choices=policy2_choices, default = "scale")
+	config.av.policy_169 = ConfigSelection(choices=policy2_choices, default="scale")
 	policy_choices = {
 	# TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
 	"pillarbox": _("Pillarbox"),
@@ -140,12 +140,12 @@ def InitAVSwitch():
 			policy_choices.update({"auto": _("Auto")})
 	except:
 		pass
-	config.av.policy_43 = ConfigSelection(choices=policy_choices, default = "scale")
-	config.av.tvsystem = ConfigSelection(choices = {"pal": _("PAL"), "ntsc": _("NTSC"), "multinorm": _("multinorm")}, default="pal")
-	config.av.wss = ConfigEnableDisable(default = True)
-	config.av.generalAC3delay = ConfigSelectionNumber(-1000, 1000, 5, default = 0)
-	config.av.generalPCMdelay = ConfigSelectionNumber(-1000, 1000, 5, default = 0)
-	config.av.vcrswitch = ConfigEnableDisable(default = False)
+	config.av.policy_43 = ConfigSelection(choices=policy_choices, default="scale")
+	config.av.tvsystem = ConfigSelection(choices={"pal": _("PAL"), "ntsc": _("NTSC"), "multinorm": _("multinorm")}, default="pal")
+	config.av.wss = ConfigEnableDisable(default=True)
+	config.av.generalAC3delay = ConfigSelectionNumber(-1000, 1000, 5, default=0)
+	config.av.generalPCMdelay = ConfigSelectionNumber(-1000, 1000, 5, default=0)
+	config.av.vcrswitch = ConfigEnableDisable(default=False)
 
 	iAVSwitch = AVSwitch()
 
@@ -176,19 +176,19 @@ def InitAVSwitch():
 	if SystemInfo["CanDownmixAC3"]:
 		def setAC3Downmix(configElement):
 			open("/proc/stb/audio/ac3", "w").write(configElement.value and "downmix" or "passthrough")
-		config.av.downmix_ac3 = ConfigYesNo(default = True)
+		config.av.downmix_ac3 = ConfigYesNo(default=True)
 		config.av.downmix_ac3.addNotifier(setAC3Downmix)
 
 	if SystemInfo["CanDownmixDTS"]:
 		def setDTSDownmix(configElement):
 			open("/proc/stb/audio/dts", "w").write(configElement.value and "downmix" or "passthrough")
-		config.av.downmix_dts = ConfigYesNo(default = True)
+		config.av.downmix_dts = ConfigYesNo(default=True)
 		config.av.downmix_dts.addNotifier(setDTSDownmix)
 
 	if SystemInfo["CanDownmixAAC"]:
 		def setAACDownmix(configElement):
 			open("/proc/stb/audio/aac", "w").write(configElement.value and "downmix" or "passthrough")
-		config.av.downmix_aac = ConfigYesNo(default = True)
+		config.av.downmix_aac = ConfigYesNo(default=True)
 		config.av.downmix_aac.addNotifier(setAACDownmix)
 
 	if SystemInfo["CanChangeOsdAlpha"]:
@@ -215,16 +215,16 @@ def InitAVSwitch():
 	if SystemInfo["HasMultichannelPCM"]:
 		def setMultichannelPCM(configElement):
 			open(SystemInfo["HasMultichannelPCM"], "w").write(configElement.value and "enable" or "disable")
-		config.av.multichannel_pcm = ConfigYesNo(default = False)
+		config.av.multichannel_pcm = ConfigYesNo(default=False)
 		config.av.multichannel_pcm.addNotifier(setMultichannelPCM)
 
 	if SystemInfo["HDMIAudioSource"]:
 		def setHDMIAudioSource(configElement):
 			open(SystemInfo["HDMIAudioSource"], "w").write(configElement.value)
-		config.av.hdmi_audio_source = ConfigSelection(default = "pcm", choices = [("pcm", _("PCM")), ("spdif", _("SPDIF"))])
+		config.av.hdmi_audio_source = ConfigSelection(default="pcm", choices=[("pcm", _("PCM")), ("spdif", _("SPDIF"))])
 		config.av.hdmi_audio_source.addNotifier(setHDMIAudioSource)
 
 	def setVolumeStepsize(configElement):
 		eDVBVolumecontrol.getInstance().setVolumeSteps(int(configElement.value))
-	config.av.volume_stepsize = ConfigSelectionNumber(1, 10, 1, default = 2)
+	config.av.volume_stepsize = ConfigSelectionNumber(1, 10, 1, default=2)
 	config.av.volume_stepsize.addNotifier(setVolumeStepsize)

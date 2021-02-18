@@ -31,48 +31,48 @@ config.plugins.systemoptions.wlan = ConfigSelection(default='0',
 		('rt5370sta', 'RT5370STA'),
 		])
 config.plugins.systemoptions.autologin = ConfigSelection(default='yes',
-	choices = [
+	choices=[
 		('yes', _('yes')),
 		('no', _('no'))
 		])
 config.plugins.systemoptions.swap = ConfigSelection(default='no',
-	choices = [
+	choices=[
 		('yes', _('yes')),
 		('no', _('no'))
 		])
 config.plugins.systemoptions.swapsize = ConfigSelection(default='32768',
-	choices = [
+	choices=[
 		('32768', _('32 Mbyte')),
 		('65536', _('64 Mbyte')),
 		('131072', _('128 Mbyte'))
 		])
 if os.path.isfile("/sbin/ntpdate"):
 	config.plugins.systemoptions.inettime = ConfigSelection(default='yes',
-		choices = [
+		choices=[
 			('yes', _('yes')),
 			('no', _('no'))
 			])
 if os.path.isfile("/etc/init.d/sshd"):
 	config.plugins.systemoptions.openssh = ConfigSelection(default='no',
-		choices = [
+		choices=[
 			('yes', _('yes')),
 			('no', _('no'))
 		])
 if os.path.isfile("/usr/bin/inadyn"):
 	config.plugins.systemoptions.inadyn = ConfigSelection(default='no',
-		choices = [
+		choices=[
 			('yes', _('yes')),
 			('no', _('no'))
 			])
 if os.path.isfile("/lib/modules/cifs.ko"):
 	config.plugins.systemoptions.cifs = ConfigSelection(default='no',
-		choices = [
+		choices=[
 			('yes', _('yes')),
 			('no', _('no'))
 			])
 if os.path.isfile("/boot/audio_dts.elf"):
 	config.plugins.systemoptions.dtsdownmix = ConfigSelection(default='on',
-		choices = [
+		choices=[
 			('on', _('on')),
 			('off', _('off'))
 			])
@@ -80,7 +80,7 @@ if os.path.isfile("/boot/audio_dts.elf"):
 #	hdbox specific options go here
 if brand == "fulan":
 	config.plugins.systemoptions.tunertype = ConfigSelection(default='t',
-		choices = [
+		choices=[
 			('t', _('terrestrial (DVB-T)')),
 			('c', _('cable (DVB-C)'))
 			])
@@ -370,15 +370,15 @@ def Optionsmenu(menuid, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("System options"),
-		description = _("System options configuration"),
-		where = PluginDescriptor.WHERE_MENU,
-		fnc = Optionsmenu)]
+		name=_("System options"),
+		description=_("System options configuration"),
+		where=PluginDescriptor.WHERE_MENU,
+		fnc=Optionsmenu)]
 	if config.plugins.systemoptions.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("System options"),
-			description = _("System configuration options"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
+			name=_("System options"),
+			description=_("System configuration options"),
+			where=PluginDescriptor.WHERE_PLUGINMENU,
 #			icon = _("systemoptions.png"),
-			fnc = opencfg))
+			fnc=opencfg))
 	return l

@@ -29,8 +29,8 @@ if DisplayTypevfd is None:
 		DisplayType = None
 
 config.plugins.vfdicon = ConfigSubsection()
-config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel",
-	choices = [
+config.plugins.vfdicon.displayshow = ConfigSelection(default="channel",
+	choices=[
 		("nothing", _("blank")),
 		("channel number", _("channel number")),
 		("channel", _("channel name")),
@@ -41,8 +41,8 @@ config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel",
 		("time_date", _("time and date")),
 		("day_date", _("day and date"))
 		])
-config.plugins.vfdicon.stbshow = ConfigSelection(default = "time_date",
-	choices = [
+config.plugins.vfdicon.stbshow = ConfigSelection(default="time_date",
+	choices=[
 		("nothing", _("nothing")),
 		("time", _("time (with seconds)")),
 		("timeHM", _("time (without seconds)")),
@@ -53,19 +53,19 @@ config.plugins.vfdicon.stbshow = ConfigSelection(default = "time_date",
 config.plugins.vfdicon.contrast = ConfigSlider(default=6, limits=(0, 7))
 config.plugins.vfdicon.stbcontrast = ConfigSlider(default=0, limits=(0, 7))
 config.plugins.vfdicon.uppercase = ConfigYesNo(default=False)
-config.plugins.vfdicon.textscroll = ConfigSelection(default = "1",
-	choices = [
+config.plugins.vfdicon.textscroll = ConfigSelection(default="1",
+	choices=[
 		("0", _("no")),
 		("1", _("once")),
 		("2", _("continuous"))
 		])
-config.plugins.vfdicon.textcenter = ConfigSelection(default = "0",
-	choices = [
+config.plugins.vfdicon.textcenter = ConfigSelection(default="0",
+	choices=[
 		("0", _("no")),
 		("1", _("yes"))
 		])
-config.plugins.vfdicon.showicons = ConfigSelection(default = "all",
-	choices = [
+config.plugins.vfdicon.showicons = ConfigSelection(default="all",
+	choices=[
 		("none", _("none")),
 		("partial", _("partial")),
 		("all", _("all"))
@@ -94,7 +94,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				"red": self.cancel,
 			}, -2)
 		self.cfglist = []
-		ConfigListScreen.__init__(self, self.cfglist, session = session)
+		ConfigListScreen.__init__(self, self.cfglist, session=session)
 		self.setTitle(_("VFD display configuration"))
 		self.createSetup()
 
@@ -213,8 +213,7 @@ class VFDIcons:
 		print('[hs8200VFD] Hardware displaytype:', DisplayType)
 		print('[hs8200VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 5:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
 					iPlayableService.evVideoSizeChanged: self.__evVideoSizeChanged,
@@ -223,7 +222,7 @@ class VFDIcons:
 					iPlayableService.evTuneFailed: self.__evTuneFailed,
 					iPlayableService.evStart: self.__evStart
 				})
-			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
+			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call=False)
 			session.nav.record_event.append(self.gotRecordEvent)
 			try:
 				from Plugins.SystemPlugins.Hotplug.plugin import hotplugNotifier
@@ -231,8 +230,7 @@ class VFDIcons:
 			except:
 				pass
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evStart: self.writeName,
 				})
 		print('[hs8200VFD] Set text scrolling option')
@@ -542,19 +540,19 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs8200VFD"),
-		description = _("VFD display configuration"),
-		where = PluginDescriptor.WHERE_MENU,
-		fnc = VFDdisplaymenu),
+		name=_("hs8200VFD"),
+		description=_("VFD display configuration"),
+		where=PluginDescriptor.WHERE_MENU,
+		fnc=VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs8200VFD"),
-		description = _("VFD icons for Fortis HS8200"),
-		where = PluginDescriptor.WHERE_SESSIONSTART,
-		fnc = main)]
+		name=_("hs8200VFD"),
+		description=_("VFD icons for Fortis HS8200"),
+		where=PluginDescriptor.WHERE_SESSIONSTART,
+		fnc=main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs8200VFD"),
-			description = _("VFD configuration for Fortis HS8200"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			fnc = opencfg))
+			name=_("hs8200VFD"),
+			description=_("VFD configuration for Fortis HS8200"),
+			where=PluginDescriptor.WHERE_PLUGINMENU,
+			fnc=opencfg))
 	return l

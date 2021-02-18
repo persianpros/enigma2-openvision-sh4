@@ -33,16 +33,16 @@ my_global_session = None
 debug = False
 
 config.plugins.TopfieldVFD = ConfigSubsection()
-config.plugins.TopfieldVFD.allCaps = ConfigEnableDisable(default = False)
-config.plugins.TopfieldVFD.scroll = ConfigSelection(choices = [("never"), ("once"), ("always")])
-config.plugins.TopfieldVFD.brightness = ConfigSelection(default = "medium", choices = [("dark"), ("medium"), ("bright")])
-config.plugins.TopfieldVFD.scrollPause = ConfigInteger(default = 100, limits = (1, 255))
-config.plugins.TopfieldVFD.scrollDelay = ConfigInteger(default = 10, limits = (1, 255))
-config.plugins.TopfieldVFD.typematicDelay = ConfigInteger(default = 3, limits = (0, 255))
-config.plugins.TopfieldVFD.typematicRate = ConfigInteger(default = 10, limits = (0, 255))
-config.plugins.TopfieldVFD.rcCommandSet = ConfigSelection(default = "TF7700 & Masterpiece", choices = [("TF7700"), ("Masterpiece"), ("TF7700 & Masterpiece")])
-config.plugins.TopfieldVFD.showClock = ConfigEnableDisable(default = True)
-config.plugins.TopfieldVFD.showEthernet = ConfigEnableDisable(default = True)
+config.plugins.TopfieldVFD.allCaps = ConfigEnableDisable(default=False)
+config.plugins.TopfieldVFD.scroll = ConfigSelection(choices=[("never"), ("once"), ("always")])
+config.plugins.TopfieldVFD.brightness = ConfigSelection(default="medium", choices=[("dark"), ("medium"), ("bright")])
+config.plugins.TopfieldVFD.scrollPause = ConfigInteger(default=100, limits=(1, 255))
+config.plugins.TopfieldVFD.scrollDelay = ConfigInteger(default=10, limits=(1, 255))
+config.plugins.TopfieldVFD.typematicDelay = ConfigInteger(default=3, limits=(0, 255))
+config.plugins.TopfieldVFD.typematicRate = ConfigInteger(default=10, limits=(0, 255))
+config.plugins.TopfieldVFD.rcCommandSet = ConfigSelection(default="TF7700 & Masterpiece", choices=[("TF7700"), ("Masterpiece"), ("TF7700 & Masterpiece")])
+config.plugins.TopfieldVFD.showClock = ConfigEnableDisable(default=True)
+config.plugins.TopfieldVFD.showEthernet = ConfigEnableDisable(default=True)
 
 # ioctl definitions for the VFD
 ioBootReason = 0x40003a0b
@@ -98,7 +98,7 @@ class TopfieldVFDSetup(ConfigListScreen, Screen):
                 </screen>"""
 
 
-        def __init__(self, session, args = None):
+        def __init__(self, session, args=None):
                 Screen.__init__(self, session)
                 self.onClose.append(self.abort)
 
@@ -150,8 +150,7 @@ class TopfieldVFD:
                 self.session = session
                 self.service = None
                 self.onClose = [ ]
-                self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
-                        {
+                self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
                                 iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
                                 iPlayableService.evStart: self.__evStart,
                         })
@@ -464,5 +463,5 @@ def autostart(reason, **kwargs):
         controlTfVfd()
 
 def Plugins(**kwargs):
-        return [ PluginDescriptor(name = _("TopfieldVFD"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
-                PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc = autostart) ]
+        return [ PluginDescriptor(name=_("TopfieldVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+                PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart) ]

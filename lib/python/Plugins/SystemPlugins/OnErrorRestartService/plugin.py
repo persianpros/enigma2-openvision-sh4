@@ -68,4 +68,4 @@ def main(session, **kwargs):
 			pass
 
 def Plugins(**kwargs):
-	return [PluginDescriptor(where = PluginDescriptor.WHERE_SESSIONSTART, fnc=main)]
+	return [PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, fnc=main)]

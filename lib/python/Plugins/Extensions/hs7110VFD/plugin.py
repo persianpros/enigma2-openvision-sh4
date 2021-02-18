@@ -49,7 +49,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				"red": self.cancel,
 			}, -2)
 		self.cfglist = []
-		ConfigListScreen.__init__(self, self.cfglist, session = session)
+		ConfigListScreen.__init__(self, self.cfglist, session=session)
 		self.setTitle(_("LED configuration"))
 		self.createSetup()
 
@@ -119,11 +119,10 @@ class VFDIcons:
 		print('[hs7110VFD] Hardware displaytype:', DisplayType)
 		print('[hs7110VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 10:
-			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
-				{
+			self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 					iPlayableService.evStart: self.__evStart
 				})
-			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
+			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call=False)
 		print('[hs7110VFD] End initialisation')
 
 	def __evStart(self):
@@ -173,19 +172,19 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs7110VFD"),
-		description = _("LED configuration"),
-		where = PluginDescriptor.WHERE_MENU,
-		fnc = VFDdisplaymenu),
+		name=_("hs7110VFD"),
+		description=_("LED configuration"),
+		where=PluginDescriptor.WHERE_MENU,
+		fnc=VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs7110VFD"),
-		description = _("LED control for Fortis HS7110"),
-		where = PluginDescriptor.WHERE_SESSIONSTART,
-		fnc = main)]
+		name=_("hs7110VFD"),
+		description=_("LED control for Fortis HS7110"),
+		where=PluginDescriptor.WHERE_SESSIONSTART,
+		fnc=main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs7110VFD"),
-			description = _("LED control for Fortis HS7110"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			fnc = opencfg))
+			name=_("hs7110VFD"),
+			description=_("LED control for Fortis HS7110"),
+			where=PluginDescriptor.WHERE_PLUGINMENU,
+			fnc=opencfg))
 	return l

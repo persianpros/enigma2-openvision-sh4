@@ -53,7 +53,7 @@ class UnionTunerType(Screen, ConfigListScreen):
 
     def settingsWrite(self, result):
         if result is not None and result:
-		for line in fileinput.input(filename, inplace = 1):
+		for line in fileinput.input(filename, inplace=1):
 			if line.startswith(option):
 				print(option + self.tunerconfig.value)
 			else:
@@ -87,4 +87,4 @@ def menu(menuid, **kwargs):
 
 
 def Plugins(**kwargs):
-    return PluginDescriptor(name = _('UnionTunerType config'), description = _('Select spark7162 dvb-t/c tuner mode'), where=PluginDescriptor.WHERE_MENU, fnc=menu)
+    return PluginDescriptor(name=_('UnionTunerType config'), description=_('Select spark7162 dvb-t/c tuner mode'), where=PluginDescriptor.WHERE_MENU, fnc=menu)

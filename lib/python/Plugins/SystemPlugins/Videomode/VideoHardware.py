@@ -17,7 +17,7 @@ has_avjack = getHaveAVJACK() == "True"
 # available and preferred modes, as well as handling the currently
 # selected mode. No other strict checking is done.
 
-config.av.edid_override = ConfigYesNo(default = False)
+config.av.edid_override = ConfigYesNo(default=False)
 
 class VideoHardware:
 	rates = { } # high-level, use selectable modes.
@@ -136,10 +136,10 @@ class VideoHardware:
 		config.av.wss.notifiers = [ ]
 		AVSwitch.getOutputAspect = self.getOutputAspect
 
-		config.av.colorformat_hdmi = ConfigSelection(choices = {"hdmi_rgb": _("RGB"), "hdmi_yuv": _("YUV"), "hdmi_422": _("422")}, default="hdmi_rgb")
-		config.av.colorformat_yuv = ConfigSelection(choices = {"yuv": _("YUV")}, default="yuv")
-		config.av.hdmi_audio_source = ConfigSelection(choices = {"pcm": _("PCM"), "spdif": _("SPDIF")}, default="pcm")
-		config.av.threedmode = ConfigSelection(choices = {"off": _("Off"), "sbs": _("Side by Side"),"tab": _("Top and Bottom")}, default="off")
+		config.av.colorformat_hdmi = ConfigSelection(choices={"hdmi_rgb": _("RGB"), "hdmi_yuv": _("YUV"), "hdmi_422": _("422")}, default="hdmi_rgb")
+		config.av.colorformat_yuv = ConfigSelection(choices={"yuv": _("YUV")}, default="yuv")
+		config.av.hdmi_audio_source = ConfigSelection(choices={"pcm": _("PCM"), "spdif": _("SPDIF")}, default="pcm")
+		config.av.threedmode = ConfigSelection(choices={"off": _("Off"), "sbs": _("Side by Side"),"tab": _("Top and Bottom")}, default="off")
 		config.av.threedmode.addNotifier(self.set3DMode)
 		config.av.colorformat_hdmi.addNotifier(self.setHDMIColor)
 		config.av.colorformat_yuv.addNotifier(self.setYUVColor)
@@ -197,7 +197,7 @@ class VideoHardware:
 	def isWidescreenMode(self, port, mode):
 		return mode in self.widescreen_modes
 
-	def setMode(self, port, mode, rate, force = None):
+	def setMode(self, port, mode, rate, force=None):
 		print("[Videomode] VideoHardware setMode - port:", port, "mode:", mode, "rate:", rate)
 		# we can ignore "port"
 		self.current_mode = mode
@@ -292,10 +292,10 @@ class VideoHardware:
 			# create list of available modes
 			modes = self.getModeList(port)
 			if len(modes):
-				config.av.videomode[port] = ConfigSelection(choices = [mode for (mode, rates) in modes])
+				config.av.videomode[port] = ConfigSelection(choices=[mode for (mode, rates) in modes])
 			for (mode, rates) in modes:
-				config.av.videorate[mode] = ConfigSelection(choices = rates)
-		config.av.videoport = ConfigSelection(choices = lst)
+				config.av.videorate[mode] = ConfigSelection(choices=rates)
+		config.av.videoport = ConfigSelection(choices=lst)
 
 	def setConfiguredMode(self):
 		port = config.av.videoport.value
