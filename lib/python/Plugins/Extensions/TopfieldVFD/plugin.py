@@ -17,7 +17,9 @@ from Plugins.Plugin import PluginDescriptor
 import ServiceReference
 from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
 from enigma import evfd
-import time, fcntl, struct
+import time
+import fcntl
+import struct
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from enigma import eTimer
 from re import compile as re_compile, search as re_search
