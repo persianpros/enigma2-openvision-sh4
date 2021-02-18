@@ -5,6 +5,7 @@ from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from enigma import eTimer
 
+
 class OnErrorRestart:
 	def __init__(self, session):
 		self.Console = Console()
@@ -52,7 +53,9 @@ class OnErrorRestart:
 		self.Timer.stop()
 		self.StartLongTimer()
 
+
 ErrorCheckInstance = None
+
 
 def main(session, **kwargs):
 	global ErrorCheckInstance
@@ -66,6 +69,7 @@ def main(session, **kwargs):
 			f.close()
 		except:
 			pass
+
 
 def Plugins(**kwargs):
 	return [PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, fnc=main)]

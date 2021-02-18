@@ -66,6 +66,7 @@ config.plugins.vfdicon.dstandbyredled = ConfigSlider(default=7, limits=(0, 7))
 config.plugins.vfdicon.recredled = ConfigSlider(default=2, limits=(0, 7))
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
@@ -158,15 +159,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
 		evfd.getInstance().vfd_write_string("LED SETUP")
+
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("LED display"), opencfg, "vfd_display", 44)]
 	else:
 		return []
+
 
 class VFDIcons:
 	def __init__(self, session):
@@ -290,7 +294,6 @@ class VFDIcons:
 		if (disp == "date" or disp == "day_date" or disp == "time"):
 			self.writeDate(disp)
 			
-
 	def gotRecordEvent(self, service, event):
 		if event in (iRecordableService.evEnd, iRecordableService.evStart, None):
 			recs = self.session.nav.getRecordings()
@@ -350,7 +353,9 @@ class VFDIcons:
 		self.standby = True
 		print("[hs7810aVFD] set display & icons on Enter Standby")
 
+
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
 	global VFDIconsInstance
@@ -364,6 +369,7 @@ def main(session, **kwargs):
 		VFDIconsInstance.UpdatedInfo()
 	else:
 		VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

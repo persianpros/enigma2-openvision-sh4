@@ -237,6 +237,7 @@ class About(Screen):
 	def showTroubleshoot(self):
 		self.session.open(Troubleshoot)
 
+
 class OpenVisionInformation(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -365,6 +366,7 @@ class OpenVisionInformation(Screen):
 			"down": self["AboutScrollLabel"].pageDown
 		})
 
+
 class DVBInformation(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -451,6 +453,7 @@ class DVBInformation(Screen):
 			"down": self["AboutScrollLabel"].pageDown
 		})
 
+
 class Geolocation(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -528,6 +531,7 @@ class Geolocation(Screen):
 			"down": self["AboutScrollLabel"].pageDown
 		})
 
+
 class BenchmarkInformation(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -554,6 +558,7 @@ class BenchmarkInformation(Screen):
 			"up": self["AboutScrollLabel"].pageUp,
 			"down": self["AboutScrollLabel"].pageDown
 		})
+
 
 class Devices(Screen):
 	def __init__(self, session):
@@ -696,6 +701,7 @@ class Devices(Screen):
 		else:
 			self["mounts"].setText(_('none'))
 		self["actions"].setEnabled(True)
+
 
 class SystemNetworkInfo(Screen):
 	def __init__(self, session):
@@ -995,6 +1001,7 @@ class SystemNetworkInfo(Screen):
 		except Exception as err:
 			pass
 
+
 class SystemMemoryInfo(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -1057,6 +1064,7 @@ class SystemMemoryInfo(Screen):
 		self["AboutScrollLabel"].setText(self.AboutText)
 		self["actions"].setEnabled(True)
 
+
 class TranslationInfo(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -1098,6 +1106,7 @@ class TranslationInfo(Screen):
 			"cancel": self.close,
 			"ok": self.close
 		})
+
 
 class CommitInfo(Screen):
 	def __init__(self, session):
@@ -1188,6 +1197,7 @@ class CommitInfo(Screen):
 		self.project = self.project != len(self.projects) - 1 and self.project + 1 or 0
 		self.updateCommitLogs()
 
+
 class MemoryInfo(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -1268,6 +1278,7 @@ class MemoryInfo(Screen):
 		open("/proc/sys/vm/drop_caches", "w").write("3")
 		self.getMemoryInfo()
 
+
 class MemoryInfoSkinParams(GUIComponent):
 	def __init__(self):
 		GUIComponent.__init__(self)
@@ -1284,6 +1295,7 @@ class MemoryInfoSkinParams(GUIComponent):
 		return applySkin()
 
 	GUI_WIDGET = eLabel
+
 
 class Troubleshoot(Screen):
 	def __init__(self, session):

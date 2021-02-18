@@ -19,6 +19,7 @@ has_avjack = getHaveAVJACK() == "True"
 
 config.av.edid_override = ConfigYesNo(default=False)
 
+
 class VideoHardware:
 	rates = {} # high-level, use selectable modes.
 
@@ -411,6 +412,7 @@ class VideoHardware:
 			map = {"cvbs": 0, "rgb": 1, "svideo": 2, "yuv": 3}
 			from enigma import eAVSwitch
 			eAVSwitch.getInstance().setColorFormat(map[config.av.colorformat.value])
+
 
 video_hw = VideoHardware()
 video_hw.setConfiguredMode()

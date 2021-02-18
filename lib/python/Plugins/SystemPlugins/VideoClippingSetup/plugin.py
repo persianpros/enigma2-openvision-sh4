@@ -13,6 +13,7 @@ config.plugins.VideoClippingSetup.clip_width = ConfigInteger(default=720)
 config.plugins.VideoClippingSetup.clip_top = ConfigInteger(default=0)
 config.plugins.VideoClippingSetup.clip_height = ConfigInteger(default=576)
 
+
 class VideoClippingCoordinates(Screen, ConfigListScreen):
 	skin = """
 	<screen position="0,0" size="e,e" title="Video clipping setup" backgroundColor="transparent">
@@ -100,6 +101,7 @@ class VideoClippingCoordinates(Screen, ConfigListScreen):
 
 class VideoClippingSetup(Screen):
 	instance = None
+
 	def __init__(self, session):
 		self.session = session
 		Screen.__init__(self, session)
@@ -133,21 +135,26 @@ def setPosition(clip_left, clip_width, clip_top, clip_height):
 	except:
 		return
 
+
 def setConfiguredPosition():
 	setPosition(int(config.plugins.VideoClippingSetup.clip_left.value), int(config.plugins.VideoClippingSetup.clip_width.value), int(config.plugins.VideoClippingSetup.clip_top.value), int(config.plugins.VideoClippingSetup.clip_height.value))
 
+
 def main(session, **kwargs):
 	session.open(VideoClippingCoordinates)
+
 
 def menu(menuid):
 	if menuid != "system":
 		return []
 	return [(_("Video clipping setup"), main, "VideoClippingSetup", None)]
 
+
 def startup(reason, **kwargs):
 	if "session" in kwargs:
 		session = kwargs["session"]
 		VideoClippingSetup(session)
+
 
 def Plugins(**kwargs):
 	from os import path

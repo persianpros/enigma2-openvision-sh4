@@ -1064,7 +1064,6 @@ def InitUsageConfig():
 		config.usage.toggle12to8characterVFD = ConfigYesNo(default=False)
 		config.usage.toggle12to8characterVFD.addNotifier(set12to8characterVFD)
 
-
 	if SystemInfo["LcdLiveTVMode"]:
 		def setLcdLiveTVMode(configElement):
 			open(SystemInfo["LcdLiveTVMode"], "w").write(configElement.value)

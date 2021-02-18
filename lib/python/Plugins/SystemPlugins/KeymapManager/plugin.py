@@ -16,6 +16,8 @@ VER = "0.3"
 KPATH = resolveFilename(SCOPE_SKIN)
 
 # installs keymap_???.xml files found in KPATH
+
+
 class KeymapSelector(Screen):
 	skin = """
 		<screen position="center,center" size="560,340" name="KeymapManagerScreen" title="Keymap Manager" >
@@ -95,11 +97,13 @@ class KeymapSelector(Screen):
 def KeymapSelMain(session, **kwargs):
 	session.open(KeymapSelector)
 
+
 def KeymapSelSetup(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("Keymap"), KeymapSelMain, "keymap_selector", None)]
 	else:
 		return []
+
 
 def Plugins(**kwargs):
 	return PluginDescriptor(name=_("Keymap selector"), description=_("Select your keymap"), where=PluginDescriptor.WHERE_MENU, fnc=KeymapSelSetup)

@@ -13,6 +13,7 @@ from Plugins.SystemPlugins.Videomode.VideoHardware import video_hw
 
 config.misc.videowizardenabled = ConfigBoolean(default=True)
 
+
 class VideoSetup(Screen, ConfigListScreen):
 
 	def __init__(self, session, hw):
@@ -204,6 +205,7 @@ class VideoSetup(Screen, ConfigListScreen):
 		from Screens.Setup import SetupSummary
 		return SetupSummary
 
+
 class VideomodeHotplug:
 	def __init__(self, hw):
 		self.hw = hw
@@ -231,12 +233,15 @@ class VideomodeHotplug:
 			print("[Videomode] setting %s/%s/%s" % (port, mode, rate))
 			self.hw.setMode(port, mode, rate)
 
+
 hotplug = None
+
 
 def startHotplug():
 	global hotplug, video_hw
 	hotplug = VideomodeHotplug(video_hw)
 	hotplug.start()
+
 
 def stopHotplug():
 	global hotplug
@@ -254,8 +259,10 @@ def autostart(reason, session=None, **kwargs):
 	elif reason == 1:
 		stopHotplug()
 
+
 def videoSetupMain(session, **kwargs):
 	session.open(VideoSetup, video_hw)
+
 
 def startSetup(menuid):
 	if menuid != "video":
@@ -263,9 +270,11 @@ def startSetup(menuid):
 
 	return [(_("A/V settings"), videoSetupMain, "av_setup", 40)]
 
+
 def VideoWizard(*args, **kwargs):
 	from Plugins.SystemPlugins.Videomode.VideoWizard import VideoWizard
 	return VideoWizard(*args, **kwargs)
+
 
 def Plugins(**kwargs):
 	list = [

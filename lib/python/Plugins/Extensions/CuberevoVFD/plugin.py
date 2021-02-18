@@ -27,6 +27,7 @@ config.plugins.CuberevoVFD.timeMode = ConfigSelection(default="24h", choices=[("
 config.plugins.CuberevoVFD.setLed = ConfigEnableDisable(default=False)
 config.plugins.CuberevoVFD.setFan = ConfigEnableDisable(default=True)
 
+
 class CuberevoVFDSetup(ConfigListScreen, Screen):
 	skin = """
 		<screen position="100,100" size="550,400" title="CuberevoVFD Setup" >
@@ -36,7 +37,6 @@ class CuberevoVFDSetup(ConfigListScreen, Screen):
 		<widget name="key_green" position="140,350" size="140,40" font="Regular;20" backgroundColor="#1f771f" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="key_red" position="280,350" size="140,40" font="Regular;20" backgroundColor="#9f1313" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		</screen>"""
-
 
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
@@ -311,12 +311,15 @@ class CuberevoVFD:
 	def abort(self):
 		print("[CuberevoVFD] aborting")
 
+
 def main(session, **kwargs):
 	session.open(CuberevoVFDSetup)
+
 
 cubeVfd = None
 gReason = -1
 mySession = None
+
 
 def controlcubeVfd():
 	global cubeVfd
@@ -330,6 +333,7 @@ def controlcubeVfd():
 		print("[CuberevoVFD] Stopping CuberevoVFD")
 		cubeVfd = None
 
+
 def autostart(reason, **kwargs):
 	global cubeVfd
 	global gReason
@@ -341,6 +345,7 @@ def autostart(reason, **kwargs):
 	else:
 		gReason = reason
 	controlcubeVfd()
+
 
 def Plugins(**kwargs):
 	return [PluginDescriptor(name=_("CuberevoVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),

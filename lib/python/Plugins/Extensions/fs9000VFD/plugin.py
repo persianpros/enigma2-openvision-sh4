@@ -74,6 +74,7 @@ config.plugins.vfdicon.ledbright = ConfigSlider(default=15, limits=(0, 31))
 config.plugins.vfdicon.crossbright = ConfigSlider(default=31, limits=(0, 31))
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
@@ -177,15 +178,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
 		evfd.getInstance().vfd_write_string("VFD SETUP")
+
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("VFD display"), opencfg, "vfd_display", 44)]
 	else:
 		return []
+
 
 class VFDIcons:
 	def __init__(self, session):
@@ -506,7 +510,6 @@ class VFDIcons:
 						if self.record == False:
 							self.discOff()
 
-
 	def gotRecordEvent(self, service, event):
 		if config.plugins.vfdicon.showicons.value != 'none':
 			if event in (iRecordableService.evEnd, iRecordableService.evStart, None):
@@ -694,7 +697,9 @@ class VFDIcons:
 	def displayHddUsedOff(self): #switch off hdd icon
 		Console().ePopen("fp_control -i 14 0")
 
+
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
 	global VFDIconsInstance
@@ -716,6 +721,7 @@ def main(session, **kwargs):
 		VFDIconsInstance.UpdatedInfo()
 	else:
 		VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

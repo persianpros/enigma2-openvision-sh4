@@ -7,6 +7,7 @@ from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
 import time
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 
+
 class VFDIcons:
 
     def __init__(self, session):
@@ -113,6 +114,7 @@ class VFDIcons:
 
 
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
     global VFDIconsInstance

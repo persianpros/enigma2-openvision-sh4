@@ -66,6 +66,7 @@ config.plugins.vfdicon.standbyredled = ConfigSlider(default=0, limits=(0, 7))
 config.plugins.vfdicon.recredled = ConfigSlider(default=2, limits=(0, 7))
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 #	skin = """
 #	<screen position="center,center" size="700,340" title="VFD display configuration">
@@ -182,15 +183,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
 		evfd.getInstance().vfd_write_string("VFD SETUP")
+
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("VFD display"), opencfg, "vfd_display", 44)]
 	else:
 		return []
+
 
 class VFDIcons:
 	def __init__(self, session):
@@ -368,7 +372,9 @@ class VFDIcons:
 		self.standby = True
 		print("[hs742xVFD] set display & LEDs on Enter Standby")
 
+
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
 	global VFDIconsInstance
@@ -383,6 +389,7 @@ def main(session, **kwargs):
 		VFDIconsInstance.UpdatedInfo()
 	else:
 		VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

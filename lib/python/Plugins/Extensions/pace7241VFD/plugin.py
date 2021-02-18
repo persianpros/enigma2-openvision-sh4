@@ -87,6 +87,7 @@ config.plugins.vfdicon.standbyledcolour = ConfigSelection(default="1",
 config.plugins.vfdicon.vfd_enable = ConfigYesNo(default=False)
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
@@ -214,15 +215,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
 		evfd.getInstance().vfd_write_string("VFD SETUP")
+
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("VFD display"), opencfg, "vfd_display", 44)]
 	else:
 		return []
+
 
 class VFDIcons:
 	def __init__(self, session):
@@ -581,7 +585,9 @@ class VFDIcons:
 					Console().ePopen("fp_control -i 5 0")
 					self.usb = 0
 
+
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
 	global VFDIconsInstance
@@ -597,6 +603,7 @@ def main(session, **kwargs):
 		VFDIconsInstance.UpdatedInfo()
 	else:
 		VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

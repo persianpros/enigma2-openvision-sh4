@@ -87,6 +87,7 @@ ioTypematicRateCmd = 0x40013a0e
 ioScrollModeCmd = 0x40033a15
 ioAllcapsCmd = 0x40013a14
 
+
 class TopfieldVFDSetup(ConfigListScreen, Screen):
         skin = """
                 <screen position="100,100" size="550,400" title="TopfieldVFD Setup" >
@@ -96,7 +97,6 @@ class TopfieldVFDSetup(ConfigListScreen, Screen):
                 <widget name="key_green" position="140,350" size="140,40" font="Regular;20" backgroundColor="#1f771f" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
                 <widget name="key_red" position="280,350" size="140,40" font="Regular;20" backgroundColor="#9f1313" zPosition="2" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
                 </screen>"""
-
 
         def __init__(self, session, args=None):
                 Screen.__init__(self, session)
@@ -430,12 +430,15 @@ class TopfieldVFD:
         def abort(self):
                 print("[TopfieldVFD] aborting")
 
+
 def main(session, **kwargs):
         session.open(TopfieldVFDSetup)
+
 
 tfVfd = None
 gReason = -1
 mySession = None
+
 
 def controlTfVfd():
         global tfVfd
@@ -450,6 +453,7 @@ def controlTfVfd():
                 tfVfd.disableClock()
                 tfVfd = None
 
+
 def autostart(reason, **kwargs):
         global tfVfd
         global gReason
@@ -461,6 +465,7 @@ def autostart(reason, **kwargs):
         else:
                 gReason = reason
         controlTfVfd()
+
 
 def Plugins(**kwargs):
         return [PluginDescriptor(name=_("TopfieldVFD"), description=_("Change VFD display settings"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main),

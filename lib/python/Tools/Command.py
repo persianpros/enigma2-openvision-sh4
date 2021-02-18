@@ -3,6 +3,7 @@
 from os import stat as os_stat, path as os_path, system
 import os
 
+
 def command(comandline, strip=1):
 	comandline = comandline + " >/tmp/command.txt"
 	os.system(comandline)

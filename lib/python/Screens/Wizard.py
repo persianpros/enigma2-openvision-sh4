@@ -18,6 +18,7 @@ from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 from enigma import evfd
 
+
 class WizardSummary(Screen):
 	def __init__(self, session, parent):
 		Screen.__init__(self, session, parent)
@@ -29,6 +30,7 @@ class WizardSummary(Screen):
 
 	def setText(self, text):
 		self["text"].setText(text)
+
 
 class Wizard(Screen):
 	instance = None
@@ -694,5 +696,6 @@ class WizardManager:
 		if len(self.wizards) > 0:
 			self.wizards[-1][0].isLastWizard = True
 		return [(x[2], x[0]) for x in self.wizards if x[1] == 1]
+
 
 wizardManager = WizardManager()

@@ -5,6 +5,7 @@ from config import config, ConfigSubsection, ConfigSlider, ConfigOnOff, ConfigEn
 from enigma import eQBOXSenseWheel
 from Components.SystemInfo import SystemInfo
 
+
 class SENSEWHEEL:
 	def __init__(self):
 		self.orig_flag_enable_sense = False
@@ -147,12 +148,15 @@ class SENSEWHEEL:
 		else:
 			self.setPanelLedsEnable(False)
 
+
 isensewheel = SENSEWHEEL()
+
 
 def InitSenseWheel():
 	detected = eQBOXSenseWheel.getInstance().detected()
 	SystemInfo["SenseWheel"] = detected
 	config.sensewheel = ConfigSubsection()
+
 	def setPanelLedsEnable(configElement):
 		isensewheel.disableSense()
 		config.sensewheel.ledpanelhue.enable = configElement.value

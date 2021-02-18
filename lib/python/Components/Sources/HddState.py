@@ -6,6 +6,7 @@ from Components.Harddisk import harddiskmanager
 from Components.config import config
 from enigma import eTimer
 
+
 class HddState(Source):
 	ALL = 0
 	INTERNAL = 1

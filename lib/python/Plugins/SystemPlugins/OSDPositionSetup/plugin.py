@@ -25,18 +25,23 @@ def setPosition(dst_left, dst_right, dst_top, dst_bottom):
 	fbClass.getInstance().setFBdiff(dst_top, dst_left, dst_right, dst_bottom)
 	fbClass.getInstance().clearFBblit()
 
+
 def setConfiguredPosition():
 	setPosition(int(config.plugins.OSDPositionSetup.dst_left.value), int(config.plugins.OSDPositionSetup.dst_right.value), int(config.plugins.OSDPositionSetup.dst_top.value), int(config.plugins.OSDPositionSetup.dst_bottom.value))
+
 
 def main(session, **kwargs):
 	from Plugins.SystemPlugins.OSDPositionSetup.overscanwizard import OverscanWizard
 	session.open(OverscanWizard, timeOut=False)
 
+
 def startSetup(menuid):
 	return menuid == "video" and [(_("Overscan wizard"), main, "sd_position_setup", 0)] or []
 
+
 def startup(reason, **kwargs):
 	setConfiguredPosition()
+
 
 def Plugins(**kwargs):
 	from Plugins.Plugin import PluginDescriptor

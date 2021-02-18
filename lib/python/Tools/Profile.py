@@ -33,6 +33,7 @@ try:
 except IOError:
 	print("[Profile] WARNING: couldn't open profile file!")
 
+
 def profile(id):
 	now = time.time() - profile_start
 	if profile_file:
@@ -58,6 +59,7 @@ def profile(id):
 						open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
 			except IOError:
 				pass
+
 
 def profile_final():
 	global profile_file

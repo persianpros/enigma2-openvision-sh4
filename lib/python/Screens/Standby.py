@@ -36,6 +36,7 @@ QUIT_MANUFACTURER_RESET = 7
 QUIT_UPGRADE_PROGRAM = 42
 QUIT_IMAGE_RESTORE = 43
 
+
 def isInfoBarInstance():
 	global infoBarInstance
 	if infoBarInstance is None:
@@ -43,6 +44,7 @@ def isInfoBarInstance():
 		if InfoBar.instance:
 			infoBarInstance = InfoBar.instance
 	return infoBarInstance
+
 
 def checkTimeshiftRunning():
 	infobar_instance = isInfoBarInstance()
@@ -221,6 +223,7 @@ class StandbyScreen(Screen):
 	def createSummary(self):
 		return StandbySummary
 
+
 class Standby(StandbyScreen):
 	def __init__(self, session, StandbyCounterIncrease=True):
 		if checkTimeshiftRunning():
@@ -243,6 +246,7 @@ class Standby(StandbyScreen):
 	def goStandby(self):
 		Notifications.AddNotification(StandbyScreen, self.StandbyCounterIncrease)
 
+
 class StandbySummary(Screen):
 	skin = """
 	<screen position="0,0" size="132,64">
@@ -254,6 +258,7 @@ class StandbySummary(Screen):
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>"""
+
 
 class QuitMainloopScreen(Screen):
 	def __init__(self, session, retvalue=QUIT_SHUTDOWN):
@@ -275,7 +280,9 @@ class QuitMainloopScreen(Screen):
 		}.get(retvalue)
 		self["text"] = Label(text)
 
+
 inTryQuitMainloop = False
+
 
 def getReasons(session, retvalue=QUIT_SHUTDOWN):
 	recordings = session.nav.getRecordings()
@@ -299,6 +306,7 @@ def getReasons(session, retvalue=QUIT_SHUTDOWN):
 	if not reasons and mediafilesInUse(session) and retvalue in (QUIT_SHUTDOWN, QUIT_REBOOT, QUIT_UPGRADE_FP, QUIT_UPGRADE_PROGRAM):
 		reasons.append(_("A file from media is in use!"))
 	return "\n".join(reasons)
+
 
 class TryQuitMainloop(MessageBox):
 	def __init__(self, session, retvalue=QUIT_SHUTDOWN, timeout=-1, default_yes=False, check_reasons=True):

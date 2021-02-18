@@ -81,6 +81,7 @@ config.plugins.vfdicon.recredledon = ConfigSelection(default="0",
 		])
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
@@ -173,9 +174,11 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
 		evfd.getInstance().vfd_write_string("VFD SETUP")
+
 
 def VFDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
@@ -752,7 +755,9 @@ class VFDIcons:
 		if config.plugins.vfdicon.hddicons.value != "no":
 			Console().ePopen("fp_control -i 22 0 -i 29 0") #HDD Full, Alert off
 
+
 VFDIconsInstance = None
+
 
 def main(session, **kwargs):
 	global VFDIconsInstance
@@ -773,6 +778,7 @@ def main(session, **kwargs):
 		VFDIconsInstance.UpdatedInfo()
 	else:
 		VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

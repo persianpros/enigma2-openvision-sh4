@@ -165,6 +165,7 @@ config.plugins.wireless.adapter.ipaddress = ConfigIP(default=[192, 168, 178, 100
 config.plugins.wireless.adapter.mask = ConfigIP(default=[255, 255, 255, 0])
 config.plugins.wireless.adapter.gateway = ConfigIP(default=[192, 168, 178, 1])
 
+
 class ConfigOptions(Screen, ConfigListScreen):
 
 	skin = """
@@ -358,15 +359,18 @@ class ConfigOptions(Screen, ConfigListScreen):
 		else:
 			self.close()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigOptions)
 #		evfd.getInstance().vfd_write_string( "System options" )
+
 
 def Optionsmenu(menuid, **kwargs):
 	if menuid == "system":
 		return [(_("System options"), opencfg, "systemoptions_setting", 46)]
 	else:
 		return []
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(

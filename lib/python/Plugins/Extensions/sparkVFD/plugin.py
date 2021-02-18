@@ -62,6 +62,7 @@ config.plugins.vfdicon.recredledon = ConfigSelection(default="2",
 		])
 config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 
+
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
@@ -133,8 +134,10 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self['config'].instance.moveSelection(self['config'].instance.moveUp)
 		self.newConfig()
 
+
 def opencfg(session, **kwargs):
 		session.open(ConfigVFDDisplay)
+
 
 def LEDdisplaymenu(menuid, **kwargs):
 	if menuid == "system":
@@ -328,6 +331,7 @@ class VFDIcons:
 
 VFDIconsInstance = None
 
+
 def main(session, **kwargs):
 	global VFDIconsInstance
 	global DisplayType
@@ -340,6 +344,7 @@ def main(session, **kwargs):
 			VFDIconsInstance.timerEvent()
 		else:
 			VFDIconsInstance.writeName()
+
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
