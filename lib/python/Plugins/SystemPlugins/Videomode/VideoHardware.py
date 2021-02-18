@@ -24,28 +24,28 @@ class VideoHardware:
 
 	modes = {}  # a list of (high-level) modes for a certain port.
 
-	rates["PAL"] =			{"50Hz":	{50: "pal"}}
+	rates["PAL"] = {"50Hz": {50: "pal"}}
 
-	rates["480i"] =			{"60Hz": 	{60: "480i60"}}
+	rates["480i"] = {"60Hz": {60: "480i60"}}
 
-	rates["576i"] =			{"50Hz":	{50: "576i50"}}
+	rates["576i"] = {"50Hz": {50: "576i50"}}
 
-	rates["480p"] =			{"60Hz": 	{60: "480p60"}}
+	rates["480p"] = {"60Hz": {60: "480p60"}}
 
-	rates["576p"] =			{"50Hz":	{50: "576p50"}}
+	rates["576p"] = {"50Hz": {50: "576p50"}}
 
-	rates["720p"] =			{"50Hz":	{50: "720p50"},
-								"60Hz":	{60: "720p60"}}
+	rates["720p"] = {"50Hz": {50: "720p50"},
+								"60Hz": {60: "720p60"}}
 
-	rates["1080i"] =		{"50Hz":	{50: "1080i50"},
-								"60Hz":	{60: "1080i60"}}
+	rates["1080i"] = {"50Hz": {50: "1080i50"},
+								"60Hz": {60: "1080i60"}}
 
-	rates["1080p"] =		{"23Hz":	{50: "1080p23"},
-								"24Hz":	{60: "1080p24"},
-								"25Hz":	{60: "1080p25"},
-								"29Hz":	{60: "1080p29"},
-								"30Hz":	{60: "1080p30"},
-								"50Hz":	{60: "1080p50"},
+	rates["1080p"] = {"23Hz": {50: "1080p23"},
+								"24Hz": {60: "1080p24"},
+								"25Hz": {60: "1080p25"},
+								"29Hz": {60: "1080p29"},
+								"30Hz": {60: "1080p30"},
+								"50Hz": {60: "1080p50"},
 								"60Hz": {60: "1080p60"}}
 
 	rates["PC"] = {
@@ -105,7 +105,7 @@ class VideoHardware:
 		return ret
 
 	def __init__(self):
-		self.last_modes_preferred =  []
+		self.last_modes_preferred = []
 		self.on_hotplug = CList()
 		self.current_mode = None
 		self.current_port = None

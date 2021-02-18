@@ -183,9 +183,9 @@ class CuberevoVFD:
 				servicename = ServiceReference.ServiceReference(service).getServiceName().replace('\xc2\x87', '').replace('\xc2\x86', '').ljust(16)
 				subservice = self.service.toString().split("::")
 				if subservice[0].count(':') == 9:
-					servicename =subservice[1].replace('\xc2\x87', '').replace('\xc3\x9f', 'ss').replace('\xc2\x86', '').ljust(16)
+					servicename = subservice[1].replace('\xc2\x87', '').replace('\xc3\x9f', 'ss').replace('\xc2\x86', '').ljust(16)
 				else:
-					servicename=servicename
+					servicename = servicename
 				evfd.getInstance().vfd_write_string(servicename[0:17])
 
 	def setshowmenuorpanel(self):

@@ -61,12 +61,12 @@ class OverscanWizard(Screen, ConfigListScreen):
 	def __layoutFinished(self):
 		from enigma import eSize, ePoint
 		if getDesktop(0).size().height() == 1080:
-			lenlist = len(self.list)*40
+			lenlist = len(self.list) * 40
 			self["config"].instance.move(ePoint(343, 873 - lenlist))
 			self["config"].instance.resize(eSize(1234, lenlist))
 			self["introduction"].instance.resize(eSize(1234, 623 - lenlist))
 		else:
-			lenlist = len(self.list)*30
+			lenlist = len(self.list) * 30
 			self["config"].instance.move(ePoint(240, 580 - lenlist))
 			self["config"].instance.resize(eSize(800, lenlist))
 			self["introduction"].instance.resize(eSize(800, 405 - lenlist))
@@ -185,7 +185,7 @@ class OverscanWizard(Screen, ConfigListScreen):
 					config.plugins.OSDPositionSetup.dst_left.value = self.dst_left.value
 					config.plugins.OSDPositionSetup.dst_right.value = self.dst_right.value - 150
 					config.plugins.OSDPositionSetup.dst_top.value = self.dst_top.value
-					config.plugins.OSDPositionSetup.dst_bottom.value = self.dst_bottom.value -150
+					config.plugins.OSDPositionSetup.dst_bottom.value = self.dst_bottom.value - 150
 				else:
 					config.plugins.OSDPositionSetup.dst_left.value = 0
 					config.plugins.OSDPositionSetup.dst_right.value = 0
@@ -201,7 +201,7 @@ class OverscanWizard(Screen, ConfigListScreen):
 
 	def setPreviewPosition(self):
 		self["config"].l.setList(self.list)
-		setPosition(int(self.dst_left.value), int(self.dst_right.value)-150, int(self.dst_top.value), int(self.dst_bottom.value)-150)
+		setPosition(int(self.dst_left.value), int(self.dst_right.value) - 150, int(self.dst_top.value), int(self.dst_bottom.value) - 150)
 
 	def keyCancel(self):
 		self.step = self.step in (2, 5) and 1 or self.step in (3, 4) and 2

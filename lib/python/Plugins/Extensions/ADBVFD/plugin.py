@@ -455,7 +455,7 @@ class VFDIcons:
 						Console().ePopen("fp_control  -i 23 1")
 		if self.record == False and self.timeshift == False:
 			if self.standby == False:
-				if self.display == 'vfd' and  config.plugins.vfdicon.showicons.value == "all":
+				if self.display == 'vfd' and config.plugins.vfdicon.showicons.value == "all":
 					Console().ePopen("fp_control  -i 23 0")
 				disptype = config.plugins.vfdicon.displayshow.value
 			else:

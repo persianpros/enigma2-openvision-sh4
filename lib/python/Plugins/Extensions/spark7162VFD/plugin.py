@@ -704,7 +704,7 @@ class VFDIcons:
 						hddUsed = used # save current size
 						Console().ePopen("fp_control -i 30 1") #HDD grid on
 						self.showSize(used) #and show HDD
-						print("[spark7162VFD] HDD mount point:", self.mount, ", used icons:", used/10)
+						print("[spark7162VFD] HDD mount point:", self.mount, ", used icons:", used / 10)
 		else:
 			self.displayHddUsedOff()
 
