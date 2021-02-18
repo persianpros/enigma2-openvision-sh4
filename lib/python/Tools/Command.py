@@ -24,4 +24,3 @@ def command(comandline, strip=1):
 	comandline = text
 	os.system("rm /tmp/command.txt")
 	return comandline
-

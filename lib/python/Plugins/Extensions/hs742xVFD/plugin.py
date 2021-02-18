@@ -330,7 +330,7 @@ class VFDIcons:
 		if disp == "day_date":
 			date = strftime("%a", tm)[0:2] + strftime(" %d-%m", tm)
 		elif disp == "date":
-			date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2] 
+			date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2]
 		else:
 			date = strftime("%H.%M.%S", tm)
 		evfd.getInstance().vfd_write_string(date[0:8])

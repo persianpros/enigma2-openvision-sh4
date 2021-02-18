@@ -442,7 +442,7 @@ class VFDIcons:
 			date = strftime("%a", tm)[0:2] + strftime(" %d-%m", tm)
 			Console().ePopen("fp_control -i 27 0 -i 28 0") # colons off
 		elif disp == "date":
-			date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2] 
+			date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2]
 			Console().ePopen("fp_control -i 27 0 -i 28 0") # colons off
 		else:
 			date = strftime("%H%M%S", tm)
@@ -595,7 +595,7 @@ def main(session, **kwargs):
 			VFDIconsInstance.timerEvent()
 		else:
 			if config.plugins.vfdicon.showicons.value == "none":
-				Console().ePopen("fp_control -i 29 0")		
+				Console().ePopen("fp_control -i 29 0")
 			else:
 				hddUsed = -1
 				VFDIconsInstance.displayHddUsed()

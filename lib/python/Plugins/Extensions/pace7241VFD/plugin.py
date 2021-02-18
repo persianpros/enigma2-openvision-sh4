@@ -514,9 +514,9 @@ class VFDIcons:
 			if disp == "day_date":
 				date = strftime("%a", tm)[0:2] + strftime(" %d-%m-%y", tm)
 			elif disp == "date":
-				date = strftime("%d-%m-%y", tm) 
+				date = strftime("%d-%m-%y", tm)
 			elif disp == "time_date":
-				date = strftime("%d-%m %H:%M", tm) 
+				date = strftime("%d-%m %H:%M", tm)
 			elif disp == "timeHM":
 				date = strftime("    %H:%M", tm)
 			elif disp == "time":

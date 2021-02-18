@@ -551,10 +551,10 @@ class VFDIcons:
 				date = strftime("%a", tm)[0:2] + strftime(" %d-%m-%y", tm)
 				Console().ePopen("fp_control -i 33 0 -i 34 0 -i 35 0 -i 37 0") # colons off
 			elif disp == "date":
-				date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2] 
+				date = strftime("%d-%m-", tm) + strftime("%y", tm)[0:2]
 				Console().ePopen("fp_control -i 33 0 -i 34 0 -i 35 0 -i 37 0") # all colons off
 			elif disp == "time_date":
-				date = strftime("%d-%m %H%M%S", tm) 
+				date = strftime("%d-%m %H%M%S", tm)
 				Console().ePopen("fp_control -i 33 0 -i 34 0 -i 35 1 -i 37 1") # 2 colons on
 			elif disp == "time":
 				date = strftime("      %H%M%S", tm)
@@ -714,7 +714,7 @@ def main(session, **kwargs):
 			VFDIconsInstance.timerEvent()
 		else:
 			if config.plugins.vfdicon.showicons.value == "none":
-				Console().ePopen("fp_control -i 40 0")		
+				Console().ePopen("fp_control -i 40 0")
 			else:
 				hddUsed = -1
 				VFDIconsInstance.displayHddUsed()

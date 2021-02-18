@@ -296,7 +296,7 @@ class VFDIcons:
 								Console().ePopen("fp_control -i 27 1 -i 28 0") #TV icon on, Radio off
 						Console().ePopen("fp_control -i 3 1") #play
 						if config.plugins.vfdicon.hddicons.value == "no":
-							self.displayHddUsedOff() #switch off signal strength						
+							self.displayHddUsedOff() #switch off signal strength
 					else:
 						if config.plugins.vfdicon.displayshow.value == "channel number": #show the channel number
 							servicename = str(service.getChannelNum())
@@ -703,7 +703,7 @@ class VFDIcons:
 					self.displayHddUsedOff() #HDD display off
 				else:
 					used = self.CheckUsed()
-					if hddUsed != used: # if previous size different 
+					if hddUsed != used: # if previous size different
 						hddUsed = used # save current size
 						Console().ePopen("fp_control -i 30 1") #HDD grid on
 						self.showSize(used) #and show HDD
@@ -771,7 +771,7 @@ def main(session, **kwargs):
 			VFDIconsInstance.timerEvent()
 		else:
 			if config.plugins.vfdicon.showicons.value == "none":
-				Console().ePopen("fp_control -i 46 0")		
+				Console().ePopen("fp_control -i 46 0")
 			elif config.plugins.vfdicon.hddicons.value != "no":
 				hddUsed = -1
 				VFDIconsInstance.displayHddUsed()

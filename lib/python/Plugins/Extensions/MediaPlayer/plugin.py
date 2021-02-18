@@ -559,7 +559,7 @@ class MediaPlayer(Screen, InfoBarBase, InfoBarScreenSaver, InfoBarSeek, InfoBarA
 			if self.ext in AUDIO_EXTENSIONS or self.isAudioCD:
 				self.show()
 		else:
-			self.mediaPlayerInfoBar.show()		
+			self.mediaPlayerInfoBar.show()
 
 	def ok(self):
 		if self.currList == "filelist":

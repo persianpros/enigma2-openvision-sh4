@@ -47,7 +47,7 @@ class KeymapSelector(Screen):
 			if fname.startswith("keymap") and fname.endswith(".xml"):
 				self.keymaplist.append((self.getKeymapName(fname), fname))
 
-		self.keymaplist.sort() 
+		self.keymaplist.sort()
 
 		self["text1"] = StaticText(_("Active Keymap: %s") % self.getKeymapName(os_path.basename(config.usage.keymap.value)))
 		self["text2"] = StaticText(_("Keymaps found: (press green or ok to select)"))
@@ -107,4 +107,3 @@ def KeymapSelSetup(menuid, **kwargs):
 
 def Plugins(**kwargs):
 	return PluginDescriptor(name=_("Keymap selector"), description=_("Select your keymap"), where=PluginDescriptor.WHERE_MENU, fnc=KeymapSelSetup)
-

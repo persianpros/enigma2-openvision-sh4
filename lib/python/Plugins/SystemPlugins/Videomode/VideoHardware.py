@@ -173,7 +173,7 @@ class VideoHardware:
 				except IOError:
 					print("[Videomode] VideoHardware reading preferred modes failed, using all video modes")
 					self.modes_preferred = self.modes_available
- 
+
 			if len(self.modes_preferred) <= 1:
 				self.modes_preferred = self.modes_available
 				print("[Videomode] VideoHardware reading preferred modes is empty, using all video modes")
@@ -182,7 +182,7 @@ class VideoHardware:
 			print("[Videomode] VideoHardware reading preferred modes override, using all video modes")
 
 		self.last_modes_preferred = self.modes_preferred
- 
+
 	# check if a high-level mode with a given rate is available.
 	def isModeAvailable(self, port, mode, rate):
 		rate = self.rates[mode][rate]

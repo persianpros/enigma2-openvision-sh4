@@ -293,7 +293,7 @@ class VFDIcons:
 			disp = config.plugins.vfdicon.displayshow.value
 		if (disp == "date" or disp == "day_date" or disp == "time"):
 			self.writeDate(disp)
-			
+
 	def gotRecordEvent(self, service, event):
 		if event in (iRecordableService.evEnd, iRecordableService.evStart, None):
 			recs = self.session.nav.getRecordings()
@@ -389,4 +389,3 @@ def Plugins(**kwargs):
 			where=PluginDescriptor.WHERE_PLUGINMENU,
 			fnc=opencfg))
 	return l
-

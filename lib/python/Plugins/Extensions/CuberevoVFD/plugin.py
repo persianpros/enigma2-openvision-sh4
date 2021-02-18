@@ -41,7 +41,7 @@ class CuberevoVFDSetup(ConfigListScreen, Screen):
 	def __init__(self, session, args=None):
 		Screen.__init__(self, session)
 		self.onClose.append(self.abort)
-		
+
 		# create elements for the menu list
 		self.list = []
 		self.list.append(getConfigListEntry(_("Show clock"), config.plugins.CuberevoVFD.showClock))
@@ -280,10 +280,10 @@ class CuberevoVFD:
 			return pattern.search(string).group()
 		except AttributeError:
 			None
-	
+
 	def __evStart(self):
 		self.__evSeekableStatusChanged()
-	
+
 	def getTimeshiftState(self):
 		service = self.session.nav.getCurrentService()
 		if service is None:
@@ -304,7 +304,7 @@ class CuberevoVFD:
 			print("[CuberevoVFD] Timeshift disabled")
 			evfd.getInstance().vfd_set_icon(0x1A, False)
 		self.tsEnabled = tmp
-		
+
 	def shutdown(self):
 		self.abort()
 

@@ -301,7 +301,7 @@ class VFDIcons:
 				if self.standby == True and dot == 0:
 					date = time
 			Console().ePopen("fp_control -t " + date[0:8])
- 
+
 	def onLeaveStandby(self):
 		if config.plugins.vfdicon.stbdisplayshow.value == "time":
 			self.timer.stop() # stop second timer

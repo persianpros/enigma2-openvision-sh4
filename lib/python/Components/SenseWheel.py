@@ -86,7 +86,7 @@ class SENSEWHEEL:
 
 	def setEnableFlag(self, value):
 		self.flag_enable_sense = value
-		
+
 	def setInitEnableFlag(self, value):
 		self.orig_flag_enable_sense = value
 		self.flag_enable_sense = value
@@ -219,7 +219,7 @@ def InitSenseWheel():
 		else:
 			isensewheel.setPanelLedsEnable(False)
 			isensewheel.disableSense() #-<
-		# confirm flag enabled sensewheel	
+		# confirm flag enabled sensewheel
 		isensewheel.ConfirmFlagSenseEnabled()
 
 	def reloadAndExitFromSensePlugin(configElement):
