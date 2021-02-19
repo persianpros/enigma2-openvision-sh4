@@ -5,7 +5,7 @@ from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pat
 import os
 import re
 from os import access, R_OK
-from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveVFDSymbol, getHaveSVIDEO, getFHDSkin
+from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveVFDSymbol, getHaveSVIDEO, getFHDSkin, getRCName
 
 SystemInfo = {}
 SystemInfo["HasRootSubdir"] = False
@@ -44,12 +44,22 @@ def getBootdevice():
 	return dev
 
 
+def getRCFile(ext):
+	filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "%s.%s" % (getRCName(), ext)))
+	if not isfile(filename):
+		filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "spark.%s" % ext))
+	return filename
+
+
 model = getBoxType()
 brand = getBoxBrand()
 displaytype = getDisplayType()
 
 SystemInfo["MachineBrand"] = brand
 SystemInfo["MachineModel"] = model
+SystemInfo["RCTypeIndex"] = 1
+SystemInfo["RCImage"] = getRCFile("png")
+SystemInfo["RCMapping"] = getRCFile("xml")
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
