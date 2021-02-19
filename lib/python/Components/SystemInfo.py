@@ -5,7 +5,7 @@ from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pat
 import os
 import re
 from os import access, R_OK
-from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveVFDSymbol, getHaveSVIDEO, getFHDSkin, getRCName
+from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveVFDSymbol, getHaveSVIDEO, getFHDSkin, getRCIDNum, getRCName, getRCType
 
 SystemInfo = {}
 SystemInfo["HasRootSubdir"] = False
@@ -57,7 +57,8 @@ displaytype = getDisplayType()
 
 SystemInfo["MachineBrand"] = brand
 SystemInfo["MachineModel"] = model
-SystemInfo["RCTypeIndex"] = 1
+SystemInfo["RCCode"] = getRCType()
+SystemInfo["RCTypeIndex"] = getRCIDNum()
 SystemInfo["RCImage"] = getRCFile("png")
 SystemInfo["RCMapping"] = getRCFile("xml")
 
