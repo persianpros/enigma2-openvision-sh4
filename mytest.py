@@ -339,10 +339,6 @@ class Session:
 
 		self.pushCurrent()
 		dlg = self.current_dialog = self.instantiateDialog(screen, *arguments, **kwargs)
-
-		if dlg is None:
-			return
-
 		dlg.isTmp = True
 		dlg.callback = None
 		self.execBegin()
@@ -548,11 +544,10 @@ def runScreenTest():
 	profile("RunReactor")
 	profile_final()
 
-	if brand == "fulan":
-		from Components.Console import Console
-		print("kill showiframe if it is running (fulan hack)")
-		Console = Console()
-		Console.ePopen('killall -9 showiframe')
+	from Components.Console import Console
+	print("kill showiframe if it is running for SH4")
+	Console = Console()
+	Console.ePopen('killall -9 showiframe')
 
 	runReactor()
 
@@ -644,11 +639,7 @@ Components.Network.InitNetwork()
 
 profile("LCD")
 import Components.Lcd
-Components.Lcd.InitLcd()
-
-#profile("RFMod")
-#import Components.RFmod
-#Components.RFmod.InitRFmod()
+Components.Lcd.IconCheck()
 
 profile("Init:CI")
 import Screens.Ci

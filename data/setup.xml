@@ -159,14 +159,6 @@
 		<item level="2" text="Never decrypt while recording" description="Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off.">config.recording.never_decrypt</item>
 		<item level="2" text="Offline decode delay (ms)" requires="HasOfflineDecoding" description="Configure the offline decoding delay in milliseconds. The configured delay is observed at each control word parity change.">config.recording.offline_decode_delay</item>
 	</setup>
-	<setup key="RFmod" title="RF Output Setup">
-		<item level="1" text="Modulator">config.rfmod.enable</item>
-		<item level="2" text="Test mode">config.rfmod.test</item>
-		<item level="2" text="Sound">config.rfmod.sound</item>
-		<item level="2" text="Sound carrier">config.rfmod.soundcarrier</item>
-		<item level="1" text="Channel">config.rfmod.channel</item>
-		<item level="1" text="Finetune">config.rfmod.finetune</item>
-	</setup>
 	<setup key="satconfig" title="Satellite Dish Setup">
 		<item text="Tuner slot" description="Choose which tuner to configure.">config.sat.tunerslot</item>
 		<item text="Configuration mode" description="Configure the tuner mode.">config.sat.configmode</item>
