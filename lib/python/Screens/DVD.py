@@ -261,16 +261,16 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		self.onFirstExecBegin.append(self.opened)
 		self.service = None
 		self.in_menu = False
-		if fileExists("/proc/stb/vmpeg/0/dst_left"):
-			self.left = open("/proc/stb/vmpeg/0/dst_left", "r").read()[:-1]
-			self.width = open("/proc/stb/vmpeg/0/dst_width", "r").read()[:-1]
-			self.top = open("/proc/stb/vmpeg/0/dst_top", "r").read()[:-1]
-			self.height = open("/proc/stb/vmpeg/0/dst_height", "r").read()[:-1]
-			if self.left != "0" or self.top != "0" or self.width != "2d0" or self.height != "240":
-				open("/proc/stb/vmpeg/0/dst_left", "w").write("0")
-				open("/proc/stb/vmpeg/0/dst_width", "w").write("2d0")
-				open("/proc/stb/vmpeg/0/dst_top", "w").write("0")
-				open("/proc/stb/vmpeg/0/dst_height", "w").write("240")
+		if fileExists("/proc/stb/fb/dst_left"):
+			self.left = open("/proc/stb/fb/dst_left", "r").read()
+			self.width = open("/proc/stb/fb/dst_width", "r").read()
+			self.top = open("/proc/stb/fb/dst_top", "r").read()
+			self.height = open("/proc/stb/fb/dst_height", "r").read()
+			if self.left != "00000000" or self.top != "00000000" or self.width != "000002d0" or self.height != "0000000240":
+				open("/proc/stb/fb/dst_left", "w").write("00000000")
+				open("/proc/stb/fb/dst_width", "w").write("000002d0")
+				open("/proc/stb/fb/dst_top", "w").write("00000000")
+				open("/proc/stb/fb/dst_height", "w").write("0000000240")
 				self.onClose.append(self.__restoreOSDSize)
 
 	def save_infobar_seek_config(self):
@@ -298,10 +298,10 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		config.seek.on_pause.value = self.saved_config_seek_on_pause
 
 	def __restoreOSDSize(self):
-		open("/proc/stb/vmpeg/0/dst_left", "w").write(self.left)
-		open("/proc/stb/vmpeg/0/dst_width", "w").write(self.width)
-		open("/proc/stb/vmpeg/0/dst_top", "w").write(self.top)
-		open("/proc/stb/vmpeg/0/dst_height", "w").write(self.height)
+		open("/proc/stb/fb/dst_left", "w").write(self.left)
+		open("/proc/stb/fb/dst_width", "w").write(self.width)
+		open("/proc/stb/fb/dst_top", "w").write(self.top)
+		open("/proc/stb/fb/dst_height", "w").write(self.height)
 
 	def chapterZap(self):
 		if not self.in_menu:
@@ -365,9 +365,6 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		if not self.in_menu:
 			self.toggleShow()
 			print("[DVD] toggleInfo")
-
-	def openEventView(self):
-		pass
 
 	def __timeUpdated(self):
 		print("[DVD] timeUpdated")
@@ -454,8 +451,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		choices = [(_("Exit"), "exit"), (_("Continue playing"), "play")]
 		if self.physicalDVD:
 			cur = self.session.nav.getCurrentlyPlayingServiceOrGroup()
-			cd = harddiskmanager.getAutofsMountpoint(harddiskmanager.getCD())
-			if cur and cur.toString()[-len(cd):] != cd:
+			if cur and not cur.toString().endswith(harddiskmanager.getAutofsMountpoint(harddiskmanager.getCD())):
 				choices.insert(0, (_("Play DVD"), "playPhysical"))
 		self.session.openWithCallback(self.exitCB, ChoiceBox, title=_("Leave DVD player?"), list=choices)
 
@@ -561,9 +557,9 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 			print("[DVD] play", newref.toString())
 			if curref is None or curref != newref:
 				self.service = None
-				if newref.toString()[-9:] == "/VIDEO_TS" or newref.toString()[-1] == "/":
+				if newref.toString().endswith("/VIDEO_TS") or newref.toString().endswith("/"):
 					names = newref.toString().rsplit("/", 3)
-					if names[2][:5] == "Disk " or names[2][:4] == "DVD ":
+					if names[2].startswith("Disk ") or names[2].startswith("DVD "):
 						name = str(names[1]) + " - " + str(names[2])
 					else:
 						name = names[2]
@@ -571,7 +567,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 
 #				Construct a path for the IFO header assuming it exists
 				ifofilename = val
-				if ifofilename.upper()[-9:] != "/VIDEO_TS":
+				if not ifofilename.upper().endswith("/VIDEO_TS"):
 					ifofilename += "/VIDEO_TS"
 				files = [("/VIDEO_TS.IFO", 0x100), ("/VTS_01_0.IFO", 0x100), ("/VTS_01_0.IFO", 0x200)] # ( filename, offset )
 				for name in files:
