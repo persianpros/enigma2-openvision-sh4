@@ -100,7 +100,6 @@ class PictureInPicture(Screen):
 		self.resize(w, h)
 
 	def fixPiPSize(self):
-		# Hack to fix PiP size and position on spark
 		x = config.av.pip.value[0]
 		y = config.av.pip.value[1]
 		w = config.av.pip.value[2]
