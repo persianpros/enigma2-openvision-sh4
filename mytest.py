@@ -532,6 +532,12 @@ def runScreenTest():
 	profile("Init:PowerKey")
 	power = PowerKey(session)
 
+	from Components.SystemInfo import SystemInfo
+	if SystemInfo["VFDSymbol"]:
+		profile("VFDSYMBOLS")
+		import Components.VfdSymbols
+		Components.VfdSymbols.SymbolsCheck(session)
+
 	# we need session.scart to access it from within menu.xml
 	session.scart = AutoScartControl(session)
 
@@ -614,10 +620,6 @@ Components.AVSwitch.InitAVSwitch()
 
 profile("FanControl")
 from Components.FanControl import fancontrol
-
-#profile("HdmiRecord")
-#import Components.HdmiRecord
-#Components.HdmiRecord.InitHdmiRecord()
 
 profile("RecordingConfig")
 import Components.RecordingConfig

@@ -18,6 +18,7 @@ import NavigationInstance
 from ServiceReference import ServiceReference, isPlayableForCur
 from Screens.InfoBar import InfoBar
 from Components.Sources.StreamService import StreamServiceList
+from os import path
 
 # TODO: remove pNavgation, eNavigation and rewrite this stuff in python.
 
@@ -131,6 +132,17 @@ class Navigation:
 			print("[Navigation] ignore request to play already running service(1)")
 			return 1
 		print("[Navigation] playing", ref and ref.toString())
+		if path.exists("/proc/stb/lcd/symbol_signal") and config.lcd.mode.value == '1':
+			try:
+				if '0:0:0:0:0:0:0:0:0' not in ref.toString():
+					signal = 1
+				else:
+					signal = 0
+				open("/proc/stb/lcd/symbol_signal", "w").write(str(signal))
+			except:
+				open("/proc/stb/lcd/symbol_signal", "w").write("0")
+		elif path.exists("/proc/stb/lcd/symbol_signal") and config.lcd.mode.value == '0':
+			open("/proc/stb/lcd/symbol_signal", "w").write("0")
 		if ref is None:
 			self.stopService()
 			return 0
@@ -172,7 +184,7 @@ class Navigation:
 				if InfoBarInstance and InfoBarInstance.servicelist.servicelist.setCurrent(ref, adjust):
 					self.currentlyPlayingServiceOrGroup = InfoBarInstance.servicelist.servicelist.getCurrent()
 				setPriorityFrontend = False
-				if SystemInfo["priority_tuner_available"] and (SystemInfo["DVB-T_priority_tuner_available"] or SystemInfo["DVB-C_priority_tuner_available"] or SystemInfo["DVB-S_priority_tuner_available"] or SystemInfo["ATSC_priority_tuner_available"]):
+				if SystemInfo["DVB-T_priority_tuner_available"] or SystemInfo["DVB-C_priority_tuner_available"] or SystemInfo["DVB-S_priority_tuner_available"] or SystemInfo["ATSC_priority_tuner_available"]:
 					str_service = playref.toString()
 					if '%3a//' not in str_service and not str_service.rsplit(":", 1)[1].startswith("/"):
 						type_service = playref.getUnsignedData(4) >> 16
@@ -254,6 +266,8 @@ class Navigation:
 			self.pnav.stopService()
 		self.currentlyPlayingServiceReference = None
 		self.currentlyPlayingServiceOrGroup = None
+		if path.exists("/proc/stb/lcd/symbol_signal"):
+			open("/proc/stb/lcd/symbol_signal", "w").write("0")
 
 	def pause(self, p):
 		return self.pnav and self.pnav.pause(p)

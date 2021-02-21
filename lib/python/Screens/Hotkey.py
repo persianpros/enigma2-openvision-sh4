@@ -44,9 +44,9 @@ class hotkey:
 		("Radio", "radio", ""),
 		("Radio" + " " + _("long"), "radio_long", ""),
 		("TV", "showTv", ""),
-		("TV" + " " + _("long"), "showTv_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("TV" + " " + _("long"), "showTv_long", ""),
 		("TV2", "toggleTvRadio", ""),
-		("TV2" + " " + _("long"), "toggleTvRadio_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("TV2" + " " + _("long"), "toggleTvRadio_long", ""),
 		("Teletext", "text", ""),
 		("Help", "displayHelp", ""),
 		("Help" + " " + _("long"), "displayHelp_long", ""),
@@ -106,8 +106,6 @@ class hotkey:
 		("Home", "home", ""),
 		("Power", "power", "Module/Screens.Standby/Standby"),
 		("Power" + " " + _("long"), "power_long", "Menu/shutdown"),
-		("HDMIin", "HDMIin", "Infobar/HDMIIn"),
-		("HDMIin" + " " + _("long"), "HDMIin_long", ""),
 		("Media", "media", ""),
 		("Media" + " " + _("long"), "media_long", ""),
 		("Open", "open", ""),
@@ -224,10 +222,6 @@ def getHotkeyFunctions():
 		hotkey.functions.append((_("Move PiP"), "Infobar/movePiP", "InfoBar"))
 		hotkey.functions.append((_("Toggle PiPzap"), "Infobar/togglePipzap", "InfoBar"))
 	hotkey.functions.append((_("Activate HbbTV (Redbutton)"), "Infobar/activateRedButton", "InfoBar"))
-	if SystemInfo["HasHDMIin"]:
-		hotkey.functions.append((_("Toggle HDMI In"), "Infobar/HDMIIn", "InfoBar"))
-	if SystemInfo["LcdLiveTV"]:
-		hotkey.functions.append((_("Toggle LCD LiveTV"), "Infobar/ToggleLCDLiveTV", "InfoBar"))
 	hotkey.functions.append((_("Toggle dashed flickering line for this service"), "Infobar/ToggleHideVBI", "InfoBar"))
 	hotkey.functions.append((_("Do nothing"), "Void", "InfoBar"))
 	if SystemInfo["HasHDMI-CEC"]:
@@ -751,9 +745,6 @@ class InfoBarHotkey():
 			self.openServiceList()
 		elif hasattr(self, "showMovies"):
 			self.showMovies()
-
-	def ToggleLCDLiveTV(self):
-		config.lcd.showTv.value = not config.lcd.showTv.value
 
 	def SourceActiveHdmiCec(self):
 		self.setHdmiCec("sourceactive")

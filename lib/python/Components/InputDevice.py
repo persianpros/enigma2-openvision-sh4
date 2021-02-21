@@ -180,7 +180,7 @@ class InitInputDevices:
 	def setupConfigEntries(self, device):
 		cmd = "config.inputDevices." + device + " = ConfigSubsection()"
 		exec(cmd)
-		cmd = "config.inputDevices." + device + ".enabled = ConfigYesNo(default = True)"
+		cmd = "config.inputDevices." + device + ".enabled = ConfigYesNo(default = False)"
 		exec(cmd)
 		cmd = "config.inputDevices." + device + ".enabled.addNotifier(self.inputDevicesEnabledChanged,config.inputDevices." + device + ".enabled)"
 		exec(cmd)

@@ -149,7 +149,7 @@ class Picon(Renderer):
 
 	def changed(self, what):
 		if self.instance:
-			if self.showPicon or config.usage.show_picon_in_display.value:
+			if self.showPicon:
 				pngname = ""
 				if what[0] != self.CHANGED_CLEAR:
 					pngname = getPiconName(self.source.text)

@@ -21,7 +21,7 @@ install_PYTHON = \
 	Task.py Console.py ResourceManager.py TuneTest.py \
 	Keyboard.py Sensors.py FanControl.py HdmiCec.py RcModel.py \
 	Netlink.py InputHotplug.py \
-	ImportChannels.py ChannelsImporter.py ClientMode.py \
+	ImportChannels.py VfdSymbols.py ChannelsImporter.py ClientMode.py \
 	StackTrace.py PowerTimerList.py EpgLoadSave.py
 
 if ENABLE_QBOXHD

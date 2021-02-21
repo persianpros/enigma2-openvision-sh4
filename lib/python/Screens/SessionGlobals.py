@@ -12,6 +12,7 @@ from Components.Sources.RecordState import RecordState
 from Components.Sources.HddState import HddState
 from Components.Converter.Combine import Combine
 from Components.Renderer.FrontpanelLed import FrontpanelLed
+from Components.config import config
 
 
 class SessionGlobals(Screen):
@@ -45,6 +46,50 @@ class SessionGlobals(Screen):
 		PATTERN_ON = (20, 0xffffffff, 0xffffffff)
 		PATTERN_OFF = (20, 0, 0)
 		PATTERN_BLINK = (20, 0x55555555, 0xa7fccf7a)
+
+		NormalLed0 = PATTERN_OFF
+		NormalLed1 = PATTERN_OFF
+		if config.usage.frontled_color.value == "1":
+			NormalLed0 = PATTERN_ON
+		if config.usage.frontled_color.value == "2":
+			NormalLed1 = PATTERN_ON
+		if config.usage.frontled_color.value == "3":
+			NormalLed0 = PATTERN_BLINK
+		if config.usage.frontled_color.value == "4":
+			NormalLed1 = PATTERN_BLINK
+
+		RecLed0 = PATTERN_OFF
+		RecLed1 = PATTERN_OFF
+		if config.usage.frontledrec_color.value == "1":
+			RecLed0 = PATTERN_ON
+		if config.usage.frontledrec_color.value == "2":
+			RecLed1 = PATTERN_ON
+		if config.usage.frontledrec_color.value == "3":
+			RecLed0 = PATTERN_BLINK
+		if config.usage.frontledrec_color.value == "4":
+			RecLed1 = PATTERN_BLINK
+
+		StandbyLed0 = PATTERN_OFF
+		StandbyLed1 = PATTERN_OFF
+		if config.usage.frontledstdby_color.value == "1":
+			StandbyLed0 = PATTERN_ON
+		if config.usage.frontledstdby_color.value == "2":
+			StandbyLed1 = PATTERN_ON
+		if config.usage.frontledstdby_color.value == "3":
+			StandbyLed0 = PATTERN_BLINK
+		if config.usage.frontledstdby_color.value == "4":
+			StandbyLed1 = PATTERN_BLINK
+
+		RecstdbyLed0 = PATTERN_OFF
+		RecstdbyLed1 = PATTERN_OFF
+		if config.usage.frontledrecstdby_color.value == "1":
+			RecstdbyLed0 = PATTERN_ON
+		if config.usage.frontledrecstdby_color.value == "2":
+			RecstdbyLed1 = PATTERN_ON
+		if config.usage.frontledrecstdby_color.value == "3":
+			RecstdbyLed0 = PATTERN_BLINK
+		if config.usage.frontledrecstdby_color.value == "4":
+			RecstdbyLed1 = PATTERN_BLINK
 
 		nr_leds = SystemInfo.get("NumFrontpanelLEDs", 0)
 
