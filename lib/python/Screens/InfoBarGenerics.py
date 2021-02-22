@@ -470,7 +470,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 				self.DimmingTimer.start(5, True)
 			else:
 				self.DimmingTimer.stop()
-				self.hide(
+				self.hide()
 
 	def okButtonCheck(self):
 		if config.usage.ok_is_channelselection.value and hasattr(self, "openServiceList"):
