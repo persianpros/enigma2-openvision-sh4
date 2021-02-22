@@ -50,14 +50,12 @@ eDVBAudio::eDVBAudio(eDVBDemux *demux, int dev)
 	m_fd = ::open(filename, O_RDWR | O_CLOEXEC);
 	if (m_fd < 0)
 		eWarning("[eDVBAudio] %s: %m", filename);
-	eDebug("[eDVBAudio] Audio Device: %s", filename);
 	if (demux)
 	{
 		sprintf(filename, "/dev/dvb/adapter%d/demux%d", demux->adapter, demux->demux);
 		m_fd_demux = ::open(filename, O_RDWR | O_CLOEXEC);
 		if (m_fd_demux < 0)
 			eWarning("[eDVBAudio] %s: %m", filename);
-		eDebug("[eDVBAudio] demux device: %s", filename);
 	}
 	else
 	{
@@ -103,7 +101,14 @@ int eDVBAudio::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+// already started cause of DMX_IMMEDIATE_START
+		eDebugNoNewLineStart("[eDVBAudio%d] DEMUX_START ", m_dev);
+		if (::ioctl(m_fd_demux, DMX_START) < 0)
+		{
+			eDebugNoNewLine("failed: %m\n");
+			return -errno;
+		}
+		eDebugNoNewLine("ok\n");
 	}
 
 	if (m_fd >= 0)
@@ -148,7 +153,7 @@ int eDVBAudio::startPid(int pid, int type)
 		else
 			eDebugNoNewLine("ok\n");
 // this is a hack which only matters for dm drivers
-// why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setStatef
+//		freeze();  // why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
 		eDebugNoNewLineStart("[eDVBAudio%d] AUDIO_PLAY ", m_dev);
 		if (::ioctl(m_fd, AUDIO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");
@@ -400,13 +405,20 @@ int eDVBVideo::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+// already started cause of DMX_IMMEDIATE_START
+		eDebugNoNewLineStart("[eDVBVideo%d] DEMUX_START ", m_dev);
+		if (::ioctl(m_fd_demux, DMX_START) < 0)
+		{
+			eDebugNoNewLine("failed: %m\n");
+			return -errno;
+		}
+		eDebugNoNewLine("ok\n");
 	}
 
 	if (m_fd >= 0)
 	{
 // this is a hack which only matters for dm drivers
-// why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
+//		freeze();  // why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
 		eDebugNoNewLineStart("[eDVBVideo%d] VIDEO_PLAY ", m_dev);
 		if (::ioctl(m_fd, VIDEO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");
@@ -737,7 +749,14 @@ int eDVBPCR::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+// already started cause of DMX_IMMEDIATE_START
+	eDebugNoNewLineStart("[eDVBPCR%d] DEMUX_START ", m_dev);
+	if (::ioctl(m_fd_demux, DMX_START) < 0)
+	{
+		eDebugNoNewLine("failed: %m\n");
+		return -errno;
+	}
+	eDebugNoNewLine("ok\n");
 	return 0;
 }
 
@@ -803,7 +822,14 @@ int eDVBTText::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+// already started cause of DMX_IMMEDIATE_START
+	eDebugNoNewLineStart("[eDVBText%d] DEMUX_START ", m_dev);
+	if (::ioctl(m_fd_demux, DMX_START) < 0)
+	{
+		eDebugNoNewLine("failed: %m\n");
+		return -errno;
+	}
+	eDebugNoNewLine("ok\n");
 	return 0;
 }
 
@@ -1278,15 +1304,22 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 			{
 				bool seq_end_avail = false;
 				size_t pos=0;
-				static const unsigned char pes_header[] = { 0x00, 0x00, 0x01, 0xE0, 0x00, 0x00, 0x80, 0x80, 0x05, 0x21, 0x00, 0x01, 0x00, 0x01 };
-				static const unsigned char seq_end[] = { 0x00, 0x00, 0x01, 0xB7 };
+				unsigned char pes_header[] = { 0x00, 0x00, 0x01, 0xE0, 0x00, 0x00, 0x80, 0x80, 0x05, 0x21, 0x00, 0x01, 0x00, 0x01 };
+				unsigned char seq_end[] = { 0x00, 0x00, 0x01, 0xB7 };
 				unsigned char iframe[s.st_size];
 				unsigned char stuffing[8192];
-				memset(stuffing, 0, sizeof stuffing);
+				int streamtype;
+				memset(stuffing, 0, sizeof(stuffing));
 				ssize_t ret = read(f, iframe, s.st_size);
 				if (ret < 0) eDebug("[eTSMPEGDecoder] read failed: %m");
+				if (iframe[0] == 0x00 && iframe[1] == 0x00 && iframe[2] == 0x00 && iframe[3] == 0x01 && (iframe[4] & 0x0f) == 0x07)
+					streamtype = VIDEO_STREAMTYPE_MPEG4_H264;
+				else
+					streamtype = VIDEO_STREAMTYPE_MPEG2;
 				if (ioctl(m_video_clip_fd, VIDEO_SELECT_SOURCE, VIDEO_SOURCE_MEMORY) < 0)
-					eDebug("[eTSMPEGDecoder] VIDEO_SELECT_SOURCE MEMORY failed: %m"); 
+					eDebug("[eTSMPEGDecoder] VIDEO_SELECT_SOURCE MEMORY failed: %m");
+				if (ioctl(m_video_clip_fd, VIDEO_SET_STREAMTYPE, streamtype) < 0)
+					eDebug("[eTSMPEGDecoder] VIDEO_SET_STREAMTYPE failed: %m");
 				if (ioctl(m_video_clip_fd, VIDEO_PLAY) < 0)
 					eDebug("[eTSMPEGDecoder] VIDEO_PLAY failed: %m");
 				if (ioctl(m_video_clip_fd, VIDEO_CONTINUE) < 0)
@@ -1305,7 +1338,8 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 					ret = write(m_video_clip_fd, seq_end, sizeof(seq_end));
 					if (ret < 0) eDebug("[eTSMPEGDecoder] write failed: %m");
 				}
-				writeAll(m_video_clip_fd, stuffing, sizeof stuffing);
+				writeAll(m_video_clip_fd, stuffing, sizeof(stuffing));
+				m_showSinglePicTimer->start(150, true);
 			}
 			close(f);
 		}

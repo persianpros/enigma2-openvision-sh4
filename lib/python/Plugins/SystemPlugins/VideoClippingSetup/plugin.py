@@ -3,9 +3,6 @@
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigSubsection, ConfigInteger, ConfigSlider, getConfigListEntry
-from Components.ServiceEventTracker import ServiceEventTracker
-from enigma import iPlayableService
-
 
 config.plugins.VideoClippingSetup = ConfigSubsection()
 config.plugins.VideoClippingSetup.clip_left = ConfigInteger(default=0)
@@ -99,21 +96,6 @@ class VideoClippingCoordinates(Screen, ConfigListScreen):
 		self.close()
 
 
-class VideoClippingSetup(Screen):
-	instance = None
-
-	def __init__(self, session):
-		self.session = session
-		Screen.__init__(self, session)
-		self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
-				iPlayableService.evUpdatedInfo: self.setConfiguredPosition,
-				iPlayableService.evStart: self.setConfiguredPosition,
-			})
-
-	def setConfiguredPosition(self):
-		setConfiguredPosition()
-
-
 def setPosition(clip_left, clip_width, clip_top, clip_height):
 	if clip_left + clip_width > 720:
 		clip_width = 720 - clip_left
@@ -144,16 +126,8 @@ def main(session, **kwargs):
 	session.open(VideoClippingCoordinates)
 
 
-def menu(menuid):
-	if menuid != "system":
-		return []
-	return [(_("Video clipping setup"), main, "VideoClippingSetup", None)]
-
-
 def startup(reason, **kwargs):
-	if "session" in kwargs:
-		session = kwargs["session"]
-		VideoClippingSetup(session)
+	setConfiguredPosition()
 
 
 def Plugins(**kwargs):

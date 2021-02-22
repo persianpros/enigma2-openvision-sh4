@@ -521,7 +521,7 @@ class LocationBox(Screen, NumericalTextInput, HelpableScreen):
 
 			# Select file starting with generated text
 			for file in files:
-				if file[0][0] and file[0][0].lower()[:len(lookfor)] == lookfor:
+				if file[0][0] and file[0][0].lower().startswith(lookfor):
 					self["filelist"].instance.moveSelectionTo(idx)
 					break
 				idx += 1

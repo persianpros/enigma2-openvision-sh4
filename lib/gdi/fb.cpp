@@ -55,7 +55,7 @@ fbClass::fbClass(const char *fb)
 		goto nolfb;
 	}
 
-	available=fix.smem_len;
+	available = fix.smem_len;
 	m_phys_mem = fix.smem_start;
 	eDebug("[fb] %s: %dk video mem", fb, available/1024);
 	// The first 1920x1080x4 bytes are reserved
@@ -65,7 +65,7 @@ fbClass::fbClass(const char *fb)
 	lfb=(unsigned char*)mmap(0, available, PROT_WRITE|PROT_READ, MAP_SHARED, fbFd, 1920*1080*4);
 	if (!lfb)
 	{
-		eDebug("[fb] mmap: %m");
+		eDebug("[fb] mmap %m");
 		goto nolfb;
 	}
 	return;
@@ -75,7 +75,7 @@ nolfb:
 		::close(fbFd);
 		fbFd = -1;
 	}
-	eDebug("[fb] framebuffer %s not available", fb);
+	eDebug("[fb] framebuffer not available");
 	return;
 }
 

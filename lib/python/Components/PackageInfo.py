@@ -211,8 +211,8 @@ class PackageInfoHandler:
 			self.directory = [self.directory]
 
 		for indexfile in os.listdir(self.directory[0]):
-			if indexfile[:6] == "index-":
-				if indexfile[-4:] == ".xml":
+			if indexfile.startswith("index-"):
+				if indexfile.endswith(".xml"):
 					if indexfile[-7:-6] == "_":
 						continue
 					indexfileList.append(indexfile)

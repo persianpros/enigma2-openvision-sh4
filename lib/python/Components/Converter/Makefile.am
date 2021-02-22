@@ -8,7 +8,7 @@ install_PYTHON = \
 	ServiceOrbitalPosition.py CryptoInfo.py TextCase.py \
 	ValueBitTest.py TunerInfo.py ConfigEntryTest.py ClientsStreaming.py TemplatedMultiContent.py ProgressToText.py \
 	Combine.py SensorToText.py ValueToPixmap.py PliExtraInfo.py genre.py TransponderInfo.py \
-	VfdNumberClock.py RotorPosition.py VfdDisplay.py AnalogClock.py ServiceName2.py LayoutInfo.py \
+	RotorPosition.py VfdDisplay.py AnalogClock.py ServiceName2.py LayoutInfo.py \
 	HbbtvApplicationInfo.py BhAnalogic.py BhStreamInfo.py VNetSpeedInfo.py VisionCamInfo.py CaidInfo2.py RefString.py \
 	EventName2.py ServiceInfo2.py CpuUsage.py ProgressDiskSpaceInfo.py RouteInfo.py ServiceInfoEX.py Audio.py \
 	VAudioInfo.py TextAddAfter.py TextAddBefore.py Textreplace.py TextToUpper.py

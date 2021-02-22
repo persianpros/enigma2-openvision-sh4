@@ -501,7 +501,7 @@ void eDVBTeletextParser::handleLine(unsigned char *data, int len)
 					(m_C & (1<<13) ? 2 : 0) |
 					(m_C & (1<<12) ? 4 : 0),
 		nat_subset,nat_subset_2,second_G0_set=0;
-					
+
 		if (m_L > 0)
 			nat_subset_2 = country_lookup[m_L];
 		else

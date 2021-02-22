@@ -173,7 +173,9 @@ def InitAVSwitch():
 	config.av.wss.addNotifier(setWSS)
 
 	iAVSwitch.setInput("ENCODER") # init on startup
-	SystemInfo["ScartSwitch"] = eAVSwitch.getInstance().haveScartSwitch()
+	detected = eAVSwitch.getInstance().haveScartSwitch()
+
+	SystemInfo["ScartSwitch"] = detected
 
 	if SystemInfo["CanDownmixAC3"]:
 		def setAC3Downmix(configElement):
@@ -181,17 +183,71 @@ def InitAVSwitch():
 		config.av.downmix_ac3 = ConfigYesNo(default=True)
 		config.av.downmix_ac3.addNotifier(setAC3Downmix)
 
+	if SystemInfo["CanAC3plusTranscode"]:
+		def setAC3plusTranscode(configElement):
+			open("/proc/stb/audio/ac3plus", "w").write(configElement.value)
+		choice_list = [("use_hdmi_caps", _("controlled by HDMI")), ("force_ac3", _("convert to AC3"))]
+		config.av.transcodeac3plus = ConfigSelection(choices=choice_list, default="force_ac3")
+		config.av.transcodeac3plus.addNotifier(setAC3plusTranscode)
+
 	if SystemInfo["CanDownmixDTS"]:
 		def setDTSDownmix(configElement):
 			open("/proc/stb/audio/dts", "w").write(configElement.value and "downmix" or "passthrough")
 		config.av.downmix_dts = ConfigYesNo(default=True)
 		config.av.downmix_dts.addNotifier(setDTSDownmix)
 
+	if SystemInfo["CanDTSHD"]:
+		def setDTSHD(configElement):
+			open("/proc/stb/audio/dtshd", "w").write(configElement.value)
+		choice_list = [("downmix", _("Downmix")), ("force_dts", _("convert to DTS")), ("use_hdmi_caps", _("controlled by HDMI")), ("multichannel", _("convert to multi-channel PCM")), ("hdmi_best", _("use best / controlled by HDMI"))]
+		config.av.dtshd = ConfigSelection(choices=choice_list, default="downmix")
+		config.av.dtshd.addNotifier(setDTSHD)
+
+	if SystemInfo["CanWMAPRO"]:
+		def setWMAPRO(configElement):
+			open("/proc/stb/audio/wmapro", "w").write(configElement.value)
+		choice_list = [("downmix", _("Downmix")), ("passthrough", _("Passthrough")), ("multichannel", _("convert to multi-channel PCM")), ("hdmi_best", _("use best / controlled by HDMI"))]
+		config.av.wmapro = ConfigSelection(choices=choice_list, default="downmix")
+		config.av.wmapro.addNotifier(setWMAPRO)
+
 	if SystemInfo["CanDownmixAAC"]:
 		def setAACDownmix(configElement):
 			open("/proc/stb/audio/aac", "w").write(configElement.value and "downmix" or "passthrough")
 		config.av.downmix_aac = ConfigYesNo(default=True)
 		config.av.downmix_aac.addNotifier(setAACDownmix)
+
+	if SystemInfo["CanDownmixAACPlus"]:
+		def setAACDownmixPlus(configElement):
+			open("/proc/stb/audio/aacplus", "w").write(configElement.value)
+		choice_list = [("downmix", _("Downmix")), ("passthrough", _("Passthrough")), ("multichannel", _("convert to multi-channel PCM")), ("force_ac3", _("convert to AC3")), ("force_dts", _("convert to DTS")), ("use_hdmi_cacenter", _("use_hdmi_cacenter")), ("wide", _("wide")), ("extrawide", _("extrawide"))]
+		config.av.downmix_aacplus = ConfigSelection(choices=choice_list, default="downmix")
+		config.av.downmix_aacplus.addNotifier(setAACDownmixPlus)
+
+	if SystemInfo["CanAACTranscode"]:
+		def setAACTranscode(configElement):
+			open("/proc/stb/audio/aac_transcode", "w").write(configElement.value)
+		choice_list = [("off", _("off")), ("ac3", _("AC3")), ("dts", _("DTS"))]
+		config.av.transcodeaac = ConfigSelection(choices=choice_list, default="off")
+		config.av.transcodeaac.addNotifier(setAACTranscode)
+	else:
+		config.av.transcodeaac = ConfigNothing()
+
+	if SystemInfo["CanBTAudio"]:
+		def setBTAudio(configElement):
+			open("/proc/stb/audio/btaudio", "w").write(configElement.value)
+		choice_list = [("off", _("off")), ("on", _("on"))]
+		config.av.btaudio = ConfigSelection(choices=choice_list, default="off")
+		config.av.btaudio.addNotifier(setBTAudio)
+	else:
+		config.av.btaudio = ConfigNothing()
+
+	if SystemInfo["CanBTAudioDelay"]:
+		def setBTAudioDelay(configElement):
+			open("/proc/stb/audio/btaudio", "w").write(format(configElement.value * 90))
+		config.av.btaudiodelay = ConfigSelectionNumber(-1000, 1000, 5, default=0)
+		config.av.btaudiodelay.addNotifier(setBTAudioDelay)
+	else:
+		config.av.btaudiodelay = ConfigNothing()
 
 	if SystemInfo["CanChangeOsdAlpha"]:
 		def setAlpha(config):
@@ -220,6 +276,42 @@ def InitAVSwitch():
 		config.av.multichannel_pcm = ConfigYesNo(default=False)
 		config.av.multichannel_pcm.addNotifier(setMultichannelPCM)
 
+	if SystemInfo["HasAutoVolume"]:
+		def setAutoVolume(configElement):
+			open(SystemInfo["HasAutoVolume"], "w").write(configElement.value)
+		config.av.autovolume = ConfigSelection(default="none", choices=[("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))])
+		config.av.autovolume.addNotifier(setAutoVolume)
+
+	if SystemInfo["HasAutoVolumeLevel"]:
+		def setAutoVolumeLevel(configElement):
+			open(SystemInfo["HasAutoVolumeLevel"], "w").write(configElement.value and "enabled" or "disabled")
+		config.av.autovolumelevel = ConfigYesNo(default=False)
+		config.av.autovolumelevel.addNotifier(setAutoVolumeLevel)
+
+	if SystemInfo["Has3DSurround"]:
+		def set3DSurround(configElement):
+			open(SystemInfo["Has3DSurround"], "w").write(configElement.value)
+		config.av.surround_3d = ConfigSelection(default="none", choices=[("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))])
+		config.av.surround_3d.addNotifier(set3DSurround)
+
+	if SystemInfo["Has3DSpeaker"]:
+		def set3DSpeaker(configElement):
+			open(SystemInfo["Has3DSpeaker"], "w").write(configElement.value)
+		config.av.speaker_3d = ConfigSelection(default="center", choices=[("center", _("center")), ("wide", _("wide")), ("extrawide", _("extra wide"))])
+		config.av.speaker_3d.addNotifier(set3DSpeaker)
+
+	if SystemInfo["Has3DSurroundSpeaker"]:
+		def set3DSurroundSpeaker(configElement):
+			open(SystemInfo["Has3DSurroundSpeaker"], "w").write(configElement.value)
+		config.av.surround_3d_speaker = ConfigSelection(default="disabled", choices=[("disabled", _("off")), ("center", _("center")), ("wide", _("wide")), ("extrawide", _("extra wide"))])
+		config.av.surround_3d_speaker.addNotifier(set3DSurroundSpeaker)
+
+	if SystemInfo["Has3DSurroundSoftLimiter"]:
+		def set3DSurroundSoftLimiter(configElement):
+			open(SystemInfo["Has3DSurroundSoftLimiter"], "w").write(configElement.value and "enabled" or "disabled")
+		config.av.surround_softlimiter_3d = ConfigYesNo(default=False)
+		config.av.surround_softlimiter_3d.addNotifier(set3DSurroundSoftLimiter)
+
 	if SystemInfo["HDMIAudioSource"]:
 		def setHDMIAudioSource(configElement):
 			open(SystemInfo["HDMIAudioSource"], "w").write(configElement.value)
@@ -228,5 +320,5 @@ def InitAVSwitch():
 
 	def setVolumeStepsize(configElement):
 		eDVBVolumecontrol.getInstance().setVolumeSteps(int(configElement.value))
-	config.av.volume_stepsize = ConfigSelectionNumber(1, 10, 1, default=2)
+	config.av.volume_stepsize = ConfigSelectionNumber(1, 10, 1, default=5)
 	config.av.volume_stepsize.addNotifier(setVolumeStepsize)

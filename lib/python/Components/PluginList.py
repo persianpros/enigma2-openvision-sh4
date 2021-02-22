@@ -45,7 +45,7 @@ def PluginDownloadComponent(plugin, name, version=None, width=440):
 		if "+git" in version:
 			# remove git "hash"
 			version = "+".join(version.split("+")[:2])
-		elif version[:13] == 'experimental-':
+		elif version.startswith('experimental-'):
 			version = version[13:]
 		name += "  (" + version + ")"
 	x, y, h = skin.parameters.get("PluginBrowserDownloadName", (80, 5, 25))

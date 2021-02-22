@@ -9,7 +9,7 @@ export PATH=$PATH:/usr/script
 # write -E2- on vfd display
 echo "OV" > /dev/vfd
 
-if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.pyo ]; then
+if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.pyo ] || [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.py ]; then
 	cpufreq=`cat /etc/enigma2/settings | grep config.plugins.booster.normalfrequenz | cut -d "=" -f2`
 	case $cpufreq in
 		200) overclk=5123;;
@@ -122,9 +122,7 @@ while : ; do
 			/sbin/halt
 			;;
 		2)
-			if [ -f /proc/stb/fp/force_restart ]; then
-				echo 1 > /proc/stb/fp/force_restart
-			fi
+			[ -f /proc/stb/fp/force_restart ] && echo 1 > /proc/stb/fp/force_restart
 			/sbin/reboot
 			;;
 		3)

@@ -17,9 +17,9 @@ class VolumeControl:
 	a corresponding dialog"""
 
 	def __init__(self, session):
-		globalActionMap.actions["volumeUp"] = self.volumeUp
-		globalActionMap.actions["volumeDown"] = self.volumeDown
-		globalActionMap.actions["volumeMute"] = self.volumeMute
+		globalActionMap.actions["volumeUp"] = self.volUp
+		globalActionMap.actions["volumeDown"] = self.volDown
+		globalActionMap.actions["volumeMute"] = self.volMute
 		globalActionMap.actions["volumeMuteLong"] = self.volMuteLong
 
 		assert not VolumeControl.instance, "only one VolumeControl instance is allowed!"
@@ -45,15 +45,6 @@ class VolumeControl:
 		else:
 			config.audio.volume.value = self.volctrl.getVolume()
 		config.audio.volume.save()
-
-	def volumeUp(self):
-		self.volUp()
-
-	def volumeDown(self):
-		self.volDown()
-
-	def volumeMute(self):
-		self.volMute()
 
 	def volUp(self):
 		self.setVolume(+1)
