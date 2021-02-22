@@ -100,7 +100,6 @@ class eDVBCISlot: public iObject, public sigc::trackable
 	bool user_mapped;
 	void data(int);
 	bool plugged;
-	//dagobert
 	char connection_id;
 	bool mmi_active;
 	int receivedLen;
