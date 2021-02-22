@@ -42,9 +42,9 @@ class ServicePosition(PerServiceDisplay, object):
 		service = self.navcore.getCurrentService()
 		seek = service and service.seek()
 		if seek is not None:
-			if what is self.TYPE_LENGTH:
+			if what == self.TYPE_LENGTH:
 				r = seek.getLength()
-			elif what is self.TYPE_POSITION:
+			elif what == self.TYPE_POSITION:
 				r = seek.getPlayPosition()
 			if not r[0]:
 				return r[1] / 90000
@@ -58,12 +58,12 @@ class ServicePosition(PerServiceDisplay, object):
 			seek = service.seek()
 
 		if seek is not None:
-			if self.type is not self.TYPE_RELATIVE:
-				if self.type is self.TYPE_LENGTH:
+			if self.type != self.TYPE_RELATIVE:
+				if self.type == self.TYPE_LENGTH:
 					l = self.get(self.TYPE_LENGTH)
-				elif self.type is self.TYPE_POSITION:
+				elif self.type == self.TYPE_POSITION:
 					l = self.get(self.TYPE_POSITION)
-				elif self.type is self.TYPE_REMAINING:
+				elif self.type == self.TYPE_REMAINING:
 					l = self.get(self.TYPE_LENGTH) - self.get(self.TYPE_POSITION)
 
 				self.setText("%d:%02d" % (l / 60, l % 60))
