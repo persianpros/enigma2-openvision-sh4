@@ -331,7 +331,7 @@ void eDVBCISession::receiveData(eDVBCISlot *slot, const unsigned char *ptr, size
 		if ((!session_nb) || (session_nb >= SLMS))
 		{
 			eDebug("[CI SESS] PROTOCOL: illegal session number %x", session_nb);
-			//Dagobert during start-up we seems to have some problems
+			//during start-up we seems to have some problems
 			//on some modules which "looses" the connection. So reset it
 			deleteSessions(slot);
 			slot->reset();
