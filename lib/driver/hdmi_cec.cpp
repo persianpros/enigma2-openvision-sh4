@@ -412,6 +412,7 @@ long eHdmiCEC::translateKey(unsigned char code)
 			key = 0x193;
 			break;
 		case 0x44:
+		case 0x60:
 			key = 0xcf;
 			break;
 		case 0x45:
@@ -427,6 +428,7 @@ long eHdmiCEC::translateKey(unsigned char code)
 			key = 0xa8;
 			break;
 		case 0x49:
+		case 0x4B:
 			key = 0xd0;
 			break;
 		case 0x53:
@@ -479,6 +481,7 @@ long eHdmiCEC::translateKey(unsigned char code)
 			break;
 		default:
 			key = 0x8b;
+			eDebug("eHdmiCEC: unknown code 0x%02X", (unsigned int)(code & 0xFF));
 			break;
 	}
 	return key;
