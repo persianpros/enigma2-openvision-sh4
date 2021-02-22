@@ -102,6 +102,7 @@ int eDVBAudio::startPid(int pid, int type)
 		}
 		eDebugNoNewLine("ok\n");
 // already started cause of DMX_IMMEDIATE_START
+/*
 		eDebugNoNewLineStart("[eDVBAudio%d] DEMUX_START ", m_dev);
 		if (::ioctl(m_fd_demux, DMX_START) < 0)
 		{
@@ -109,6 +110,7 @@ int eDVBAudio::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
+*/
 	}
 
 	if (m_fd >= 0)
@@ -406,6 +408,7 @@ int eDVBVideo::startPid(int pid, int type)
 		}
 		eDebugNoNewLine("ok\n");
 // already started cause of DMX_IMMEDIATE_START
+/*
 		eDebugNoNewLineStart("[eDVBVideo%d] DEMUX_START ", m_dev);
 		if (::ioctl(m_fd_demux, DMX_START) < 0)
 		{
@@ -413,6 +416,7 @@ int eDVBVideo::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
+*/
 	}
 
 	if (m_fd >= 0)
@@ -750,6 +754,7 @@ int eDVBPCR::startPid(int pid)
 	}
 	eDebugNoNewLine("ok\n");
 // already started cause of DMX_IMMEDIATE_START
+/*
 	eDebugNoNewLineStart("[eDVBPCR%d] DEMUX_START ", m_dev);
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
@@ -757,6 +762,7 @@ int eDVBPCR::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
+*/
 	return 0;
 }
 
@@ -823,6 +829,7 @@ int eDVBTText::startPid(int pid)
 	}
 	eDebugNoNewLine("ok\n");
 // already started cause of DMX_IMMEDIATE_START
+/*
 	eDebugNoNewLineStart("[eDVBText%d] DEMUX_START ", m_dev);
 	if (::ioctl(m_fd_demux, DMX_START) < 0)
 	{
@@ -830,6 +837,7 @@ int eDVBTText::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
+*/
 	return 0;
 }
 
@@ -1308,18 +1316,22 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 				unsigned char seq_end[] = { 0x00, 0x00, 0x01, 0xB7 };
 				unsigned char iframe[s.st_size];
 				unsigned char stuffing[8192];
-				int streamtype;
+//				int streamtype;
 				memset(stuffing, 0, sizeof(stuffing));
 				ssize_t ret = read(f, iframe, s.st_size);
 				if (ret < 0) eDebug("[eTSMPEGDecoder] read failed: %m");
+/*
 				if (iframe[0] == 0x00 && iframe[1] == 0x00 && iframe[2] == 0x00 && iframe[3] == 0x01 && (iframe[4] & 0x0f) == 0x07)
 					streamtype = VIDEO_STREAMTYPE_MPEG4_H264;
 				else
 					streamtype = VIDEO_STREAMTYPE_MPEG2;
+*/
 				if (ioctl(m_video_clip_fd, VIDEO_SELECT_SOURCE, VIDEO_SOURCE_MEMORY) < 0)
 					eDebug("[eTSMPEGDecoder] VIDEO_SELECT_SOURCE MEMORY failed: %m");
+/*
 				if (ioctl(m_video_clip_fd, VIDEO_SET_STREAMTYPE, streamtype) < 0)
 					eDebug("[eTSMPEGDecoder] VIDEO_SET_STREAMTYPE failed: %m");
+*/
 				if (ioctl(m_video_clip_fd, VIDEO_PLAY) < 0)
 					eDebug("[eTSMPEGDecoder] VIDEO_PLAY failed: %m");
 				if (ioctl(m_video_clip_fd, VIDEO_CONTINUE) < 0)
@@ -1339,7 +1351,7 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 					if (ret < 0) eDebug("[eTSMPEGDecoder] write failed: %m");
 				}
 				writeAll(m_video_clip_fd, stuffing, sizeof(stuffing));
-				m_showSinglePicTimer->start(150, true);
+//				m_showSinglePicTimer->start(150, true);
 			}
 			close(f);
 		}
