@@ -5,6 +5,6 @@ install_PYTHON = \
 	KeyBindings.py BoundFunction.py ISO639.py Notifications.py __init__.py \
 	RedirectOutput.py StbHardware.py Import.py Event.py CList.py CIHelper.py \
 	LoadPixmap.py Profile.py HardwareInfo.py Transponder.py ASCIItranslit.py \
-	Downloader.py Trashcan.py GetEcmInfo.py Alternatives.py Command.py TextBoundary.py \
+	Downloader.py Trashcan.py GetEcmInfo.py Alternatives.py TextBoundary.py \
 	camcontrol.py CountryCodes.py Multiboot.py FallbackTimer.py \
-	CopyFiles.py Geolocation.py UnitConversions.py Trace.py
+	CopyFiles.py Log.py LogConfig.py Geolocation.py UnitConversions.py Trace.py

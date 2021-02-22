@@ -222,7 +222,7 @@ class CuberevoVFD:
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
-# konfetti: what that?
+# what?
 #	def enableDaylight(self):
 #		self.daylightEnabled = True
 #		try:

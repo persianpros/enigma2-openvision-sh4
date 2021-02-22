@@ -12,7 +12,7 @@ class Pig(Renderer):
 	def __init__(self):
 		Renderer.__init__(self)
 		self.Position = self.Size = None
-		# fix unavailable services in channel selection with pig on spark
+		# Fix unavailable services in channel selection with pig on SH4
 		#self.hidePip = True
 
 	GUI_WIDGET = eVideoWidget

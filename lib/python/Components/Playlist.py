@@ -37,7 +37,7 @@ class PlaylistIO:
 		else:
 			path = os.path.dirname(filename) + "/" + entry
 			for proto in self.REMOTE_PROTOS:
-				if entry[:len(proto)] == proto:
+				if entry.startswith(proto):
 					path = entry
 		ref = eServiceReference(4097, 0, path)
 		return ServiceReference(ref)
@@ -86,7 +86,7 @@ class PlaylistIOM3U(PlaylistIO):
 			entry = file.readline().strip()
 			if entry == "":
 				break
-			if entry[:8] == "#EXTINF:":
+			if entry.startswith("#EXTINF:"):
 				extinf = entry.split(',', 1)
 				if len(extinf) > 1:
 					self.displayname = extinf[1]

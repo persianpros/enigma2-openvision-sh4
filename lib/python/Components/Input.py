@@ -19,7 +19,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		GUIComponent.__init__(self)
 		VariableText.__init__(self)
 		self.type = type
-		self.allmarked = allMarked and (text != "") and (type is not self.PIN)
+		self.allmarked = allMarked and (text != "") and (type != self.PIN)
 		self.maxSize = maxSize
 		self.currPos = currPos
 		self.visible_width = visible_width
@@ -46,14 +46,14 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		else:
 			self.setMarkedPos(self.currPos - self.offset)
 		if self.visible_width:
-			if self.type is self.PIN:
+			if self.type == self.PIN:
 				self.text = ""
 				for x in self.Text[self.offset:self.offset + self.visible_width]:
 					self.text += (x == " " and " " or "*")
 			else:
 				self.text = self.Text[self.offset:self.offset + self.visible_width].encode("utf-8") + " "
 		else:
-			if self.type is self.PIN:
+			if self.type == self.PIN:
 				self.text = ""
 				for x in self.Text:
 					self.text += (x == " " and " " or "*")
@@ -100,13 +100,13 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 				self.currPos += 1
 
 	def right(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		self.innerright()
 		self.update()
 
 	def left(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			if self.maxSize:
@@ -120,7 +120,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 
 	def up(self):
 		self.allmarked = False
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.currPos == len(self.Text) or self.Text[self.currPos] == "9" or self.Text[self.currPos] == " ":
 			newNumber = "0"
@@ -131,7 +131,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 
 	def down(self):
 		self.allmarked = False
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.currPos == len(self.Text) or self.Text[self.currPos] == "0" or self.Text[self.currPos] == " ":
 			newNumber = "9"
@@ -142,14 +142,14 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 
 	def home(self):
 		self.allmarked = False
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		self.currPos = 0
 		self.update()
 
 	def end(self):
 		self.allmarked = False
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.maxSize:
 			self.currPos = len(self.Text) - 1
@@ -187,7 +187,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.currPos = 0
 
 	def tab(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			self.deleteAllChars()
@@ -198,7 +198,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.update()
 
 	def delete(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			self.deleteAllChars()
@@ -210,7 +210,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.update()
 
 	def deleteBackward(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			self.deleteAllChars()
@@ -224,7 +224,7 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.update()
 
 	def deleteForward(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			self.deleteAllChars()
@@ -234,13 +234,13 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.update()
 
 	def toggleOverwrite(self):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		self.overwrite = not self.overwrite
 		self.update()
 
 	def handleAscii(self, code):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			self.timeout()
 		if self.allmarked:
 			self.deleteAllChars()
@@ -253,17 +253,17 @@ class Input(VariableText, GUIComponent, NumericalTextInput):
 		self.update()
 
 	def number(self, number):
-		if self.type is self.TEXT:
+		if self.type == self.TEXT:
 			owr = self.lastKey == number
 			newChar = self.getKey(number)
-		elif self.type is self.PIN or self.type is self.NUMBER:
+		elif self.type == self.PIN or self.type == self.NUMBER:
 			owr = False
 			newChar = str(number)
 		if self.allmarked:
 			self.deleteAllChars()
 			self.allmarked = False
 		self.insertChar(newChar, self.currPos, owr, False)
-		if self.type is self.PIN or self.type is self.NUMBER:
+		if self.type == self.PIN or self.type == self.NUMBER:
 			self.innerright()
 		self.update()
 

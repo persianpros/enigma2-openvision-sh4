@@ -166,16 +166,6 @@ def getHotkeyFunctions():
 				twinPaths[plugin.path[24:]] = 1
 			hotkey.functions.append((plugin.name, plugin.path[24:] + "/" + str(twinPaths[plugin.path[24:]]), "Plugins"))
 			twinPlugins.append(plugin.name)
-	pluginlist = plugins.getPlugins([PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU])
-	pluginlist.sort(key=lambda p: p.name)
-	for plugin in pluginlist:
-		if plugin.name not in twinPlugins and plugin.path:
-			if plugin.path[24:] in twinPaths:
-				twinPaths[plugin.path[24:]] += 1
-			else:
-				twinPaths[plugin.path[24:]] = 1
-			hotkey.functions.append((plugin.name, plugin.path[24:] + "/" + str(twinPaths[plugin.path[24:]]), "Plugins"))
-			twinPlugins.append(plugin.name)
 	hotkey.functions.append((_("Main menu"), "Infobar/mainMenu", "InfoBar"))
 	hotkey.functions.append((_("Show help"), "Infobar/showHelp", "InfoBar"))
 	hotkey.functions.append((_("Show extension selection"), "Infobar/showExtensionSelection", "InfoBar"))
@@ -239,6 +229,7 @@ def getHotkeyFunctions():
 	for plugin in plugins.getPluginsForMenu("scan"):
 		hotkey.functions.append((plugin[0], "MenuPlugin/scan/" + plugin[2], "Scanning"))
 	hotkey.functions.append((_("Network"), "Module/Screens.NetworkSetup/NetworkAdapterSelection", "Setup"))
+	hotkey.functions.append((_("Skin"), "Module/Screens.SkinSelector/SkinSelector", "Setup"))
 	hotkey.functions.append((_("Plugin Browser"), "Module/Screens.PluginBrowser/PluginBrowser", "Setup"))
 	hotkey.functions.append((_("Sleeptimer edit"), "Module/Screens.SleepTimerEdit/SleepTimerEdit", "Setup"))
 	hotkey.functions.append((_("Channel Info"), "Module/Screens.ServiceInfo/ServiceInfo", "Setup"))
