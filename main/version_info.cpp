@@ -17,4 +17,3 @@ const char *enigma2_branch = ENIGMA2_BRANCH;
 const char *enigma2_rev = ENIGMA2_REV;
 
 const char *enigma2_version = (ENIGMA2_COMMIT_DATE "-" ENIGMA2_BRANCH);
-

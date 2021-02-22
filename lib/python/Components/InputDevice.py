@@ -32,6 +32,7 @@ def EVIOCGNAME(length):
 
 
 class inputDevices:
+	BLACKLIST = ("cec_input")
 
 	def __init__(self):
 		self.Devices = {}
@@ -53,6 +54,8 @@ class inputDevices:
 				self.name = None
 
 			if self.name:
+				if self.name in self.BLACKLIST:
+					continue
 				self.Devices[evdev] = {'name': self.name, 'type': self.getInputDeviceType(self.name), 'enabled': False, 'configuredName': None}
 
 	def getInputDeviceType(self, name):

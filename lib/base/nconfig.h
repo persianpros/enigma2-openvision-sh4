@@ -2,6 +2,7 @@
 #define __lib_base_nconfig_h_
 
 #include <string>
+#include <stdbool.h>
 
 class eConfigManager
 {

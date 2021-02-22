@@ -5,9 +5,7 @@
 #include <lib/base/init.h>
 #include <lib/dvb/idvb.h>
 
-#include <lib/service/event.h>
-
-static std::string encode(const std::string &s)
+static std::string encode(const std::string s)
 {
 	std::string res;
 
@@ -295,7 +293,7 @@ RESULT iServiceHandler::info(const eServiceReference &, ePtr<iStaticServiceInfor
 	return -1;
 }
 
-
+#include <lib/service/event.h>
 
 RESULT iStaticServiceInformation::getEvent(const eServiceReference &ref, ePtr<eServiceEvent> &evt, time_t start_time)
 {

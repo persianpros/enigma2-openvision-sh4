@@ -204,7 +204,7 @@ int eHttpStream::openUrl(const std::string &url, std::string &newurl)
 			break;
 		}
 
-		if (!isChunked && strncasecmp(linebuf, "transfer-encoding: chunked", strlen("transfer-encoding: chunked")) == 0)
+		if (((statuscode == 200) || (statuscode == 206)) && !strncasecmp(linebuf, "transfer-encoding: chunked", strlen("transfer-encoding: chunked")))
 		{
 			isChunked = true;
 		}
@@ -305,12 +305,9 @@ ssize_t eHttpStream::syncNextRead(void *buf, ssize_t length)
 	{
 		partialPktSz = (b + length) - e;
 		// if the last packet is read partially save it to align the next read
-		if (partialPktSz > 0 && packetSize > 0)
+		if (partialPktSz > 0 && partialPktSz < packetSize)
 		{
-			if (partialPktSz < (unsigned)packetSize)
-			{
-				memcpy(partialPkt, e, partialPktSz);
-			}
+			memcpy(partialPkt, e, partialPktSz);
 		}
 	}
 	return (length - partialPktSz);

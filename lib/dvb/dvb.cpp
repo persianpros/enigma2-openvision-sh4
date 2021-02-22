@@ -122,10 +122,10 @@ eDVBResourceManager::eDVBResourceManager()
 
 	m_fbcmng = new eFBCTunerManager(instance);
 
-		/*
-		 * this is a strange hack: the drivers seem to only work correctly after
-		 * demux0 has been used once. After that, we can use demux1,2,...
-		 */
+	/*
+	 * this is a strange hack: the drivers seem to only work correctly after
+	 * demux0 has been used once. After that, we can use demux1,2,...
+	 */
 	initDemux(0);
 		/* for pip demux1 also be used once */
 	initDemux(1);

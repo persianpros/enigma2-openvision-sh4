@@ -1147,6 +1147,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 	else if (!strcmp(m_description, "ATBM7821 DVB-T2/C"))
 	{
 		ret = snr*10;
+		ter_max = 4200;
 	}
 	else if (!strcmp(m_description, "Vuplus DVB-S NIM(AVL2108)")) // VU+Ultimo/VU+Uno DVB-S2 NIM
 	{
@@ -1242,6 +1243,10 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		default:
 			break;
 		}
+	}
+	else if (!strcmp(m_description, "Typhoon(internal)") || !strcmp(m_description, "DS3103"))
+	{
+	    ret = (int)(snr * 10); //snr unit is x10 db, change it to x100 db.
 	}
 	else if (!strcmp(m_description, "Broadcom BCM73XX") ||
 			 !strcmp(m_description, "FTS-260 (Montage RS6000)") ||
@@ -2207,8 +2212,10 @@ void eDVBFrontend::setFrontend(bool recvEvents)
 			p[cmdseq.num].cmd = DTV_INVERSION;
 			switch (parm.inversion)
 			{
+#ifndef FORCE_AUTO_INV
 				case eDVBFrontendParametersSatellite::Inversion_Off: p[cmdseq.num].u.data = INVERSION_OFF; break;
 				case eDVBFrontendParametersSatellite::Inversion_On: p[cmdseq.num].u.data = INVERSION_ON; break;
+#endif
 				default:
 				case eDVBFrontendParametersSatellite::Inversion_Unknown: p[cmdseq.num].u.data = INVERSION_AUTO; break;
 			}

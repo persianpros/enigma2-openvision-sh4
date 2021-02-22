@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 # takes a header file, outputs action ids
+
 import tokenize
 import sys
 
