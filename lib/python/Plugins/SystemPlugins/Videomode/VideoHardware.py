@@ -207,10 +207,16 @@ class VideoHardware:
 
 		mode_50 = modes.get(50)
 		mode_60 = modes.get(60)
+		mode_24 = modes.get(24)
+
 		if mode_50 is None or force == 60:
 			mode_50 = mode_60
 		if mode_60 is None or force == 50:
 			mode_60 = mode_50
+		if mode_24 is None or force:
+			mode_24 = mode_60
+			if force == 50:
+				mode_24 = mode_50
 
 		try:
 			open("/proc/stb/video/videomode_50hz", "w").write(mode_50)
@@ -221,11 +227,6 @@ class VideoHardware:
 				open("/proc/stb/video/videomode", "w").write(mode_50)
 			except IOError:
 				print("[Videomode] VideoHardware setting videomode failed.")
-
-		try:
-			open("/etc/videomode", "w").write(mode_50) # use 50Hz mode (if available) for booting
-		except IOError:
-			print("[Videomode] VideoHardware writing initial videomode to /etc/videomode failed.")
 
 		if SystemInfo["Has24hz"]:
 			try:
@@ -295,7 +296,14 @@ class VideoHardware:
 			if len(modes):
 				config.av.videomode[port] = ConfigSelection(choices=[mode for (mode, rates) in modes])
 			for (mode, rates) in modes:
-				config.av.videorate[mode] = ConfigSelection(choices=rates)
+				ratelist = []
+				for rate in rates:
+					if rate in ("auto"):
+						if SystemInfo["Has24hz"]:
+							ratelist.append((rate, rate))
+					else:
+						ratelist.append((rate, rate))
+				config.av.videorate[mode] = ConfigSelection(choices=ratelist)
 		config.av.videoport = ConfigSelection(choices=lst)
 
 	def setConfiguredMode(self):
@@ -391,6 +399,9 @@ class VideoHardware:
 	def set3DMode(self, configElement):
 		open("/proc/stb/video/3d_mode", "w").write(configElement.value)
 
+	def setHDMIAudioSource(self, configElement):
+		open("/proc/stb/hdmi/audio_source", "w").write(configElement.value)
+
 	def setHDMIColor(self, configElement):
 		map = {"hdmi_rgb": 0, "hdmi_yuv": 1, "hdmi_422": 2}
 		open("/proc/stb/avs/0/colorformat", "w").write(configElement.value)
@@ -398,9 +409,6 @@ class VideoHardware:
 	def setYUVColor(self, configElement):
 		map = {"yuv": 0}
 		open("/proc/stb/avs/0/colorformat", "w").write(configElement.value)
-
-	def setHDMIAudioSource(self, configElement):
-		open("/proc/stb/hdmi/audio_source", "w").write(configElement.value)
 
 	def updateColor(self, port):
 		print("[Videomode] VideoHardware updateColor: ", port)

@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Screens.ChannelSelection import ChannelSelection, BouquetSelector, SilentBouquetSelector
-from Components.ActionMap import ActionMap, HelpableActionMap
-from Components.ActionMap import NumberActionMap
+from Components.ActionMap import ActionMap, HelpableActionMap, NumberActionMap
 from Components.Harddisk import harddiskmanager
 from Components.Input import Input
 from Components.Label import Label
@@ -473,15 +472,6 @@ class InfoBarShowHide(InfoBarScreenSaver):
 				self.DimmingTimer.stop()
 				self.hide()
 
-	def doHide(self):
-		if self.__state != self.STATE_HIDDEN:
-			if self.dimmed > 0:
-				self.doWriteAlpha(int(int(config.av.osd_alpha.value) * int(self.dimmed) / int(config.usage.show_infobar_dimming_speed.value)))
-				self.DimmingTimer.start(5, True)
-			else:
-				self.DimmingTimer.stop()
-				self.hide()
-
 	def okButtonCheck(self):
 		if config.usage.ok_is_channelselection.value and hasattr(self, "openServiceList"):
 			if isinstance(self, InfoBarTimeshift) and self.timeshiftEnabled() and isinstance(self, InfoBarSeek) and self.seekstate == self.SEEK_STATE_PAUSE:
@@ -510,9 +500,6 @@ class InfoBarShowHide(InfoBarScreenSaver):
 		else:
 			self.hide()
 			self.hideTimer.stop()
-
-	def openEventView(self):
-		self.toggleShow()
 
 	def showFirstInfoBar(self):
 		if self.__state == self.STATE_HIDDEN or self.actualSecondInfoBarScreen and self.actualSecondInfoBarScreen.shown:
@@ -1028,10 +1015,6 @@ class InfoBarChannelSelection:
 	def volumeDown(self):
 		VolumeControl.instance and VolumeControl.instance.volDown()
 
-	def showSatellites(self):
-		self.session.execDialog(self.servicelist)
-		self.servicelist.showSatellites()
-
 
 class InfoBarMenu:
 	""" Handles a menu action, to open the (main) menu """
@@ -1513,7 +1496,7 @@ class InfoBarSeek:
 				"seekBackManual": (self.seekBackManual, _("Seek backward (enter time)")),
 				"jumpPreviousMark": (self.seekPreviousMark, _("Jump to previous marked position")),
 				"jumpNextMark": (self.seekNextMark, _("Jump to next marked position")),
-			}, prio=-3)
+			}, prio=-1)
 			# give them a little more priority to win over color buttons
 
 		self["SeekActions"].setEnabled(False)
@@ -2148,11 +2131,10 @@ class InfoBarTimeshift():
 			self.pauseService()
 		else:
 			print("[InfoBarGenerics] play, ...")
-			self.session.open(MessageBox, _("Timeshift"), MessageBox.TYPE_INFO, timeout=3)
 			ts.activateTimeshift() # activate timeshift will automatically pause
 			self.ts_init_delay_timer.start(2000, True) # hack for spark
 
-	#spark needs some time to initialize
+	#SH4 needs some time to initialize
 	def timeshiftInitDelay(self):
 		self.ts_init_delay_timer.stop()
 		self.setSeekState(self.SEEK_STATE_PAUSE)
@@ -2552,7 +2534,7 @@ class InfoBarPiP:
 
 	def showPiP(self):
 		self.lastPiPServiceTimeoutTimer.stop()
-		# On spark framebuffer memory allow PiP only on SD
+		# SH4 framebuffer memory allows PiP only on SD
 		service = self.session.nav.getCurrentService()
 		info = service and service.info()
 		if info:
@@ -3389,7 +3371,7 @@ class InfoBarCueSheetSupport:
 					Notifications.AddNotificationWithCallback(self.playLastCB, MessageBox, _("Resuming playback"), timeout=2, type=MessageBox.TYPE_INFO)
 
 	def playLastCB(self, answer):
-		if answer:
+		if answer == True:
 			self.doSeek(self.resume_point)
 		self.hideAfterResume()
 
@@ -3665,7 +3647,7 @@ class InfoBarSubtitleSupport(object):
 		config.subtitles.dvb_subtitles_centered.value = info and info.getInfo(iServiceInformation.sCenterDVBSubs) and True
 
 	def __serviceChanged(self):
-		if self.cached_subtitle:  # lybeplayer start play after cached subtitle enabled
+		if self.cached_subtitle:  # libeplayer start play after cached subtitle enabled
 			self.cached_subtitle = False
 		elif self.selected_subtitle:
 			self.selected_subtitle = None

@@ -55,7 +55,6 @@ EXTENSIONS = {
 		"mpeg": "movie",
 		"mpe": "movie",
 		"rm": "movie",
-		"webm": "movie",
 		"rmvb": "movie",
 		"ogm": "movie",
 		"ogv": "movie",
@@ -125,7 +124,7 @@ class FileList(MenuList):
 	def getMountpoint(self, file):
 		file = os.path.join(os.path.realpath(file), "")
 		for m in self.mountpoints:
-			if file[:len(m)] == m:
+			if file.startswith(m):
 				return m
 		return False
 
@@ -161,7 +160,7 @@ class FileList(MenuList):
 	def inParentDirs(self, dir, parents):
 		dir = os.path.realpath(dir)
 		for p in parents:
-			if dir[:len(p)] == p:
+			if dir.startswith(p):
 				return True
 		return False
 
@@ -352,7 +351,7 @@ class MultiFileSelectList(FileList):
 		idx = self.l.getCurrentSelectionIndex()
 		newList = self.list[:]
 		x = self.list[idx]
-		if x[0][3][0] != '<':
+		if not x[0][3].startswith('<'):
 			if x[0][1] is True:
 				realPathname = x[0][0]
 			else:

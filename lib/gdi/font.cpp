@@ -60,7 +60,7 @@ static gLookup &getColor(const gPalette &pal, const gRGB &start, const gRGB &end
 	if (i != colorcache.end())
 		return i->second;
 	gLookup &n=colorcache.insert(std::pair<fntColorCacheKey,gLookup>(key,gLookup())).first->second;
-//	eDebug("[Font] Creating new font color cache entry %02x%02x%02x%02x .. %02x%02x%02x%02x.", start.a, start.r, start.g, start.b,
+//	eDebug("[Font] Creating new font color cache entry %02x%02x%02x%02x .. %02x%02x%02x%02x", start.a, start.r, start.g, start.b,
 //		end.a, end.r, end.g, end.b);
 	n.build(16, pal, start, end);
 //	eDebugNoNewLineStart("[Font] ");
@@ -95,7 +95,7 @@ FT_Error fontRenderClass::FTC_Face_Requester(FTC_FaceID	face_id, FT_Face* aface)
 	int error;
 	if ((error=FT_New_Face(library, font->filename.c_str(), 0, aface)))
 	{
-		eDebug("[Font] Failed: %m");
+		eDebug("[Font] Failed: %s", strerror(error));
 		return error;
 	}
 	FT_Select_Charmap(*aface, ft_encoding_unicode);
@@ -656,17 +656,17 @@ int eTextPara::renderString(const char *string, int rflags, int border)
 
 	if (!current_font)
 	{
-		eWarning("[eTextPara] renderString: No current_font!");
+		eDebug("[eTextPara] renderString: No current_font!");
 		return -1;
 	}
 	if (!current_face)
 	{
-		eWarning("[eTextPara] renderString: No current_face!");
+		eDebug("[eTextPara] renderString: No current_face!");
 		return -1;
 	}
 	if (!current_face->size)
 	{
-		eWarning("[eTextPara] renderString: No current_face->size!");
+		eDebug("[eTextPara] renderString: No current_face->size!");
 		return -1;
 	}
 
