@@ -29,7 +29,6 @@ public:
 		idServiceXINE         = 0x1010,				// 4112
 		idServiceDVD          = 0x1111,				// 4369
 		idServiceAzBox        = 0x1112,                         // 4370
-		idServiceHDMIIn       = 0x2000,				// 8192
 	};
 	int type;
 
