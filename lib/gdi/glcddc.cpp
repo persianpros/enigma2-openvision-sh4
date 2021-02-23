@@ -68,7 +68,7 @@ gLCDDC::gLCDDC()
 gLCDDC::~gLCDDC()
 {
 #ifndef HAVE_GRAPHLCD
-//konfetti: not sure why, but calling the destructor if external lcd (pearl) is selected
+//not sure why, but calling the destructor if external lcd (pearl) is selected
 //e2 crashes. this is also true if the destructor does not contain any code !!!
 	delete lcd;
 #endif

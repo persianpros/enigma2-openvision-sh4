@@ -35,6 +35,10 @@
 #if defined(HAVE_FCC_ABILITY)
 #include <lib/dvb/fcc.h>
 #endif
+#include <iostream>
+#include <fstream>
+using namespace std;
+
 #ifndef BYTE_ORDER
 #error no byte order defined!
 #endif
@@ -1267,7 +1271,7 @@ void eDVBServicePlay::serviceEvent(int event)
 		break;
 	}
 	case eDVBServicePMTHandler::eventPreStart:
-		if (!m_is_stream) loadCuesheet();
+		loadCuesheet();
 		break;
 	case eDVBServicePMTHandler::eventEOF:
 		m_event((iPlayableService*)this, evEOF);
@@ -1425,8 +1429,8 @@ RESULT eDVBServicePlay::start()
 			scrambled = true;
 
 		type = eDVBServicePMTHandler::streamclient;
-		//will skip on calling findPMT() for streams, as it is not needed
-		service.setServiceID(eServiceFactoryDVB::id);
+		// we will skip on calling findPMT() for streams, as it is not needed
+//		service.setServiceID(eServiceFactoryDVB::id);
 	}
 
 	m_first_program_info = 1;
@@ -2618,6 +2622,20 @@ RESULT eDVBServicePlay::startTimeshift()
 	m_timeshift_fd = mkstemp(templ);
 	m_timeshift_file = std::string(templ);
 	eDebug("[eDVBServicePlay] timeshift recording to %s", templ);
+
+	ofstream fileout;
+	fileout.open("/proc/stb/lcd/symbol_timeshift");
+	if(fileout.is_open())
+	{
+		fileout << "1";
+	}
+
+	fileout.open("/proc/stb/lcd/symbol_record");
+	if(fileout.is_open())
+	{
+		fileout << "1";
+	}
+
 	delete [] templ;
 
 	if (m_timeshift_fd < 0)
@@ -2672,6 +2690,19 @@ RESULT eDVBServicePlay::stopTimeshift(bool swToLive)
 	{
 		close(m_timeshift_fd);
 		m_timeshift_fd = -1;
+	}
+
+	ofstream fileout;
+	fileout.open("/proc/stb/lcd/symbol_timeshift");
+	if(fileout.is_open())
+	{
+		fileout << "0";
+	}
+	
+	fileout.open("/proc/stb/lcd/symbol_record");
+	if(fileout.is_open())
+	{
+		fileout << "0";
 	}
 
 	if (!m_save_timeshift)

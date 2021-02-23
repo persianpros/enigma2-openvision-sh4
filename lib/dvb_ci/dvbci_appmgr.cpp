@@ -86,7 +86,7 @@ int eDVBCIApplicationManagerSession::doAction()
 			return 0;
 	default:
 		return 0;
-  }
+	}
 }
 
 int eDVBCIApplicationManagerSession::startMMI()

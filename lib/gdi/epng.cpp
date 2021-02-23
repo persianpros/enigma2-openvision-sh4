@@ -83,8 +83,8 @@ int loadPNG(ePtr<gPixmap> &result, const char *filename, int accel, int cached)
 		return 0;
 	}
 	{
-		uint8_t header[8];
-		if (!fread(header, 1, 8, fp))
+		__u8 header[8];
+		if (!fread(header, 8, 1, fp))
 		{
 			eDebug("[ePNG] failed to get png header");
 			return 0;
