@@ -35,7 +35,7 @@ from Screens.SubtitleDisplay import SubtitleDisplay
 from Screens.RdsDisplay import RdsInfoDisplay, RassInteractive
 from Screens.TimeDateInput import TimeDateInput
 from Screens.UnhandledKey import UnhandledKey
-from ServiceReference import ServiceReference, isPlayableForCur, hdmiInServiceRef
+from ServiceReference import ServiceReference, isPlayableForCur
 from Tools import Notifications, ASCIItranslit
 from Tools.Directories import fileExists, getRecordingFilename, moveFiles
 from Tools.KeyBindings import getKeyBindingKeys, getKeyDescription
@@ -3840,27 +3840,6 @@ class InfoBarPowersaver:
 		if not Screens.Standby.inStandby:
 			print("[InfoBarGenerics] Powersaver goto standby")
 			self.session.open(Screens.Standby.Standby)
-
-
-class InfoBarHDMI:
-	def HDMIIn(self):
-		slist = self.servicelist
-		if slist.dopipzap:
-			curref = self.session.pip.getCurrentService()
-			if curref and curref.type != eServiceReference.idServiceHDMIIn:
-				self.session.pip.playService(hdmiInServiceRef())
-			else:
-				self.session.pip.playService(slist.servicelist.getCurrent())
-		else:
-			curref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
-			if curref and curref.type != eServiceReference.idServiceHDMIIn:
-				if curref and curref.type != -1 and os.path.splitext(curref.toString().split(":")[10])[1].lower() in AUDIO_EXTENSIONS.union(MOVIE_EXTENSIONS, DVD_EXTENSIONS):
-					setResumePoint(self.session)
-				self.session.nav.playService(hdmiInServiceRef())
-			elif isStandardInfoBar(self):
-				self.session.nav.playService(slist.servicelist.getCurrent())
-			else:
-				self.session.nav.playService(self.cur_service)
 
 
 class InfoBarAspectSelection:

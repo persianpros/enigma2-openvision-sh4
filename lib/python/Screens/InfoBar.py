@@ -26,7 +26,7 @@ from Screens.InfoBarGenerics import InfoBarShowHide, \
 	InfoBarSummarySupport, InfoBarMoviePlayerSummarySupport, InfoBarTimeshiftState, InfoBarTeletextPlugin, InfoBarExtensions, \
 	InfoBarSubtitleSupport, InfoBarPiP, InfoBarPlugins, InfoBarServiceErrorPopupSupport, InfoBarJobman, InfoBarPowersaver, \
 	InfoBarAspectSelection, \
-	InfoBarHDMI, setResumePoint, delResumePoint
+	setResumePoint, delResumePoint
 from Screens.Hotkey import InfoBarHotkey
 
 profile("LOAD:InitBar_Components")
@@ -46,7 +46,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 	InfoBarSummarySupport, InfoBarTimeshiftState, InfoBarTeletextPlugin, InfoBarExtensions,
 	InfoBarPiP, InfoBarPlugins, InfoBarSubtitleSupport, InfoBarServiceErrorPopupSupport, InfoBarJobman, InfoBarPowersaver,
 	InfoBarAspectSelection,
-	InfoBarHDMI, InfoBarHotkey, Screen):
+	InfoBarHotkey, Screen):
 
 	ALLOW_SUSPEND = True
 	instance = None
@@ -171,7 +171,7 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 		InfoBarAudioSelection, HelpableScreen, InfoBarNotifications, InfoBarServiceNotifications, InfoBarPVRState,
 		InfoBarCueSheetSupport, InfoBarMoviePlayerSummarySupport, InfoBarSubtitleSupport, Screen, InfoBarTeletextPlugin,
 		InfoBarAspectSelection,
-		InfoBarServiceErrorPopupSupport, InfoBarExtensions, InfoBarPlugins, InfoBarPiP, InfoBarHDMI, InfoBarHotkey):
+		InfoBarServiceErrorPopupSupport, InfoBarExtensions, InfoBarPlugins, InfoBarPiP, InfoBarHotkey):
 
 	ENABLE_RESUME_SUPPORT = True
 	ALLOW_SUSPEND = True

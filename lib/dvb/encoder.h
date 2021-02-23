@@ -66,14 +66,6 @@ class eEncoder
 
 		static eEncoder *instance;
 
-		enum {
-			hdmiPatPid = 0x00, // 0
-			hdmiPcrPid = 0x13, // 19
-			hdmiPmtPid = 0x55, // 85
-			hdmiAudioPid = 0xC0, // 196
-			hdmiVideoPid = 0xE0, // 224
-		};
-
 		void navigation_event_0(int);
 		void navigation_event_1(int);
 		void navigation_event(int, int);
@@ -85,16 +77,8 @@ class eEncoder
 
 		int allocateEncoder(const std::string &serviceref, int &buffersize, int bitrate, int width, int height, int framerate, int interlaced, int aspectratio,
 				const std::string &vcodec = "", const std::string &acodec = "");
-		int allocateHDMIEncoder(const std::string &serviceref, int &buffersize);
 		void freeEncoder(int encoderfd);
 		int getUsedEncoderCount();
-
-
-		int getPatPid() { return hdmiPatPid; }
-		int getPcrPid() { return hdmiPcrPid; }
-		int getPmtPid() { return hdmiPmtPid; }
-		int getAudioPid() { return hdmiAudioPid; }
-		int getVideoPid() { return hdmiVideoPid; }
 
 		static eEncoder *getInstance();
 };
