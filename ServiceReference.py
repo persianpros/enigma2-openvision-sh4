@@ -42,9 +42,9 @@ class ServiceReference(eServiceReference):
 	def isRecordable(self):
 		ref = self.ref
 		if mediaserice == "servicesh4":
-			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceHDMIIn))
+			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled))
 		else:
-			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceHDMIIn, eServiceReference.idServiceMP3))
+			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceMP3))
 
 
 def getPlayingref(ref):
@@ -111,7 +111,3 @@ service_types_radio_ref.setPath(makeServiceQueryStr((
 	eServiceReferenceDVB.dRadio,
 	eServiceReferenceDVB.dRadioAvc,
 )))
-
-
-def hdmiInServiceRef():
-	return eServiceReference(eServiceReference.idServiceHDMIIn, eServiceReference.noFlags, eServiceReferenceDVB.dTv)
