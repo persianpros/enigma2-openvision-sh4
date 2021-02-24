@@ -154,11 +154,19 @@ SystemInfo["NCamInstalled"] = fileExists("/usr/bin/ncam")
 SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.ncam/ncam.version")
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/openvision/distro")
 SystemInfo["7segment"] = displaytype == "7segment" or "7seg" in displaytype
+SystemInfo["CanAC3plusTranscode"] = fileExists("/proc/stb/audio/ac3plus_choices")
+SystemInfo["CanDTSHD"] = fileExists("/proc/stb/audio/dtshd_choices")
+SystemInfo["CanWMAPRO"] = fileExists("/proc/stb/audio/wmapro")
+SystemInfo["CanDownmixAACPlus"] = fileExists("/proc/stb/audio/aacplus_choices")
+SystemInfo["CanAACTranscode"] = fileExists("/proc/stb/audio/aac_transcode_choices")
 SystemInfo["ConfigDisplay"] = SystemInfo["FrontpanelDisplay"] and displaytype != "7segment" and "7seg" not in displaytype
 SystemInfo["VFDSymbol"] = getHaveVFDSymbol() == "True"
+SystemInfo["CanBTAudio"] = fileCheck("/proc/stb/audio/btaudio")
+SystemInfo["CanBTAudioDelay"] = fileCheck("/proc/stb/audio/btaudio_delay")
 SystemInfo["SeekStatePlay"] = False
 SystemInfo["StatePlayPause"] = False
 SystemInfo["StandbyState"] = False
 SystemInfo["HasH9SD"] = False
 SystemInfo["HasSDnomount"] = False
 SystemInfo["canBackupEMC"] = False
+SystemInfo["CanSyncMode"] = fileExists("/proc/stb/video/sync_mode_choices")

@@ -62,7 +62,7 @@ def enumTrashFolders():
 	# Walk through all Trash folders. This may access network
 	# drives and similar, so might block for minutes.
 	for mount in Harddisk.getProcMounts():
-		if mount[1][:7] == '/media/':
+		if mount[1].startswith('/media/'):
 			mountpoint = mount[1]
 			movie = os.path.join(mountpoint, 'movie')
 			if os.path.isdir(movie):
@@ -110,7 +110,7 @@ class Trashcan:
 		# it as dirty.
 		from RecordTimer import n_recordings
 		if n_recordings > 0:
-			print "[Trashcan] Recording(s) in progress:", n_recordings
+			print("[Trashcan] Recording(s) in progress:", n_recordings)
 			return
 		self.markDirty(path)
 		if not self.dirty:

@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 from enigma import eServiceReference, eServiceReferenceDVB, eServiceCenter, getBestPlayableServiceReference
 import NavigationInstance
+from boxbranding import getE2Service
+
+mediaservice = getE2Service().replace('enigma2-plugin-systemplugins-', '')
 
 
 class ServiceReference(eServiceReference):
@@ -38,7 +41,10 @@ class ServiceReference(eServiceReference):
 
 	def isRecordable(self):
 		ref = self.ref
-		return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceHDMIIn)) # eServiceReference.idServiceMP3 won't work on libeplayer
+		if mediaserice == "servicesh4":
+			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceHDMIIn))
+		else:
+			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceHDMIIn, eServiceReference.idServiceMP3))
 
 
 def getPlayingref(ref):

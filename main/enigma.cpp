@@ -302,7 +302,6 @@ int main(int argc, char **argv)
 #endif
 
 	dsk.setStyleID(0);
-
 #ifdef HAVE_GRAPHLCD
 	dsk_lcd.setStyleID(my_lcd_dc->size().width() == 320 ? 1 : 2);
 #else

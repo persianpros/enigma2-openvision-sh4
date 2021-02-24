@@ -126,6 +126,7 @@ eHdmiCEC::eHdmiCEC()
 
 	if (!linuxCEC)
 	{
+
 #define HDMIDEV "/dev/hdmi_cec"
 
 		hdmiFd = ::open(HDMIDEV, O_RDWR | O_NONBLOCK | O_CLOEXEC);
@@ -133,6 +134,7 @@ eHdmiCEC::eHdmiCEC()
 		{
 
 			::ioctl(hdmiFd, 0); /* flush old messages */
+
 		}
 	}
 
@@ -163,7 +165,7 @@ void eHdmiCEC::reportPhysicalAddress()
 {
 	struct cec_message txmessage;
 	memset(&txmessage, 0, sizeof(txmessage));
-	txmessage.address = (logicalAddress << 4) + (0xf); /* broadcast */
+	txmessage.address = 0x0f; /* broadcast */
 	txmessage.data[0] = 0x84; /* report address */
 	txmessage.data[1] = physicalAddress[0];
 	txmessage.data[2] = physicalAddress[1];
@@ -177,34 +179,49 @@ void eHdmiCEC::getAddressInfo()
 	if (hdmiFd >= 0)
 	{
 		bool hasdata = false;
-		struct
+		struct addressinfo addressinfo;
+
+		if (linuxCEC)
 		{
-			unsigned char logical;
-			unsigned char physical[2];
-			unsigned char type;
-		} addressinfo;
-		if (::ioctl(hdmiFd, 1, &addressinfo) >= 0)
-		{
-			hasdata = true;
-			/* we do not get the device type, check the logical address to determine the type */
-			switch (addressinfo.logical)
+			__u16 phys_addr;
+			struct cec_log_addrs laddrs = {};
+
+			::ioctl(hdmiFd, CEC_ADAP_G_PHYS_ADDR, &phys_addr);
+			addressinfo.physical[0] = (phys_addr >> 8) & 0xff;
+			addressinfo.physical[1] = phys_addr & 0xff;
+
+			::ioctl(hdmiFd, CEC_ADAP_G_LOG_ADDRS, &laddrs);
+			addressinfo.logical = laddrs.log_addr[0];
+
+			switch (laddrs.log_addr_type[0])
 			{
-			case 0x1:
-			case 0x2:
-			case 0x9:
-				addressinfo.type = 1; /* recorder */
+			case CEC_LOG_ADDR_TYPE_TV:
+				addressinfo.type = CEC_LOG_ADDR_TV;
 				break;
-			case 0x3:
-			case 0x6:
-			case 0x7:
-			case 0xa:
-				addressinfo.type = 3; /* tuner */
+			case CEC_LOG_ADDR_TYPE_RECORD:
+				addressinfo.type = CEC_LOG_ADDR_RECORD_1;
 				break;
-			case 0x4:
-			case 0x8:
-			case 0xb:
-				addressinfo.type = 4; /* playback */
+			case CEC_LOG_ADDR_TYPE_TUNER:
+				addressinfo.type = CEC_LOG_ADDR_TUNER_1;
 				break;
+			case CEC_LOG_ADDR_TYPE_PLAYBACK:
+				addressinfo.type = CEC_LOG_ADDR_PLAYBACK_1;
+				break;
+			case CEC_LOG_ADDR_TYPE_AUDIOSYSTEM:
+				addressinfo.type = CEC_LOG_ADDR_AUDIOSYSTEM;
+				break;
+			case CEC_LOG_ADDR_TYPE_UNREGISTERED:
+			default:
+				addressinfo.type = CEC_LOG_ADDR_UNREGISTERED;
+				break;
+			}
+			hasdata = true;
+		}
+		else
+		{
+			if (::ioctl(hdmiFd, 1, &addressinfo) >= 0)
+			{
+				hasdata = true;
 			}
 		}
 		if (hasdata)
@@ -356,116 +373,115 @@ long eHdmiCEC::translateKey(unsigned char code)
 	switch (code)
 	{
 		case 0x32:
-			key = 0x8b; //KEY_MENU
+			key = 0x8b;
 			break;
 		case 0x20:
-			key = 0x0b; //KEY_0
+			key = 0x0b;
 			break;
 		case 0x21:
-			key = 0x02; //KEY_1
+			key = 0x02;
 			break;
 		case 0x22:
-			key = 0x03; //KEY_2
+			key = 0x03;
 			break;
 		case 0x23:
-			key = 0x04; //KEY_3
+			key = 0x04;
 			break;
 		case 0x24:
-			key = 0x05; //KEY_4
+			key = 0x05;
 			break;
 		case 0x25:
-			key = 0x06; //KEY_5
+			key = 0x06;
 			break;
 		case 0x26:
-			key = 0x07; //KEY_6
+			key = 0x07;
 			break;
 		case 0x27:
-			key = 0x08; //KEY_7
+			key = 0x08;
 			break;
 		case 0x28:
-			key = 0x09; //KEY_8
+			key = 0x09;
 			break;
 		case 0x29:
-			key = 0x0a; //KEY_9
+			key = 0x0a;
 			break;
 		case 0x30:
-			key = 0x192; //KEY_CHANNELUP
+			key = 0x192;
 			break;
 		case 0x31:
-			key = 0x193; //KEY_CHANNELDOWN
+			key = 0x193;
 			break;
 		case 0x40:
-			key = 0x74; //KEY_POWER
+			key = 0x74;
 			break;
 		case 0x44:
 		case 0x60:
-			key = 0xcf; //KEY_PLAY
+			key = 0xcf;
 			break;
 		case 0x45:
-			key = 0x80; //KEY_STOP
+			key = 0x80;
 			break;
 		case 0x46:
-			key = 0x77; //KEY_PAUSE
+			key = 0x77;
 			break;
 		case 0x47:
-			key = 0xa7; //KEY_RECORD
+			key = 0xa7;
 			break;
 		case 0x48:
-			key = 0xa8; //KEY_REWIND
+		case 0x4C:
+			key = 0xa8;
 			break;
 		case 0x49:
 		case 0x4B:
-			key = 0xd0; //KEY_FASTFORWARD
-			break;
-		case 0x4C:
-			key = 0xa8; //KEY_REWIND
+			key = 0xd0;
 			break;
 		case 0x53:
-			key = 0x16d; //KEY_EPG
+			key = 0x16d;
 			break;
 		case 0x54:
-			key = 0x16a; //KEY_PROGRAM
+			key = 0x16a;
 			break;
 		case 0x61:
-			key = 0xa4; //KEY_PLAYPAUSE
+			key = 0xa4;
 			break;
 		case 0x62:
-			key = 0xa7; //KEY_RECORD
+			key = 0xa7;
 			break;
 		case 0x64:
-			key = 0x80; //KEY_STOP
+			key = 0x80;
 			break;
 		case 0x00:
-			key = 0x160; //KEY_OK
+			key = 0x160;
 			break;
 		case 0x03:
-			key = 0x69; //KEY_LEFT
+			key = 0x69;
 			break;
 		case 0x04:
-			key = 0x6a; //KEY_RIGHT
+			key = 0x6a;
 			break;
 		case 0x01:
-			key = 0x67; //KEY_UP
+			key = 0x67;
 			break;
 		case 0x02:
-			key = 0x6c; //KEY_DOWN
+			key = 0x6c;
 			break;
 		case 0x0d:
-			key = 0xae; //KEY_EXIT
+			key = 0xae;
 			break;
 		case 0x72:
-			key = 0x18e; //KEY_RED
+			key = 0x18e;
 			break;
 		case 0x71:
-			key = 0x191; //KEY_BLUE
+			key = 0x191;
 			break;
 		case 0x73:
-			key = 0x18f; //KEY_GREEN
+			key = 0x18f;
 			break;
 		case 0x74:
-			key = 0x190; //KEY_YELLOW
+			key = 0x190;
 			break;
 		default:
+			key = 0x8b;
 			eDebug("eHdmiCEC: unknown code 0x%02X", (unsigned int)(code & 0xFF));
 			break;
 	}
@@ -481,7 +497,7 @@ void eHdmiCEC::sendMessage(struct cec_message &message)
 		{
 			eDebugNoNewLine(" %02X", message.data[i]);
 		}
-		eDebugNoNewLine(" -> %02X\n", message.address);
+		eDebugNoNewLine("\n");
 		if (linuxCEC)
 		{
 			struct cec_msg msg;

@@ -222,7 +222,7 @@ class EPGSelection(Screen):
 			self.serviceChangeCB(-1, self)
 
 	def enterDateTime(self):
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			global mepg_config_initialized
 			if not mepg_config_initialized:
 				config.misc.prev_mepg_time = ConfigClock(default=time())
@@ -242,7 +242,7 @@ class EPGSelection(Screen):
 					if 'selectedevent' in p.__call__.__code__.co_varnames]
 			if menu:
 				text += ": %s" % event.getEventName()
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			menu.append((_("Goto specific date/time"), self.enterDateTime))
 		menu.append((_("Timer Overview"), self.openTimerOverview))
 		if len(menu) == 1:
@@ -296,10 +296,10 @@ class EPGSelection(Screen):
 	def onCreate(self):
 		l = self["list"]
 		l.recalcEntrySize()
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			l.fillMultiEPG(self.services, self.ask_time)
 			l.moveToService(Screens.InfoBar.InfoBar.instance and Screens.InfoBar.InfoBar.instance.servicelist.getCurrentSelection() or self.session.nav.getCurrentlyPlayingServiceOrGroup())
-		elif self.type is EPG_TYPE_SINGLE:
+		elif self.type == EPG_TYPE_SINGLE:
 			service = self.currentService
 			self["Service"].newService(service.ref)
 			if not self.saved_title:
@@ -317,7 +317,7 @@ class EPGSelection(Screen):
 		elif val == +1:
 			self.moveDown()
 		cur = l.getCurrent()
-		if self.type is EPG_TYPE_MULTI and cur[0] is None and cur[1].ref != old[1].ref:
+		if self.type == EPG_TYPE_MULTI and cur[0] is None and cur[1].ref != old[1].ref:
 			self.eventViewCallback(setEvent, setService, val)
 		else:
 			setService(cur[1])
@@ -358,10 +358,10 @@ class EPGSelection(Screen):
 			self.infoKeyPressed()
 
 	def yellowButtonPressed(self):
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			self["list"].updateMultiEPG(-1)
-		elif self.type is EPG_TYPE_SINGLE:
-			if self.sort_type is 0:
+		elif self.type == EPG_TYPE_SINGLE:
+			if self.sort_type == 0:
 				self.sort_type = 1
 			else:
 				self.sort_type = 0
@@ -369,7 +369,7 @@ class EPGSelection(Screen):
 			self.setSortDescription()
 
 	def setSortDescription(self):
-		if self.sort_type is 1:
+		if self.sort_type == 1:
 			# TRANSLATORS: This must fit into the header button in the EPG-List
 			self["key_yellow"].setText(_("Sort time"))
 		else:
@@ -377,9 +377,9 @@ class EPGSelection(Screen):
 			self["key_yellow"].setText(_("Sort A-Z"))
 
 	def blueButtonPressed(self):
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			self["list"].updateMultiEPG(1)
-		if self.type is EPG_TYPE_SINGLE:
+		if self.type == EPG_TYPE_SINGLE:
 			self.session.openWithCallback(self.channelSelectionCallback, ChannelSelection.SimpleChannelSelection, _("Select channel"), True, True, self.currentService.ref, self.parent and self.parent.epg_bouquet)
 
 	def channelSelectionCallback(self, *args):
@@ -632,7 +632,7 @@ class EPGSelection(Screen):
 			return
 		event = cur[0]
 		self["Event"].newEvent(event)
-		if self.type is EPG_TYPE_MULTI:
+		if self.type == EPG_TYPE_MULTI:
 			count = self["list"].getCurrentChangeCount()
 			if self.ask_time != -1:
 				self.applyButtonState(0)
@@ -681,10 +681,10 @@ class EPGSelection(Screen):
 			if needed_ref and (timer.eit == eventid and (begin < timer.begin <= end or timer.begin <= begin <= timer.end) or timer.repeated and self.session.nav.RecordTimer.isInRepeatTimer(timer, event)):
 				isRecordEvent = True
 				break
-		if isRecordEvent and self.key_green_choice is not self.REMOVE_TIMER:
+		if isRecordEvent and self.key_green_choice != self.REMOVE_TIMER:
 			self["key_green"].setText(_("Change timer"))
 			self.key_green_choice = self.REMOVE_TIMER
-		elif not isRecordEvent and self.key_green_choice is not self.ADD_TIMER:
+		elif not isRecordEvent and self.key_green_choice != self.ADD_TIMER:
 			self["key_green"].setText(_("Add timer"))
 			self.key_green_choice = self.ADD_TIMER
 		if self.parent and eventid and hasattr(self.parent, "setEvent"):

@@ -53,7 +53,6 @@ class IconCheckPoller:
 
 	def JobTask(self):
 		LinkState = 0
-		LinkState = LinkState[:1]
 		if fileExists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == '1':
 			open("/proc/stb/lcd/symbol_network", "w").write(str(LinkState))
 		elif fileExists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == '0':

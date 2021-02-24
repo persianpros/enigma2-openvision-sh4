@@ -32,6 +32,7 @@ def EVIOCGNAME(length):
 
 
 class inputDevices:
+	BLACKLIST = ("cec_input")
 
 	def __init__(self):
 		self.Devices = {}
@@ -53,6 +54,8 @@ class inputDevices:
 				self.name = None
 
 			if self.name:
+				if self.name in self.BLACKLIST:
+					continue
 				self.Devices[evdev] = {'name': self.name, 'type': self.getInputDeviceType(self.name), 'enabled': False, 'configuredName': None}
 
 	def getInputDeviceType(self, name):
@@ -192,7 +195,7 @@ class InitInputDevices:
 		exec(cmd)
 		cmd = "config.inputDevices." + device + ".repeat.addNotifier(self.inputDevicesRepeatChanged,config.inputDevices." + device + ".repeat)"
 		exec(cmd)
-		cmd = "config.inputDevices." + device + ".delay = ConfigSlider(default=700, increment = 100, limits=(0, 5000))"
+		cmd = "config.inputDevices." + device + ".delay = ConfigSlider(default=700, increment = 300, limits=(0, 5000))"
 		exec(cmd)
 		cmd = "config.inputDevices." + device + ".delay.addNotifier(self.inputDevicesDelayChanged,config.inputDevices." + device + ".delay)"
 		exec(cmd)
