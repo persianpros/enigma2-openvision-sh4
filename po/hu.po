@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 21:32+0330\n"
+"POT-Creation-Date: 2021-02-26 14:03+0330\n"
 "PO-Revision-Date: 2020-12-05 15:11+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -185,17 +185,17 @@ msgstr ""
 msgid "%-I:%M:%S%^p"
 msgstr ""
 
-#. TRANSLATORS: full date representation daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: full date representation daynum monthname year in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%-d %B %Y"
 msgstr "%Y. %B %d."
 
-#. TRANSLATORS: small date representation daynum short monthname in strftime() format! See 'man strftime'
-#. TRANSLATORS: compact date representation (for VFD) daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: small date representation daynum short monthname in strftime() format! See "man strftime"
+#. TRANSLATORS: compact date representation (for VFD) daynum short monthname in strftime() format! See "man strftime"
 msgid "%-d %b"
 msgstr ""
 
-#. TRANSLATORS: long date representation daynum short monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation daynum short monthname year in strftime() format! See "man strftime"
 msgid "%-d %b %Y"
 msgstr ""
 
@@ -308,12 +308,12 @@ msgstr "%2.1f mp"
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
 
-#. TRANSLATORS: short date representation dayname daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: short date representation dayname daynum short monthname in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%A %-d %B"
 msgstr "%B %d. %A"
 
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%A %-d %B %Y"
 msgstr "%Y. %B %e. %A"
@@ -589,21 +589,21 @@ msgstr ""
 msgid "%Y/%m/%d"
 msgstr ""
 
-#. TRANSLATORS: small date representation short dayname daynum in strftime() format! See 'man strftime'
+#. TRANSLATORS: small date representation short dayname daynum in strftime() format! See "man strftime"
 msgid "%a %-d"
 msgstr ""
 
-#. TRANSLATORS: long date representation short dayname daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation short dayname daynum monthname year in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%a %-d %B %Y"
 msgstr "%Y. %B %e. %A"
 
-#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%a %-d %b"
 msgstr "%Y. %B %e. %A"
 
-#. TRANSLATORS: long date representation short dayname daynum short monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation short dayname daynum short monthname year in strftime() format! See "man strftime"
 #, fuzzy
 msgid "%a %-d %b %Y"
 msgstr "%Y. %B %e. %A"
@@ -1155,15 +1155,15 @@ msgstr ""
 "Nyomja meg az 'Exit'-et a kilépéshez"
 
 #, python-format
-msgid "%s  (Default: %s)"
-msgstr ""
-
-#, python-format
 msgid "%s %s free disk space"
 msgstr "%s %s szabad tárterület"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
+#, fuzzy, python-format
+msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1200,6 +1200,10 @@ msgstr "%s%% Automatikus telepítés %s"
 #, python-format
 msgid "%s%d min"
 msgstr "%s%d perc"
+
+#, fuzzy, python-format
+msgid "%s%s(Default: %s)"
+msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s/%s: %s"
@@ -1263,12 +1267,51 @@ msgstr "(DVD audió menü megjelenítése, ha van)"
 msgid "(unknown)"
 msgstr "(ismeretlen)"
 
-#, fuzzy
 msgid "* = Restart Required"
-msgstr "Nem szükséges"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* Csak akkor érvényes, ha egynél több interfész aktív."
+
+msgctxt "Text list separator"
+msgid ", "
+msgstr ""
+
+#, fuzzy
+msgid "-1"
+msgstr "1"
+
+#, fuzzy
+msgid "-2"
+msgstr "2"
+
+#, fuzzy
+msgid "-3"
+msgstr "3"
+
+#, fuzzy
+msgid "-4"
+msgstr "4"
+
+#, fuzzy
+msgid "-5"
+msgstr "5"
+
+#, fuzzy
+msgid "-6"
+msgstr "6"
+
+#, fuzzy
+msgid "-7"
+msgstr "7"
+
+#, fuzzy
+msgid "-8"
+msgstr "8"
+
+#, fuzzy
+msgid "-9"
+msgstr "9"
 
 msgid "-NO SERVICE\n"
 msgstr "-NINCS CSATORNA\n"
@@ -1303,14 +1346,18 @@ msgstr "1.2"
 msgid "10 MB/s"
 msgstr "10 MB/s"
 
+msgid "10 bit"
+msgstr ""
+
+#, fuzzy
+msgid "10%"
+msgstr "1.0"
+
 msgid "100 MB/s"
 msgstr "100 MB/s"
 
 msgid "100%"
 msgstr ""
-
-msgid "10bit"
-msgstr "10bit"
 
 msgid "11a-only"
 msgstr ""
@@ -1345,14 +1392,20 @@ msgstr ""
 msgid "11n-only"
 msgstr ""
 
+msgid "12 bit"
+msgstr ""
+
 msgid "128 Mbyte"
+msgstr ""
+
+msgid "1280"
+msgstr ""
+
+msgid "1280x720"
 msgstr ""
 
 msgid "12V output"
 msgstr "12V kimenet"
-
-msgid "12bit"
-msgstr "12bit"
 
 msgid "13 V"
 msgstr "13 V"
@@ -1381,6 +1434,16 @@ msgstr "16K"
 msgid "18 V"
 msgstr "18 V"
 
+msgid "1920"
+msgstr ""
+
+msgid "1920x1080"
+msgstr ""
+
+#, fuzzy
+msgid "1X"
+msgstr "1"
+
 msgid "2"
 msgstr "2"
 
@@ -1390,9 +1453,6 @@ msgstr "20 MB/s"
 #, fuzzy
 msgid "20%"
 msgstr "420"
-
-msgid "200 MHz"
-msgstr ""
 
 msgid "23.976"
 msgstr "23.976"
@@ -1409,20 +1469,46 @@ msgstr ""
 msgid "29.97"
 msgstr "29.97"
 
+#, fuzzy
+msgid "2X"
+msgstr "2"
+
 msgid "3"
 msgstr "3"
 
 msgid "30"
 msgstr "30"
 
-msgid "300 MHz"
-msgstr ""
+#, fuzzy
+msgid "30%"
+msgstr "30"
 
 msgid "32 Mbyte"
 msgstr ""
 
 msgid "3D Modus"
 msgstr ""
+
+#, fuzzy
+msgid "3D Surround"
+msgstr "3D surround"
+
+#, fuzzy
+msgid "3D Surround Speaker Position"
+msgstr "3D surround hangszóró pozíciója"
+
+msgid "3D surround"
+msgstr "3D surround"
+
+msgid "3D surround softlimiter"
+msgstr "3D surround beállítása"
+
+msgid "3D surround speaker position"
+msgstr "3D surround hangszóró pozíciója"
+
+#, fuzzy
+msgid "3X"
+msgstr "3"
 
 msgid "3d mode"
 msgstr "3D mód"
@@ -1434,15 +1520,18 @@ msgstr "4"
 msgid "40%"
 msgstr "420"
 
+msgid "420"
+msgstr "420"
+
 msgid "422"
 msgstr "422"
+
+msgid "444"
+msgstr "444"
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "alapértelmezett"
-
-msgid "450 MHz"
-msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1456,21 +1545,22 @@ msgstr "4:3 PanScan"
 msgid "4K"
 msgstr "4K"
 
+#, fuzzy
+msgid "4X"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
-msgid "500 MHz"
+msgid "50%"
 msgstr ""
 
 #, fuzzy
 msgid "540 (default)"
 msgstr "alapértelmezett"
-
-msgid "540 MHz (default)"
-msgstr ""
 
 msgid "6"
 msgstr "6"
@@ -1478,47 +1568,39 @@ msgstr "6"
 msgid "60%"
 msgstr ""
 
-msgid "600 MHz"
-msgstr ""
-
-msgid "630 MHz"
-msgstr ""
-
 msgid "64 Mbyte"
-msgstr ""
-
-msgid "650 MHz"
 msgstr ""
 
 msgid "7"
 msgstr "7"
 
-msgid "700 MHz"
+msgid "70%"
 msgstr ""
 
-msgid "710 MHz"
-msgstr ""
+#, fuzzy
+msgid "720"
+msgstr "420"
 
-msgid "775 MHz"
+msgid "720x576"
 msgstr ""
 
 msgid "8"
 msgstr "8"
 
-msgid "80%"
+msgid "8 bit"
 msgstr ""
 
-msgid "800 MHz"
+msgid "80%"
 msgstr ""
 
 msgid "8K"
 msgstr "8K"
 
-msgid "8bit"
-msgstr "8bit"
-
 msgid "9"
 msgstr "9"
+
+msgid "90%"
+msgstr ""
 
 msgid "<Current movielist location>"
 msgstr "<Filmlista aktuális tárhelye>"
@@ -1607,6 +1689,9 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Grafikus EPG egy adott lista összes csatornájához"
 
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgstr ""
+
 #, python-format
 msgid ""
 "A record has been started:\n"
@@ -1681,8 +1766,24 @@ msgstr "A/V beállítások"
 msgid "AAC downmix"
 msgstr "AAC lekeverése"
 
+#, fuzzy
+msgid "AAC plus downmix"
+msgstr "AAC lekeverése"
+
+#, fuzzy
+msgid "AAC transcoding"
+msgstr "Átkódolás: "
+
+#, fuzzy
+msgid "AC3"
+msgstr "DAC"
+
 msgid "AC3 downmix"
 msgstr "AC3 lekeverése"
+
+#, fuzzy
+msgid "AC3 plus transcoding"
+msgstr "Átkódolás: "
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "TSID/ONID BESZERZÉSE"
@@ -1943,6 +2044,10 @@ msgstr "Haladó videó beállítások"
 msgid "Afghanistan"
 msgstr "Afganisztán"
 
+#, fuzzy, python-format
+msgid "After %s"
+msgstr "kikapcsolás: "
+
 msgid "After event"
 msgstr "Esemény után"
 
@@ -2035,6 +2140,9 @@ msgstr "TV-távirányító használata a beltéri egység irányításához"
 msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
 msgstr ""
 
+msgid "Allows you to enable/disable displaying icons on the frontpanel."
+msgstr ""
+
 msgid "Allows you to hide the extensions of known file types."
 msgstr ""
 
@@ -2056,6 +2164,13 @@ msgstr ""
 
 msgid "Alpha"
 msgstr "Alfa"
+
+#, fuzzy
+msgid "Alphabetical"
+msgstr "ABC sorrendben"
+
+msgid "Alphabetical under headings"
+msgstr ""
 
 msgid "Also import at reboot/restart enigma2"
 msgstr "Importáljon a készülék/kezelőfelület újraindításakor"
@@ -2129,6 +2244,9 @@ msgstr "Angola"
 
 msgid "Anguilla"
 msgstr "Anguilla"
+
+msgid "Animation speed of help indicators"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktika"
@@ -2265,10 +2383,10 @@ msgstr "Kinézettől függő"
 msgid "Ask user"
 msgstr "Felhasználó kérdezése"
 
-msgid "Ask user (with default as 'no')"
+msgid "Ask user (with default as 'No')"
 msgstr ""
 
-msgid "Ask user (with default as 'yes')"
+msgid "Ask user (with default as 'Yes')"
 msgstr ""
 
 #, fuzzy
@@ -2320,6 +2438,12 @@ msgstr "Hang PID%s, kodek és nyelv"
 msgid "Audio PID, codec & lang"
 msgstr "Hang PID, kodek és nyelv"
 
+msgid "Audio Source"
+msgstr ""
+
+msgid "Audio auto volume level"
+msgstr "Hang automatikus hangerőszint"
+
 msgid "Audio language selection 1"
 msgstr "Elsődleges előnyben részesített hangsáv"
 
@@ -2337,9 +2461,6 @@ msgstr "Hang beállítások..."
 
 msgid "Audio plugins"
 msgstr "Hang bővítmények"
-
-msgid "Audio source"
-msgstr ""
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2371,10 +2492,6 @@ msgstr "Authoring mód"
 msgid "Auto"
 msgstr "Automata"
 
-#, fuzzy
-msgid "Auto Detect"
-msgstr "Automatikus DiSEqC"
-
 msgid "Auto Diseqc"
 msgstr "Automatikus DiSEqC"
 
@@ -2389,12 +2506,20 @@ msgstr "Automatikus nyelvválasztás"
 msgid "Auto Timers"
 msgstr "Auto-flash"
 
+#, fuzzy
+msgid "Auto Volume Level"
+msgstr "Hang automatikus hangerőszint"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatikus fejezet készítés ? percenként (0=soha)"
 
 #, fuzzy
 msgid "Auto deep standby"
 msgstr "kikapcsolás"
+
+#, fuzzy
+msgid "Auto detect"
+msgstr "Automatikus DiSEqC"
 
 msgid "Auto flesh"
 msgstr "Auto-flash"
@@ -2632,7 +2757,13 @@ msgstr "Fekete képernyő hangolásig"
 msgid "Blinking REC"
 msgstr ""
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
+msgstr ""
+
+msgid "Blinking blue"
+msgstr ""
+
+msgid "Blinking red"
 msgstr ""
 
 msgid "Block noise reduction"
@@ -2702,7 +2833,14 @@ msgstr ""
 msgid "Brazil"
 msgstr "Brazília"
 
+msgid "Brief help information for buttons in your current context."
+msgstr ""
+
 msgid "Brightness"
+msgstr "Fényerő"
+
+#, fuzzy
+msgid "Brightness (Dimmed)"
 msgstr "Fényerő"
 
 msgid "British Indian Ocean Territory"
@@ -2767,6 +2905,11 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
+#, fuzzy
+msgctxt "Abbreviation of \"Configurable\""
+msgid "C"
+msgstr "C"
+
 msgid "C-Band"
 msgstr "C-sáv"
 
@@ -2816,10 +2959,6 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
-
-#, fuzzy
-msgid "CPU clock frequency:"
-msgstr "Minden frekvencia"
 
 msgid "CPU: "
 msgstr "Processzor: "
@@ -2973,6 +3112,10 @@ msgstr "Kaszkád kép a képben"
 msgid "Cayman Islands"
 msgstr "Kajmán-szigetek"
 
+#, fuzzy
+msgid "Center"
+msgstr "középre"
+
 msgid "Center DVB subtitles"
 msgstr "Középre zárt DVB felirat"
 
@@ -3040,6 +3183,10 @@ msgstr "Csatornalista menü"
 msgid "Channel list type"
 msgstr "Csatornalista típusa"
 
+#, fuzzy
+msgid "Channel name"
+msgstr "Csatorna információ"
+
 msgid "Channel not in services list"
 msgstr "A csatorna nem szerepel a szolgáltatási listában"
 
@@ -3051,10 +3198,6 @@ msgstr "Csatorna:"
 
 msgid "Channellist menu"
 msgstr "Csatornalista menü"
-
-#, fuzzy
-msgid "Channelname"
-msgstr "Csatorna"
 
 msgid "Channelnumber and picon"
 msgstr "Csatornaszám és picon"
@@ -3173,6 +3316,29 @@ msgstr ""
 msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
+msgid "Choose the order in which items are displayed in Help windows"
+msgstr ""
+
+#, fuzzy
+msgid "Choose whether AAC sound tracks should be transcoded."
+msgstr "A többcsatornás hangsávok (pl. 5.1-es) lekeverése sztereóra."
+
+#, fuzzy
+msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
+msgstr "A többcsatornás hangsávok (pl. 5.1-es) lekeverése sztereóra."
+
+#, fuzzy
+msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
+msgstr "A többcsatornás hangsávok (pl. 5.1-es) lekeverése sztereóra."
+
+#, fuzzy
+msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
+msgstr "A többcsatornás hangsávok (pl. 5.1-es) lekeverése sztereóra."
+
+#, fuzzy
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr "A többcsatornás hangsávok (pl. 5.1-es) lekeverése sztereóra."
+
 msgid "Choose which tuner to configure."
 msgstr "Válassza ki a beállítandó tunert."
 
@@ -3243,15 +3409,6 @@ msgstr ""
 msgid "Clients"
 msgstr ""
 
-msgid "Cloadfare"
-msgstr ""
-
-msgid "Clone TV screen to LCD"
-msgstr "TV kijelző klónozása LCD kijelzőre"
-
-msgid "Clone TV screen to LCD mode"
-msgstr "TV kijelző klónozása LCD módba"
-
 msgid "Close"
 msgstr "Bezárás"
 
@@ -3260,6 +3417,9 @@ msgstr "Kép-a-Képben bezárása kilépéskor"
 
 msgid "Close title selection"
 msgstr "Címválasztás bezárása"
+
+msgid "Cloudflare"
+msgstr ""
 
 msgid "Cocos (Keeling) Islands"
 msgstr "Kókusz (Keeling)-szigetek"
@@ -3399,6 +3559,18 @@ msgstr "Ennyi ideig maradjon látható az információs sáv mejelenítést köv
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Ennyi percig maradjon látható az EPG-ben a múlt. Hasznos lehet ha egy lejárt, vagy egy elcsúszott műsorról szeretne tájékozódni."
 
+msgid "Configure front LED color during normal operations (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording in standby (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during standby (this needs an enigma2 restart)."
+msgstr ""
+
 msgid "Configure how many channels are shown in the selection list."
 msgstr "Megjelenítendő csatornaszám a kiválasztási listában."
 
@@ -3429,9 +3601,6 @@ msgstr "Megjelenjen-e háttér a feliratok mögött."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "A ventilátor működési módjának beállítása"
-
-msgid "Configure if service picons will be shown in display (when supported by the skin)."
-msgstr "A szolgáltatói piconok megjelenítése (amennyiben a kinézet támogatja)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "A csatornák pikonjainak megjelenítése a csatornalistában."
@@ -3480,6 +3649,10 @@ msgstr "A feliratok körvonalának beállítása. Egy sötét körvonal a betűk
 
 msgid "Configure the brightness level of the front panel display during standby."
 msgstr "Az előlap kijelzőjének fényereje a készülék kikapcsolt állapotában."
+
+#, fuzzy
+msgid "Configure the brightness level of the front panel display for dimmed operation."
+msgstr "Az előlap kijelzőjének fényereje."
 
 msgid "Configure the brightness level of the front panel display."
 msgstr "Az előlap kijelzőjének fényereje."
@@ -3812,11 +3985,25 @@ msgstr "Lejátszás folytatása"
 msgid "Continue playing"
 msgstr "Lejátszás folytatása"
 
+#, fuzzy
+msgid "Continues"
+msgstr "Folytatás"
+
 msgid "Continues play (loop)"
 msgstr "Ismétléses lejátszás"
 
 msgid "Contrast"
 msgstr "Kontraszt"
+
+msgid "Control LED can be turned on or off here."
+msgstr ""
+
+msgid "Control the animation speed of the button indicators in the Help screen. 'Disabled' turns off animation so that indicators jump between buttons."
+msgstr ""
+
+#, fuzzy
+msgid "Controlled by HDMI"
+msgstr "HDMI által vezérelve"
 
 msgid "Cook Islands"
 msgstr "Cook-szigetek"
@@ -3921,9 +4108,6 @@ msgstr "Fényerő"
 msgid "Cuba"
 msgstr "Kuba"
 
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4021,15 +4205,21 @@ msgstr "Csehország"
 msgid "D"
 msgstr "D"
 
+msgid "DAC"
+msgstr "DAC"
+
 msgid "DHCP"
 msgstr "DHCP"
 
-msgid "DHCP router"
+msgid "DHCP Router"
 msgstr ""
 
 #, fuzzy
 msgid "DLNA support"
 msgstr "HLG támogatás"
+
+msgid "DTS"
+msgstr ""
 
 msgid "DTS downmix"
 msgstr "DTS lekeverése"
@@ -4037,6 +4227,9 @@ msgstr "DTS lekeverése"
 #, fuzzy
 msgid "DTS downmix:"
 msgstr "DTS lekeverése"
+
+msgid "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
+msgstr ""
 
 msgid "DUAL LAYER DVD"
 msgstr "Kétréteges DVD"
@@ -4086,10 +4279,26 @@ msgid "DVB-C ANNEX C"
 msgstr "DVB-C Annex C"
 
 #, fuzzy
+msgid "DVB-C/-S/-T"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C/-T/-S"
+msgstr "DVB-C"
+
+#, fuzzy
 msgid "DVB-C: "
 msgstr "DVB-C"
 
 msgid "DVB-S"
+msgstr "DVB-S"
+
+#, fuzzy
+msgid "DVB-S/-C/-T"
+msgstr "DVB-S"
+
+#, fuzzy
+msgid "DVB-S/-T/-C"
 msgstr "DVB-S"
 
 msgid "DVB-S2"
@@ -4100,6 +4309,14 @@ msgid "DVB-S: "
 msgstr "DVB-S"
 
 msgid "DVB-T"
+msgstr "DVB-T"
+
+#, fuzzy
+msgid "DVB-T/-C/-S"
+msgstr "DVB-T"
+
+#, fuzzy
+msgid "DVB-T/-S/-C"
 msgstr "DVB-T"
 
 msgid "DVB-T2"
@@ -4572,6 +4789,13 @@ msgstr "Látja mind a nyolc nyílnak a végét?"
 msgid "Digital contour removal"
 msgstr "Digitális körvonal-eltávolítás"
 
+#, fuzzy
+msgid "Dim delay"
+msgstr "Nincs késleltetés"
+
+msgid "Dim the LCD after specified time."
+msgstr ""
+
 msgid "Direct playback of linked titles without menu"
 msgstr "Linkelt tételek menü nélküli közvetlen lejátszása"
 
@@ -4607,6 +4831,9 @@ msgstr "Csak a jelenlegi műsor letiltása"
 
 msgid "Disable move mode"
 msgstr "Mozgatási mód letiltása"
+
+msgid "Disable the HDD Process on VFD"
+msgstr ""
 
 msgid "Disable timer"
 msgstr "Időzítő letiltása"
@@ -4867,6 +5094,10 @@ msgstr "Felfüggesztett újraindítás"
 msgid "Don't save and stop timeshift"
 msgstr "Ne mentse, és állítsa meg az időcsúsztatást"
 
+#, fuzzy
+msgid "Don't show default"
+msgstr "Alapértelmezett"
+
 msgid "Don't stop current event but disable coming events"
 msgstr "Ne állítsa le a futó eseményt, inkább kapcsolja le a következőt"
 
@@ -4912,6 +5143,10 @@ msgstr "Image letöltése"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Bővítmények betöltése folyamatban. Kérem, várjon..."
+
+#, fuzzy
+msgid "Downmix"
+msgstr "DTS lekeverése"
 
 #, fuzzy
 msgid "Drama"
@@ -5092,6 +5327,10 @@ msgstr "5V kimenet az akítv antennához engedélyezve"
 #, fuzzy
 msgid "Enable Autostart"
 msgstr "Automatikus gyorskeresés engedélyezése"
+
+#, fuzzy
+msgid "Enable BT audio"
+msgstr "Engedélyezve"
 
 #, fuzzy
 msgid "Enable CIFS:"
@@ -5298,6 +5537,10 @@ msgstr "Kezelőfelület (újra)indítás: %d\n"
 #, fuzzy, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr "Enigma hibakeresési szint: %d\n"
+
+#, fuzzy
+msgid "Enigma2 default"
+msgstr "alapértelmezett"
 
 #, fuzzy
 msgid "Enigma2 revision: "
@@ -5900,9 +6143,6 @@ msgstr "Éppen nézett csatorna megkeresése"
 msgid "Fine movement"
 msgstr "Finom mozgatás"
 
-msgid "Finetune"
-msgstr "Finomhangolás"
-
 msgid "Finished"
 msgstr "Kész"
 
@@ -5949,11 +6189,30 @@ msgstr ""
 "Flashelés sikertelen\n"
 "%s"
 
+#, fuzzy
+msgid "Flat alphabetical"
+msgstr "ábécé szerinti rendezés"
+
+msgid "Flat by key group on remote"
+msgstr ""
+
+#, fuzzy
+msgid "Flat by position on remote"
+msgstr "Végleges pozíció"
+
 msgid "Following tasks will be done after you press OK!"
 msgstr "A műveletek az OK gomb lenyomása után lesznek végrehajtva!"
 
 msgid "Font size"
 msgstr ""
+
+#, fuzzy
+msgid "Force disabled"
+msgstr "kényszerített tiltás"
+
+#, fuzzy
+msgid "Force enabled"
+msgstr "kényszerített engedélyezés"
 
 msgid "Force legacy signal stats"
 msgstr "Hagyományos jel-statisztikák kényszerítése"
@@ -6117,6 +6376,10 @@ msgid "General"
 msgstr ""
 
 msgid "General AC3 delay"
+msgstr "Általános AC3 késleltetés"
+
+#, fuzzy
+msgid "General BT audio delay"
 msgstr "Általános AC3 késleltetés"
 
 msgid "General PCM delay"
@@ -6313,6 +6576,9 @@ msgstr "HD"
 msgid "HD list"
 msgstr "HD csatornák"
 
+msgid "HDMI"
+msgstr "HDMI"
+
 msgid "HDMI Colordepth"
 msgstr "HDMI színmélység"
 
@@ -6352,9 +6618,6 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Külső feliratok késleltetése"
-
-msgid "HL-101"
-msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6407,6 +6670,10 @@ msgstr "Héber"
 msgid "Help"
 msgstr ""
 
+#, fuzzy
+msgid "Help Screen"
+msgstr "Képernyő megtartás"
+
 msgid "Helps setting up your antenna"
 msgstr "Segít beállítani az antennát"
 
@@ -6456,6 +6723,9 @@ msgstr "Előzmények előző"
 
 msgid "History next"
 msgstr "Előzmények következő"
+
+msgid "Hold first frame"
+msgstr ""
 
 msgid "Hold screen"
 msgstr "Képernyő megtartás"
@@ -6622,6 +6892,9 @@ msgstr "Izland"
 msgid "Icons"
 msgstr "Ikonok"
 
+msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgstr ""
+
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
 msgstr "Ha nem engedélyezi ezt a beállítást, akkor a fájlok és könyvtárak neveiben lévő aláhúzott karakterek szóközzel helyettesítődnek."
 
@@ -6630,9 +6903,6 @@ msgstr "Ha engedélyezi, a napló a CEC protokoll forgalmat is eltárolja ('hdmi
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Ha engedélyezi, a könyvjelzők az új hely szerint lesznek frissítve amennyiben áthelyez vagy átmásol egy felvételt."
-
-msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
-msgstr "Ha engedélyezi, a kijelző 12 karaktert jelenít meg 8 helyett, de csak latin-1/translit-et."
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "'Igen' beállítás esetén a jelszint értékek (SNR, stb.) az API V3-ból lesznek kiszámítva. Ez egy régebbi API verzió, amely már elavult."
@@ -6732,8 +7002,20 @@ msgstr "Távoli vevő URL címének importálása"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
+#, fuzzy
+msgid "In menu and plugins"
+msgstr "menüben és bővítményeknél"
+
+#, fuzzy
+msgid "In menu only"
+msgstr "csak a menüben"
+
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Az időzítés esedékessége miatt átkapcsoltam a beprogramozott csatornára!\n"
+
+#, fuzzy
+msgid "In plugins only"
+msgstr "csak a bővítményeknél"
 
 msgid "In progress"
 msgstr "Folyamatban"
@@ -6814,10 +7096,6 @@ msgstr "Információs sáv"
 
 msgid "Info bar timeout"
 msgstr "Információs sáv megjelenítési ideje"
-
-#, fuzzy
-msgid "InfoBar"
-msgstr "Információs sáv"
 
 #, fuzzy
 msgid "Infobar fade-out speed"
@@ -6950,7 +7228,7 @@ msgstr "Csak a belső háttértárról"
 msgid "Internet"
 msgstr "Belső"
 
-msgid "Internet (ntp)"
+msgid "Internet time (NTP)"
 msgstr ""
 
 msgid "Interval between keys when repeating:"
@@ -7070,15 +7348,6 @@ msgstr "Skálázás (nyújtás)"
 msgid "KA-SAT"
 msgstr "KA-SAT"
 
-msgid "Kathrein RC660 (UFS910/922)"
-msgstr ""
-
-msgid "Kathrein RC671 (UFS912)"
-msgstr ""
-
-msgid "Kathrein RC675 (UFS913)"
-msgstr ""
-
 msgid "Kazakhstan"
 msgstr "Kazahsztán"
 
@@ -7153,8 +7422,48 @@ msgid "LCD Setup"
 msgstr "Beállítások"
 
 #, fuzzy
+msgid "LED Deep Standby"
+msgstr "Kikapcsolás"
+
+#, fuzzy
+msgid "LED Normal"
+msgstr "Normál"
+
+#, fuzzy
+msgid "LED Setup"
+msgstr "Beállítások"
+
+#, fuzzy
+msgid "LED Standby"
+msgstr "Készenlét"
+
+#, fuzzy
 msgid "LED brightness"
 msgstr "Fényerő"
+
+#, fuzzy
+msgid "LED brightness during deep standby."
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
+
+msgid "LED brightness during normal operations."
+msgstr ""
+
+msgid "LED brightness during standby."
+msgstr ""
+
+msgid "LED color during normal operations"
+msgstr ""
+
+#, fuzzy
+msgid "LED color during recording"
+msgstr "Azonnali felvételek helye"
+
+msgid "LED color during recording in standby"
+msgstr ""
+
+#, fuzzy
+msgid "LED color during standby"
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
 
 #, fuzzy
 msgid "LED configuration"
@@ -7356,9 +7665,6 @@ msgstr "Litvánia"
 msgid "Lithuanian"
 msgstr "Litván"
 
-msgid "Live decoder"
-msgstr "Valós idejű dekóder"
-
 msgid "Load"
 msgstr "Betöltés"
 
@@ -7438,6 +7744,10 @@ msgstr "Hosszú gombnyomás"
 
 msgid "Long press emulation with button"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Long press: %s"
+msgstr "Hosszú gombnyomás"
 
 msgid "Longitude"
 msgstr "Földrajzi hosszúsági fok"
@@ -7769,9 +8079,6 @@ msgstr "Módok"
 msgid "Modulation"
 msgstr "Moduláció"
 
-msgid "Modulator"
-msgstr "Modulátor"
-
 msgid "Moldova (Republic of)"
 msgstr "Moldova"
 
@@ -7974,9 +8281,6 @@ msgstr "Mozambik"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-msgid "Multi channel downmix"
-msgstr "Több csatorna lekeverése"
-
 #, fuzzy
 msgid "Multi remote control support"
 msgstr "Távirányító típusának módosítása"
@@ -8114,6 +8418,9 @@ msgstr "Namíbia"
 
 msgid "Nauru"
 msgstr "Nauru"
+
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgstr ""
 
 msgid "Nepal"
 msgstr "Nepál"
@@ -8445,6 +8752,9 @@ msgstr "Nem-csatlakozott"
 msgid "Not Defined"
 msgstr "Nincs megadva"
 
+msgid "Not Installed"
+msgstr "Nincs telepítve"
+
 msgid "Not associated"
 msgstr "Nem-csatlakozott"
 
@@ -8724,23 +9034,17 @@ msgstr "Tuner beállító megnyitása "
 msgid "OpenVision"
 msgstr "Bővítmények"
 
-#, fuzzy
-msgid "Operating LED colour status in deep standby mode"
+msgid "Operating LED status in deep standby mode"
 msgstr "A működési LED állapota mély készenlét módban"
 
-#, fuzzy
-msgid "Operating LED colour status in standby mode"
+msgid "Operating LED status in standby mode"
 msgstr "A működési LED állapota készenlét módban"
 
-#, fuzzy
-msgid "Operating LED colour status while running."
+msgid "Operating LED status while running."
 msgstr "A működési LED állapota bekapcsolt módban"
 
 msgid "Opkg"
 msgstr "Opkg"
-
-msgid "Opticum HD 9600 series"
-msgstr ""
 
 msgid "Options disable timer"
 msgstr "Időzítő letiltási beállítások"
@@ -8759,6 +9063,13 @@ msgstr "Egyéb"
 
 msgid "Other Subtitles & lang"
 msgstr "Egyéb felirat és nyelv"
+
+msgid "Other buttons will jump to the help for that button, if there is help."
+msgstr ""
+
+#, fuzzy
+msgid "Other functions"
+msgstr "továbboktatás"
 
 msgid "Output"
 msgstr "Kimenet"
@@ -8824,9 +9135,6 @@ msgstr "PMT PID"
 msgid "PPanel"
 msgstr "PPanel"
 
-msgid "Pace HDS7241"
-msgstr ""
-
 msgid "Package list update"
 msgstr "Csomaglista frissítés"
 
@@ -8882,6 +9190,9 @@ msgstr "Gyermekzárral védett csatornák szerkesztése"
 
 msgid "Parental control setup"
 msgstr "Gyermekzár beállítások"
+
+msgid "Passthrough"
+msgstr ""
 
 msgid "Password"
 msgstr "Jelszó"
@@ -9374,25 +9685,38 @@ msgstr "Forgatómotor beállítás"
 msgid "Positioner setup log"
 msgstr "Forgatómotor beállítás naplózás"
 
-#, fuzzy
-msgid "Power"
-msgstr "LED jelző fény"
-
-msgid "Power LED"
-msgstr "LED jelző fény"
+msgid "Power LED can be turned on or off here."
+msgstr ""
 
 #, fuzzy
 msgid "Power LED colour"
 msgstr "LED jelző fény"
+
+#, fuzzy
+msgid "Power LED state during deep-standby."
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
+
+#, fuzzy
+msgid "Power LED state during standby."
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
+
+#, fuzzy
+msgid "Power LED state in Deep-Standby"
+msgstr "A működési LED állapota mély készenlét módban"
+
+#, fuzzy
+msgid "Power LED state in Standby"
+msgstr "A működési LED állapota készenlét módban"
+
+#, fuzzy
+msgid "Power On Display"
+msgstr "Előlapi kijelző"
 
 msgid "Power Timers"
 msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Energiagazdálkodás. További információkért olvassa el készüléke használati útmutatóját."
-
-msgid "Power on display"
-msgstr "Előlapi kijelző"
 
 msgid "Power threshold in mA"
 msgstr "Áram határérték (mA)"
@@ -9716,7 +10040,7 @@ msgstr "típus"
 msgid "REC"
 msgstr "Felvétel"
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr ""
 
 #, fuzzy
@@ -9725,10 +10049,6 @@ msgstr "Készenlét alatt is"
 
 msgid "REC symbol in use"
 msgstr ""
-
-#, fuzzy
-msgid "RF Output Setup"
-msgstr "RF kimenet"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10428,6 +10748,10 @@ msgstr ""
 msgid "SH4 OSD Position setup"
 msgstr "Forgatómotor beállítás"
 
+#, python-format
+msgid "SHIFT: %s"
+msgstr ""
+
 msgid "SINGLE LAYER DVD"
 msgstr "Egyrétegű DVD"
 
@@ -10665,10 +10989,6 @@ msgstr "Vezeték nélküli hálózat keresése"
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr "Vezeték nélküli hálózatok keresése, és csatlakoztatása a kiválasztott vezeték nélküli adapter segítségével.\n"
 
-#, fuzzy
-msgid "Scanning"
-msgstr "Keresés..."
-
 #, python-format
 msgid "Scanning %s..."
 msgstr "%s keresés..."
@@ -10715,6 +11035,12 @@ msgstr "Görgetés ismétlése"
 #, fuzzy
 msgid "Scroll text"
 msgstr "Görgetés ismétlése"
+
+msgid "Scrolling delay (software renderer)"
+msgstr ""
+
+msgid "Scrolling speed (software renderer)"
+msgstr ""
 
 msgid "Search"
 msgstr "Keresés"
@@ -11162,12 +11488,6 @@ msgstr "Műholdak kiválasztása 2. (USALS)"
 msgid "Selecting this option allows you to configure a group of satellites in one block."
 msgstr "Ezen opció kiválasztásával több műhold beállítását végezheti el egyszerre."
 
-msgid "Selects the mode how live tv should be shown on the LCD."
-msgstr "Az élő TV-műsor hogyan jelenjen meg az LCD-n."
-
-msgid "Selects video source displayed on the LCD."
-msgstr "Kiválasztja az LCD kijelzőn megjelenő videó forrását."
-
 msgid "Send 'sourceactive' before zap timers"
 msgstr "'Sourceactive' küldése az időzített csatornaváltás előtt"
 
@@ -11377,6 +11697,9 @@ msgstr "Állítsa be az OpenWebIf felhasználói azonosítót a tartalék tunerb
 msgid "Set the default sorting method."
 msgstr "Rendezési módszer választása:"
 
+msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
+msgstr ""
+
 #, fuzzy
 msgid "Set the global sort method"
 msgstr "Rendezési módszer választása:"
@@ -11390,6 +11713,9 @@ msgstr "Állítsa be az OpenWebIf portot a tartalék tunerből"
 #, fuzzy
 msgid "Set the repeat interval of the schedule."
 msgstr "A képernyőfrissítési gyakoriság beállítása."
+
+msgid "Set the scrolling speed of text on the front panel display, this is used by software renderer in some skins."
+msgstr ""
 
 #, fuzzy
 msgid "Set the sort method for this directory"
@@ -11496,6 +11822,10 @@ msgstr "CI üzenetek mutatása"
 msgid "Show Clients"
 msgstr "Filmek megjelenítése"
 
+#, fuzzy
+msgid "Show Display Icons"
+msgstr "Kódolt ikon megjelenítése"
+
 msgid "Show EIT now/next in infobar"
 msgstr "Most/Következik információ EIT-ből származzon"
 
@@ -11512,6 +11842,17 @@ msgstr "Alternatívák megjelenítése"
 #, fuzzy
 msgid "Show HDD icons"
 msgstr "Kódolt ikon megjelenítése"
+
+#, fuzzy
+msgid "Show HDD progress"
+msgstr "Folyamatban"
+
+#, fuzzy
+msgid "Show HDMI Output Resulution"
+msgstr "Felirat kiválasztásának megjelenítése"
+
+msgid "Show HDMI-Output Res"
+msgstr ""
 
 msgid "Show InfoBar"
 msgstr "Infobar megjelenítése"
@@ -11581,6 +11922,14 @@ msgstr "Kódolt ikon megjelenítése"
 
 msgid "Show crypto info in infobar"
 msgstr "Kódolási információ megjelenítése az információs sávon"
+
+#, fuzzy
+msgid "Show default after description"
+msgstr "Bővített leírás megjelenítése"
+
+#, fuzzy
+msgid "Show default on new line"
+msgstr "Információs sáv megjelenítése"
 
 msgid "Show detailed event info"
 msgstr "Részletes esemény információ"
@@ -11735,9 +12084,6 @@ msgstr "Piconok mutatása a csatornaválasztó menüben"
 msgid "Show picons in channel selection list"
 msgstr "Piconok mutatása a csatornaválasztó menüben"
 
-msgid "Show picons in display"
-msgstr "Piconok mutatása a kijelzőn"
-
 #, fuzzy
 msgid "Show picons in the movie list."
 msgstr "Állapotjelző ikonok megjelenítése a filmlistában"
@@ -11778,6 +12124,10 @@ msgstr "Csatorna-típus ikon megjelenítése"
 msgid "Show servicelist or movies"
 msgstr "Csatornalista vagy filmek megjelenítése"
 
+#, fuzzy
+msgid "Show setup default value"
+msgstr "Alapértelmezett"
+
 msgid "Show single service EPG"
 msgstr "Egy csatorna EPG megjelenítése"
 
@@ -11795,9 +12145,6 @@ msgstr "Alcsatornák kiválasztásának megjelenítése"
 
 msgid "Show subtitle selection"
 msgstr "Felirat kiválasztásának megjelenítése"
-
-msgid "Show symbols on display"
-msgstr "Szimbólumok megjelenítése a kijelzőn"
 
 msgid "Show the radio player..."
 msgstr "Rádió csatornalista..."
@@ -11846,9 +12193,6 @@ msgstr "Játék/Show"
 
 msgid "Show/hide window"
 msgstr "Ablak elrejtése/mutatása"
-
-msgid "Shows live tv or informations on LCD."
-msgstr "Élő TV-adást vagy egyéb információkat jelenít meg az LCD kijelzőn."
 
 msgid "Shows the icons when new/unseen, otherwise it will not show an icon."
 msgstr ""
@@ -11936,6 +12280,10 @@ msgstr "Földrajzi szélességi fok"
 msgid "Site longitude"
 msgstr "Földrajzi hosszúsági fok"
 
+#, fuzzy
+msgid "Skin"
+msgstr "Kinézetek"
+
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Kinézet és felbontás: %s (%sx%s)\n"
@@ -11944,12 +12292,12 @@ msgid "Skin Selection Actions"
 msgstr "Kinézet választás műveletek"
 
 #, fuzzy
-msgid "Skin Setting"
+msgid "Skin Setup"
 msgstr "Beállítások"
 
 #, fuzzy
-msgid "Skin Setup"
-msgstr "Beállítások"
+msgid "Skin setting"
+msgstr "OSD beállítások"
 
 msgid "SkinSelector: Restart GUI"
 msgstr "Kinézet választó: Kezelőfelület újraindítása"
@@ -12004,6 +12352,10 @@ msgstr "Szolvén"
 
 msgid "Slow"
 msgstr "Lassú"
+
+#, fuzzy
+msgid "Slow motion"
+msgstr "Lassítási sebességek"
 
 msgid "Slow motion speeds"
 msgstr "Lassítási sebességek"
@@ -12125,6 +12477,10 @@ msgstr "Visszaállítja a lista rendezését, és kilép?"
 msgid "Sort list:"
 msgstr "Lista rendezése:"
 
+#, fuzzy
+msgid "Sort order for help screen"
+msgstr "Beállítási bejegyzések rendezése"
+
 msgid "Sort order for menu entries"
 msgstr "Menü bejegyzések rendezése"
 
@@ -12140,12 +12496,6 @@ msgstr "Rendez: Idő"
 
 msgid "Sorting of playlists"
 msgstr "Lejátszási listák rendezése"
-
-msgid "Sound"
-msgstr "Hang"
-
-msgid "Sound carrier"
-msgstr "Hangvivő"
 
 msgid "Source request"
 msgstr "Forrás-kérés"
@@ -12171,9 +12521,6 @@ msgstr "Spanyolország"
 
 msgid "Spanish"
 msgstr "Spanyol"
-
-msgid "Spark"
-msgstr ""
 
 msgid "Spark7162 select tuner mode"
 msgstr ""
@@ -12278,9 +12625,6 @@ msgstr "Készenlét az aktuális műsor végén"
 msgid "Standby brightness"
 msgstr "Készenlétbe: "
 
-msgid "Standby clock frequency:"
-msgstr ""
-
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "%d. Vent. készenlét PWM"
@@ -12289,7 +12633,8 @@ msgstr "%d. Vent. készenlét PWM"
 msgid "Standby fan %d voltage"
 msgstr "%d. Vent. készenlét feszültség"
 
-msgid "Standby in "
+#, fuzzy, python-format
+msgid "Standby in %s"
 msgstr "Készenlétbe: "
 
 #, fuzzy
@@ -12666,15 +13011,6 @@ msgstr "Csatorna léptetés lefelé"
 msgid "Switch channel up"
 msgstr "Csatorna léptetés felfelé"
 
-msgid "Switch on the display during Standby Mode"
-msgstr "A kijelző bekapcsolása Készenlét módban"
-
-msgid "Switch on the display during Suspend Mode"
-msgstr "A kijelző bekapcsolása Felfüggesztett módban"
-
-msgid "Switch on the display during operation."
-msgstr "A kijelző bekapcsolása működés közben."
-
 msgid "Switch to TV mode"
 msgstr "Váltás TV módra"
 
@@ -12916,13 +13252,6 @@ msgstr "Teszt mód"
 msgid "Test DiSEqC settings"
 msgstr "DiSEqC beállítások tesztelése"
 
-msgid "Test mode"
-msgstr "Teszt mód"
-
-#, fuzzy
-msgid "Test overclock"
-msgstr "Teszt mód"
-
 msgid "Test the network configuration of your receiver.\n"
 msgstr "A készülék hálózati konfigurációjának ellenőrzése.\n"
 
@@ -13032,6 +13361,9 @@ msgid ""
 msgstr ""
 "A NetworkWizard bővítmémy nincs feltelepítve!\n"
 "Kérem, telepítse fel."
+
+msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
+msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13238,6 +13570,9 @@ msgstr "Ezzel csökkentheti a képernyő blokk-zajt. Így viszont a kép éless�
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Ezzel beállíthatja a kép dinamikus kontraszt szintjét."
 
+msgid "This option allows you can to set the auto volume level."
+msgstr "Ezzel beállíthatja az automatikus hangerő szintjét."
+
 #, fuzzy
 msgid "This option allows you choose how to display elapsed time as + or -"
 msgstr "Ezzel kikapcsolhatja a kijelzőt."
@@ -13260,6 +13595,10 @@ msgstr "A szürkeárnyalat lágyabbá tétele."
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr "Ez a beállítás engedélyezi a skálázó függőleges élsimítást."
 
+#, fuzzy
+msgid "This option allows you to Power Off the display."
+msgstr "Ezzel kikapcsolhatja a kijelzőt."
+
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr "Beállíthatja, hogy a softcam beállításai megjelenjenek a bővítmények menüben."
 
@@ -13271,6 +13610,9 @@ msgstr "A képernyőn lévő kék színek kiemelése."
 
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "A képernyőn lévő zöld színek kiemelése."
+
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr "Megváltoztathatja a virtuális hangszórók pozícióját."
 
 #, fuzzy
 msgid "This option allows you to choose how to display elapsed time. As + or -"
@@ -13304,6 +13646,15 @@ msgstr "A Színtért módosíthatja automatikus-ról RGB-re"
 msgid "This option allows you to configure the HDR type."
 msgstr "Beállíthatja a HDR típusát"
 
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr "Letilthatja vagy megváltoztathatja a virtuális hangszórók pozícióját."
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr "Ez engedélyezi a 3D Surround softlimiter-t."
+
+msgid "This option allows you to enable 3D surround sound."
+msgstr "Ez engedélyezi a 3D Surround hangot."
+
 msgid "This option allows you to enable or disable the 10 bit color mode"
 msgstr "A 10 bites színmód engedélyezése"
 
@@ -13319,11 +13670,8 @@ msgstr "A HLG mód kényszerítése UHD esetén"
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button. With the user defined hidden the blue button is not shown in the menus"
 msgstr "A menü bejegyzések elrejtése és rendezése. Ha engedélyezi, a kék gombbal meg tudja változtatni a menü egyes elemeinek elrejtését és sorrendjét. Ha a 'felhasználó által megadva' elrejtését választja, a kék gomb nem jelenik meg a menüben."
 
-msgid "This option allows you to power off the display."
-msgstr "Ezzel kikapcsolhatja a kijelzőt."
-
-msgid "This option allows you to show all symbols on the display."
-msgstr "A kijelzőn minden szimbólum jelenjen meg."
+msgid "This option allows you to select if the default value for a setup item is shown and, if so, where it is displayed in relation to the description."
+msgstr ""
 
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Ezzel megjelenítheti a menü és/vagy bővítmények gyors hivatkozását számokkal."
@@ -13331,11 +13679,23 @@ msgstr "Ezzel megjelenítheti a menü és/vagy bővítmények gyors hivatkozás�
 msgid "This option allows you to show the full screen path leading to the current screen."
 msgstr "Ezzel engedélyezheti a teljes útvonal mutatását, ami ehhez a képernyőhöz vezet."
 
+#, fuzzy
+msgid "This option allows you to switch audio to BT speakers."
+msgstr "Ezzel beállíthatja az automatikus hangerő szintjét."
+
+#, fuzzy
+msgid "This option allows you to use video sync mode."
+msgstr "Ez engedélyezi a 3D Surround hangot."
+
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "A régi és az új beállításokat egyszerre láthatja két oldalt."
 
 msgid "This option can be useful for long HDMI cables."
 msgstr "Ez a lehetőség hosszú HDMI kábel használata esetén javasolt."
+
+#, fuzzy
+msgid "This option configures the general audio delay for BT speakers."
+msgstr "A sztereó hangsávok általános késleltetése."
 
 msgid "This option set the level of surpression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "Ezzel beállítja a hangya-zajcsökkentés elfojtását (ez az erősen tömörített adások során jelentkezhet). Így viszont a kép élességét is rontja."
@@ -13612,12 +13972,6 @@ msgstr "Felirat kiválasztása"
 msgid "Today"
 msgstr "Ma"
 
-msgid "Toggle HDMI In"
-msgstr "HDMI bemenet be/ki"
-
-msgid "Toggle LCD LiveTV"
-msgstr "LCD élő TV be/ki"
-
 msgid "Toggle PiPzap"
 msgstr "Kép-a-Képben ugrás be/ki"
 
@@ -13676,9 +14030,6 @@ msgstr "Teteje és Alja"
 msgid "Top and bottom"
 msgstr "Teteje és Alja"
 
-msgid "Topfield TF77X0HDPVR"
-msgstr ""
-
 msgid "TopfieldVFD"
 msgstr ""
 
@@ -13720,7 +14071,7 @@ msgid "Transponder"
 msgstr "Transzponder"
 
 #, fuzzy
-msgid "Transponder Time"
+msgid "Transponder time"
 msgstr "Transzponder"
 
 msgid "Transport Stream Type"
@@ -13745,13 +14096,13 @@ msgstr "Hibakeresés"
 msgid "True"
 msgstr "Igaz"
 
+msgid "TrueType font (Full-HD)"
+msgstr ""
+
 msgid "TrueType font (HD)"
 msgstr ""
 
 msgid "TrueType font (SD)"
-msgstr ""
-
-msgid "TrueType font (full-HD)"
 msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -13827,6 +14178,10 @@ msgstr "Türkmenisztán"
 
 msgid "Turks and Caicos Islands"
 msgstr "Turks- és Caicos-szigetek"
+
+#, fuzzy
+msgid "Turn on the control LED."
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
 
 msgid "Turn on the power LED during deep standby."
 msgstr "A LED jelző fény bekapcsolása készenléti módban."
@@ -14069,9 +14424,6 @@ msgstr "Használati beállítás"
 msgid "Use"
 msgstr "Használ"
 
-msgid "Use 12 characters display mode"
-msgstr "12 karakteres kijelzés"
-
 msgid "Use DHCP"
 msgstr "DHCP használata"
 
@@ -14222,6 +14574,10 @@ msgstr "Felhasználói mód"
 msgid "User defined"
 msgstr "Felhasználó által megadva"
 
+#, fuzzy
+msgid "User defined hidden"
+msgstr "'felhasználó által megadva' elrejtése"
+
 msgid "User defined transponder"
 msgstr "Alább beállított transzponderen"
 
@@ -14341,6 +14697,13 @@ msgstr "Vertikális"
 msgid "Vertical turning speed"
 msgstr "Vertikális fordulási sebesség"
 
+msgid "Very fast"
+msgstr ""
+
+#, fuzzy
+msgid "Very slow"
+msgstr "Tuner foglalat"
+
 msgid "Video PID"
 msgstr "Videó PID"
 
@@ -14376,6 +14739,10 @@ msgstr "Videó kimenet"
 
 msgid "Video setup"
 msgstr "Videó beállítások"
+
+#, fuzzy
+msgid "Video sync mode"
+msgstr "Videó mód"
 
 msgid "Video wizard"
 msgstr "Video varázsló"
@@ -14469,9 +14836,6 @@ msgstr "Virtuális Billentyűzet"
 msgid "Virtual keyboard skin"
 msgstr "Virtuális Billentyűzet"
 
-msgid "Vitamin 5000HD"
-msgstr ""
-
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Videó: %s fps"
@@ -14503,6 +14867,9 @@ msgstr "Vezeték nélküli kapcsolat"
 #, fuzzy
 msgid "WLAN driver:"
 msgstr "Hálózati adapter"
+
+msgid "WMA Pro"
+msgstr ""
 
 msgid "WPA"
 msgstr "WPA"
@@ -14923,6 +15290,10 @@ msgstr ""
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Hová kerüljenek az átmeneti időcsúsztatás felvételek?"
 
+#, fuzzy
+msgid "White"
+msgstr "fehér"
+
 msgid "Wireless LAN"
 msgstr "Vezeték nélküli hálózat"
 
@@ -14950,17 +15321,16 @@ msgstr "Hibákkal:"
 msgid "With popup"
 msgstr "Figyelmeztetéssel"
 
-msgid "With this option you can switch on the display during operation."
-msgstr "Ezzel a beállítással bekapcsolhatja a kijelzőt működés közben."
-
-msgid "With this option you can switch on the display in Deep Standby Mode."
-msgstr "Ezzel a beállítással bekapcsolhatja a kijelzőt mély készenlét módban."
-
-msgid "With this option you can switch on the display in Standby Mode."
-msgstr "Ezzel a beállítással bekapcsolhatja a kijelzőt készenléti állapotban."
+#, fuzzy
+msgid "With text"
+msgstr "szöveggel"
 
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "Ezzel megváltoztathatja a LED színét vagy kikapcsolhatja a LED-et."
+
+#, fuzzy
+msgid "With tuner name"
+msgstr "tuner névvel"
 
 msgid "Without popup"
 msgstr "Figyelmeztetés nélkül"
@@ -15047,6 +15417,10 @@ msgstr "Igen, mindig"
 
 msgid "Yes, and delete this movie"
 msgstr "Igen, és felvétel törlése"
+
+#, fuzzy
+msgid "Yes, but not in multi selections"
+msgstr "igen, de nem több kijelöléssel"
 
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Igen, törölje ezt a filmet és térjen vissza a filmlistához"
@@ -15418,9 +15792,6 @@ msgstr "kaland/western/háború"
 msgid "advertisement/shopping"
 msgstr "reklám/televíziós vásárlás"
 
-msgid "after "
-msgstr "kikapcsolás: "
-
 msgid "all"
 msgstr "minden"
 
@@ -15433,14 +15804,8 @@ msgstr "ábécé szerinti rendezés"
 msgid "alphabetic reverse"
 msgstr "fordított ABC"
 
-msgid "alphabetical"
-msgstr "ABC sorrendben"
-
 msgid "alpharev then newest"
 msgstr ""
-
-msgid "alternative"
-msgstr "alternatív"
 
 msgid "always"
 msgstr "mindig"
@@ -15629,8 +15994,21 @@ msgstr "Folytatás"
 msgid "controlled by HDMI"
 msgstr "HDMI által vezérelve"
 
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+#, fuzzy
+msgid "convert to multi-channel PCM"
+msgstr "Többcsatornás PCM"
+
 msgid "cooking"
 msgstr "főzés"
+
+msgid "cuberevo"
+msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"
@@ -15745,10 +16123,6 @@ msgstr "vágás kilépő pontja"
 msgid "end cut here (reset)"
 msgstr "vágás kilépő pontja"
 
-#, fuzzy
-msgid "enigma2 default"
-msgstr "Alapértelmezett"
-
 msgid "entertainment (10-16 year old)"
 msgstr "szórakoztató (10-16 éves korosztály"
 
@@ -15794,6 +16168,13 @@ msgstr "kliépés a hálózati adapter beállításaiból"
 msgid "experimental film/video"
 msgstr "kísérleti filmezés"
 
+msgid "extra wide"
+msgstr "extra széles"
+
+#, fuzzy
+msgid "extrawide"
+msgstr "extra széles"
+
 msgid "failed"
 msgstr "sikertelen"
 
@@ -15802,6 +16183,9 @@ msgstr "nem"
 
 msgid "fashion"
 msgstr "divat"
+
+msgid "fast"
+msgstr ""
 
 msgid "fileformats (BMP, PNG, JPG, GIF)"
 msgstr "fájlformátumok (BMP, PNG, JPG, GIF)"
@@ -15829,12 +16213,6 @@ msgstr "folklór/népzene"
 
 msgid "football/soccer"
 msgstr "futball/foci"
-
-msgid "force disabled"
-msgstr "kényszerített tiltás"
-
-msgid "force enabled"
-msgstr "kényszerített engedélyezés"
 
 msgid "foreign countries/expeditions"
 msgstr "külföldi országok/kirándulás"
@@ -15920,6 +16298,9 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "horizontális"
 
@@ -15943,15 +16324,6 @@ msgstr ""
 
 msgid "https://openvision.tech"
 msgstr ""
-
-msgid "in menu and plugins"
-msgstr "menüben és bővítményeknél"
-
-msgid "in menu only"
-msgstr "csak a menüben"
-
-msgid "in plugins only"
-msgstr "csak a bővítményeknél"
 
 msgid "information/education/school program"
 msgstr "információ/oktatás/isklola"
@@ -16056,6 +16428,10 @@ msgstr "menü"
 msgid "mins"
 msgstr "perc"
 
+#, fuzzy
+msgid "minute"
+msgstr "perc"
+
 msgid "minutes"
 msgstr "perc"
 
@@ -16144,6 +16520,10 @@ msgstr "nem található CI foglalat"
 msgid "no channel list"
 msgstr "nincs csatornalista"
 
+#, fuzzy
+msgid "no delay"
+msgstr "Nincs késleltetés"
+
 msgid "no module found"
 msgstr "nincs behelyezve modul"
 
@@ -16224,17 +16604,20 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "névszerver konfiguráció megnyítása"
 
+msgid "opt9600"
+msgstr ""
+
 msgid "opt9600VFD"
 msgstr ""
 
 msgid "orange"
 msgstr ""
 
-msgid "original"
-msgstr "eredeti"
-
 msgid "original language"
 msgstr "eredeti nyelv"
+
+msgid "pace7241"
+msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -16333,9 +16716,6 @@ msgstr "dátum szerint csökkenő"
 
 msgid "rewind to the previous chapter"
 msgstr "visszatekerés az előző chapterhez"
-
-msgid "rgb"
-msgstr "rgb"
 
 msgid "right"
 msgstr "jobb"
@@ -16473,6 +16853,9 @@ msgstr "partíció%s - %s, biztonsági mentéssel"
 msgid "slot%s - %s, without backup"
 msgstr "partíció%s - %s, biztonsági mentés nélkül"
 
+msgid "slow"
+msgstr ""
+
 #, fuzzy
 msgid "soap/melodrama/folkloric"
 msgstr "szappanopera/melodráma"
@@ -16486,6 +16869,9 @@ msgstr "szociális/spirituális"
 #, fuzzy
 msgid "softcam"
 msgstr "Softcam újraindítása"
+
+msgid "spark"
+msgstr ""
 
 msgid "spark7162VFD"
 msgstr ""
@@ -16567,6 +16953,9 @@ msgstr "Földi"
 msgid "testing"
 msgstr "működőképes"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "ez a lista gyermekzár PIN-kóddal védett"
 
@@ -16631,6 +17020,15 @@ msgstr "vizi sport"
 msgid "uShare setup"
 msgstr "Varázsló beállítása"
 
+msgid "ufs910/922 (rc660)"
+msgstr ""
+
+msgid "ufs912 (rc671)"
+msgstr ""
+
+msgid "ufs913 (rc675)"
+msgstr ""
+
 msgid "unavailable"
 msgstr "nem elérhető"
 
@@ -16658,11 +17056,15 @@ msgstr "nem tesztelhető"
 msgid "until standby/restart"
 msgstr "kikapcsolásig/újraindításig"
 
+#, fuzzy
+msgid "use best / controlled by HDMI"
+msgstr "HDMI által vezérelve"
+
+msgid "use_hdmi_cacenter"
+msgstr ""
+
 msgid "user defined"
 msgstr "felhasználó által megadva"
-
-msgid "user defined hidden"
-msgstr "'felhasználó által megadva' elrejtése"
 
 msgid "variety show"
 msgstr "varieté"
@@ -16672,6 +17074,9 @@ msgstr "vertikális"
 
 msgid "violet"
 msgstr "ibolya"
+
+msgid "vitamin_hd5000"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "várakozás modulra..."
@@ -16705,8 +17110,8 @@ msgstr "ha a Kép-a-Képben csatornaváltás engedélyezett, csatornaváltás le
 msgid "when PiPzap enabled zap channel up..."
 msgstr "ha a Kép-a-Képben csatornaváltás engedélyezett, csatornaváltás felfelé..."
 
-msgid "white"
-msgstr "fehér"
+msgid "wide"
+msgstr "széles"
 
 msgid "width"
 msgstr "szélesség"
@@ -16726,12 +17131,6 @@ msgstr[1] "%d hibákkal"
 msgid "with errors"
 msgstr "hibákkal"
 
-msgid "with text"
-msgstr "szöveggel"
-
-msgid "with tuner name"
-msgstr "tuner névvel"
-
 msgid "with_errors"
 msgstr "hibákkal"
 
@@ -16743,12 +17142,6 @@ msgstr "igen"
 
 msgid "yes (keep feeds)"
 msgstr "igen (feed-ek megtartása)"
-
-msgid "yes, but not in multi selections"
-msgstr "igen, de nem több kijelöléssel"
-
-msgid "yuv"
-msgstr ""
 
 msgid "zap"
 msgstr "ugrás"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 21:32+0330\n"
+"POT-Creation-Date: 2021-02-26 14:03+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -183,16 +183,16 @@ msgstr ""
 msgid "%-I:%M:%S%^p"
 msgstr ""
 
-#. TRANSLATORS: full date representation daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: full date representation daynum monthname year in strftime() format! See "man strftime"
 msgid "%-d %B %Y"
 msgstr ""
 
-#. TRANSLATORS: small date representation daynum short monthname in strftime() format! See 'man strftime'
-#. TRANSLATORS: compact date representation (for VFD) daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: small date representation daynum short monthname in strftime() format! See "man strftime"
+#. TRANSLATORS: compact date representation (for VFD) daynum short monthname in strftime() format! See "man strftime"
 msgid "%-d %b"
 msgstr ""
 
-#. TRANSLATORS: long date representation daynum short monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation daynum short monthname year in strftime() format! See "man strftime"
 msgid "%-d %b %Y"
 msgstr ""
 
@@ -304,11 +304,11 @@ msgstr "%2.1f 秒"
 msgid "%3.01f dB"
 msgstr ""
 
-#. TRANSLATORS: short date representation dayname daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: short date representation dayname daynum short monthname in strftime() format! See "man strftime"
 msgid "%A %-d %B"
 msgstr ""
 
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See "man strftime"
 msgid "%A %-d %B %Y"
 msgstr ""
 
@@ -539,19 +539,19 @@ msgstr ""
 msgid "%Y/%m/%d"
 msgstr ""
 
-#. TRANSLATORS: small date representation short dayname daynum in strftime() format! See 'man strftime'
+#. TRANSLATORS: small date representation short dayname daynum in strftime() format! See "man strftime"
 msgid "%a %-d"
 msgstr ""
 
-#. TRANSLATORS: long date representation short dayname daynum monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation short dayname daynum monthname year in strftime() format! See "man strftime"
 msgid "%a %-d %B %Y"
 msgstr ""
 
-#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See "man strftime"
 msgid "%a %-d %b"
 msgstr ""
 
-#. TRANSLATORS: long date representation short dayname daynum short monthname year in strftime() format! See 'man strftime'
+#. TRANSLATORS: long date representation short dayname daynum short monthname year in strftime() format! See "man strftime"
 msgid "%a %-d %b %Y"
 msgstr ""
 
@@ -1022,16 +1022,16 @@ msgstr ""
 "按“Exit”关闭"
 
 #, python-format
-msgid "%s  (Default: %s)"
-msgstr ""
-
-#, python-format
 msgid "%s %s free disk space"
 msgstr "%s %s 空闲空间"
 
 #, python-format
 msgid "%s ( %s Cards )"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "%s (%s)"
+msgstr "菜单排序(%s)"
 
 #, python-format
 msgid "%s (%s)\n"
@@ -1066,6 +1066,10 @@ msgstr "%s%% 自动安装中 %s"
 #, python-format
 msgid "%s%d min"
 msgstr "%s%d 分钟"
+
+#, python-format
+msgid "%s%s(Default: %s)"
+msgstr ""
 
 #, python-format
 msgid "%s/%s: %s"
@@ -1129,12 +1133,42 @@ msgstr "（显示可选的DVD音频菜单）"
 msgid "(unknown)"
 msgstr "(未知)"
 
-#, fuzzy
 msgid "* = Restart Required"
-msgstr "不需要"
+msgstr ""
 
 msgid "* Only available if more than one interface is active."
 msgstr "* 仅在一个或多个网卡激活才有效。"
+
+msgctxt "Text list separator"
+msgid ", "
+msgstr ""
+
+msgid "-1"
+msgstr ""
+
+msgid "-2"
+msgstr ""
+
+msgid "-3"
+msgstr ""
+
+msgid "-4"
+msgstr ""
+
+msgid "-5"
+msgstr ""
+
+msgid "-6"
+msgstr ""
+
+msgid "-7"
+msgstr ""
+
+msgid "-8"
+msgstr ""
+
+msgid "-9"
+msgstr ""
 
 msgid "-NO SERVICE\n"
 msgstr "-无服务\n"
@@ -1168,13 +1202,16 @@ msgstr ""
 msgid "10 MB/s"
 msgstr ""
 
+msgid "10 bit"
+msgstr ""
+
+msgid "10%"
+msgstr ""
+
 msgid "100 MB/s"
 msgstr ""
 
 msgid "100%"
-msgstr ""
-
-msgid "10bit"
 msgstr ""
 
 msgid "11a-only"
@@ -1210,14 +1247,20 @@ msgstr ""
 msgid "11n-only"
 msgstr ""
 
+msgid "12 bit"
+msgstr ""
+
 msgid "128 Mbyte"
+msgstr ""
+
+msgid "1280"
+msgstr ""
+
+msgid "1280x720"
 msgstr ""
 
 msgid "12V output"
 msgstr "12V 输出"
-
-msgid "12bit"
-msgstr ""
 
 msgid "13 V"
 msgstr ""
@@ -1246,6 +1289,15 @@ msgstr ""
 msgid "18 V"
 msgstr ""
 
+msgid "1920"
+msgstr ""
+
+msgid "1920x1080"
+msgstr ""
+
+msgid "1X"
+msgstr ""
+
 msgid "2"
 msgstr ""
 
@@ -1253,9 +1305,6 @@ msgid "20 MB/s"
 msgstr ""
 
 msgid "20%"
-msgstr ""
-
-msgid "200 MHz"
 msgstr ""
 
 msgid "23.976"
@@ -1273,19 +1322,42 @@ msgstr ""
 msgid "29.97"
 msgstr ""
 
+msgid "2X"
+msgstr ""
+
 msgid "3"
 msgstr ""
 
 msgid "30"
 msgstr ""
 
-msgid "300 MHz"
+msgid "30%"
 msgstr ""
 
 msgid "32 Mbyte"
 msgstr ""
 
 msgid "3D Modus"
+msgstr ""
+
+#, fuzzy
+msgid "3D Surround"
+msgstr "3D环绕声"
+
+#, fuzzy
+msgid "3D Surround Speaker Position"
+msgstr "3D环绕扬声器的位置"
+
+msgid "3D surround"
+msgstr "3D环绕声"
+
+msgid "3D surround softlimiter"
+msgstr "3D环绕限位器"
+
+msgid "3D surround speaker position"
+msgstr "3D环绕扬声器的位置"
+
+msgid "3X"
 msgstr ""
 
 msgid "3d mode"
@@ -1297,15 +1369,18 @@ msgstr ""
 msgid "40%"
 msgstr ""
 
+msgid "420"
+msgstr ""
+
 msgid "422"
+msgstr ""
+
+msgid "444"
 msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
 msgstr "默认"
-
-msgid "450 MHz"
-msgstr ""
 
 msgid "4:3"
 msgstr ""
@@ -1319,21 +1394,21 @@ msgstr "4:3 伸缩"
 msgid "4K"
 msgstr ""
 
+msgid "4X"
+msgstr ""
+
 msgid "5"
 msgstr ""
 
 msgid "50 MB/s"
 msgstr ""
 
-msgid "500 MHz"
+msgid "50%"
 msgstr ""
 
 #, fuzzy
 msgid "540 (default)"
 msgstr "默认"
-
-msgid "540 MHz (default)"
-msgstr ""
 
 msgid "6"
 msgstr ""
@@ -1341,46 +1416,37 @@ msgstr ""
 msgid "60%"
 msgstr ""
 
-msgid "600 MHz"
-msgstr ""
-
-msgid "630 MHz"
-msgstr ""
-
 msgid "64 Mbyte"
-msgstr ""
-
-msgid "650 MHz"
 msgstr ""
 
 msgid "7"
 msgstr ""
 
-msgid "700 MHz"
+msgid "70%"
 msgstr ""
 
-msgid "710 MHz"
+msgid "720"
 msgstr ""
 
-msgid "775 MHz"
+msgid "720x576"
 msgstr ""
 
 msgid "8"
 msgstr ""
 
-msgid "80%"
+msgid "8 bit"
 msgstr ""
 
-msgid "800 MHz"
+msgid "80%"
 msgstr ""
 
 msgid "8K"
 msgstr ""
 
-msgid "8bit"
+msgid "9"
 msgstr ""
 
-msgid "9"
+msgid "90%"
 msgstr ""
 
 msgid "<Current movielist location>"
@@ -1470,6 +1536,9 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "特定用户组所有服务的图形EPG"
 
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgstr ""
+
 #, python-format
 msgid ""
 "A record has been started:\n"
@@ -1545,8 +1614,23 @@ msgstr "A/V设置"
 msgid "AAC downmix"
 msgstr "AAC 缩减混音"
 
+#, fuzzy
+msgid "AAC plus downmix"
+msgstr "AAC 缩减混音"
+
+#, fuzzy
+msgid "AAC transcoding"
+msgstr "转码: "
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
 msgstr "AC3 缩减混音"
+
+#, fuzzy
+msgid "AC3 plus transcoding"
+msgstr "转码: "
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
@@ -1808,6 +1892,10 @@ msgstr "高级视频设置"
 msgid "Afghanistan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "After %s"
+msgstr "之后"
+
 msgid "After event"
 msgstr "事件之后"
 
@@ -1901,6 +1989,9 @@ msgstr "用电视遥控"
 msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
 msgstr ""
 
+msgid "Allows you to enable/disable displaying icons on the frontpanel."
+msgstr ""
+
 msgid "Allows you to hide the extensions of known file types."
 msgstr ""
 
@@ -1924,6 +2015,13 @@ msgstr ""
 
 msgid "Alpha"
 msgstr "阿尔法"
+
+#, fuzzy
+msgid "Alphabetical"
+msgstr "按字母顺序排序"
+
+msgid "Alphabetical under headings"
+msgstr ""
 
 msgid "Also import at reboot/restart enigma2"
 msgstr "同样导入在重启E2时"
@@ -1996,6 +2094,9 @@ msgid "Angola"
 msgstr ""
 
 msgid "Anguilla"
+msgstr ""
+
+msgid "Animation speed of help indicators"
 msgstr ""
 
 msgid "Antarctica"
@@ -2133,10 +2234,10 @@ msgstr "作为皮肤默认值"
 msgid "Ask user"
 msgstr "询问用户"
 
-msgid "Ask user (with default as 'no')"
+msgid "Ask user (with default as 'No')"
 msgstr ""
 
-msgid "Ask user (with default as 'yes')"
+msgid "Ask user (with default as 'Yes')"
 msgstr ""
 
 #, fuzzy
@@ -2188,6 +2289,12 @@ msgstr "音频PID%s,编解码器和语言"
 msgid "Audio PID, codec & lang"
 msgstr "音频PID,编解码器和语言"
 
+msgid "Audio Source"
+msgstr ""
+
+msgid "Audio auto volume level"
+msgstr "音频自动音量"
+
 msgid "Audio language selection 1"
 msgstr "音轨语言选择1"
 
@@ -2205,9 +2312,6 @@ msgstr "音频选项。。。"
 
 msgid "Audio plugins"
 msgstr "音频插件"
-
-msgid "Audio source"
-msgstr ""
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2239,10 +2343,6 @@ msgstr "创作模式"
 msgid "Auto"
 msgstr "自动"
 
-#, fuzzy
-msgid "Auto Detect"
-msgstr "自动切换开关"
-
 msgid "Auto Diseqc"
 msgstr "自动切换开关"
 
@@ -2257,12 +2357,20 @@ msgstr "自动语言选择"
 msgid "Auto Timers"
 msgstr "自动刷写"
 
+#, fuzzy
+msgid "Auto Volume Level"
+msgstr "音频自动音量"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "每隔? 分钟自动分割。(0=从不)"
 
 #, fuzzy
 msgid "Auto deep standby"
 msgstr "深度休眠"
+
+#, fuzzy
+msgid "Auto detect"
+msgstr "自动切换开关"
 
 msgid "Auto flesh"
 msgstr "自动刷写"
@@ -2500,7 +2608,13 @@ msgstr "锁定前黑屏"
 msgid "Blinking REC"
 msgstr ""
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
+msgstr ""
+
+msgid "Blinking blue"
+msgstr ""
+
+msgid "Blinking red"
 msgstr ""
 
 msgid "Block noise reduction"
@@ -2570,7 +2684,14 @@ msgstr ""
 msgid "Brazil"
 msgstr ""
 
+msgid "Brief help information for buttons in your current context."
+msgstr ""
+
 msgid "Brightness"
+msgstr "亮度"
+
+#, fuzzy
+msgid "Brightness (Dimmed)"
 msgstr "亮度"
 
 msgid "British Indian Ocean Territory"
@@ -2635,6 +2756,11 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
+#, fuzzy
+msgctxt "Abbreviation of \"Configurable\""
+msgid "C"
+msgstr "C"
+
 msgid "C-Band"
 msgstr "C-波段"
 
@@ -2684,10 +2810,6 @@ msgstr ""
 
 msgid "CPU brand: "
 msgstr ""
-
-#, fuzzy
-msgid "CPU clock frequency:"
-msgstr "所有频率"
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -2841,6 +2963,10 @@ msgstr "级联画中画"
 msgid "Cayman Islands"
 msgstr ""
 
+#, fuzzy
+msgid "Center"
+msgstr "中心位置"
+
 msgid "Center DVB subtitles"
 msgstr "中心DVB字幕"
 
@@ -2908,6 +3034,10 @@ msgstr "频道上下文菜单"
 msgid "Channel list type"
 msgstr "频道列表类型"
 
+#, fuzzy
+msgid "Channel name"
+msgstr "频道信息"
+
 msgid "Channel not in services list"
 msgstr "频道不在列表中"
 
@@ -2919,10 +3049,6 @@ msgstr "频道:"
 
 msgid "Channellist menu"
 msgstr "频道列表菜单"
-
-#, fuzzy
-msgid "Channelname"
-msgstr "声道选择"
 
 msgid "Channelnumber and picon"
 msgstr ""
@@ -3041,6 +3167,29 @@ msgstr ""
 msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
+msgid "Choose the order in which items are displayed in Help windows"
+msgstr ""
+
+#, fuzzy
+msgid "Choose whether AAC sound tracks should be transcoded."
+msgstr "配置多音轨频道是否缩混音频为立体声。"
+
+#, fuzzy
+msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
+msgstr "配置多音轨频道是否缩混音频为立体声。"
+
+#, fuzzy
+msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
+msgstr "配置多音轨频道是否缩混音频为立体声。"
+
+#, fuzzy
+msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
+msgstr "配置多音轨频道是否缩混音频为立体声。"
+
+#, fuzzy
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr "配置多音轨频道是否缩混音频为立体声。"
+
 msgid "Choose which tuner to configure."
 msgstr "选择要配置的调谐器。"
 
@@ -3111,15 +3260,6 @@ msgstr ""
 msgid "Clients"
 msgstr ""
 
-msgid "Cloadfare"
-msgstr ""
-
-msgid "Clone TV screen to LCD"
-msgstr "克隆电视屏幕到LCD"
-
-msgid "Clone TV screen to LCD mode"
-msgstr "将电视屏幕复制到LCD模式"
-
 msgid "Close"
 msgstr "关闭"
 
@@ -3128,6 +3268,9 @@ msgstr " 用“退出”按钮关闭画中画"
 
 msgid "Close title selection"
 msgstr "关闭标题选择"
+
+msgid "Cloudflare"
+msgstr ""
 
 msgid "Cocos (Keeling) Islands"
 msgstr ""
@@ -3267,6 +3410,18 @@ msgstr "配置信息栏在动作之后保持可见的时间。"
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "配置EPG中结束多长时间的时间仍然保持可见，在你想知道那些时间刚刚结束或者延迟时特别有用。"
 
+msgid "Configure front LED color during normal operations (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording in standby (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during standby (this needs an enigma2 restart)."
+msgstr ""
+
 msgid "Configure how many channels are shown in the selection list."
 msgstr "配置选项列表里显示频道的数量。"
 
@@ -3297,9 +3452,6 @@ msgstr "配置字幕是否显示背景。"
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "配置散热风扇如何执行动作"
-
-msgid "Configure if service picons will be shown in display (when supported by the skin)."
-msgstr "配置是否在显示中显示服务picon（当皮肤支持时）。"
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "配置是否在频道选择列表里显示频道台标。"
@@ -3348,6 +3500,10 @@ msgstr "配置字幕边缘宽度，亮色背景下，黑色边缘有助于字幕
 
 msgid "Configure the brightness level of the front panel display during standby."
 msgstr "配置待机中led显面板显示亮度。"
+
+#, fuzzy
+msgid "Configure the brightness level of the front panel display for dimmed operation."
+msgstr "配置led面板显示亮度。"
 
 msgid "Configure the brightness level of the front panel display."
 msgstr "配置led面板显示亮度。"
@@ -3680,11 +3836,24 @@ msgstr "继续播放"
 msgid "Continue playing"
 msgstr "继续播放"
 
+#, fuzzy
+msgid "Continues"
+msgstr "继续"
+
 msgid "Continues play (loop)"
 msgstr "继续播放(重复)"
 
 msgid "Contrast"
 msgstr "对比度"
+
+msgid "Control LED can be turned on or off here."
+msgstr ""
+
+msgid "Control the animation speed of the button indicators in the Help screen. 'Disabled' turns off animation so that indicators jump between buttons."
+msgstr ""
+
+msgid "Controlled by HDMI"
+msgstr ""
 
 msgid "Cook Islands"
 msgstr ""
@@ -3789,9 +3958,6 @@ msgstr "亮度"
 msgid "Cuba"
 msgstr ""
 
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -3892,15 +4058,21 @@ msgstr ""
 msgid "D"
 msgstr ""
 
+msgid "DAC"
+msgstr ""
+
 msgid "DHCP"
 msgstr "自动分配地址(DHCP)"
 
-msgid "DHCP router"
+msgid "DHCP Router"
 msgstr ""
 
 #, fuzzy
 msgid "DLNA support"
 msgstr "HLG支持"
+
+msgid "DTS"
+msgstr ""
 
 msgid "DTS downmix"
 msgstr "DTS 缩减混音"
@@ -3908,6 +4080,9 @@ msgstr "DTS 缩减混音"
 #, fuzzy
 msgid "DTS downmix:"
 msgstr "DTS 缩减混音"
+
+msgid "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
+msgstr ""
 
 msgid "DUAL LAYER DVD"
 msgstr "双层DVD"
@@ -3955,10 +4130,22 @@ msgstr ""
 msgid "DVB-C ANNEX C"
 msgstr ""
 
+msgid "DVB-C/-S/-T"
+msgstr ""
+
+msgid "DVB-C/-T/-S"
+msgstr ""
+
 msgid "DVB-C: "
 msgstr ""
 
 msgid "DVB-S"
+msgstr ""
+
+msgid "DVB-S/-C/-T"
+msgstr ""
+
+msgid "DVB-S/-T/-C"
 msgstr ""
 
 msgid "DVB-S2"
@@ -3968,6 +4155,12 @@ msgid "DVB-S: "
 msgstr ""
 
 msgid "DVB-T"
+msgstr ""
+
+msgid "DVB-T/-C/-S"
+msgstr ""
+
+msgid "DVB-T/-S/-C"
 msgstr ""
 
 msgid "DVB-T2"
@@ -4441,6 +4634,13 @@ msgstr "你看见所有的8个箭头了吗?"
 msgid "Digital contour removal"
 msgstr "数字轮廓去除"
 
+#, fuzzy
+msgid "Dim delay"
+msgstr "无延迟"
+
+msgid "Dim the LCD after specified time."
+msgstr ""
+
 msgid "Direct playback of linked titles without menu"
 msgstr "直接播放链接标题，不使用菜单"
 
@@ -4476,6 +4676,9 @@ msgstr "停止当前事件但排除即将到来的事件"
 
 msgid "Disable move mode"
 msgstr "禁用移动模式"
+
+msgid "Disable the HDD Process on VFD"
+msgstr ""
 
 msgid "Disable timer"
 msgstr "禁用定时器"
@@ -4732,6 +4935,10 @@ msgstr "待机 / 重启"
 msgid "Don't save and stop timeshift"
 msgstr "不要保存并停止时移"
 
+#, fuzzy
+msgid "Don't show default"
+msgstr "设为默认"
+
 msgid "Don't stop current event but disable coming events"
 msgstr "不能停止当前事件, 不过可以禁用下一个事件"
 
@@ -4776,6 +4983,10 @@ msgstr "下载固件中"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "正在下载插件列表,请稍候。。。"
+
+#, fuzzy
+msgid "Downmix"
+msgstr "DTS 缩减混音"
 
 #, fuzzy
 msgid "Drama"
@@ -4956,6 +5167,10 @@ msgstr "为有源天线启用5V供电"
 #, fuzzy
 msgid "Enable Autostart"
 msgstr "启用快速扫描"
+
+#, fuzzy
+msgid "Enable BT audio"
+msgstr "启用"
 
 #, fuzzy
 msgid "Enable CIFS:"
@@ -5164,6 +5379,10 @@ msgstr "Enigma (重新)启动: %d\n"
 #, fuzzy, python-format
 msgid "Enigma2 debug level: %d\n"
 msgstr "Enigma 调试级别: %d\n"
+
+#, fuzzy
+msgid "Enigma2 default"
+msgstr "默认"
 
 #, fuzzy
 msgid "Enigma2 revision: "
@@ -5769,9 +5988,6 @@ msgstr "定位当前播放频道"
 msgid "Fine movement"
 msgstr "精确运动"
 
-msgid "Finetune"
-msgstr "微调"
-
 msgid "Finished"
 msgstr "完成"
 
@@ -5816,11 +6032,30 @@ msgstr ""
 "刷新固件失败\n"
 "%s"
 
+#, fuzzy
+msgid "Flat alphabetical"
+msgstr "字母顺序排序"
+
+msgid "Flat by key group on remote"
+msgstr ""
+
+#, fuzzy
+msgid "Flat by position on remote"
+msgstr "轨道位置"
+
 msgid "Following tasks will be done after you press OK!"
 msgstr "按OK键后，以下任务将被执行！"
 
 msgid "Font size"
 msgstr ""
+
+#, fuzzy
+msgid "Force disabled"
+msgstr "强制禁用"
+
+#, fuzzy
+msgid "Force enabled"
+msgstr "强制启用"
 
 msgid "Force legacy signal stats"
 msgstr "强制传统信号统计"
@@ -5984,6 +6219,10 @@ msgid "General"
 msgstr ""
 
 msgid "General AC3 delay"
+msgstr "一般AC3 延迟"
+
+#, fuzzy
+msgid "General BT audio delay"
 msgstr "一般AC3 延迟"
 
 msgid "General PCM delay"
@@ -6182,6 +6421,9 @@ msgstr ""
 msgid "HD list"
 msgstr "高清列表"
 
+msgid "HDMI"
+msgstr ""
+
 msgid "HDMI Colordepth"
 msgstr "HDMI色深"
 
@@ -6221,9 +6463,6 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "外挂字幕延迟"
-
-msgid "HL-101"
-msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6276,6 +6515,10 @@ msgstr "希伯来语"
 msgid "Help"
 msgstr ""
 
+#, fuzzy
+msgid "Help Screen"
+msgstr "定屏"
+
 msgid "Helps setting up your antenna"
 msgstr "帮助设置天线"
 
@@ -6325,6 +6568,9 @@ msgstr "历史记录里的上一个频道"
 
 msgid "History next"
 msgstr "历史记录里的下一个频道"
+
+msgid "Hold first frame"
+msgstr ""
 
 msgid "Hold screen"
 msgstr "定屏"
@@ -6490,6 +6736,9 @@ msgstr ""
 msgid "Icons"
 msgstr "图标"
 
+msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgstr ""
+
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
 msgstr "如果禁用，则不显示文件名和目录名中的下划线字符，并用空格替换。"
 
@@ -6498,9 +6747,6 @@ msgstr ""
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "如果启用，则在移动或复制录制时，书签将随新位置更新。"
-
-msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
-msgstr "如果启用，则显示12个字符，而不是8个字符，但仅以拉丁语1/音译显示。"
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "如果设置为“是”，信号值（信噪比等）将从API V3计算。这是一个旧的api版本，现已被取代。"
@@ -6597,8 +6843,20 @@ msgstr "导入远程接收器URL"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
+#, fuzzy
+msgid "In menu and plugins"
+msgstr "在插件和菜单"
+
+#, fuzzy
+msgid "In menu only"
+msgstr "仅在菜单"
+
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "定时录制开始,即将切换到预录频道!\n"
+
+#, fuzzy
+msgid "In plugins only"
+msgstr "仅在插件"
 
 msgid "In progress"
 msgstr "进行中"
@@ -6679,10 +6937,6 @@ msgstr "信息栏"
 
 msgid "Info bar timeout"
 msgstr "信息栏超时"
-
-#, fuzzy
-msgid "InfoBar"
-msgstr "信息栏"
 
 #, fuzzy
 msgid "Infobar fade-out speed"
@@ -6815,7 +7069,7 @@ msgstr "仅内置硬盘"
 msgid "Internet"
 msgstr "内部"
 
-msgid "Internet (ntp)"
+msgid "Internet time (NTP)"
 msgstr ""
 
 msgid "Interval between keys when repeating:"
@@ -6935,15 +7189,6 @@ msgstr "左右拉伸"
 msgid "KA-SAT"
 msgstr ""
 
-msgid "Kathrein RC660 (UFS910/922)"
-msgstr ""
-
-msgid "Kathrein RC671 (UFS912)"
-msgstr ""
-
-msgid "Kathrein RC675 (UFS913)"
-msgstr ""
-
 msgid "Kazakhstan"
 msgstr ""
 
@@ -7018,8 +7263,48 @@ msgid "LCD Setup"
 msgstr "设置"
 
 #, fuzzy
+msgid "LED Deep Standby"
+msgstr "深度休眠"
+
+#, fuzzy
+msgid "LED Normal"
+msgstr "普通"
+
+#, fuzzy
+msgid "LED Setup"
+msgstr "设置"
+
+#, fuzzy
+msgid "LED Standby"
+msgstr "一般待机"
+
+#, fuzzy
 msgid "LED brightness"
 msgstr "亮度"
+
+#, fuzzy
+msgid "LED brightness during deep standby."
+msgstr "在深度待机期间打开电源指示灯。"
+
+msgid "LED brightness during normal operations."
+msgstr ""
+
+msgid "LED brightness during standby."
+msgstr ""
+
+msgid "LED color during normal operations"
+msgstr ""
+
+#, fuzzy
+msgid "LED color during recording"
+msgstr "实时录像的位置"
+
+msgid "LED color during recording in standby"
+msgstr ""
+
+#, fuzzy
+msgid "LED color during standby"
+msgstr "待机期间保持LED通电工作"
 
 #, fuzzy
 msgid "LED configuration"
@@ -7220,9 +7505,6 @@ msgstr ""
 msgid "Lithuanian"
 msgstr "立陶宛语"
 
-msgid "Live decoder"
-msgstr ""
-
 msgid "Load"
 msgstr "加载"
 
@@ -7302,6 +7584,10 @@ msgstr "将长按(红/绿/黄/蓝) 分配给插件或 E2 功能。"
 
 msgid "Long press emulation with button"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Long press: %s"
+msgstr "将长按(红/绿/黄/蓝) 分配给插件或 E2 功能。"
 
 msgid "Longitude"
 msgstr "经度"
@@ -7632,9 +7918,6 @@ msgstr "型号"
 msgid "Modulation"
 msgstr "调制方式"
 
-msgid "Modulator"
-msgstr "调制器"
-
 msgid "Moldova (Republic of)"
 msgstr ""
 
@@ -7837,9 +8120,6 @@ msgstr ""
 msgid "Multi EPG"
 msgstr ""
 
-msgid "Multi channel downmix"
-msgstr "多声道混音"
-
 #, fuzzy
 msgid "Multi remote control support"
 msgstr "遥控类型设置"
@@ -7975,6 +8255,9 @@ msgid "Namibia"
 msgstr ""
 
 msgid "Nauru"
+msgstr ""
+
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8306,6 +8589,9 @@ msgstr "不关联"
 msgid "Not Defined"
 msgstr "未定义"
 
+msgid "Not Installed"
+msgstr "未安装"
+
 msgid "Not associated"
 msgstr "不关联"
 
@@ -8583,19 +8869,16 @@ msgstr "打开调谐器设置"
 msgid "OpenVision"
 msgstr "扩展"
 
-msgid "Operating LED colour status in deep standby mode"
+msgid "Operating LED status in deep standby mode"
 msgstr ""
 
-msgid "Operating LED colour status in standby mode"
+msgid "Operating LED status in standby mode"
 msgstr ""
 
-msgid "Operating LED colour status while running."
+msgid "Operating LED status while running."
 msgstr ""
 
 msgid "Opkg"
-msgstr ""
-
-msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -8615,6 +8898,13 @@ msgstr "其他"
 
 msgid "Other Subtitles & lang"
 msgstr "其他字幕和语言"
+
+msgid "Other buttons will jump to the help for that button, if there is help."
+msgstr ""
+
+#, fuzzy
+msgid "Other functions"
+msgstr "进阶指导"
 
 msgid "Output"
 msgstr "输出"
@@ -8680,9 +8970,6 @@ msgstr ""
 msgid "PPanel"
 msgstr "ppanel面板"
 
-msgid "Pace HDS7241"
-msgstr ""
-
 msgid "Package list update"
 msgstr "更新软件列表"
 
@@ -8738,6 +9025,9 @@ msgstr "家长控制服务编辑"
 
 msgid "Parental control setup"
 msgstr "家长控制设置"
+
+msgid "Passthrough"
+msgstr ""
 
 msgid "Password"
 msgstr ""
@@ -9229,24 +9519,36 @@ msgstr "位置设置(DiSEqC 1.2)"
 msgid "Positioner setup log"
 msgstr "定位器设置日志"
 
-#, fuzzy
-msgid "Power"
-msgstr "电源菜单"
-
-msgid "Power LED"
+msgid "Power LED can be turned on or off here."
 msgstr ""
 
 msgid "Power LED colour"
 msgstr ""
+
+#, fuzzy
+msgid "Power LED state during deep-standby."
+msgstr "在深度待机期间打开电源指示灯。"
+
+#, fuzzy
+msgid "Power LED state during standby."
+msgstr "待机期间保持LED通电工作"
+
+msgid "Power LED state in Deep-Standby"
+msgstr ""
+
+#, fuzzy
+msgid "Power LED state in Standby"
+msgstr "待机时关机"
+
+#, fuzzy
+msgid "Power On Display"
+msgstr "开机显示"
 
 msgid "Power Timers"
 msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "电源管理。有关详细信息，请参阅接收器手册。"
-
-msgid "Power on display"
-msgstr "开机显示"
 
 msgid "Power threshold in mA"
 msgstr "功率阈值(mA)"
@@ -9572,7 +9874,7 @@ msgstr "列表类型"
 msgid "REC"
 msgstr "录制"
 
-msgid "REC Symbol"
+msgid "REC symbol"
 msgstr ""
 
 #, fuzzy
@@ -9581,10 +9883,6 @@ msgstr "同样用在待机模式"
 
 msgid "REC symbol in use"
 msgstr ""
-
-#, fuzzy
-msgid "RF Output Setup"
-msgstr "RF-输出"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10289,6 +10587,10 @@ msgstr ""
 msgid "SH4 OSD Position setup"
 msgstr "位置设置(DiSEqC 1.2)"
 
+#, python-format
+msgid "SHIFT: %s"
+msgstr ""
+
 msgid "SINGLE LAYER DVD"
 msgstr "单层DVD"
 
@@ -10524,10 +10826,6 @@ msgstr "扫描无线网络"
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr "扫描无线网络接入点并通过所选无线设备连接。\n"
 
-#, fuzzy
-msgid "Scanning"
-msgstr "正在扫描。。。"
-
 #, python-format
 msgid "Scanning %s..."
 msgstr "正在扫描%s ，"
@@ -10572,6 +10870,12 @@ msgstr "滚动重复"
 #, fuzzy
 msgid "Scroll text"
 msgstr "滚动重复"
+
+msgid "Scrolling delay (software renderer)"
+msgstr ""
+
+msgid "Scrolling speed (software renderer)"
+msgstr ""
 
 msgid "Search"
 msgstr "搜索"
@@ -11019,12 +11323,6 @@ msgstr "正在转到卫星2（USALS）"
 msgid "Selecting this option allows you to configure a group of satellites in one block."
 msgstr "选择此选项可以在一个块中配置一组卫星。"
 
-msgid "Selects the mode how live tv should be shown on the LCD."
-msgstr "选择在LCD上显示直播电视的模式。"
-
-msgid "Selects video source displayed on the LCD."
-msgstr "选择LCD上显示的视频源。"
-
 msgid "Send 'sourceactive' before zap timers"
 msgstr "在切换到计时器之前发送“sourceactive”"
 
@@ -11233,6 +11531,9 @@ msgstr "从备用调谐器设置OpenWebif的用户ID"
 msgid "Set the default sorting method."
 msgstr "排序方式："
 
+msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
+msgstr ""
+
 #, fuzzy
 msgid "Set the global sort method"
 msgstr "排序方式："
@@ -11246,6 +11547,9 @@ msgstr "从备用调谐器设置OpenWebif的端口"
 #, fuzzy
 msgid "Set the repeat interval of the schedule."
 msgstr "配置屏幕刷新频率。"
+
+msgid "Set the scrolling speed of text on the front panel display, this is used by software renderer in some skins."
+msgstr ""
 
 #, fuzzy
 msgid "Set the sort method for this directory"
@@ -11352,6 +11656,10 @@ msgstr "显示CI信息"
 msgid "Show Clients"
 msgstr "显示电影"
 
+#, fuzzy
+msgid "Show Display Icons"
+msgstr "显示频道加密图标"
+
 msgid "Show EIT now/next in infobar"
 msgstr "显示EIT现在/下一个在信息栏"
 
@@ -11368,6 +11676,17 @@ msgstr "显示备选频道"
 #, fuzzy
 msgid "Show HDD icons"
 msgstr "显示频道加密图标"
+
+#, fuzzy
+msgid "Show HDD progress"
+msgstr "小进展"
+
+#, fuzzy
+msgid "Show HDMI Output Resulution"
+msgstr "显示字幕选项"
+
+msgid "Show HDMI-Output Res"
+msgstr ""
 
 msgid "Show InfoBar"
 msgstr "显示信息条"
@@ -11437,6 +11756,14 @@ msgstr "显示频道加密图标"
 
 msgid "Show crypto info in infobar"
 msgstr "在信息条显示加密信息"
+
+#, fuzzy
+msgid "Show default after description"
+msgstr "显示扩展描述"
+
+#, fuzzy
+msgid "Show default on new line"
+msgstr "显示信息行"
 
 msgid "Show detailed event info"
 msgstr "显示事件详细信息"
@@ -11591,9 +11918,6 @@ msgstr "频道列表里显示台标"
 msgid "Show picons in channel selection list"
 msgstr "频道列表里显示台标"
 
-msgid "Show picons in display"
-msgstr "显示Picon"
-
 #, fuzzy
 msgid "Show picons in the movie list."
 msgstr "在电影列表里显示电影状态图标"
@@ -11636,6 +11960,10 @@ msgstr "显示频道类型图标"
 msgid "Show servicelist or movies"
 msgstr "显示频道列表或电影"
 
+#, fuzzy
+msgid "Show setup default value"
+msgstr "设为默认"
+
 msgid "Show single service EPG"
 msgstr "单个-EPG"
 
@@ -11653,9 +11981,6 @@ msgstr "显示字幕服务选项"
 
 msgid "Show subtitle selection"
 msgstr "显示字幕选项"
-
-msgid "Show symbols on display"
-msgstr "显示符号"
 
 msgid "Show the radio player..."
 msgstr "广播回放模式下。。。"
@@ -11704,9 +12029,6 @@ msgstr "显示解密"
 
 msgid "Show/hide window"
 msgstr "显示/隐藏窗口"
-
-msgid "Shows live tv or informations on LCD."
-msgstr "在LCD显示电视内容或信息"
 
 msgid "Shows the icons when new/unseen, otherwise it will not show an icon."
 msgstr ""
@@ -11795,6 +12117,10 @@ msgstr "纬度"
 msgid "Site longitude"
 msgstr "经度"
 
+#, fuzzy
+msgid "Skin"
+msgstr "皮肤"
+
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "皮肤 & 分辨率: %s (%sx%s)\n"
@@ -11803,12 +12129,12 @@ msgid "Skin Selection Actions"
 msgstr "皮肤选择操作"
 
 #, fuzzy
-msgid "Skin Setting"
+msgid "Skin Setup"
 msgstr "设置"
 
 #, fuzzy
-msgid "Skin Setup"
-msgstr "设置"
+msgid "Skin setting"
+msgstr "OSD 设置"
 
 msgid "SkinSelector: Restart GUI"
 msgstr ""
@@ -11863,6 +12189,10 @@ msgstr "斯洛文尼亚"
 
 msgid "Slow"
 msgstr "慢的"
+
+#, fuzzy
+msgid "Slow motion"
+msgstr "慢动作（低速）"
 
 msgid "Slow motion speeds"
 msgstr "慢动作（低速）"
@@ -11985,6 +12315,10 @@ msgstr "恢复默认列表排序并退出吗？"
 msgid "Sort list:"
 msgstr "排序列表："
 
+#, fuzzy
+msgid "Sort order for help screen"
+msgstr "设置项的排序顺序"
+
 msgid "Sort order for menu entries"
 msgstr "菜单项目排序"
 
@@ -12000,12 +12334,6 @@ msgstr "按时间排序"
 
 msgid "Sorting of playlists"
 msgstr "播放列表排序"
-
-msgid "Sound"
-msgstr "声音"
-
-msgid "Sound carrier"
-msgstr "声音运营商"
 
 msgid "Source request"
 msgstr "源目录"
@@ -12031,9 +12359,6 @@ msgstr ""
 
 msgid "Spanish"
 msgstr "西班牙语"
-
-msgid "Spark"
-msgstr ""
 
 msgid "Spark7162 select tuner mode"
 msgstr ""
@@ -12137,9 +12462,6 @@ msgstr "当前时间之后待机"
 msgid "Standby brightness"
 msgstr "待机在"
 
-msgid "Standby clock frequency:"
-msgstr ""
-
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr "%d 号风扇的待机功率（PWM）"
@@ -12148,7 +12470,8 @@ msgstr "%d 号风扇的待机功率（PWM）"
 msgid "Standby fan %d voltage"
 msgstr "%d 号待机风扇的电压"
 
-msgid "Standby in "
+#, fuzzy, python-format
+msgid "Standby in %s"
 msgstr "待机在"
 
 #, fuzzy
@@ -12526,18 +12849,6 @@ msgstr "切换到下一个频道"
 msgid "Switch channel up"
 msgstr "切换到上一个频道"
 
-#, fuzzy
-msgid "Switch on the display during Standby Mode"
-msgstr " 在待机状态下打开显示器。"
-
-#, fuzzy
-msgid "Switch on the display during Suspend Mode"
-msgstr " 在挂机模式下打开显示器。"
-
-#, fuzzy
-msgid "Switch on the display during operation."
-msgstr " 在操作过程中打开显示器。"
-
 msgid "Switch to TV mode"
 msgstr "切换到电视模式"
 
@@ -12772,13 +13083,6 @@ msgstr "测试模式"
 msgid "Test DiSEqC settings"
 msgstr "测试DiSEqC设置"
 
-msgid "Test mode"
-msgstr "测试模式"
-
-#, fuzzy
-msgid "Test overclock"
-msgstr "测试模式"
-
 msgid "Test the network configuration of your receiver.\n"
 msgstr "测试机顶盒的网络配置。\n"
 
@@ -12888,6 +13192,9 @@ msgid ""
 msgstr ""
 "未安装的软件管理扩展!\n"
 "请安装它。"
+
+msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
+msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13095,6 +13402,9 @@ msgstr "此选项允许减少图片中的块噪声。显然这是以牺牲图片
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "此选项允许设置图片的动态对比度级别。"
 
+msgid "This option allows you can to set the auto volume level."
+msgstr "此选项允许您设置自动音量级别。"
+
 #, fuzzy
 msgid "This option allows you choose how to display elapsed time as + or -"
 msgstr "此选项允许您关闭显示器电源。"
@@ -13117,6 +13427,10 @@ msgstr "此选项允许您启用平滑过滤器来控制抖动过程。"
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr "此选项允许您启用垂直缩放器清除。"
 
+#, fuzzy
+msgid "This option allows you to Power Off the display."
+msgstr "此选项允许您关闭显示器电源。"
+
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr "此选项允许您在扩展菜单中添加SoftCam设置。"
 
@@ -13128,6 +13442,9 @@ msgstr "此选项允许您增强图片中的蓝色色调。"
 
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "此选项允许您增强图片中的绿色色调。"
+
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr "此选项允许您更改virtuell loadspeaker位置。"
 
 #, fuzzy
 msgid "This option allows you to choose how to display elapsed time. As + or -"
@@ -13161,6 +13478,15 @@ msgstr "此选项允许您将颜色空间从Auto配置为RGB"
 msgid "This option allows you to configure the HDR type."
 msgstr "此选项允许您配置HDR类型。"
 
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr "此选项允许您禁用或更改virtuell loadspeaker位置。"
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr "此选项允许您启用3D环绕软限制器。"
+
+msgid "This option allows you to enable 3D surround sound."
+msgstr "此选项允许您启用3D环绕声。"
+
 msgid "This option allows you to enable or disable the 10 bit color mode"
 msgstr "此选项允许您启用或禁用10位颜色模式"
 
@@ -13176,11 +13502,8 @@ msgstr "此选项允许您强制UHD的HLG模式"
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button. With the user defined hidden the blue button is not shown in the menus"
 msgstr "此选项允许您隐藏和排序菜单项。选择用户时，可以通过蓝色按钮更改顺序和隐藏菜单项。用户定义的隐藏的蓝色按钮不会显示在菜单中"
 
-msgid "This option allows you to power off the display."
-msgstr "此选项允许您关闭显示器电源。"
-
-msgid "This option allows you to show all symbols on the display."
-msgstr "此选项允许您在显示器上显示所有符号。"
+msgid "This option allows you to select if the default value for a setup item is shown and, if so, where it is displayed in relation to the description."
+msgstr ""
 
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "此选项允许您显示菜单和/或插件号快速链接。"
@@ -13189,11 +13512,23 @@ msgstr "此选项允许您显示菜单和/或插件号快速链接。"
 msgid "This option allows you to show the full screen path leading to the current screen."
 msgstr "此选项允许您增强图片中的绿色色调。"
 
+#, fuzzy
+msgid "This option allows you to switch audio to BT speakers."
+msgstr "此选项允许您设置自动音量级别。"
+
+#, fuzzy
+msgid "This option allows you to use video sync mode."
+msgstr "此选项允许您启用3D环绕声。"
+
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "此选项允许您并排查看新旧设置。"
 
 msgid "This option can be useful for long HDMI cables."
 msgstr "该选项对于长HDMI线可能很有用。"
+
+#, fuzzy
+msgid "This option configures the general audio delay for BT speakers."
+msgstr "配置音频延迟和立体声音轨。"
 
 msgid "This option set the level of surpression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "此选项设置蚊子噪声的过度压缩级别（蚊子噪声是由于强压缩而产生的随机混叠）。显然这是以牺牲图片细节为代价的。"
@@ -13470,12 +13805,6 @@ msgstr "字幕选项"
 msgid "Today"
 msgstr "今天"
 
-msgid "Toggle HDMI In"
-msgstr "切换HDMI接入"
-
-msgid "Toggle LCD LiveTV"
-msgstr "切换LCD直播"
-
 msgid "Toggle PiPzap"
 msgstr "切换画中画跳转"
 
@@ -13535,9 +13864,6 @@ msgstr "顶部和底部"
 msgid "Top and bottom"
 msgstr "顶部和底部"
 
-msgid "Topfield TF77X0HDPVR"
-msgstr ""
-
 msgid "TopfieldVFD"
 msgstr ""
 
@@ -13579,7 +13905,7 @@ msgid "Transponder"
 msgstr "转发器"
 
 #, fuzzy
-msgid "Transponder Time"
+msgid "Transponder time"
 msgstr "转发器"
 
 msgid "Transport Stream Type"
@@ -13604,13 +13930,13 @@ msgstr "故障排除"
 msgid "True"
 msgstr ""
 
+msgid "TrueType font (Full-HD)"
+msgstr ""
+
 msgid "TrueType font (HD)"
 msgstr ""
 
 msgid "TrueType font (SD)"
-msgstr ""
-
-msgid "TrueType font (full-HD)"
 msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -13686,6 +14012,10 @@ msgstr ""
 
 msgid "Turks and Caicos Islands"
 msgstr ""
+
+#, fuzzy
+msgid "Turn on the control LED."
+msgstr "打开电源指示灯。"
 
 msgid "Turn on the power LED during deep standby."
 msgstr "在深度待机期间打开电源指示灯。"
@@ -13930,9 +14260,6 @@ msgstr "用量设置"
 msgid "Use"
 msgstr "使用"
 
-msgid "Use 12 characters display mode"
-msgstr "使用12字符显示模式"
-
 msgid "Use DHCP"
 msgstr "自动分配地址(DHCP)"
 
@@ -14083,6 +14410,10 @@ msgstr "用户模式"
 msgid "User defined"
 msgstr "用户定义"
 
+#, fuzzy
+msgid "User defined hidden"
+msgstr "用户定义隐藏"
+
 msgid "User defined transponder"
 msgstr "用户定义的转发器"
 
@@ -14202,6 +14533,13 @@ msgstr "垂直"
 msgid "Vertical turning speed"
 msgstr "垂直调谐速度"
 
+msgid "Very fast"
+msgstr ""
+
+#, fuzzy
+msgid "Very slow"
+msgstr "调谐器插槽"
+
 msgid "Video PID"
 msgstr "视频PID"
 
@@ -14238,6 +14576,10 @@ msgstr "视频输出端口"
 
 msgid "Video setup"
 msgstr "视频设置"
+
+#, fuzzy
+msgid "Video sync mode"
+msgstr "视频模式"
 
 msgid "Video wizard"
 msgstr "视频向导"
@@ -14331,9 +14673,6 @@ msgstr "虚拟键盘"
 msgid "Virtual keyboard skin"
 msgstr "虚拟键盘"
 
-msgid "Vitamin 5000HD"
-msgstr ""
-
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "视频: %s fps"
@@ -14365,6 +14704,9 @@ msgstr "WLAN连接"
 #, fuzzy
 msgid "WLAN driver:"
 msgstr "无线网卡"
+
+msgid "WMA Pro"
+msgstr ""
 
 msgid "WPA"
 msgstr ""
@@ -14793,6 +15135,10 @@ msgstr ""
 msgid "Where to save temporary timeshift recordings?"
 msgstr "在哪里保存时光平移临时录制的内容?"
 
+#, fuzzy
+msgid "White"
+msgstr "白"
+
 msgid "Wireless LAN"
 msgstr "无线网络"
 
@@ -14821,19 +15167,15 @@ msgid "With popup"
 msgstr "弹出"
 
 #, fuzzy
-msgid "With this option you can switch on the display during operation."
-msgstr "使用此选项，您可以在操作期间打开显示器。"
-
-#, fuzzy
-msgid "With this option you can switch on the display in Deep Standby Mode."
-msgstr "使用此选项，您可以在深度待机模式下打开显示器。"
-
-#, fuzzy
-msgid "With this option you can switch on the display in Standby Mode."
-msgstr " 使用此选项，您可以在待机状态下打开显示器。 "
+msgid "With text"
+msgstr "使用文本"
 
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "使用此选项，您可以切换LED颜色或停用LED。"
+
+#, fuzzy
+msgid "With tuner name"
+msgstr "使用调谐器名称"
 
 msgid "Without popup"
 msgstr "没有弹出"
@@ -14920,6 +15262,10 @@ msgstr "总是"
 
 msgid "Yes, and delete this movie"
 msgstr "是的，删除此电影"
+
+#, fuzzy
+msgid "Yes, but not in multi selections"
+msgstr "是的，但不是在多重选择中"
 
 msgid "Yes, delete this movie and return to movie list"
 msgstr "是，删除此电影并返回电影列表。"
@@ -15289,9 +15635,6 @@ msgstr "冒险/西方/战争"
 msgid "advertisement/shopping"
 msgstr "广告/购物"
 
-msgid "after "
-msgstr "之后"
-
 msgid "all"
 msgstr "全部"
 
@@ -15304,14 +15647,8 @@ msgstr "字母"
 msgid "alphabetic reverse"
 msgstr "按字母顺序排列"
 
-msgid "alphabetical"
-msgstr "按字母顺序排序"
-
 msgid "alpharev then newest"
 msgstr ""
-
-msgid "alternative"
-msgstr "替代"
 
 msgid "always"
 msgstr "总是"
@@ -15500,8 +15837,21 @@ msgstr "继续"
 msgid "controlled by HDMI"
 msgstr ""
 
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+#, fuzzy
+msgid "convert to multi-channel PCM"
+msgstr "多路PCM"
+
 msgid "cooking"
 msgstr "烹饪"
+
+msgid "cuberevo"
+msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"
@@ -15616,10 +15966,6 @@ msgstr "结束录像剪辑"
 msgid "end cut here (reset)"
 msgstr "结束录像剪辑"
 
-#, fuzzy
-msgid "enigma2 default"
-msgstr "设为默认"
-
 msgid "entertainment (10-16 year old)"
 msgstr "娱乐（10-16年龄段）"
 
@@ -15665,6 +16011,13 @@ msgstr "退出网卡设置菜单"
 msgid "experimental film/video"
 msgstr "实验　电影／视频"
 
+msgid "extra wide"
+msgstr "超宽"
+
+#, fuzzy
+msgid "extrawide"
+msgstr "超宽"
+
 msgid "failed"
 msgstr "失败"
 
@@ -15673,6 +16026,9 @@ msgstr "失败"
 
 msgid "fashion"
 msgstr "时尚"
+
+msgid "fast"
+msgstr ""
 
 msgid "fileformats (BMP, PNG, JPG, GIF)"
 msgstr "文件格式 (BMP, PNG, JPG, GIF)"
@@ -15700,12 +16056,6 @@ msgstr "民间/传统音乐"
 
 msgid "football/soccer"
 msgstr "足球"
-
-msgid "force disabled"
-msgstr "强制禁用"
-
-msgid "force enabled"
-msgstr "强制启用"
 
 msgid "foreign countries/expeditions"
 msgstr "外国/探险"
@@ -15791,6 +16141,9 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "水平"
 
@@ -15814,15 +16167,6 @@ msgstr ""
 
 msgid "https://openvision.tech"
 msgstr ""
-
-msgid "in menu and plugins"
-msgstr "在插件和菜单"
-
-msgid "in menu only"
-msgstr "仅在菜单"
-
-msgid "in plugins only"
-msgstr "仅在插件"
 
 msgid "information/education/school program"
 msgstr "信息/教育/教学程序"
@@ -15927,6 +16271,10 @@ msgstr "菜单"
 msgid "mins"
 msgstr "分钟"
 
+#, fuzzy
+msgid "minute"
+msgstr "分钟"
+
 msgid "minutes"
 msgstr "分钟"
 
@@ -16015,6 +16363,10 @@ msgstr "未找到CI"
 msgid "no channel list"
 msgstr "没有频道列表"
 
+#, fuzzy
+msgid "no delay"
+msgstr "无延迟"
+
 msgid "no module found"
 msgstr "未找到模块"
 
@@ -16095,17 +16447,20 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "打开DNS设置"
 
+msgid "opt9600"
+msgstr ""
+
 msgid "opt9600VFD"
 msgstr ""
 
 msgid "orange"
 msgstr ""
 
-msgid "original"
-msgstr "原始"
-
 msgid "original language"
 msgstr "原始语言"
+
+msgid "pace7241"
+msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -16204,9 +16559,6 @@ msgstr "按日期排序"
 
 msgid "rewind to the previous chapter"
 msgstr "退回上一个章节"
-
-msgid "rgb"
-msgstr "RGB"
 
 msgid "right"
 msgstr "右"
@@ -16345,6 +16697,9 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
+msgid "slow"
+msgstr ""
+
 #, fuzzy
 msgid "soap/melodrama/folkloric"
 msgstr "肥皂剧/通俗剧/民俗剧"
@@ -16358,6 +16713,9 @@ msgstr "社会/精神科学"
 #, fuzzy
 msgid "softcam"
 msgstr "重启softcam插件"
+
+msgid "spark"
+msgstr ""
 
 msgid "spark7162VFD"
 msgstr ""
@@ -16439,6 +16797,9 @@ msgstr "地面波"
 msgid "testing"
 msgstr "测试"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "此频道受家长控制。"
 
@@ -16503,6 +16864,15 @@ msgstr "水上运动"
 msgid "uShare setup"
 msgstr "向导安装程序"
 
+msgid "ufs910/922 (rc660)"
+msgstr ""
+
+msgid "ufs912 (rc671)"
+msgstr ""
+
+msgid "ufs913 (rc675)"
+msgstr ""
+
 msgid "unavailable"
 msgstr "不可用"
 
@@ -16530,11 +16900,14 @@ msgstr "不可以测试"
 msgid "until standby/restart"
 msgstr "直到待机/重启"
 
+msgid "use best / controlled by HDMI"
+msgstr ""
+
+msgid "use_hdmi_cacenter"
+msgstr ""
+
 msgid "user defined"
 msgstr "用户定义"
-
-msgid "user defined hidden"
-msgstr "用户定义隐藏"
 
 msgid "variety show"
 msgstr "多种显示"
@@ -16543,6 +16916,9 @@ msgid "vertical"
 msgstr "垂直"
 
 msgid "violet"
+msgstr ""
+
+msgid "vitamin_hd5000"
 msgstr ""
 
 msgid "wait for ci..."
@@ -16577,8 +16953,8 @@ msgstr "当启用切换画中画时向下切换频道"
 msgid "when PiPzap enabled zap channel up..."
 msgstr "当启用切换画中画时向上切换频道..."
 
-msgid "white"
-msgstr "白"
+msgid "wide"
+msgstr "宽"
 
 msgid "width"
 msgstr "宽"
@@ -16597,12 +16973,6 @@ msgstr[0] "发生 %d 个错误"
 msgid "with errors"
 msgstr "发生错误"
 
-msgid "with text"
-msgstr "使用文本"
-
-msgid "with tuner name"
-msgstr "使用调谐器名称"
-
 msgid "with_errors"
 msgstr "错误"
 
@@ -16614,12 +16984,6 @@ msgstr "是"
 
 msgid "yes (keep feeds)"
 msgstr "是 (保留)"
-
-msgid "yes, but not in multi selections"
-msgstr "是的，但不是在多重选择中"
-
-msgid "yuv"
-msgstr ""
 
 msgid "zap"
 msgstr "跳转"

@@ -101,7 +101,7 @@ def getEnigmaVersionString():
 	return enigma_version
 
 
-def getGStreamerVersionString(cpu):
+def getGStreamerVersionString():
 	from glob import glob
 	if os.path.isfile('/usr/lib/pkgconfig/gstreamer-1.0.pc'):
 		gstversion = [x.split("Version:") for x in open(glob("/usr/lib/pkgconfig/gstreamer-1.0.pc")[0], "r") if x.startswith("Version:")][0]
@@ -120,7 +120,7 @@ def getFFmpegVersionString():
 		version = ffmpeg[1].split("-")[0].replace("\n", "")
 		return "%s" % version.split("+")[0]
 	except:
-		return _("unknown")
+		return _("Not Installed")
 
 
 def getKernelVersionString():

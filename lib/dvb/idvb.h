@@ -821,7 +821,7 @@ public:
 			eventSizeChanged = VIDEO_EVENT_SIZE_CHANGED,
 			eventFrameRateChanged = VIDEO_EVENT_FRAME_RATE_CHANGED,
 			eventProgressiveChanged = 16,
-			eventGammaChanged = 17
+			eventGammaChanged = 17,
 		} type;
 		unsigned char aspect;
 		unsigned short height;

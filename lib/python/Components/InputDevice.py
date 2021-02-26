@@ -32,7 +32,7 @@ def EVIOCGNAME(length):
 
 
 class inputDevices:
-	BLACKLIST = ("cec_input")
+	BLACKLIST = ("cec_input",)
 
 	def __init__(self):
 		self.Devices = {}
