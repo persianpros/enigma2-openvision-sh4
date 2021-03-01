@@ -46,7 +46,10 @@ def profile(id):
 			else:
 				perc = PERCENTAGE_START
 			try:
-				open("/proc/progress", "w").write("%d \n" % perc)
+				try:
+					open("/proc/progress", "w").write("%d \n" % perc)
+				except:
+					pass
 				if perc > 1 and perc < 98:
 					value = 1
 					if path.exists("/proc/stb/lcd/symbol_circle"):
