@@ -19,13 +19,13 @@ brand = getBoxBrand()
 platform = getMachineBuild()
 socfamily = getSoCFamily()
 
-print("[mytest] Open Vision version = %s" % getVisionVersion())
-print("[mytest] Open Vision revision = %s" % getVisionRevision())
-print("[mytest] Brand/Meta = %s" % brand)
-print("[mytest] Model = %s" % model)
-print("[mytest] Platform = %s" % platform)
-print("[mytest] SoC family = %s" % socfamily)
-print("[mytest] Enigma2 revision = %s" % getE2Rev())
+print("[StartEnigma] Open Vision version = %s" % getVisionVersion())
+print("[StartEnigma] Open Vision revision = %s" % getVisionRevision())
+print("[StartEnigma] Brand/Meta = %s" % brand)
+print("[StartEnigma] Model = %s" % model)
+print("[StartEnigma] Platform = %s" % platform)
+print("[StartEnigma] SoC family = %s" % socfamily)
+print("[StartEnigma] Enigma2 revision = %s" % getE2Rev())
 
 import enigma
 import eConsoleImpl
@@ -36,10 +36,10 @@ enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
 
 if fileExists("/etc/init.d/inetd.busybox"):
 	from Components.Console import Console
-	print("[mytest] Try start busybox to help FTP access.")
+	print("[StartEnigma] Try start busybox to help FTP access.")
 	Console = Console()
 	Console.ePopen('/etc/init.d/inetd.busybox start')
-	print("[mytest] Finished starting busybox inetd.")
+	print("[StartEnigma] Finished starting busybox inetd.")
 
 from traceback import print_exc
 
@@ -124,7 +124,7 @@ try:
 	def runReactor():
 		reactor.run(installSignalHandlers=False)
 except ImportError as e:
-	print("[mytest] twisted not available")
+	print("[StartEnigma] Twisted not available")
 
 	def runReactor():
 		enigma.runMainloop()
@@ -231,7 +231,7 @@ class Session:
 			try:
 				p.__call__(reason=0, session=self)
 			except:
-				print("[mytest] Plugin raised exception at WHERE_SESSIONSTART")
+				print("[StartEnigma] Plugin raised exception at WHERE_SESSIONSTART")
 				import traceback
 				traceback.print_exc()
 
@@ -353,7 +353,7 @@ class Session:
 
 	def close(self, screen, *retval):
 		if not self.in_exec:
-			print("[mytest] close after exec!")
+			print("[StartEnigma] Close after exec!")
 			return
 
 		# be sure that the close is for the right dialog!
@@ -405,7 +405,7 @@ class PowerKey:
 		globalActionMap.actions["discrete_off"] = self.standby
 
 	def shutdown(self):
-		print("[mytest] PowerOff - Now!")
+		print("[StartEnigma] Power off, now!")
 		if not Screens.Standby.inTryQuitMainloop and self.session.current_dialog and self.session.current_dialog.ALLOW_SUSPEND:
 			self.session.open(Screens.Standby.TryQuitMainloop, 1)
 		else:
@@ -431,7 +431,7 @@ class PowerKey:
 					exec("from " + selected[1] + " import *")
 					exec("self.session.open(" + ",".join(selected[2:]) + ")")
 				except:
-					print("[mytest] error during executing module %s, screen %s" % (selected[1], selected[2]))
+					print("[StartEnigma] Error during executing module %s, screen %s" % (selected[1], selected[2]))
 			elif selected[0] == "Menu":
 				root = mdom.getroot()
 				for x in root.findall("menu"):
@@ -578,7 +578,7 @@ def runScreenTest():
 			wptime = nowTime + 30  # so switch back on in 30 seconds
 		else:
 			wptime = startTime[0] - 240
-		print("[mytest] set wakeup time to", strftime("%Y/%m/%d %H:%M", localtime(wptime)))
+		print("[StartEnigma] Set wakeup time to", strftime("%Y/%m/%d %H:%M", localtime(wptime)))
 		setFPWakeuptime(wptime)
 		config.misc.prev_wakeup_time.value = int(startTime[0])
 		config.misc.prev_wakeup_time_type.value = startTime[1]
