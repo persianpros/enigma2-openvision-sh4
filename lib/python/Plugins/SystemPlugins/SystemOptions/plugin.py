@@ -13,7 +13,7 @@ from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 import os
 
-pll0 = '/proc/cpu_frequ/pll0_ndiv_mdiv'
+#pll0 = '/proc/cpu_frequ/pll0_ndiv_mdiv'
 brand = getBoxBrand()
 
 config.plugins.systemoptions = ConfigSubsection()

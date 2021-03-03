@@ -338,6 +338,7 @@ class TopfieldVFD:
                 if self.ethEnabled == False:
                         return
 
+                print("[TopfieldVFD] Read /proc/net/dev")
                 result = open("/proc/net/dev").readlines()
                 numRegExp = "[0-9]+"
                 numPattern = re_compile(numRegExp)

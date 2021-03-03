@@ -115,9 +115,10 @@ class StandbyScreen(Screen):
 			self.avswitch.setInput("AUX")
 
 		try:
+			print("[Standby] Write to /proc/stb/hdmi/output")
 			open("/proc/stb/hdmi/output", "w").write("off")
 		except:
-			pass
+			print("[Standby] Write to /proc/stb/hdmi/output failed.")
 
 		Console().ePopen("/bin/vdstandby -a &")
 
@@ -181,9 +182,10 @@ class StandbyScreen(Screen):
 			Console().ePopen("/usr/script/StandbyLeave.sh")
 
 		try:
+			print("[Standby] Write to /proc/stb/hdmi/output")
 			open("/proc/stb/hdmi/output", "w").write("on")
 		except:
-			pass
+			print("[Standby] Write to /proc/stb/hdmi/output failed.")
 
 	def setMute(self):
 		self.wasMuted = eDVBVolumecontrol.getInstance().isMuted()
