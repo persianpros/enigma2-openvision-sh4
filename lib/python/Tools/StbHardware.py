@@ -61,8 +61,11 @@ def getBoxRCType():
 def getFPVersion():
 	ret = "unknown"
 	try:
-		if fileExists("/proc/stb/fp/version"):
-			ret = int(open("/proc/stb/fp/version", "r").read())
+		if fileExists("/proc/stb/info/micomver"):
+			print("[StbHardware] Read /proc/stb/info/micomver")
+			ret = open("/proc/stb/info/micomver", "r").read()
+		elif fileExists("/proc/stb/fp/version"):
+			ret = long(open("/proc/stb/fp/version", "r").read())
 		else:
 			fp = open("/dev/dbox/fp0")
 			ret = ioctl(fp.fileno(), 0)
