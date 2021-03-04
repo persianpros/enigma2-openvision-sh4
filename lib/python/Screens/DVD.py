@@ -262,14 +262,22 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		self.service = None
 		self.in_menu = False
 		if fileExists("/proc/stb/vmpeg/0/dst_left"):
+			print("[DVD] Read /proc/stb/vmpeg/0/dst_left")
 			self.left = open("/proc/stb/vmpeg/0/dst_left", "r").read()
+			print("[DVD] Read /proc/stb/vmpeg/0/dst_width")
 			self.width = open("/proc/stb/vmpeg/0/dst_width", "r").read()
+			print("[DVD] Read /proc/stb/vmpeg/0/dst_top")
 			self.top = open("/proc/stb/vmpeg/0/dst_top", "r").read()
+			print("[DVD] Read /proc/stb/vmpeg/0/dst_height")
 			self.height = open("/proc/stb/vmpeg/0/dst_height", "r").read()
 			if self.left != "0" or self.top != "0" or self.width != "2d0" or self.height != "240":
+				print("[DVD] Write to /proc/stb/vmpeg/0/dst_left")
 				open("/proc/stb/vmpeg/0/dst_left", "w").write("0")
+				print("[DVD] Write to /proc/stb/vmpeg/0/dst_width")
 				open("/proc/stb/vmpeg/0/dst_width", "w").write("2d0")
+				print("[DVD] Write to /proc/stb/vmpeg/0/dst_top")
 				open("/proc/stb/vmpeg/0/dst_top", "w").write("0")
+				print("[DVD] Write to /proc/stb/vmpeg/0/dst_height")
 				open("/proc/stb/vmpeg/0/dst_height", "w").write("240")
 				self.onClose.append(self.__restoreOSDSize)
 
@@ -298,9 +306,13 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		config.seek.on_pause.value = self.saved_config_seek_on_pause
 
 	def __restoreOSDSize(self):
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_left")
 		open("/proc/stb/vmpeg/0/dst_left", "w").write(self.left)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_width")
 		open("/proc/stb/vmpeg/0/dst_width", "w").write(self.width)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_top")
 		open("/proc/stb/vmpeg/0/dst_top", "w").write(self.top)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_height")
 		open("/proc/stb/vmpeg/0/dst_height", "w").write(self.height)
 
 	def chapterZap(self):

@@ -60,15 +60,19 @@ class About(Screen):
 			AboutText += _("Proc model: ") + procmodel + "\n"
 
 		if fileExists("/proc/stb/info/model_name"):
+			print("[About] Read /proc/stb/info/model_name")
 			resellername = open("/proc/stb/info/model_name", "r").read().strip()
 			AboutText += _("Reseller name: ") + resellername + "\n"
 		if fileExists("/proc/stb/fp/resellerID"):
+			print("[About] Read /proc/stb/fp/resellerID")
 			resellerid = open("/proc/stb/fp/resellerID", "r").read().strip()
 			AboutText += _("Reseller ID: ") + resellerid + "\n"
 		if fileExists("/proc/stb/info/adb_variant"):
+			print("[About] Read /proc/stb/info/adb_variant")
 			adbvariant = open("/proc/stb/info/adb_variant", "r").read().strip()
 			AboutText += _("ADB variant: ") + adbvariant + "\n"
 
+		print("[About] Read /proc/cmdline")
 		stbid = popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
 		if stbid is not None and stbid != "":
 			AboutText += _("STB ID: ") + stbid + "\n"
@@ -84,6 +88,7 @@ class About(Screen):
 			AboutText += _("Hardware serial: ") + about.getCPUSerial() + "\n"
 
 		if fileExists("/proc/stb/info/release"):
+			print("[About] Read /proc/stb/info/release")
 			hwrelease = open("/proc/stb/info/release", "r").read().strip()
 			AboutText += _("Factory release: ") + hwrelease + "\n"
 
@@ -102,9 +107,11 @@ class About(Screen):
 
 		AboutText += "\n"
 		if fileExists("/proc/sys/kernel/random/boot_id"):
+			print("[About] Read /proc/sys/kernel/random/boot_id")
 			bootid = open("/proc/sys/kernel/random/boot_id", "r").read().strip()
 			AboutText += _("Boot ID: ") + bootid + "\n"
 		if fileExists("/proc/sys/kernel/random/uuid"):
+			print("[About] Read /proc/sys/kernel/random/uuid")
 			uuid = open("/proc/sys/kernel/random/uuid", "r").read().strip()
 			AboutText += _("UUID: ") + uuid + "\n"
 
@@ -130,6 +137,7 @@ class About(Screen):
 		AboutText += _("Enigma2 debug level: %d\n") % eGetEnigmaDebugLvl()
 
 		if fileExists("/etc/openvision/mediaservice"):
+			print("[About] Read /etc/openvision/mediaservice")
 			mediaservice = open("/etc/openvision/mediaservice", "r").read().strip()
 			AboutText += _("Media service: ") + mediaservice.replace("enigma2-plugin-systemplugins-", "") + "\n"
 
@@ -138,6 +146,7 @@ class About(Screen):
 		AboutText += _("Drivers version: ") + about.getDriverInstalledDate() + "\n"
 		AboutText += _("Kernel version: ") + boxbranding.getKernelVersion() + "\n"
 
+		print("[About] Read kernel module layout from openvision.ko")
 		modulelayout = popen('find /lib/modules/ -type f -name "openvision.ko" -exec modprobe --dump-modversions {} \; | grep "module_layout" | cut -c-11').read().strip()
 		if modulelayout is not None and modulelayout != "":
 			AboutText += _("Kernel module layout: ") + modulelayout + "\n"
@@ -149,6 +158,7 @@ class About(Screen):
 		AboutText += "\n" + GStreamerVersion + "\n"
 
 		if fileExists("/proc/stb/player/version"):
+			print("[About] Read /proc/stb/player/version")
 			playerversion = open("/proc/stb/player/version", "r").read().strip()
 			AboutText += _("Player version: ") + playerversion + "\n"
 
@@ -274,24 +284,28 @@ class OpenVisionInformation(Screen):
 			ovrevisionupdate = _("Disabled in configuration")
 
 		if fileExists("/etc/openvision/visionversion"):
+			print("[About] Read /etc/openvision/visionversion")
 			visionversion = open("/etc/openvision/visionversion", "r").read().strip()
 			OpenVisionInformationText += _("Open Vision version: ") + visionversion + "\n"
 		else:
 			OpenVisionInformationText += _("Open Vision version: ") + boxbranding.getVisionVersion() + "\n"
 
 		if fileExists("/etc/openvision/visionrevision"):
+			print("[About] Read /etc/openvision/visionrevision")
 			visionrevision = open("/etc/openvision/visionrevision", "r").read().strip()
 			OpenVisionInformationText += _("Open Vision revision: ") + visionrevision + " " + _("(Latest revision on github: ") + str(ovrevisionupdate) + ")" + "\n"
 		else:
 			OpenVisionInformationText += _("Open Vision revision: ") + boxbranding.getVisionRevision() + " " + _("(Latest revision on github: ") + str(ovrevisionupdate) + ")" + "\n"
 
 		if fileExists("/etc/openvision/visionlanguage"):
+			print("[About] Read /etc/openvision/visionlanguage")
 			visionlanguage = open("/etc/openvision/visionlanguage", "r").read().strip()
 			OpenVisionInformationText += _("Open Vision language: ") + visionlanguage + "\n"
 
 		OpenVisionInformationText += _("Open Vision module: ") + about.getVisionModule() + "\n"
 
 		if fileExists("/etc/openvision/multiboot"):
+			print("[About] Read /etc/openvision/multiboot")
 			multibootflag = open("/etc/openvision/multiboot", "r").read().strip()
 			if multibootflag == "1":
 				OpenVisionInformationText += _("Soft multiboot: ") + _("Yes") + "\n"
@@ -309,6 +323,7 @@ class OpenVisionInformation(Screen):
 			OpenVisionInformationText += _("Factory RC type: ") + boxrctype + "\n"
 		if boxrctype is not None and boxrctype == "unknown":
 			if fileExists("/usr/sbin/lircd"):
+				print("[About] /usr/sbin/lircd detected.")
 				OpenVisionInformationText += _("RC type: ") + _("LIRC remote") + "\n"
 
 		OpenVisionInformationText += _("Open Vision RC type: ") + boxbranding.getRCType() + "\n"
@@ -859,6 +874,7 @@ class SystemNetworkInfo(Screen):
 				speed = line.split(': ')[1][:-4]
 				self.AboutText += _("Speed:") + "\t" + speed + _('Mb/s')
 
+		print("[About] Read /proc/sys/kernel/hostname")
 		hostname = open('/proc/sys/kernel/hostname').read()
 		self.AboutText += "\n"
 		self.AboutText += _("Hostname:") + "\t" + hostname + "\n"
@@ -1022,6 +1038,7 @@ class SystemMemoryInfo(Screen):
 			"red": self.close
 		})
 
+		print("[About] Read /proc/meminfo")
 		out_lines = open("/proc/meminfo").readlines()
 		self.AboutText = _("RAM") + '\n\n'
 		RamTotal = "-"
@@ -1244,6 +1261,7 @@ class MemoryInfo(Screen):
 			mem = 1
 			free = 0
 			rows_in_column = self["params"].rows_in_column
+			print("[About] Read /proc/meminfo")
 			for i, line in enumerate(open('/proc/meminfo', 'r')):
 				s = line.strip().split(None, 2)
 				if len(s) == 3:
@@ -1275,6 +1293,7 @@ class MemoryInfo(Screen):
 
 	def clearMemory(self):
 		eConsoleAppContainer().execute("sync")
+		print("[About] Write to /proc/sys/vm/drop_caches")
 		open("/proc/sys/vm/drop_caches", "w").write("3")
 		self.getMemoryInfo()
 

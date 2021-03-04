@@ -1,10 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-# the implementation here is a bit crappy.
 import time
-from Tools.Directories import resolveFilename, SCOPE_CONFIG
-from os import path
+from Tools.Directories import resolveFilename, SCOPE_CONFIG, fileExists
 from enigma import evfd
 
 PERCENTAGE_START = 0
@@ -46,19 +44,24 @@ def profile(id):
 			else:
 				perc = PERCENTAGE_START
 			try:
-				try:
-					open("/proc/progress", "w").write("%d \n" % perc)
-				except:
-					pass
-				if perc > 1 and perc < 98:
+				if fileExists("/proc/progress"):
+					try:
+#						print("[Profile] Write to /proc/progress")
+						open("/proc/progress", "w").write("%d \n" % perc)
+					except:
+#						print("[Profile] Write to /proc/progress failed.")
+						pass
+				elif (perc > 1) and (perc < 98):
 					value = 1
-					if path.exists("/proc/stb/lcd/symbol_circle"):
+					if fileExists("/proc/stb/lcd/symbol_circle"):
+#						print("[Profile] Write to /proc/stb/lcd/symbol_circle")
 						open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
 					if perc > 20:
 						evfd.getInstance().vfd_write_string("-%02d-" % perc)
 				elif perc > 98:
 					value = 0
-					if path.exists("/proc/stb/lcd/symbol_circle"):
+					if fileExists("/proc/stb/lcd/symbol_circle"):
+#						print("[Profile] Write to /proc/stb/lcd/symbol_circle")
 						open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
 			except IOError:
 				pass
