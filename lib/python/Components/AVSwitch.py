@@ -210,7 +210,7 @@ def InitAVSwitch():
 			print("[AVSwitch] Write to /proc/stb/audio/dtshd")
 			open("/proc/stb/audio/dtshd", "w").write(configElement.value)
 		choice_list = [("downmix", _("Downmix")), ("force_dts", _("convert to DTS")), ("use_hdmi_caps", _("controlled by HDMI")), ("multichannel", _("convert to multi-channel PCM")), ("hdmi_best", _("use best / controlled by HDMI"))]
-			config.av.dtshd = ConfigSelection(choices=choice_list, default="downmix")
+		config.av.dtshd = ConfigSelection(choices=choice_list, default="downmix")
 		config.av.dtshd.addNotifier(setDTSHD)
 
 	if SystemInfo["CanWMAPRO"]:
