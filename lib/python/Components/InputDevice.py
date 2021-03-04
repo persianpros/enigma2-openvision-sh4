@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSlider, ConfigSubsection, ConfigYesNo, ConfigText, ConfigInteger
+from enigma import getBoxBrand
 import errno
 import xml.etree.cElementTree
 from enigma import eRCInput
@@ -12,6 +13,8 @@ import os
 import struct
 from Tools.Directories import pathExists
 from boxbranding import getRCType
+
+brand = getBoxBrand()
 
 # asm-generic/ioctl.h
 IOC_NRBITS = 8L
@@ -71,7 +74,7 @@ class inputDevices:
 
 	def getDeviceName(self, x):
 		if x in self.Devices.keys():
-			return self.Devices[x].get("name", x)
+			return self.Devices[x].get("name", x).replace('dreambox', brand)
 		else:
 			return "Unknown device name"
 
