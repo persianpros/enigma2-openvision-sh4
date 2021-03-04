@@ -50,7 +50,7 @@ def profile(id):
 						open("/proc/progress", "w").write("%d \n" % perc)
 					except:
 #						print("[Profile] Write to /proc/progress failed.")
-				elif (perc > 1) and (perc < 98):
+				if (perc > 1) and (perc < 98):
 					value = 1
 					if fileExists("/proc/stb/lcd/symbol_circle"):
 #						print("[Profile] Write to /proc/stb/lcd/symbol_circle")
