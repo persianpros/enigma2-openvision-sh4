@@ -59,8 +59,8 @@ displaytype = getDisplayType()
 
 SystemInfo["MachineBrand"] = brand
 SystemInfo["MachineModel"] = model
-SystemInfo["RCCode"] = getRCType()
-SystemInfo["RCTypeIndex"] = getRCIDNum()
+SystemInfo["RCCode"] = int(getRCType())
+SystemInfo["RCTypeIndex"] = int(getRCIDNum())
 SystemInfo["RCImage"] = getRCFile("png")
 SystemInfo["RCMapping"] = getRCFile("xml")
 
