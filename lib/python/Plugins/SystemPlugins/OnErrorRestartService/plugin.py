@@ -61,6 +61,7 @@ def main(session, **kwargs):
 	global ErrorCheckInstance
 	if ErrorCheckInstance is None:
 		try:
+			print("[OnErrorRestartService] Read /proc/sys/kernel/printk")
 			f = open("/proc/sys/kernel/printk", "r")
 			for line in f:
 				if int(line[:1]) > 0:

@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigSubsection, ConfigInteger, ConfigSlider, getConfigListEntry
@@ -102,19 +103,19 @@ def setPosition(clip_left, clip_width, clip_top, clip_height):
 	if clip_top + clip_height > 576:
 		clip_height = 576 - clip_top
 	try:
-		file = open("/proc/stb/vmpeg/0/dst_left", "w")
-		file.write('%X' % clip_left)
-		file.close()
-		file = open("/proc/stb/vmpeg/0/dst_width", "w")
-		file.write('%X' % clip_width)
-		file.close()
-		file = open("/proc/stb/vmpeg/0/dst_top", "w")
-		file.write('%X' % clip_top)
-		file.close()
-		file = open("/proc/stb/vmpeg/0/dst_height", "w")
-		file.write('%X' % clip_height)
-		file.close()
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_left")
+		open("/proc/stb/vmpeg/0/dst_left", "w").write('%X' % clip_left)
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_width")
+		open("/proc/stb/vmpeg/0/dst_width", "w").write('%X' % clip_width)
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_top")
+		open("/proc/stb/vmpeg/0/dst_top", "w").write('%X' % clip_top)
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_height")
+		open("/proc/stb/vmpeg/0/dst_height", "w").write('%X' % clip_height)
 	except:
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_left failed.")
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_width failed.")
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_top failed.")
+		print("[VideoClippingSetup] Write to /proc/stb/vmpeg/0/dst_height failed.")
 		return
 
 

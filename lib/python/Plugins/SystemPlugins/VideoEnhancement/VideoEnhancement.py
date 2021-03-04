@@ -24,9 +24,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting contrast to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_contrast")
 					open("/proc/stb/video/plane/psi_contrast", "w").write("%s" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write psi_contrast.")
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_contrast failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -41,9 +42,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting saturation to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_saturation")
 					open("/proc/stb/video/plane/psi_saturation", "w").write("%s" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write psi_saturation.")
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_saturation failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -58,9 +60,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting hue to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_tint")
 					open("/proc/stb/video/plane/psi_tint", "w").write("%s" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write psi_tint.")
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_tint failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -75,9 +78,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting brightness to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_brightness")
 					open("/proc/stb/video/plane/psi_brightness", "w").write("%s" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write psi_brightness.")
+					print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_brightness failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -92,9 +96,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting block_noise_reduction to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_block_noise_reduction")
 					open("/proc/stb/vmpeg/0/pep_block_noise_reduction", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_block_noise_reduction.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_block_noise_reduction failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -109,9 +114,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting mosquito_noise_reduction to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_mosquito_noise_reduction")
 					open("/proc/stb/vmpeg/0/pep_mosquito_noise_reduction", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_mosquito_noise_reduction.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_mosquito_noise_reduction failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -126,9 +132,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting digital_contour_removal to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_digital_contour_removal")
 					open("/proc/stb/vmpeg/0/pep_digital_contour_removal", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_digital_contour_removal.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_digital_contour_removal failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -142,9 +149,10 @@ class VideoEnhancement:
 			def setSplitMode(config):
 				try:
 					print("[VideoEnhancement] setting splitmode to:", str(config.value))
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_split")
 					open("/proc/stb/vmpeg/0/pep_split", "w").write(str(config.value))
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_split.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_split failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -163,9 +171,10 @@ class VideoEnhancement:
 				myval = int(config.value * 256)
 				try:
 					print("[VideoEnhancement] setting sharpness to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_sharpness")
 					open("/proc/stb/vmpeg/0/pep_sharpness", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_sharpness.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_sharpness failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -180,9 +189,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting auto_flesh to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_auto_flesh")
 					open("/proc/stb/vmpeg/0/pep_auto_flesh", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_auto_flesh.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_auto_flesh failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -197,9 +207,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting green_boost to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_green_boost")
 					open("/proc/stb/vmpeg/0/pep_green_boost", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_green_boost.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_green_boost failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -214,9 +225,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting blue_boost to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_blue_boost")
 					open("/proc/stb/vmpeg/0/pep_blue_boost", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_blue_boost.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_blue_boost failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -231,9 +243,10 @@ class VideoEnhancement:
 				myval = int(config.value)
 				try:
 					print("[VideoEnhancement] setting dynamic_contrast to: %0.8X" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_dynamic_contrast")
 					open("/proc/stb/vmpeg/0/pep_dynamic_contrast", "w").write("%0.8X" % myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_dynamic_contrast.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_dynamic_contrast failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -251,9 +264,10 @@ class VideoEnhancement:
 					myval = int(config.value)
 					try:
 						print("[VideoEnhancement] setting scaler_sharpness to: %0.8X" % myval)
+						print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_scaler_sharpness")
 						open("/proc/stb/vmpeg/0/pep_scaler_sharpness", "w").write("%0.8X" % myval)
 					except IOError:
-						print("[VideoEnhancement] couldn't write pep_scaler_sharpness.")
+						print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_scaler_sharpness failed.")
 
 					if not VideoEnhancement.firstRun:
 						self.setConfiguredValues()
@@ -268,9 +282,10 @@ class VideoEnhancement:
 				myval = configElement.value and "enable" or "disable"
 				try:
 					print("[VideoEnhancement] setting scaler_vertical_dejagging to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_scaler_vertical_dejagging")
 					open("/proc/stb/vmpeg/0/pep_scaler_vertical_dejagging", "w").write(myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write pep_scaler_vertical_dejagging.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/pep_scaler_vertical_dejagging failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -285,9 +300,10 @@ class VideoEnhancement:
 				myval = configElement.value and "enable" or "disable"
 				try:
 					print("[VideoEnhancement] setting smooth to: %s" % myval)
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/smooth")
 					open("/proc/stb/vmpeg/0/smooth", "w").write(myval)
 				except IOError:
-					print("[VideoEnhancement] couldn't write smooth.")
+					print("[VideoEnhancement] Write to /proc/stb/vmpeg/0/smooth failed.")
 
 				if not VideoEnhancement.firstRun:
 					self.setConfiguredValues()
@@ -304,10 +320,10 @@ class VideoEnhancement:
 
 	def setConfiguredValues(self):
 		try:
-			print("[VideoEnhancement] applying psi values")
+			print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_apply")
 			open("/proc/stb/video/plane/psi_apply", "w").write("1")
 		except IOError:
-			print("[VideoEnhancement] couldn't apply psi values.")
+			print("[VideoEnhancement] Write to /proc/stb/video/plane/psi_apply failed.")
 
 
 VideoEnhancement()

@@ -385,6 +385,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 
 	def doWriteAlpha(self, value):
 		if SystemInfo["CanChangeOsdAlpha"]:
+			print("[InfoBarGenerics] Write to /proc/stb/video/alpha")
 			open("/proc/stb/video/alpha", "w").write(str(value))
 			if value == config.av.osd_alpha.value:
 				self.lastResetAlpha = True
@@ -1578,8 +1579,10 @@ class InfoBarSeek:
 		if not self.isSeekable():
 			SystemInfo["SeekStatePlay"] = False
 			if os.path.exists("/proc/stb/lcd/symbol_hdd"):
+				print("[InfoBarGenerics] Write to /proc/stb/lcd/symbol_hdd")
 				open("/proc/stb/lcd/symbol_hdd", "w").write("0")
 			if os.path.exists("/proc/stb/lcd/symbol_hddprogress"):
+				print("[InfoBarGenerics] Write to /proc/stb/lcd/symbol_hddprogress")
 				open("/proc/stb/lcd/symbol_hddprogress", "w").write("0")
 			self["SeekActions"].setEnabled(False)
 #			print("not seekable, return to play")
@@ -3872,6 +3875,7 @@ class InfoBarAspectSelection:
 		tlist.append(("Non Linear", "non"))
 		tlist.append(("Bestfit", "bestfit"))
 
+		print("[InfoBarGenerics] Read /proc/stb/video/policy")
 		mode = open("/proc/stb/video/policy").read()[:-1]
 		print(mode)
 		for x in range(len(tlist)):
@@ -3891,6 +3895,7 @@ class InfoBarAspectSelection:
 				elif aspect[1] == "subservice":
 					self.subserviceSelection()
 				else:
+					print("[InfoBarGenerics] Write to /proc/stb/video/policy")
 					open("/proc/stb/video/policy", "w").write(aspect[1])
 		return
 
@@ -3920,8 +3925,11 @@ class InfoBarAspectSelection:
 		return
 
 	def resolutionSelection(self):
+		print("[InfoBarGenerics] Read /proc/stb/vmpeg/0/xres")
 		xresString = open("/proc/stb/vmpeg/0/xres", "r").read()
+		print("[InfoBarGenerics] Read /proc/stb/vmpeg/0/yres")
 		yresString = open("/proc/stb/vmpeg/0/yres", "r").read()
+		print("[InfoBarGenerics] Read /proc/stb/0/framerate")
 		fpsString = open("/proc/stb/vmpeg/0/framerate", "r").read()
 		xres = int(xresString, 16)
 		yres = int(yresString, 16)
@@ -3935,12 +3943,13 @@ class InfoBarAspectSelection:
 		tlist.append((_("Auto(not available)"), "auto"))
 		tlist.append(("Video: " + str(xres) + "x" + str(yres) + "@" + str(fpsFloat) + "hz", ""))
 		tlist.append(("--", ""))
+		print("[InfoBarGenerics] Read /proc/stb/video/videomode_choices")
 		for modes in reversed(open("/proc/stb/video/videomode_choices", "r").read()[:-1].split(' ')):
 			if not "pal" in modes and "p" in modes or "i" in modes:
 				tlist.append((modes.replace("p", "p@").replace("i", "i@"), modes))
 
 		keys = ["green", "yellow", "blue", "", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
+		print("[InfoBarGenerics] Read /proc/stb/video/videomode")
 		mode = open("/proc/stb/video/videomode").read()[:-1]
 		print(mode)
 		for x in range(len(tlist)):
@@ -3953,6 +3962,7 @@ class InfoBarAspectSelection:
 		if not Resolution is None:
 			if isinstance(Resolution[1], str):
 				if Resolution[1] != "auto":
+					print("[InfoBarGenerics] Write to /proc/stb/video/videomode")
 					open("/proc/stb/video/videomode", "w").write(Resolution[1])
 #					from enigma import gMainDC
 #					gMainDC.getInstance().setResolution(-1, -1)

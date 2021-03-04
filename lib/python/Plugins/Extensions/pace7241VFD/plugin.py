@@ -91,16 +91,7 @@ config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
-		try:
-			self.adb_mod = open("/proc/stb/info/adb_variant").read().strip()
-		except:
-			pass
-
-#		print('[pace7241VFD] ADB variant:', self.adb_mod)
-#		if self.adb_mod == 'bsla' or self.adb_mod == 'bzzb':
-			self.disp = 'vfd'
-#		else:
-#			self.disp = 'led'
+		self.disp = 'vfd'
 		Screen.__init__(self, session)
 		self.skinName = ["Setup"]
 		self["key_red"] = StaticText(_("Cancel"))
@@ -243,13 +234,6 @@ class VFDIcons:
 		self.mp3Available = False
 #		self.DTSAvailable = False
 
-#		self.display = 'led'
-#		try:
-#			self.adb_model = open("/proc/stb/info/adb_variant").read().strip()
-#		except:
-#			pass
-#		print('[pace7241VFD] ADB variant:', self.adb_model)
-#		if self.adb_model == 'bsla' or self.adb_model == 'bzzb':
 		self.display = 'vfd'
 
 		self.timer = eTimer()

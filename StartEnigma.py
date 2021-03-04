@@ -664,9 +664,10 @@ if config.clientmode.enabled.value:
 profile("IPv6")
 if os.path.exists('/etc/enigma2/ipv6'):
 	try:
+		print("[StartEnigma] Write to /proc/sys/net/ipv6/conf/all/disable_ipv6")
 		open("/proc/sys/net/ipv6/conf/all/disable_ipv6", "w").write("1")
 	except:
-		pass
+		print("[StartEnigma] Write to /proc/sys/net/ipv6/conf/all/disable_ipv6 failed.")
 
 #from enigma import dump_malloc_stats
 #t = eTimer()

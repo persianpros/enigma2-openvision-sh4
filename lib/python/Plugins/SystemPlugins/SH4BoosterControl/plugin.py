@@ -37,16 +37,14 @@ def standbyCounterChanged(configElement):
 
 def initBooster():
 	print("[SH4BoosterControl] initBooster")
-	f = open("/proc/cpu_frequ/pll0_ndiv_mdiv", "w")
-	f.write(config.plugins.booster.normalfrequenz.getValue())
-	f.close()
+	print("[SH4BoosterControl] Write to /proc/cpu_frequ/pll0_ndiv_mdiv")
+	open("/proc/cpu_frequ/pll0_ndiv_mdiv", "w").write(config.plugins.booster.normalfrequenz.getValue())
 
 
 def initStandbyBooster():
 	print("[SH4BoosterControl] initStandbyBooster")
-	f = open("/proc/cpu_frequ/pll0_ndiv_mdiv", "w")
-	f.write(config.plugins.booster.standbyfrequenz.getValue())
-	f.close()
+	print("[SH4BoosterControl] Write to /proc/cpu_frequ/pll0_ndiv_mdiv")
+	open("/proc/cpu_frequ/pll0_ndiv_mdiv", "w").write(config.plugins.booster.standbyfrequenz.getValue())
 
 
 class SH4BoosterControl(ConfigListScreen, Screen):

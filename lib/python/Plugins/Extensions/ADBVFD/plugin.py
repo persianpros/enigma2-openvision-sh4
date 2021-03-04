@@ -94,9 +94,10 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
 		try:
+			print("[ADBVFD] Read /proc/stb/info/adb_variant")
 			self.adb_mod = open("/proc/stb/info/adb_variant").read().strip()
 		except:
-			pass
+			print("[ADBVFD] Read /proc/stb/info/adb_variant failed.")
 
 		print('[ADBVFD] ADB variant:', self.adb_mod)
 		if self.adb_mod == 'bsla' or self.adb_mod == 'bzzb':
@@ -247,9 +248,10 @@ class VFDIcons:
 
 		self.display = 'led'
 		try:
+			print("[ADBVFD] Read /proc/stb/info/adb_variant")
 			self.adb_model = open("/proc/stb/info/adb_variant").read().strip()
 		except:
-			pass
+			print("[ADBVFD] Read /proc/stb/info/adb_variant failed.")
 		print('[ADBVFD] ADB variant:', self.adb_model)
 		if self.adb_model == 'bsla' or self.adb_model == 'bzzb':
 			self.display = 'vfd'

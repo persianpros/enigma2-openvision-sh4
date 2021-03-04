@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Screens.Screen import Screen
 from Components.config import config
 from Components.Sources.CanvasSource import CanvasSource
@@ -135,14 +136,22 @@ class VideoFinetune(Screen):
 		self.fontsize = getDesktop(0).size().height() == 1080 and 30 or 20
 
 		if fileExists("/proc/stb/vmpeg/0/dst_left"):
-			self.left = open("/proc/stb/vmpeg/0/dst_left", "r").read()[:-1]
-			self.width = open("/proc/stb/vmpeg/0/dst_width", "r").read()[:-1]
-			self.top = open("/proc/stb/vmpeg/0/dst_top", "r").read()[:-1]
-			self.height = open("/proc/stb/vmpeg/0/dst_height", "r").read()[:-1]
+			print("[VideoFinetune] Read /proc/stb/vmpeg/0/dst_left")
+			self.left = open("/proc/stb/vmpeg/0/dst_left", "r").read()
+			print("[VideoFinetune] Read /proc/stb/vmpeg/0/dst_width")
+			self.width = open("/proc/stb/vmpeg/0/dst_width", "r").read()
+			print("[VideoFinetune] Read /proc/stb/vmpeg/0/dst_top")
+			self.top = open("/proc/stb/vmpeg/0/dst_top", "r").read()
+			print("[VideoFinetune] Read /proc/stb/vmpeg/0/dst_height")
+			self.height = open("/proc/stb/vmpeg/0/dst_height", "r").read()
 			if self.left != "0" or self.top != "0" or self.width != "2d0" or self.height != "240":
+				print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_left")
 				open("/proc/stb/vmpeg/0/dst_left", "w").write("0")
+				print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_width")
 				open("/proc/stb/vmpeg/0/dst_width", "w").write("2d0")
+				print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_top")
 				open("/proc/stb/vmpeg/0/dst_top", "w").write("0")
+				print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_height")
 				open("/proc/stb/vmpeg/0/dst_height", "w").write("240")
 				self.onClose.append(self.__close)
 
@@ -163,9 +172,13 @@ class VideoFinetune(Screen):
 		self.testpic_brightness()
 
 	def __close(self):
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_left")
 		open("/proc/stb/vmpeg/0/dst_left", "w").write(self.left)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_width")
 		open("/proc/stb/vmpeg/0/dst_width", "w").write(self.width)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_top")
 		open("/proc/stb/vmpeg/0/dst_top", "w").write(self.top)
+		print("[VideoFinetune] Write to /proc/stb/vmpeg/0/dst_height")
 		open("/proc/stb/vmpeg/0/dst_height", "w").write(self.height)
 
 	def keyNumber(self, key):
