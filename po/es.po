@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-26 14:03+0330\n"
+"POT-Creation-Date: 2021-03-06 16:24+0330\n"
 "PO-Revision-Date: 2021-02-09 02:00+0100\n"
 "Last-Translator: Kuatto\n"
 "Language-Team: Álvaro <mi casa>\n"
@@ -2193,12 +2193,6 @@ msgstr "También en reposo"
 
 msgid "Alternative"
 msgstr "Alternativo"
-
-msgid "Alternative 1"
-msgstr "Alternativa 1"
-
-msgid "Alternative 2"
-msgstr "Alternativa 2"
 
 msgid "Alternative URL for images listed on FlashImage"
 msgstr "URL alternativa para las imágenes listadas en FlashImage"
@@ -4496,10 +4490,6 @@ msgstr "Debug a archivo"
 msgid "Deep Standby"
 msgstr "Reposo Profundo"
 
-#, fuzzy
-msgid "Deep Standby LED"
-msgstr "Reposo Profundo"
-
 msgid "Deep standby"
 msgstr "Reposo profundo"
 
@@ -5468,7 +5458,7 @@ msgstr "Encriptación:"
 
 #, fuzzy
 msgid "End"
-msgstr "Expandir"
+msgstr "y"
 
 #, fuzzy
 msgid "End alternatives edit"
@@ -9528,9 +9518,9 @@ msgstr "Espere mientras se testea su red…"
 msgid "Please wait while your network is restarting..."
 msgstr "Espere mientras se reinicia su red…"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Please wait, restarting %s."
-msgstr "Espere, reiniciando softcam."
+msgstr "Espere, reiniciando %s."
 
 msgid "Please wait..."
 msgstr "Espera por favor…"
@@ -12476,9 +12466,6 @@ msgstr "Reposo"
 msgid "Standby & Restart"
 msgstr "Reposo & Reinicios"
 
-msgid "Standby LED"
-msgstr "LED en Standby o Reposo Profundo"
-
 #, fuzzy
 msgid "Standby LED brightness"
 msgstr "LED en Standby o Reposo Profundo"
@@ -13319,10 +13306,10 @@ msgstr "La interfaz de usuario del receptor ahora se reiniciará para mostrar su
 msgid "The user interface of your %s %s is restarting"
 msgstr "La interfaz de usuario de su %s %s se está reiniciando"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The user interface of your %s %s is restarting\n"
-"due to an error in mytest.py"
+"due to an error in StartEnigma.py"
 msgstr ""
 "La interfaz de usuario de su %s %s se está reiniciando\n"
 "debido a un error en mytest.py"
@@ -14026,13 +14013,6 @@ msgid "Turn on the control LED."
 msgstr "Encienda el LED de encendido durante standby o reposo profundo."
 
 #, fuzzy
-msgid "Turn on the power LED during deep standby."
-msgstr "Encienda el LED de encendido durante standby o reposo profundo."
-
-msgid "Turn on the power LED during standby."
-msgstr "Encienda el LED de encendido durante standby o reposo profundo."
-
-#, fuzzy
 msgid "Turn on the power LED."
 msgstr "Encienda el LED de encendido durante standby o reposo profundo."
 
@@ -14669,6 +14649,10 @@ msgstr "Teclado virtual en skin"
 
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
+msgstr "Teclado virtual"
+
+#, fuzzy
+msgid "Virtual Keyboard"
 msgstr "Teclado virtual"
 
 msgid "Virtual keyboard"
@@ -15643,9 +15627,8 @@ msgstr "alfabético-inverso fecha más reciente"
 msgid "always"
 msgstr "siempre"
 
-#, fuzzy
 msgid "and"
-msgstr "Banda"
+msgstr "y"
 
 msgid "and never ask in this session again"
 msgstr "y nunca preguntes en esta sesión otra vez"
