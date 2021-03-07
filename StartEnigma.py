@@ -143,7 +143,7 @@ try:
 	else:
 		log.startLogging(sys.stdout)
 except ImportError:
-	print("twisted not available")
+	print("[StartEnigma] Twisted not available")
 	pass
 
 profile("LOAD:Plugin")
@@ -558,7 +558,7 @@ def runScreenTest():
 	profile_final()
 
 	from Components.Console import Console
-	print("kill showiframe if it is running for SH4")
+	print("[StartEnigma] Kill showiframe if it is running for SH4")
 	Console = Console()
 	Console.ePopen('killall -9 showiframe')
 
