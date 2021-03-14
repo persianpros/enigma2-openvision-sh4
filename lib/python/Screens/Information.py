@@ -245,15 +245,16 @@ class CommitLogInformation(InformationBase):
 			branch = "?sha=" + "-".join(about.getEnigmaVersionString().split("-")[3:])
 		except Exception as err:
 			branch = ""
-		oeGitUrl = "https://api.github.com/repos/OpenVisionE2/openvision-%s/commits" % ("development-platform" if boxbranding.getVisionVersion().startswith("10") else "oe")
+		oeGitUrl = 
 		self.projects = [
-			("OpenVision Enigma2", "https://api.github.com/repos/OpenVisionE2/enigma2-openvision/commits%s" % branch),
-			("OpenVision OE-Alliance", oeGitUrl),
+			("OpenVision Enigma2 SH4", "https://api.github.com/repos/OpenVisionE2/enigma2-openvision-sh4/commits%s" % branch),
+			("OpenVision OE", "https://raw.githubusercontent.com/OpenVisionE2/revision/master/new.conf"),
 			("Enigma2 Plugins", "https://api.github.com/repos/OpenVisionE2/enigma2-plugins/commits"),
-			("OE-Alliance Plugins", "https://api.github.com/repos/OpenVisionE2/alliance-plugins/commits"),
+			("Alliance Plugins", "https://api.github.com/repos/OpenVisionE2/alliance-plugins/commits"),
 			("OpenWebIF", "https://api.github.com/repos/OpenVisionE2/OpenWebif/commits"),
 			("OpenVision Core Plugin", "https://api.github.com/repos/OpenVisionE2/openvision-core-plugin/commits"),
-			("Backup Suite Plugin", "https://api.github.com/repos/OpenVisionE2/BackupSuite/commits"),
+			("SH4 Driver", "https://api.github.com/repos/OpenVisionE2/sh4-driver/commits"),
+			("SH4 Apps", "https://api.github.com/repos/OpenVisionE2/sh4-apps/commits"),
 			("OctEtFHD Skin", "https://api.github.com/repos/OpenVisionE2/OctEtFHD-skin/commits")
 		]
 		self.project = 0
@@ -430,10 +431,7 @@ class ImageInformation(InformationBase):
 		info.append("")
 		if config.misc.OVupdatecheck.value:
 			try:
-				if boxbranding.getVisionVersion().startswith("10"):
-					ovUrl = "https://raw.githubusercontent.com/OpenVisionE2/openvision-development-platform/develop/meta-openvision/conf/distro/revision.conf"
-				else:
-					ovUrl = "https://raw.githubusercontent.com/OpenVisionE2/openvision-oe/develop/meta-openvision/conf/distro/revision.conf"
+				ovUrl = "https://raw.githubusercontent.com/OpenVisionE2/revision/master/new.conf"
 				ovResponse = urlopen(ovUrl)
 				if PY2:
 					ovRevision = ovResponse.read()
@@ -452,10 +450,12 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("OpenVision revision"), visionRevision))
 		info.append(formatLine("P1", _("Latest revision on github"), str(ovRevisionUpdate)))
 		if isfile("/etc/openvision/visionlanguage"):
+			print("[Information] Read /etc/openvision/visionlanguage")
 			visionLanguage = open("/etc/openvision/visionlanguage", "r").read().strip()
 			info.append(formatLine("P1", _("OpenVision language"), visionLanguage))
 		info.append(formatLine("P1", _("OpenVision module"), about.getVisionModule()))
 		if isfile("/etc/openvision/multiboot"):
+			print("[Information] Read /etc/openvision/multiboot")
 			multibootFlag = open("/etc/openvision/multiboot", "r").read().strip()
 			multibootFlag = _("Yes") if multibootFlag == "1" else _("No")
 		else:
@@ -482,9 +482,8 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("Last update"), about.getUpdateDateString()))
 		info.append(formatLine("P1", _("Enigma2 (re)starts"), config.misc.startCounter.value))
 		info.append(formatLine("P1", _("Enigma2 debug level"), eGetEnigmaDebugLvl()))
-		if isfile("/etc/openvision/mediaservice"):
-			mediaService = open("/etc/openvision/mediaservice", "r").read().strip()
-			info.append(formatLine("P1", _("Media service"), mediaService.replace("enigma2-plugin-systemplugins-", "")))
+		mediaService = open("/etc/openvision/mediaservice", "r").read().strip() if isfile("/etc/openvision/mediaservice") else boxbranding.getE2Service()
+		info.append(formatLine("P1", _("Media service"), mediaService.replace("enigma2-plugin-systemplugins-", "")))
 		info.append("")
 		info.append(formatLine("H", _("Build information")))
 		info.append("")
@@ -501,13 +500,19 @@ class ImageInformation(InformationBase):
 		info.append("")
 		info.append(formatLine("H", _("Software information")))
 		info.append("")
-		info.append(formatLine("P1", _("GStreamer version"), about.getGStreamerVersionString().replace("GStreamer", "")))
+		info.append(formatLine("P1", _("Media framework"), about.getGStreamerVersionString()))
+		if isfile("/proc/stb/player/version"):
+			print("[Information] Read /proc/stb/player/version")
+			playerVersion = open("/proc/stb/player/version", "r").read().strip()
+			info.append(formatLine("P1", _("Player version"), playerVersion))
 		info.append(formatLine("P1", _("FFmpeg version"), about.getFFmpegVersionString()))
 		info.append(formatLine("P1", _("Python version"), about.getPythonVersionString()))
 		if isfile("/proc/sys/kernel/random/boot_id"):
+			print("[Information] Read /proc/sys/kernel/random/boot_id")
 			bootId = open("/proc/sys/kernel/random/boot_id", "r").read().strip()
 			info.append(formatLine("P1", _("Boot ID"), bootId))
 		if isfile("/proc/sys/kernel/random/uuid"):
+			print("[Information] Read /proc/sys/kernel/random/uuid")
 			uuId = open("/proc/sys/kernel/random/uuid", "r").read().strip()
 			info.append(formatLine("P1", _("UUID"), uuId))
 		info.append("")
@@ -527,30 +532,6 @@ class ImageInformation(InformationBase):
 			info.append(formatLine("P1", _("MKUBIFS"), boxbranding.getMachineMKUBIFS()))
 		if boxbranding.getMachineUBINIZE():
 			info.append(formatLine("P1", _("UBINIZE"), boxbranding.getMachineUBINIZE()))
-		if SystemInfo["HiSilicon"]:
-			info.append("")
-			info.append(formatLine("H", _("HiSilicon specific information")))
-			info.append("")
-			packageList = check_output(["/usr/bin/opkg", "list-installed"])
-			packageList = packageList.split("\n")
-			revision = self.findPackageRevision("grab", packageList)
-			if revision and revision != "r0":
-				info.append(formatLine("P1", _("Grab"), revision))
-			revision = self.findPackageRevision("hihalt", packageList)
-			if revision:
-				info.append(formatLine("P1", _("Halt"), revision))
-			revision = self.findPackageRevision("libs", packageList)
-			if revision:
-				info.append(formatLine("P1", _("Libs"), revision))
-			revision = self.findPackageRevision("partitions", packageList)
-			if revision:
-				info.append(formatLine("P1", _("Partitions"), revision))
-			revision = self.findPackageRevision("reader", packageList)
-			if revision:
-				info.append(formatLine("P1", _("Reader"), revision))
-			revision = self.findPackageRevision("showiframe", packageList)
-			if revision:
-				info.append(formatLine("P1", _("Showiframe"), revision))
 		self["information"].setText("\n".join(info).encode("UTF-8", "ignore") if PY2 else "\n".join(info))
 
 	def findPackageRevision(self, package, packageList):
@@ -635,6 +616,7 @@ class MemoryInformation(InformationBase):
 
 	def clearMemoryInformation(self):
 		eConsoleAppContainer().execute(*["/bin/sync", "/bin/sync"])
+		print("[Information] Write to /proc/sys/vm/drop_caches")
 		open("/proc/sys/vm/drop_caches", "w").write("3")
 		self.informationTimer.start(25)
 		for callback in self.onInformationUpdated:
@@ -885,6 +867,7 @@ class NetworkInformation(InformationBase):
 
 	def displayInformation(self):
 		info = []
+		print("[Information] Read /proc/sys/kernel/hostname")
 		hostname = open("/proc/sys/kernel/hostname").read().strip()
 		info.append(formatLine("H0H", _("Hostname"), hostname))
 		for interface in sorted(list(self.interfaceData.keys())):
@@ -971,6 +954,21 @@ class ReceiverInformation(InformationBase):
 			procModel = boxbranding.getMachineProcModel()
 		if procModel != model:
 			info.append(formatLine("P1", _("Proc model"), procModel))
+		if isfile("/proc/stb/info/model_name"):
+			print("[Information] Read /proc/stb/info/model_name")
+			resellerName = open("/proc/stb/info/model_name", "r").read().strip()
+			info.append(formatLine("P1", _("Reseller name"), resellerName))
+		if isfile("/proc/stb/fp/resellerID"):
+			print("[Information] Read /proc/stb/fp/resellerID")
+			resellerId = open("/proc/stb/fp/resellerID", "r").read().strip()
+			info.append(formatLine("P1", _("Reseller ID"), resellerId))
+		if isfile("/proc/stb/info/adb_variant"):
+			print("[Information] Read /proc/stb/info/adb_variant")
+			adbVariant = open("/proc/stb/info/adb_variant", "r").read().strip()
+			info.append(formatLine("P1", _("ADB variant"), adbVariant))
+		print("[Information] Read /proc/cmdline")
+		stbId = popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
+		info.append(formatLine("P1", _("STB ID"), (stbId if stbId else _("N/A"))))
 		procModelType = getBoxProcType()
 		if procModelType and procModelType != "unknown":
 			info.append(formatLine("P1", _("Hardware type"), procModelType))
@@ -978,6 +976,7 @@ class ReceiverInformation(InformationBase):
 		if hwSerial:
 			info.append(formatLine("P1", _("Hardware serial"), (hwSerial if hwSerial != "unknown" else about.getCPUSerial())))
 		if isfile("/proc/stb/info/release"):
+			print("[Information] Read /proc/stb/info/release")
 			hwRelease = open("/proc/stb/info/release", "r").read().strip()
 			info.append(formatLine("P1", _("Factory release"), hwRelease))
 		info.append(formatLine("P1", _("Brand/Meta"), SystemInfo["MachineBrand"]))
@@ -997,17 +996,14 @@ class ReceiverInformation(InformationBase):
 		info.append(formatLine("P1", _("CPU architecture"), about.getCPUArch()))
 		if boxbranding.getImageFPU():
 			info.append(formatLine("P1", _("FPU"), boxbranding.getImageFPU()))
-		if boxbranding.getImageArch() == "aarch64":
-			info.append(formatLine("P1", _("MultiLib"), (_("Yes") if boxbranding.getHaveMultiLib() == "True" else _("No"))))
 		info.append("")
 		info.append(formatLine("H", _("Remote control information")))
 		info.append("")
 		boxRcType = getBoxRCType()
 		if boxRcType:
 			if boxRcType == "unknown":
-				if isfile("/usr/bin/remotecfg"):
-					info.append(_("RC type:|%s") % _("Amlogic remote"))
-				elif isfile("/usr/sbin/lircd"):
+				if isfile("/usr/sbin/lircd"):
+					print("[Information] /usr/sbin/lircd detected.")
 					info.append(_("RC type:|%s") % _("LIRC remote"))
 			else:
 				info.append(formatLine("P1", _("RC type"), boxRcType))
@@ -1019,14 +1015,9 @@ class ReceiverInformation(InformationBase):
 		info.append("")
 		info.append(formatLine("P1", _("Drivers version"), about.getDriverInstalledDate()))
 		info.append(formatLine("P1", _("Kernel version"), boxbranding.getKernelVersion()))
+		print("[Information] Read kernel module layout from openvision.ko")
 		moduleLayout = popen("find /lib/modules/ -type f -name 'openvision.ko' -exec modprobe --dump-modversions {} \; | grep 'module_layout' | cut -c-11").read().strip()
 		info.append(formatLine("P1", _("Kernel module layout"), (moduleLayout if moduleLayout else _("N/A"))))
-		if isfile("/proc/device-tree/amlogic-dt-id"):
-			deviceId = open("/proc/device-tree/amlogic-dt-id", "r").read().strip()
-			info.append(formatLine("P1", _("Device id"), deviceId))
-		if isfile("/proc/device-tree/le-dt-id"):
-			givenId = open("/proc/device-tree/le-dt-id", "r").read().strip()
-			info.append(formatLine("P1", _("Given device id"), givenId))
 		info.append("")
 		info.append(formatLine("H", _("Detected NIMs")))
 		info.append("")
