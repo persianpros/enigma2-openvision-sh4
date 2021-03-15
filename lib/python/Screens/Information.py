@@ -245,7 +245,6 @@ class CommitLogInformation(InformationBase):
 			branch = "?sha=" + "-".join(about.getEnigmaVersionString().split("-")[3:])
 		except Exception as err:
 			branch = ""
-		oeGitUrl = 
 		self.projects = [
 			("OpenVision Enigma2 SH4", "https://api.github.com/repos/OpenVisionE2/enigma2-openvision-sh4/commits%s" % branch),
 			("OpenVision OE", "https://raw.githubusercontent.com/OpenVisionE2/revision/master/new.conf"),
