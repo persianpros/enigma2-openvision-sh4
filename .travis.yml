@@ -21,8 +21,8 @@ git:
   depth: 10
 
 before_install:
-    - pip install --upgrade pip tox six autopep8
-    - pip3 install --upgrade pip tox six autopep8
+    - pip install --upgrade pip autopep8
+    - pip3 install --upgrade pip autopep8
 
 script:
 - echo compiling enigma2 sh4 python only
