@@ -249,7 +249,7 @@ class CommitLogInformation(InformationBase):
 			("OpenVision Enigma2 SH4", "https://api.github.com/repos/OpenVisionE2/enigma2-openvision-sh4/commits%s" % branch),
 			("OpenVision OE", "https://raw.githubusercontent.com/OpenVisionE2/revision/master/new.conf"),
 			("Enigma2 Plugins", "https://api.github.com/repos/OpenVisionE2/enigma2-plugins/commits"),
-			("Alliance Plugins", "https://api.github.com/repos/OpenVisionE2/alliance-plugins/commits"),
+			("Extra Plugins", "https://api.github.com/repos/OpenVisionE2/extra-plugins/commits"),
 			("OpenWebIF", "https://api.github.com/repos/OpenVisionE2/OpenWebif/commits"),
 			("OpenVision Core Plugin", "https://api.github.com/repos/OpenVisionE2/openvision-core-plugin/commits"),
 			("SH4 Driver", "https://api.github.com/repos/OpenVisionE2/sh4-driver/commits"),
