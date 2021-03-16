@@ -1,0 +1,34 @@
+language: python
+
+sudo: required
+dist: focal
+
+addons:
+  apt:
+    packages:
+    - git
+    - build-essential
+    - automake
+    - libtool
+    - python-dev
+    - gettext
+    - swig
+
+python:
+  - "2.7"
+
+git:
+  depth: 10
+
+before_install:
+    - pip install --upgrade pip tox six autopep8
+    - pip3 install --upgrade pip tox six autopep8
+
+script:
+- echo compiling enigma2 sh4 python only
+- python -m compileall .
+- find . -type f -name "*.po" -exec msgfmt {} -o {}.mo \;
+- echo done!
+
+after_success:
+- ./build.sh
