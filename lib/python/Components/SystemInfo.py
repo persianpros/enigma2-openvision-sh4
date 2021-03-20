@@ -58,7 +58,6 @@ displaytype = getDisplayType()
 
 SystemInfo["MachineBrand"] = brand
 SystemInfo["MachineModel"] = model
-SystemInfo["MachineBuild"] = platform
 
 # Remote control related data.
 #
