@@ -1798,7 +1798,7 @@ class ConfigText(ConfigElement, NumericalTextInput):
 		self.changed()
 
 	def getText(self):
-		return self.text.encode("utf-8")
+		return self.text.encode("utf-8") if PY2 else self.text
 
 	def getMulti(self, selected):
 		if self.visible_width:
@@ -1815,18 +1815,24 @@ class ConfigText(ConfigElement, NumericalTextInput):
 			return ("mtext"[1 - selected:], self.text.encode("utf-8") + " ", mark)
 
 	def getValue(self):
-		try:
-			return self.text.encode("utf-8")
-		except UnicodeDecodeError:
-			print("[config] Broken UTF8!")
+		if PY2:
+			try:
+				return self.text.encode("utf-8")
+			except UnicodeDecodeError:
+				print("[config] Broken UTF8!")
+				return self.text
+		else:
 			return self.text
 
 	def setValue(self, val):
-		try:
-			self.text = val.decode("utf-8")
-		except UnicodeDecodeError:
-			self.text = val.decode("utf-8", "ignore")
-			print("[config] Broken UTF8!")
+		if PY2:
+			try:
+				self.text = val.decode("utf-8")
+			except UnicodeDecodeError:
+				self.text = val.decode("utf-8", "ignore")
+				print("[config] Broken UTF8!")
+		else:
+			self.text = val
 
 	value = property(getValue, setValue)
 	_value = property(getValue, setValue)

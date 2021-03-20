@@ -46,13 +46,18 @@ from time import time, localtime, strftime
 import os
 from os import sys
 from bisect import insort
-from sys import maxint
 import itertools
 import datetime
 from RecordTimer import RecordTimerEntry, RecordTimer, findSafeRecordPath
 # hack alert!
 from Screens.Menu import MainMenu, mdom
-import six
+from six import PY2
+if PY2:
+	from sys import maxint
+	maximport = maxint
+else:
+	from sys import maxsize
+	maximport = maxsize
 
 
 def isStandardInfoBar(self):
@@ -213,7 +218,7 @@ class InfoBarDish:
 
 class InfoBarLongKeyDetection:
 	def __init__(self):
-		eActionMap.getInstance().bindAction('', -maxint - 1, self.detection) #highest prio
+		eActionMap.getInstance().bindAction('', -maximport - 1, self.detection) #highest prio
 		self.LongButtonPressed = False
 
 	#this function is called on every keypress!
@@ -232,8 +237,8 @@ class InfoBarUnhandledKey:
 		self.checkUnusedTimer = eTimer()
 		self.checkUnusedTimer.callback.append(self.checkUnused)
 		self.onLayoutFinish.append(self.unhandledKeyDialog.hide)
-		eActionMap.getInstance().bindAction("", -maxint - 1, self.actionA)  # Highest priority.
-		eActionMap.getInstance().bindAction("", maxint, self.actionB)  # Lowest priority.
+		eActionMap.getInstance().bindAction("", -maximport - 1, self.actionA)  # Highest priority.
+		eActionMap.getInstance().bindAction("", maximport, self.actionB)  # Lowest priority.
 		self.flags = (1 << 1)
 		self.uflags = 0
 		self.invKeyIds = invertKeyIds()
@@ -1149,7 +1154,7 @@ class InfoBarEPG:
 			})
 
 	def getEPGPluginList(self, getAll=False):
-		if six.PY2:
+		if PY2:
 			pluginlist = [(p.name, boundFunction(self.runPlugin, p), p.description or p.name) for p in plugins.getPlugins(where=PluginDescriptor.WHERE_EVENTINFO)
 					if 'selectedevent' not in p.__call__.func_code.co_varnames] or []
 		else:
@@ -3275,7 +3280,7 @@ class InfoBarNotifications:
 				self.hide()
 				dlg.show()
 				self.notificationDialog = dlg
-				eActionMap.getInstance().bindAction('', -maxint - 1, self.keypressNotification)
+				eActionMap.getInstance().bindAction('', -maximport - 1, self.keypressNotification)
 			else:
 				dlg = self.session.open(n[1], *n[2], **n[3])
 
@@ -3750,7 +3755,7 @@ class InfoBarPowersaver:
 		self.sleepTimer = eTimer()
 		self.sleepStartTime = 0
 		self.sleepTimer.callback.append(self.sleepTimerTimeout)
-		eActionMap.getInstance().bindAction('', -maxint - 1, self.keypress)
+		eActionMap.getInstance().bindAction('', -maximport - 1, self.keypress)
 
 	def keypress(self, key, flag):
 		if flag:

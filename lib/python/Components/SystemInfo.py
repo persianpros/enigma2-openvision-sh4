@@ -58,6 +58,7 @@ displaytype = getDisplayType()
 
 SystemInfo["MachineBrand"] = brand
 SystemInfo["MachineModel"] = model
+SystemInfo["MachineBuild"] = platform
 
 # Remote control related data.
 #
@@ -65,15 +66,9 @@ SystemInfo["RCCode"] = int(getRCType())
 SystemInfo["RCTypeIndex"] = int(getRCIDNum())
 SystemInfo["RCImage"] = getRCFile("png")
 SystemInfo["RCMapping"] = getRCFile("xml")
-SystemInfo["RemoteEnable"] = True if model in ("dm800", "azboxhd") else False
-if model in ("maram9", "axodin"):
-	repeat = 400
-elif model == "azboxhd":
-	repeat = 150
-else:
-	repeat = 100
-SystemInfo["RemoteRepeat"] = repeat
-SystemInfo["RemoteDelay"] = 200 if model in ("maram9", "axodin") else 700
+SystemInfo["RemoteEnable"] = False
+SystemInfo["RemoteRepeat"] = 300
+SystemInfo["RemoteDelay"] = 700
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
