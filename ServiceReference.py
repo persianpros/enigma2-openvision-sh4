@@ -41,7 +41,7 @@ class ServiceReference(eServiceReference):
 
 	def isRecordable(self):
 		ref = self.ref
-		if mediaserice == "servicesh4":
+		if mediaservice == "servicesh4":
 			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled))
 		else:
 			return ref.flags & eServiceReference.isGroup or (ref.type in (eServiceReference.idDVB, eServiceReference.idDVB + eServiceReference.idServiceIsScrambled, eServiceReference.idServiceMP3))
