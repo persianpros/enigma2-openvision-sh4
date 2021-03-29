@@ -63,6 +63,7 @@ SystemInfo["MachineModel"] = model
 #
 SystemInfo["RCCode"] = int(getRCType())
 SystemInfo["RCTypeIndex"] = int(getRCIDNum())
+SystemInfo["RCName"] = getRCName()
 SystemInfo["RCImage"] = getRCFile("png")
 SystemInfo["RCMapping"] = getRCFile("xml")
 SystemInfo["RemoteEnable"] = False
