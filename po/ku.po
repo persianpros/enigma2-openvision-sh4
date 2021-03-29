@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Kurdish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-21 11:20+0330\n"
+"POT-Creation-Date: 2021-03-29 18:12+0430\n"
 "PO-Revision-Date: 2013-04-22 04:29+0330\n"
 "Last-Translator: dimili21\n"
 "Language-Team: \n"
@@ -3217,9 +3217,6 @@ msgstr ""
 msgid "Channel context menu"
 msgstr "Menu Qenal Liste"
 
-msgid "Channel list type"
-msgstr "Qanal Liste "
-
 #, fuzzy
 msgid "Channel name"
 msgstr "Qanal"
@@ -5131,9 +5128,6 @@ msgstr "Do you want to download the image to %s ?"
 
 #, fuzzy
 msgid "Do you want to install Plugins?"
-msgstr "Do you want to install a channel list?"
-
-msgid "Do you want to install a channel list?"
 msgstr "Do you want to install a channel list?"
 
 msgid "Do you want to install the package:\n"
@@ -7316,9 +7310,6 @@ msgstr "Input device setup"
 
 msgid "Install"
 msgstr "Install"
-
-msgid "Install channel list"
-msgstr "Install channel list"
 
 msgid "Install extensions"
 msgstr ""
@@ -9785,9 +9776,6 @@ msgstr "Please use the UP and DOWN keys to select your language. Afterwards pres
 msgid "Please wait"
 msgstr ""
 
-msgid "Please wait (downloading channel list)"
-msgstr "Please wait (downloading channel list)"
-
 msgid "Please wait (updating packages)"
 msgstr "Please wait (updating packages)"
 
@@ -9834,6 +9822,10 @@ msgstr "Plugin manager activity information"
 
 msgid "Plugin manager help"
 msgstr "Plugin manager help"
+
+#, fuzzy
+msgid "PluginBrowser Setup"
+msgstr "Plugin browser"
 
 msgid "Plugins"
 msgstr "Girédayi"
@@ -10247,6 +10239,10 @@ msgstr ""
 
 msgid "RAM (Summary)"
 msgstr ""
+
+#, fuzzy
+msgid "RAM benchmark"
+msgstr "Hakké İmagéda"
 
 msgid "RC ID number"
 msgstr ""
@@ -12167,6 +12163,10 @@ msgstr ""
 msgid "Show WLAN status"
 msgstr "Show WLAN status"
 
+#, fuzzy
+msgid "Show alsa-utils in plugin browser"
+msgstr "Show media player on main menu"
+
 msgid "Show alternatives"
 msgstr "Show alternatives"
 
@@ -12183,11 +12183,18 @@ msgstr "Show background in radio mode"
 msgid "Show benchmark information"
 msgstr "Softwaremanager information"
 
+#, fuzzy
+msgid "Show bluez5 in plugin browser"
+msgstr "Show media player on main menu"
+
 msgid "Show bouquet selection menu"
 msgstr "Show bouquet selection menu"
 
 msgid "Show busy indicator when the system is busy."
 msgstr "Show busy indicator when the system is busy."
+
+msgid "Show busybox in plugin browser"
+msgstr ""
 
 msgid "Show channel numbers in channel selection"
 msgstr "Show channel numbers in channel selection"
@@ -12219,6 +12226,13 @@ msgstr "Show detailed event info"
 msgid "Show development packages in opkg"
 msgstr ""
 
+#, fuzzy
+msgid "Show e2fsprogs in plugin browser"
+msgstr "Show media player on main menu"
+
+msgid "Show enigma2-locale in plugin browser"
+msgstr ""
+
 msgid "Show event details"
 msgstr "Show event details"
 
@@ -12243,6 +12257,23 @@ msgstr "Show extensions..."
 
 msgid "Show favourites list"
 msgstr ""
+
+msgid "Show firmware in plugin browser"
+msgstr ""
+
+msgid "Show frequency-xml-list in plugin browser"
+msgstr ""
+
+msgid "Show glibc-charmap in plugin browser"
+msgstr ""
+
+#, fuzzy
+msgid "Show glibc-gconv in plugin browser"
+msgstr "Show media player on main menu"
+
+#, fuzzy
+msgid "Show gstreamer1.0-plugins in plugin browser"
+msgstr "Show media player on main menu"
 
 msgid "Show help"
 msgstr ""
@@ -12281,6 +12312,10 @@ msgid "Show infobar on skip forward/backward"
 msgstr "Show infobar on skip forward/backward"
 
 #, fuzzy
+msgid "Show kernel-module in plugin browser"
+msgstr "Dayni Girédayiyé nu"
+
+#, fuzzy
 msgid "Show latest commit log information"
 msgstr "Softwaremanager information"
 
@@ -12316,6 +12351,10 @@ msgstr "Show movie lengths in movielist"
 
 msgid "Show movies"
 msgstr ""
+
+#, fuzzy
+msgid "Show mtd-utils in plugin browser"
+msgstr "Show media player on main menu"
 
 msgid "Show multi channel EPG"
 msgstr ""
@@ -12358,8 +12397,19 @@ msgstr "View list of available display and userinterface extensions."
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Show extended description"
 
+msgid "Show packagegroup-base in plugin browser"
+msgstr ""
+
 msgid "Show packages to be updated"
 msgstr ""
+
+#, fuzzy
+msgid "Show pam-plugin in plugin browser"
+msgstr "Show media player on main menu"
+
+#, fuzzy
+msgid "Show perl-module in plugin browser"
+msgstr "Show media player on main menu"
 
 #, fuzzy
 msgid "Show picons during channel number input"
@@ -12377,6 +12427,10 @@ msgstr "Show positioner movement"
 
 msgid "Show positioner position"
 msgstr ""
+
+#, fuzzy
+msgid "Show python in plugin browser"
+msgstr "Show media player on main menu"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -12470,8 +12524,16 @@ msgid "Show two lines per entry"
 msgstr ""
 
 #, fuzzy
+msgid "Show tzdata in plugin browser"
+msgstr "Plugin browser"
+
+#, fuzzy
 msgid "Show underline characters in filenames"
 msgstr "Limit character set for recording filenames"
+
+#, fuzzy
+msgid "Show util-linux in plugin browser"
+msgstr "Show media player on main menu"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -13794,7 +13856,7 @@ msgstr "The user interface of your receiver is restarting"
 #, fuzzy, python-format
 msgid ""
 "The user interface of your %s %s is restarting\n"
-"due to an error in StartEnigma.py"
+"due to an error in Bootstrap.py"
 msgstr ""
 "The user interface of your receiver is restarting\n"
 "due to an error in mytest.py"
@@ -15599,10 +15661,64 @@ msgstr ""
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "When enabled, use DHCP for the IP configuration."
 
+msgid "When enabled, you will see alsa-utils packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see bluez5 packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see busybox packages in plugin browser download section."
+msgstr ""
+
 msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages in opkg list."
 msgstr ""
 
+msgid "When enabled, you will see e2fsprogs packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see enigma2-locale packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see firmware packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see frequency-xml-list packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see glibc-charmap packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see glibc-gconv packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see gstreamer1.0-plugins packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see kernel-module packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see mtd-utils packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see packagegroup-base packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see pam-plugin packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see perl-module packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see python packages in plugin browser download section."
+msgstr ""
+
 msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
+msgid "When enabled, you will see tzdata packages in plugin browser download section."
+msgstr ""
+
+msgid "When enabled, you will see util-linux packages in plugin browser download section."
 msgstr ""
 
 #, fuzzy
