@@ -728,7 +728,7 @@ class VFDIcons:
 			if not self.mount or self.dir != dir:
 				if not self.mount:
 					self.dir = dir
-#					print "[sparkVFD] SetMount", dir
+#					print("[sparkVFD] SetMount", dir)
 					self.mount = self.FindMountDir(dir)
 				if not self.mount:
 					self.mount = self.FindMountDir('/autofs/sdc1')
@@ -778,12 +778,12 @@ class VFDIcons:
 						f = statvfs(self.mount)
 					except:
 						self.mount = None
-#			print "[CheckUsed] Mountpoint       :", self.mount
+#			print("[sparkVFD] Mountpoint       :", self.mount)
 #			if self.mount != None:
-#				print "[CheckUsed] Total blocks     :", f.f_blocks
-#				print "[CheckUsed] Free blocks      :", f.f_bavail
+#				print("[sparkVFD] Total blocks     :", f.f_blocks)
+#				print("[sparkVFD] Free blocks      :", f.f_bavail)
 #			if f.f_blocks != 0:
-#				print "[CheckUsed] Free/Used space  :", f.f_bavail * 100 / f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 / f.f_blocks, "%"
+#				print("[sparkVFD] Free/Used space  :", f).f_bavail * 100 / f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 / f.f_blocks, "%"
 		if self.mount:
 			if f.f_blocks == 0:
 				return 0

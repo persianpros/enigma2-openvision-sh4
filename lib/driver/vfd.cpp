@@ -69,7 +69,7 @@
 #include <lib/driver/vfd.h>
 
 #if defined (ENABLE_TF7700)
-#include "../../../tools/tffpctl/frontpanel.h"
+#include "frontpanel.h"
 #endif
 
 // global variables
@@ -166,8 +166,7 @@ evfd::evfd()
 	vfd_type = 12;
 #elif defined (ENABLE_CUBEREVO)
 	vfd_type = 13;
-#elif defined (ENABLE_CUBEREVO_MINI_FTA) \
-   || defined (ENABLE_CUBEREVO_250HD)
+#elif defined (ENABLE_CUBEREVO_250HD)
 	vfd_type = 14;
 #elif defined (ENABLE_CUBEREVO_MINI) \
    || defined (ENABLE_CUBEREVO_MINI2) \
@@ -315,7 +314,7 @@ void *start_loop (void *arg)
 
 	return NULL;
 }
-#else  // next code for boxes other than Topfield TF77X0HDPVR
+#else  // next code for boxes other than Topfield TF7700
 
 	// set display width
 void set_display_width(void)
@@ -400,7 +399,6 @@ void *start_loop(void *arg)
 	 || defined (ENABLE_CUBEREVO) \
 	 || defined (ENABLE_CUBEREVO_MINI) \
 	 || defined (ENABLE_CUBEREVO_MINI2) \
-	 || defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 || defined (ENABLE_CUBEREVO_250HD) \
 	 || defined (ENABLE_CUBEREVO_2000HD) \
 	 || defined (ENABLE_CUBEREVO_3000HD) \
@@ -510,7 +508,6 @@ void *start_loop(void *arg)
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
@@ -554,7 +551,6 @@ void *start_loop(void *arg)
  || defined (ENABLE_CUBEREVO) \
  || defined (ENABLE_CUBEREVO_MINI) \
  || defined (ENABLE_CUBEREVO_MINI2) \
- || defined (ENABLE_CUBEREVO_MINI_FTA) \
  || defined (ENABLE_CUBEREVO_250HD) \
  || defined (ENABLE_CUBEREVO_2000HD) \
  || defined (ENABLE_CUBEREVO_3000HD) \
