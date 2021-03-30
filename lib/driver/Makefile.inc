@@ -42,3 +42,8 @@ if ENABLE_QBOXHDMINI
 driver_libenigma_driver_a_SOURCES += driver/fpqboxmini.cpp
 driverinclude_HEADERS += driver/fpqboxmini.h
 endif
+
+if ENABLE_SPARK7162
+driver_libenigma_driver_a_SOURCES += driver/rfmod.cpp
+driverinclude_HEADERS += driver/rfmod.h
+endif

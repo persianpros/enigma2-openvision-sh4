@@ -27,3 +27,7 @@ install_PYTHON = \
 if ENABLE_QBOXHD
 install_PYTHON += SenseWheel.py
 endif
+
+if ENABLE_SPARK7162
+install_PYTHON += RFmod.py
+endif

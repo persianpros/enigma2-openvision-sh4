@@ -13,7 +13,7 @@ install_PYTHON = \
 	RecordTimer.py \
 	ServiceReference.py \
 	skin.py \
-	Startup.py \
+	StartEnigma.py \
 	timer.py \
 	PowerTimer.py \
 	BoxBrandingTest.py
