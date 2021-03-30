@@ -17,7 +17,7 @@
    || defined (ENABLE_HS7429) \
    || defined (ENABLE_SPARK7162) \
    || defined (ENABLE_HL101) \
-   || defined (ENABLE_VIP1_V2) \
+   || defined (ENABLE_VIP1_V1) \
    || defined (ENABLE_VIP1_V2) \
    || defined (ENABLE_VIP2) \
    || defined (ENABLE_OPT9600)
@@ -129,11 +129,12 @@ protected:
 		void vfd_write_string(char *string);
 		void vfd_write_string(char *str, bool force);
 		void vfd_write_string_scrollText(char *text);
-	void vfd_clear_string();
+		void vfd_clear_string();
 
 		void vfd_set_brightness(unsigned int setting);
 		void vfd_set_light(bool onoff);
 		void vfd_set_fan(int speed);
 };
 
-#endif
+#endif // VFD_H_
+// vim:ts=4
