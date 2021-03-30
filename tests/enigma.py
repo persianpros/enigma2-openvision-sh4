@@ -260,7 +260,6 @@ if SystemInfo["RFmodSupport"]:
 		def setFinetune(self, value):
 			print("[enigma] eRFmod set finetune to %d" % value)
 
-
 	eRFmod()
 
 
