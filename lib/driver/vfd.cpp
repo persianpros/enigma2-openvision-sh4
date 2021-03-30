@@ -1,4 +1,5 @@
-/*
+/***************************************************************************
+ *
  * vfd.cpp
  *
  * (c) 20?? ?
@@ -18,16 +19,16 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *
  *
- ****************************************************************************
+ ***************************************************************************
  *
  * VFD/LED front panel driver for enigma2.
  *
- ****************************************************************************
+ ***************************************************************************
  *
  * Changes
  *
  * Date     By              Description
- * --------------------------------------------------------------------------
+ * -------------------------------------------------------------------------
  * 20130905 Audioniek       Code for Sparks added in.
  * 20130905 Audioniek       vfd_write_string_scrollText now uses actual
  *                          display length in stead of always 16.
@@ -48,8 +49,11 @@
  * 20200719 Audioniek       hl101, vip1_v2 and vip2_v1 added.
  * 20200828 Audioniek       Add vip1_v1, rename vip2.
  * 20201115 Audioniek       Add opt9600.
+ * 20210322 Audioniek       Set display width on spark7162 to match actual
+ *                          display type and time mode.
+ * 20210326 Audioniek       Set correct display width on spark with VFD.
  *
- ****************************************************************************/
+ ***************************************************************************/
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -65,7 +69,7 @@
 #include <lib/driver/vfd.h>
 
 #if defined (ENABLE_TF7700)
-#include "frontpanel.h"
+#include "../../../tools/tffpctl/frontpanel.h"
 #endif
 
 // global variables
@@ -74,6 +78,7 @@ static bool icon_onoff[45];
 static int led_onoff[7];
 static pthread_t thread_start_loop = 0;
 void *start_loop (void *arg);
+int  vfd_width;
 bool blocked    = false;
 bool requested  = false;
 bool VFD_CENTER = false;
@@ -102,18 +107,47 @@ evfd* evfd::getInstance()
 
 evfd::evfd()
 {
+#if defined (ENABLE_SPARK) \
+ || defined (ENABLE_SPARK7162)
+	int fd;
+	int n;
+	unsigned char display_type[2];
+#endif
+
 	file_vfd = 0;
 	memset (chars, ' ', 63);
-#if defined (ENABLE_SPARK)
-	vfd_type = 4;
+#if defined (ENABLE_SPARK) \
+ || defined (ENABLE_SPARK7162)
+	fd = open ("/proc/stb/fp/displaytype", O_RDONLY);
+	n = read(fd, display_type, sizeof(display_type));
+	close(fd);
+
+	if (fd < 0)
+	{
+		printf("[vfd] open /proc/stb/fp/displaytype failed\n");
+		vfd_type = 8;
+		return;
+	}
+	if (n < 0)
+	{
+		n = 0;
+	}
+
+	if (display_type[0] == '1')  // if VFD
+	{
+		vfd_type = 8;
+	}
+	else
+	{
+		vfd_type = 4;
+	}		
 #elif defined (ENABLE_ATEVIO7500)
 	vfd_type = 5;
 #elif defined (ENABLE_FORTIS_HDBOX)
 	vfd_type = 6;
 #elif defined (ENABLE_OCTAGON1008)
 	vfd_type = 7;
-#elif defined (ENABLE_SPARK7162) \
-   || defined (ENABLE_HL101) \
+#elif defined (ENABLE_HL101) \
    || defined (ENABLE_VIP1_V1) \
    || defined (ENABLE_VIP1_V2) \
    || defined (ENABLE_VIP2)
@@ -132,7 +166,8 @@ evfd::evfd()
 	vfd_type = 12;
 #elif defined (ENABLE_CUBEREVO)
 	vfd_type = 13;
-#elif defined (ENABLE_CUBEREVO_250HD)
+#elif defined (ENABLE_CUBEREVO_MINI_FTA) \
+   || defined (ENABLE_CUBEREVO_250HD)
 	vfd_type = 14;
 #elif defined (ENABLE_CUBEREVO_MINI) \
    || defined (ENABLE_CUBEREVO_MINI2) \
@@ -187,7 +222,7 @@ char *getProgress()
 	{
 		n = 0;
 	}
-	else if((n > 1) && (progress[n- 1] == 0xa))
+	else if((n > 1) && (progress[n - 1] == 0xa))
 	{
 		n--;
 	}
@@ -204,7 +239,7 @@ void *start_loop (void *arg)
 
 	if ((fplarge < 0) || (fpsmall < 0) || (fpc < 0))
 	{
-		printf("Failed opening devices (%d, %d, %d)\n", fplarge, fpsmall, fpc);
+		printf("[vfd] Failed opening devices (%d, %d, %d)\n", fplarge, fpsmall, fpc);
 		return NULL;
 	}
 	blocked = true;
@@ -280,60 +315,116 @@ void *start_loop (void *arg)
 
 	return NULL;
 }
-#else  // next code for boxes other than Topfield TF7700
+#else  // next code for boxes other than Topfield TF77X0HDPVR
+
+	// set display width
+void set_display_width(void)
+{
+	#if !defined (ENABLE_SPARK) \
+	 && !defined (ENABLE_SPARK7162)
+	vfd_width = VFDLENGTH;
+	#else
+	int fd;
+	int n;
+	int tmp;
+	unsigned char display_type[2] = "1";  // default to VFD
+	unsigned char time_mode[2] = "1";  // default to time mode on
+
+	vfd_width = 8;  // default to VFD
+	fd = open ("/proc/stb/fp/displaytype", O_RDONLY);
+	n = read(fd, display_type, sizeof(display_type));
+	close(fd);
+
+	if (fd < 0)
+	{
+		printf("[vfd] open /proc/stb/fp/displaytype failed\n");
+		return;
+	}
+	if (n < 0)
+	{
+		n = 0;
+	}
+
+	if (display_type[0] == '2')  // if DVFD
+	{
+		fd = open ("/proc/stb/fp/timemode", O_RDONLY);
+		n = read(fd, time_mode, sizeof(time_mode));
+		close(fd);
+
+		if (fd < 0)
+		{
+			vfd_width = 10;  // default to time on
+			return;
+		}
+
+		if (time_mode[0] == '0')
+		{
+			vfd_width = 16;
+		}
+		else
+		{
+			vfd_width = 10;
+		}
+	}
+	#if defined(ENABLE_SPARK)
+	else if (display_type[0] == '1')  // if VFD
+	{
+		vfd_width = 8;  // reflect correct values on spark with VFD (Edision Argus Pingulux Plus)
+	}
+	else
+	{
+		vfd_width = 4;  // display type must be LED
+	}
+	#endif  // defined(ENABLE_SPARK)
+	#endif  // !defined(ENABLE_SPARK) && !defined(ENABLE_SPARK7162)
+}
 
 void *start_loop(void *arg)
 {
 	evfd vfd;
 
+	set_display_width();
+
 	// display signon string
 	blocked = true;
 	char str[] = "OV";
+
 	int vfddev = open ("/dev/vfd", O_WRONLY);
 	write(vfddev, str, strlen(str));
 	close(vfddev);
 
 	/* These boxes can control display brightness */
-	#if !defined (ENABLE_FORTIS_HDBOX) \
-	 && !defined (ENABLE_OCTAGON1008) \
-	 && !defined (ENABLE_ATEVIO7500) \
-	 && !defined (ENABLE_CUBEREVO) \
-	 && !defined (ENABLE_CUBEREVO_MINI) \
-	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_250HD) \
-	 && !defined (ENABLE_CUBEREVO_2000HD) \
-	 && !defined (ENABLE_CUBEREVO_3000HD) \
-	 && !defined (ENABLE_CUBEREVO_9500HD) \
-	 && !defined (ENABLE_SPARK7162) \
-	 && !defined (ENABLE_UFS912) \
-	 && !defined (ENABLE_UFS913) \
-	 && !defined (ENABLE_HS7119) \
-	 && !defined (ENABLE_HS7420) \
-	 && !defined (ENABLE_HS7429) \
-	 && !defined (ENABLE_HS7810A) \
-	 && !defined (ENABLE_HS7819) \
-	 && !defined (ENABLE_FOREVER_3434HD) \
-	 && !defined (ENABLE_FOREVER_NANOSMART) \
-	 && !defined (ENABLE_FOREVER_9898HD) \
-	 && !defined (ENABLE_FOREVER_2424HD) \
-	 && !defined (ENABLE_VITAMIN_HD5000) \
-	 && !defined (ENABLE_ADB_BOX) \
-	 && !defined (ENABLE_PACE7241) \
-	 && !defined (ENABLE_HL101) \
-	 && !defined (ENABLE_VIP1_V1) \
-	 && !defined (ENABLE_VIP1_V2) \
-	 && !defined (ENABLE_VIP2)
-	/* Others cycle their icons */
-	for (int vloop = 0; vloop < 128; vloop++)
-	{
-		if (vloop % 2 == 1)
-		{
-			vfd.vfd_set_icon((((vloop % 32) / 2) % 16), ICON_OFF, true);
-			usleep(2000);
-			vfd.vfd_set_icon(((((vloop % 32) / 2) % 16) + 1), ICON_ON, true);
-		}
-	}
-	#else // Modulate brightness 3 times
+	#if defined (ENABLE_FORTIS_HDBOX) \
+	 || defined (ENABLE_OCTAGON1008) \
+	 || defined (ENABLE_ATEVIO7500) \
+	 || defined (ENABLE_CUBEREVO) \
+	 || defined (ENABLE_CUBEREVO_MINI) \
+	 || defined (ENABLE_CUBEREVO_MINI2) \
+	 || defined (ENABLE_CUBEREVO_MINI_FTA) \
+	 || defined (ENABLE_CUBEREVO_250HD) \
+	 || defined (ENABLE_CUBEREVO_2000HD) \
+	 || defined (ENABLE_CUBEREVO_3000HD) \
+	 || defined (ENABLE_CUBEREVO_9500HD) \
+	 || defined (ENABLE_SPARK7162) \
+	 || defined (ENABLE_UFS912) \
+	 || defined (ENABLE_UFS913) \
+	 || defined (ENABLE_HS7119) \
+	 || defined (ENABLE_HS7420) \
+	 || defined (ENABLE_HS7429) \
+	 || defined (ENABLE_HS7810A) \
+	 || defined (ENABLE_HS7819) \
+	 || defined (ENABLE_FOREVER_3434HD) \
+	 || defined (ENABLE_FOREVER_NANOSMART) \
+	 || defined (ENABLE_FOREVER_9898HD) \
+	 || defined (ENABLE_FOREVER_2424HD) \
+	 || defined (ENABLE_VITAMIN_HD5000) \
+	 || defined (ENABLE_ADB_BOX) \
+	 || defined (ENABLE_PACE7241) \
+	 || defined (ENABLE_HL101) \
+	 || defined (ENABLE_VIP1_V1) \
+	 || defined (ENABLE_VIP1_V2) \
+	 || defined (ENABLE_VIP2)
+	// Modulate brightness 3 times
 	for (int vloop = 0; vloop < 3 * 14; vloop++)
 	{
 		if (vloop % 14 == 0)
@@ -394,10 +485,23 @@ void *start_loop(void *arg)
 		}
 		usleep(75000);
 	}
-	vfd.vfd_set_brightness(7); // set final brightness
-	#endif
-
+	vfd.vfd_set_brightness(7);  // set final brightness
+	#else
+	/* Others cycle their icons */
+		#if !(ICON_MAX == -1)
+	for (int vloop = 0; vloop < 128; vloop++)
+	{
+		if (vloop % 2 == 1)
+		{
+			vfd.vfd_set_icon((((vloop % 32) / 2) % 16), ICON_OFF, true);
+			usleep(2000);
+			vfd.vfd_set_icon(((((vloop % 32) / 2) % 16) + 1), ICON_ON, true);
+		}
+	}
 	vfd.vfd_clear_icons();
+		#endif // !(ICON_MAX == -1)
+	#endif  // ENABLE_FORTIS_HDBOX
+
 	#if !defined (ENABLE_FORTIS_HDBOX) \
 	 && !defined (ENABLE_OCTAGON1008) \
 	 && !defined (ENABLE_ATEVIO7500) \
@@ -406,28 +510,37 @@ void *start_loop(void *arg)
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
+	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
 	 && !defined (ENABLE_CUBEREVO_9500HD) \
 	 && !defined (ENABLE_SPARK7162) \
+	 && !defined (ENABLE_UFS912) \
+	 && !defined (ENABLE_UFS913) \
+	 && !defined (ENABLE_HS7119) \
+	 && !defined (ENABLE_HS7420) \
+	 && !defined (ENABLE_HS7429) \
+	 && !defined (ENABLE_HS7810A) \
+	 && !defined (ENABLE_HS7819) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
 	 && !defined (ENABLE_ADB_BOX) \
 	 && !defined (ENABLE_PACE7241) \
 	 && !defined (ENABLE_HL101) \
 	 && !defined (ENABLE_VIP1_V1) \
 	 && !defined (ENABLE_VIP1_V2) \
-	 && !defined (ENABLE_VIP2)
+	 && !defined (ENABLE_VIP2) \
+	 && !defined (ENABLE_OPT9600)
 	// Set all blocked icons
 	for (int id = 0x10; id < 0x20; id++)
 	{
 		vfd.vfd_set_icon(id, icon_onoff[id]);
 	}
-#endif
+    #endif
 	blocked = false;
 	return NULL;
 }
-#endif
+#endif  // ENABLE_TF7700
 
 // These models handle display scrolling in a separate thread
 #if defined (ENABLE_FORTIS_HDBOX) \
@@ -441,6 +554,7 @@ void *start_loop(void *arg)
  || defined (ENABLE_CUBEREVO) \
  || defined (ENABLE_CUBEREVO_MINI) \
  || defined (ENABLE_CUBEREVO_MINI2) \
+ || defined (ENABLE_CUBEREVO_MINI_FTA) \
  || defined (ENABLE_CUBEREVO_250HD) \
  || defined (ENABLE_CUBEREVO_2000HD) \
  || defined (ENABLE_CUBEREVO_3000HD) \
@@ -503,7 +617,7 @@ void get_procfs_scroll_params(void)
 static void *vfd_write_string_scrollText1(void *arg)
 {
 	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
-	char out[VFDLENGTH + 1];
+	char out[vfd_width + 1];
 	int i, j, len;
 	evfd vfd;
 
@@ -512,18 +626,18 @@ static void *vfd_write_string_scrollText1(void *arg)
 	len = strlen((char *)g_str);
 
 // initial display is handled outside this thread
-//	memcpy(out, g_str, VFDLENGTH);  // get 1st VFDLENGTH characters
-//	vfd.vfd_write_string(out, true);  // initial display: write 1st VFDLENGTH characters
+//	memcpy(out, g_str, vfd_width);  // get 1st vfd_width characters
+//	vfd.vfd_write_string(out, true);  // initial display: write 1st vfd_width characters
 
 	// scroll ?
-	if (scroll_loop && (len > VFDLENGTH))
+	if (scroll_loop && (len > vfd_width))
 	{
 		for (i = 0; i < scroll_repeat; i++)
 		{
 			for (j = 1; j <= len; j++)
 			{
-				memset(out, ' ', VFDLENGTH + 1);  // clear scroll buffer
-				memcpy(out, g_str + j, VFDLENGTH);  // then put string in
+				memset(out, ' ', vfd_width + 1);  // clear scroll buffer
+				memcpy(out, g_str + j, vfd_width);  // then put string in
 				vfd.vfd_write_string(out, true);  // print string on VFD
 				if (blocked)
 				{
@@ -536,7 +650,7 @@ static void *vfd_write_string_scrollText1(void *arg)
 			}
 		}
 		// final display
-		memcpy(out, g_str, VFDLENGTH); // put string in
+		memcpy(out, g_str, vfd_width); // put string in
 		vfd.vfd_write_string(out, true);  // print string on VFD
 		if (VFD_SCROLL != 2 || !blocked)
 		{
@@ -551,14 +665,19 @@ static void *vfd_write_string_scrollText1(void *arg)
 static void *vfd_write_string_scrollText1(void *arg)
 {
 	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
-	char out[VFDLENGTH + 1];
+	char out[vfd_width + 1];
 	int i, len;
 	evfd vfd;
 
+	#if defined (ENABLE_SPARK) \
+	 || defined (ENABLE_SPARK7162)
+	set_display_width();
+	#endif
 	scroll_loop = true;
 	len = strlen((char *)g_str);
-	memset(out, ' ', VFDLENGTH + 1);
-	while (scroll_loop && (len > VFDLENGTH))
+	memset(out, ' ', vfd_width + 1);
+
+	while (scroll_loop && (len > vfd_width))
 	{
 		if (blocked)
 		{
@@ -568,38 +687,25 @@ static void *vfd_write_string_scrollText1(void *arg)
 		{
 			scroll_loop = false;
 		}
-		for (i = 0; i <= (len - VFDLENGTH); i++)  // scroll part 1: write full string scrolling and wait 0.75s between scrolls
+		for (i = 0; i < len; i++)
 		{
 			if (blocked)
 			{
-				memset(out, ' ', VFDLENGTH);  // fill buffer with spaces
-				memcpy(out, g_str + i, VFDLENGTH);  // then put string in
-				vfd.vfd_write_string(out, true);  // print string on VFD
-				usleep(750000);  // 0.75 sec character delay
-			}
-			else
-			{
-				scroll_loop = false;
-				i = len - VFDLENGTH;
-			}
-		}
-		for (i = 1; i <= VFDLENGTH; i++)  // scroll part 2: write full string shifted 1 character scrolling and wait 0.75s between scrolls
-		{
-			if (blocked)
-			{
-				memset(out, ' ', VFDLENGTH);  // fill buffer with spaces
-				memcpy(out, g_str + len + i - VFDLENGTH, VFDLENGTH - i);  // copy string shifted 1 character
+				memset(out, ' ', vfd_width);  // fill buffer with spaces
+				memcpy(out, g_str + i, (len - i > vfd_width ? vfd_width : len - i));  // copy string shifted i character(s)
+				out[vfd_width] = 0;  // terminate string
 				vfd.vfd_write_string(out, true);
 				usleep(750000);  // 0.75 sec character delay
 			}
 			else
 			{
 				scroll_loop = false;
-				i = VFDLENGTH;
+				i = vfd_width;
 			}
 		}
-		memcpy(out, g_str, VFDLENGTH);
-		vfd.vfd_write_string(out, true);  // final display: write 1st VFDLENGTH characters
+		memcpy(out, g_str, vfd_width);
+		out[vfd_width] = 0;  // terminate string
+		vfd.vfd_write_string(out, true);  // final display: write 1st vfd_width characters
 		if (VFD_SCROLL != 2 || !blocked)
 		{
 			scroll_loop = false;
@@ -630,8 +736,8 @@ void evfd::vfd_write_string(char * str)
 	}
 	memset(g_str, ' ', 64);  // clear scroll buffer
 	strcpy(g_str, str);  // and set display string in it
-	vfd_write_string(str, false);  // initial display: 1st VFDLENGTH characters
-	if (i > VFDLENGTH && VFD_SCROLL)  // if string longer than display and scroll mode
+	vfd_write_string(str, false);  // initial display: 1st vfd_width characters
+	if (i > vfd_width && VFD_SCROLL)  // if string longer than display and scroll mode
 	{
 //		usleep(initial_scroll_delay * 1000);  // wait initial delay
 		blocked = true;  // flag scrolling
@@ -648,9 +754,9 @@ void evfd::vfd_write_string(char *str, bool force)
 
 	if (VFD_CENTER == true)
 	{
-		if (i < VFDLENGTH)
+		if (i < vfd_width)
 		{
-			ws = (VFDLENGTH - i) / 2;
+			ws = (vfd_width - i) / 2;
 		}
 		else
 		{
@@ -658,14 +764,14 @@ void evfd::vfd_write_string(char *str, bool force)
 		}
 	}
 
-	if (i > VFDLENGTH)
+	if (i > vfd_width)
 	{
-		i = VFDLENGTH;
+		i = vfd_width;
 	}
-	memset(data.data, ' ', VFDLENGTH);
+	memset(data.data, ' ', vfd_width);
 	if (VFD_CENTER == true)
 	{
-		memcpy(data.data + ws, str, VFDLENGTH - ws);
+		memcpy(data.data + ws, str, vfd_width - ws);
 	}
 	else
 	{
@@ -674,7 +780,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	data.start = 0;
 	if (VFD_CENTER == true)
 	{
-		data.length = i + ws <= VFDLENGTH ? i + ws : VFDLENGTH;
+		data.length = i + ws <= vfd_width ? i + ws : vfd_width;
 	}
 	else
 	{
@@ -748,7 +854,7 @@ void evfd::vfd_write_string_scrollText(char *text)
 			vfd_write_string(out);
 			usleep(750000);
 		}
-		memcpy(out, text, VFDLENGTH);  // final: display first VFDLENGTH chars after scrolling
+		memcpy(out, text, vfd_width);  // final: display first vfd_width chars after scrolling
 		vfd_write_string(out);
 		free (out);
 	}
@@ -757,9 +863,9 @@ void evfd::vfd_write_string_scrollText(char *text)
 
 void evfd::vfd_clear_string()
 {
-	char out[VFDLENGTH + 1];
-	memset(out, 0, VFDLENGTH + 1);
-	memset(out, ' ', VFDLENGTH);
+	char out[vfd_width + 1];
+	memset(out, 0, vfd_width + 1);
+	memset(out, ' ', vfd_width);
 	vfd_write_string(out, true);
 }
 
@@ -909,3 +1015,4 @@ void evfd::vfd_set_CENTER(bool id)
 {
 	VFD_CENTER = id;
 }
+// vim:ts=4

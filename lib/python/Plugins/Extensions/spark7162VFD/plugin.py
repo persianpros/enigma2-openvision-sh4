@@ -631,7 +631,7 @@ class VFDIcons:
 			if not self.mount or self.dir != dir:
 				if not self.mount:
 					self.dir = dir
-#					print("[VFD-Icons] SetMount", dir)
+#					print "[spark7162VFD] SetMount", dir
 					self.mount = self.FindMountDir(dir)
 				if not self.mount:
 					self.mount = self.FindMountDir('/autofs/sdc1')
@@ -681,12 +681,12 @@ class VFDIcons:
 						f = statvfs(self.mount)
 					except:
 						self.mount = None
-#			print("[CheckUsed] Mountpoint       :", self.mount)
+#			print "[CheckUsed] Mountpoint       :", self.mount
 #			if self.mount != None:
-#				print("[CheckUsed] Total blocks     :", f.f_blocks)
-#				print("[CheckUsed] Free blocks      :", f.f_bavail)
+#				print "[CheckUsed] Total blocks     :", f.f_blocks
+#				print "[CheckUsed] Free blocks      :", f.f_bavail
 #			if f.f_blocks != 0:
-#				print("[CheckUsed] Free/Used space  :", f.f_bavail * 100 / f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 / f.f_blocks, "%")
+#				print "[CheckUsed] Free/Used space  :", f.f_bavail * 100 / f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 / f.f_blocks, "%"
 		if self.mount:
 			if f.f_blocks == 0:
 				return 0
@@ -788,13 +788,13 @@ def Plugins(**kwargs):
 		fnc=VFDdisplaymenu),
 		PluginDescriptor(
 		name=_("spark7162VFD"),
-		description=_("VFD icons for spark 7162"),
+		description=_("VFD-Icons for spark 7162/Edision argus VIP"),
 		where=PluginDescriptor.WHERE_SESSIONSTART,
 		fnc=main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
 			name=_("spark7162VFD"),
-			description=_("VFD display configuration for Spark 7162"),
+			description=_("VFD display configuration for Spark 7162/Edision argus VIP"),
 			where=PluginDescriptor.WHERE_PLUGINMENU,
 			fnc=opencfg))
 	return l
