@@ -230,6 +230,39 @@ eAVSwitch()
 
 eDVBVolumecontrol = None
 
+from Components.SystemInfo import SystemInfo
+if SystemInfo["RFmodSupport"]:
+	class eRFmod:
+		@classmethod
+		def getInstance(self):
+			return self.instance
+
+		instance = None
+
+		def __init__(self):
+			eRFmod.instance = self
+
+		def setFunction(self, value):
+			print("[enigma] eRFmod set function to %d" % value)
+
+		def setTestmode(self, value):
+			print("[enigma] eRFmod set testmode to %d" % value)
+
+		def setSoundFunction(self, value):
+			print("[enigma] eRFmod set sound function to %d" % value)
+
+		def setSoundCarrier(self, value):
+			print("[enigma] eRFmod set sound carrier to %d" % value)
+
+		def setChannel(self, value):
+			print("[enigma] eRFmod set channel to %d" % value)
+
+		def setFinetune(self, value):
+			print("[enigma] eRFmod set finetune to %d" % value)
+
+
+	eRFmod()
+
 
 class eDBoxLCD:
 	@classmethod
@@ -354,6 +387,10 @@ def init_all():
 
 	import Components.SetupDevices
 	Components.SetupDevices.InitSetupDevices()
+
+	if SystemInfo["RFmodSupport"]:
+		import Components.RFmod
+		Components.RFmod.InitRFmod()
 
 	import Screens.Ci
 	Screens.Ci.InitCiConfig()
