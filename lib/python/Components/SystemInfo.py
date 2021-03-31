@@ -177,3 +177,4 @@ SystemInfo["HasH9SD"] = False
 SystemInfo["HasSDnomount"] = False
 SystemInfo["canBackupEMC"] = False
 SystemInfo["CanSyncMode"] = fileExists("/proc/stb/video/sync_mode_choices")
+SystemInfo["RFmodSupport"] = model == "spark7162"

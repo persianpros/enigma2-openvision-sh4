@@ -646,6 +646,12 @@ profile("LCD")
 import Components.Lcd
 Components.Lcd.IconCheck()
 
+from Components.SystemInfo import SystemInfo
+if SystemInfo["RFmodSupport"]:
+	profile("RFMod")
+	import Components.RFmod
+	Components.RFmod.InitRFmod()
+
 profile("Init:CI")
 import Screens.Ci
 Screens.Ci.InitCiConfig()
