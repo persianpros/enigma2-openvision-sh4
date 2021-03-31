@@ -646,6 +646,7 @@ profile("LCD")
 import Components.Lcd
 Components.Lcd.IconCheck()
 
+from Components.SystemInfo import SystemInfo
 if SystemInfo["RFmodSupport"]:
 	profile("RFMod")
 	import Components.RFmod
