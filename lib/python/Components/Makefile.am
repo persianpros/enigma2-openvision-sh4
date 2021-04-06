@@ -10,7 +10,7 @@ install_PYTHON = \
 	Label.py ServiceScan.py VolumeBar.py VolumeControl.py                   \
 	GUIComponent.py MenuList.py __init__.py MovieList.py                    \
 	InputDevice.py ServicePosition.py SetupDevices.py Harddisk.py           \
-	AVSwitch.py Network.py DiskInfo.py NimManager.py Lcd.py        \
+	AVSwitch.py Network.py RFmod.py DiskInfo.py NimManager.py Lcd.py        \
 	EpgList.py ScrollLabel.py Timezones.py Language.py HelpMenuList.py      \
 	BlinkingPixmap.py Pixmap.py ConditionalWidget.py Slider.py              \
 	PluginList.py PluginComponent.py RecordingConfig.py About.py UsageConfig.py \
@@ -26,8 +26,4 @@ install_PYTHON = \
 
 if ENABLE_QBOXHD
 install_PYTHON += SenseWheel.py
-endif
-
-if ENABLE_SPARK7162
-install_PYTHON += RFmod.py
 endif
