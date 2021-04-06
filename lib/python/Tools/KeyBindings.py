@@ -767,7 +767,7 @@ def getKeyDescription(key):
 		idx = 4
 	elif rcType == 11:	# Topfield TF77X0HDPVR
 		idx = 5
-	elif rcType == 12:	# Kathrein UFS912, UFS913
+	elif rcType == 12:	# Kathrein UFS912
 		idx = 6
 	elif rcType == 13:	# CubeRevo Universal
 		idx = 7
