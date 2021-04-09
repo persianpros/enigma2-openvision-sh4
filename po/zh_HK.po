@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -849,6 +849,14 @@ msgid "%d B"
 msgstr ""
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr ""
 
@@ -1589,7 +1597,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "圖形EPG包含自定義組所有頻道"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2702,9 +2710,8 @@ msgstr "最新"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "開始時間"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2743,18 +2750,14 @@ msgstr "正在錄製"
 msgid "BoxBranding Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "BoxBranding information for"
-msgstr "資訊"
+msgstr ""
 
 msgid "Brand/Meta"
 msgstr ""
 
 msgid "Brazil"
 msgstr "巴西"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "亮度"
@@ -2878,6 +2881,10 @@ msgstr ""
 msgid "CPU"
 msgstr ""
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -2887,6 +2894,10 @@ msgstr "週末標記:"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "升級"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -2913,6 +2924,9 @@ msgid "Calculate all positions"
 msgstr ""
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3258,9 +3272,8 @@ msgstr "左圓極化"
 msgid "Circular right"
 msgstr "右圓極化"
 
-#, fuzzy
 msgid "City"
-msgstr "容量: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3395,9 +3408,8 @@ msgstr "命令順序"
 msgid "Commit Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "資訊"
+msgstr ""
 
 msgid "Commit Logs"
 msgstr ""
@@ -3405,9 +3417,8 @@ msgstr ""
 msgid "Commit info"
 msgstr ""
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "選擇位置"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "通用介面 (CI)"
@@ -3463,6 +3474,9 @@ msgstr ""
 
 #, python-format
 msgid "Configuration mode: %s"
+msgstr ""
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
 msgstr ""
 
 #, fuzzy
@@ -3884,7 +3898,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Connection information"
-msgstr "資訊"
+msgstr "插件管理活動資訊"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4661,11 +4675,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "網路測驗"
+msgstr "啟用網路設定"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "測驗到的調諧器:"
+msgstr "保護服務"
 
 #, fuzzy
 msgid "Detected tuners"
@@ -5063,9 +5077,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#, fuzzy
 msgid "Down"
-msgstr "AC3 縮減混音"
+msgstr ""
 
 msgid "Download plugins"
 msgstr ""
@@ -5093,9 +5106,8 @@ msgstr "AC3 縮減混音"
 msgid "Drama"
 msgstr ""
 
-#, fuzzy
 msgid "Driver and kernel information"
-msgstr "選擇頻道時顯示事件進度"
+msgstr ""
 
 #, fuzzy
 msgid "Drivers version"
@@ -5475,13 +5487,11 @@ msgstr ""
 msgid "English"
 msgstr "英語"
 
-#, fuzzy
 msgid "Enigma2 (re)starts"
-msgstr "反向:"
+msgstr ""
 
-#, fuzzy
 msgid "Enigma2 debug level"
-msgstr "預設"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 default"
@@ -5905,7 +5915,7 @@ msgstr ""
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "反向:"
+msgstr "反向"
 
 msgid "FHD"
 msgstr ""
@@ -6084,6 +6094,9 @@ msgstr ""
 msgid "Fine movement"
 msgstr ""
 
+msgid "Finetune"
+msgstr "調整"
+
 msgid "Finished"
 msgstr "完成"
 
@@ -6183,9 +6196,8 @@ msgstr "法國"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "安裝失敗"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6250,7 +6262,13 @@ msgstr "打開DNS設定"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6550,6 +6568,9 @@ msgstr ""
 msgid "HELP"
 msgstr ""
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6615,8 +6636,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-msgid "Help Screen"
-msgstr ""
+#, fuzzy
+msgid "Help Screen Information"
+msgstr "資訊"
 
 msgid "Helps setting up your antenna"
 msgstr ""
@@ -6727,9 +6749,8 @@ msgstr ""
 msgid "Host receiver streaming port"
 msgstr ""
 
-#, fuzzy
 msgid "Hostname"
-msgstr "重命"
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr ""
@@ -6834,7 +6855,7 @@ msgstr "冰島"
 msgid "Icons"
 msgstr ""
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -6913,9 +6934,8 @@ msgstr ""
 msgid "Image file system"
 msgstr ""
 
-#, fuzzy
 msgid "Image folder"
-msgstr "設定視頻模式"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -7430,12 +7450,6 @@ msgstr "調諧器配置"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
-msgstr ""
-
 msgid "LIRC remote"
 msgstr ""
 
@@ -7705,9 +7719,6 @@ msgstr "<最近一次定時錄影位置>"
 msgid "Long filenames"
 msgstr ""
 
-msgid "Long key press"
-msgstr ""
-
 msgid "Long press emulation with button"
 msgstr ""
 
@@ -7920,7 +7931,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media service"
-msgstr "正在刪除..."
+msgstr "媒體播放器"
 
 msgid "Medium is not a writeable DVD!"
 msgstr "媒介不是可寫DVD!"
@@ -7938,9 +7949,8 @@ msgstr ""
 msgid "Memory Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "Memory Information Actions"
-msgstr "資訊"
+msgstr ""
 
 msgid "Memory index"
 msgstr ""
@@ -8039,6 +8049,9 @@ msgstr "型號:"
 
 msgid "Modulation"
 msgstr "調製"
+
+msgid "Modulator"
+msgstr "調製器"
 
 msgid "Moldova (Republic of)"
 msgstr ""
@@ -8393,7 +8406,7 @@ msgstr ""
 msgid "Nauru"
 msgstr ""
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8416,9 +8429,8 @@ msgstr ""
 msgid "Network Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "Network Information Actions"
-msgstr "資訊"
+msgstr ""
 
 #, fuzzy
 msgid "Network MAC settings"
@@ -8593,9 +8605,8 @@ msgstr "找不到網路"
 msgid "No network connection available."
 msgstr "無可用網路連接."
 
-#, fuzzy
 msgid "No network servers detected."
-msgstr "網路測驗"
+msgstr ""
 
 msgid "No networks found"
 msgstr "找不到網路"
@@ -8986,28 +8997,25 @@ msgstr "擴展"
 msgid "OpenVision Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "資訊"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
 
 #, fuzzy
 msgid "OpenVision language"
-msgstr "擴展"
+msgstr "擴展管理"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "擴展"
+msgstr "傳輸模式"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "反向:"
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "反向:"
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr ""
@@ -9039,7 +9047,7 @@ msgstr "其他"
 msgid "Other Subtitles & lang"
 msgstr ""
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9335,7 +9343,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Player version"
-msgstr "反向:"
+msgstr "反向"
 
 msgid "Please add titles to the compilation."
 msgstr "請添加標題."
@@ -9588,6 +9596,10 @@ msgstr "正在載入列表... 請稍候..."
 msgid "Plugin Browser"
 msgstr "流覽插件"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "流覽插件"
+
 msgid "Plugin browser"
 msgstr "流覽插件"
 
@@ -9596,10 +9608,6 @@ msgstr "插件管理活動資訊"
 
 msgid "Plugin manager help"
 msgstr "插件管理幫助"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "流覽插件"
 
 msgid "Plugins"
 msgstr "插件"
@@ -9782,6 +9790,10 @@ msgstr ""
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr ""
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "按OK來切換選擇."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr ""
 
@@ -9959,7 +9971,7 @@ msgstr "供應商"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "自動"
+msgstr "未選擇CAId"
 
 msgid "Public IP"
 msgstr ""
@@ -10017,9 +10029,8 @@ msgstr "週末標記:"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "命令順序"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10029,9 +10040,8 @@ msgstr "命令順序"
 msgid "RC name"
 msgstr "重命"
 
-#, fuzzy
 msgid "RC type"
-msgstr "命令順序"
+msgstr ""
 
 #, python-format
 msgid "RC type:|%s"
@@ -10048,6 +10058,10 @@ msgstr ""
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF-輸出"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10147,9 +10161,8 @@ msgstr ""
 msgid "Receiver Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "資訊"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10290,7 +10303,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Remote control information"
-msgstr "調諧器配置"
+msgstr "遠程控制風格"
 
 msgid "Remote control type"
 msgstr ""
@@ -10492,7 +10505,7 @@ msgstr "用戶定義"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "用戶定義"
+msgstr "重命"
 
 msgid "Reserved"
 msgstr ""
@@ -10697,7 +10710,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Root file"
-msgstr "開始時間"
+msgstr "%d file"
 
 msgid "Rotor step position:"
 msgstr ""
@@ -10774,10 +10787,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "極軸設定(DiSEqC 1.2)"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr ""
@@ -11828,6 +11837,10 @@ msgstr ""
 msgid "Shift"
 msgstr ""
 
+#, python-format
+msgid "Shift: %s"
+msgstr ""
+
 msgid "Short filenames"
 msgstr ""
 
@@ -11930,9 +11943,8 @@ msgstr ""
 msgid "Show background in radio mode"
 msgstr ""
 
-#, fuzzy
 msgid "Show benchmark information"
-msgstr "資訊"
+msgstr ""
 
 #, fuzzy
 msgid "Show bluez5 in plugin browser"
@@ -12060,9 +12072,8 @@ msgstr "快退 / 快進時顯示資訊條"
 msgid "Show kernel-module in plugin browser"
 msgstr "可下載的新插件"
 
-#, fuzzy
 msgid "Show latest commit log information"
-msgstr "選擇頻道時顯示事件進度"
+msgstr ""
 
 msgid "Show latest commits"
 msgstr ""
@@ -12222,9 +12233,8 @@ msgstr ""
 msgid "Show subtitle selection"
 msgstr ""
 
-#, fuzzy
 msgid "Show system information"
-msgstr "選擇頻道時顯示事件進度"
+msgstr ""
 
 msgid "Show the radio player..."
 msgstr "廣播重播模式下..."
@@ -12246,7 +12256,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "選擇頻道時顯示事件進度"
+msgstr "顯示轉發器資訊"
 
 msgid "Show transponder info"
 msgstr "顯示轉發器資訊"
@@ -12416,9 +12426,8 @@ msgstr ""
 msgid "SleepTimer Configuration"
 msgstr ""
 
-#, fuzzy
 msgid "Sleeping"
-msgstr "計時器"
+msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -12597,6 +12606,12 @@ msgid "Sort time"
 msgstr ""
 
 msgid "Sorting of playlists"
+msgstr ""
+
+msgid "Sound"
+msgstr "聲音"
+
+msgid "Sound carrier"
 msgstr ""
 
 msgid "Source request"
@@ -12809,7 +12824,7 @@ msgstr ""
 
 #, fuzzy
 msgid "State"
-msgstr "誤碼率:"
+msgstr "掃描狀態"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13187,9 +13202,8 @@ msgstr ""
 msgid "System Information"
 msgstr "資訊"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "調諧器配置"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13351,6 +13365,9 @@ msgstr "測驗模式"
 msgid "Test DiSEqC settings"
 msgstr "測驗DiSEqC設定"
 
+msgid "Test mode"
+msgstr "測驗模式"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -13469,9 +13486,6 @@ msgid ""
 "Please install it."
 msgstr ""
 
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
-
 msgid ""
 "The overscan wizard has been completed.\n"
 "\n"
@@ -13557,12 +13571,6 @@ msgstr ""
 
 #, python-format
 msgid "The user interface of your %s %s is restarting"
-msgstr ""
-
-#, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
 msgstr ""
 
 #, python-format
@@ -14002,7 +14010,6 @@ msgstr "時光平移位置"
 msgid "Timeshift not possible!"
 msgstr "不能時光平移!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "時區"
 
@@ -14099,6 +14106,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -14109,9 +14119,8 @@ msgstr ""
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "啟用"
+msgstr ""
 
 msgid "Track"
 msgstr "軌道"
@@ -14132,7 +14141,7 @@ msgstr "資訊"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "資訊"
+msgstr "翻譯:"
 
 msgid "Translation:"
 msgstr "翻譯:"
@@ -14218,7 +14227,7 @@ msgstr "資訊"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "資訊"
+msgstr "調諧器配置"
 
 msgid "Tuner is not supported"
 msgstr ""
@@ -14565,9 +14574,8 @@ msgstr ""
 msgid "Use frequency or channel"
 msgstr ""
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "資訊"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -14639,9 +14647,8 @@ msgstr ""
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "安裝失敗"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "按頻道類型搜索"
@@ -14734,7 +14741,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -14758,7 +14765,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 #, fuzzy
@@ -14950,11 +14957,11 @@ msgstr "W"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "位置"
+msgstr "電影位置"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "資訊"
+msgstr "未連接"
 
 msgid "WEP"
 msgstr "WEP"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2020-11-22 09:44+0100\n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: OpenPLi\n"
@@ -914,6 +914,14 @@ msgid "%d B"
 msgstr "%d B"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d GB"
 
@@ -1686,7 +1694,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Ein grafischer EPG für alle Dienste eines bestimmten Bouquets"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2821,9 +2829,8 @@ msgstr "Boost grün"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "Boot Dauer"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2872,9 +2879,6 @@ msgstr ""
 
 msgid "Brazil"
 msgstr "Brasilien"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "Helligkeit"
@@ -2941,9 +2945,8 @@ msgstr "Standardmässig wird SNR in Dezibel angezeigt (falls vom Tuner unterstü
 msgid "Bypass HDMI EDID checking"
 msgstr "Überspringe HDMI-EDID Prüfung"
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "Hauptverzeichnis"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -3001,6 +3004,10 @@ msgstr ""
 msgid "CPU"
 msgstr "Prozessor: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3010,6 +3017,10 @@ msgstr "Dänemark"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Aktualisiere"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3036,6 +3047,9 @@ msgid "Calculate all positions"
 msgstr "Berechne alle Positionen"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3406,9 +3420,8 @@ msgstr "Links-Zirkular"
 msgid "Circular right"
 msgstr "Rechts-Zirkular"
 
-#, fuzzy
 msgid "City"
-msgstr "Kapazität: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3542,9 +3555,8 @@ msgstr "Befehlsfolge"
 msgid "Commit Information"
 msgstr "Informationen"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Informationen"
+msgstr ""
 
 #, fuzzy
 msgid "Commit Logs"
@@ -3553,9 +3565,8 @@ msgstr "Änderungsinfos"
 msgid "Commit info"
 msgstr "Änderungsinfos"
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Skin Auswahl Aktionen"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "Common Interface"
@@ -3611,6 +3622,9 @@ msgstr "Konfigurationsmodus"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Konfigurationsmodus: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Konfiguriere ATSC"
@@ -4040,7 +4054,7 @@ msgstr "Angeschlossene Transkodierung, Limit - kein PiP!"
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Softwaremanager Information"
+msgstr "Pluginverwaltung: geplante Aktionen."
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4814,15 +4828,15 @@ msgstr "Erkennen Sie die nächsten Kästchen vor dem Standby"
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "Netzwerk Test: "
+msgstr "Netzwerkadapter auswählen"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "Erkannte Tuner:"
+msgstr "Speichergeräteliste"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "Erkannte Tuner:"
+msgstr "Gelöschte Objekte"
 
 #, fuzzy
 msgid "Device"
@@ -5112,7 +5126,7 @@ msgstr "Wollen Sie alle Crash-Logs entfernen?"
 
 #, fuzzy
 msgid "Do you want to delete this log file?"
-msgstr "%s wirklich löschen?"
+msgstr "Wollen Sie alle Crash-Logs entfernen?"
 
 #, python-format
 msgid ""
@@ -5219,9 +5233,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Abgeschlossen - %d Paket installiert, aktualisiert oder entfernt (%s)"
 msgstr[1] "Abgeschlossen - %d Pakete installiert, aktualisiert oder entfernt (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS downmix"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Plugins herunterladen"
@@ -5653,7 +5666,7 @@ msgstr "Standard"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Softwaremanager Information"
+msgstr "Informationen"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6087,7 +6100,7 @@ msgstr "FEC:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Enigma-Version:"
+msgstr "Inversion"
 
 msgid "FHD"
 msgstr ""
@@ -6095,9 +6108,8 @@ msgstr ""
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "Prozessor: "
+msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -6273,6 +6285,9 @@ msgstr "Springe zum aktuellen Kanal"
 msgid "Fine movement"
 msgstr "Fein-Steuerung"
 
+msgid "Finetune"
+msgstr "Feineinst."
+
 msgid "Finished"
 msgstr "Beendet"
 
@@ -6372,9 +6387,8 @@ msgstr "Frankreich"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "Flashe Image"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6438,7 +6452,13 @@ msgstr "Filmlisten Einstellungen"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6738,6 +6758,9 @@ msgstr "HDR10 Unterstützung"
 msgid "HELP"
 msgstr "HILFE"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6785,7 +6808,7 @@ msgstr "Hardware: "
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "Informationen"
+msgstr "Softwaremanager Information"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -6805,8 +6828,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Bild halten"
+msgid "Help Screen Information"
+msgstr "Informationen"
 
 msgid "Helps setting up your antenna"
 msgstr "Hilft Ihre Antenne einzurichten"
@@ -6922,9 +6945,8 @@ msgstr "Keine Daten bisher empfangen"
 msgid "Host receiver streaming port"
 msgstr "Ihr Receiver startet neu"
 
-#, fuzzy
 msgid "Hostname"
-msgstr "Umbenennen"
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr "Tastenkombination Einstellungen"
@@ -7021,7 +7043,7 @@ msgstr "ISO-Ausgabepfad"
 
 #, fuzzy
 msgid "ISP"
-msgstr "I"
+msgstr "Einf."
 
 msgid "Iceland"
 msgstr "Iceland"
@@ -7029,7 +7051,7 @@ msgstr "Iceland"
 msgid "Icons"
 msgstr "Symbole"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7511,7 +7533,7 @@ msgstr "Kenia"
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "Kernel-Version: "
+msgstr "Datei löschen"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7638,12 +7660,6 @@ msgid "LED display configuration"
 msgstr "Filmlisten Einstellungen"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7870,7 +7886,7 @@ msgstr "Verzeichnis für Sofortaufnahmen"
 
 #, fuzzy
 msgid "Location information"
-msgstr "Softwaremanager Information"
+msgstr "Informationen"
 
 msgid "Lock ratio"
 msgstr "Signalverhältnis"
@@ -7913,9 +7929,6 @@ msgstr "<Letzter Timer-Ort>"
 
 msgid "Long filenames"
 msgstr "Lange Dateinamen"
-
-msgid "Long key press"
-msgstr "langer Tastendruck"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8151,7 +8164,7 @@ msgstr "Informationen"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "Informationen"
+msgstr "Höchste Position speichern"
 
 msgid "Memory index"
 msgstr "Index speichern"
@@ -8247,6 +8260,9 @@ msgstr "Modi"
 
 msgid "Modulation"
 msgstr "Modulation"
+
+msgid "Modulator"
+msgstr "Modulator"
 
 msgid "Moldova (Republic of)"
 msgstr "Moldawien (Republik)"
@@ -8596,7 +8612,7 @@ msgstr "Namibia"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8799,7 +8815,7 @@ msgstr "Keine Netzwerkverbindung verfügbar."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Netzwerk Test: "
+msgstr "Keine Sender/Anbieter ausgewählt"
 
 msgid "No networks found"
 msgstr "Keine Netzwerke gefunden"
@@ -9188,9 +9204,8 @@ msgstr "Erweiterungen"
 msgid "OpenVision Information"
 msgstr "Informationen"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Informationen"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9201,15 +9216,13 @@ msgstr "Original Sprache"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Erweiterungen"
+msgstr "Übertragungstyp"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Python-Version: "
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Python-Version: "
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr "Status LED im Deep Standby"
@@ -9241,7 +9254,7 @@ msgstr "Andere"
 msgid "Other Subtitles & lang"
 msgstr "Andere Untertitel & Sprachen"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9794,6 +9807,11 @@ msgstr "Bitte warten… Liste wird geladen…"
 msgid "Plugin Browser"
 msgstr "Plugin Manager"
 
+# löschen?/delete?
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Plugin Manager"
+
 msgid "Plugin browser"
 msgstr "Plugin Manager"
 
@@ -9802,11 +9820,6 @@ msgstr "Pluginverwaltung: geplante Aktionen."
 
 msgid "Plugin manager help"
 msgstr "Pluginverwaltung: Hilfe"
-
-# löschen?/delete?
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Plugin Manager"
 
 msgid "Plugins"
 msgstr "Plugins"
@@ -9994,6 +10007,10 @@ msgstr "Drücken Sie 'OK' um den Eintrag zu löschen, oder 'Kanal + / -' um zur 
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Drücken Sie 'OK' um den Eintrag zu löschen, oder '< >' um die Anordnung zu ändern, oder 'Kanal + / -' um zur Liste der Funktionen zu wechseln."
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Drücken Sie OK, um die Auswahl umzuschalten."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "INFO drücken für zusätzliche Informationen."
 
@@ -10092,14 +10109,14 @@ msgstr "Priorität"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "Modell: "
+msgstr "Tone Modus"
 
 msgid "Process"
 msgstr "Aktivitätsanzeige"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "Informationen"
+msgstr "Softwaremanager Information"
 
 msgid "Progress"
 msgstr "Fortschritt"
@@ -10171,7 +10188,7 @@ msgstr "Anbieter"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Auto Diseqc"
+msgstr "Keine CAID ausgewählt"
 
 msgid "Public IP"
 msgstr ""
@@ -10230,9 +10247,8 @@ msgstr "Dänemark"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Befehlsfolge"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10246,9 +10262,9 @@ msgstr "Umbenennen"
 msgid "RC type"
 msgstr "typ"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "typ"
+msgstr ""
 
 msgid "REC"
 msgstr "REC"
@@ -10262,6 +10278,10 @@ msgstr "Auch in Standby"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF-Ausgang"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10356,17 +10376,15 @@ msgstr "Helligkeit"
 msgid "Recall to previous service"
 msgstr "Zurück zum letzten Sender"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "Hauptverzeichnis"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "Informationen"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Informationen"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10717,7 +10735,7 @@ msgstr "Benutzer ID"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "Benutzer ID"
+msgstr "Umbenennen"
 
 msgid "Reserved"
 msgstr "Reserviert"
@@ -10994,10 +11012,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Rotor-Einstellungen"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -12050,6 +12064,10 @@ msgstr "Shell-Skript"
 msgid "Shift"
 msgstr "Wechsel"
 
+#, fuzzy, python-format
+msgid "Shift: %s"
+msgstr "Wechsel"
+
 msgid "Short filenames"
 msgstr "Kurze Dateinamen"
 
@@ -12142,7 +12160,7 @@ msgstr "WLAN-Status anzeigen"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr "Erweiterungen Manger schützen"
 
 msgid "Show alternatives"
 msgstr "Alternativen anzeigen"
@@ -12206,7 +12224,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr "Erweiterungen Manger schützen"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12250,11 +12268,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr "Erweiterungen Manger schützen"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr ""
 
 msgid "Show help"
 msgstr "Hilfe anzeigen"
@@ -12388,7 +12405,7 @@ msgstr "Zu aktualisierende Pakete"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr "Menü oder Plugin Nummern anzeigen"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12493,7 +12510,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Softwaremanager Information"
+msgstr "Transponder-Info anzeigen"
 
 msgid "Show transponder info"
 msgstr "Transponder-Info anzeigen"
@@ -12514,7 +12531,7 @@ msgstr "Unterstriche anzeigen"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Mediaplayer im Hauptmenü anzeigen"
+msgstr "Menü oder Plugin Nummern anzeigen"
 
 msgid "Show vertical timelines"
 msgstr "vertikale Zeitachsen anzeigen"
@@ -12847,6 +12864,12 @@ msgstr "Sortiere nach Zeit"
 msgid "Sorting of playlists"
 msgstr "Sortierung der Wiedergabeliste"
 
+msgid "Sound"
+msgstr "Ton"
+
+msgid "Sound carrier"
+msgstr "Tonträger"
+
 msgid "Source request"
 msgstr "Eingangs Anfrage"
 
@@ -13063,7 +13086,7 @@ msgstr "Start im Standby-Modus"
 
 #, fuzzy
 msgid "State"
-msgstr "Bitrate:"
+msgstr "Scan-Status"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13192,11 +13215,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "Netzwerk-Konfiguration"
+msgstr "Softwaremanager Information"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "Netzwerk-Konfiguration"
+msgstr "Softwaremanager Information"
 
 msgid "Store at index"
 msgstr "Speichern auf Index"
@@ -13440,9 +13463,8 @@ msgstr "System & Modulation"
 msgid "System Information"
 msgstr "Informationen"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Konfigurationsdateien überschreiben?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13608,6 +13630,9 @@ msgstr "Testmodus"
 msgid "Test DiSEqC settings"
 msgstr "Teste DiSEqC-Einstellungen"
 
+msgid "Test mode"
+msgstr "Testmodus"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Testen der Netzwerkkonfiguration des Receivers.\n"
 
@@ -13655,9 +13680,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr "Das% d min, das vor dem Ende des Ereignisses übrig bleibt."
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Softwaremanager Information"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -13733,9 +13758,6 @@ msgid ""
 msgstr ""
 "Das Netzwerk-Assistent-Plugin ist nicht installiert!\n"
 "Bitte installieren Sie es."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13842,14 +13864,6 @@ msgstr "Die Benutzeroberfläche des Receivers wird für den ausgewählten Skin n
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Die Benutzeroberfläche des Receivers wird neu gestartet"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"Die Benutzeroberfläche des Receivers wird aufgrund eines Fehlers\n"
-"in mytest.py neu gestartet"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14312,7 +14326,6 @@ msgstr "Timeshift-Verzeichnis"
 msgid "Timeshift not possible!"
 msgstr "Timeshift nicht möglich!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "Zeitzone"
 
@@ -14409,6 +14422,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Gesamtzahl der gestreamten Clients:% d (% s)"
@@ -14420,9 +14436,8 @@ msgstr "Interner Flash"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "Ein"
+msgstr ""
 
 msgid "Track"
 msgstr "Spur"
@@ -14443,7 +14458,7 @@ msgstr "Informationen"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "Softwaremanager Information"
+msgstr "Übersetzung:"
 
 msgid "Translation:"
 msgstr "Übersetzung:"
@@ -14529,7 +14544,7 @@ msgstr "Informationen"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Informationen"
+msgstr "Tuner-Konfiguration"
 
 msgid "Tuner is not supported"
 msgstr "Tuner nicht unterstützt"
@@ -14872,9 +14887,8 @@ msgstr "Benutze Fast-Scan Kanalnummern"
 msgid "Use frequency or channel"
 msgstr "Nutze Frequenz oder Kanal"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Softwaremanager Information"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -14947,9 +14961,8 @@ msgstr "Verwende Papierkorb in der Filmliste"
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "Flashe Image"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "Typ der Kanalsuche"
@@ -15044,7 +15057,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15068,7 +15081,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15266,11 +15279,11 @@ msgstr "W"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Zielverzeichnis"
+msgstr "WLAN Verbindung"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Softwaremanager Information"
+msgstr "WLAN Verbindung"
 
 msgid "WEP"
 msgstr "WEP"

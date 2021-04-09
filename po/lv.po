@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -915,6 +915,14 @@ msgid "%d B"
 msgstr "%d B"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d GB"
 
@@ -1698,7 +1706,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Grafiskais EPG visiem kanāliem izvēlētajā buķetē"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2884,9 +2892,6 @@ msgstr ""
 msgid "Brazil"
 msgstr "Brazīlija"
 
-msgid "Brief help information for buttons in your current context."
-msgstr ""
-
 msgid "Brightness"
 msgstr "Spilgtums"
 
@@ -3011,6 +3016,10 @@ msgstr ""
 msgid "CPU"
 msgstr "Procesors: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3020,6 +3029,10 @@ msgstr "Dānija"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Atjauno"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3046,6 +3059,9 @@ msgid "Calculate all positions"
 msgstr "Izskaitļot visas pozīcijas"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3618,6 +3634,9 @@ msgstr "Konfigurēt"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Konfigurēšanas režīms: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Iestatīt ATSC"
@@ -6274,6 +6293,9 @@ msgstr "Atrast servisu kuru pašreiz skatieties"
 msgid "Fine movement"
 msgstr "Precīzā pārvietošana"
 
+msgid "Finetune"
+msgstr "Precīzi"
+
 msgid "Finished"
 msgstr "Pabeigts"
 
@@ -6438,7 +6460,13 @@ msgstr "Mediju iestatījumi"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6738,6 +6766,9 @@ msgstr "HDR10 atbalsts"
 msgid "HELP"
 msgstr "Palīdzība"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6805,8 +6836,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Noturēt ekrānu"
+msgid "Help Screen Information"
+msgstr "Informācija"
 
 msgid "Helps setting up your antenna"
 msgstr "Palīdzēs iestatīt jūsu antenu"
@@ -7029,7 +7060,7 @@ msgstr "Islande"
 msgid "Icons"
 msgstr "Ikona"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7639,12 +7670,6 @@ msgstr "Mediju iestatījumi"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
-msgstr ""
-
 msgid "LIRC remote"
 msgstr ""
 
@@ -7913,9 +7938,6 @@ msgstr "<Pēdējā taimera atrašanās vieta>"
 
 msgid "Long filenames"
 msgstr "Garie failu vārdi"
-
-msgid "Long key press"
-msgstr "Ilgstoša taustiņa nospiešana"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8247,6 +8269,9 @@ msgstr "Režīmi"
 
 msgid "Modulation"
 msgstr "Modulācija"
+
+msgid "Modulator"
+msgstr "Modulators"
 
 msgid "Moldova (Republic of)"
 msgstr "Moldova"
@@ -8596,7 +8621,7 @@ msgstr "Namībija"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -9236,7 +9261,7 @@ msgstr "Cits"
 msgid "Other Subtitles & lang"
 msgstr "Citi subtitri un valodas"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9788,6 +9813,10 @@ msgstr "Lūdzu uzgaidiet... Ielādē sarakstu..."
 msgid "Plugin Browser"
 msgstr "Spraudņu pārlūks"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Spraudņu pārlūks"
+
 msgid "Plugin browser"
 msgstr "Spraudņu pārlūks"
 
@@ -9796,10 +9825,6 @@ msgstr "Spraudņu pārlūka aktivitātes informācija"
 
 msgid "Plugin manager help"
 msgstr "Spraudņu pārlūka palīdzība"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Spraudņu pārlūks"
 
 msgid "Plugins"
 msgstr "Spraudņi"
@@ -9986,6 +10011,10 @@ msgstr "Nospiediet OK, lai noņemtu darbību, vai CH+/- lai pārslēgtos uz blak
 
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Nospiediet OK, lai noņemtu darbību, < > lai izmainītu kārtību, vai CH+/- lai pārslēgtos uz blakus sarakstu."
+
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Nospiediet OK, lai pārslēgtu izvēli."
 
 msgid "Press INFO on your remote control for additional information."
 msgstr "Papildus informācijai spiediet INFO uz tālvadības pults."
@@ -10252,6 +10281,10 @@ msgstr "Arī pēc gaidstāves"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF izeja"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10977,10 +11010,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Pozicioniera iestatījumi"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -12036,6 +12065,10 @@ msgstr "Skripti"
 msgid "Shift"
 msgstr "Shift"
 
+#, fuzzy, python-format
+msgid "Shift: %s"
+msgstr "Shift"
+
 msgid "Short filenames"
 msgstr "Īsie failu nosaukumi"
 
@@ -12128,7 +12161,7 @@ msgstr "Rādīt bezvadu tīkla statusu"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr "Aizsargāt spraudņu pārlūku"
 
 msgid "Show alternatives"
 msgstr "Rādīt alternatīvas"
@@ -12192,7 +12225,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr "Aizsargāt spraudņu pārlūku"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12236,11 +12269,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr "Aizsargāt spraudņu pārlūku"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr ""
 
 msgid "Show help"
 msgstr "Rādīt palīdzību"
@@ -12374,7 +12406,7 @@ msgstr "Parādīt paketes kuras tiks atjaunotas"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr "Rādīt numurus iestatījumiem vai spraudņiem"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12499,7 +12531,7 @@ msgstr "Rādīt pasvītrojuma rakstzīmes failu nosaukumos"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Parādīt mediju atskaņotāju pamata izvēlnē"
+msgstr "Rādīt numurus iestatījumiem vai spraudņiem"
 
 msgid "Show vertical timelines"
 msgstr "Rādīt vertikālās līnijas laikam"
@@ -12831,6 +12863,12 @@ msgstr "Kārt. laiks"
 
 msgid "Sorting of playlists"
 msgstr "Kārtot atskaņošanas sarakstu"
+
+msgid "Sound"
+msgstr "Skaņa"
+
+msgid "Sound carrier"
+msgstr "Nesēja skaņa"
 
 msgid "Source request"
 msgstr "Аvots"
@@ -13588,6 +13626,9 @@ msgstr "Testa režīms"
 msgid "Test DiSEqC settings"
 msgstr "Pārbaudīt DiSEqC iestatījumus"
 
+msgid "Test mode"
+msgstr "Testa režīms"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Pārbaudīt uztvērēja tīkla iestatījumus.\n"
 
@@ -13713,9 +13754,6 @@ msgstr ""
 "Bezvadu tīkla spraudnis nav instalēts!\n"
 "Lūdzu uzstādiet to."
 
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
-
 msgid ""
 "The overscan wizard has been completed.\n"
 "\n"
@@ -13819,14 +13857,6 @@ msgstr "Uztvērēja lietotāja interfeiss tiks pārstartēts lai lietotu izvēl�
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Uztvērēja lietotāja interfeiss tiek pārstartēts"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"Lietotāja interfeiss tiek pārstartēts\n"
-"dēļ kļūdas failā mytest.py"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14385,6 +14415,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Straumē: %d (%s) klienti"
@@ -14504,7 +14537,7 @@ msgstr "Informācija"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Informācija"
+msgstr "Uztvērēja konfigurācija"
 
 msgid "Tuner is not supported"
 msgstr "Uztvērējs nav atbalstīts"
@@ -15018,7 +15051,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15042,7 +15075,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"

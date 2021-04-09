@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2021-03-11 01:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: kvinto\n"
@@ -913,6 +913,14 @@ msgid "%d B"
 msgstr ""
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d ГБ"
 
@@ -1693,7 +1701,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Графічний ЕПГ для всіх каналів певного фавориту"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2879,9 +2887,6 @@ msgstr ""
 msgid "Brazil"
 msgstr "Бразилія"
 
-msgid "Brief help information for buttons in your current context."
-msgstr ""
-
 msgid "Brightness"
 msgstr "Яскравість"
 
@@ -3006,6 +3011,10 @@ msgstr ""
 msgid "CPU"
 msgstr "Процесор: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3015,6 +3024,10 @@ msgstr "Данія"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Оновлення"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3041,6 +3054,9 @@ msgid "Calculate all positions"
 msgstr "Обчислення всіх позицій"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3613,6 +3629,9 @@ msgstr "Режим конфігурації"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Режим конфігурації: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Налаштування ATSC"
@@ -6270,6 +6289,9 @@ msgstr "Знайти канал,який відтворюється в дани�
 msgid "Fine movement"
 msgstr "Точне переміщення"
 
+msgid "Finetune"
+msgstr "Точне налаштування"
+
 msgid "Finished"
 msgstr "Завершено"
 
@@ -6434,7 +6456,13 @@ msgstr "Конфігурація списку записів"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6734,6 +6762,9 @@ msgstr "Підтримка HDR10"
 msgid "HELP"
 msgstr "ДОПОМОГА"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6801,8 +6832,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Зберігати екран"
+msgid "Help Screen Information"
+msgstr "Інформація"
 
 msgid "Helps setting up your antenna"
 msgstr "Допомога в налаштуванні антени"
@@ -7023,7 +7054,7 @@ msgstr "Ісландія"
 msgid "Icons"
 msgstr "Іконки"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7635,12 +7666,6 @@ msgstr "Конфігурація списку записів"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
-msgstr ""
-
 msgid "LIRC remote"
 msgstr ""
 
@@ -7909,9 +7934,6 @@ msgstr "<Розташування останнього таймера>"
 
 msgid "Long filenames"
 msgstr "Довгі імена файлів"
-
-msgid "Long key press"
-msgstr "Довге натиснення"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8243,6 +8265,9 @@ msgstr "Режими"
 
 msgid "Modulation"
 msgstr "Модуляція"
+
+msgid "Modulator"
+msgstr "Модулятор"
 
 msgid "Moldova (Republic of)"
 msgstr "Молдова (Республіка)"
@@ -8591,7 +8616,7 @@ msgstr "Намібія"
 msgid "Nauru"
 msgstr "Науру"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -9231,7 +9256,7 @@ msgstr "Інший"
 msgid "Other Subtitles & lang"
 msgstr "Інші субтитри та мова"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9783,6 +9808,10 @@ msgstr "Будь ласка, почекайте... Завантаження сп
 msgid "Plugin Browser"
 msgstr "Провідник плагінів"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Провідник плагінів"
+
 msgid "Plugin browser"
 msgstr "Провідник плагінів"
 
@@ -9791,10 +9820,6 @@ msgstr "Інформація активності плагінів"
 
 msgid "Plugin manager help"
 msgstr "Допомога в керуванні плагіном"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Провідник плагінів"
 
 msgid "Plugins"
 msgstr "Плагіни"
@@ -9981,6 +10006,10 @@ msgstr "Натисніть 'OK', щоб видалити елемент, або 
 
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Натисніть 'OK' для видалення елемента, або <> для зміни порядку, або 'CH+/-' для перемикання на список функцій."
+
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Натисніть OK для зміни вибору."
 
 msgid "Press INFO on your remote control for additional information."
 msgstr "Натисніть INFO на пульті ду для отримання додаткової інформації."
@@ -10247,6 +10276,10 @@ msgstr "Також і в режимі очікування"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF вихід"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10972,10 +11005,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Налаштування позиціонера"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "Одношаровий DVD"
@@ -12031,6 +12060,10 @@ msgstr "Наступний скрипт"
 msgid "Shift"
 msgstr "Шифт"
 
+#, fuzzy, python-format
+msgid "Shift: %s"
+msgstr "Шифт"
+
 msgid "Short filenames"
 msgstr "Короткі назви файлів"
 
@@ -12123,7 +12156,7 @@ msgstr "Показати статус Wi-Fi мережі"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr "Захистити провідник плагінів"
 
 msgid "Show alternatives"
 msgstr "Показати альтернативу"
@@ -12187,7 +12220,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr "Захистити провідник плагінів"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12231,11 +12264,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr "Захистити провідник плагінів"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr ""
 
 msgid "Show help"
 msgstr "Показати меню допомоги"
@@ -12369,7 +12401,7 @@ msgstr "Показати пакети, які будуть оновлені"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr "Показати меню або номери плагіна"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12494,7 +12526,7 @@ msgstr "Показати символи підкреслення в іменах
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Показати програвач у головному меню"
+msgstr "Показати меню або номери плагіна"
 
 msgid "Show vertical timelines"
 msgstr "Показати вертикальні часові лінії"
@@ -12826,6 +12858,12 @@ msgstr "Сортувати за часом"
 
 msgid "Sorting of playlists"
 msgstr "Сортування списку відтворення"
+
+msgid "Sound"
+msgstr "Звук"
+
+msgid "Sound carrier"
+msgstr "Носій звуку"
 
 msgid "Source request"
 msgstr "Запит джерела"
@@ -13463,7 +13501,7 @@ msgstr "Деталі про плагін: "
 
 msgid "TRANSLATOR_INFO"
 msgstr ""
-"Переклад:  kvinto - 23.03.2021\n"
+"Переклад:  kvinto - 02.04.2021\n"
 "Сторінка:    https://gisclub.tv\n"
 "                  kvinto@rambler.ru"
 
@@ -13585,6 +13623,9 @@ msgstr "Тестовий режим"
 
 msgid "Test DiSEqC settings"
 msgstr "Тест налаштувань DiSEqC"
+
+msgid "Test mode"
+msgstr "Тестовий режим"
 
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Тест мережевого з'єднання Вашого приймача.\n"
@@ -13711,9 +13752,6 @@ msgstr ""
 "Майстер налаштування мережі не встановлено!\n"
 "Будь ласка, встановіть його."
 
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
-
 msgid ""
 "The overscan wizard has been completed.\n"
 "\n"
@@ -13819,14 +13857,6 @@ msgstr "Виконується перезавантаження графічно
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Графічний інтерфейс користувача приймача перезавантажується"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"Графічний інтерфейс Вашого приймача перезавантажується\n"
-"через помилку в mytest.py"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14385,6 +14415,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Кількість клієнтів в стрімі: %d (%s)"
@@ -14510,7 +14543,7 @@ msgid "Tuner is not supported"
 msgstr "Тюнер не підтримується"
 
 msgid "Tuner live values"
-msgstr "Текучы значення тюнера"
+msgstr "Текучі значення тюнера"
 
 msgid "Tuner not available."
 msgstr "Тюнер не доступний."
@@ -15019,7 +15052,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15043,7 +15076,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"

@@ -93,6 +93,7 @@ public:
 #endif
 
 private:
+	friend class eEPGCache;
 	friend class eEPGChannelData;
 
 	static eEPGTransponderDataReader *instance;

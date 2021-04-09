@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -915,6 +915,14 @@ msgid "%d B"
 msgstr ""
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr ""
 
@@ -1670,7 +1678,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Belirtilen buketteki tüm kanallar için görsel EPG"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2733,9 +2741,8 @@ msgstr ""
 msgid "Benchmark Information"
 msgstr "Bilgi"
 
-#, fuzzy
 msgid "Benchmark for"
-msgstr "Bilgi"
+msgstr ""
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2817,9 +2824,8 @@ msgstr "Yeşil"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "Sıralama zamanı"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2867,9 +2873,6 @@ msgid "Brand/Meta"
 msgstr ""
 
 msgid "Brazil"
-msgstr ""
-
-msgid "Brief help information for buttons in your current context."
 msgstr ""
 
 msgid "Brightness"
@@ -2938,9 +2941,8 @@ msgstr "Varsayılan olarak; SNR, dB olarak (Tuner tarafından destekleniyorsa) g
 msgid "Bypass HDMI EDID checking"
 msgstr ""
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "Ana Dizin"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -2998,6 +3000,10 @@ msgstr ""
 msgid "CPU"
 msgstr "CPU: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3006,6 +3012,10 @@ msgstr ""
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Güncelleme"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3032,6 +3042,9 @@ msgid "Calculate all positions"
 msgstr "Her pozisyonda Hesapla"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3390,9 +3403,8 @@ msgstr "Dairesel sola"
 msgid "Circular right"
 msgstr "Dairesel sağa"
 
-#, fuzzy
 msgid "City"
-msgstr "Kapasite: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3528,9 +3540,8 @@ msgstr "Komut sırası"
 msgid "Commit Information"
 msgstr "Bilgi"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Bilgi"
+msgstr ""
 
 msgid "Commit Logs"
 msgstr ""
@@ -3538,9 +3549,8 @@ msgstr ""
 msgid "Commit info"
 msgstr ""
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Eylem seçimi"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "Kart/Modül"
@@ -3597,6 +3607,9 @@ msgstr "Yapılandırma modu"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Yapılandırma modu: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 #, fuzzy
 msgid "Configure ATSC"
@@ -4032,7 +4045,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "Eklenti yönetimi aktivite bilgisi"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4820,15 +4833,15 @@ msgstr ""
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "Ağ testi: "
+msgstr "Bir ağ bağdaştırıcısı seçin"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "TUNER:"
+msgstr "Depolama aygıtları listesi"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "TUNER:"
+msgstr "Silinmiş öğeler"
 
 #, fuzzy
 msgid "Device"
@@ -5237,9 +5250,8 @@ msgid "Done - Installed, updated or removed %d package (%s)"
 msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Yüklenen, güncellenen veya silinen %d paket (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS downmix"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Eklenti İndir"
@@ -5665,9 +5677,8 @@ msgstr "İngilizce"
 msgid "Enigma2 (re)starts"
 msgstr "Enigma Başlama Sayısı: %d\n"
 
-#, fuzzy
 msgid "Enigma2 debug level"
-msgstr "Öntanımlı"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 default"
@@ -5675,7 +5686,7 @@ msgstr "Öntanımlı"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "Bilgi"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6099,7 +6110,7 @@ msgstr "FEC:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Çekirdek sürümü:"
+msgstr "Tersine çevir"
 
 msgid "FHD"
 msgstr ""
@@ -6107,9 +6118,8 @@ msgstr ""
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "CPU: "
+msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -6293,6 +6303,9 @@ msgstr "Şu anda oynanan servisi bul"
 msgid "Fine movement"
 msgstr "Ince hareket"
 
+msgid "Finetune"
+msgstr "İnce ayar"
+
 msgid "Finished"
 msgstr "Tamamlandı"
 
@@ -6393,9 +6406,8 @@ msgstr "Romantik"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "Flaş"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6460,15 +6472,20 @@ msgstr "Film Listesi yapılandırması"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
 msgstr ""
 
-#, fuzzy
 msgid "Front processor version"
-msgstr "Çekirdek sürümü:"
+msgstr ""
 
 #, fuzzy
 msgid "Full factory reset"
@@ -6765,6 +6782,9 @@ msgstr "Desteklenmiyor"
 msgid "HELP"
 msgstr ""
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6814,7 +6834,7 @@ msgstr "Donanım: "
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "Bilgi"
+msgstr "Yazılım Yöneticisi bilgileri"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -6834,8 +6854,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Ekranı dondur"
+msgid "Help Screen Information"
+msgstr "Bilgi"
 
 msgid "Helps setting up your antenna"
 msgstr "Anteninizin ayarlamasına yardımcı olur"
@@ -6951,9 +6971,8 @@ msgstr ""
 msgid "Host receiver streaming port"
 msgstr "Uydu Alıcınız yeniden baştatılıyor."
 
-#, fuzzy
 msgid "Hostname"
-msgstr "Ad değiştir "
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr "Kısayol Tuşu Ayarla"
@@ -7060,7 +7079,7 @@ msgstr ""
 msgid "Icons"
 msgstr "Simgeler"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7543,7 +7562,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "Çekirdek sürümü:"
+msgstr "Dosy Sil"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7672,12 +7691,6 @@ msgid "LED display configuration"
 msgstr "Film Listesi yapılandırması"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7906,7 +7919,7 @@ msgstr "Anlık kayıt konumu"
 
 #, fuzzy
 msgid "Location information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "Bilgi"
 
 msgid "Lock ratio"
 msgstr "Oranı kilitleyin"
@@ -7949,9 +7962,6 @@ msgstr "<Son zamanlayıcı konumu>"
 
 msgid "Long filenames"
 msgstr "Uzun dosya adı"
-
-msgid "Long key press"
-msgstr "Tuşa uzun basarak"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8191,7 +8201,7 @@ msgstr "Bilgi"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "Bilgi"
+msgstr "Azami Bellek pozisyonu"
 
 msgid "Memory index"
 msgstr "Hafıza indeksi"
@@ -8291,6 +8301,9 @@ msgstr "Tipi"
 
 msgid "Modulation"
 msgstr "Modülasyon"
+
+msgid "Modulator"
+msgstr "Modülatör"
 
 msgid "Moldova (Republic of)"
 msgstr ""
@@ -8648,7 +8661,7 @@ msgstr ""
 msgid "Nauru"
 msgstr ""
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8850,7 +8863,7 @@ msgstr "Uygun ağ bağlantısı yok."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Ağ testi: "
+msgstr "Servis/Sağlayıcı seçilmedi"
 
 msgid "No networks found"
 msgstr "Ağ bulunamadı"
@@ -9247,9 +9260,8 @@ msgstr "Eklentiler"
 msgid "OpenVision Information"
 msgstr "Bilgi"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Bilgi"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9260,15 +9272,13 @@ msgstr "Orjinal dil"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Eklentiler"
+msgstr "İletim (transmisyon) modu"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Python versiyonu: "
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Python versiyonu: "
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr ""
@@ -9301,7 +9311,7 @@ msgstr "Diğer"
 msgid "Other Subtitles & lang"
 msgstr "Alt Yazı Ayarları"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9859,6 +9869,10 @@ msgstr "Lütfen bekleyin... Liste yükleniyor..."
 msgid "Plugin Browser"
 msgstr "Eklenti Listesi"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Eklenti Listesi"
+
 msgid "Plugin browser"
 msgstr "Eklenti Listesi"
 
@@ -9867,10 +9881,6 @@ msgstr "Eklenti yönetimi aktivite bilgisi"
 
 msgid "Plugin manager help"
 msgstr "Eklenti yönetimi yardımı"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Eklenti Listesi"
 
 msgid "Plugins"
 msgstr "Eklentiler"
@@ -10059,6 +10069,10 @@ msgstr ""
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr ""
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Seçiminde geçiş yapmak için OK tuşuna basın."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "Ek bilgi için uzaktan kumanda üzerindeki INFO (EPG)  tuşuna basın."
 
@@ -10159,14 +10173,14 @@ msgstr "Öncelik"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "Model: "
+msgstr "Ton modu"
 
 msgid "Process"
 msgstr "İşlemler"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "Bilgi"
+msgstr "Yazılım Yöneticisi bilgileri"
 
 msgid "Progress"
 msgstr "İlerleme"
@@ -10238,7 +10252,7 @@ msgstr "Yayıncılar"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Otomatik"
+msgstr "CAId seçilmedi"
 
 msgid "Public IP"
 msgstr ""
@@ -10290,16 +10304,14 @@ msgstr ""
 msgid "RAM (Summary)"
 msgstr ""
 
-#, fuzzy
 msgid "RAM benchmark"
-msgstr "Bilgi"
+msgstr ""
 
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Komut sırası"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10313,9 +10325,9 @@ msgstr "Ad değiştir "
 msgid "RC type"
 msgstr "Liste tipi"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "Liste tipi"
+msgstr ""
 
 msgid "REC"
 msgstr ""
@@ -10329,6 +10341,10 @@ msgstr "Bekleme Modunda"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF çıkışı"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10424,17 +10440,15 @@ msgstr "Parlaklık"
 msgid "Recall to previous service"
 msgstr "Önceki servisi çağır"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "Ana Dizin"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "Bilgi"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Bilgi"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10782,7 +10796,7 @@ msgstr "Kullanıcı tanımlı"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "Kullanıcı tanımlı"
+msgstr "Ad değiştir "
 
 msgid "Reserved"
 msgstr "Ayrılmış"
@@ -10987,7 +11001,7 @@ msgstr "Ana Dizin"
 
 #, fuzzy
 msgid "Root file"
-msgstr "Sıralama zamanı"
+msgstr "%d dosya"
 
 msgid "Rotor step position:"
 msgstr "Rotorun adım pozisyonu:"
@@ -11066,10 +11080,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Pozisyoner kurulumu"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "TEK KATMAN DVD"
@@ -12134,6 +12144,10 @@ msgstr "Komut Çalıştır (ShellScript)"
 msgid "Shift"
 msgstr ""
 
+#, python-format
+msgid "Shift: %s"
+msgstr ""
+
 msgid "Short filenames"
 msgstr "Kısa dosya adları"
 
@@ -12227,7 +12241,7 @@ msgstr "WLAN durumunu göster"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr "Eklenti Listesi Koruması"
 
 msgid "Show alternatives"
 msgstr "Alternatifleri göster"
@@ -12291,7 +12305,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr "Eklenti Listesi Koruması"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12335,11 +12349,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr "Eklenti Listesi Koruması"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr ""
 
 msgid "Show help"
 msgstr "Yardım"
@@ -12472,7 +12485,7 @@ msgstr "Güncellenebilir paketleri göster."
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr "Olay bilgisi eklentilerini göster"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12578,7 +12591,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "Transponder bilgisini göster"
 
 msgid "Show transponder info"
 msgstr "Transponder bilgisini göster"
@@ -12600,7 +12613,7 @@ msgstr "Kayıt dosya adları için karakter kümesi sınırı"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Ana menüde Media Player'ı gösterir"
+msgstr "Olay bilgisi eklentilerini göster"
 
 msgid "Show vertical timelines"
 msgstr "Dikey zaman çizelgelerini göster"
@@ -12940,6 +12953,12 @@ msgstr "Sıralama zamanı"
 msgid "Sorting of playlists"
 msgstr "Çalma listelerini sırala"
 
+msgid "Sound"
+msgstr "Ses"
+
+msgid "Sound carrier"
+msgstr "Ses taşıyıcı"
+
 msgid "Source request"
 msgstr "Kaynak talebi"
 
@@ -13155,7 +13174,7 @@ msgstr "H.Bekle olarak çalıştır"
 
 #, fuzzy
 msgid "State"
-msgstr "Bit Hızı:"
+msgstr "Kanal arama durumu"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13286,11 +13305,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "Ağ yapılandırması..."
+msgstr "Yazılım Yöneticisi bilgileri"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "Ağ yapılandırması..."
+msgstr "Yazılım Yöneticisi bilgileri"
 
 msgid "Store at index"
 msgstr "İndeksteki depo"
@@ -13536,9 +13555,8 @@ msgstr ""
 msgid "System Information"
 msgstr "Bilgi"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Konfigürasyon dosyaları üzerine yaz?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13714,6 +13732,9 @@ msgstr "Test kipi"
 msgid "Test DiSEqC settings"
 msgstr "DiSEqC ayarlarınızı test edin"
 
+msgid "Test mode"
+msgstr "Test kipi"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Alıcınızın ağ yapılandırmasını test edin.\n"
 
@@ -13761,9 +13782,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr "Kalan süre %d"
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -13839,9 +13860,6 @@ msgid ""
 msgstr ""
 "Ağ sihirbazı eklentisi yüklü değil!\n"
 "Lütfen yükleyin."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13931,14 +13949,6 @@ msgstr ""
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Alıcınızın kullanıcı arayüzü yeniden başlatılıyor..."
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"mytest.py deki bir hata nedeniyle\n"
-"Alıcınızın kullanıcı arayüzü yeniden başlatılıyor..."
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14414,7 +14424,6 @@ msgstr "Zaman kaydırıcı kayıt konumu"
 msgid "Timeshift not possible!"
 msgstr "Zaman kaydırıcı kullanılamaz!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "Zaman dilimi"
 
@@ -14512,6 +14521,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -14523,9 +14535,8 @@ msgstr "Dahili hafıza"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "Etkin"
+msgstr ""
 
 msgid "Track"
 msgstr "İz"
@@ -14546,7 +14557,7 @@ msgstr "Bilgi"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "Çeviri"
 
 msgid "Translation:"
 msgstr "Çeviri:"
@@ -14633,7 +14644,7 @@ msgstr "Bilgi"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Bilgi"
+msgstr "Tuner Ayarları"
 
 msgid "Tuner is not supported"
 msgstr "Tuner desteklenmiyor."
@@ -14991,9 +15002,8 @@ msgstr "Hızlı Tarama kanal numaralarını kullanın"
 msgid "Use frequency or channel"
 msgstr "Frekans veya kanalı kullan"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -15066,9 +15076,8 @@ msgstr "Film listesinde çöp kutusu kullanın."
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "Flaş"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "Kullanılan kanal arama tipi"
@@ -15163,7 +15172,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15187,7 +15196,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 #, fuzzy
@@ -15390,11 +15399,11 @@ msgstr "W"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Konum"
+msgstr "WLAN bağlantısı"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Yazılım Yöneticisi bilgileri"
+msgstr "WLAN bağlantısı"
 
 msgid "WEP"
 msgstr "WEP"

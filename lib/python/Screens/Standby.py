@@ -277,7 +277,6 @@ class QuitMainloopScreen(Screen):
 			QUIT_REBOOT: _("Your %s %s is rebooting") % (brand, model),
 			QUIT_RESTART: _("The user interface of your %s %s is restarting") % (brand, model),
 			QUIT_UPGRADE_FP: _("Your frontprocessor will be updated\nPlease wait until your %s %s reboots\nThis may take a few minutes") % (brand, model),
-			QUIT_ERROR_RESTART: _("The user interface of your %s %s is restarting\ndue to an error in StartEnigma.py") % (brand, model),
 			QUIT_DEBUG_RESTART: _("The user interface of your %s %s is restarting in debug mode") % (brand, model),
 			QUIT_UPGRADE_PROGRAM: _("Unattended update in progress\nPlease wait until your %s %s reboots\nThis may take a few minutes") % (brand, model),
 			QUIT_MANUFACTURER_RESET: _("Manufacturer reset in progress\nPlease wait until your %s %s restarts") % (brand, model)

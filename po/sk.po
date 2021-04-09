@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2021-02-25 12:06+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -914,6 +914,14 @@ msgid "%d B"
 msgstr "%d B"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d GB"
 
@@ -1697,7 +1705,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Grafické EPG pre všetky stanice zvoleného prehľadu staníc"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2831,9 +2839,8 @@ msgstr "Zosilniť zelenú"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "Čas štartu"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2882,9 +2889,6 @@ msgstr ""
 
 msgid "Brazil"
 msgstr "Brazília"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "Jas"
@@ -2951,9 +2955,8 @@ msgstr "Predvolene je SNR zobrazené v dB (ak je podporované tunerom). Toto nas
 msgid "Bypass HDMI EDID checking"
 msgstr "Vynechať kontrolu HDMI EDID"
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "Koreňový adresár"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -3011,6 +3014,10 @@ msgstr ""
 msgid "CPU"
 msgstr "Procesor: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3020,6 +3027,10 @@ msgstr "Dánsko"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Aktualizujem"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3046,6 +3057,9 @@ msgid "Calculate all positions"
 msgstr "Prepočítať všetky pozície"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3416,9 +3430,8 @@ msgstr "Kruhová ľavá"
 msgid "Circular right"
 msgstr "Kruhová pravá"
 
-#, fuzzy
 msgid "City"
-msgstr "Kapacita: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3552,9 +3565,8 @@ msgstr "Poradie príkazov"
 msgid "Commit Information"
 msgstr "Informácie"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Informácie"
+msgstr ""
 
 #, fuzzy
 msgid "Commit Logs"
@@ -3563,9 +3575,8 @@ msgstr "Vykonané info"
 msgid "Commit info"
 msgstr "Vykonané info"
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Akcia voľby vzhľadu"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "Common Interface modul"
@@ -3621,6 +3632,9 @@ msgstr "Konfiguračný režim"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Možnosti nastavenia: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Konfigurácia ATSC"
@@ -4046,7 +4060,7 @@ msgstr "Pripojený transcoding. Obmedzenie - bez PiP!"
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Informácie správcu softvéru"
+msgstr "Informácie o činnosti správcu modulov"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4820,15 +4834,15 @@ msgstr "Detekcia ďalších prijímačov pred prechodom do pohot. režimu"
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "Test siete: "
+msgstr "Vyberte sieťový adaptér"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "Zistené tunery:"
+msgstr "Zoznam zariadení ukladania dát"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "Zistené tunery:"
+msgstr "Zmazané položky"
 
 #, fuzzy
 msgid "Device"
@@ -5124,7 +5138,7 @@ msgstr "Chcete vymazať všetky súbory o zlyhaní?"
 
 #, fuzzy
 msgid "Do you want to delete this log file?"
-msgstr "Naozaj chcete zmazať %s?"
+msgstr "Chcete vymazať všetky súbory o zlyhaní?"
 
 #, python-format
 msgid ""
@@ -5232,9 +5246,8 @@ msgstr[0] "Hotovo - Nainštalovaný, aktualizovaný alebo odstránený %d balí�
 msgstr[1] "Hotovo - Nainštalové, aktualizované alebo odstránené %d balíčky (%s)"
 msgstr[2] "Hotovo - Nainštalovaných, aktualizovaných alebo odstránených %d balíčkov (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS downmix"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Stiahnúť doplnky"
@@ -5661,7 +5674,7 @@ msgstr "predvolené"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Informácie správcu softvéru"
+msgstr "Informácie"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6095,7 +6108,7 @@ msgstr "Korekcia chybovosti (FEC):"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Verzia Enigmy: "
+msgstr "Inverzia"
 
 msgid "FHD"
 msgstr "FHD"
@@ -6103,9 +6116,8 @@ msgstr "FHD"
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "Procesor: "
+msgstr ""
 
 msgid "FTA"
 msgstr "Nekódované"
@@ -6279,6 +6291,9 @@ msgstr "Nájsť práve prehrávanú stanicu"
 msgid "Fine movement"
 msgstr "Jemný pohyb"
 
+msgid "Finetune"
+msgstr "Jemné nastavenie"
+
 msgid "Finished"
 msgstr "Ukončené"
 
@@ -6378,9 +6393,8 @@ msgstr "Francúzsko"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "Nahrať image"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6444,7 +6458,13 @@ msgstr "Konfigurácia zoznamu filmov"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6744,6 +6764,9 @@ msgstr "Podpora HDR10"
 msgid "HELP"
 msgstr "POMOC"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6791,7 +6814,7 @@ msgstr "Hardvér: "
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "Informácie"
+msgstr "Informácie správcu softvéru"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -6811,8 +6834,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Pridržať obraz"
+msgid "Help Screen Information"
+msgstr "Informácie"
 
 msgid "Helps setting up your antenna"
 msgstr "Pomáha nastaviť Vašu parabolu"
@@ -7027,7 +7050,7 @@ msgstr "Cesta ISO"
 
 #, fuzzy
 msgid "ISP"
-msgstr "I"
+msgstr "INS"
 
 msgid "Iceland"
 msgstr "Island"
@@ -7035,7 +7058,7 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikony"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7518,7 +7541,7 @@ msgstr "Keňa"
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "Verzia jadra: "
+msgstr "Zmazať súbor"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7645,12 +7668,6 @@ msgid "LED display configuration"
 msgstr "Konfigurácia zoznamu filmov"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7878,7 +7895,7 @@ msgstr "Umiestnenie okamžitých záznamov"
 
 #, fuzzy
 msgid "Location information"
-msgstr "Informácie správcu softvéru"
+msgstr "Informácie"
 
 msgid "Lock ratio"
 msgstr "Uzamknúť pomer strán"
@@ -7921,9 +7938,6 @@ msgstr "<Umiestnenie poslednej časovej nahrávky>"
 
 msgid "Long filenames"
 msgstr "Dlhé názvy súborov"
-
-msgid "Long key press"
-msgstr "Dlhé stlačenie tlačidla"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8159,7 +8173,7 @@ msgstr "Informácie"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "Informácie"
+msgstr "Max. počet pozícií v pamäti"
 
 msgid "Memory index"
 msgstr "Index pamäťe"
@@ -8255,6 +8269,9 @@ msgstr "Režimy"
 
 msgid "Modulation"
 msgstr "Modulácia"
+
+msgid "Modulator"
+msgstr "Modulátor"
 
 msgid "Moldova (Republic of)"
 msgstr "Moldavsko"
@@ -8604,7 +8621,7 @@ msgstr "Namíbia"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8805,7 +8822,7 @@ msgstr "Nie je dostupné sieťové pripojenie."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Test siete: "
+msgstr "Žiadne služby/poskytovatelia nie sú zvolené"
 
 msgid "No networks found"
 msgstr "Nenájdená žiadna sieť"
@@ -9194,9 +9211,8 @@ msgstr "Rozšírenia"
 msgid "OpenVision Information"
 msgstr "Informácie"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Informácie"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9207,15 +9223,13 @@ msgstr "pôvodný jazyk"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Rozšírenia"
+msgstr "Režim prenosu"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Verzia Python: "
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Verzia Python: "
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr "LED stav v režime hlbokého spánku"
@@ -9247,7 +9261,7 @@ msgstr "Iné"
 msgid "Other Subtitles & lang"
 msgstr "Ďalšie titulky a jazyk"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9799,6 +9813,10 @@ msgstr "Prosím čakajte... Načítava sa zoznam..."
 msgid "Plugin Browser"
 msgstr "Prehliadač modulov"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Prehliadač modulov"
+
 msgid "Plugin browser"
 msgstr "Prehliadač modulov"
 
@@ -9807,10 +9825,6 @@ msgstr "Informácie o činnosti správcu modulov"
 
 msgid "Plugin manager help"
 msgstr "Pomocník správcu modulov"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Prehliadač modulov"
 
 msgid "Plugins"
 msgstr "Doplnky"
@@ -9998,6 +10012,10 @@ msgstr "Stlačte 'OK' pre odstránenie položky alebo 'CH+/-' pre prepnutie do z
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Stlačte 'OK' pre odstránenie položky alebo < > pre zmenu poradia, alebo 'CH+/-' pre prepnutie do zoznamu funkcií."
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Stlačte OK pre prepnutie výberu."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "Stlačením INFO na DO si zobrazíte ďalšie informácie."
 
@@ -10095,14 +10113,14 @@ msgstr "Priorita"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "Model: "
+msgstr "Tónový režim"
 
 msgid "Process"
 msgstr "Procesy"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "Informácie"
+msgstr "Informácie správcu softvéru"
 
 msgid "Progress"
 msgstr "Priebeh"
@@ -10174,7 +10192,7 @@ msgstr "Poskytovatelia"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Auto DiSEqC"
+msgstr "nie je zvolený CAId"
 
 msgid "Public IP"
 msgstr ""
@@ -10232,9 +10250,8 @@ msgstr "Dánsko"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Poradie príkazov"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10248,9 +10265,9 @@ msgstr "Premenovať"
 msgid "RC type"
 msgstr "typ"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "typ"
+msgstr ""
 
 msgid "REC"
 msgstr "REC"
@@ -10264,6 +10281,10 @@ msgstr "Tiež v pohotovostnom režime"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "VF výstup"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10358,17 +10379,15 @@ msgstr "Jas"
 msgid "Recall to previous service"
 msgstr "Návrat na predchádzajúcu stanicu"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "Koreňový adresár"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "Informácie"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Informácie"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10712,7 +10731,7 @@ msgstr "Užívateľské ID"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "Užívateľské ID"
+msgstr "Premenovať"
 
 msgid "Reserved"
 msgstr "Rezervované"
@@ -10989,10 +11008,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Nastavenie motora"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "JEDNOVRSTVOVÉ DVD"
@@ -12048,6 +12063,10 @@ msgstr "Konzolový skript"
 msgid "Shift"
 msgstr "Shift"
 
+#, fuzzy, python-format
+msgid "Shift: %s"
+msgstr "Shift"
+
 msgid "Short filenames"
 msgstr "Krátke názvy súborov"
 
@@ -12140,7 +12159,7 @@ msgstr "Zobraziť stav WLAN"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr "Chrániť prehliadač modulov"
 
 msgid "Show alternatives"
 msgstr "Zobraziť alternatívy"
@@ -12204,7 +12223,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr "Chrániť prehliadač modulov"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12248,11 +12267,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr "Chrániť prehliadač modulov"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr ""
 
 msgid "Show help"
 msgstr "Zobraziť nápovedu"
@@ -12386,7 +12404,7 @@ msgstr "Zobraziť balíčky dostupnej aktualizácie"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr "Zobraziť čísla menu alebo doplnkov"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12490,7 +12508,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Informácie správcu softvéru"
+msgstr "Zobraziť informácie o transpondéri"
 
 msgid "Show transponder info"
 msgstr "Zobraziť informácie o transpondéri"
@@ -12511,7 +12529,7 @@ msgstr "Zobraziť podčiarknuté znaky v názvoch súborov"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+msgstr "Zobraziť čísla menu alebo doplnkov"
 
 msgid "Show vertical timelines"
 msgstr "Zobraziť zvislé časové osi"
@@ -12844,6 +12862,12 @@ msgstr "Triediť podľa času"
 msgid "Sorting of playlists"
 msgstr "Usporiadanie playlistov"
 
+msgid "Sound"
+msgstr "Zvuk"
+
+msgid "Sound carrier"
+msgstr "Nosná frekvencia zvuku"
+
 msgid "Source request"
 msgstr "Požiadavka zdroja"
 
@@ -13056,7 +13080,7 @@ msgstr "Po štarte prepnúť do pohotovostného režimu"
 
 #, fuzzy
 msgid "State"
-msgstr "Dátový tok:"
+msgstr "Stav prehľadávania"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13185,11 +13209,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "Nastavenie siete"
+msgstr "Informácie správcu softvéru"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "Nastavenie siete"
+msgstr "Informácie správcu softvéru"
 
 msgid "Store at index"
 msgstr "Uložiť na indexe"
@@ -13433,9 +13457,8 @@ msgstr "Systém a Modulácia"
 msgid "System Information"
 msgstr "Informácie"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Prepísať konfiguračné súbory?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13604,6 +13627,9 @@ msgstr "Testovací režim"
 msgid "Test DiSEqC settings"
 msgstr "Test DiSEqC nastavení"
 
+msgid "Test mode"
+msgstr "Testovací režim"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Test sieťovej konfigurácie prijímača.\n"
 
@@ -13650,9 +13676,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr "Do konca relácie ostáva %d min."
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Informácie správcu softvéru"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -13728,9 +13754,6 @@ msgid ""
 msgstr ""
 "Rozšírenie sprievodca sieťou nie je nainštalované.\n"
 "Nainštalujte si ho."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13837,14 +13860,6 @@ msgstr "Užívateľské rozhranie prijímača sa kvôli výberu vzhľadu teraz r
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Užívateľské rozhranie prijímača sa reštartuje..."
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"Užívateľské rozhranie vášho prijímača sa reštartuje\n"
-"kvôli chybe v mytest.py"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14307,9 +14322,8 @@ msgstr "Umiestnenie časového posunu"
 msgid "Timeshift not possible!"
 msgstr "Časový posun nie je možný!"
 
-#, fuzzy
 msgid "Timezone"
-msgstr "Časová zóna"
+msgstr "Časové pásmo"
 
 msgid "Timor-Leste"
 msgstr "Timor - Východný"
@@ -14404,6 +14418,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Celkovo streamujúcich  klientov: %d (%s)"
@@ -14415,9 +14432,8 @@ msgstr "Vnútorná flash pamäť"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "Zapnúť"
+msgstr ""
 
 msgid "Track"
 msgstr "Stopa"
@@ -14438,7 +14454,7 @@ msgstr "Informácie"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "Informácie správcu softvéru"
+msgstr "Preklad"
 
 msgid "Translation:"
 msgstr "Preklad:"
@@ -14524,7 +14540,7 @@ msgstr "Informácie"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Informácie"
+msgstr "Konfigurácia tunera"
 
 msgid "Tuner is not supported"
 msgstr "Tuner nie je podporovaný"
@@ -14868,9 +14884,8 @@ msgstr "Použiť FastScan číslovanie kanálov"
 msgid "Use frequency or channel"
 msgstr "Použiť frekvenciu alebo kanál"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Informácie správcu softvéru"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -14943,9 +14958,8 @@ msgstr "Používanie koša v zozname filmov"
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "Nahrať image"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "Typ vyhľadávania staníc"
@@ -15040,7 +15054,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15064,7 +15078,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15260,11 +15274,11 @@ msgstr "Z"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Umiestnenie"
+msgstr "Pripojenie WLAN"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Informácie správcu softvéru"
+msgstr "Pripojenie WLAN"
 
 msgid "WEP"
 msgstr "WEP"

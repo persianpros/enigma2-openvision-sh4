@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2020-12-05 15:11+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -913,6 +913,14 @@ msgid "%d B"
 msgstr "%d B"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d GB"
 
@@ -1684,7 +1692,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Grafikus EPG egy adott lista összes csatornájához"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2817,9 +2825,8 @@ msgstr "Kék kiemelése"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "Betöltési idő"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2868,9 +2875,6 @@ msgstr ""
 
 msgid "Brazil"
 msgstr "Brazília"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "Fényerő"
@@ -2937,9 +2941,8 @@ msgstr "Alapértelmezetten, a Jel/Zaj viszony (SNR) decibelben jeleník meg (ha 
 msgid "Bypass HDMI EDID checking"
 msgstr "HDMI EDID ellenőrzés kihagyása"
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "Gyökérmappa"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -2997,6 +3000,10 @@ msgstr ""
 msgid "CPU"
 msgstr "Processzor: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3006,6 +3013,10 @@ msgstr "Dánia"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Frissítés"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3032,6 +3043,9 @@ msgid "Calculate all positions"
 msgstr "Minden pozíció kiszámítása"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3402,9 +3416,8 @@ msgstr "Balraforgó"
 msgid "Circular right"
 msgstr "Jobbraforgó"
 
-#, fuzzy
 msgid "City"
-msgstr "Kapacitás: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3538,9 +3551,8 @@ msgstr "Parancs sorrend"
 msgid "Commit Information"
 msgstr "Információk"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Információk"
+msgstr ""
 
 #, fuzzy
 msgid "Commit Logs"
@@ -3549,9 +3561,8 @@ msgstr "Kötelező információk"
 msgid "Commit info"
 msgstr "Kötelező információk"
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Kinézet választás műveletek"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "CI modulfogadó"
@@ -3607,6 +3618,9 @@ msgstr "Konfigurációs mód"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Konfigurációs mód: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "DVB-ATSC konfigurálása"
@@ -4032,7 +4046,7 @@ msgstr "Csatlakoztatott transzkódolás limit - nincs kép a képben!"
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Szoftverkezeló információ"
+msgstr "Bővítménykezelő - végrehajtási információk"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4804,15 +4818,15 @@ msgstr "Következő vevőkészülékek azonosítása készenlét előtt"
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "Hálózati teszt: "
+msgstr "Válasszon hálózati adaptert"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "Csatlakoztatott tunerek:"
+msgstr "Tárolóeszközök listája"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "Csatlakoztatott tunerek:"
+msgstr "Kuka"
 
 #, fuzzy
 msgid "Device"
@@ -5108,7 +5122,7 @@ msgstr "Szeretne eltávolítani minden crash logfile-t?"
 
 #, fuzzy
 msgid "Do you want to delete this log file?"
-msgstr "Biztos benne, hogy törölni szeretné ezt a tételt: %s?"
+msgstr "Szeretne eltávolítani minden crash logfile-t?"
 
 #, python-format
 msgid ""
@@ -5213,9 +5227,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "%d szoftvercsomag telepítése, frissítése vagy eltávolítása elkészült (%s)"
 msgstr[1] "%d szoftvercsomag telepítése, frissítése vagy eltávolítása elkészült (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS lekeverése"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Bővítmények letöltése"
@@ -5642,7 +5655,7 @@ msgstr "alapértelmezett"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Szoftverkezeló információ"
+msgstr "Információk"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6072,7 +6085,7 @@ msgstr "FEC:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Kezelőfelület verzió: "
+msgstr "Invertálás"
 
 msgid "FHD"
 msgstr "FHD"
@@ -6080,9 +6093,8 @@ msgstr "FHD"
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "Processzor: "
+msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -6256,6 +6268,9 @@ msgstr "Éppen nézett csatorna megkeresése"
 msgid "Fine movement"
 msgstr "Finom mozgatás"
 
+msgid "Finetune"
+msgstr "Finomhangolás"
+
 msgid "Finished"
 msgstr "Kész"
 
@@ -6355,9 +6370,8 @@ msgstr "Franciaország"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "Flash Image"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6421,7 +6435,13 @@ msgstr "Filmlista beállítása"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6721,6 +6741,9 @@ msgstr "HDR10 támogatás"
 msgid "HELP"
 msgstr "SEGÍTSÉG"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6768,7 +6791,7 @@ msgstr "Hardver: "
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "Információk"
+msgstr "Szoftverkezeló információ"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -6788,8 +6811,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Képernyő megtartás"
+msgid "Help Screen Information"
+msgstr "Információk"
 
 msgid "Helps setting up your antenna"
 msgstr "Segít beállítani az antennát"
@@ -6905,9 +6928,8 @@ msgstr "Még nincs fogadott adat"
 msgid "Host receiver streaming port"
 msgstr "A készülék most újraindul"
 
-#, fuzzy
 msgid "Hostname"
-msgstr "Átnevezés"
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr "HotKey beállítás"
@@ -7004,7 +7026,7 @@ msgstr "ISO útvonala"
 
 #, fuzzy
 msgid "ISP"
-msgstr "I"
+msgstr "INS"
 
 msgid "Iceland"
 msgstr "Izland"
@@ -7012,7 +7034,7 @@ msgstr "Izland"
 msgid "Icons"
 msgstr "Ikonok"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7494,7 +7516,7 @@ msgstr "Kenya"
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "Kernel verzió: "
+msgstr "Fájl törlése"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7621,12 +7643,6 @@ msgid "LED display configuration"
 msgstr "Filmlista beállítása"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7853,7 +7869,7 @@ msgstr "Azonnali felvételek helye"
 
 #, fuzzy
 msgid "Location information"
-msgstr "Szoftverkezeló információ"
+msgstr "Információk"
 
 msgid "Lock ratio"
 msgstr "Hangolási arány"
@@ -7896,9 +7912,6 @@ msgstr "<Időzítés utolsó pozíciója>"
 
 msgid "Long filenames"
 msgstr "Hosszú fájlnevek"
-
-msgid "Long key press"
-msgstr "Hosszú gombnyomás"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8134,7 +8147,7 @@ msgstr "Információk"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "Információk"
+msgstr "Maximális memória pozíció"
 
 msgid "Memory index"
 msgstr "Memóriaindex"
@@ -8230,6 +8243,9 @@ msgstr "Módok"
 
 msgid "Modulation"
 msgstr "Moduláció"
+
+msgid "Modulator"
+msgstr "Modulátor"
 
 msgid "Moldova (Republic of)"
 msgstr "Moldova"
@@ -8579,7 +8595,7 @@ msgstr "Namíbia"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8780,7 +8796,7 @@ msgstr "Nincs elérhető hálózati kapcsolat."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Hálózati teszt: "
+msgstr "Nincs szolgáltató kiválasztva"
 
 msgid "No networks found"
 msgstr "Nem észlelhető hálózat"
@@ -9171,9 +9187,8 @@ msgstr "Bővítmények"
 msgid "OpenVision Information"
 msgstr "Információk"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Információk"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9184,15 +9199,13 @@ msgstr "eredeti nyelv"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Bővítmények"
+msgstr "Adási mód"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Python verzió: "
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Python verzió: "
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr "A működési LED állapota mély készenlét módban"
@@ -9224,7 +9237,7 @@ msgstr "Egyéb"
 msgid "Other Subtitles & lang"
 msgstr "Egyéb felirat és nyelv"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9776,6 +9789,10 @@ msgstr "Kérem, várjon... Lista betöltése..."
 msgid "Plugin Browser"
 msgstr "Telepített bővítmények"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Telepített bővítmények"
+
 msgid "Plugin browser"
 msgstr "Telepített bővítmények"
 
@@ -9784,10 +9801,6 @@ msgstr "Bővítménykezelő - végrehajtási információk"
 
 msgid "Plugin manager help"
 msgstr "Bővítménykezelő - súgó"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Telepített bővítmények"
 
 msgid "Plugins"
 msgstr "Bővítmények"
@@ -9975,6 +9988,10 @@ msgstr "Nyomja meg az 'OK'-t a tétel eltávolításához vagy a 'CH+/-'-t a leh
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Nyomja meg az 'OK'-t a tétel eltávolításához vagy a '< >'-t a sorrend megváltoztatásához vagy a 'CH+/-'-t a lehetőségek listázásához."
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Nyomja le az OK gombot a kijelölés változtatásához."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "Nyomja le az INFO gombot a távírányítón a részletekért."
 
@@ -10072,14 +10089,14 @@ msgstr "Prioritás"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "Modell: "
+msgstr "Tone mód"
 
 msgid "Process"
 msgstr "Futtatás"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "Információk"
+msgstr "Szoftverkezeló információ"
 
 msgid "Progress"
 msgstr "Folyamat"
@@ -10151,7 +10168,7 @@ msgstr "Szolgáltatók"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Automatikus DiSEqC"
+msgstr "nincs kijelölt CAId"
 
 msgid "Public IP"
 msgstr ""
@@ -10209,9 +10226,8 @@ msgstr "Dánia"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Parancs sorrend"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10225,9 +10241,9 @@ msgstr "Átnevezés"
 msgid "RC type"
 msgstr "típus"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "típus"
+msgstr ""
 
 msgid "REC"
 msgstr "Felvétel"
@@ -10241,6 +10257,10 @@ msgstr "Készenlét alatt is"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF kimenet"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10335,17 +10355,15 @@ msgstr "Fényerő"
 msgid "Recall to previous service"
 msgstr "Előző csatornára váltás"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "Gyökérmappa"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "Információk"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Információk"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10689,7 +10707,7 @@ msgstr "Felhasználói azonosító"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "Felhasználói azonosító"
+msgstr "Átnevezés"
 
 msgid "Reserved"
 msgstr "Fenntartva"
@@ -10966,10 +10984,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Forgatómotor beállítás"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "Egyrétegű DVD"
@@ -12022,6 +12036,10 @@ msgstr "Shellscript (parancssor)"
 msgid "Shift"
 msgstr "Shift"
 
+#, fuzzy, python-format
+msgid "Shift: %s"
+msgstr "Shift"
+
 msgid "Short filenames"
 msgstr "Rövid fájlnevek"
 
@@ -12114,7 +12132,7 @@ msgstr "A vezeték nélküli hálózat állapotának megjelenítése"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr "Bővítménykezelő védelme"
 
 msgid "Show alternatives"
 msgstr "Alternatívák megjelenítése"
@@ -12178,7 +12196,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr "Bővítménykezelő védelme"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12222,11 +12240,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr "Bővítménykezelő védelme"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr ""
 
 msgid "Show help"
 msgstr "Súgó megjelenítése"
@@ -12360,7 +12377,7 @@ msgstr "Frissítendő csomagok mutatása"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr "Menü vagy bővítmény számának mutatása"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12464,7 +12481,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Szoftverkezeló információ"
+msgstr "Transzponder infó megjelenítése"
 
 msgid "Show transponder info"
 msgstr "Transzponder infó megjelenítése"
@@ -12485,7 +12502,7 @@ msgstr "Aláhúzott karakterek mutatása a fájlnevekben"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Médialejátszó megjelenítése a főmenüben"
+msgstr "Menü vagy bővítmény számának mutatása"
 
 msgid "Show vertical timelines"
 msgstr "Függőleges idővonalak megjelenítése"
@@ -12818,6 +12835,12 @@ msgstr "Rendez: Idő"
 msgid "Sorting of playlists"
 msgstr "Lejátszási listák rendezése"
 
+msgid "Sound"
+msgstr "Hang"
+
+msgid "Sound carrier"
+msgstr "Hangvivő"
+
 msgid "Source request"
 msgstr "Forrás-kérés"
 
@@ -13030,7 +13053,7 @@ msgstr "Indításkor készenléti módba"
 
 #, fuzzy
 msgid "State"
-msgstr "Bitráta:"
+msgstr "Keresési állapot"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13159,11 +13182,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "Hálózati beállítások"
+msgstr "Szoftverkezeló információ"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "Hálózati beállítások"
+msgstr "Szoftverkezeló információ"
 
 msgid "Store at index"
 msgstr "Mentés ide"
@@ -13407,9 +13430,8 @@ msgstr "Rendszer & moduláció"
 msgid "System Information"
 msgstr "Információk"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Konfigurációs fájlok felülírása?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13581,6 +13603,9 @@ msgstr "Teszt mód"
 msgid "Test DiSEqC settings"
 msgstr "DiSEqC beállítások tesztelése"
 
+msgid "Test mode"
+msgstr "Teszt mód"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "A készülék hálózati konfigurációjának ellenőrzése.\n"
 
@@ -13627,9 +13652,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr "%d perc van hátra az esemény végéig."
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Szoftverkezeló információ"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -13705,9 +13730,6 @@ msgid ""
 msgstr ""
 "A NetworkWizard bővítmémy nincs feltelepítve!\n"
 "Kérem, telepítse fel."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13814,14 +13836,6 @@ msgstr "A kezelőfelület most újraindul a kiválasztott kinézet alkalmazásá
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "A kezelőfelület újraindítása folyamatban van"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"A kezelőfelület újraindítása folyamatban van\n"
-"a mytest.py fájlban lévő hiba miatt"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14281,7 +14295,6 @@ msgstr "Időcsúsztatás tárhelye"
 msgid "Timeshift not possible!"
 msgstr "Időcsúsztatás nem lehetséges!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "Időzóna"
 
@@ -14378,6 +14391,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Streamelő kliensek száma: %d (%s)"
@@ -14389,9 +14405,8 @@ msgstr "Belső Flash"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "Engedélyezve"
+msgstr ""
 
 msgid "Track"
 msgstr "Sáv"
@@ -14412,7 +14427,7 @@ msgstr "Információk"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "Szoftverkezeló információ"
+msgstr "Fordítás"
 
 msgid "Translation:"
 msgstr "Fordítás:"
@@ -14498,7 +14513,7 @@ msgstr "Információk"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Információk"
+msgstr "Tuner beállítás"
 
 msgid "Tuner is not supported"
 msgstr "Tuner nem támogatott"
@@ -14841,9 +14856,8 @@ msgstr "Szolgáltató által megadott csatorna számozás"
 msgid "Use frequency or channel"
 msgstr "Frekvencia vagy csatorna használata"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Szoftverkezeló információ"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -14916,9 +14930,8 @@ msgstr "Kuka használata a filmlistában"
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "Flash Image"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "Csatornakeresés típusa"
@@ -15013,7 +15026,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15037,7 +15050,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15234,11 +15247,11 @@ msgstr "Ny"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Tárhely"
+msgstr "Vezeték nélküli kapcsolat"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Szoftverkezeló információ"
+msgstr "Vezeték nélküli kapcsolat"
 
 msgid "WEP"
 msgstr "WEP"

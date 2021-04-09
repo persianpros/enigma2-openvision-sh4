@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -933,6 +933,14 @@ msgid "%d B"
 msgstr ""
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr ""
 
@@ -1745,7 +1753,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Myndrænt EPG fyrir allar rásir á ákveðnum rásavendi"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #
@@ -1916,9 +1924,9 @@ msgstr "Aðgangspunktur:"
 msgid "Access to geolocation information requires an internet connection."
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "Access to the %s commit logs requires an internet connection."
-msgstr "Uppsetning á þráðlausu neti"
+msgstr ""
 
 #
 msgid "Accesspoint:"
@@ -2887,10 +2895,8 @@ msgstr ""
 msgid "Benchmark Information"
 msgstr "Upplýsingar"
 
-#
-#, fuzzy
 msgid "Benchmark for"
-msgstr "Upplýsingar"
+msgstr ""
 
 #, fuzzy
 msgid "Benchmark information"
@@ -2972,10 +2978,8 @@ msgstr "grænn"
 msgid "Booster Control"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Boot ID"
-msgstr "Raða Tíma"
+msgstr ""
 
 #
 #, fuzzy
@@ -3028,9 +3032,6 @@ msgid "Brand/Meta"
 msgstr ""
 
 msgid "Brazil"
-msgstr ""
-
-msgid "Brief help information for buttons in your current context."
 msgstr ""
 
 msgid "Brightness"
@@ -3159,6 +3160,10 @@ msgstr ""
 msgid "CPU"
 msgstr ""
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3167,6 +3172,11 @@ msgstr ""
 
 msgid "CPU brand"
 msgstr ""
+
+#
+#, fuzzy
+msgid "CPU rating"
+msgstr "Uppfæri"
 
 msgid "CVBS"
 msgstr "CVBS"
@@ -3194,6 +3204,9 @@ msgid "Calculate all positions"
 msgstr ""
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3549,9 +3562,8 @@ msgstr "Hringpólun vinstri"
 msgid "Circular right"
 msgstr "Hringpólun hægri"
 
-#, fuzzy
 msgid "City"
-msgstr "Stærð:"
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3693,10 +3705,8 @@ msgstr "Röðun skipana"
 msgid "Commit Information"
 msgstr "Upplýsingar"
 
-#
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Upplýsingar"
+msgstr ""
 
 msgid "Commit Logs"
 msgstr ""
@@ -3704,9 +3714,8 @@ msgstr ""
 msgid "Commit info"
 msgstr ""
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Veldu stað fyrir afrit"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "Afruglara tengi"
@@ -3768,6 +3777,9 @@ msgstr "Stillinga hamur"
 #, fuzzy, python-format
 msgid "Configuration mode: %s"
 msgstr "Stillinga hamur"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 #, fuzzy
 msgid "Configure ATSC"
@@ -4210,7 +4222,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Íforritstjóra aðgerða upplýsingar"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -5050,14 +5062,14 @@ msgstr "Upplýsingar um íforrit:"
 msgid "Detect next boxes before standby"
 msgstr ""
 
-#, fuzzy
-msgid "Detected network servers"
-msgstr "Prufa nettengingu:"
-
 #
 #, fuzzy
+msgid "Detected network servers"
+msgstr "Veldu Netkort"
+
+#, fuzzy
 msgid "Detected storage devices"
-msgstr "Fann NIM:"
+msgstr "Listi geymslu tækja"
 
 #
 #, fuzzy
@@ -5994,21 +6006,20 @@ msgstr "Enska"
 #
 #, fuzzy
 msgid "Enigma2 (re)starts"
-msgstr "Ný útgáfa:"
+msgstr "Biðstaða / Endurræsing"
 
-#
-#, fuzzy
 msgid "Enigma2 debug level"
-msgstr "Venjulegt"
+msgstr ""
 
 #
 #, fuzzy
 msgid "Enigma2 default"
 msgstr "Venjulegt"
 
+#
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Upplýsingar"
 
 #
 #, fuzzy
@@ -6470,7 +6481,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Ný útgáfa:"
+msgstr "Umbreyting"
 
 msgid "FHD"
 msgstr ""
@@ -6664,6 +6675,10 @@ msgid "Fine movement"
 msgstr ""
 
 #
+msgid "Finetune"
+msgstr "Fínstilla"
+
+#
 msgid "Finished"
 msgstr "Búið"
 
@@ -6776,10 +6791,8 @@ msgstr "Hætta við"
 msgid "Free"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Free flash"
-msgstr "Forritun"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6853,16 +6866,20 @@ msgstr "Handvirk stilling"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Front processor version"
-msgstr "Ný útgáfa:"
+msgstr ""
 
 #
 #, fuzzy
@@ -7185,6 +7202,9 @@ msgstr "ekki stutt"
 msgid "HELP"
 msgstr ""
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -7237,10 +7257,9 @@ msgstr ""
 msgid "Hardware"
 msgstr ""
 
-#
 #, fuzzy
 msgid "Hardware information"
-msgstr "Upplýsingar"
+msgstr "Upplýsingar hugbúnaðar umsýslu"
 
 #
 #, fuzzy
@@ -7259,8 +7278,10 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-msgid "Help Screen"
-msgstr ""
+#
+#, fuzzy
+msgid "Help Screen Information"
+msgstr "Upplýsingar"
 
 msgid "Helps setting up your antenna"
 msgstr ""
@@ -7381,10 +7402,8 @@ msgstr ""
 msgid "Host receiver streaming port"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Hostname"
-msgstr "Endurnefna"
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr ""
@@ -7502,7 +7521,7 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -8039,7 +8058,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Kernel file"
-msgstr "Ný útgáfa:"
+msgstr "eyða skrá"
 
 #
 #, fuzzy
@@ -8184,12 +8203,6 @@ msgid "LED display configuration"
 msgstr "Handvirk stilling"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -8457,9 +8470,10 @@ msgstr "Staðsetning"
 msgid "Location for instant recordings"
 msgstr "Staðsetning fyrir skyndi upptökur"
 
+#
 #, fuzzy
 msgid "Location information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Upplýsingar"
 
 msgid "Lock ratio"
 msgstr ""
@@ -8504,11 +8518,6 @@ msgstr "<Síðasti staður tímastillinga>"
 
 msgid "Long filenames"
 msgstr "Löng skráarnöfn"
-
-#
-#, fuzzy
-msgid "Long key press"
-msgstr "Ýtt lengi á hnapp"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8777,10 +8786,8 @@ msgstr ""
 msgid "Memory Information"
 msgstr "Upplýsingar"
 
-#
-#, fuzzy
 msgid "Memory Information Actions"
-msgstr "Upplýsingar"
+msgstr ""
 
 msgid "Memory index"
 msgstr ""
@@ -8897,6 +8904,10 @@ msgstr "Hamur"
 #
 msgid "Modulation"
 msgstr "Mótun"
+
+#
+msgid "Modulator"
+msgstr "Mótari"
 
 msgid "Moldova (Republic of)"
 msgstr ""
@@ -9305,7 +9316,7 @@ msgstr ""
 msgid "Nauru"
 msgstr ""
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -9537,9 +9548,10 @@ msgstr "Ekkert netkerfi fannst"
 msgid "No network connection available."
 msgstr "Engin nettenging virk."
 
+#
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Prufa nettengingu:"
+msgstr "engar rásir/sendar valdir"
 
 #
 msgid "No networks found"
@@ -9986,33 +9998,26 @@ msgstr "Viðbætur"
 msgid "OpenVision Information"
 msgstr "Upplýsingar"
 
-#
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Upplýsingar"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
 
-#
 #, fuzzy
 msgid "OpenVision language"
-msgstr "Viðbætur"
+msgstr "Viðbóta umsýsla"
 
 #
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Viðbætur"
+msgstr "Sendi stilling"
 
-#
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Ný útgáfa:"
+msgstr ""
 
-#
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Ný útgáfa:"
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr ""
@@ -10044,7 +10049,7 @@ msgstr ""
 msgid "Other Subtitles & lang"
 msgstr ""
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -10691,6 +10696,10 @@ msgstr "Vinsamlega bíðið.. les inn lista..."
 msgid "Plugin Browser"
 msgstr ""
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Íforrita leit"
+
 msgid "Plugin browser"
 msgstr "Íforrita leit"
 
@@ -10699,10 +10708,6 @@ msgstr "Íforritstjóra aðgerða upplýsingar"
 
 msgid "Plugin manager help"
 msgstr "Íforritsstjóra hjálp"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Íforrita leit"
 
 msgid "Plugins"
 msgstr "Íforrit"
@@ -10906,6 +10911,11 @@ msgstr ""
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Ýttu á OK til að velja á milli."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "Ýttu á INFO á fjarstýringunni fyrir nánari upplýsingar."
 
@@ -11023,16 +11033,15 @@ msgstr "Forgangur"
 #
 #, fuzzy
 msgid "Proc model"
-msgstr "Gerð:"
+msgstr "Tón stilling"
 
 #
 msgid "Process"
 msgstr "Verk"
 
-#
 #, fuzzy
 msgid "Processor information"
-msgstr "Upplýsingar"
+msgstr "Upplýsingar hugbúnaðar umsýslu"
 
 msgid "Progress"
 msgstr ""
@@ -11106,9 +11115,10 @@ msgstr "Sendendur"
 msgid "Providers: "
 msgstr "Sendendur"
 
+#
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Sjálfvirkt"
+msgstr "ekkert CAId valið"
 
 msgid "Public IP"
 msgstr ""
@@ -11164,17 +11174,14 @@ msgstr ""
 msgid "RAM (Summary)"
 msgstr ""
 
-#
-#, fuzzy
 msgid "RAM benchmark"
-msgstr "Upplýsingar"
+msgstr ""
 
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Röðun skipana"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -11190,10 +11197,9 @@ msgstr "Endurnefna"
 msgid "RC type"
 msgstr "Prufa gerð"
 
-#
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "Prufa gerð"
+msgstr ""
 
 msgid "REC"
 msgstr ""
@@ -11206,6 +11212,11 @@ msgstr ""
 
 msgid "REC symbol in use"
 msgstr ""
+
+#
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "Loftnetsrás"
 
 #
 msgid "RGB"
@@ -11320,10 +11331,8 @@ msgstr ""
 msgid "Receiver Information"
 msgstr "Upplýsingar"
 
-#
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Upplýsingar"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11726,7 +11735,7 @@ msgstr "Stillt af notanda"
 #
 #, fuzzy
 msgid "Reseller name"
-msgstr "Stillt af notanda"
+msgstr "Endurnefna"
 
 msgid "Reserved"
 msgstr ""
@@ -11965,7 +11974,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Root file"
-msgstr "Raða Tíma"
+msgstr "eyða skrá"
 
 msgid "Rotor step position:"
 msgstr ""
@@ -12050,10 +12059,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Uppsetning mótors"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -13245,6 +13250,10 @@ msgstr ""
 msgid "Shift"
 msgstr ""
 
+#, python-format
+msgid "Shift: %s"
+msgstr ""
+
 msgid "Short filenames"
 msgstr "Stutt skráarnöfn"
 
@@ -13721,9 +13730,10 @@ msgstr ""
 msgid "Show time remaining/elapsed"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Show translation information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Sýna upplýsingar um sendi"
 
 #
 msgid "Show transponder info"
@@ -14145,6 +14155,15 @@ msgstr "Raða Tíma"
 msgid "Sorting of playlists"
 msgstr ""
 
+#
+msgid "Sound"
+msgstr "Hljóð"
+
+#
+#, fuzzy
+msgid "Sound carrier"
+msgstr "Hljóðburðarbylgja"
+
 msgid "Source request"
 msgstr ""
 
@@ -14375,9 +14394,10 @@ msgstr ""
 msgid "Startup to Standby"
 msgstr ""
 
+#
 #, fuzzy
 msgid "State"
-msgstr "Bitahraði:"
+msgstr "leitar staða"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -14528,15 +14548,13 @@ msgstr ""
 msgid "Storage"
 msgstr ""
 
-#
 #, fuzzy
 msgid "Storage Information"
-msgstr "Stilling nettengingar..."
+msgstr "Upplýsingar hugbúnaðar umsýslu"
 
-#
 #, fuzzy
 msgid "Storage information"
-msgstr "Stilling nettengingar..."
+msgstr "Upplýsingar hugbúnaðar umsýslu"
 
 msgid "Store at index"
 msgstr ""
@@ -14824,9 +14842,8 @@ msgstr ""
 msgid "System Information"
 msgstr "Upplýsingar"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Skrifa yfir stillinga skrár ?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -15005,6 +15022,10 @@ msgstr "Prufu hamur"
 msgid "Test DiSEqC settings"
 msgstr "Prufa DiSEqC stillingar"
 
+#
+msgid "Test mode"
+msgstr "Prufu hamur"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
 
@@ -15057,9 +15078,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr ""
 
 #, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -15137,9 +15158,6 @@ msgid ""
 msgstr ""
 "Netkerfis ráðgjafinn er ekki innsettur!\n"
 "Vinsamlega settu hann inn."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -15236,13 +15254,6 @@ msgstr ""
 #
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
-msgstr "Vinsamlega bíðið á meðan netkerfið er endurræst..."
-
-#
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
 msgstr "Vinsamlega bíðið á meðan netkerfið er endurræst..."
 
 #
@@ -15744,7 +15755,6 @@ msgid "Timeshift not possible!"
 msgstr "Tímabreyting ekki möguleg!"
 
 #
-#, fuzzy
 msgid "Timezone"
 msgstr "Tímabelti"
 
@@ -15852,6 +15862,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -15864,10 +15877,8 @@ msgstr "Innra Flash minni"
 msgid "Total memory"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Total swap"
-msgstr "Virkja"
+msgstr ""
 
 #
 msgid "Track"
@@ -15890,9 +15901,10 @@ msgstr "Þýðing"
 msgid "Translation Information"
 msgstr "Upplýsingar"
 
+#
 #, fuzzy
 msgid "Translation information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "Þýðing"
 
 #
 msgid "Translation:"
@@ -15995,7 +16007,7 @@ msgstr "Upplýsingar"
 #
 #, fuzzy
 msgid "Tuner information"
-msgstr "Upplýsingar"
+msgstr "Stilling móttakara"
 
 msgid "Tuner is not supported"
 msgstr ""
@@ -16374,9 +16386,8 @@ msgstr ""
 msgid "Use frequency or channel"
 msgstr ""
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -16464,10 +16475,8 @@ msgstr "Til baka til mynda lista"
 msgid "Used"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Used flash"
-msgstr "Forritun"
+msgstr ""
 
 #
 msgid "Used service scan type"
@@ -16574,7 +16583,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -16598,7 +16607,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 #, fuzzy
@@ -16844,14 +16853,13 @@ msgstr ""
 msgid "W"
 msgstr "W"
 
-#
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Staðsetning"
+msgstr "WLAN nettenging"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Upplýsingar hugbúnaðar umsýslu"
+msgstr "WLAN nettenging"
 
 #
 msgid "WEP"

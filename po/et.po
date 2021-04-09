@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -913,6 +913,14 @@ msgid "%d B"
 msgstr "%d B"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d GB"
 
@@ -1683,7 +1691,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Graafiline EPG kõigile kanalitele selles valikus"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, python-format
@@ -2830,9 +2838,8 @@ msgstr "Rohelise võimendus"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "Aja järgi"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2881,9 +2888,6 @@ msgstr ""
 
 msgid "Brazil"
 msgstr "Brasiilia"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "Heledus"
@@ -2950,9 +2954,8 @@ msgstr "Vaikimisi näidatakse SNR väärtust dB-s (kui tuuner seda toetab). See 
 msgid "Bypass HDMI EDID checking"
 msgstr "Möödu HDMI EDID kontrollist"
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "Juurkataloog"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -3010,6 +3013,10 @@ msgstr ""
 msgid "CPU"
 msgstr "CPU: "
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3019,6 +3026,10 @@ msgstr "Taani"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "Uuendan"
 
 msgid "CVBS"
 msgstr "Komposiit (CVBS)"
@@ -3045,6 +3056,9 @@ msgid "Calculate all positions"
 msgstr "Arvuta kõik positsioonid"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3402,9 +3416,8 @@ msgstr "Ringpolarisatsioon vasak"
 msgid "Circular right"
 msgstr "Ringpolarisatsioon parem"
 
-#, fuzzy
 msgid "City"
-msgstr "Maht: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3538,9 +3551,8 @@ msgstr "Käskude järjekord"
 msgid "Commit Information"
 msgstr "Info"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "Info"
+msgstr ""
 
 #, fuzzy
 msgid "Commit Logs"
@@ -3549,9 +3561,8 @@ msgstr "Kande info"
 msgid "Commit info"
 msgstr "Kande info"
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "Vali tegevus"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "CI liides"
@@ -3607,6 +3618,9 @@ msgstr "Häälestamine"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Häälestamine: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Seadista ATSC"
@@ -4035,7 +4049,7 @@ msgstr "Ühendatud transkoodingu piirang - PiP ei ole võimalik!"
 
 #, fuzzy
 msgid "Connection information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "Laienduste halduri tegevuse teave"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4818,15 +4832,15 @@ msgstr "Leia järgnevad seadmed enne ooteseisundit"
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "Võrgu test: "
+msgstr "Vali võrgukaart"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "Leitud tuunerid:"
+msgstr "Andmekandjate loetelu"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "Leitud tuunerid:"
+msgstr "Prügikast"
 
 #, fuzzy
 msgid "Device"
@@ -5125,7 +5139,7 @@ msgstr "Kas soovid eemaldada kõik kokkuvarisemise logifailid"
 
 #, fuzzy
 msgid "Do you want to delete this log file?"
-msgstr "Kas soovid kustutada %s?"
+msgstr "Kas soovid eemaldada kõik kokkuvarisemise logifailid"
 
 #, python-format
 msgid ""
@@ -5232,9 +5246,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Valmis - paigaldatud, täiendatud või eemaldatud %d pakett (%s)"
 msgstr[1] "Valmis - paigaldatud, täiendatud või eemaldatud %d paketti (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS > stereo"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Paigalda laiendusi"
@@ -5656,9 +5669,8 @@ msgstr "Inglise"
 msgid "Enigma2 (re)starts"
 msgstr "Enigma (taas)käivitamisi: %d\n"
 
-#, fuzzy
 msgid "Enigma2 debug level"
-msgstr "vaikimisi"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 default"
@@ -5666,7 +5678,7 @@ msgstr "vaikimisi"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "Info"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6101,7 +6113,7 @@ msgstr "FEC:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "Enigma versioon: "
+msgstr "Inversioon"
 
 msgid "FHD"
 msgstr ""
@@ -6109,9 +6121,8 @@ msgstr ""
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "CPU: "
+msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -6291,6 +6302,9 @@ msgstr "Leia äsja kasutatud teenus"
 msgid "Fine movement"
 msgstr "Täppisliigutamine"
 
+msgid "Finetune"
+msgstr "Peenhäälestus"
+
 msgid "Finished"
 msgstr "Lõppenud"
 
@@ -6391,9 +6405,8 @@ msgstr "Prantsusmaa"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "Paigalda süsteemitõmmis"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6457,7 +6470,13 @@ msgstr "Filmilisti seaded"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6761,6 +6780,9 @@ msgstr "HDR10 tugi"
 msgid "HELP"
 msgstr ""
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6808,7 +6830,7 @@ msgstr "Riistvara: "
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "Info"
+msgstr "Tarkvarahalduri informatsioon"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -6828,8 +6850,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Hoia pilti"
+msgid "Help Screen Information"
+msgstr "Info"
 
 msgid "Helps setting up your antenna"
 msgstr "Aitab antenni seadistada"
@@ -6944,9 +6966,8 @@ msgstr ""
 msgid "Host receiver streaming port"
 msgstr "Vastuvõtja taaskäivitub"
 
-#, fuzzy
 msgid "Hostname"
-msgstr "Muuda nimi"
+msgstr ""
 
 msgid "HotKey Setup"
 msgstr "Kiirnuppude seadistus"
@@ -7043,7 +7064,7 @@ msgstr "ISO kataloog"
 
 #, fuzzy
 msgid "ISP"
-msgstr "I"
+msgstr "INS"
 
 msgid "Iceland"
 msgstr "Island"
@@ -7051,7 +7072,7 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikoonid"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7533,7 +7554,7 @@ msgstr "Keenia"
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "Kernel: "
+msgstr "Kustuta fail"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7660,12 +7681,6 @@ msgid "LED display configuration"
 msgstr "Filmilisti seaded"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7891,7 +7906,7 @@ msgstr "Kohese salvestuse asukoht"
 
 #, fuzzy
 msgid "Location information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "Info"
 
 msgid "Lock ratio"
 msgstr "Lukusta pildisuhe"
@@ -7934,9 +7949,6 @@ msgstr "<Viimase taimeri asukoht>"
 
 msgid "Long filenames"
 msgstr "Pikad failinimed"
-
-msgid "Long key press"
-msgstr "Pikk nupuvajutus"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8173,7 +8185,7 @@ msgstr "Info"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "Info"
+msgstr "Max. mälu asendid"
 
 msgid "Memory index"
 msgstr "Mälu indeks"
@@ -8271,6 +8283,9 @@ msgstr "Režiim"
 
 msgid "Modulation"
 msgstr "Modulatsioon"
+
+msgid "Modulator"
+msgstr "Modulaator"
 
 msgid "Moldova (Republic of)"
 msgstr "Moldova"
@@ -8628,7 +8643,7 @@ msgstr "Namiibia"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8830,7 +8845,7 @@ msgstr "Võrgu ühendust pole saadaval."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "Võrgu test: "
+msgstr "Kanalit/levitajat pole valitud"
 
 msgid "No networks found"
 msgstr "Võrke ei leidnud"
@@ -9221,9 +9236,8 @@ msgstr "Laiendused"
 msgid "OpenVision Information"
 msgstr "Info"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "Info"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9234,15 +9248,13 @@ msgstr "algupärane keel"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "Laiendused"
+msgstr "Edastamise moodus"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "Pythoni versioon: "
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "Pythoni versioon: "
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr ""
@@ -9275,7 +9287,7 @@ msgstr "Miski muu"
 msgid "Other Subtitles & lang"
 msgstr "Subtiitrite seaded"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -9828,6 +9840,10 @@ msgstr "Oota. Sisu laetakse."
 msgid "Plugin Browser"
 msgstr "Pluginate sirvija"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "Pluginate sirvija"
+
 msgid "Plugin browser"
 msgstr "Pluginate sirvija"
 
@@ -9836,10 +9852,6 @@ msgstr "Laienduste halduri tegevuse teave"
 
 msgid "Plugin manager help"
 msgstr "Laienduste halduri abi"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "Pluginate sirvija"
 
 msgid "Plugins"
 msgstr "Pluginad"
@@ -10027,6 +10039,10 @@ msgstr ""
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr ""
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Valiku muutmiseks vajuta OK."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "Vajuta INFO nuppu puldil lisainfo saamiseks."
 
@@ -10126,14 +10142,14 @@ msgstr "Prioriteet"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "Tüüp: "
+msgstr "22KHz-toon"
 
 msgid "Process"
 msgstr "Toiming"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "Info"
+msgstr "Tarkvarahalduri informatsioon"
 
 msgid "Progress"
 msgstr "Edenemisriba"
@@ -10205,7 +10221,7 @@ msgstr "Levitajad"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "Auto Diseqc"
+msgstr "CAId-i pole valitud"
 
 msgid "Public IP"
 msgstr ""
@@ -10264,9 +10280,8 @@ msgstr "Taani"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "Käskude järjekord"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10280,9 +10295,9 @@ msgstr "Muuda nimi"
 msgid "RC type"
 msgstr "tüüp"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "tüüp"
+msgstr ""
 
 msgid "REC"
 msgstr "REC"
@@ -10296,6 +10311,10 @@ msgstr "Ka ooteseisundis"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "RF-väljund"
 
 msgid "RGB"
 msgstr "RGB"
@@ -10391,17 +10410,15 @@ msgstr "Heledus"
 msgid "Recall to previous service"
 msgstr "Tagasi eelmise teenuse juurde"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "Juurkataloog"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "Info"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "Info"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10747,7 +10764,7 @@ msgstr "Kasutaja režiim"
 
 #, fuzzy
 msgid "Reseller name"
-msgstr "Kasutaja režiim"
+msgstr "Muuda nimi"
 
 msgid "Reserved"
 msgstr "Varutud"
@@ -11026,10 +11043,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Positsioneeri seadistus"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "ÜHEKIHILINE DVD"
@@ -12099,6 +12112,10 @@ msgstr "Shellscript"
 msgid "Shift"
 msgstr ""
 
+#, python-format
+msgid "Shift: %s"
+msgstr ""
+
 msgid "Short filenames"
 msgstr "Lühikesed failinimed"
 
@@ -12192,7 +12209,7 @@ msgstr "Näita WiFi Olekut"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr "Kaitse pluginaid"
 
 msgid "Show alternatives"
 msgstr "Näita asenduskanaleid"
@@ -12256,7 +12273,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr "Kaitse pluginaid"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12300,11 +12317,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr "Kaitse pluginaid"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr ""
 
 msgid "Show help"
 msgstr "Näita abi"
@@ -12439,7 +12455,7 @@ msgstr "Näita pakette mida peaks uuendama"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr "Näita menüü numbreid"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12545,7 +12561,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "Näita transponderi infot"
 
 msgid "Show transponder info"
 msgstr "Näita transponderi infot"
@@ -12567,7 +12583,7 @@ msgstr "Keela teatud tähemärkide kasutamine failinimedes"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "Näita meediaesitajat peamenüüs"
+msgstr "Näita menüü numbreid"
 
 msgid "Show vertical timelines"
 msgstr "Näita vertikaalseid ajajooni"
@@ -12903,6 +12919,12 @@ msgstr "Aja järgi"
 msgid "Sorting of playlists"
 msgstr "Esitusloendite järjestamine"
 
+msgid "Sound"
+msgstr "Heli"
+
+msgid "Sound carrier"
+msgstr "Heli kandevsagedus"
+
 msgid "Source request"
 msgstr "Allika päring"
 
@@ -13114,7 +13136,7 @@ msgstr "Ooterežiimis alustamine"
 
 #, fuzzy
 msgid "State"
-msgstr "Bitikiirus:"
+msgstr "otsingu seis"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13243,11 +13265,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "Võrgu seadistamine"
+msgstr "Tarkvarahalduri informatsioon"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "Võrgu seadistamine"
+msgstr "Tarkvarahalduri informatsioon"
 
 msgid "Store at index"
 msgstr "Salvesta indeksiga"
@@ -13492,9 +13514,8 @@ msgstr "Süsteem ja modulatsioon"
 msgid "System Information"
 msgstr "Info"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "Seadistusfailid kirjutatakse üle?"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -13669,6 +13690,9 @@ msgstr "Testpilt"
 msgid "Test DiSEqC settings"
 msgstr "Testi DiSEqC seadeid"
 
+msgid "Test mode"
+msgstr "Testpilt"
+
 msgid "Test the network configuration of your receiver.\n"
 msgstr "Testi vastuvõtja võrgu seadeid.\n"
 
@@ -13715,9 +13739,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr "On jäänud %d minutit  sündmuse lõpuni."
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "Tarkvarahalduri informatsioon"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -13793,9 +13817,6 @@ msgid ""
 msgstr ""
 "NetworkWizard laiendus ei ole paigaldatud! \n"
 "Paigalda see."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -13900,14 +13921,6 @@ msgstr "Vastuvõtja kasutajaliides taaskäivitub."
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Vastuvõtja kasutajaliides taaskäivitub."
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"Vastuvõtja kasutajaliides taaskäivitub\n"
-" vea tõttu 'mytest.py' failis"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14385,7 +14398,6 @@ msgstr "Ajanihke asukoht"
 msgid "Timeshift not possible!"
 msgstr "Ajanihke kasutamine pole võimalik!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "Ajavöönd"
 
@@ -14484,6 +14496,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Kliente kokku striimimas: %d (%s)"
@@ -14495,9 +14510,8 @@ msgstr "Sisemine flash-mälu"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "Luba"
+msgstr ""
 
 msgid "Track"
 msgstr "Rada"
@@ -14518,7 +14532,7 @@ msgstr "Info"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "Tõlge"
 
 msgid "Translation:"
 msgstr "Tõlge:"
@@ -14604,7 +14618,7 @@ msgstr "Info"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "Info"
+msgstr "Tuuneri seadistus"
 
 msgid "Tuner is not supported"
 msgstr "Tuuner pole toetatud"
@@ -14956,9 +14970,8 @@ msgstr "Kasuta kiirotsingu kanalinumeratsiooni"
 msgid "Use frequency or channel"
 msgstr "Kasuta sagedust või kanalinumbrit"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -15031,9 +15044,8 @@ msgstr "Kasuta filmilistis prügikasti"
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "Paigalda süsteemitõmmis"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "Kasutatud otsingu tüüp"
@@ -15129,7 +15141,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15153,7 +15165,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15353,11 +15365,11 @@ msgstr "W"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "Asukoht"
+msgstr "WiFi ühendus"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "Tarkvarahalduri informatsioon"
+msgstr "WiFi ühendus"
 
 msgid "WEP"
 msgstr "WEP"

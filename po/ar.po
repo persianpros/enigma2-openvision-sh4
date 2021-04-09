@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 18:12+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -916,6 +916,14 @@ msgid "%d B"
 msgstr "%d بايت"
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr "%d جيجابايت"
 
@@ -1735,7 +1743,7 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr ""
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr ""
 
 #, fuzzy, python-format
@@ -2920,9 +2928,8 @@ msgstr "تعزيز الأخضر"
 msgid "Booster Control"
 msgstr ""
 
-#, fuzzy
 msgid "Boot ID"
-msgstr "الوقت الأساسي"
+msgstr ""
 
 #, fuzzy
 msgid "Boot information"
@@ -2971,9 +2978,6 @@ msgstr ""
 
 msgid "Brazil"
 msgstr "البرازيل"
-
-msgid "Brief help information for buttons in your current context."
-msgstr ""
 
 msgid "Brightness"
 msgstr "الإضاءه"
@@ -3041,9 +3045,8 @@ msgstr ""
 msgid "Bypass HDMI EDID checking"
 msgstr "إختيار كيبل عالي الوضوح وفحص بيانات الهوية"
 
-#, fuzzy
 msgid "Bytes received"
-msgstr "دليل الملفات"
+msgstr ""
 
 msgid "Bytes sent"
 msgstr ""
@@ -3102,6 +3105,10 @@ msgstr ""
 msgid "CPU"
 msgstr "وحدة المعالج: %s"
 
+#, python-format
+msgid "CPU / Core %d type"
+msgstr ""
+
 msgid "CPU architecture"
 msgstr ""
 
@@ -3111,6 +3118,10 @@ msgstr "الدنمارك"
 
 msgid "CPU brand"
 msgstr ""
+
+#, fuzzy
+msgid "CPU rating"
+msgstr "التحديث"
 
 msgid "CVBS"
 msgstr "فيديو مركب أحادي الإشارة"
@@ -3137,6 +3148,9 @@ msgid "Calculate all positions"
 msgstr "حساب جميع المواقع"
 
 msgid "Calculating benchmark..."
+msgstr ""
+
+msgid "Calculating rating..."
 msgstr ""
 
 msgid "Calculation complete"
@@ -3506,9 +3520,8 @@ msgstr "يسار دائري"
 msgid "Circular right"
 msgstr "يمين دائري"
 
-#, fuzzy
 msgid "City"
-msgstr "السعه: "
+msgstr ""
 
 #, fuzzy
 msgid "Clean network trash cans"
@@ -3645,9 +3658,8 @@ msgstr "ترتيب الأوامر"
 msgid "Commit Information"
 msgstr "معلومات"
 
-#, fuzzy
 msgid "Commit Information Actions"
-msgstr "معلومات"
+msgstr ""
 
 #, fuzzy
 msgid "Commit Logs"
@@ -3657,9 +3669,8 @@ msgstr "إتصال"
 msgid "Commit info"
 msgstr "إتصال"
 
-#, fuzzy
 msgid "Common Information Actions"
-msgstr "حدد الاجراء"
+msgstr ""
 
 msgid "Common Interface"
 msgstr "وحده النفاذ المشروط"
@@ -3718,6 +3729,9 @@ msgstr "وضع التكوين"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "وضع التكوين: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 #, fuzzy
 msgid "Configure ATSC"
@@ -4188,7 +4202,7 @@ msgstr "بث القنوات عبر الشبكة متصل, بلا نهاية -ل�
 
 #, fuzzy
 msgid "Connection information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "معلومات التحكم في البلج إنز المفعلة"
 
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
@@ -4983,15 +4997,15 @@ msgstr ""
 
 #, fuzzy
 msgid "Detected network servers"
-msgstr "إختبار الشبكة: "
+msgstr "أختار واجهة الشبكة"
 
 #, fuzzy
 msgid "Detected storage devices"
-msgstr "الكشف عن التيونرات:"
+msgstr "قائمة أجهزة التخزين"
 
 #, fuzzy
 msgid "Detected tuners"
-msgstr "الكشف عن التيونرات:"
+msgstr "العناصر المحذوفة"
 
 #, fuzzy
 msgid "Device"
@@ -5296,7 +5310,7 @@ msgstr "هل تريد فعلا حذف المجموعة:\n"
 
 #, fuzzy
 msgid "Do you want to delete this log file?"
-msgstr "هل تريد فعلا مسح %s?"
+msgstr "هل تريد فعلا حذف المجموعة:\n"
 
 #, fuzzy, python-format
 msgid ""
@@ -5414,9 +5428,8 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#, fuzzy
 msgid "Down"
-msgstr "الصوت الدولبي / نظام المسرح الرقمي المزدوج"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "تحميل البلج إنز"
@@ -5860,9 +5873,8 @@ msgstr "الإنجليزية"
 msgid "Enigma2 (re)starts"
 msgstr "تشغيل وإعادة تشغيل الانجما2:\t%s\n"
 
-#, fuzzy
 msgid "Enigma2 debug level"
-msgstr "الإفتراضي"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 default"
@@ -5870,7 +5882,7 @@ msgstr "الإفتراضي"
 
 #, fuzzy
 msgid "Enigma2 information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "معلومات"
 
 #, fuzzy
 msgid "Enigma2 revision"
@@ -6306,7 +6318,7 @@ msgstr "معدل تصحيح الخطأ:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "إصدار جديد:"
+msgstr "عكـس"
 
 msgid "FHD"
 msgstr ""
@@ -6314,9 +6326,8 @@ msgstr ""
 msgid "FLASH"
 msgstr ""
 
-#, fuzzy
 msgid "FPU"
-msgstr "وحدة المعالج: %s"
+msgstr ""
 
 #, fuzzy
 msgid "FTA"
@@ -6504,6 +6515,9 @@ msgstr "تثبيت القنوات"
 msgid "Fine movement"
 msgstr "حركه جيده"
 
+msgid "Finetune"
+msgstr "الضبط الدقيق"
+
 msgid "Finished"
 msgstr "تم الإنتهاء"
 
@@ -6604,9 +6618,8 @@ msgstr "فرنسا"
 msgid "Free"
 msgstr ""
 
-#, fuzzy
 msgid "Free flash"
-msgstr "الشحن"
+msgstr ""
 
 msgid "Free memory"
 msgstr ""
@@ -6671,7 +6684,13 @@ msgstr "حماية التكوين"
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
 
+msgid "Front panel display configuration for Spark"
+msgstr ""
+
 msgid "Front panel display configuration for adb_box"
+msgstr ""
+
+msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front panel type"
@@ -6996,6 +7015,9 @@ msgstr "دعم مشاركة الملفات على الشبكة المحلية"
 msgid "HELP"
 msgstr ""
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -7046,7 +7068,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Hardware information"
-msgstr "معلومات"
+msgstr "معلومات إدارة البرنامج التشغيلي"
 
 #, fuzzy
 msgid "Hardware serial"
@@ -7065,8 +7087,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "تجميد الشاشة"
+msgid "Help Screen Information"
+msgstr "معلومات"
 
 msgid "Helps setting up your antenna"
 msgstr "يساعد في اعداد الهوائي الخاص بك"
@@ -7184,9 +7206,8 @@ msgstr "نوع عنوان استقبال المضيف"
 msgid "Host receiver streaming port"
 msgstr "جاري إعادة تشغيل الجهاز %s %s الخاص بك"
 
-#, fuzzy
 msgid "Hostname"
-msgstr "إعادة التسميه"
+msgstr ""
 
 #, fuzzy
 msgid "HotKey Setup"
@@ -7290,7 +7311,7 @@ msgstr "مسار أيزو"
 
 #, fuzzy
 msgid "ISP"
-msgstr "عناون الايبي"
+msgstr "نظام ملف الشبكة"
 
 msgid "Iceland"
 msgstr "أيسلندا"
@@ -7298,7 +7319,7 @@ msgstr "أيسلندا"
 msgid "Icons"
 msgstr "الأيقونات"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7794,7 +7815,7 @@ msgstr "كينيا"
 
 #, fuzzy
 msgid "Kernel file"
-msgstr "إصدار جديد:"
+msgstr "حذف الملف"
 
 #, fuzzy
 msgid "Kernel module layout"
@@ -7922,12 +7943,6 @@ msgid "LED display configuration"
 msgstr "حماية التكوين"
 
 msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
 msgstr ""
 
 msgid "LIRC remote"
@@ -8163,7 +8178,7 @@ msgstr "بدء التسجيل الفوري"
 
 #, fuzzy
 msgid "Location information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "معلومات"
 
 msgid "Lock ratio"
 msgstr "إقفال توسيع الشاشة"
@@ -8207,9 +8222,6 @@ msgstr "<مكان المؤقت الأخير>"
 
 msgid "Long filenames"
 msgstr "أسماء الملفات الطويلة"
-
-msgid "Long key press"
-msgstr "أضغط الزر مطولا"
 
 msgid "Long press emulation with button"
 msgstr ""
@@ -8453,7 +8465,7 @@ msgstr "معلومات"
 
 #, fuzzy
 msgid "Memory Information Actions"
-msgstr "معلومات"
+msgstr "أماكن الذاكرة القصوى"
 
 msgid "Memory index"
 msgstr "مؤشر الذاكرة"
@@ -8551,6 +8563,9 @@ msgstr "النظام"
 
 msgid "Modulation"
 msgstr "تعديل"
+
+msgid "Modulator"
+msgstr "التضمين"
 
 msgid "Moldova (Republic of)"
 msgstr "مولدوفا (جمهوريه)"
@@ -8911,7 +8926,7 @@ msgstr "ناميبيا"
 msgid "Nauru"
 msgstr "ناورو"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -9122,7 +9137,7 @@ msgstr "لا يوجد اتصال متوفر بالشبكة."
 
 #, fuzzy
 msgid "No network servers detected."
-msgstr "إختبار الشبكة: "
+msgstr "لايوجد خدمات او مزودي خدمه مختارين"
 
 msgid "No networks found"
 msgstr "لم يتم العثور على شبكة"
@@ -9534,9 +9549,8 @@ msgstr "الملحقات."
 msgid "OpenVision Information"
 msgstr "معلومات"
 
-#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr "معلومات"
+msgstr ""
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9547,15 +9561,13 @@ msgstr "اللغة الاصلية"
 
 #, fuzzy
 msgid "OpenVision module"
-msgstr "الملحقات."
+msgstr "وضع الإنتقال"
 
-#, fuzzy
 msgid "OpenVision revision"
-msgstr "الإصدار:\t%s"
+msgstr ""
 
-#, fuzzy
 msgid "OpenVision version"
-msgstr "الإصدار:\t%s"
+msgstr ""
 
 msgid "Operating LED status in deep standby mode"
 msgstr ""
@@ -9589,7 +9601,7 @@ msgstr "أخرى"
 msgid "Other Subtitles & lang"
 msgstr "إعدادات الترجمة"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 #, fuzzy
@@ -10159,6 +10171,10 @@ msgstr "انتظر من فضلك ...يتم تحميل القائمة..."
 msgid "Plugin Browser"
 msgstr "تصفح البلج إنز"
 
+#, fuzzy
+msgid "Plugin Browser Setup"
+msgstr "تصفح البلج إنز"
+
 msgid "Plugin browser"
 msgstr "تصفح البلج إنز"
 
@@ -10167,10 +10183,6 @@ msgstr "معلومات التحكم في البلج إنز المفعلة"
 
 msgid "Plugin manager help"
 msgstr "مساعدة في التحكم في البلج إنز"
-
-#, fuzzy
-msgid "PluginBrowser Setup"
-msgstr "تصفح البلج إنز"
 
 msgid "Plugins"
 msgstr "الإضافات"
@@ -10361,6 +10373,10 @@ msgstr ""
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr ""
 
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "أضغط موافق لتغيير الأختيار."
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "اضغط مفتاح المعلومات من ريموت التحكم عن بعد للخيارات الإضافية."
 
@@ -10464,14 +10480,14 @@ msgstr "الأولوية"
 
 #, fuzzy
 msgid "Proc model"
-msgstr "الموديل : "
+msgstr "وضع التنقل"
 
 msgid "Process"
 msgstr "عملية"
 
 #, fuzzy
 msgid "Processor information"
-msgstr "معلومات"
+msgstr "معلومات إدارة البرنامج التشغيلي"
 
 msgid "Progress"
 msgstr "متقدم"
@@ -10546,7 +10562,7 @@ msgstr "مزودي القنوات"
 
 #, fuzzy
 msgid "Proxy detected"
-msgstr "الكشف التلقائي"
+msgstr "لم يتم إختيار الكايد"
 
 msgid "Public IP"
 msgstr ""
@@ -10606,9 +10622,8 @@ msgstr "الدنمارك"
 msgid "RC ID number"
 msgstr ""
 
-#, fuzzy
 msgid "RC code"
-msgstr "ترتيب الأوامر"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10622,9 +10637,9 @@ msgstr "إعادة التسميه"
 msgid "RC type"
 msgstr "نوع"
 
-#, fuzzy, python-format
+#, python-format
 msgid "RC type:|%s"
-msgstr "نوع"
+msgstr ""
 
 #, fuzzy
 msgid "REC"
@@ -10639,6 +10654,10 @@ msgstr "جاهز لوضع الاستعداد"
 
 msgid "REC symbol in use"
 msgstr ""
+
+#, fuzzy
+msgid "RF Output Setup"
+msgstr "مخرج 12 ف"
 
 msgid "RGB"
 msgstr "أحمر أخضر أزرق"
@@ -10738,17 +10757,15 @@ msgstr "الإضاءه"
 msgid "Recall to previous service"
 msgstr "العوده إلى خدمة القناة السابقه"
 
-#, fuzzy
 msgid "Receiver"
-msgstr "دليل الملفات"
+msgstr ""
 
 #, fuzzy
 msgid "Receiver Information"
 msgstr "معلومات"
 
-#, fuzzy
 msgid "Receiver Information Actions"
-msgstr "معلومات"
+msgstr ""
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11396,10 +11413,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "ضبط الموتور"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "ديفيدي أحادي الشاشة"
@@ -12532,6 +12545,10 @@ msgstr "سكربتات"
 msgid "Shift"
 msgstr ""
 
+#, python-format
+msgid "Shift: %s"
+msgstr ""
+
 msgid "Short filenames"
 msgstr "أسماء قصيرة"
 
@@ -12628,7 +12645,7 @@ msgstr "عرض حالة اتصال الشبكة اللاسلكية"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr "حماية متصفح البلج إنز"
 
 msgid "Show alternatives"
 msgstr "عرض البدائل"
@@ -12695,7 +12712,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show e2fsprogs in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr "حماية متصفح البلج إنز"
 
 #, fuzzy
 msgid "Show enigma2-locale in plugin browser"
@@ -12740,11 +12757,10 @@ msgstr ""
 
 #, fuzzy
 msgid "Show glibc-gconv in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr "حماية متصفح البلج إنز"
 
-#, fuzzy
 msgid "Show gstreamer1.0-plugins in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr ""
 
 msgid "Show help"
 msgstr "عرض التعليمات"
@@ -12885,7 +12901,7 @@ msgstr "تحديث قائمة الباقات"
 
 #, fuzzy
 msgid "Show pam-plugin in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr "عرض قائمة الأرقام"
 
 #, fuzzy
 msgid "Show perl-module in plugin browser"
@@ -12998,7 +13014,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "عرض معلومات التردد"
 
 msgid "Show transponder info"
 msgstr "عرض معلومات التردد"
@@ -13020,7 +13036,7 @@ msgstr "تعيين حروف محدودة لأسماء ملفات التسجيل"
 
 #, fuzzy
 msgid "Show util-linux in plugin browser"
-msgstr "عرض مشغل الوسائط على القائمة الرئيسية"
+msgstr "عرض قائمة الأرقام"
 
 #, fuzzy
 msgid "Show vertical timelines"
@@ -13369,6 +13385,12 @@ msgstr "وقت البدء"
 msgid "Sorting of playlists"
 msgstr "فرز قوائم التشغيل"
 
+msgid "Sound"
+msgstr "صـوت"
+
+msgid "Sound carrier"
+msgstr "مزود نقل الصوت"
+
 msgid "Source request"
 msgstr "طلب المصدر"
 
@@ -13587,7 +13609,7 @@ msgstr "التنبيه إلى الاستعداد"
 
 #, fuzzy
 msgid "State"
-msgstr "معدل البت:"
+msgstr "حاله البحث"
 
 msgid "Static IP or Custom"
 msgstr ""
@@ -13721,11 +13743,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Storage Information"
-msgstr "حماية التكوين"
+msgstr "معلومات إدارة البرنامج التشغيلي"
 
 #, fuzzy
 msgid "Storage information"
-msgstr "حماية التكوين"
+msgstr "معلومات إدارة البرنامج التشغيلي"
 
 msgid "Store at index"
 msgstr "تخزين الفهرس"
@@ -13985,9 +14007,8 @@ msgstr "النظام والتحوير"
 msgid "System Information"
 msgstr "معلومات"
 
-#, fuzzy
 msgid "System Information Actions"
-msgstr "الكتابة فوق ملفات الاعدادات؟"
+msgstr ""
 
 #, fuzzy
 msgid "System configuration options"
@@ -14157,6 +14178,9 @@ msgstr "وضع الاختبار"
 msgid "Test DiSEqC settings"
 msgstr "إختبار إعدادات الدايزك"
 
+msgid "Test mode"
+msgstr "وضع الاختبار"
+
 #, fuzzy
 msgid "Test the network configuration of your receiver.\n"
 msgstr ""
@@ -14206,9 +14230,9 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "The %s commit log contains no information."
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr ""
 
 #, fuzzy, python-format
 msgid "The %s commit logs can't be retrieved, please try again later."
@@ -14283,9 +14307,6 @@ msgid ""
 msgstr ""
 "لم يتم تثبيت ملحقات معالج الشبكة!\n"
 "الرجاء منك تثبيتها."
-
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -14376,14 +14397,6 @@ msgstr ""
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "جاري إعادة تشغيل واجهة المستخدم على %s %s الخاص بك"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in Bootstrap.py"
-msgstr ""
-"جاري %s %s إعادة تشغيل واجهة المستخدم الخاصة\n"
-"هناك خطاء في ملف الاختبار.البايثون"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14878,7 +14891,6 @@ msgstr "موقع ملفات التايم شفت"
 msgid "Timeshift not possible!"
 msgstr "التحكم في البث المباشر مستحيل!"
 
-#, fuzzy
 msgid "Timezone"
 msgstr "منطقة الوقت"
 
@@ -14982,6 +14994,9 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
+msgid "Total CPU benchmark"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "إجمالي أسطر التدفق: %d (%s)"
@@ -14993,9 +15008,8 @@ msgstr "الفلاش الداخلى"
 msgid "Total memory"
 msgstr ""
 
-#, fuzzy
 msgid "Total swap"
-msgstr "تفعيل"
+msgstr ""
 
 msgid "Track"
 msgstr "مسار"
@@ -15017,7 +15031,7 @@ msgstr "معلومات"
 
 #, fuzzy
 msgid "Translation information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "الترجمة"
 
 #, fuzzy
 msgid "Translation:"
@@ -15105,7 +15119,7 @@ msgstr "معلومات"
 
 #, fuzzy
 msgid "Tuner information"
-msgstr "معلومات"
+msgstr "إعدادات المؤالف"
 
 msgid "Tuner is not supported"
 msgstr "مؤالف غير معتمد"
@@ -15471,9 +15485,8 @@ msgstr "إستخدم البحث السريع بأرقام القنوات"
 msgid "Use frequency or channel"
 msgstr "استخدام التردد أو القناة"
 
-#, fuzzy
 msgid "Use geolocation to get WAN information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr ""
 
 msgid "Use geolocation to set the current time zone location"
 msgstr ""
@@ -15550,9 +15563,8 @@ msgstr "استخدام سلة المهملات في قائمة الأفلام"
 msgid "Used"
 msgstr ""
 
-#, fuzzy
 msgid "Used flash"
-msgstr "الشحن"
+msgstr ""
 
 msgid "Used service scan type"
 msgstr "نوع البحث عن القنوات المستخدمة"
@@ -15648,7 +15660,7 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD display configuration for Spark 7162"
+msgid "VFD display configuration for Spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
@@ -15672,7 +15684,7 @@ msgstr ""
 msgid "VFD icons for adb_box"
 msgstr ""
 
-msgid "VFD icons for spark 7162"
+msgid "VFD icons for spark 7162/Edision argus VIP"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15877,11 +15889,11 @@ msgstr "W"
 
 #, fuzzy
 msgid "WAN Geolocation"
-msgstr "مكان"
+msgstr "إتصال شبكة عبر الوايفاي"
 
 #, fuzzy
 msgid "WAN connection information"
-msgstr "معلومات إدارة البرنامج التشغيلي"
+msgstr "إتصال شبكة عبر الوايفاي"
 
 msgid "WEP"
 msgstr "مفتاح الخصوصية السلكية المتكافئة"

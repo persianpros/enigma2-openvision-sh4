@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-03 12:27+0430\n"
+"POT-Creation-Date: 2021-04-09 12:53+0430\n"
 "PO-Revision-Date: 2021-04-03 02:16+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -796,6 +796,14 @@ msgid "%d B"
 msgstr ""
 
 #, python-format
+msgid "%d DMIPS per core"
+msgstr ""
+
+#, python-format
+msgid "%d DMIPS with %d cores"
+msgstr ""
+
+#, python-format
 msgid "%d GB"
 msgstr ""
 
@@ -1542,7 +1550,8 @@ msgstr ""
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "Графический EPG для всех сервисов в выбранных букетах"
 
-msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list indicates whether the function is for a long press of the button(s)."
+#, fuzzy
+msgid "A highlight on the remote control image shows which button the help refers to. If more than one button performs the indicated function, more than one highlight will be shown. Text below the list lists the active buttons and whether the function requires a long press or SHIFT of the button(s)."
 msgstr "Выделение на изображении пульта дистанционного управления показывает, к какой кнопке относится справка. Если указанную функцию выполняют более одной кнопки, будет отображаться более одного выделения. Текст под списком указывает, предназначена ли функция для длительного нажатия кнопки (-ок)."
 
 #, python-format
@@ -2685,9 +2694,6 @@ msgstr ""
 msgid "Brazil"
 msgstr "Brazil"
 
-msgid "Brief help information for buttons in your current context."
-msgstr ""
-
 msgid "Brightness"
 msgstr "Яркость"
 
@@ -2809,9 +2815,6 @@ msgstr "Центральный процессор "
 
 #, python-format
 msgid "CPU / Core %d type"
-msgstr ""
-
-msgid "CPU Dhrystones"
 msgstr ""
 
 msgid "CPU architecture"
@@ -3409,6 +3412,9 @@ msgstr "Режим конфигурации"
 #, python-format
 msgid "Configuration mode: %s"
 msgstr "Режим конфигурации: %s"
+
+msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > User Interface > User Interface Setup'."
+msgstr ""
 
 msgid "Configure ATSC"
 msgstr "Конфигурация ATSC"
@@ -6511,6 +6517,9 @@ msgstr "HDR10 поддержка"
 msgid "HELP"
 msgstr "HELP"
 
+msgid "HELP provides brief information for buttons in your current context."
+msgstr ""
+
 msgid "HH:mm"
 msgstr ""
 
@@ -6577,8 +6586,8 @@ msgid "Help"
 msgstr ""
 
 #, fuzzy
-msgid "Help Screen"
-msgstr "Держать экран"
+msgid "Help Screen Information"
+msgstr "Информация"
 
 msgid "Helps setting up your antenna"
 msgstr "Помощь в настройке Вашей антенны"
@@ -6801,7 +6810,7 @@ msgstr "Iceland"
 msgid "Icons"
 msgstr "Иконка"
 
-msgid "If an action is user-configurable, its help entry will be flagged with a (C)."
+msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
@@ -7674,9 +7683,6 @@ msgstr "<Место последнего таймера>"
 msgid "Long filenames"
 msgstr "Длинное название"
 
-msgid "Long key press"
-msgstr "Длительное нажатие"
-
 msgid "Long press emulation with button"
 msgstr ""
 
@@ -8358,7 +8364,7 @@ msgstr "Namibia"
 msgid "Nauru"
 msgstr "Nauru"
 
-msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. EXIT to return to the help screen. OK to perform the action described in the currently highlighted help."
+msgid "Navigate up/down with UP/DOWN buttons and page up/down with LEFT/RIGHT. OK to perform the action described in the currently highlighted help."
 msgstr ""
 
 msgid "Nepal"
@@ -8993,7 +8999,7 @@ msgstr "Другая"
 msgid "Other Subtitles & lang"
 msgstr "Другие субтитры & язык"
 
-msgid "Other buttons will jump to the help for that button, if there is help."
+msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
 
 msgid "Other functions"
@@ -9733,6 +9739,10 @@ msgstr "Нажмите 'OK' для удаления записи или 'CH+/-' 
 
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
 msgstr "Нажмите 'OK'  для удаления записи или  < > для изменения порядка или 'CH+/-' для переключения к списку функций."
+
+#, fuzzy
+msgid "Press EXIT to return to the help screen."
+msgstr "Порядок сортировки на экране справки"
 
 msgid "Press INFO on your remote control for additional information."
 msgstr "Нажмите кнопку INFO на Вашем пульте Д/У для дополнительной информации."
@@ -10722,10 +10732,6 @@ msgstr ""
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Настройка позиционера"
-
-#, python-format
-msgid "SHIFT: %s"
-msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER (один слой) DVD"
@@ -11775,6 +11781,10 @@ msgid "Shellscript"
 msgstr "Shell-скрипт"
 
 msgid "Shift"
+msgstr "Shift"
+
+#, fuzzy, python-format
+msgid "Shift: %s"
 msgstr "Shift"
 
 msgid "Short filenames"
@@ -13427,9 +13437,6 @@ msgstr ""
 "Дополнение мастера настройки сети не установлено!\n"
 "Пожалуйста, установите его."
 
-msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen."
-msgstr ""
-
 msgid ""
 "The overscan wizard has been completed.\n"
 "\n"
@@ -13533,14 +13540,6 @@ msgstr "Рестарт GUI для применения выбраного ски
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting"
 msgstr "Рестарт GUI Вашего ресивера"
-
-#, fuzzy, python-format
-msgid ""
-"The user interface of your %s %s is restarting\n"
-"due to an error in StartEnigma.py"
-msgstr ""
-"Рестарт GUI Вашего ресивера\n"
-"из-за ошибки в mytest.py"
 
 #, fuzzy, python-format
 msgid "The user interface of your %s %s is restarting in debug mode"
@@ -14094,6 +14093,10 @@ msgstr ""
 
 msgid "Total"
 msgstr ""
+
+#, fuzzy
+msgid "Total CPU benchmark"
+msgstr "Тест процессора"
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
