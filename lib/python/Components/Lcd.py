@@ -1,27 +1,22 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
-from Components.config import config, ConfigSubsection, ConfigSelection, ConfigSlider, ConfigYesNo, ConfigNothing
-from enigma import eDBoxLCD, eTimer, eActionMap
+from os import sys
+from os.path import exists
+from sys import maxsize
+from twisted.internet import threads
+from usb import busses
+
+from enigma import eActionMap, eDBoxLCD, eTimer
+
+from Components.config import ConfigNothing, ConfigSelection, ConfigSlider, ConfigSubsection, ConfigYesNo, config
 from Components.SystemInfo import SystemInfo
 from Screens.Screen import Screen
-from Tools.Directories import fileExists
-from six import PY2
-if PY2:
-	from sys import maxint
-	maximport = maxint
-else:
-	from sys import maxsize
-	maximport = maxsize
-from twisted.internet import threads
-import Screens.Standby
-import usb
-from os import sys
+from Screens.Standby import inTryQuitMainloop
+from Tools.Directories import fileReadLine, fileWriteLine
 
 
 class dummyScreen(Screen):
-	skin = """<screen position="0,0" size="0,0" transparent="1">
-	<widget source="session.VideoPicture" render="Pig" position="0,0" size="0,0" backgroundColor="transparent" zPosition="1"/>
+	skin = """
+	<screen position="0,0" size="0,0" transparent="1">
+		<widget source="session.VideoPicture" render="Pig" position="0,0" size="0,0" backgroundColor="transparent" zPosition="1" />
 	</screen>"""
 
 	def __init__(self, session, args=None):
@@ -30,7 +25,7 @@ class dummyScreen(Screen):
 
 
 def IconCheck(session=None, **kwargs):
-	if fileExists("/proc/stb/lcd/symbol_network") or fileExists("/proc/stb/lcd/symbol_usb"):
+	if exists("/proc/stb/lcd/symbol_network") or exists("/proc/stb/lcd/symbol_usb"):
 		global networklinkpoller
 		networklinkpoller = IconCheckPoller()
 		networklinkpoller.start()
@@ -52,74 +47,78 @@ class IconCheckPoller:
 
 	def iconcheck(self):
 		try:
-			threads.deferToThread(self.JobTask)
+			threads.deferToThread(self.jobTask)
 		except:
 			pass
 		self.timer.startLongTimer(30)
 
-	def JobTask(self):
-		LinkState = 0
-		if fileExists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == '1':
-			print("[Lcd] Write to /proc/stb/lcd/symbol_network")
-			open("/proc/stb/lcd/symbol_network", "w").write(str(LinkState))
-		elif fileExists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == '0':
-			print("[Lcd] Write to /proc/stb/lcd/symbol_network")
-			open("/proc/stb/lcd/symbol_network", "w").write("0")
-
+	def jobTask(self):
+		linkState = 0
+		if exists("/sys/class/net/wlan0/operstate"):
+			linkState = fileReadLine("/sys/class/net/wlan0/operstate")
+			if linkState != "down":
+				linkState = fileReadLine("/sys/class/net/wlan0/carrier")
+		elif exists("/sys/class/net/eth0/operstate"):
+			linkState = fileReadLine("/sys/class/net/eth0/operstate")
+			if linkState != "down":
+				linkState = fileReadLine("/sys/class/net/eth0/carrier")
+		linkState = linkState[:1]
+		if exists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == "1":
+			fileWriteLine("/proc/stb/lcd/symbol_network", str(linkState))
+		elif exists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == "0":
+			fileWriteLine("/proc/stb/lcd/symbol_network", "0")
 		USBState = 0
-		busses = usb.busses()
-		for bus in busses:
+		for bus in busses():
 			devices = bus.devices
 			for dev in devices:
 				if dev.deviceClass != 9 and dev.deviceClass != 2 and dev.idVendor != 3034 and dev.idVendor > 0:
 					USBState = 1
-		if fileExists("/proc/stb/lcd/symbol_usb"):
-			print("[Lcd] Write to /proc/stb/lcd/symbol_usb")
-			open("/proc/stb/lcd/symbol_usb", "w").write(str(USBState))
-
+		if exists("/proc/stb/lcd/symbol_usb"):
+			fileWriteLine("/proc/stb/lcd/symbol_usb", str(USBState))
 		self.timer.startLongTimer(30)
 
 
 class LCD:
 	def __init__(self):
-		eActionMap.getInstance().bindAction('', -maximport - 1, self.DimUpEvent)
+		eActionMap.getInstance().bindAction("", -maxsize - 1, self.dimUpEvent)
 		self.autoDimDownLCDTimer = eTimer()
 		self.autoDimDownLCDTimer.callback.append(self.autoDimDownLCD)
 		self.autoDimUpLCDTimer = eTimer()
 		self.autoDimUpLCDTimer.callback.append(self.autoDimUpLCD)
-		self.currBrightness = self.dimBrightness = self.Brightness = None
+		self.currBrightness = self.dimBrightness = self.brightness = None
 		self.dimDelay = 0
 		config.misc.standbyCounter.addNotifier(self.standbyCounterChanged, initial_call=False)
 
 	def standbyCounterChanged(self, configElement):
-		Screens.Standby.inStandby.onClose.append(self.leaveStandby)
+		from Screens.Standby import inStandby
+		inStandby.onClose.append(self.leaveStandby)
 		self.autoDimDownLCDTimer.stop()
 		self.autoDimUpLCDTimer.stop()
-		eActionMap.getInstance().unbindAction('', self.DimUpEvent)
+		eActionMap.getInstance().unbindAction("", self.dimUpEvent)
 
 	def leaveStandby(self):
-		eActionMap.getInstance().bindAction('', -maximport - 1, self.DimUpEvent)
+		eActionMap.getInstance().bindAction("", -maxsize - 1, self.dimUpEvent)
 
-	def DimUpEvent(self, key, flag):
+	def dimUpEvent(self, key, flag):
 		self.autoDimDownLCDTimer.stop()
-		if not Screens.Standby.inTryQuitMainloop:
-			if self.Brightness is not None and not self.autoDimUpLCDTimer.isActive():
+		if not inTryQuitMainloop:
+			if self.brightness is not None and not self.autoDimUpLCDTimer.isActive():
 				self.autoDimUpLCDTimer.start(10, True)
 
 	def autoDimDownLCD(self):
-		if not Screens.Standby.inTryQuitMainloop:
+		if not inTryQuitMainloop:
 			if self.dimBrightness is not None and self.currBrightness > self.dimBrightness:
 				self.currBrightness = self.currBrightness - 1
 				eDBoxLCD.getInstance().setLCDBrightness(self.currBrightness)
 				self.autoDimDownLCDTimer.start(10, True)
 
 	def autoDimUpLCD(self):
-		if not Screens.Standby.inTryQuitMainloop:
+		if not inTryQuitMainloop:
 			self.autoDimDownLCDTimer.stop()
-			if self.currBrightness < self.Brightness:
+			if self.currBrightness < self.brightness:
 				self.currBrightness = self.currBrightness + 5
-				if self.currBrightness >= self.Brightness:
-					self.currBrightness = self.Brightness
+				if self.currBrightness >= self.brightness:
+					self.currBrightness = self.brightness
 				eDBoxLCD.getInstance().setLCDBrightness(self.currBrightness)
 				self.autoDimUpLCDTimer.start(10, True)
 			else:
@@ -133,7 +132,7 @@ class LCD:
 			value = 255
 		self.autoDimDownLCDTimer.stop()
 		self.autoDimUpLCDTimer.stop()
-		self.currBrightness = self.Brightness = value
+		self.currBrightness = self.brightness = value
 		eDBoxLCD.getInstance().setLCDBrightness(self.currBrightness)
 		if self.dimBrightness is not None and self.currBrightness > self.dimBrightness:
 			if self.dimDelay is not None and self.dimDelay > 0:
@@ -146,12 +145,12 @@ class LCD:
 			value = 255
 		self.autoDimDownLCDTimer.stop()
 		self.autoDimUpLCDTimer.stop()
-		self.Brightness = value
+		self.brightness = value
 		if self.dimBrightness is None:
 			self.dimBrightness = value
 		if self.currBrightness is None:
 			self.currBrightness = value
-		eDBoxLCD.getInstance().setLCDBrightness(self.Brightness)
+		eDBoxLCD.getInstance().setLCDBrightness(self.brightness)
 
 	def setDimBright(self, value):
 		value *= 255
@@ -185,68 +184,54 @@ class LCD:
 		return eDBoxLCD.getInstance().isOled()
 
 	def setMode(self, value):
-		if fileExists("/proc/stb/lcd/show_symbols"):
-			print('[Lcd] setLCDMode', value)
-			print("[Lcd] Write to /proc/stb/lcd/show_symbols")
-			open("/proc/stb/lcd/show_symbols", "w").write(value)
+		if exists("/proc/stb/lcd/show_symbols"):
+			print("[Lcd] setLCDMode='%s'." % value)
+			fileWriteLine("/proc/stb/lcd/show_symbols", value)
 		if config.lcd.mode.value == "0":
 			SystemInfo["SeekStatePlay"] = False
 			SystemInfo["StatePlayPause"] = False
-			if fileExists("/proc/stb/lcd/symbol_hdd"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_hdd")
-				open("/proc/stb/lcd/symbol_hdd", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_hddprogress"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_hddprogress")
-				open("/proc/stb/lcd/symbol_hddprogress", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_network"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_network")
-				open("/proc/stb/lcd/symbol_network", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_signal"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_signal")
-				open("/proc/stb/lcd/symbol_signal", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_timeshift"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_timeshift")
-				open("/proc/stb/lcd/symbol_timeshift", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_tv"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_tv")
-				open("/proc/stb/lcd/symbol_tv", "w").write("0")
-			if fileExists("/proc/stb/lcd/symbol_usb"):
-				print("[Lcd] Write to /proc/stb/lcd/symbol_usb")
-				open("/proc/stb/lcd/symbol_usb", "w").write("0")
+			if exists("/proc/stb/lcd/symbol_hdd"):
+				fileWriteLine("/proc/stb/lcd/symbol_hdd", "0")
+			if exists("/proc/stb/lcd/symbol_hddprogress"):
+				fileWriteLine("/proc/stb/lcd/symbol_hddprogress", "0")
+			if exists("/proc/stb/lcd/symbol_network"):
+				fileWriteLine("/proc/stb/lcd/symbol_network", "0")
+			if exists("/proc/stb/lcd/symbol_signal"):
+				fileWriteLine("/proc/stb/lcd/symbol_signal", "0")
+			if exists("/proc/stb/lcd/symbol_timeshift"):
+				fileWriteLine("/proc/stb/lcd/symbol_timeshift", "0")
+			if exists("/proc/stb/lcd/symbol_tv"):
+				fileWriteLine("/proc/stb/lcd/symbol_tv", "0")
+			if exists("/proc/stb/lcd/symbol_usb"):
+				fileWriteLine("/proc/stb/lcd/symbol_usb", "0")
 
 	def setPower(self, value):
-		if fileExists("/proc/stb/power/vfd"):
-			print('[Lcd] setLCDPower', value)
-			print("[Lcd] Write to /proc/stb/power/vfd")
-			open("/proc/stb/power/vfd", "w").write(value)
-		elif fileExists("/proc/stb/lcd/vfd"):
-			print('[Lcd] setLCDPower', value)
-			print("[Lcd] Write to /proc/stb/lcd/vfd")
-			open("/proc/stb/lcd/vfd", "w").write(value)
+		if exists("/proc/stb/power/vfd"):
+			print("[Lcd] setLCDPower='%s'." % value)
+			fileWriteLine("/proc/stb/power/vfd", value)
+		elif exists("/proc/stb/lcd/vfd"):
+			print("[Lcd] setLCDPower='%s'." % value)
+			fileWriteLine("/proc/stb/lcd/vfd", value)
 
 	def setShowoutputresolution(self, value):
-		if fileExists("/proc/stb/lcd/show_outputresolution"):
-			print('[Lcd] setLCDShowoutputresolution', value)
-			print("[Lcd] Write to /proc/stb/lcd/show_outputresolution")
-			open("/proc/stb/lcd/show_outputresolution", "w").write(value)
+		if exists("/proc/stb/lcd/show_outputresolution"):
+			print("[Lcd] setLCDShowoutputresolution='%s'." % value)
+			fileWriteLine("/proc/stb/lcd/show_outputresolution", value)
 
 	def setfblcddisplay(self, value):
-		if fileExists("/proc/stb/fb/sd_detach"):
-			print('[Lcd] setfblcddisplay', value)
-			print("[Lcd] Write to /proc/stb/fb/sd_detach")
-			open("/proc/stb/fb/sd_detach", "w").write(value)
+		if exists("/proc/stb/fb/sd_detach"):
+			print("[Lcd] setfblcddisplay='%s'." % value)
+			fileWriteLine("/proc/stb/fb/sd_detach", value)
 
 	def setRepeat(self, value):
-		if fileExists("/proc/stb/lcd/scroll_repeats"):
-			print('[Lcd] setLCDRepeat', value)
-			print("[Lcd] Write to /proc/stb/lcd/scroll_repeats")
-			open("/proc/stb/lcd/scroll_repeats", "w").write(value)
+		if exists("/proc/stb/lcd/scroll_repeats"):
+			print("[Lcd] setLCDRepeat='%s'." % value)
+			fileWriteLine("/proc/stb/lcd/scroll_repeats", value)
 
 	def setScrollspeed(self, value):
-		if fileExists("/proc/stb/lcd/scroll_delay"):
-			print('[Lcd] setLCDScrollspeed', value)
-			print("[Lcd] Write to /proc/stb/lcd/scroll_delay")
-			open("/proc/stb/lcd/scroll_delay", "w").write(value)
+		if exists("/proc/stb/lcd/scroll_delay"):
+			print("[Lcd] setLCDScrollspeed='%s'." % value)
+			fileWriteLine("/proc/stb/lcd/scroll_delay", value)
 
 	def setLEDNormalState(self, value):
 		eDBoxLCD.getInstance().setLED(value, 0)
@@ -263,7 +248,8 @@ def leaveStandby():
 
 
 def standbyCounterChanged(configElement):
-	Screens.Standby.inStandby.onClose.append(leaveStandby)
+	from Screens.Standby import inStandby
+	inStandby.onClose.append(leaveStandby)
 	config.lcd.standby.apply()
 	config.lcd.ledbrightnessstandby.apply()
 	config.lcd.ledbrightnessdeepstandby.apply()
@@ -273,21 +259,21 @@ def InitLcd():
 	detected = eDBoxLCD.getInstance().detected()
 	SystemInfo["Display"] = detected
 	config.lcd = ConfigSubsection()
-
 	if detected:
 		ilcd = LCD()
-
-		config.lcd.scroll_speed = ConfigSelection(default="300", choices=[
-			("500", _("slow")),
-			("300", _("normal")),
-			("100", _("fast"))])
-		config.lcd.scroll_delay = ConfigSelection(default="10000", choices=[
-			("10000", "10 " + _("seconds")),
-			("20000", "20 " + _("seconds")),
-			("30000", "30 " + _("seconds")),
-			("60000", "1 " + _("minute")),
-			("300000", "5 " + _("minutes")),
-			("noscrolling", _("off"))])
+		config.lcd.scroll_speed = ConfigSelection(choices=[
+			("500", _("Slow")),
+			("300", _("Normal")),
+			("100", _("Fast"))
+		], default="300")
+		config.lcd.scroll_delay = ConfigSelection(choices=[
+			("10000", "10 %s" % _("seconds")),
+			("20000", "20 %s" % _("seconds")),
+			("30000", "30 %s" % _("seconds")),
+			("60000", "1 %s" % _("minute")),
+			("300000", "5 %s" % _("minutes")),
+			("noscrolling", _("Off"))
+		], default="10000")
 
 		def setLCDbright(configElement):
 			ilcd.setBright(configElement.value)
@@ -332,91 +318,117 @@ def InitLcd():
 			ilcd.setLEDBlinkingTime(configElement.value)
 
 		def setPowerLEDstate(configElement):
-			if fileExists("/proc/stb/power/powerled"):
-				print("[Lcd] Write to /proc/stb/power/powerled")
-				open("/proc/stb/power/powerled", "w").write(configElement.value)
+			if exists("/proc/stb/power/powerled"):
+				fileWriteLine("/proc/stb/power/powerled", configElement.value)
 
 		def setPowerLEDstate2(configElement):
-			if fileExists("/proc/stb/power/powerled2"):
-				print("[Lcd] Write to /proc/stb/power/powerled2")
-				open("/proc/stb/power/powerled2", "w").write(configElement.value)
+			if exists("/proc/stb/power/powerled2"):
+				fileWriteLine("/proc/stb/power/powerled2", configElement.value)
 
 		def setPowerLEDstanbystate(configElement):
-			if fileExists("/proc/stb/power/standbyled"):
-				print("[Lcd] Write to /proc/stb/power/standbyled")
-				open("/proc/stb/power/standbyled", "w").write(configElement.value)
+			if exists("/proc/stb/power/standbyled"):
+				fileWriteLine("/proc/stb/power/standbyled", configElement.value)
 
 		def setPowerLEDdeepstanbystate(configElement):
-			if fileExists("/proc/stb/power/suspendled"):
-				print("[Lcd] Write to /proc/stb/power/suspendled")
-				open("/proc/stb/power/suspendled", "w").write(configElement.value)
+			if exists("/proc/stb/power/suspendled"):
+				fileWriteLine("/proc/stb/power/suspendled", configElement.value)
 
 		def setLedPowerColor(configElement):
-			if fileExists("/proc/stb/fp/ledpowercolor"):
-				print("[Lcd] Write to /proc/stb/fp/ledpowercolor")
-				open("/proc/stb/fp/ledpowercolor", "w").write(configElement.value)
+			if exists("/proc/stb/fp/ledpowercolor"):
+				fileWriteLine("/proc/stb/fp/ledpowercolor", configElement.value)
 
 		def setLedStandbyColor(configElement):
-			if fileExists("/proc/stb/fp/ledstandbycolor"):
-				print("[Lcd] Write to /proc/stb/fp/ledstandbycolor")
-				open("/proc/stb/fp/ledstandbycolor", "w").write(configElement.value)
+			if exists("/proc/stb/fp/ledstandbycolor"):
+				fileWriteLine("/proc/stb/fp/ledstandbycolor", configElement.value)
 
 		def setLedSuspendColor(configElement):
-			if fileExists("/proc/stb/fp/ledsuspendledcolor"):
-				print("[Lcd] Write to /proc/stb/fp/ledsuspendledcolor")
-				open("/proc/stb/fp/ledsuspendledcolor", "w").write(configElement.value)
+			if exists("/proc/stb/fp/ledsuspendledcolor"):
+				fileWriteLine("/proc/stb/fp/ledsuspendledcolor", configElement.value)
 
-		config.usage.lcd_powerled = ConfigSelection(default="on", choices=[("off", _("Off")), ("on", _("On"))])
+		config.usage.lcd_powerled = ConfigSelection(choices=[
+			("off", _("Off")),
+			("on", _("On"))
+		], default="on")
 		config.usage.lcd_powerled.addNotifier(setPowerLEDstate)
-
-		config.usage.lcd_powerled2 = ConfigSelection(default="on", choices=[("off", _("Off")), ("on", _("On"))])
+		config.usage.lcd_powerled2 = ConfigSelection(choices=[
+			("off", _("Off")),
+			("on", _("On"))
+		], default="on")
 		config.usage.lcd_powerled2.addNotifier(setPowerLEDstate2)
-
-		config.usage.lcd_standbypowerled = ConfigSelection(default="on", choices=[("off", _("Off")), ("on", _("On"))])
+		config.usage.lcd_standbypowerled = ConfigSelection(choices=[
+			("off", _("Off")),
+			("on", _("On"))
+		], default="on")
 		config.usage.lcd_standbypowerled.addNotifier(setPowerLEDstanbystate)
-
-		config.usage.lcd_deepstandbypowerled = ConfigSelection(default="on", choices=[("off", _("Off")), ("on", _("On"))])
+		config.usage.lcd_deepstandbypowerled = ConfigSelection(choices=[
+			("off", _("Off")),
+			("on", _("On"))
+		], default="on")
 		config.usage.lcd_deepstandbypowerled.addNotifier(setPowerLEDdeepstanbystate)
-
-		config.lcd.ledpowercolor = ConfigSelection(default="1", choices=[("0", _("off")), ("1", _("blue")), ("2", _("red")), ("3", _("violet"))])
+		config.lcd.ledpowercolor = ConfigSelection(choices=[
+			("0", _("Off")),
+			("1", _("Blue")),
+			("2", _("Red")),
+			("3", _("Violet"))
+		], default="1")
 		config.lcd.ledpowercolor.addNotifier(setLedPowerColor)
-
-		config.lcd.ledstandbycolor = ConfigSelection(default="3", choices=[("0", _("off")), ("1", _("blue")), ("2", _("red")), ("3", _("violet"))])
+		config.lcd.ledstandbycolor = ConfigSelection(choices=[
+			("0", _("Off")),
+			("1", _("Blue")),
+			("2", _("Red")),
+			("3", _("Violet"))
+		], default="3")
 		config.lcd.ledstandbycolor.addNotifier(setLedStandbyColor)
-
-		config.lcd.ledsuspendcolor = ConfigSelection(default="2", choices=[("0", _("off")), ("1", _("blue")), ("2", _("red")), ("3", _("violet"))])
+		config.lcd.ledsuspendcolor = ConfigSelection(choices=[
+			("0", _("Off")),
+			("1", _("Blue")),
+			("2", _("Red")),
+			("3", _("Violet"))
+		], default="2")
 		config.lcd.ledsuspendcolor.addNotifier(setLedSuspendColor)
-
+		colorsList = [
+			("0xff0000", _("Red")),
+			("0xff3333", _("Rose")),
+			("0xff5500", _("Orange")),
+			("0xdd9900", _("Yellow")),
+			("0x99dd00", _("Lime")),
+			("0x00ff00", _("Green")),
+			("0x00ff99", _("Aqua")),
+			("0x00bbff", _("Olympic blue")),
+			("0x0000ff", _("Blue")),
+			("0x6666ff", _("Azure")),
+			("0x9900ff", _("Purple")),
+			("0xff0066", _("Pink")),
+			("0xffffff", _("White")),
+		]
 		standby_default = 1
-
 		if not ilcd.isOled():
 			config.lcd.contrast = ConfigSlider(default=5, limits=(0, 20))
 			config.lcd.contrast.addNotifier(setLCDcontrast)
 		else:
 			config.lcd.contrast = ConfigNothing()
-
 		config.lcd.standby = ConfigSlider(default=standby_default, limits=(0, 10))
 		config.lcd.dimbright = ConfigSlider(default=standby_default, limits=(0, 10))
-		config.lcd.bright = ConfigSlider(default="5", limits=(0, 10))
+		config.lcd.bright = ConfigSlider(default=SystemInfo["DefaultDisplayBrightness"], limits=(0, 10))
 		config.lcd.dimbright.addNotifier(setLCDdimbright)
 		config.lcd.dimbright.apply = lambda: setLCDdimbright(config.lcd.dimbright)
-		config.lcd.dimdelay = ConfigSelection(default="0", choices=[
-			("5", "5 " + _("seconds")),
-			("10", "10 " + _("seconds")),
-			("15", "15 " + _("seconds")),
-			("20", "20 " + _("seconds")),
-			("30", "30 " + _("seconds")),
-			("60", "1 " + _("minute")),
-			("120", "2 " + _("minutes")),
-			("300", "5 " + _("minutes")),
-			("0", _("off"))])
+		config.lcd.dimdelay = ConfigSelection(choices=[
+			("5", "5 %s" % _("seconds")),
+			("10", "10 %s" % _("seconds")),
+			("15", "15 %s" % _("seconds")),
+			("20", "20 %s" % _("seconds")),
+			("30", "30 %s" % _("seconds")),
+			("60", "1 %s" % _("minute")),
+			("120", "2 %s" % _("minutes")),
+			("300", "5 %s" % _("minutes")),
+			("0", _("Off"))
+		], default="0")
 		config.lcd.dimdelay.addNotifier(setLCDdimdelay)
 		config.lcd.standby.addNotifier(setLCDstandbybright)
 		config.lcd.standby.apply = lambda: setLCDstandbybright(config.lcd.standby)
 		config.lcd.bright.addNotifier(setLCDbright)
 		config.lcd.bright.apply = lambda: setLCDbright(config.lcd.bright)
 		config.lcd.bright.callNotifiersOnSaveAndCancel = True
-
 		config.lcd.invert = ConfigYesNo(default=False)
 		config.lcd.invert.addNotifier(setLCDinverted)
 
@@ -424,86 +436,99 @@ def InitLcd():
 		config.lcd.flip.addNotifier(setLCDflipped)
 
 		if SystemInfo["VFD_scroll_repeats"]:
-			def scroll_repeats(el):
-				print("[Lcd] Write to /proc/stb/lcd/scroll_repeats")
-				open(SystemInfo["VFD_scroll_repeats"], "w").write(el.value)
-			choicelist = [("0", _("None")), ("1", _("1X")), ("2", _("2X")), ("3", _("3X")), ("4", _("4X")), ("500", _("Continues"))]
-			config.usage.vfd_scroll_repeats = ConfigSelection(default="3", choices=choicelist)
+			def scroll_repeats(configElement):
+				fileWriteLine(SystemInfo["VFD_scroll_repeats"], configElement.value)
+
+			config.usage.vfd_scroll_repeats = ConfigSelection(choices=[
+				("0", _("None")),
+				("1", _("1X")),
+				("2", _("2X")),
+				("3", _("3X")),
+				("4", _("4X")),
+				("500", _("Continuous"))
+			], default="3")
 			config.usage.vfd_scroll_repeats.addNotifier(scroll_repeats, immediate_feedback=False)
 		else:
 			config.usage.vfd_scroll_repeats = ConfigNothing()
-
 		if SystemInfo["VFD_scroll_delay"]:
-			def scroll_delay(el):
-				print("[Lcd] Write to /proc/stb/lcd/scroll_delay")
-				open(SystemInfo["VFD_scroll_delay"], "w").write(str(el.value))
+			def scroll_delay(configElement):
+				fileWriteLine(SystemInfo["VFD_scroll_delay"], str(configElement.value))
+
 			config.usage.vfd_scroll_delay = ConfigSlider(default=150, increment=10, limits=(0, 500))
 			config.usage.vfd_scroll_delay.addNotifier(scroll_delay, immediate_feedback=False)
-			config.lcd.hdd = ConfigSelection([("0", _("No")), ("1", _("Yes"))], "1")
+			config.lcd.hdd = ConfigSelection(choices=[
+				("0", _("No")),
+				("1", _("Yes"))
+			], default="1")
 		else:
 			config.lcd.hdd = ConfigNothing()
 			config.usage.vfd_scroll_delay = ConfigNothing()
-
 		if SystemInfo["VFD_initial_scroll_delay"]:
-			def initial_scroll_delay(el):
-				print("[Lcd] Write to /proc/stb/lcd/initial_scroll_delay")
-				open(SystemInfo["VFD_initial_scroll_delay"], "w").write(el.value)
+			def initial_scroll_delay(configElement):
+				fileWriteLine(SystemInfo["VFD_initial_scroll_delay"], configElement.value)
 
-			choicelist = [
-			("3000", "3 " + _("seconds")),
-			("5000", "5 " + _("seconds")),
-			("10000", "10 " + _("seconds")),
-			("20000", "20 " + _("seconds")),
-			("30000", "30 " + _("seconds")),
-			("0", _("no delay"))]
-			config.usage.vfd_initial_scroll_delay = ConfigSelection(default="10000", choices=choicelist)
+			config.usage.vfd_initial_scroll_delay = ConfigSelection(choices=[
+				("3000", "3 %s" % _("seconds")),
+				("5000", "5 %s" % _("seconds")),
+				("10000", "10 %s" % _("seconds")),
+				("20000", "20 %s" % _("seconds")),
+				("30000", "30 %s" % _("seconds")),
+				("0", _("No delay"))
+			], default="10000")
 			config.usage.vfd_initial_scroll_delay.addNotifier(initial_scroll_delay, immediate_feedback=False)
 		else:
 			config.usage.vfd_initial_scroll_delay = ConfigNothing()
-
 		if SystemInfo["VFD_final_scroll_delay"]:
-			def final_scroll_delay(el):
-				print("[Lcd] Write to /proc/stb/lcd/final_scroll_delay")
-				open(SystemInfo["VFD_final_scroll_delay"], "w").write(el.value)
+			def final_scroll_delay(configElement):
+				fileWriteLine(SystemInfo["VFD_final_scroll_delay"], configElement.value)
 
-			choicelist = [
-			("3000", "3 " + _("seconds")),
-			("5000", "5 " + _("seconds")),
-			("10000", "10 " + _("seconds")),
-			("20000", "20 " + _("seconds")),
-			("30000", "30 " + _("seconds")),
-			("0", _("no delay"))]
-			config.usage.vfd_final_scroll_delay = ConfigSelection(default="10000", choices=choicelist)
+			config.usage.vfd_final_scroll_delay = ConfigSelection(choices=[
+				("3000", "3 %s" % _("seconds")),
+				("5000", "5 %s" % _("seconds")),
+				("10000", "10 %s" % _("seconds")),
+				("20000", "20 %s" % _("seconds")),
+				("30000", "30 %s" % _("seconds")),
+				("0", _("No delay"))
+			], default="10000")
 			config.usage.vfd_final_scroll_delay.addNotifier(final_scroll_delay, immediate_feedback=False)
 		else:
 			config.usage.vfd_final_scroll_delay = ConfigNothing()
-
-		if fileExists("/proc/stb/lcd/show_symbols"):
-			config.lcd.mode = ConfigSelection([("0", _("No")), ("1", _("Yes"))], "1")
+		if exists("/proc/stb/lcd/show_symbols"):
+			config.lcd.mode = ConfigSelection(choices=[
+				("0", _("No")),
+				("1", _("Yes"))
+			], default="1")
 			config.lcd.mode.addNotifier(setLCDmode)
 		else:
 			config.lcd.mode = ConfigNothing()
-
-		if fileExists("/proc/stb/power/vfd") or fileExists("/proc/stb/lcd/vfd"):
-			config.lcd.power = ConfigSelection([("0", _("No")), ("1", _("Yes"))], "1")
+		if exists("/proc/stb/power/vfd") or exists("/proc/stb/lcd/vfd"):
+			config.lcd.power = ConfigSelection(choices=[
+				("0", _("No")),
+				("1", _("Yes"))
+			], default="1")
 			config.lcd.power.addNotifier(setLCDpower)
 		else:
 			config.lcd.power = ConfigNothing()
-
-		if fileExists("/proc/stb/fb/sd_detach"):
-			config.lcd.fblcddisplay = ConfigSelection([("1", _("No")), ("0", _("Yes"))], "1")
+		if exists("/proc/stb/fb/sd_detach"):
+			config.lcd.fblcddisplay = ConfigSelection(choices=[
+				("1", _("No")),
+				("0", _("Yes"))
+			], default="1")
 			config.lcd.fblcddisplay.addNotifier(setfblcddisplay)
 		else:
 			config.lcd.fblcddisplay = ConfigNothing()
-
-		if fileExists("/proc/stb/lcd/show_outputresolution"):
-			config.lcd.showoutputresolution = ConfigSelection([("0", _("No")), ("1", _("Yes"))], "1")
+		if exists("/proc/stb/lcd/show_outputresolution"):
+			config.lcd.showoutputresolution = ConfigSelection(choices=[
+				("0", _("No")),
+				("1", _("Yes"))
+			], default="1")
 			config.lcd.showoutputresolution.addNotifier(setLCDshowoutputresolution)
 		else:
 			config.lcd.showoutputresolution = ConfigNothing()
 
 		def doNothing():
 			pass
+
 		config.lcd.ledbrightness = ConfigNothing()
 		config.lcd.ledbrightness.apply = lambda: doNothing()
 		config.lcd.ledbrightnessstandby = ConfigNothing()
@@ -514,6 +539,7 @@ def InitLcd():
 	else:
 		def doNothing():
 			pass
+
 		config.lcd.contrast = ConfigNothing()
 		config.lcd.bright = ConfigNothing()
 		config.lcd.standby = ConfigNothing()
@@ -523,17 +549,19 @@ def InitLcd():
 		config.lcd.fblcddisplay = ConfigNothing()
 		config.lcd.mode = ConfigNothing()
 		config.lcd.hdd = ConfigNothing()
-		config.lcd.scroll_speed = ConfigSelection(default="300", choices=[
-		("500", _("slow")),
-		("300", _("normal")),
-		("100", _("fast"))])
-		config.lcd.scroll_delay = ConfigSelection(default="10000", choices=[
-		("10000", "10 " + _("seconds")),
-		("20000", "20 " + _("seconds")),
-		("30000", "30 " + _("seconds")),
-		("60000", "1 " + _("minute")),
-		("300000", "5 " + _("minutes")),
-		("noscrolling", _("off"))])
+		config.lcd.scroll_speed = ConfigSelection(choices=[
+			("500", _("Slow")),
+			("300", _("Normal")),
+			("100", _("Fast"))
+		], default="300")
+		config.lcd.scroll_delay = ConfigSelection(choices=[
+			("10000", "10 %s" % _("seconds")),
+			("20000", "20 %s" % _("seconds")),
+			("30000", "30 %s" % _("seconds")),
+			("60000", "1 %s" % _("minute")),
+			("300000", "5 %s" % _("minutes")),
+			("noscrolling", _("Off"))
+		], default="10000")
 		config.lcd.showoutputresolution = ConfigNothing()
 		config.lcd.ledbrightness = ConfigNothing()
 		config.lcd.ledbrightness.apply = lambda: doNothing()
@@ -542,5 +570,4 @@ def InitLcd():
 		config.lcd.ledbrightnessdeepstandby = ConfigNothing()
 		config.lcd.ledbrightnessdeepstandby.apply = lambda: doNothing()
 		config.lcd.ledblinkingtime = ConfigNothing()
-
 	config.misc.standbyCounter.addNotifier(standbyCounterChanged, initial_call=False)
