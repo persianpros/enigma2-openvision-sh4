@@ -31,7 +31,7 @@ from Components.Sources.StaticText import StaticText
 from Screens.HelpMenu import HelpableScreen
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen, ScreenSummary
-from Tools.Directories import fileReadLine, fileReadLines, fileWriteLine
+from Tools.Directories import fileReadLine, fileReadLines, fileWriteLine, fileExists
 from Tools.Geolocation import geolocation
 from Tools.StbHardware import getFPVersion, getBoxProc, getBoxProcType, getHWSerial, getBoxRCType
 
@@ -963,17 +963,23 @@ class ReceiverInformation(InformationBase):
 			procModel = boxbranding.getMachineProcModel()
 		if procModel != model:
 			info.append(formatLine("P1", _("Proc model"), procModel))
-		resellerName = fileReadLine("/proc/stb/info/model_name")
-		if resellerName:
-			info.append(formatLine("P1", _("Reseller name"), resellerName))
+		resellerBrand = fileReadLine("/proc/stb/info/brand")
+		if resellerBrand:
+			info.append(formatLine("P1", _("Reseller brand"), resellerBrand))
+		resellerModel = fileReadLine("/proc/stb/info/model_name")
+		if resellerModel:
+			info.append(formatLine("P1", _("Reseller model"), resellerModel))
 		resellerId = fileReadLine("/proc/stb/fp/resellerID")
 		if resellerId:
 			info.append(formatLine("P1", _("Reseller ID"), resellerId))
+		if fileExists("/proc/stb/info/stb_id"):
+			stbId = fileReadLine("/proc/stb/info/stb_id")
+		else:
+			stbId = popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
+		info.append(formatLine("P1", _("STB ID"), (stbId if stbId else _("N/A"))))
 		adbVariant = fileReadLine("/proc/stb/info/adb_variant")
 		if adbVariant:
 			info.append(formatLine("P1", _("ADB variant"), adbVariant))
-		stbId = popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
-		info.append(formatLine("P1", _("STB ID"), (stbId if stbId else _("N/A"))))
 		procModelType = getBoxProcType()
 		if procModelType and procModelType != "unknown":
 			info.append(formatLine("P1", _("Hardware type"), procModelType))
