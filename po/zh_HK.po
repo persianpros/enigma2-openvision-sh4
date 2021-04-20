@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-09 12:53+0430\n"
+"POT-Creation-Date: 2021-04-20 17:31+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -2155,6 +2155,9 @@ msgstr ""
 msgid "Any activity"
 msgstr ""
 
+msgid "Aqua"
+msgstr ""
+
 msgid "Arabic"
 msgstr "阿拉伯語"
 
@@ -2497,6 +2500,9 @@ msgstr "可用的格式變數"
 msgid "Azerbaijan"
 msgstr ""
 
+msgid "Azure"
+msgstr ""
+
 msgid "B"
 msgstr "B"
 
@@ -2720,6 +2726,9 @@ msgstr "資訊"
 #, fuzzy
 msgid "Boot time"
 msgstr "開始時間"
+
+msgid "Boot time and local data/time"
+msgstr ""
 
 msgid "Boot time and local time"
 msgstr ""
@@ -3931,11 +3940,10 @@ msgstr ""
 msgid "Continue playing"
 msgstr "繼續播放"
 
-#, fuzzy
-msgid "Continues"
-msgstr "繼續播放"
-
 msgid "Continues play (loop)"
+msgstr ""
+
+msgid "Continuous"
 msgstr ""
 
 msgid "Contrast"
@@ -4028,7 +4036,7 @@ msgstr "創建目錄%s 失敗."
 msgid "Creating filesystem"
 msgstr ""
 
-msgid "Creating partition"
+msgid "Creating partition."
 msgstr ""
 
 #, fuzzy
@@ -5364,6 +5372,9 @@ msgstr ""
 #, fuzzy
 msgid "Enable client mode"
 msgstr "允許移動模式"
+
+msgid "Enable debug logs *"
+msgstr ""
 
 msgid "Enable fade-out functionality"
 msgstr ""
@@ -7559,6 +7570,9 @@ msgstr ""
 msgid "Liechtenstein"
 msgstr ""
 
+msgid "Lime"
+msgstr ""
+
 msgid "Limit character set for recording filenames"
 msgstr ""
 
@@ -7653,6 +7667,9 @@ msgstr "載入"
 msgid "Loading information, please wait..."
 msgstr "正在下載插件列表,請稍候..."
 
+msgid "Local date/time"
+msgstr ""
+
 #, fuzzy
 msgid "Local information"
 msgstr "資訊"
@@ -7713,7 +7730,7 @@ msgid "Logs Setup"
 msgstr "設定"
 
 #, fuzzy
-msgid "Logs folder location"
+msgid "Logs folder location *"
 msgstr "<最近一次定時錄影位置>"
 
 msgid "Long filenames"
@@ -8093,7 +8110,8 @@ msgstr ""
 msgid "Motor running timeout"
 msgstr ""
 
-msgid "Mount"
+#, fuzzy
+msgid "Mount."
 msgstr "安裝(Mount)"
 
 #, fuzzy
@@ -8811,6 +8829,9 @@ msgstr "現在，盡可能使用對比度設定出現的亮度背景，但是請
 msgid "Number of channels shown in channel selection list"
 msgstr ""
 
+msgid "Number of debug logs to keep *"
+msgstr ""
+
 msgid "Number of digits in channel number"
 msgstr ""
 
@@ -8895,6 +8916,9 @@ msgid "Offline decode delay (ms)"
 msgstr ""
 
 msgid "Old - SH4"
+msgstr ""
+
+msgid "Olympic blue"
 msgstr ""
 
 msgid "Oman"
@@ -9030,6 +9054,9 @@ msgid "Opkg"
 msgstr ""
 
 msgid "Options disable timer"
+msgstr ""
+
+msgid "Orange"
 msgstr ""
 
 msgid "Orbital position"
@@ -9265,6 +9292,9 @@ msgstr "原始大小"
 
 msgid "Pilot"
 msgstr "Pilot"
+
+msgid "Pink"
+msgstr ""
 
 msgid "Pitcairn"
 msgstr ""
@@ -9982,6 +10012,9 @@ msgstr ""
 msgid "Purge deleted user bouquets"
 msgstr ""
 
+msgid "Purple"
+msgstr ""
+
 msgid "Put A/V receiver to standby too."
 msgstr ""
 
@@ -10425,7 +10458,7 @@ msgstr "正在刪除..."
 msgid "Removing directory %s failed. (Maybe not empty.)"
 msgstr "刪除 %s 目錄失敗. (很可能不是空目錄.)"
 
-msgid "Removing partition table"
+msgid "Removing partition table."
 msgstr ""
 
 #, fuzzy
@@ -10496,16 +10529,19 @@ msgstr "需要介質類型:"
 msgid "Requires internet connection"
 msgstr ""
 
-msgid "Rereading partition table"
+msgid "Rereading partition table."
 msgstr ""
 
 #, fuzzy
 msgid "Reseller ID"
 msgstr "用戶定義"
 
+msgid "Reseller brand"
+msgstr ""
+
 #, fuzzy
-msgid "Reseller name"
-msgstr "重命"
+msgid "Reseller model"
+msgstr "測驗模式"
 
 msgid "Reserved"
 msgstr ""
@@ -10711,6 +10747,9 @@ msgstr ""
 #, fuzzy
 msgid "Root file"
 msgstr "%d file"
+
+msgid "Rose"
+msgstr ""
 
 msgid "Rotor step position:"
 msgstr ""
@@ -13651,9 +13690,6 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
-msgstr ""
-
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
 msgstr ""
 
@@ -13820,6 +13856,12 @@ msgstr ""
 #, fuzzy
 msgid "This screen is not yet available."
 msgstr "這裏沒有可用更新."
+
+msgid "This sets the maximum number of log files that will be retained.  Files in excess of this number will be deleted."
+msgstr ""
+
+msgid "This sets the prefix for each line in the debug log. The 'Boot time' is the number of seconds since your %s %s was last booted."
+msgstr ""
 
 msgid "This setting allows the tuner configuration to be a duplication of how another tuner is already configured."
 msgstr ""
@@ -14634,6 +14676,9 @@ msgstr ""
 msgid "Use these settings?"
 msgstr ""
 
+msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgstr ""
+
 msgid "Use this video enhancement settings?"
 msgstr "使用此視頻增強設定?"
 
@@ -14911,6 +14956,9 @@ msgstr ""
 msgid "View, install and remove available or installed packages."
 msgstr "檢視, 安裝和刪除已安裝的套裝軟體。"
 
+msgid "Violet"
+msgstr ""
+
 msgid "Virgin Islands (British)"
 msgstr ""
 
@@ -14994,6 +15042,9 @@ msgid "Waiting for mount"
 msgstr ""
 
 msgid "Waiting for partition"
+msgstr ""
+
+msgid "Waiting for partition."
 msgstr ""
 
 msgid "Wake On LAN"
@@ -16267,9 +16318,6 @@ msgstr ""
 msgid "fashion"
 msgstr ""
 
-msgid "fast"
-msgstr ""
-
 msgid "fileformats (BMP, PNG, JPG, GIF)"
 msgstr "檔格式 (BMP, PNG, JPG, GIF)"
 
@@ -16593,9 +16641,6 @@ msgid "no CI slots found"
 msgstr "未找到CI插座"
 
 msgid "no channel list"
-msgstr ""
-
-msgid "no delay"
 msgstr ""
 
 msgid "no module found"
@@ -16923,9 +16968,6 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
-msgid "slow"
-msgstr ""
-
 msgid "soap/melodrama/folkloric"
 msgstr ""
 
@@ -17135,9 +17177,6 @@ msgstr ""
 
 msgid "vertical"
 msgstr "垂直"
-
-msgid "violet"
-msgstr ""
 
 msgid "vitamin_hd5000"
 msgstr ""
