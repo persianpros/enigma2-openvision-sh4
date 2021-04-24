@@ -963,6 +963,9 @@ class ReceiverInformation(InformationBase):
 			procModel = boxbranding.getMachineProcModel()
 		if procModel != model:
 			info.append(formatLine("P1", _("Proc model"), procModel))
+		resellerOEM = fileReadLine("/proc/stb/info/OEM")
+		if resellerOEM:
+			info.append(formatLine("P1", _("Reseller OEM"), resellerOEM))
 		resellerBrand = fileReadLine("/proc/stb/info/brand")
 		if resellerBrand:
 			info.append(formatLine("P1", _("Reseller brand"), resellerBrand))
