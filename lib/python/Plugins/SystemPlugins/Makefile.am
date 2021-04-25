@@ -4,14 +4,10 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	SatelliteEquipmentControl Videomode VideoTune Hotplug \
 	DefaultServicesScanner DiseqcTester CommonInterfaceAssignment \
 	CableScan FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
-	VideoEnhancement WirelessLan NetworkWizard SH4OSDAdjustment VFD-Icons SystemOptions
-
-if ENABLE_SPARK
-SUBDIRS += SH4BoosterControl
-endif
+	VideoEnhancement WirelessLan NetworkWizard SH4OSDAdjustment VFD-Icons SystemOptions SH4BoosterControl
 
 if ENABLE_SPARK7162
-SUBDIRS += SparkUnionTunerType SH4BoosterControl
+SUBDIRS += SparkUnionTunerType
 endif
 
 if HAVE_FCC_ABILITY

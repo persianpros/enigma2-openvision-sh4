@@ -30,8 +30,8 @@ if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.p
 		750) overclk=19203;;
 		775) overclk=39686;;
 		800) overclk=20483;;
-		*) cpufreq=450
-		overclk=3841;;
+		*) cpufreq=540
+		overclk=4609;;
 	esac
 	echo $overclk > /proc/cpu_frequ/pll0_ndiv_mdiv
 	echo "Setting CPU clock speed to $cpufreq MHz (overclk=$overclk)"
