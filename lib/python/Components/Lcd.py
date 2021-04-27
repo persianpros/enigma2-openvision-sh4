@@ -64,7 +64,7 @@ class IconCheckPoller:
 				linkState = fileReadLine("/sys/class/net/eth0/carrier")
 		linkState = linkState[:1]
 		if exists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == "1":
-			fileWriteLine("/proc/stb/lcd/symbol_network", str(linkState))
+			fileWriteLine("/proc/stb/lcd/symbol_network", linkState)
 		elif exists("/proc/stb/lcd/symbol_network") and config.lcd.mode.value == "0":
 			fileWriteLine("/proc/stb/lcd/symbol_network", "0")
 		USBState = 0
@@ -74,7 +74,7 @@ class IconCheckPoller:
 				if dev.deviceClass != 9 and dev.deviceClass != 2 and dev.idVendor != 3034 and dev.idVendor > 0:
 					USBState = 1
 		if exists("/proc/stb/lcd/symbol_usb"):
-			fileWriteLine("/proc/stb/lcd/symbol_usb", str(USBState))
+			fileWriteLine("/proc/stb/lcd/symbol_usb", USBState)
 		self.timer.startLongTimer(30)
 
 
@@ -452,7 +452,7 @@ def InitLcd():
 			config.usage.vfd_scroll_repeats = ConfigNothing()
 		if SystemInfo["VFD_scroll_delay"]:
 			def scroll_delay(configElement):
-				fileWriteLine(SystemInfo["VFD_scroll_delay"], str(configElement.value))
+				fileWriteLine(SystemInfo["VFD_scroll_delay"], configElement.value)
 
 			config.usage.vfd_scroll_delay = ConfigSlider(default=150, increment=10, limits=(0, 500))
 			config.usage.vfd_scroll_delay.addNotifier(scroll_delay, immediate_feedback=False)
