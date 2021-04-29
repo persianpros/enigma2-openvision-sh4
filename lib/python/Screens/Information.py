@@ -531,18 +531,20 @@ class ImageInformation(InformationBase):
 		info.append("")
 		info.append(formatLine("H", _("Software information")))
 		info.append("")
+		info.append(formatLine("P1", _("GCC version"), about.getGccVersion()))
+		info.append(formatLine("P1", _("Glibc version"), about.getGlibcVersion()))
+		info.append(formatLine("P1", _("Python version"), about.getPythonVersionString()))
 		info.append(formatLine("P1", _("Media framework"), about.getGStreamerVersionString()))
 		playerVersion = fileReadLine("/proc/stb/player/version")
 		if playerVersion:
 			info.append(formatLine("P1", _("Player version"), playerVersion))
 		info.append(formatLine("P1", _("FFmpeg version"), about.getFFmpegVersionString()))
-		info.append(formatLine("P1", _("Python version"), about.getPythonVersionString()))
 		bootId = fileReadLine("/proc/sys/kernel/random/boot_id")
 		if bootId:
 			info.append(formatLine("P1", _("Boot ID"), bootId))
 		uuId = fileReadLine("/proc/sys/kernel/random/uuid")
 		if uuId:
-			info.append(formatLine("P1", _("Boot ID"), uuId))
+			info.append(formatLine("P1", _("UUID"), uuId))
 		info.append("")
 		info.append(formatLine("H", _("Boot information")))
 		info.append("")
@@ -640,7 +642,7 @@ class MultiBootInformation(InformationBase):
 	def __init__(self, session):
 		InformationBase.__init__(self, session)
 		self.setTitle(_("MultiBoot Information"))
-		self.skinName.insert(0, "MemoryInformation")
+		self.skinName.insert(0, "MultiBootInformation")
 
 	def fetchInformation(self):
 		self.informationTimer.stop()
