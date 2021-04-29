@@ -1,18 +1,17 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
-import sys
-import os
-import time
-import re
-from enigma import getBoxType, getBoxBrand
-from Components.SystemInfo import SystemInfo
-import socket
 import fcntl
-import struct
-from Components.Console import Console
-from Tools.Directories import fileExists
+import os
+from os.path import isfile
+import re
 from six import PY2
+import socket
+import struct
+import sys
+import time
+
+from enigma import getBoxBrand, getBoxType
+
+from Components.Console import Console
+from Components.SystemInfo import SystemInfo
 
 
 def _ifinfo(sock, addr, ifname):
@@ -87,10 +86,10 @@ def getBuildDateString():
 
 def getUpdateDateString():
 	try:
-		if fileExists("/proc/openvision/compiledate"):
+		if isfile("/proc/openvision/compiledate"):
 			print("[About] Read /proc/openvision/compiledate")
 			build = open("/proc/openvision/compiledate", "r").read().strip()
-		elif fileExists("/etc/openvision/compiledate"):
+		elif isfile("/etc/openvision/compiledate"):
 			print("[About] Read /etc/openvision/compiledate")
 			build = open("/etc/openvision/compiledate", "r").read().strip()
 		if build.isdigit():
@@ -151,10 +150,10 @@ def getCPUBenchmark():
 			if line[0] == "processor":
 				cpucount += 1
 
-		if not fileExists("/tmp/dhry.txt"):
+		if not isfile("/tmp/dhry.txt"):
 			cmdbenchmark = "dhry > /tmp/dhry.txt"
 			Console().ePopen(cmdbenchmark)
-		if fileExists("/tmp/dhry.txt"):
+		if isfile("/tmp/dhry.txt"):
 			print("[About] Read /tmp/dhry.txt")
 			cpubench = os.popen("cat /tmp/dhry.txt | grep 'Open Vision DMIPS' | sed 's|[^0-9]*||'").read().strip()
 			benchmarkstatus = os.popen("cat /tmp/dhry.txt | grep 'Open Vision CPU status' | cut -f2 -d':'").read().strip()
@@ -171,10 +170,10 @@ def getCPUBenchmark():
 
 def getRAMBenchmark():
 	try:
-		if not fileExists("/tmp/streambench.txt"):
+		if not isfile("/tmp/streambench.txt"):
 			streambenchmark = "streambench > /tmp/streambench.txt"
 			Console().ePopen(streambenchmark)
-		if fileExists("/tmp/streambench.txt"):
+		if isfile("/tmp/streambench.txt"):
 			print("[About] Read /tmp/streambench.txt")
 			streambench = os.popen("cat /tmp/streambench.txt | grep 'Open Vision copy rate' | sed 's|[^0-9]*||'").read().strip()
 
@@ -218,7 +217,13 @@ def getCPUInfoString():
 				cpu_speed = int(open("/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq").read()) / 1000
 			except:
 				print("[About] Read /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq failed.")
-				cpu_speed = "-"
+				try:
+					import binascii
+					print("[About] Read /sys/firmware/devicetree/base/cpus/cpu@0/clock-frequency")
+					cpu_speed = int(int(binascii.hexlify(open('/sys/firmware/devicetree/base/cpus/cpu@0/clock-frequency', 'rb').read()), 16) / 100000000) * 100
+				except:
+					print("[About] Read /sys/firmware/devicetree/base/cpus/cpu@0/clock-frequency failed.")
+					cpu_speed = "-"
 
 		temperature = None
 		if os.path.isfile('/proc/stb/fp/temp_sensor_avs'):
@@ -299,13 +304,25 @@ def getVisionModule():
 
 
 def getDriverInstalledDate():
-	from glob import glob
 	try:
-		print("[About] Read /var/lib/opkg/info/dvb-modules.control")
-		driver = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/*dvb-modules*.control")[0], "r") if x.startswith("Version:")][0]
-		return "%s-%s-%s" % (driver[:4], driver[4:6], driver[6:])
+		from glob import glob
+		try:
+			print("[About] Read /var/lib/opkg/info/dvb-modules.control")
+			driver = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/*dvb-modules*.control")[0], "r") if x.startswith("Version:")][0]
+			return "%s-%s-%s" % (driver[:4], driver[4:6], driver[6:])
+		except:
+			print("[About] Read /var/lib/opkg/info/dvb-modules.control failed.")
+			try:
+				print("[About] Read /var/lib/opkg/info/dvb-proxy.control")
+				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*dvb-proxy*.control")[0], "r") if x.startswith("Version:")][0]
+				return "%s" % driver[1].replace("\n", "")
+			except:
+				print("[About] Read /var/lib/opkg/info/dvb-proxy.control failed.")
+				print("[About] Read /var/lib/opkg/info/platform-util.control")
+				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*platform-util*.control")[0], "r") if x.startswith("Version:")][0]
+				return "%s" % driver[1].replace("\n", "")
 	except:
-		print("[About] Read /var/lib/opkg/info/dvb-modules.control failed.")
+		print("[About] Read driver date failed.")
 		return _("unknown")
 
 
