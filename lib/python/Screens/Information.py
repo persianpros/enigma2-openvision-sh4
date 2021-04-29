@@ -8,7 +8,6 @@ from os import listdir, popen, remove, statvfs
 from os.path import basename, getmtime, isdir, isfile, join as pathjoin
 from six import PY2
 from ssl import _create_unverified_context  # For python 2.7.11 we need to bypass the certificate check
-from subprocess import check_output
 from time import localtime
 try:
 	from urllib2 import urlopen
