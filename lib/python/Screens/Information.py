@@ -34,6 +34,8 @@ from Tools.Directories import fileReadLine, fileReadLines, fileWriteLine, fileEx
 from Tools.Geolocation import geolocation
 from Tools.StbHardware import getFPVersion, getBoxProc, getBoxProcType, getHWSerial, getBoxRCType
 
+MODULE_NAME = __name__.split(".")[-1]
+
 INFO_COLORS = ["N", "H", "P", "V", "M"]
 INFO_COLOR = {
 	"B": None,
@@ -197,7 +199,7 @@ class BenchmarkInformation(InformationBase):
 		self.informationTimer.stop()
 		self.cpuTypes = []
 		lines = []
-		lines = fileReadLines("/proc/cpuinfo", lines)
+		lines = fileReadLines("/proc/cpuinfo", lines, source=MODULE_NAME)
 		for line in lines:
 			if line.startswith("model name") or line.startswith("Processor"):  # HiSilicon use the label "Processor"!
 				self.cpuTypes.append([x.strip() for x in line.split(":")][1])
@@ -469,9 +471,9 @@ class ImageInformation(InformationBase):
 		info.append("")
 		info.append(formatLine("M", _("Donate at %s") % "https://forum.openvision.tech/app.php/donate"))
 		info.append("")
-		visionVersion = fileReadLine("/etc/openvision/visionversion", boxbranding.getVisionVersion())
+		visionVersion = fileReadLine("/etc/openvision/visionversion", boxbranding.getVisionVersion(), source=MODULE_NAME)
 		info.append(formatLine("P1", _("OpenVision version"), visionVersion))
-		visionRevision = fileReadLine("/etc/openvision/visionrevision", boxbranding.getVisionRevision())
+		visionRevision = fileReadLine("/etc/openvision/visionrevision", boxbranding.getVisionRevision(), source=MODULE_NAME)
 		info.append(formatLine("P1", _("OpenVision revision"), visionRevision))
 		if config.misc.OVupdatecheck.value:
 			ovUrl = "https://raw.githubusercontent.com/OpenVisionE2/revision/master/new.conf"
@@ -484,11 +486,11 @@ class ImageInformation(InformationBase):
 		else:
 			ovRevisionUpdate = _("Disabled in configuration")
 		info.append(formatLine("P1", _("Latest revision on github"), ovRevisionUpdate))
-		visionLanguage = fileReadLine("/etc/openvision/visionlanguage")
+		visionLanguage = fileReadLine("/etc/openvision/visionlanguage", source=MODULE_NAME)
 		if visionLanguage:
 			info.append(formatLine("P1", _("OpenVision language"), visionLanguage))
 		info.append(formatLine("P1", _("OpenVision module"), about.getVisionModule()))
-		multibootFlag = _("Yes") if fileReadLine("/etc/openvision/multiboot", "1") else _("No")
+		multibootFlag = _("Yes") if fileReadLine("/etc/openvision/multiboot", "1", source=MODULE_NAME) else _("No")
 		info.append(formatLine("P1", _("Soft multiboot"), multibootFlag))
 		info.append(formatLine("P1", _("Flash type"), about.getFlashType()))
 		xResolution = getDesktop(0).size().width()
@@ -511,7 +513,7 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("Last update"), about.getUpdateDateString()))
 		info.append(formatLine("P1", _("Enigma2 (re)starts"), config.misc.startCounter.value))
 		info.append(formatLine("P1", _("Enigma2 debug level"), eGetEnigmaDebugLvl()))
-		mediaService = fileReadLine("/etc/openvision/mediaservice")
+		mediaService = fileReadLine("/etc/openvision/mediaservice", source=MODULE_NAME)
 		if mediaService:
 			info.append(formatLine("P1", _("Media service"), mediaService.replace("enigma2-plugin-systemplugins-", "")))
 		info.append("")
@@ -534,14 +536,14 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("Glibc version"), about.getGlibcVersion()))
 		info.append(formatLine("P1", _("Python version"), about.getPythonVersionString()))
 		info.append(formatLine("P1", _("Media framework"), about.getGStreamerVersionString()))
-		playerVersion = fileReadLine("/proc/stb/player/version")
+		playerVersion = fileReadLine("/proc/stb/player/version", source=MODULE_NAME)
 		if playerVersion:
 			info.append(formatLine("P1", _("Player version"), playerVersion))
 		info.append(formatLine("P1", _("FFmpeg version"), about.getFFmpegVersionString()))
-		bootId = fileReadLine("/proc/sys/kernel/random/boot_id")
+		bootId = fileReadLine("/proc/sys/kernel/random/boot_id", source=MODULE_NAME)
 		if bootId:
 			info.append(formatLine("P1", _("Boot ID"), bootId))
-		uuId = fileReadLine("/proc/sys/kernel/random/uuid")
+		uuId = fileReadLine("/proc/sys/kernel/random/uuid", source=MODULE_NAME)
 		if uuId:
 			info.append(formatLine("P1", _("UUID"), uuId))
 		info.append("")
@@ -588,7 +590,7 @@ class MemoryInformation(InformationBase):
 
 	def displayInformation(self):
 		info = []
-		memInfo = fileReadLines("/proc/meminfo")
+		memInfo = fileReadLines("/proc/meminfo", source=MODULE_NAME)
 		info.append(formatLine("H", _("RAM (Summary)")))
 		info.append("")
 		for line in memInfo:
@@ -878,7 +880,7 @@ class NetworkInformation(InformationBase):
 
 	def displayInformation(self):
 		info = []
-		hostname = fileReadLine("/proc/sys/kernel/hostname")
+		hostname = fileReadLine("/proc/sys/kernel/hostname", source=MODULE_NAME)
 		info.append(formatLine("H0H", _("Hostname"), hostname))
 		for interface in sorted(list(self.interfaceData.keys())):
 			info.append("")
@@ -964,24 +966,24 @@ class ReceiverInformation(InformationBase):
 			procModel = boxbranding.getMachineProcModel()
 		if procModel != model:
 			info.append(formatLine("P1", _("Proc model"), procModel))
-		resellerOEM = fileReadLine("/proc/stb/info/OEM")
+		resellerOEM = fileReadLine("/proc/stb/info/OEM", source=MODULE_NAME)
 		if resellerOEM:
 			info.append(formatLine("P1", _("Reseller OEM"), resellerOEM))
-		resellerBrand = fileReadLine("/proc/stb/info/brand")
+		resellerBrand = fileReadLine("/proc/stb/info/brand", source=MODULE_NAME)
 		if resellerBrand:
 			info.append(formatLine("P1", _("Reseller brand"), resellerBrand))
-		resellerModel = fileReadLine("/proc/stb/info/model_name")
+		resellerModel = fileReadLine("/proc/stb/info/model_name", source=MODULE_NAME)
 		if resellerModel:
 			info.append(formatLine("P1", _("Reseller model"), resellerModel))
-		resellerId = fileReadLine("/proc/stb/fp/resellerID")
+		resellerId = fileReadLine("/proc/stb/fp/resellerID", source=MODULE_NAME)
 		if resellerId:
 			info.append(formatLine("P1", _("Reseller ID"), resellerId))
 		if fileExists("/proc/stb/info/stb_id"):
-			stbId = fileReadLine("/proc/stb/info/stb_id")
+			stbId = fileReadLine("/proc/stb/info/stb_id", source=MODULE_NAME)
 		else:
 			stbId = popen("cat /proc/cmdline | grep 'STB_ID=' | sed 's/^.*=//'").read().strip()
 		info.append(formatLine("P1", _("STB ID"), (stbId if stbId else _("N/A"))))
-		adbVariant = fileReadLine("/proc/stb/info/adb_variant")
+		adbVariant = fileReadLine("/proc/stb/info/adb_variant", source=MODULE_NAME)
 		if adbVariant:
 			info.append(formatLine("P1", _("ADB variant"), adbVariant))
 		procModelType = getBoxProcType()
@@ -990,7 +992,7 @@ class ReceiverInformation(InformationBase):
 		hwSerial = getHWSerial()
 		if hwSerial:
 			info.append(formatLine("P1", _("Hardware serial"), (hwSerial if hwSerial != "unknown" else about.getCPUSerial())))
-		hwRelease = fileReadLine("/proc/stb/info/release")
+		hwRelease = fileReadLine("/proc/stb/info/release", source=MODULE_NAME)
 		if hwRelease:
 			info.append(formatLine("P1", _("Factory release"), hwRelease))
 		info.append(formatLine("P1", _("Brand/Meta"), SystemInfo["MachineBrand"]))
