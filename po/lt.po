@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 17:31+0430\n"
+"POT-Creation-Date: 2021-05-01 12:38+0430\n"
 "PO-Revision-Date: 2021-01-09 00:32+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -129,6 +129,10 @@ msgstr " (Radijas)"
 
 msgid " (TV)"
 msgstr " (TV)"
+
+#, fuzzy
+msgid " (auto detection)"
+msgstr "Automatiškai aptikti"
 
 msgid " (disabled)"
 msgstr " (išjungta)"
@@ -1105,10 +1109,6 @@ msgid "%s/%s: %s"
 msgstr "%s: %s,%s"
 
 #, python-format
-msgid "%s:%s"
-msgstr "%s:%s"
-
-#, python-format
 msgid "%s?"
 msgstr "%s?"
 
@@ -1415,10 +1415,6 @@ msgstr "422"
 
 msgid "444"
 msgstr "444"
-
-#, fuzzy
-msgid "450 (default)"
-msgstr "Nustatykite numatytuoju"
 
 msgid "4:3"
 msgstr "4:3"
@@ -2012,9 +2008,6 @@ msgstr "Leisti nepalaikomus režimus"
 
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Leidžia naudoti televizoriaus nuotolinio valdymo pultą imtuvui valdyti."
-
-msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
-msgstr "Leidžia įjungti susukamą žurnalą. Jame yra labai išsami informacija apie viską."
 
 msgid "Allows you to enable/disable displaying icons on the frontpanel."
 msgstr "Leidžia įjungti/išjungti piktogramų rodymą priekinio skydelio ekrane."
@@ -5389,9 +5382,6 @@ msgstr "Įjungti laikmačio konfliktų aptikimą"
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr "Įjungti, kad rodytų visas, teisinga/klaidinga, taip/ne, įjungti/išjungti, nustatymo parinktis kaip grafinį jungiklį."
 
-msgid "Enable twisted log"
-msgstr "Įjungti susukamą žurnalą"
-
 msgid "Enable volume control with arrow buttons"
 msgstr "Įjungti garso reguliavimą rodyklių mygtukais"
 
@@ -5478,9 +5468,6 @@ msgstr "Enigma2 versija: "
 #, fuzzy
 msgid "Enigma2 version"
 msgstr "Enigma2 versija: "
-
-msgid "Enough - Vision image"
-msgstr "Normalus - Vision atvaizdas"
 
 msgid "Enter"
 msgstr "Įrašykite"
@@ -6276,6 +6263,10 @@ msgstr "Kitos parinktys"
 msgid "Further options"
 msgstr "Kitos parinktys"
 
+#, fuzzy
+msgid "GCC version"
+msgstr "Sukeitimas"
+
 msgid "GUI Skin"
 msgstr "Grafinės aplinkos tema"
 
@@ -6362,6 +6353,10 @@ msgstr "Gibraltaras"
 
 msgid "GitHub commit"
 msgstr ""
+
+#, fuzzy
+msgid "Glibc version"
+msgstr "Branduolio versija: "
 
 msgid "Go down the list"
 msgstr "Sąrašu žemyn"
@@ -7888,9 +7883,6 @@ msgstr "Maksimalus EPG dienų skaičius"
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Galima priežastis - šiuo metu vykstantis įrašymas. Prieš konfigūruodami pozicionierių, nutraukite įrašymą."
 
-msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
-msgstr ""
-
 msgid "Mayotte"
 msgstr "Majotas"
 
@@ -8662,6 +8654,10 @@ msgstr "Norfolko sala"
 msgid "Normal"
 msgstr "Normalus"
 
+#, fuzzy
+msgid "Normal - Standard image"
+msgstr "Nedidelis - Mažasis atvaizdas"
+
 msgid "Normal mode"
 msgstr "Normalus režimas"
 
@@ -8779,6 +8775,10 @@ msgstr ""
 
 msgid "ONID"
 msgstr "ONID"
+
+#, fuzzy
+msgid "OPKG clean mode"
+msgstr "Kliento režimas"
 
 msgid "OSD 3D setup"
 msgstr "OSD 3D sąranka"
@@ -10436,6 +10436,9 @@ msgstr "Skaidinių lentelė nuskaitoma iš naujo"
 #, fuzzy
 msgid "Reseller ID"
 msgstr "Vartotojo ID"
+
+msgid "Reseller OEM"
+msgstr ""
 
 msgid "Reseller brand"
 msgstr ""
@@ -13479,10 +13482,6 @@ msgstr "Ventiliatoriaus greitis, kai imtuvas naudojamas įprastai."
 msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr "Ventiliatoriaus greitis, kai imtuvas įjungtas budėjimo režimu."
 
-#, python-format
-msgid "The status of the current image could not be checked because %s can not be reached."
-msgstr "Dabartinio atvaizdo statuso negalima patikrinti, nes %s yra nepasiekiamas."
-
 msgid "The team relies on donations to fund OpenVision development."
 msgstr ""
 
@@ -13562,12 +13561,6 @@ msgstr "Tai leidžia nustatyti skaitmenų skaičių, kuriuos galite įvesti pasi
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr "Šis laukas leidžia jums ieškoti papildomų simbolių spartos iki %s."
-
-msgid ""
-"This image is intended for developers and testers.\n"
-"No support will be provided!\n"
-"Do you understand this?"
-msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr "Tai kelių tipų imtuvas. Galimos parinktys priklauso nuo aparatūros."
@@ -14274,6 +14267,9 @@ msgstr "USALS kalibravimas"
 msgid "USB stick"
 msgstr "USB laikmena"
 
+msgid "UUID"
+msgstr ""
+
 msgid "Uganda"
 msgstr "Uganda"
 
@@ -14301,6 +14297,10 @@ msgstr ""
 "Vyksta atnaujinimas\n"
 "Palaukite, kol imtuvas pasileis iš naujo\n"
 "Tai gali užtrukti kelias minutes"
+
+#, fuzzy
+msgid "Unavailable"
+msgstr "nepasiekiamas"
 
 msgid "Uncover dashed flickering line for this service"
 msgstr "Atidengti punktyrinę mirgančią liniją šiam kanalui"
@@ -14365,9 +14365,6 @@ msgstr "Universalus LNB"
 
 msgid "Unknown"
 msgstr "Nežinoma"
-
-msgid "Unknown!"
-msgstr "Nežinomas!"
 
 msgid "Unmark service as dedicated 3D service"
 msgstr "Nuimti 'grynai 3D' kanalo žymę"
@@ -15008,6 +15005,9 @@ msgstr ""
 msgid "Warning: no LNB; using factory defaults."
 msgstr "Perspėjimas: LNB nerasta, naudojamos gamyklinės nuostatos."
 
+msgid "Warning: the second input of this dual tuner may not support SCR LNBs. "
+msgstr ""
+
 msgid "Watch movies..."
 msgstr "Žiūrėti filmus..."
 
@@ -15171,6 +15171,9 @@ msgstr "Kai čia įjungta, gaunamas http srautas bus visada iškoduojamas. Tai p
 
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Kai čia įjungta, autentifikavimas reikalingas, kad žiūrėti http srautus."
+
+msgid "When enabled, before opkg update there will be opkg clean to make sure nothing ruine the update but only enable this when you can not update online."
+msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
 msgstr "Kai čia įjungta, kanalų numeracija kiekvieno paketo viduje prasidės nuo '1'."
@@ -15438,16 +15441,8 @@ msgstr "Su klaidomis:"
 msgid "With popup"
 msgstr "Su iškylančiu pranešimu"
 
-#, fuzzy
-msgid "With text"
-msgstr "su tekstu"
-
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "Pasirinkę šią parinktį galite perjungti šviesos diodo spalvą arba išjungti šviesos diodą."
-
-#, fuzzy
-msgid "With tuner name"
-msgstr "su imtuvo pavadinimu"
 
 msgid "Without popup"
 msgstr "Be iškylančio pranešimo"
@@ -15904,6 +15899,10 @@ msgstr "laisvalaikis, apsipirkimas"
 
 msgid "all"
 msgstr "visi"
+
+#, fuzzy
+msgid "all tuners"
+msgstr "Atsarginio imtuvo nustatymas"
 
 msgid "alpha then oldest"
 msgstr "alfa, tada seniausia"
@@ -16625,6 +16624,10 @@ msgstr "nepalaikomas"
 msgid "not tested"
 msgstr "netikrinta"
 
+#, fuzzy
+msgid "not valid frontend"
+msgstr "Su palydovu suderinamos sąsajos nerasta!"
+
 msgid "not_tested"
 msgstr "netikrinta"
 
@@ -16797,6 +16800,10 @@ msgstr "romansai"
 
 msgid "rotor"
 msgstr "rotorius"
+
+#, fuzzy
+msgid "rotor is not used"
+msgstr "Imtuvas nepalaikomas"
 
 msgid "running..."
 msgstr "veikiantis..."
@@ -17180,6 +17187,14 @@ msgstr[2] "su %d klaidų"
 
 msgid "with errors"
 msgstr "su klaidomis"
+
+#, fuzzy
+msgid "with text"
+msgstr "su tekstu"
+
+#, fuzzy
+msgid "with tuner name"
+msgstr "su imtuvo pavadinimu"
 
 msgid "with_errors"
 msgstr "su klaidomis"

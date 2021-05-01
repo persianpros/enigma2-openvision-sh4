@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 17:31+0430\n"
+"POT-Creation-Date: 2021-05-01 12:38+0430\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -122,6 +122,9 @@ msgid " (Radio)"
 msgstr ""
 
 msgid " (TV)"
+msgstr ""
+
+msgid " (auto detection)"
 msgstr ""
 
 msgid " (disabled)"
@@ -1082,10 +1085,6 @@ msgid "%s/%s: %s"
 msgstr ""
 
 #, python-format
-msgid "%s:%s"
-msgstr ""
-
-#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1377,9 +1376,6 @@ msgid "422"
 msgstr ""
 
 msgid "444"
-msgstr ""
-
-msgid "450 (default)"
 msgstr ""
 
 msgid "4:3"
@@ -1979,9 +1975,6 @@ msgid "Allow unsupported modes"
 msgstr ""
 
 msgid "Allows the TV remote to be used to control the receiver."
-msgstr ""
-
-msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
 msgstr ""
 
 msgid "Allows you to enable/disable displaying icons on the frontpanel."
@@ -5441,9 +5434,6 @@ msgstr ""
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr ""
 
-msgid "Enable twisted log"
-msgstr ""
-
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
@@ -5534,9 +5524,6 @@ msgstr "Versiune noua:"
 #, fuzzy
 msgid "Enigma2 version"
 msgstr "Versiune noua:"
-
-msgid "Enough - Vision image"
-msgstr ""
 
 msgid "Enter"
 msgstr ""
@@ -6334,6 +6321,10 @@ msgid "Further options"
 msgstr ""
 
 #, fuzzy
+msgid "GCC version"
+msgstr "Inversare"
+
+#, fuzzy
 msgid "GUI Skin"
 msgstr "Setari"
 
@@ -6419,6 +6410,10 @@ msgstr ""
 
 msgid "GitHub commit"
 msgstr ""
+
+#, fuzzy
+msgid "Glibc version"
+msgstr "Inversare"
 
 msgid "Go down the list"
 msgstr ""
@@ -7993,9 +7988,6 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr ""
 
-msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
-msgstr ""
-
 msgid "Mayotte"
 msgstr ""
 
@@ -8808,6 +8800,9 @@ msgstr ""
 msgid "Normal"
 msgstr "Formatare"
 
+msgid "Normal - Standard image"
+msgstr ""
+
 msgid "Normal mode"
 msgstr ""
 
@@ -8933,6 +8928,9 @@ msgid "OK (reboots)"
 msgstr ""
 
 msgid "ONID"
+msgstr ""
+
+msgid "OPKG clean mode"
 msgstr ""
 
 msgid "OSD 3D setup"
@@ -10635,6 +10633,9 @@ msgstr "Stergere titlu"
 #, fuzzy
 msgid "Reseller ID"
 msgstr "Userul ales"
+
+msgid "Reseller OEM"
+msgstr ""
 
 msgid "Reseller brand"
 msgstr ""
@@ -13782,10 +13783,6 @@ msgstr ""
 msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr ""
 
-#, python-format
-msgid "The status of the current image could not be checked because %s can not be reached."
-msgstr ""
-
 msgid "The team relies on donations to fund OpenVision development."
 msgstr ""
 
@@ -13864,12 +13861,6 @@ msgstr ""
 
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
-msgstr ""
-
-msgid ""
-"This image is intended for developers and testers.\n"
-"No support will be provided!\n"
-"Do you understand this?"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -14591,6 +14582,9 @@ msgstr ""
 msgid "USB stick"
 msgstr "USB Stick"
 
+msgid "UUID"
+msgstr ""
+
 msgid "Uganda"
 msgstr ""
 
@@ -14614,6 +14608,9 @@ msgid ""
 "Unattended update in progress\n"
 "Please wait until your %s %s reboots\n"
 "This may take a few minutes"
+msgstr ""
+
+msgid "Unavailable"
 msgstr ""
 
 msgid "Uncover dashed flickering line for this service"
@@ -14680,10 +14677,6 @@ msgstr "LNBUniversal "
 
 msgid "Unknown"
 msgstr ""
-
-#, fuzzy
-msgid "Unknown!"
-msgstr "necunoscut"
 
 msgid "Unmark service as dedicated 3D service"
 msgstr ""
@@ -15343,6 +15336,9 @@ msgstr ""
 msgid "Warning: no LNB; using factory defaults."
 msgstr ""
 
+msgid "Warning: the second input of this dual tuner may not support SCR LNBs. "
+msgstr ""
+
 #, fuzzy
 msgid "Watch movies..."
 msgstr "Redare filme inregistrate..."
@@ -15504,6 +15500,9 @@ msgid "When enabled, always descramble receiving http streams. This takes up mor
 msgstr ""
 
 msgid "When enabled, authentication is required to watch http streams."
+msgstr ""
+
+msgid "When enabled, before opkg update there will be opkg clean to make sure nothing ruine the update but only enable this when you can not update online."
 msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
@@ -15758,15 +15757,8 @@ msgstr ""
 msgid "With popup"
 msgstr ""
 
-msgid "With text"
-msgstr ""
-
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
-
-#, fuzzy
-msgid "With tuner name"
-msgstr "Mod configurare"
 
 msgid "Without popup"
 msgstr ""
@@ -16187,6 +16179,9 @@ msgid "advertisement/shopping"
 msgstr ""
 
 msgid "all"
+msgstr ""
+
+msgid "all tuners"
 msgstr ""
 
 msgid "alpha then oldest"
@@ -16919,6 +16914,9 @@ msgstr ""
 msgid "not tested"
 msgstr ""
 
+msgid "not valid frontend"
+msgstr ""
+
 msgid "not_tested"
 msgstr ""
 
@@ -17098,6 +17096,10 @@ msgstr ""
 
 msgid "rotor"
 msgstr ""
+
+#, fuzzy
+msgid "rotor is not used"
+msgstr "Viteza de intoarcere a rotorului"
 
 #, fuzzy
 msgid "running..."
@@ -17481,6 +17483,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "with errors"
+msgstr ""
+
+msgid "with text"
+msgstr ""
+
+msgid "with tuner name"
 msgstr ""
 
 msgid "with_errors"

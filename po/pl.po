@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 17:31+0430\n"
-"PO-Revision-Date: 2020-12-02 19:26+0100\n"
+"POT-Creation-Date: 2021-05-01 12:38+0430\n"
+"PO-Revision-Date: 2021-04-21 20:22+0200\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -127,6 +127,10 @@ msgstr " (Radio)"
 
 msgid " (TV)"
 msgstr ""
+
+#, fuzzy
+msgid " (auto detection)"
+msgstr "Przejdź do wyboru ścieżki audio"
 
 msgid " (disabled)"
 msgstr " (wyłączony)"
@@ -881,9 +885,9 @@ msgstr[2] "%d rdzeni"
 #, python-format
 msgid "%d day"
 msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d dzień"
+msgstr[1] "%d dni"
+msgstr[2] "%d dni"
 
 #, python-format
 msgid "%d fps"
@@ -1128,10 +1132,6 @@ msgstr ""
 
 #, python-format
 msgid "%s/%s: %s"
-msgstr ""
-
-#, python-format
-msgid "%s:%s"
 msgstr ""
 
 #, python-format
@@ -1441,10 +1441,6 @@ msgstr ""
 
 msgid "444"
 msgstr ""
-
-#, fuzzy
-msgid "450 (default)"
-msgstr "Domyślny"
 
 msgid "4:3"
 msgstr "4:3"
@@ -2056,9 +2052,6 @@ msgstr "Pozwól na tryby nieobsługiwane"
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Pozwala używać pilota od TV do sterowania odbiornikiem."
 
-msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
-msgstr ""
-
 msgid "Allows you to enable/disable displaying icons on the frontpanel."
 msgstr ""
 
@@ -2437,7 +2430,7 @@ msgstr "Przejdź do głębokiego czuwania"
 
 #, fuzzy
 msgid "Auto detect"
-msgstr "Automatycznie"
+msgstr "Przejdź do wyboru ścieżki audio"
 
 msgid "Auto flesh"
 msgstr "Auto flesh"
@@ -2690,7 +2683,7 @@ msgid "Blindscan"
 msgstr ""
 
 msgid "Blindscan terrestrial (if possible)"
-msgstr ""
+msgstr "Blindscan naziemny (jeżeli możliwy)"
 
 msgid "Blinking REC"
 msgstr ""
@@ -5489,10 +5482,6 @@ msgstr "Włącz wykrywanie konfliktów timera"
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr "Włącz wyświetlanie opcji ustawień Tak / Nie, Włącz / Wyłącz w formie przełącznika graficznego."
 
-#, fuzzy
-msgid "Enable twisted log"
-msgstr "Włącz Netmed EPG"
-
 msgid "Enable volume control with arrow buttons"
 msgstr "Regulacja głośności strzałkami L/P"
 
@@ -5583,9 +5572,6 @@ msgstr "Wersja enigmy: "
 #, fuzzy
 msgid "Enigma2 version"
 msgstr "Wersja enigmy: "
-
-msgid "Enough - Vision image"
-msgstr ""
 
 msgid "Enter"
 msgstr ""
@@ -6396,6 +6382,10 @@ msgstr "Opcje dodatkowe"
 msgid "Further options"
 msgstr "Opcje dodatkowe"
 
+#, fuzzy
+msgid "GCC version"
+msgstr "Inwersja"
+
 msgid "GUI Skin"
 msgstr "Skórka GUI"
 
@@ -6484,6 +6474,10 @@ msgstr ""
 
 msgid "GitHub commit"
 msgstr ""
+
+#, fuzzy
+msgid "Glibc version"
+msgstr "Inwersja"
 
 msgid "Go down the list"
 msgstr "Przejdź w dół listy"
@@ -8033,9 +8027,6 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Przyczyną może być to, że aktualnie trwa nagrywanie. Zatrzymaj nagrywanie przed rozpoczęciem ustawiania pozycjonera."
 
-msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
-msgstr ""
-
 msgid "Mayotte"
 msgstr ""
 
@@ -8827,6 +8818,9 @@ msgstr ""
 msgid "Normal"
 msgstr "Prosty"
 
+msgid "Normal - Standard image"
+msgstr ""
+
 msgid "Normal mode"
 msgstr "Tryb standardowy"
 
@@ -8949,6 +8943,9 @@ msgid "OK (reboots)"
 msgstr ""
 
 msgid "ONID"
+msgstr ""
+
+msgid "OPKG clean mode"
 msgstr ""
 
 msgid "OSD 3D setup"
@@ -10644,6 +10641,9 @@ msgstr "Ponowne odczytywanie tablicy partycji"
 msgid "Reseller ID"
 msgstr "Nazwa użytkownika"
 
+msgid "Reseller OEM"
+msgstr ""
+
 msgid "Reseller brand"
 msgstr ""
 
@@ -11476,7 +11476,7 @@ msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiS
 msgstr "Wybierz ustawienia systemu antenowego, np. stała antena, pojedynczy LNB, przełącznik DiSEqC, obrotnica, itd."
 
 msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
-msgstr ""
+msgstr "Wybierz sposób w jaki odbiornik ma utrzymywać poprawny czas - albo z transpondera DVB albo z internetu za pomocą NTP. Możesz użyć Auto, wtedy preferowany będzie czas NTP, ale nastąpi powrót do czasu transpondera, gdy brak będzie połączenia z internetem."
 
 msgid "Select input device"
 msgstr "Wybierz urządzenie wejścia"
@@ -13666,7 +13666,7 @@ msgid "The following files were found..."
 msgstr "Następujące pliki zostały znalezione..."
 
 msgid "The hostname or the IP address of the NTP server to synchronise the time with."
-msgstr ""
+msgstr "Nazwa hosta lub adres IP serwera NTP, z którym ma być synchronizowany czas."
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -13760,10 +13760,6 @@ msgstr ""
 msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr ""
 
-#, python-format
-msgid "The status of the current image could not be checked because %s can not be reached."
-msgstr "Status aktualnego image nie może zostać zweryfikowany ze względu na brak dostępu do %s."
-
 msgid "The team relies on donations to fund OpenVision development."
 msgstr ""
 
@@ -13844,12 +13840,6 @@ msgstr ""
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr "To pole pozwala wyszukać dodatkowy symbol rate, do %s."
-
-msgid ""
-"This image is intended for developers and testers.\n"
-"No support will be provided!\n"
-"Do you understand this?"
-msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr "Ta głowica jest wielosystemowa, dostępne opcje zależą od sprzętu."
@@ -14155,7 +14145,7 @@ msgid "Time style"
 msgstr "Przedział czasowy"
 
 msgid "Time synchronization method"
-msgstr ""
+msgstr "Sposób synchronizacji czasu"
 
 msgid "Time to execute command or script"
 msgstr ""
@@ -14387,7 +14377,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Transponder time"
-msgstr "Pokaż info transpondera"
+msgstr "Czas z transpondera"
 
 msgid "Transport Stream Type"
 msgstr ""
@@ -14567,6 +14557,9 @@ msgstr "Kalibracja USALS"
 msgid "USB stick"
 msgstr "Pen USB"
 
+msgid "UUID"
+msgstr ""
+
 msgid "Uganda"
 msgstr ""
 
@@ -14594,6 +14587,10 @@ msgstr ""
 "Trwa aktualizacja\n"
 "Czekaj aż nastąpi restart odbiornika\n"
 "To może potrwać kilka minut"
+
+#, fuzzy
+msgid "Unavailable"
+msgstr "Niedostępny"
 
 msgid "Uncover dashed flickering line for this service"
 msgstr "Odkryj przerywaną linię dla tego kanału"
@@ -14658,10 +14655,6 @@ msgid "Universal LNB"
 msgstr "Uniwersalny LNB"
 
 msgid "Unknown"
-msgstr "Nieznany"
-
-#, fuzzy
-msgid "Unknown!"
 msgstr "Nieznany"
 
 msgid "Unmark service as dedicated 3D service"
@@ -14736,7 +14729,7 @@ msgstr "Zaktualizuj tylko listę kanałów"
 
 #, fuzzy
 msgid "Uptime"
-msgstr "Czas pracy"
+msgstr "Czas pracy: %s\n"
 
 msgid "Uruguay"
 msgstr "Urugwaj"
@@ -15305,6 +15298,9 @@ msgstr ""
 msgid "Warning: no LNB; using factory defaults."
 msgstr "UWAGA: brak LNB; użyto ustawień domyślnych."
 
+msgid "Warning: the second input of this dual tuner may not support SCR LNBs. "
+msgstr ""
+
 msgid "Watch movies..."
 msgstr "Oglądaj filmy..."
 
@@ -15475,6 +15471,9 @@ msgstr "Gdy, włączone, zawsze dekoduje odbierane strumienie http. Zabiera wię
 
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Gdy włączone, aby uruchmić stream http z odbiornika wymagane będzie uwierzytelnienie."
+
+msgid "When enabled, before opkg update there will be opkg clean to make sure nothing ruine the update but only enable this when you can not update online."
+msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
 msgstr "Gdy włączone, numerowanie kanałów będzie zaczynać się od '1' dla każdego bukietu."
@@ -15732,16 +15731,8 @@ msgstr "Z błędami:"
 msgid "With popup"
 msgstr "Wyświetl popup"
 
-#, fuzzy
-msgid "With text"
-msgstr "Z tekstem"
-
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "Ta opcja pozwala zmienić kolor diody LED lub ją wyłączyć."
-
-#, fuzzy
-msgid "With tuner name"
-msgstr "Z nazwą tunera"
 
 msgid "Without popup"
 msgstr "Bez ostrzeżenia"
@@ -16205,6 +16196,10 @@ msgstr "Reaklama/Zakupy"
 
 msgid "all"
 msgstr "Wszystkie"
+
+#, fuzzy
+msgid "all tuners"
+msgstr "Ustawienia tunera rezerwowego"
 
 msgid "alpha then oldest"
 msgstr ""
@@ -16952,6 +16947,10 @@ msgstr "Nieobsługiwany"
 msgid "not tested"
 msgstr "nieprzetestowane"
 
+#, fuzzy
+msgid "not valid frontend"
+msgstr "Frontend satelitarny nie znaleziony!"
+
 msgid "not_tested"
 msgstr "nieprzetestowane"
 
@@ -17132,6 +17131,10 @@ msgstr "Romans"
 
 msgid "rotor"
 msgstr "obrotnica"
+
+#, fuzzy
+msgid "rotor is not used"
+msgstr "Tuner nieobsługiwany"
 
 #, fuzzy
 msgid "running..."
@@ -17526,6 +17529,12 @@ msgstr[2] "z %d błędami"
 
 msgid "with errors"
 msgstr "z błędami"
+
+msgid "with text"
+msgstr "Z tekstem"
+
+msgid "with tuner name"
+msgstr "Z nazwą tunera"
 
 msgid "with_errors"
 msgstr "z błędami"

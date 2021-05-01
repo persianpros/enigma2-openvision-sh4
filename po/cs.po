@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 17:31+0430\n"
+"POT-Creation-Date: 2021-05-01 12:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -139,6 +139,11 @@ msgstr " (Rádio)"
 
 msgid " (TV)"
 msgstr " (TV)"
+
+#
+#, fuzzy
+msgid " (auto detection)"
+msgstr "Výběr zvuku"
 
 #
 msgid " (disabled)"
@@ -1264,10 +1269,6 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
-msgid "%s:%s"
-msgstr "%s:%s"
-
-#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1615,11 +1616,6 @@ msgstr "422"
 
 msgid "444"
 msgstr "444"
-
-#
-#, fuzzy
-msgid "450 (default)"
-msgstr "Výchozí"
 
 #
 msgid "4:3"
@@ -2335,9 +2331,6 @@ msgstr "Povolit nepodporované režimy"
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Umožní používat dálkové ovládání televize k ovládání přijímače."
 
-msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
-msgstr ""
-
 msgid "Allows you to enable/disable displaying icons on the frontpanel."
 msgstr ""
 
@@ -2765,9 +2758,10 @@ msgstr "Automaticky vytvořit kapitoly každých ? minut (0=žádné)"
 msgid "Auto deep standby"
 msgstr "Přejít do hlubokého spánku"
 
+#
 #, fuzzy
 msgid "Auto detect"
-msgstr "Auto Diseqc"
+msgstr "Výběr zvuku"
 
 #
 msgid "Auto flesh"
@@ -3057,7 +3051,7 @@ msgid "Blindscan"
 msgstr ""
 
 msgid "Blindscan terrestrial (if possible)"
-msgstr ""
+msgstr "Blindscan pozemní (je-li k dispozici)"
 
 msgid "Blinking REC"
 msgstr ""
@@ -6210,11 +6204,6 @@ msgstr "Povolit detekci konfliktů časovačů"
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr "Povolením budou volby jako 'ano/ne', 'zap/vyp' a 'povolit/zakázat' nahrazeny grafickým přepínačem."
 
-#
-#, fuzzy
-msgid "Enable twisted log"
-msgstr "Povolit Netmed EPG"
-
 msgid "Enable volume control with arrow buttons"
 msgstr "Povolit ovládání hlasitosti pomocí tlačítek se šipkami"
 
@@ -6324,9 +6313,6 @@ msgstr "Enigma verze: "
 #, fuzzy
 msgid "Enigma2 version"
 msgstr "Enigma verze: "
-
-msgid "Enough - Vision image"
-msgstr ""
 
 #
 msgid "Enter"
@@ -7238,6 +7224,11 @@ msgid "Further options"
 msgstr "Další možnosti"
 
 #
+#, fuzzy
+msgid "GCC version"
+msgstr "Inverze"
+
+#
 msgid "GUI Skin"
 msgstr "Skin"
 
@@ -7336,6 +7327,11 @@ msgstr "Gibraltar"
 
 msgid "GitHub commit"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Glibc version"
+msgstr "Inverze"
 
 #
 msgid "Go down the list"
@@ -9073,9 +9069,6 @@ msgstr ""
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Zdá se, že probíhá nahrávání. Prosím, zastavte nahrávání před pokusy s konfigurací pozicioneru."
 
-msgid "Maybe you're using a test image without any feeds or an unofficial one with a private feed server."
-msgstr ""
-
 msgid "Mayotte"
 msgstr "Mayotte"
 
@@ -10001,6 +9994,9 @@ msgstr "Norfolk"
 msgid "Normal"
 msgstr "Základní"
 
+msgid "Normal - Standard image"
+msgstr ""
+
 msgid "Normal mode"
 msgstr "S obrazem"
 
@@ -10137,6 +10133,9 @@ msgstr ""
 
 msgid "ONID"
 msgstr "ONID"
+
+msgid "OPKG clean mode"
+msgstr ""
 
 msgid "OSD 3D setup"
 msgstr "OSD 3D nastavení"
@@ -12085,6 +12084,9 @@ msgstr "Opětovné načítání tabulky rozdělení disku"
 #, fuzzy
 msgid "Reseller ID"
 msgstr "Uživatel"
+
+msgid "Reseller OEM"
+msgstr ""
 
 msgid "Reseller brand"
 msgstr ""
@@ -15235,7 +15237,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®27.1.2021"
+"®21.4.2021"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -15589,11 +15591,6 @@ msgstr ""
 msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr ""
 
-#
-#, python-format
-msgid "The status of the current image could not be checked because %s can not be reached."
-msgstr "Stav aktuálního image nemohl být ověřen z důvodu nedostupnosti %s."
-
 msgid "The team relies on donations to fund OpenVision development."
 msgstr ""
 
@@ -15683,15 +15680,6 @@ msgstr ""
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr "Umožňuje vyhledat další symbol rate až do %s."
-
-msgid ""
-"This image is intended for developers and testers.\n"
-"No support will be provided!\n"
-"Do you understand this?"
-msgstr ""
-"Tento obraz je určen pro vývojáře a testery.\n"
-"Je bez jakékoliv podpory!\n"
-"Rozumíte tomu?"
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr "Jde o multityp tuner. Dostupné možnosti závisí na hardwaru."
@@ -16499,6 +16487,9 @@ msgstr "USALS kalibrace"
 msgid "USB stick"
 msgstr "USB zařízení"
 
+msgid "UUID"
+msgstr ""
+
 msgid "Uganda"
 msgstr "Uganda"
 
@@ -16528,6 +16519,10 @@ msgstr ""
 "Probíhá bezobslužná aktualizace\n"
 "Čekejte, dokud se přijímač nerestartuje\n"
 "To může trvat několik minut"
+
+#, fuzzy
+msgid "Unavailable"
+msgstr "nedostupný"
 
 msgid "Uncover dashed flickering line for this service"
 msgstr "Odstranit překrývající linku pro tento program"
@@ -16599,10 +16594,6 @@ msgid "Universal LNB"
 msgstr "Univerzální LNB"
 
 msgid "Unknown"
-msgstr "Neznámý"
-
-#, fuzzy
-msgid "Unknown!"
 msgstr "Neznámý"
 
 msgid "Unmark service as dedicated 3D service"
@@ -16688,7 +16679,7 @@ msgstr "Aktualizovat jen seznam kanálů"
 
 #, fuzzy
 msgid "Uptime"
-msgstr "Doba provozu"
+msgstr "Doba provozu: %s\n"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -17337,6 +17328,9 @@ msgstr ""
 msgid "Warning: no LNB; using factory defaults."
 msgstr "Varování: žádný LNB; používáno tovární nastavení."
 
+msgid "Warning: the second input of this dual tuner may not support SCR LNBs. "
+msgstr ""
+
 #
 msgid "Watch movies..."
 msgstr "Sledovat filmy..."
@@ -17519,6 +17513,9 @@ msgstr "Při povolení budou přijímané http streamy vždy dekódovány. To za
 #
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "Jestliže je povoleno, pak je vyžadováno ověření pro sledování http streamu."
+
+msgid "When enabled, before opkg update there will be opkg clean to make sure nothing ruine the update but only enable this when you can not update online."
+msgstr ""
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
 msgstr "Při povolení bude číslování kanálů začínat pro každý přehled od čísla '1'."
@@ -17782,16 +17779,8 @@ msgstr "S chybami:"
 msgid "With popup"
 msgstr "S dialogem"
 
-#, fuzzy
-msgid "With text"
-msgstr "s textem"
-
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr "Toto nastavení umožňuje přepnout barvu nebo deaktivovat LED."
-
-#, fuzzy
-msgid "With tuner name"
-msgstr "s názvem tuneru"
 
 msgid "Without popup"
 msgstr "Bez dialogu"
@@ -18298,6 +18287,10 @@ msgstr "reklama/nakupování"
 
 msgid "all"
 msgstr "Všechny"
+
+#, fuzzy
+msgid "all tuners"
+msgstr "Nastavení záložního tuneru"
 
 msgid "alpha then oldest"
 msgstr ""
@@ -19142,6 +19135,11 @@ msgstr "nepodporováno"
 msgid "not tested"
 msgstr "netestováno"
 
+#
+#, fuzzy
+msgid "not valid frontend"
+msgstr "Nebyl nalezen frontend!"
+
 msgid "not_tested"
 msgstr "netestováno"
 
@@ -19355,6 +19353,10 @@ msgstr "romance"
 
 msgid "rotor"
 msgstr "rotor"
+
+#, fuzzy
+msgid "rotor is not used"
+msgstr "tuner není podporován"
 
 #, fuzzy
 msgid "running..."
@@ -19797,6 +19799,12 @@ msgstr[2] "s %d chybami"
 
 msgid "with errors"
 msgstr "s chybami"
+
+msgid "with text"
+msgstr "s textem"
+
+msgid "with tuner name"
+msgstr "s názvem tuneru"
 
 msgid "with_errors"
 msgstr "s_chybami"
