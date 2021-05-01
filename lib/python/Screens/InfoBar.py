@@ -129,12 +129,22 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 			self.session.openWithCallback(self.ChannelSelectionRadioClosed, ChannelSelectionRadio, self)
 
 	def toggleTvRadio(self):
-		if self.radioTV == 1:
-			self.radioTV = 0
-			self.showTv()
-		else:
-			self.radioTV = 1
-			self.showRadio()
+		service = self.session.nav.getCurrentService()
+		if service:
+			info = service.info()
+			if info:
+				AudioPID = info.getInfo(iServiceInformation.sAudioPID)
+				VideoPID = info.getInfo(iServiceInformation.sVideoPID)
+
+				print("sAudioPID", AudioPID)
+				print("sVideoPID", VideoPID)
+
+				if VideoPID == -1:
+					print("Radio->TV")
+					self.showTv()
+				else:
+					print("TV->Radio")
+					self.showRadio()
 
 	def ChannelSelectionRadioClosed(self, *arg):
 		self.rds_display.show()  # in InfoBarRdsDecoder

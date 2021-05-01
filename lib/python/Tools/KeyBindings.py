@@ -419,7 +419,7 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_PAUSE"]: ("PAUSE",),
 	KEYIDS["KEY_RECORD"]: ("RECORD",),
 	KEYIDS["KEY_STOP"]: ("STOP",),
-}, {  # id=7 - Cuberevo universal
+}, {  # id=7 - Cuberevo standard & universal
 	KEYIDS["KEY_F1"]: ("KEY_F1",),
 	KEYIDS["KEY_F2"]: ("KEY_F2",),
 	KEYIDS["KEY_F3"]: ("KEY_F3",),
@@ -769,7 +769,7 @@ def getKeyDescription(key):
 		idx = 5
 	elif rcType == 12:	# Kathrein UFS912
 		idx = 6
-	elif rcType == 13:	# CubeRevo Universal
+	elif rcType == 13:	# Cuberevo Universal
 		idx = 7
 	elif rcType == 14:	# Vitamin HD5000
 		idx = 8
@@ -787,7 +787,9 @@ def getKeyDescription(key):
 		idx = 6
 	elif rcType == 21:	# Opticum HD 9600 series
 		idx = 13
-	elif rcType == 22:	# Forever
+	elif rcType == 22:	# Cuberevo Standard
+		idx = 7
+	elif rcType == 23:	# Forever
 		idx = 4
 	else:
 		idx = 2

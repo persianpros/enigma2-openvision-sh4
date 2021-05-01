@@ -303,7 +303,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("10", _("spark")),
 			("11", _("tf7700")),
 			("12", _("ufs912 (rc671)")),
-			("13", _("cuberevo")),
+			("13", _("Cuberevo universal")),
 			("14", _("vitamin_hd5000")),
 			("15", _("ADB XMP")),
 			("16", _("pace7241")),
@@ -312,7 +312,8 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("19", _("ufs910/922 (rc660)")),
 			("20", _("ufs913 (rc675)")),
 			("21", _("opt9600")),
-			("22", _("Forever"))
+			("22", _("Cuberevo standard")),
+			("23", _("Forever"))
 		]
 
 	def __init__(self, session):
