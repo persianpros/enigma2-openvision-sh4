@@ -17,6 +17,8 @@ from Components.Console import Console
 from Components.SystemInfo import SystemInfo
 from Tools.Directories import fileReadLine, fileReadLines
 
+MODULE_NAME = __name__.split(".")[-1]
+
 
 def _ifinfo(sock, addr, ifname):
 	iface = pack("256s", ifname[:15])
@@ -45,7 +47,7 @@ def getIfConfig(ifname):
 
 
 def getIfTransferredData(ifname):
-	lines = fileReadLines("/proc/net/dev")
+	lines = fileReadLines("/proc/net/dev", source=MODULE_NAME)
 	if lines:
 		for line in lines:
 			if ifname in line:
@@ -76,7 +78,7 @@ def getFlashDateString():  # WW -placeholder for BC purposes, commented out for 
 
 
 def getBuildDateString():
-	version = fileReadLine("/etc/version")
+	version = fileReadLine("/etc/version", source=MODULE_NAME)
 	if version is None:
 		return _("Unknown")
 	return "%s-%s-%s" % (version[:4], version[4:6], version[6:8])
@@ -84,9 +86,9 @@ def getBuildDateString():
 
 def getUpdateDateString():
 	if isfile("/proc/openvision/compiledate"):
-		build = fileReadLine("/proc/openvision/compiledate")
+		build = fileReadLine("/proc/openvision/compiledate", source=MODULE_NAME)
 	elif isfile("/etc/openvision/compiledate"):
-		build = fileReadLine("/etc/openvision/compiledate")
+		build = fileReadLine("/etc/openvision/compiledate", source=MODULE_NAME)
 	if build is not None:
 		build = build.strip()
 		if build.isdigit():
@@ -126,7 +128,7 @@ def getFFmpegVersionString():
 
 
 def getKernelVersionString():
-	version = fileReadLine("/proc/version")
+	version = fileReadLine("/proc/version", source=MODULE_NAME)
 	if version is None:
 		return _("Unknown")
 	return version.split(" ", 4)[2].split("-", 2)[0]
@@ -175,7 +177,7 @@ def getRAMBenchmark():
 
 
 def getCPUSerial():
-	lines = fileReadLines("/proc/cpuinfo")
+	lines = fileReadLines("/proc/cpuinfo", source=MODULE_NAME)
 	if lines:
 		for line in lines:
 			if line[0:6] == "Serial":
@@ -256,7 +258,7 @@ def getCPUInfoString():
 
 
 def getChipSetString():
-	chipset = fileReadLine("/proc/stb/info/chipset")
+	chipset = fileReadLine("/proc/stb/info/chipset", source=MODULE_NAME)
 	if chipset is None:
 		return _("Undefined")
 	return str(chipset.lower())
@@ -285,9 +287,8 @@ def getDVBAPI():
 def getVisionModule():
 	if SystemInfo["OpenVisionModule"]:
 		return _("Loaded")
-	else:
-		print("[About] No Open Vision module!  Hard multiboot?")
-		return _("Unknown")
+	print("[About] No Open Vision module!  Hard multiboot?")
+	return _("Unknown")
 
 
 def getDriverInstalledDate():
@@ -353,7 +354,7 @@ def GetIPsFromNetworkInterfaces():
 
 
 def getBoxUptime():
-	upTime = fileReadLine("/proc/uptime")
+	upTime = fileReadLine("/proc/uptime", source=MODULE_NAME)
 	if upTime is None:
 		return "-"
 	secs = int(upTime.split(".")[0])
