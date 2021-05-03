@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSlider, ConfigSubsection, ConfigYesNo, ConfigText, ConfigInteger
-from enigma import getBoxBrand
+from Components.SystemInfo import BoxInfo
 import errno
 import xml.etree.cElementTree
 from enigma import eRCInput
@@ -12,9 +12,8 @@ from fcntl import ioctl
 import os
 import struct
 from Tools.Directories import pathExists
-from boxbranding import getRCType
 
-brand = getBoxBrand()
+brand = BoxInfo.getItem("brand")
 
 # asm-generic/ioctl.h
 IOC_NRBITS = 8L
@@ -262,7 +261,7 @@ iInputDevices = inputDevices()
 
 
 config.plugins.remotecontroltype = ConfigSubsection()
-config.plugins.remotecontroltype.rctype = ConfigInteger(default=int(getRCType()))
+config.plugins.remotecontroltype.rctype = ConfigInteger(default=BoxInfo.getItem("rctype"))
 config.plugins.remotecontroltype.multirc = ConfigYesNo(default=False)
 
 

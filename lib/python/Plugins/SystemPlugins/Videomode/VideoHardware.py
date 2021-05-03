@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSelection, ConfigSubDict, ConfigYesNo
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo, SystemInfo
 from Tools.CList import CList
 from os import path
-from boxbranding import getHaveAVJACK
 
-has_scart = SystemInfo["HasScart"]
-has_yuv = SystemInfo["HasYPbPr"]
-has_rca = SystemInfo["HasComposite"]
-has_avjack = getHaveAVJACK() == "True"
+has_scart = BoxInfo.getItem("scart")
+has_yuv = BoxInfo.getItem("yuv")
+has_rca = BoxInfo.getItem("rca")
+has_avjack = BoxInfo.getItem("avjack")
 
 # The "VideoHardware" is the interface to /proc/stb/video.
 # It generates hotplug events, and gives you the list of

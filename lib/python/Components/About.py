@@ -11,7 +11,7 @@ from subprocess import PIPE, Popen
 from sys import maxsize, modules
 from time import localtime, strftime
 
-from enigma import getBoxType, getBoxBrand, getEnigmaVersionString as getEnigmaVersion
+from enigma import getEnigmaVersionString as getEnigmaVersion
 
 from Components.Console import Console
 from Components.SystemInfo import SystemInfo

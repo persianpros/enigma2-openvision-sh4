@@ -1,7 +1,5 @@
-from boxbranding import getMachineProcModel
-
 from datetime import datetime
-from enigma import eConsoleAppContainer, eDVBResourceManager, eGetEnigmaDebugLvl, eLabel, eTimer, getBoxBrand, getBoxType, getDesktop, getE2Rev
+from enigma import eConsoleAppContainer, eDVBResourceManager, eGetEnigmaDebugLvl, eLabel, eTimer, getDesktop, getE2Rev
 from glob import glob
 from json import loads
 from os import listdir, popen, remove, statvfs
@@ -489,7 +487,7 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("Enigma2 version"), enigmaVersion))
 		info.append(formatLine("P1", _("Enigma2 revision"), getE2Rev()))
 		info.append(formatLine("P1", _("GitHub commit"), getE2Rev().split("+")[1]))
-		info.append(formatLine("P1", _("Last update"), about.getUpdateDateString()))
+		info.append(formatLine("P1", _("Last update"), BoxInfo.getItem("compiledate")))
 		info.append(formatLine("P1", _("Enigma2 (re)starts"), config.misc.startCounter.value))
 		info.append(formatLine("P1", _("Enigma2 debug level"), eGetEnigmaDebugLvl()))
 		mediaService = fileReadLine("/etc/openvision/mediaservice", source=MODULE_NAME)
@@ -960,10 +958,7 @@ class ReceiverInformation(InformationBase):
 		info.append(formatLine("P1", _("Hardware"), SystemInfo["MachineModel"]))
 		if stbPlatform != model:
 			info.append(formatLine("P1", _("Platform"), stbPlatform))
-		try:
-			procModel = getBoxProc()
-		except Exception as err:
-			procModel = getMachineProcModel()
+		procModel = getBoxProc()
 		if procModel != model:
 			info.append(formatLine("P1", _("Proc model"), procModel))
 		resellerOEM = fileReadLine("/proc/stb/info/OEM", source=MODULE_NAME)

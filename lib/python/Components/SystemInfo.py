@@ -139,9 +139,6 @@ class BoxInformation:  # To maintain data integrity class variables should not b
 
 BoxInfo = BoxInformation()
 
-
-SystemInfo["HasRootSubdir"] = False
-
 from Tools.Multiboot import getMultibootStartupDevice, getMultibootslots  # This import needs to be here to avoid a SystemInfo load loop!
 
 # Parse the boot commandline.
@@ -270,7 +267,8 @@ SystemInfo["Has24hz"] = fileCheck("/proc/stb/video/videomode_24hz")
 SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
-SystemInfo["HasHDMI-CEC"] = BoxInfo.getItem("hdmi") and (fileExists("/proc/stb/cec/send") or fileExists("/proc/stb/hdmi/cec"))
+SystemInfo["HasHDMI"] = BoxInfo.getItem("hdmi")
+SystemInfo["HasHDMI-CEC"] = SystemInfo["HasHDMI"] and (fileExists("/proc/stb/cec/send") or fileExists("/proc/stb/hdmi/cec"))
 SystemInfo["HasYPbPr"] = BoxInfo.getItem("yuv")
 SystemInfo["HasScart"] = BoxInfo.getItem("scart")
 SystemInfo["HasSVideo"] = BoxInfo.getItem("svideo")

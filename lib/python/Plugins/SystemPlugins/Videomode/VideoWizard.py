@@ -10,7 +10,6 @@ from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.config import config, ConfigBoolean, configfile
 from Components.SystemInfo import SystemInfo
-from enigma import getBoxType
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 
 config.misc.showtestcard = ConfigBoolean(default=False)

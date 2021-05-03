@@ -11,20 +11,20 @@ from Components.config import config
 from Components.AVSwitch import AVSwitch
 from Components.Console import Console
 from Components.ImportChannels import ImportChannels
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo, SystemInfo
 from Components.Sources.StreamService import StreamServiceList
 from Components.Task import job_manager
 from Tools.Directories import mediafilesInUse
 from Tools import Notifications
 from time import time, localtime
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService, getBoxType, getBoxBrand
+from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService
 
 inStandby = None
 infoBarInstance = None
 
-brand = getBoxBrand()
-model = getBoxType()
+model = BoxInfo.getItem("model")
+brand = BoxInfo.getItem("brand")
 
 QUIT_SHUTDOWN = 1
 QUIT_REBOOT = 2
