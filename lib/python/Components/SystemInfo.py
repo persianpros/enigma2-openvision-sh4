@@ -3,8 +3,7 @@ from os.path import isdir, isfile, join as pathjoin
 from re import findall
 from subprocess import PIPE, Popen
 
-from boxbranding import getDisplayType, getFHDSkin, getHaveHDMI, getHaveMultiTranscoding, getHaveRCA, getHaveSCART, getHaveSVIDEO, getHaveTranscoding, getHaveVFDSymbol, getHaveYUV, getRCIDNum, getRCName, getRCType
-from enigma import Misc_Options, eDVBCIInterfaces, eDVBResourceManager, eGetEnigmaDebugLvl, getBoxBrand, getBoxType
+from enigma import Misc_Options, eDVBCIInterfaces, eDVBResourceManager, eGetEnigmaDebugLvl
 
 from Tools.Directories import SCOPE_SKIN, fileCheck, fileExists, fileHas, fileReadLine, fileReadLines, pathExists, resolveFilename
 
@@ -16,45 +15,102 @@ SystemInfo = {}
 
 class BoxInformation:  # To maintain data integrity class variables should not be accessed from outside of this class!
 	def __init__(self):
-		self.procFiles = [file for file in listdir("/proc/openvision") if isfile(file)] if isdir("/proc/openvision") else []
-		self.boxInfo = {}
+		self.enigmaList = []
+		self.enigmaInfo = {}
 		self.immutableList = []
+		self.boxInfo = {}
+		self.procList = [file for file in listdir(PROC_PATH) if isfile(pathjoin(PROC_PATH, file))] if isdir(PROC_PATH) else []
 		lines = fileReadLines("/etc/enigma.conf", source=MODULE_NAME)
 		if lines:
 			for line in lines:
 				if line.startswith("#") or line.strip() == "":
 					continue
-				item, value = [x.strip() for x in line.split("=", 1)]
-				if item is not None:
-					if value.startswith("\"") or value.startswith("'") and value.endswith(value[0]):
-						value = value[1:-1]
-					elif value.startswith("(") and value.endswith(")"):
-						value = tuple(split(value))
-					elif value.startswith("[") and value.endswith("]"):
-						value = list(split(value))
-					elif value.upper() in ("FALSE", "NO", "OFF", "DISABLED"):
-						value = False
-					elif value.upper() in ("TRUE", "YES", "ON", "ENABLED"):
-						value = True
-					elif value.isdigit() or (value[0:1] == "-" and value[1:].isdigit()):
-						value = int(value)
-					elif value.startswith("0x") or value.startswith("0X"):
-						value = int(value, 16)
-					elif value.startswith("0o") or value.startswith("0O"):
-						value = int(value, 8)
-					elif value.startswith("0b") or value.startswith("0B"):
-						value = int(value, 2)
-					else:
-						try:
-							value = float(value)
-						except ValueError:
-							pass
-					self.immutableList.append(item)
-					self.boxInfo[item] = value
+				if "=" in line:
+					item, value = [x.strip() for x in line.split("=", 1)]
+					if item:
+						self.enigmaList.append(item)
+						self.enigmaInfo[item] = self.processValue(value)
+			print("[SystemInfo] Enigma config override file available and data loaded into BoxInfo.")
+		for dirpath, dirnames, filenames in walk("/lib/modules"):
+			if ENIGMA_KERNEL_MODULE in filenames:
+				modulePath = pathjoin(dirpath, ENIGMA_KERNEL_MODULE)
+				self.boxInfo["enigmamodule"] = modulePath
+				self.immutableList.append("enigmamodule")
+				break
+		# As the /proc values are static we can save time by using cached
+		# values loaded here.  If the values become dynamic this code
+		# should be disabled and the dynamic code below enabled.
+		if self.procList:
+			for item in self.procList:
+				self.boxInfo[item] = self.processValue(fileReadLine(pathjoin(PROC_PATH, item), source=MODULE_NAME))
+				self.immutableList.append(item)
+			print("[SystemInfo] Enigma kernel module available and data loaded into BoxInfo.")
+		else:
+			process = Popen(("/sbin/modinfo", "-d", modulePath), stdout=PIPE, stderr=PIPE)
+			stdout, stderr = process.communicate()
+			if process.returncode == 0:
+				for line in stdout.split("\n"):
+					if "=" in line:
+						item, value = line.split("=", 1)
+						if item:
+							self.procList.append(item)
+							self.boxInfo[item] = self.processValue(value)
+							self.immutableList.append(item)
+				print("[SystemInfo] Enigma kernel module not available but modinfo data loaded into BoxInfo!")
+			else:
+				print("[SystemInfo] Error: Unable to load Enigma kernel module data!  (Error %d: %s)" % (process.returncode, stderr.strip()))
+		self.enigmaList = sorted(self.enigmaList)
+		self.procList = sorted(self.procList)
+
+	def processValue(self, value):
+		if value is None:
+			pass
+		elif value.startswith("\"") or value.startswith("'") and value.endswith(value[0]):
+			value = value[1:-1]
+		elif value.startswith("(") and value.endswith(")"):
+			value = tuple(split(value))
+		elif value.startswith("[") and value.endswith("]"):
+			value = list(split(value))
+		elif value.upper() == "NONE":
+			value = None
+		elif value.upper() in ("FALSE", "NO", "OFF", "DISABLED"):
+			value = False
+		elif value.upper() in ("TRUE", "YES", "ON", "ENABLED"):
+			value = True
+		elif value.isdigit() or (value[0:1] == "-" and value[1:].isdigit()):
+			value = int(value)
+		elif value.startswith("0x") or value.startswith("0X"):
+			value = int(value, 16)
+		elif value.startswith("0o") or value.startswith("0O"):
+			value = int(value, 8)
+		elif value.startswith("0b") or value.startswith("0B"):
+			value = int(value, 2)
+		else:
+			try:
+				value = float(value)
+			except ValueError:
+				pass
+		return value
+
+	def getEnigmaList(self):
+		return self.enigmaList
+
+	def getProcList(self):
+		return self.procList
+
+	def getItemsList(self):
+		return sorted(list(self.boxInfo.keys()))
 
 	def getItem(self, item, default=None):
-		if self.boxInfo.get("ProcOverride", False) is False and isfile("/proc/openvision/%s" % item):
-			value = fileReadLine(pathjoin("/proc/openvision", item), source=MODULE_NAME)
+		if item in self.enigmaList:
+			value = self.enigmaInfo[item]
+		# As the /proc values are static we can save time by uusing cached
+		# values loaded above.  If the values become dynamic this code
+		# should be enabled.
+		# elif item in self.procList:
+		# 	value = fileReadLine(pathjoin(PROC_PATH, item), source=MODULE_NAME)
+		# 	if value:
+		# 		value = self.processValue(value)
 		elif item in self.boxInfo:
 			value = self.boxInfo[item]
 		elif item in SystemInfo:
@@ -64,7 +120,7 @@ class BoxInformation:  # To maintain data integrity class variables should not b
 		return value
 
 	def setItem(self, item, value, immutable=False):
-		if item in self.immutableList or item in self.procFiles:
+		if item in self.immutableList or item in self.procList:
 			print("[BoxInfo] Error: Item '%s' is immutable and can not be %s!" % (item, "changed" if item in self.boxInfo else "added"))
 			return False
 		if immutable:
@@ -73,7 +129,7 @@ class BoxInformation:  # To maintain data integrity class variables should not b
 		return True
 
 	def deleteItem(self, item):
-		if item in self.immutableListor or item in self.procFiles:
+		if item in self.immutableListor or item in self.procList:
 			print("[BoxInfo] Error: Item '%s' is immutable and can not be deleted!" % item)
 		elif item in self.boxInfo:
 			del self.boxInfo[item]
@@ -82,43 +138,6 @@ class BoxInformation:  # To maintain data integrity class variables should not b
 
 
 BoxInfo = BoxInformation()
-
-
-def loadEnigmaModule():
-	for dirpath, dirnames, filenames in walk("/lib/modules"):
-		if ENIGMA_KERNEL_MODULE in filenames:
-			modulePath = pathjoin(dirpath, ENIGMA_KERNEL_MODULE)
-			BoxInfo.setItem("EnigmaModule", modulePath, immutable=True)
-			if isdir("/proc/openvision"):
-				print("[SystemInfo] Enigma kernel module available.")
-			else:
-				process = Popen(("/sbin/modinfo", "-d", modulePath), stdout=PIPE, stderr=PIPE)
-				stdout, stderr = process.communicate()
-				if process.returncode == 0:
-					for line in stdout.split("\n"):
-						if "=" in line:
-							variable, value = line.split("=", 1)
-							if value.upper() == "NONE":
-								value = None
-							elif value.upper() == "TRUE":
-								value = True
-							elif value.upper() == "FALSE":
-								value = False
-							elif value.isdigit() or (value[0:1] == "-" and value[1:].isdigit()):
-								value = int(value)
-							elif value.startswith("0x") or value.startswith("0X"):
-								value = int(value, 16)
-							elif value.startswith("0o") or value.startswith("0O"):
-								value = int(value, 8)
-							elif value.startswith("0b") or value.startswith("0B"):
-								value = int(value, 2)
-							BoxInfo.setItem(variable, value, immutable=True)
-					print("[SystemInfo] Enigma kernel module not available, data loaded into SystemInfo!")
-				else:
-					print("[SystemInfo] Error: Unable to load Enigma kernel module data!  (Error %d: %s)" % (process.returncode, stderr.strip()))
-
-
-loadEnigmaModule()  # First thing to do is check / load all the kernel Enigma2 variables.
 
 
 SystemInfo["HasRootSubdir"] = False
@@ -157,7 +176,7 @@ def getBootdevice():
 
 
 def getRCFile(ext):
-	filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "%s.%s" % (getRCName(), ext)))
+	filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "%s.%s" % (BoxInfo.getItem("rcname"), ext)))
 	if not isfile(filename):
 		filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "spark.%s" % ext))
 	return filename
@@ -175,18 +194,18 @@ def getModuleLayout():
 	return None
 
 
-model = getBoxType()
-brand = getBoxBrand()
-displaytype = getDisplayType()
+model = BoxInfo.getItem("model")
+brand = BoxInfo.getItem("brand")
+displaytype = BoxInfo.getItem("displaytype")
 
-SystemInfo["MachineBrand"] = brand
+SystemInfo["MachineBrand"] = brand  # Users of these values should be updated to BoxInfo calls.
 SystemInfo["MachineModel"] = model
 
 # Remote control related data.
 #
-SystemInfo["RCCode"] = int(getRCType())
-SystemInfo["RCTypeIndex"] = int(getRCIDNum())
-SystemInfo["RCName"] = getRCName()
+SystemInfo["RCCode"] = BoxInfo.getItem("rctype")
+SystemInfo["RCTypeIndex"] = BoxInfo.getItem("rcidnum")
+SystemInfo["RCName"] = BoxInfo.getItem("rcname")
 SystemInfo["RCImage"] = getRCFile("png")
 SystemInfo["RCMapping"] = getRCFile("xml")
 SystemInfo["RemoteEnable"] = False
@@ -237,13 +256,13 @@ SystemInfo["VFD_final_scroll_delay"] = fileCheck("/proc/stb/lcd/final_scroll_del
 SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/fb/primary/3d")
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = False
-SystemInfo["HasFullHDSkinSupport"] = getFHDSkin() == "True"
+SystemInfo["HasFullHDSkinSupport"] = BoxInfo.getItem("fhdskin")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]
 SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
 SystemInfo["HasMMC"] = "root" in cmdline and cmdline["root"].startswith("/dev/mmcblk")
-SystemInfo["HasTranscoding"] = getHaveTranscoding() == "True" or getHaveMultiTranscoding() == "True" or pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
+SystemInfo["HasTranscoding"] = BoxInfo.getItem("transcoding") or BoxInfo.getItem("multitranscoding") or pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
 SystemInfo["HasH265Encoder"] = fileHas("/proc/stb/encoder/0/vcodec_choices", "h265")
 SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = True
 SystemInfo["HasColordepth"] = fileCheck("/proc/stb/video/hdmi_colordepth")
@@ -251,11 +270,11 @@ SystemInfo["Has24hz"] = fileCheck("/proc/stb/video/videomode_24hz")
 SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
-SystemInfo["HasHDMI-CEC"] = getHaveHDMI() == "True" and (fileExists("/proc/stb/cec/send") or fileExists("/proc/stb/hdmi/cec"))
-SystemInfo["HasYPbPr"] = getHaveYUV() == "True"
-SystemInfo["HasScart"] = getHaveSCART() == "True"
-SystemInfo["HasSVideo"] = getHaveSVIDEO() == "True"
-SystemInfo["HasComposite"] = getHaveRCA() == "True"
+SystemInfo["HasHDMI-CEC"] = BoxInfo.getItem("hdmi") and (fileExists("/proc/stb/cec/send") or fileExists("/proc/stb/hdmi/cec"))
+SystemInfo["HasYPbPr"] = BoxInfo.getItem("yuv")
+SystemInfo["HasScart"] = BoxInfo.getItem("scart")
+SystemInfo["HasSVideo"] = BoxInfo.getItem("svideo")
+SystemInfo["HasComposite"] = BoxInfo.getItem("rca")
 SystemInfo["HasAutoVolume"] = fileExists("/proc/stb/audio/avl_choices") or fileCheck("/proc/stb/audio/avl")
 SystemInfo["HasAutoVolumeLevel"] = fileExists("/proc/stb/audio/autovolumelevel_choices") or fileCheck("/proc/stb/audio/autovolumelevel")
 SystemInfo["Has3DSurround"] = fileExists("/proc/stb/audio/3d_surround_choices") or fileCheck("/proc/stb/audio/3d_surround")
@@ -292,7 +311,7 @@ SystemInfo["CanWMAPRO"] = fileExists("/proc/stb/audio/wmapro")
 SystemInfo["CanDownmixAACPlus"] = fileExists("/proc/stb/audio/aacplus_choices")
 SystemInfo["CanAACTranscode"] = fileExists("/proc/stb/audio/aac_transcode_choices")
 SystemInfo["ConfigDisplay"] = SystemInfo["FrontpanelDisplay"] and displaytype != "7segment" and "7seg" not in displaytype
-SystemInfo["VFDSymbol"] = getHaveVFDSymbol() == "True"
+SystemInfo["VFDSymbol"] = BoxInfo.getItem("vfdsymbol")
 SystemInfo["CanBTAudio"] = fileCheck("/proc/stb/audio/btaudio")
 SystemInfo["CanBTAudioDelay"] = fileCheck("/proc/stb/audio/btaudio_delay")
 SystemInfo["SeekStatePlay"] = False
