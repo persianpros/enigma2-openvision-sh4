@@ -4,7 +4,7 @@ from __future__ import print_function
 import sys
 import os
 from time import time
-from Tools.Profile import profile, profile_final
+from Tools.Profile import profile, profileFinal
 profile("PYTHON_START")
 
 # Don't remove this line. It may seem to do nothing, but if removed,
@@ -562,7 +562,7 @@ def runScreenTest():
 	Tools.Trashcan.init(session)
 
 	profile("RunReactor")
-	profile_final()
+	profileFinal()
 
 	from Components.Console import Console
 	print("[StartEnigma] Kill showiframe if it is running for SH4")
