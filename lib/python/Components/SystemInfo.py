@@ -199,9 +199,6 @@ model = BoxInfo.getItem("model")
 brand = BoxInfo.getItem("brand")
 displaytype = BoxInfo.getItem("displaytype")
 
-SystemInfo["MachineBrand"] = brand  # Users of these values should be updated to BoxInfo calls.
-SystemInfo["MachineModel"] = model
-
 # Remote control related data.
 #
 SystemInfo["RCCode"] = BoxInfo.getItem("rctype")
