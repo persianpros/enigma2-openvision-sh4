@@ -49,8 +49,8 @@ def profile(checkPoint):
 				value = 1
 				fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
 				if percentage > 20:
-					evfd.getInstance().vfd_write_string("-%02d-" % perc)
-			elif perc > 98:
+					evfd.getInstance().vfd_write_string("-%02d-" % percentage)
+			elif percentage > 98:
 				value = 0
 				fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
 				open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
