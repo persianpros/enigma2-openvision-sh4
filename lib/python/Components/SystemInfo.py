@@ -9,6 +9,7 @@ from Tools.Directories import SCOPE_SKIN, fileCheck, fileExists, fileHas, fileRe
 
 MODULE_NAME = __name__.split(".")[-1]
 ENIGMA_KERNEL_MODULE = "openvision.ko"
+PROC_PATH = "/proc/openvision"
 
 SystemInfo = {}
 
