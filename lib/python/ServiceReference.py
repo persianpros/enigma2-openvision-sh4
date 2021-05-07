@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 from enigma import eServiceReference, eServiceReferenceDVB, eServiceCenter, getBestPlayableServiceReference
 import NavigationInstance
-from boxbranding import getE2Service
+from Components.SystemInfo import BoxInfo
 
-mediaservice = getE2Service().replace('enigma2-plugin-systemplugins-', '')
+mediaservice = BoxInfo.getItem("mediaservice").replace('enigma2-plugin-systemplugins-', '')
 
 
 class ServiceReference(eServiceReference):

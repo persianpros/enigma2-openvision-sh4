@@ -9,10 +9,11 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import *
 from Components.Sources.StaticText import StaticText
 from ServiceReference import ServiceReference
-from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, getBoxType
+from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
+from Components.SystemInfo import BoxInfo
 
 
 try:
@@ -24,7 +25,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() in ("hs7420", "hs7429"):
+	if BoxInfo.getItem("model") in ("hs7420", "hs7429"):
 		DisplayType = 11
 	else:
 		DisplayType = None

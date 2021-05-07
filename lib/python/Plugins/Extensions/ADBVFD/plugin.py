@@ -3,7 +3,7 @@
 from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
-from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, eDVBVolumecontrol, getBoxType
+from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, eDVBVolumecontrol
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
@@ -13,6 +13,7 @@ from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 import os
+from Components.SystemInfo import BoxInfo
 
 try:
 	DisplayType = evfd.getInstance().getVfdType()
@@ -23,7 +24,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() == 'adb_box':
+	if BoxInfo.getItem("model") == 'adb_box':
 		DisplayType = 18
 	else:
 		DisplayType = None

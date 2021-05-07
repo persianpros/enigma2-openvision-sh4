@@ -5,16 +5,17 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Screens.Standby import TryQuitMainloop
-from enigma import evfd, getBoxType, getBoxBrand
+from enigma import evfd
 from Components.ActionMap import ActionMap
 from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 import os
+from Components.SystemInfo import BoxInfo
 
 #pll0 = '/proc/cpu_frequ/pll0_ndiv_mdiv'
-brand = getBoxBrand()
+brand = BoxInfo.getItem("brand")
 
 config.plugins.systemoptions = ConfigSubsection()
 config.plugins.systemoptions.wlan = ConfigSelection(default='0',
@@ -223,7 +224,7 @@ class ConfigOptions(Screen, ConfigListScreen):
 #		if brand == "fulan":
 #			self.cfglist.append(getConfigListEntry(_('CPU clock frequency:'), config.plugins.systemoptions.freq))
 #			self.cfglist.append(getConfigListEntry(_('Standby clock frequency:'), config.plugins.systemoptions.stbyfreq))
-		if getBoxType() == 'spark7162':
+		if BoxInfo.getItem("model") == 'spark7162':
 			self.cfglist.append(getConfigListEntry(_('Tuner C type:'), config.plugins.systemoptions.tunertype))
 		if os.path.isfile("/boot/audio_dts.elf"):
 			listadd = [getConfigListEntry(_('DTS downmix:'), config.plugins.systemoptions.dtsdownmix)]

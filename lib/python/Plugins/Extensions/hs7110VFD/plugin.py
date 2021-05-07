@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
-from enigma import iPlayableService, evfd, getBoxType
+from enigma import iPlayableService, evfd
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Components.ActionMap import ActionMap
@@ -10,6 +10,7 @@ from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
+from Components.SystemInfo import BoxInfo
 
 
 try:
@@ -21,7 +22,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() == "hs7110":
+	if BoxInfo.getItem("model") == "hs7110":
 		DisplayType = 10
 	else:
 		DisplayType = None

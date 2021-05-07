@@ -4,7 +4,7 @@ from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
-from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, getBoxType
+from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
@@ -13,6 +13,7 @@ from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
+from Components.SystemInfo import BoxInfo
 
 
 try:
@@ -24,7 +25,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() == "octagon1008":
+	if BoxInfo.getItem("model") == "octagon1008":
 		DisplayType = 7
 	else:
 		DisplayType = None
