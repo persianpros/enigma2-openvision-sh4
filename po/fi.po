@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 12:38+0430\n"
+"POT-Creation-Date: 2021-05-07 15:54+0430\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -153,6 +153,9 @@ msgstr " (korkeampi kuin kääntömoottori mikä tahansa autom.)"
 
 msgid " (lower than any auto)"
 msgstr " (alhaisempi kuin mikä tahansa autom.)"
+
+msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
+msgstr ""
 
 msgid " extensions."
 msgstr " lisäosaa."
@@ -3049,20 +3052,6 @@ msgstr "Botswana"
 msgid "Bouvet Island"
 msgstr "Bouvet Island"
 
-#
-#, fuzzy
-msgid "BoxBranding"
-msgstr "Tallenne"
-
-#
-#, fuzzy
-msgid "BoxBranding Information"
-msgstr "Tietoja"
-
-#, fuzzy
-msgid "BoxBranding information for"
-msgstr "Ohjelmiston hallinnan tiedot"
-
 msgid "Brand/Meta"
 msgstr ""
 
@@ -4484,6 +4473,14 @@ msgstr "Valoisuus"
 msgid "Cuba"
 msgstr "Kuuba"
 
+#
+#, fuzzy
+msgid "Cuberevo standard"
+msgstr "Vakio"
+
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5373,6 +5370,10 @@ msgstr "Näytä EIT nyt/seuraava tietopalkissa"
 msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
+#, fuzzy
+msgid "Display type"
+msgstr "Etupaneelin näyttö"
+
 #
 msgid "Djibouti"
 msgstr "Djibouti"
@@ -6113,6 +6114,9 @@ msgstr "Aikavälin lopetusaika"
 #
 msgid "English"
 msgstr "Englanti"
+
+msgid "Enigma kernel module information for"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 (re)starts"
@@ -6983,9 +6987,6 @@ msgstr ""
 msgid "Front panel display control Spark"
 msgstr ""
 
-msgid "Front panel type"
-msgstr ""
-
 msgid "Front processor version"
 msgstr ""
 
@@ -7707,13 +7708,14 @@ msgstr "Ohjelmisto: "
 msgid "Image architecture"
 msgstr ""
 
+#, fuzzy
+msgid "Image build"
+msgstr "Ohjelmisto: "
+
 #
 #, fuzzy
 msgid "Image build date"
 msgstr "Käännöspäivä: "
-
-msgid "Image build/branch"
-msgstr ""
 
 #
 #, fuzzy
@@ -8162,6 +8164,16 @@ msgstr "Kenia"
 
 #
 #, fuzzy
+msgid "Kernel Module"
+msgstr "Asetustila"
+
+#
+#, fuzzy
+msgid "Kernel Module Information"
+msgstr "Tietoja"
+
+#
+#, fuzzy
 msgid "Kernel file"
 msgstr "Poista tiedosto"
 
@@ -8169,6 +8181,9 @@ msgstr "Poista tiedosto"
 #, fuzzy
 msgid "Kernel module layout"
 msgstr "(ei CA-moduulia)"
+
+msgid "Kernel module path"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version"
@@ -18205,9 +18220,6 @@ msgstr "PCM-monikanavaääni"
 
 msgid "cooking"
 msgstr "kokkaus"
-
-msgid "cuberevo"
-msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"

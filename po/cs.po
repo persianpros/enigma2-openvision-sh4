@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 12:38+0430\n"
+"POT-Creation-Date: 2021-05-07 15:54+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #
 msgid ""
@@ -141,9 +141,8 @@ msgid " (TV)"
 msgstr " (TV)"
 
 #
-#, fuzzy
 msgid " (auto detection)"
-msgstr "Výběr zvuku"
+msgstr "(automatická detekce)"
 
 #
 msgid " (disabled)"
@@ -157,6 +156,9 @@ msgstr " (vyšší než jakékoliv auto motoru)"
 
 msgid " (lower than any auto)"
 msgstr " (nižší než jakékoliv auto)"
+
+msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
+msgstr ""
 
 #
 msgid " extensions."
@@ -2761,7 +2763,7 @@ msgstr "Přejít do hlubokého spánku"
 #
 #, fuzzy
 msgid "Auto detect"
-msgstr "Výběr zvuku"
+msgstr "(automatická detekce)"
 
 #
 msgid "Auto flesh"
@@ -3139,20 +3141,6 @@ msgstr "Botswana"
 
 msgid "Bouvet Island"
 msgstr "Bouvetův ostrov"
-
-#
-#, fuzzy
-msgid "BoxBranding"
-msgstr "záznam"
-
-#
-#, fuzzy
-msgid "BoxBranding Information"
-msgstr "Informace"
-
-#, fuzzy
-msgid "BoxBranding information for"
-msgstr "Info správy software"
 
 msgid "Brand/Meta"
 msgstr ""
@@ -4632,6 +4620,14 @@ msgstr "Jas"
 msgid "Cuba"
 msgstr "Kuba"
 
+#
+#, fuzzy
+msgid "Cuberevo standard"
+msgstr "Standardní"
+
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5536,6 +5532,11 @@ msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Display type"
+msgstr "Nastavení displeje"
+
+#
 msgid "Djibouti"
 msgstr "Džibutsko"
 
@@ -6285,6 +6286,9 @@ msgstr "Konec ignorování vypnutí ve standby"
 #
 msgid "English"
 msgstr "Anglicky"
+
+msgid "Enigma kernel module information for"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 (re)starts"
@@ -7189,9 +7193,6 @@ msgstr ""
 msgid "Front panel display control Spark"
 msgstr ""
 
-msgid "Front panel type"
-msgstr ""
-
 #, fuzzy
 msgid "Front processor version"
 msgstr "Frontprocesor: %s"
@@ -7917,11 +7918,12 @@ msgid "Image architecture"
 msgstr ""
 
 #, fuzzy
+msgid "Image build"
+msgstr "Image: "
+
+#, fuzzy
 msgid "Image build date"
 msgstr "Datum vytvoření: "
-
-msgid "Image build/branch"
-msgstr ""
 
 #
 #, fuzzy
@@ -8383,6 +8385,16 @@ msgstr "Keňa"
 
 #
 #, fuzzy
+msgid "Kernel Module"
+msgstr "Uživatelsky mód"
+
+#
+#, fuzzy
+msgid "Kernel Module Information"
+msgstr "Informace"
+
+#
+#, fuzzy
 msgid "Kernel file"
 msgstr "Smazat soubor"
 
@@ -8390,6 +8402,9 @@ msgstr "Smazat soubor"
 #, fuzzy
 msgid "Kernel module layout"
 msgstr "žádný modul nenalezen"
+
+msgid "Kernel module path"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version"
@@ -15237,7 +15252,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®21.4.2021"
+"®2.5.2021"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -18288,9 +18303,8 @@ msgstr "reklama/nakupování"
 msgid "all"
 msgstr "Všechny"
 
-#, fuzzy
 msgid "all tuners"
-msgstr "Nastavení záložního tuneru"
+msgstr "všechny tunery"
 
 msgid "alpha then oldest"
 msgstr ""
@@ -18529,9 +18543,6 @@ msgstr "Vícekanálové PCM"
 
 msgid "cooking"
 msgstr "vaření"
-
-msgid "cuberevo"
-msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"
@@ -19136,9 +19147,8 @@ msgid "not tested"
 msgstr "netestováno"
 
 #
-#, fuzzy
 msgid "not valid frontend"
-msgstr "Nebyl nalezen frontend!"
+msgstr "neplatný frontend"
 
 msgid "not_tested"
 msgstr "netestováno"
@@ -19354,9 +19364,8 @@ msgstr "romance"
 msgid "rotor"
 msgstr "rotor"
 
-#, fuzzy
 msgid "rotor is not used"
-msgstr "tuner není podporován"
+msgstr "rotor není používán"
 
 #, fuzzy
 msgid "running..."

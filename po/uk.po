@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 12:38+0430\n"
+"POT-Creation-Date: 2021-05-07 15:54+0430\n"
 "PO-Revision-Date: 2021-03-11 01:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: kvinto\n"
@@ -144,6 +144,9 @@ msgstr " (вище будь-якого ротора авто)"
 
 msgid " (lower than any auto)"
 msgstr " (нижче будь-якого авто)"
+
+msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
+msgstr ""
 
 msgid " extensions."
 msgstr " доповнень."
@@ -2873,18 +2876,6 @@ msgstr "Ботсвана"
 msgid "Bouvet Island"
 msgstr "Острів Буве"
 
-#, fuzzy
-msgid "BoxBranding"
-msgstr "Запис"
-
-#, fuzzy
-msgid "BoxBranding Information"
-msgstr "Інформація"
-
-#, fuzzy
-msgid "BoxBranding information for"
-msgstr "Інформація менеджера ПЗ"
-
 msgid "Brand/Meta"
 msgstr ""
 
@@ -4222,6 +4213,13 @@ msgstr "Яскравість"
 msgid "Cuba"
 msgstr "Куба"
 
+#, fuzzy
+msgid "Cuberevo standard"
+msgstr "стандартний"
+
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5016,6 +5014,10 @@ msgstr "Показати EIT зараз/наст. в Інфобарі"
 msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
+#, fuzzy
+msgid "Display type"
+msgstr "Налаштування дисплея"
+
 msgid "Djibouti"
 msgstr "Джібутті"
 
@@ -5660,6 +5662,9 @@ msgstr "Кінець часу, щоб ігнорувати вимкнення в
 
 msgid "English"
 msgstr "Англійська"
+
+msgid "Enigma kernel module information for"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 (re)starts"
@@ -6465,9 +6470,6 @@ msgstr ""
 msgid "Front panel display control Spark"
 msgstr ""
 
-msgid "Front panel type"
-msgstr ""
-
 #, fuzzy
 msgid "Front processor version"
 msgstr "Версія фронтпроцесора: %s"
@@ -7136,11 +7138,12 @@ msgid "Image architecture"
 msgstr ""
 
 #, fuzzy
+msgid "Image build"
+msgstr "Імідж: "
+
+#, fuzzy
 msgid "Image build date"
 msgstr "Дата збірки: "
-
-msgid "Image build/branch"
-msgstr ""
 
 #, fuzzy
 msgid "Image file system"
@@ -7544,12 +7547,23 @@ msgid "Kenya"
 msgstr "Кенія"
 
 #, fuzzy
+msgid "Kernel Module"
+msgstr "Режим користувача"
+
+#, fuzzy
+msgid "Kernel Module Information"
+msgstr "Інформація"
+
+#, fuzzy
 msgid "Kernel file"
 msgstr "Видалити файл"
 
 #, fuzzy
 msgid "Kernel module layout"
 msgstr "модуль не знайдено"
+
+msgid "Kernel module path"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version"
@@ -16536,9 +16550,6 @@ msgstr "Багатоканальне PCM"
 
 msgid "cooking"
 msgstr "приготування їжі"
-
-msgid "cuberevo"
-msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"

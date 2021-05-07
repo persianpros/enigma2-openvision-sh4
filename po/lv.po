@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 12:38+0430\n"
+"POT-Creation-Date: 2021-05-07 15:54+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -146,6 +146,9 @@ msgstr " (lielāks kā rotora jebkurš auto)"
 
 msgid " (lower than any auto)"
 msgstr " (mazāks kā jebkurš auto)"
+
+msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
+msgstr ""
 
 msgid " extensions."
 msgstr " paplašinājumiem."
@@ -2876,18 +2879,6 @@ msgstr "Botsvāna"
 msgid "Bouvet Island"
 msgstr "Bouvet sala"
 
-#, fuzzy
-msgid "BoxBranding"
-msgstr "Ieraksta"
-
-#, fuzzy
-msgid "BoxBranding Information"
-msgstr "Informācija"
-
-#, fuzzy
-msgid "BoxBranding information for"
-msgstr "Programmatūras pārvaldnieka informācija"
-
 msgid "Brand/Meta"
 msgstr ""
 
@@ -4225,6 +4216,13 @@ msgstr "Spilgtums"
 msgid "Cuba"
 msgstr "Kuba"
 
+#, fuzzy
+msgid "Cuberevo standard"
+msgstr "standarta"
+
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5019,6 +5017,10 @@ msgstr "Rādīt EIT pašreiz/nākamais infojoslā"
 msgid "Display the virtual keyboard for data entry"
 msgstr ""
 
+#, fuzzy
+msgid "Display type"
+msgstr "Displeja iestatījumi"
+
 msgid "Djibouti"
 msgstr "Džibuti"
 
@@ -5663,6 +5665,9 @@ msgstr "Beigu laiks kad ignorēt izslēgšanu gaidstāvē"
 
 msgid "English"
 msgstr "Angļu"
+
+msgid "Enigma kernel module information for"
+msgstr ""
 
 #, fuzzy
 msgid "Enigma2 (re)starts"
@@ -6468,9 +6473,6 @@ msgstr ""
 msgid "Front panel display control Spark"
 msgstr ""
 
-msgid "Front panel type"
-msgstr ""
-
 #, fuzzy
 msgid "Front processor version"
 msgstr "Frontprocesora versija: %s"
@@ -7141,11 +7143,12 @@ msgid "Image architecture"
 msgstr ""
 
 #, fuzzy
+msgid "Image build"
+msgstr "Imidžs: "
+
+#, fuzzy
 msgid "Image build date"
 msgstr "Kompilēšanas datums:"
-
-msgid "Image build/branch"
-msgstr ""
 
 #, fuzzy
 msgid "Image file system"
@@ -7547,12 +7550,23 @@ msgid "Kenya"
 msgstr "Kenija"
 
 #, fuzzy
+msgid "Kernel Module"
+msgstr "Lietotāja režīms"
+
+#, fuzzy
+msgid "Kernel Module Information"
+msgstr "Informācija"
+
+#, fuzzy
 msgid "Kernel file"
 msgstr "Dzēst failu"
 
 #, fuzzy
 msgid "Kernel module layout"
 msgstr "modulis nav atrasts"
+
+msgid "Kernel module path"
+msgstr ""
 
 #, fuzzy
 msgid "Kernel version"
@@ -15422,7 +15436,7 @@ msgid "Warning: no LNB; using factory defaults."
 msgstr "Uzmanību: nav LNB; lieto noklusētos iestatījumus"
 
 msgid "Warning: the second input of this dual tuner may not support SCR LNBs. "
-msgstr ""
+msgstr "Uzmanību! Otra šī uztvērēja ieeja var neatbalstīt SCR LNB. "
 
 msgid "Watch movies..."
 msgstr "Skatīt ierakstus..."
@@ -16535,9 +16549,6 @@ msgstr "Daudzkanālu PCM"
 
 msgid "cooking"
 msgstr "cepšana"
-
-msgid "cuberevo"
-msgstr ""
 
 #, fuzzy
 msgid "current affairs (general)"
