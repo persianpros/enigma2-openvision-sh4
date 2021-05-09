@@ -8,7 +8,7 @@ from Components.Sources.StaticText import StaticText
 from Components.ActionMap import ActionMap
 from Components.config import config
 from Components.MenuList import MenuList
-import keymapparser
+from Components.ActionMap import ActionMap
 from Tools.Directories import resolveFilename, SCOPE_SKIN, SCOPE_CURRENT_PLUGIN
 from os import path as os_path, listdir
 
@@ -87,8 +87,8 @@ class KeymapSelector(Screen):
 	# install selected keymap...
 	def installKeymap(self, install):
 		if install is True:
-			keymapparser.removeKeymap(config.usage.keymap.value)
-			keymapparser.readKeymap(self.keymap)
+			ActionMap.removeKeymap(config.usage.keymap.value)
+			ActionMap.loadKeymap(self.keymap)
 			config.usage.keymap.value = self.keymap
 			config.usage.keymap.save()
 		self.close()
