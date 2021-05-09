@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -137,9 +137,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " 擴展."
-
-msgid " ms"
-msgstr ""
 
 msgid " packages selected."
 msgstr "節目包選擇."
@@ -1090,6 +1087,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1100,10 +1101,6 @@ msgstr ""
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1688,9 +1685,6 @@ msgstr ""
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
-msgid "ADB XMP"
-msgstr ""
-
 msgid "ADB variant"
 msgstr ""
 
@@ -2008,6 +2002,10 @@ msgstr ""
 
 msgid "All slots"
 msgstr ""
+
+#, fuzzy
+msgid "All supported"
+msgstr "不支援的"
 
 msgid "Allocate"
 msgstr ""
@@ -2826,11 +2824,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "C-波段"
 
@@ -3071,6 +3064,10 @@ msgstr ""
 msgid "Change bouquets in quickzap"
 msgstr "快速切換自定義組"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "DNS設定"
+
 msgid "Change recording (add time)"
 msgstr ""
 
@@ -3078,9 +3075,6 @@ msgid "Change recording (duration)"
 msgstr ""
 
 msgid "Change recording (endtime)"
-msgstr ""
-
-msgid "Change repeat and delay settings?"
 msgstr ""
 
 msgid "Change step size"
@@ -3459,6 +3453,11 @@ msgstr ""
 msgid "Config resolution of pictures"
 msgstr ""
 
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "配置"
+
 msgid "Configuration"
 msgstr ""
 
@@ -3561,9 +3560,6 @@ msgid "Configure nameservers"
 msgstr "配置功能變數名稱伺服器"
 
 msgid "Configure on which devices the background delete option should be used."
-msgstr ""
-
-msgid "Configure remote control type"
 msgstr ""
 
 msgid "Configure the DiSEqC mode for this LNB."
@@ -4048,13 +4044,6 @@ msgstr "亮度"
 msgid "Cuba"
 msgstr ""
 
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "標準"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4079,9 +4068,6 @@ msgstr ""
 #, fuzzy
 msgid "Current crash log"
 msgstr "當前值: "
-
-msgid "Current device: "
-msgstr ""
 
 msgid "Current event EPG"
 msgstr ""
@@ -4526,7 +4512,7 @@ msgstr ""
 msgid "Delay after voltage change before motor command"
 msgstr ""
 
-msgid "Delay before key repeat starts:"
+msgid "Delay before key repeat starts (ms)"
 msgstr ""
 
 msgid "Delay before sequence repeat"
@@ -4691,8 +4677,9 @@ msgstr "頻道"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
-msgstr ""
+#, fuzzy
+msgid "Device name"
+msgstr "頻道"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -5202,9 +5189,6 @@ msgstr ""
 msgid "Ecuador"
 msgstr ""
 
-msgid "Edision argus"
-msgstr ""
-
 msgid "Edit"
 msgstr "修改"
 
@@ -5526,6 +5510,9 @@ msgstr ""
 msgid "Enter URL"
 msgstr ""
 
+msgid "Enter a new name for this device."
+msgstr ""
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -5758,7 +5745,11 @@ msgstr "退出編輯"
 msgid "Exit inetd recovery"
 msgstr "退出編輯"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "音頻選擇"
+
+msgid "Exit input device selection and close all menus"
 msgstr ""
 
 msgid "Exit media player?"
@@ -6169,22 +6160,8 @@ msgstr "允許"
 msgid "Force legacy signal stats"
 msgstr ""
 
-#, fuzzy
-msgid "Forever"
-msgstr "從不"
-
 msgid "Format"
 msgstr "格式化"
-
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "標準"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -7126,13 +7103,18 @@ msgid "Input "
 msgstr "輸入 1"
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "輸入 1"
 
-msgid "Input Stream ID"
-msgstr ""
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "輸入 1"
 
-msgid "Input device setup"
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "極軸設定(DiSEqC 1.2)"
+
+msgid "Input Stream ID"
 msgstr ""
 
 msgid "Install"
@@ -7202,7 +7184,7 @@ msgstr ""
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+msgid "Interval between keys when repeating (ms)"
 msgstr ""
 
 msgid "Invalid"
@@ -7243,8 +7225,9 @@ msgstr ""
 msgid "Ireland"
 msgstr "愛爾蘭"
 
-msgid "Is this setting ok?"
-msgstr ""
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "遠程控制風格"
 
 msgid "Is this video mode ok?"
 msgstr ""
@@ -7353,17 +7336,17 @@ msgstr "反向"
 msgid "Key Events"
 msgstr "事件"
 
-msgid "Keyboard"
-msgstr "鍵盤佈局"
-
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "鍵盤佈局"
+msgid "Keyboard / Remote Control Setup"
+msgstr "家長控制設定"
 
 msgid "Keyboard data entry"
 msgstr ""
 
 msgid "Keyboard map"
+msgstr ""
+
+msgid "Keyboard mapping file to be used for keyboard input."
 msgstr ""
 
 msgid "Keymap"
@@ -7550,9 +7533,6 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
-msgstr ""
-
-msgid "Let you change RC type but use it with care."
 msgstr ""
 
 msgid "Let's define enigma2 once more"
@@ -8283,10 +8263,6 @@ msgstr ""
 
 msgid "Multi EPG"
 msgstr "多路 EPG"
-
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "遠程控制風格"
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
@@ -9081,15 +9057,15 @@ msgstr ""
 msgid "Other"
 msgstr "其他"
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "選擇位置"
+
 msgid "Other Subtitles & lang"
 msgstr ""
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "選擇位置"
 
 msgid "Output"
 msgstr ""
@@ -9850,6 +9826,10 @@ msgstr "按OK啟動所選皮膚."
 msgid "Press OK to activate the settings."
 msgstr "按OK鍵啟動設定."
 
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "按OK鍵修改設定"
+
 msgid "Press OK to edit the settings."
 msgstr "按OK鍵修改設定"
 
@@ -10346,13 +10326,6 @@ msgstr ""
 
 #, fuzzy
 msgid "Remote control information"
-msgstr "遠程控制風格"
-
-msgid "Remote control type"
-msgstr ""
-
-#, fuzzy
-msgid "Remote control type setup"
 msgstr "遠程控制風格"
 
 msgid "Removal has completed."
@@ -11208,6 +11181,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -11294,6 +11270,10 @@ msgstr ""
 
 msgid "Select HDD"
 msgstr "選擇硬碟"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "輸入 1"
 
 msgid "Select a bouquet"
 msgstr ""
@@ -11388,9 +11368,6 @@ msgstr ""
 msgid "Select input device"
 msgstr ""
 
-msgid "Select input device."
-msgstr ""
-
 msgid "Select interface"
 msgstr "選擇介面"
 
@@ -11413,6 +11390,10 @@ msgstr "選擇並添加供應商..."
 
 msgid "Select refresh rate"
 msgstr "選擇刷新率"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "遠程控制風格"
 
 msgid "Select satellites"
 msgstr ""
@@ -11473,6 +11454,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+msgid "Select the remote control device to be used with the %s %s."
+msgstr ""
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -11496,6 +11480,14 @@ msgstr ""
 
 msgid "Select the shifted character set for the next character only"
 msgstr ""
+
+#, fuzzy
+msgid "Select the time delay before the button starts repeating."
+msgstr "選擇位置:"
+
+#, fuzzy
+msgid "Select the time delay between each repeat of the button."
+msgstr "選擇位置:"
 
 #, fuzzy
 msgid "Select the time zone within the area or region."
@@ -14676,7 +14668,8 @@ msgstr "使用遙控 上/下 鍵選擇一個選項。在此之後按下 OK 。"
 msgid "Use the wizard to set up basic features"
 msgstr ""
 
-msgid "Use these input device settings?"
+#, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr ""
 
 msgid "Use these settings?"
@@ -16432,9 +16425,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "水準"
 
@@ -16732,9 +16722,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "打開DNS設定"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -16742,9 +16729,6 @@ msgid "orange"
 msgstr ""
 
 msgid "original language"
-msgstr ""
-
-msgid "pace7241"
 msgstr ""
 
 msgid "pace7241VFD"
@@ -16994,9 +16978,6 @@ msgstr ""
 msgid "softcam"
 msgstr "重新測驗"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17075,9 +17056,6 @@ msgstr "地面波"
 msgid "testing"
 msgstr ""
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -17140,15 +17118,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "保護設定"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr "不可用"
 
@@ -17190,9 +17159,6 @@ msgstr ""
 
 msgid "vertical"
 msgstr "垂直"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "等待CI..."

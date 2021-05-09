@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -160,9 +160,6 @@ msgstr ""
 #
 msgid " extensions."
 msgstr "proširenja."
-
-msgid " ms"
-msgstr "ms"
 
 #
 msgid " packages selected."
@@ -1199,6 +1196,11 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1211,11 +1213,6 @@ msgstr "slobodan prostor na disku"
 #
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #
@@ -1871,9 +1868,6 @@ msgstr ""
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
-msgid "ADB XMP"
-msgstr ""
-
 msgid "ADB variant"
 msgstr ""
 
@@ -2268,6 +2262,10 @@ msgstr ""
 
 msgid "All slots"
 msgstr ""
+
+#, fuzzy
+msgid "All supported"
+msgstr "nije podržano"
 
 msgid "Allocate"
 msgstr ""
@@ -3208,12 +3206,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "C-Opseg"
 
@@ -3471,6 +3463,11 @@ msgstr ""
 msgid "Change bouquets in quickzap"
 msgstr "Promeni bukete u brzom prebacivanju"
 
+#
+#, fuzzy
+msgid "Change device settings"
+msgstr "Postavke nejmservera"
+
 msgid "Change recording (add time)"
 msgstr ""
 
@@ -3483,9 +3480,6 @@ msgstr "promeni dužinu snimanja"
 #, fuzzy
 msgid "Change recording (endtime)"
 msgstr "promeni snimanje (završno vreme)"
-
-msgid "Change repeat and delay settings?"
-msgstr ""
 
 #
 msgid "Change step size"
@@ -3923,6 +3917,12 @@ msgstr ""
 
 #
 #, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Mrežna konfiguracija"
+
+#
+#, fuzzy
 msgid "Configuration"
 msgstr "Mrežna konfiguracija"
 
@@ -4037,11 +4037,6 @@ msgstr "Konfiguriši nejmservere"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
-
-#
-#, fuzzy
-msgid "Configure remote control type"
-msgstr "Tip roditeljske zaštite"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr ""
@@ -4587,14 +4582,6 @@ msgstr "Osvetljenje"
 msgid "Cuba"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "standardno"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4623,9 +4610,6 @@ msgstr ""
 #, fuzzy
 msgid "Current crash log"
 msgstr "Trenutni transponder"
-
-msgid "Current device: "
-msgstr "Aktuelni uređaj:"
 
 msgid "Current event EPG"
 msgstr ""
@@ -5126,7 +5110,7 @@ msgstr ""
 msgid "Delay after voltage change before motor command"
 msgstr ""
 
-msgid "Delay before key repeat starts:"
+msgid "Delay before key repeat starts (ms)"
 msgstr ""
 
 msgid "Delay before sequence repeat"
@@ -5315,8 +5299,10 @@ msgstr "Kanal"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
-msgstr ""
+#
+#, fuzzy
+msgid "Device name"
+msgstr "Skeniranje Kanala"
 
 #
 msgid "DiSEqC"
@@ -5927,9 +5913,6 @@ msgstr ""
 msgid "Ecuador"
 msgstr ""
 
-msgid "Edision argus"
-msgstr ""
-
 #
 msgid "Edit"
 msgstr "Urediti"
@@ -6305,6 +6288,9 @@ msgstr ""
 msgid "Enter URL"
 msgstr ""
 
+msgid "Enter a new name for this device."
+msgstr ""
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -6559,7 +6545,12 @@ msgstr "Izađi iz editora"
 msgid "Exit inetd recovery"
 msgstr "Izađi iz editora"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Napusti izbor ulaznog uređaja."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Napusti izbor ulaznog uređaja."
 
 msgid "Exit media player?"
@@ -7033,24 +7024,8 @@ msgid "Force legacy signal stats"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Forever"
-msgstr "nikad"
-
-#
 msgid "Format"
 msgstr "Formatiranje"
-
-msgid "Fortis mini"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Fortis standard"
-msgstr "standardno"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -8113,14 +8088,19 @@ msgid "Input "
 msgstr "Ulaz "
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Ulazni uređaji"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Podešavanje ulaznog uređaja "
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Podešavanje ulaznog uređaja "
 
 msgid "Input Stream ID"
 msgstr ""
-
-msgid "Input device setup"
-msgstr "Podešavanje ulaznog uređaja "
 
 #
 msgid "Install"
@@ -8211,7 +8191,7 @@ msgstr "Iinterfejs:"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+msgid "Interval between keys when repeating (ms)"
 msgstr ""
 
 #
@@ -8258,9 +8238,10 @@ msgstr ""
 msgid "Ireland"
 msgstr ""
 
+#
 #, fuzzy
-msgid "Is this setting ok?"
-msgstr "Koristi ove postavke?"
+msgid "Is the remote control working okay?"
+msgstr "Tip roditeljske zaštite"
 
 #
 #, fuzzy
@@ -8391,13 +8372,9 @@ msgid "Key Events"
 msgstr ""
 
 #
-msgid "Keyboard"
-msgstr "Tastatura"
-
-#
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Postavke tastature"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Postavke roditeljske zaštite"
 
 #
 #, fuzzy
@@ -8408,6 +8385,9 @@ msgstr "Postavke tastature"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "Mapa tastature"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -8622,9 +8602,6 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
-msgstr ""
-
-msgid "Let you change RC type but use it with care."
 msgstr ""
 
 msgid "Let's define enigma2 once more"
@@ -9483,11 +9460,6 @@ msgstr ""
 #
 msgid "Multi EPG"
 msgstr "Multi EPG"
-
-#
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Tip roditeljske zaštite"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi EPG izbor buketa"
@@ -10403,16 +10375,16 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Other Actions"
+msgstr "Izaberite snimljenu lokaciju"
+
 msgid "Other Subtitles & lang"
 msgstr ""
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#
-#, fuzzy
-msgid "Other functions"
-msgstr "Izaberite snimljenu lokaciju"
 
 msgid "Output"
 msgstr ""
@@ -11316,6 +11288,11 @@ msgid "Press OK to activate the settings."
 msgstr "Pritisnite OK za aktiviranje postavki."
 
 #
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Pritisnite OK da uredite postavke."
+
+#
 msgid "Press OK to edit the settings."
 msgstr "Pritisnite OK da uredite postavke."
 
@@ -11879,16 +11856,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Remote control information"
-msgstr "Tip roditeljske zaštite"
-
-#
-#, fuzzy
-msgid "Remote control type"
-msgstr "Tip roditeljske zaštite"
-
-#
-#, fuzzy
-msgid "Remote control type setup"
 msgstr "Tip roditeljske zaštite"
 
 #
@@ -12896,6 +12863,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -12985,6 +12955,10 @@ msgstr ""
 #
 msgid "Select HDD"
 msgstr "Odaberi hard disk"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Izaberi ulazni uređaj"
 
 #
 #, fuzzy
@@ -13100,9 +13074,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Izaberi ulazni uređaj"
 
-msgid "Select input device."
-msgstr "Izaberi ulazni uređaj."
-
 #
 msgid "Select interface"
 msgstr "Izaberite interfejs "
@@ -13132,6 +13103,11 @@ msgstr "Izaberi provajdera za dodavanje"
 #
 msgid "Select refresh rate"
 msgstr "Izaberi vreme osvežavanja"
+
+#
+#, fuzzy
+msgid "Select remote control"
+msgstr "Tip roditeljske zaštite"
 
 msgid "Select satellites"
 msgstr ""
@@ -13199,6 +13175,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+msgid "Select the remote control device to be used with the %s %s."
+msgstr ""
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -13223,6 +13202,12 @@ msgid "Select the shifted character set"
 msgstr "Izaberite putanju filma"
 
 msgid "Select the shifted character set for the next character only"
+msgstr ""
+
+msgid "Select the time delay before the button starts repeating."
+msgstr ""
+
+msgid "Select the time delay between each repeat of the button."
 msgstr ""
 
 msgid "Select the time zone within the area or region."
@@ -16929,8 +16914,8 @@ msgstr "Koristite gore/dole tipke na vašem daljinskom upravljaču za izbor opci
 msgid "Use the wizard to set up basic features"
 msgstr "Koristite čarobnjaka za postavljanje osnovnih postavki"
 
-#, fuzzy
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Koristi postavke ovog ulaznog uređaja?"
 
 #, fuzzy
@@ -18915,9 +18900,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "horizontalno"
@@ -19255,9 +19237,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "Otvori konfiguraciju nejmservera "
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -19265,9 +19244,6 @@ msgid "orange"
 msgstr ""
 
 msgid "original language"
-msgstr ""
-
-msgid "pace7241"
 msgstr ""
 
 msgid "pace7241VFD"
@@ -19555,9 +19531,6 @@ msgstr ""
 msgid "softcam"
 msgstr "Ponovite test"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -19647,9 +19620,6 @@ msgstr "Zemaljski"
 msgid "testing"
 msgstr "U radu"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -19722,15 +19692,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "Video postavke"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 #
 msgid "unavailable"
 msgstr "nedostupno"
@@ -19779,9 +19740,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "vertikalno"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 #
 msgid "wait for ci..."

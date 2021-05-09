@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2021-02-19 14:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: Muzoss-VELEBRDO\n"
@@ -150,9 +150,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " екстензии."
-
-msgid " ms"
-msgstr " м сек"
 
 msgid " packages selected."
 msgstr " избрани пакети."
@@ -1040,6 +1037,10 @@ msgstr ""
 "Притиснете ок за избор на повеќекратно подигање\n"
 "Притиснете exit за да затворите"
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "Сортирање на Мени (%s)"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1051,10 +1052,6 @@ msgstr "%s %s слободен простор на дискот"
 #, python-format
 msgid "%s ( %s Cards )"
 msgstr ""
-
-#, fuzzy, python-format
-msgid "%s (%s)"
-msgstr "Сортирање на Мени (%s)"
 
 #, python-format
 msgid "%s (%s)\n"
@@ -1667,9 +1664,6 @@ msgstr "Транскодирање: "
 msgid "ACQUIRING TSID/ONID"
 msgstr "СТЕКНУВАЊЕ TSID / ONID"
 
-msgid "ADB XMP"
-msgstr ""
-
 #, fuzzy
 msgid "ADB variant"
 msgstr "Бугарски"
@@ -1996,6 +1990,10 @@ msgstr "Сите канали од провајдерот"
 
 msgid "All slots"
 msgstr "Сите слотови"
+
+#, fuzzy
+msgid "All supported"
+msgstr "не е поддржано"
 
 msgid "Allocate"
 msgstr "Распредели"
@@ -2822,11 +2820,6 @@ msgstr ""
 msgid "C"
 msgstr "Ц"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "Ц"
-
 msgid "C-Band"
 msgstr "Ц-Банд"
 
@@ -3086,6 +3079,10 @@ msgstr "Да се ​​променат вредностите за повто�
 msgid "Change bouquets in quickzap"
 msgstr "Променете го букетот со промена на канал"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Да се ​​променат вредностите за повторување и одложување?"
+
 msgid "Change recording (add time)"
 msgstr "Променете го снимањето (додај време на снимање)"
 
@@ -3094,9 +3091,6 @@ msgstr "Промена на снимање (должина на снимање)"
 
 msgid "Change recording (endtime)"
 msgstr "Променете го снимањето (крајно време на снимање)"
-
-msgid "Change repeat and delay settings?"
-msgstr "Да се ​​променат вредностите за повторување и одложување?"
 
 msgid "Change step size"
 msgstr "Променете ја големината на чекорот"
@@ -3481,6 +3475,11 @@ msgstr "Конфигурирај ги деталите за пребарувањ
 msgid "Config resolution of pictures"
 msgstr "Конфигурирај резолуција на слики"
 
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Конфигурација"
+
 msgid "Configuration"
 msgstr "Конфигурација"
 
@@ -3581,9 +3580,6 @@ msgstr "Конфигурирајте го DNS серверот"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr "Избери на кои уреди треба да се користи опцијата за бришење позадина."
-
-msgid "Configure remote control type"
-msgstr "Конфигурирај тип на далечински управувач"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Конфигурирај DiSEqC режим за овој LNB."
@@ -4079,13 +4075,6 @@ msgstr "Светлост"
 msgid "Cuba"
 msgstr "Куба"
 
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "стандард"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4109,9 +4098,6 @@ msgstr "Тековна CEC адреса"
 #, fuzzy
 msgid "Current crash log"
 msgstr "Тековен транспондер"
-
-msgid "Current device: "
-msgstr "Тековен уред: "
 
 msgid "Current event EPG"
 msgstr "Тековно емитување на EPG"
@@ -4555,7 +4541,8 @@ msgstr "Доцнење по toneburst"
 msgid "Delay after voltage change before motor command"
 msgstr "Доцнење по промена на напон пред да му дадете команда на моторот"
 
-msgid "Delay before key repeat starts:"
+#, fuzzy
+msgid "Delay before key repeat starts (ms)"
 msgstr "Доцнење пред повторување на командата:"
 
 msgid "Delay before sequence repeat"
@@ -4717,7 +4704,8 @@ msgstr "Канал"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
+#, fuzzy
+msgid "Device name"
 msgstr "Име на уред:"
 
 msgid "DiSEqC"
@@ -5237,9 +5225,6 @@ msgstr "Постави источна граница"
 msgid "Ecuador"
 msgstr "Еквадор"
 
-msgid "Edision argus"
-msgstr ""
-
 msgid "Edit"
 msgstr "Уреди"
 
@@ -5567,6 +5552,10 @@ msgstr "Внеси PIN"
 msgid "Enter URL"
 msgstr "Внесеи URL"
 
+#, fuzzy
+msgid "Enter a new name for this device."
+msgstr "Откријте ја испрекинатата линија за овој канал"
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr "Внесете URL за да наведете алтернативни имиџи за FlashImage"
 
@@ -5811,7 +5800,12 @@ msgstr "Излези од уредникот"
 msgid "Exit inetd recovery"
 msgstr "Излези од уредникот"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Излези од изборот на влезен уред."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Излези од изборот на влезен уред."
 
 msgid "Exit media player?"
@@ -6232,22 +6226,8 @@ msgstr "принудно овозможена"
 msgid "Force legacy signal stats"
 msgstr "Принудени статистики за наследниот сигнал"
 
-#, fuzzy
-msgid "Forever"
-msgstr "никогаш"
-
 msgid "Format"
 msgstr "Форматирање"
-
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "стандард"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Напред - копче за јачина на звук"
@@ -7206,14 +7186,19 @@ msgid "Input "
 msgstr "Влез "
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Влезни уреди"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Поставки на влезен уред"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Поставки на влезен уред"
 
 msgid "Input Stream ID"
 msgstr "Внесете ID на Стрим"
-
-msgid "Input device setup"
-msgstr "Поставки на влезен уред"
 
 msgid "Install"
 msgstr "Инсталираj"
@@ -7284,7 +7269,8 @@ msgstr "Внатрешно"
 msgid "Internet time (NTP)"
 msgstr "Интернет (ntp)"
 
-msgid "Interval between keys when repeating:"
+#, fuzzy
+msgid "Interval between keys when repeating (ms)"
 msgstr "Интервал на повторување на копчињата:"
 
 #, fuzzy
@@ -7325,8 +7311,9 @@ msgstr "Ирак"
 msgid "Ireland"
 msgstr "Ирска"
 
-msgid "Is this setting ok?"
-msgstr "Дали е во ред оваа поставка?"
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "Користете далечински управувач на ТВ"
 
 msgid "Is this video mode ok?"
 msgstr "Дали е во ред овој режим за видео?"
@@ -7438,18 +7425,18 @@ msgstr "Верзија на Kernel: "
 msgid "Key Events"
 msgstr "Клуч настани"
 
-msgid "Keyboard"
-msgstr "Тастатура"
-
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Поставки за тастатура"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Поставки за родителска контрола"
 
 msgid "Keyboard data entry"
 msgstr "Внесување податоци за тастатура"
 
 msgid "Keyboard map"
 msgstr "Распоред на тастатура"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -7635,9 +7622,6 @@ msgstr "Хоби за слободно време"
 
 msgid "Lesotho"
 msgstr "Лесото"
-
-msgid "Let you change RC type but use it with care."
-msgstr ""
 
 msgid "Let's define enigma2 once more"
 msgstr ""
@@ -8366,10 +8350,6 @@ msgstr "Мозамбик"
 
 msgid "Multi EPG"
 msgstr "Мулти EPG"
-
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Поставки на типот на далечинскиот управувач"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Мулти-ЕПГ избор на букет"
@@ -9161,15 +9141,15 @@ msgstr "Оригинал"
 msgid "Other"
 msgstr "Други"
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "понатамошно образование"
+
 msgid "Other Subtitles & lang"
 msgstr "Други преводи & јазик"
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "понатамошно образование"
 
 msgid "Output"
 msgstr "Излез"
@@ -9938,6 +9918,10 @@ msgstr "Притиснете ОК за да го активирате марки
 msgid "Press OK to activate the settings."
 msgstr "Притиснете OK за да ги активирате поставките."
 
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Притиснете OK за да ги уредите поставките."
+
 msgid "Press OK to edit the settings."
 msgstr "Притиснете OK за да ги уредите поставките."
 
@@ -10442,12 +10426,6 @@ msgstr "Потсетник за зачувување на датотеката �
 #, fuzzy
 msgid "Remote control information"
 msgstr "Тип на далечински управувач"
-
-msgid "Remote control type"
-msgstr "Тип на далечински управувач"
-
-msgid "Remote control type setup"
-msgstr "Поставки на типот на далечинскиот управувач"
 
 msgid "Removal has completed."
 msgstr "Бришењето е завршено."
@@ -11302,6 +11280,9 @@ msgstr "Изберете „A“ или „B“ ако системот за а�
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Изберете „FBC SCR“ ако овој тјунер користи Уникатен / SCR уред. За сите други поставувања, изберете „FBC автоматски“."
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -11388,6 +11369,10 @@ msgstr "Изберете Fast DiSEqC ако системот за антена �
 
 msgid "Select HDD"
 msgstr "Изберете HDD"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Изберете влезен уред"
 
 msgid "Select a bouquet"
 msgstr "Изберете букет"
@@ -11480,9 +11465,6 @@ msgstr "Изберете како сакате приемникот да го ч
 msgid "Select input device"
 msgstr "Изберете влезен уред"
 
-msgid "Select input device."
-msgstr "Изберете влезен уред."
-
 msgid "Select interface"
 msgstr "Изберете интерфејс"
 
@@ -11504,6 +11486,10 @@ msgstr "Изберете провајдер за да додадете ..."
 
 msgid "Select refresh rate"
 msgstr "Изберете стапка на освежување"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "Користете далечински управувач на ТВ"
 
 msgid "Select satellites"
 msgstr "Изберете сателити"
@@ -11564,6 +11550,10 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Изберете го протоколот што го користи вашиот SCR уред. Изборите се 'SCR Unicable' (Unicable) или 'SCR JESS' (JESS, исто така познат како Unicable II)."
 
+#, fuzzy
+msgid "Select the remote control device to be used with the %s %s."
+msgstr "Изберете го тјунерот што ја контролира моторизираната антена."
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr "Изберете го сателитот што е поврзан со Port-A на вашиот прекинувач. Ако не сте сигурни, изберете „автоматски“ и приемникот ќе се обиде да го одреди ова за вас. Ако ништо не е поврзано со оваа порта, изберете „ништо не е поврзано“."
 
@@ -11587,6 +11577,14 @@ msgstr "Изберете го множеството знаци преместе
 
 msgid "Select the shifted character set for the next character only"
 msgstr "Изберете поместете множеството карактер само за следниот знак"
+
+#, fuzzy
+msgid "Select the time delay before the button starts repeating."
+msgstr "Изберете ја временската зона во областа или регионот."
+
+#, fuzzy
+msgid "Select the time delay between each repeat of the button."
+msgstr "Изберете ја временската зона во областа или регионот."
 
 msgid "Select the time zone within the area or region."
 msgstr "Изберете ја временската зона во областа или регионот."
@@ -14838,7 +14836,8 @@ msgstr "Користете ги копчињата горе / долу на ва
 msgid "Use the wizard to set up basic features"
 msgstr "Користете го асистентот за да поставите основни карактеристики"
 
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Користете ги поставките за влезниот уред?"
 
 msgid "Use these settings?"
@@ -16678,9 +16677,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "хоризонтално"
 
@@ -16984,9 +16980,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "отвори ги поставките за DNS"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -16995,9 +16988,6 @@ msgstr ""
 
 msgid "original language"
 msgstr "оригинален јазик"
-
-msgid "pace7241"
-msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -17251,9 +17241,6 @@ msgstr "социјална / духовна наука"
 msgid "softcam"
 msgstr "Рестарт софткам"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17334,9 +17321,6 @@ msgstr "Терестријална"
 msgid "testing"
 msgstr "тестирање"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "овој букет е заштитен со родителска заштита"
 
@@ -17401,15 +17385,6 @@ msgstr "спортови на вода"
 msgid "uShare setup"
 msgstr "Поставки на асистентот"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr "недостапно"
 
@@ -17452,9 +17427,6 @@ msgstr "естрада"
 
 msgid "vertical"
 msgstr "вертикално"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "почекај ci ..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -150,9 +150,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " phần mở rộng."
-
-msgid " ms"
-msgstr " ms"
 
 msgid " packages selected."
 msgstr " các gói được chọn."
@@ -1164,6 +1161,10 @@ msgstr ""
 "Nhấn ok để chọn multiboot\n"
 "Nhấn thoát để đóng"
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1174,10 +1175,6 @@ msgstr "%s %s dung lượng đĩa trống"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1793,9 +1790,6 @@ msgstr "Chuyển mã: "
 msgid "ACQUIRING TSID/ONID"
 msgstr "THU NHẬP TSID / ONID"
 
-msgid "ADB XMP"
-msgstr ""
-
 #, fuzzy
 msgid "ADB variant"
 msgstr "Tiếng Bulgaria"
@@ -2123,6 +2117,10 @@ msgstr "Tất cả các nhà cung cấp dịch vụ"
 
 msgid "All slots"
 msgstr "Tất cả các khe"
+
+#, fuzzy
+msgid "All supported"
+msgstr "không được hỗ trợ"
 
 msgid "Allocate"
 msgstr "Chỉ định"
@@ -2950,11 +2948,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "Băng tần C"
 
@@ -3215,6 +3208,10 @@ msgstr "Thay đổi cài đặt lặp lại và trì hoãn?"
 msgid "Change bouquets in quickzap"
 msgstr "Thay đổi bó hoa trong quickzap"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Thay đổi cài đặt lặp lại và trì hoãn?"
+
 msgid "Change recording (add time)"
 msgstr "Thay đổi ghi âm (thêm thời gian)"
 
@@ -3223,9 +3220,6 @@ msgstr "Thay đổi bản ghi (thời lượng)"
 
 msgid "Change recording (endtime)"
 msgstr "Thay đổi ghi âm (thời gian kết thúc)"
-
-msgid "Change repeat and delay settings?"
-msgstr "Thay đổi cài đặt lặp lại và trì hoãn?"
 
 msgid "Change step size"
 msgstr "Thay đổi kích thước bước"
@@ -3610,6 +3604,11 @@ msgstr "Cấu hình chi tiết quét"
 msgid "Config resolution of pictures"
 msgstr "Cấu hình độ phân giải của hình ảnh"
 
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Cấu hình"
+
 msgid "Configuration"
 msgstr "Cấu hình"
 
@@ -3711,9 +3710,6 @@ msgstr "Configure nameservers"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr "Cấu hình trên thiết bị nào nên sử dụng tùy chọn xóa nền."
-
-msgid "Configure remote control type"
-msgstr "Cấu hình loại điều khiển từ xa"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Định cấu hình chế độ DiSEqC cho LNB này."
@@ -4209,13 +4205,6 @@ msgstr "Độ sáng"
 msgid "Cuba"
 msgstr "Cuba"
 
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "tiêu chuẩn"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4240,9 +4229,6 @@ msgstr "Địa chỉ CEC hiện tại"
 #, fuzzy
 msgid "Current crash log"
 msgstr "Transponder hiện tại"
-
-msgid "Current device: "
-msgstr "Thiêt bị hiện tại: "
 
 msgid "Current event EPG"
 msgstr "EPG sự kiện hiện tại"
@@ -4688,7 +4674,8 @@ msgstr "Trì hoãn sau toneburst"
 msgid "Delay after voltage change before motor command"
 msgstr "Độ trễ sau khi thay đổi điện áp trước lệnh động cơ"
 
-msgid "Delay before key repeat starts:"
+#, fuzzy
+msgid "Delay before key repeat starts (ms)"
 msgstr "Trì hoãn trước khi lặp lại khóa bắt đầu:"
 
 msgid "Delay before sequence repeat"
@@ -4855,7 +4842,8 @@ msgstr "Dịch vụ"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
+#, fuzzy
+msgid "Device name"
 msgstr "Tên thiết bị:"
 
 msgid "DiSEqC"
@@ -5376,9 +5364,6 @@ msgstr "Giới hạn đông"
 msgid "Ecuador"
 msgstr "Ecuador"
 
-msgid "Edision argus"
-msgstr ""
-
 msgid "Edit"
 msgstr "Chỉnh sửa"
 
@@ -5708,6 +5693,10 @@ msgstr "Nhập PIN"
 msgid "Enter URL"
 msgstr "Nhập URL"
 
+#, fuzzy
+msgid "Enter a new name for this device."
+msgstr "Khám phá đường nhấp nháy nhấp nháy cho dịch vụ này"
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr "Nhập một URL nơi hình ảnh thay thế có thể được liệt kê cho FlashImage"
 
@@ -5958,7 +5947,12 @@ msgstr "Thoát biên tập"
 msgid "Exit inetd recovery"
 msgstr "Thoát biên tập"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Thoát lựa chọn thiết bị đầu vào."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Thoát lựa chọn thiết bị đầu vào."
 
 msgid "Exit media player?"
@@ -6382,22 +6376,8 @@ msgstr "kích hoạt lực"
 msgid "Force legacy signal stats"
 msgstr "Lực lượng thống kê tín hiệu kế thừa"
 
-#, fuzzy
-msgid "Forever"
-msgstr "không bao giờ"
-
 msgid "Format"
 msgstr "Định dạng"
-
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "tiêu chuẩn"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Phím âm lượng chuyển tiếp"
@@ -7360,14 +7340,19 @@ msgid "Input "
 msgstr "Đầu vào "
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Thiết bị đầu vào"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Thiết lập thiết bị đầu vào"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Thiết lập thiết bị đầu vào"
 
 msgid "Input Stream ID"
 msgstr "ID luồng đầu vào"
-
-msgid "Input device setup"
-msgstr "Thiết lập thiết bị đầu vào"
 
 msgid "Install"
 msgstr "Cài vào"
@@ -7437,7 +7422,8 @@ msgstr "Nội bộ"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+#, fuzzy
+msgid "Interval between keys when repeating (ms)"
 msgstr "Khoảng thời gian giữa các phím khi lặp lại:"
 
 #, fuzzy
@@ -7478,8 +7464,9 @@ msgstr "Iraq"
 msgid "Ireland"
 msgstr "Ai-len"
 
-msgid "Is this setting ok?"
-msgstr "Cài đặt này có ổn không?"
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "Sử dụng điều khiển từ xa"
 
 msgid "Is this video mode ok?"
 msgstr "Chế độ video này có ổn không?"
@@ -7591,18 +7578,18 @@ msgstr "Phiên bản hạt nhân: "
 msgid "Key Events"
 msgstr "Sự kiện chính"
 
-msgid "Keyboard"
-msgstr "Bàn phím"
-
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Thiết lập bàn phím"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Thiết lập kiểm soát của cha mẹ"
 
 msgid "Keyboard data entry"
 msgstr "Nhập dữ liệu bàn phím"
 
 msgid "Keyboard map"
 msgstr "Bản đồ bàn phím"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -7788,9 +7775,6 @@ msgstr "Sở thích giải trí"
 
 msgid "Lesotho"
 msgstr "Lesicia"
-
-msgid "Let you change RC type but use it with care."
-msgstr ""
 
 msgid "Let's define enigma2 once more"
 msgstr ""
@@ -8532,10 +8516,6 @@ msgstr "Mozambique"
 
 msgid "Multi EPG"
 msgstr "Đa EPG"
-
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Thiết lập loại điều khiển từ xa"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Lựa chọn bó hoa đa EPG"
@@ -9328,15 +9308,15 @@ msgstr "Nguyên"
 msgid "Other"
 msgstr "Khác"
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "giáo dục nâng cao"
+
 msgid "Other Subtitles & lang"
 msgstr "Phụ đề & ngôn ngữ khác"
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "giáo dục nâng cao"
 
 msgid "Output"
 msgstr "Đầu ra"
@@ -10105,6 +10085,10 @@ msgstr "Nhấn OK để kích hoạt giao diện đã chọn."
 msgid "Press OK to activate the settings."
 msgstr "Nhấn OK để kích hoạt cài đặt."
 
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Nhấn OK để chỉnh sửa cài đặt."
+
 msgid "Press OK to edit the settings."
 msgstr "Nhấn OK để chỉnh sửa cài đặt."
 
@@ -10612,12 +10596,6 @@ msgstr "Nhắc nhở, bạn đã chọn lưu tệp timeshift."
 #, fuzzy
 msgid "Remote control information"
 msgstr "Loại điều khiển từ xa"
-
-msgid "Remote control type"
-msgstr "Loại điều khiển từ xa"
-
-msgid "Remote control type setup"
-msgstr "Thiết lập loại điều khiển từ xa"
 
 msgid "Removal has completed."
 msgstr "Xóa bỏ đã hoàn thành."
@@ -11475,6 +11453,9 @@ msgstr "Chọn 'A' hoặc 'B' nếu hệ thống trên không của bạn yêu c
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Chọn 'FBC SCR' nếu bộ chỉnh này sẽ kết nối với thiết bị SCR (Unicable / JESS). Đối với tất cả các thiết lập khác, chọn 'FBC tự động'."
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -11561,6 +11542,10 @@ msgstr "Chọn Fast DiSEqC nếu hệ thống trên không của bạn hỗ tr�
 
 msgid "Select HDD"
 msgstr "Chọn ổ cứng"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Chọn thiết bị đầu vào"
 
 msgid "Select a bouquet"
 msgstr "Chọn một gói kênh"
@@ -11653,9 +11638,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Chọn thiết bị đầu vào"
 
-msgid "Select input device."
-msgstr "Chọn thiết bị đầu vào."
-
 msgid "Select interface"
 msgstr "Chọn giao diện"
 
@@ -11677,6 +11659,10 @@ msgstr "Lựa chọn hướng dẫn cho logfile...."
 
 msgid "Select refresh rate"
 msgstr "Chọn tốc độ làm mới"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "Sử dụng điều khiển từ xa"
 
 msgid "Select satellites"
 msgstr "Chọn vệ tinh"
@@ -11739,6 +11725,10 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Chọn giao thức được sử dụng bởi thiết bị SCR của bạn. Các lựa chọn là 'SCR Unicable' (Unicable) hoặc 'SCR JESS' (JESS, còn được gọi là Unicable II)."
 
+#, fuzzy
+msgid "Select the remote control device to be used with the %s %s."
+msgstr "Chọn bộ chỉnh điều khiển đĩa cơ giới."
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr "Chọn vệ tinh được kết nối với Cổng A của công tắc. Nếu bạn không chắc chắn, hãy chọn 'tự động' và người nhận sẽ cố gắng xác định điều này cho bạn. Nếu không có gì được kết nối với cổng này, chọn 'không có gì được kết nối'."
 
@@ -11764,6 +11754,14 @@ msgstr "Chọn bộ ký tự dịch chuyển bàn phím ảo"
 #, fuzzy
 msgid "Select the shifted character set for the next character only"
 msgstr "Chọn bộ ký tự dịch chuyển bàn phím ảo cho chỉ ký tự tiếp theo"
+
+#, fuzzy
+msgid "Select the time delay before the button starts repeating."
+msgstr "Chọn độ phân giải ngang:"
+
+#, fuzzy
+msgid "Select the time delay between each repeat of the button."
+msgstr "Chọn độ phân giải ngang:"
 
 #, fuzzy
 msgid "Select the time zone within the area or region."
@@ -15040,7 +15038,8 @@ msgstr "Sử dụng các phím lên / xuống trên điều khiển từ xa củ
 msgid "Use the wizard to set up basic features"
 msgstr "Sử dụng trình hướng dẫn để thiết lập các tính năng cơ bản"
 
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Sử dụng các cài đặt thiết bị đầu vào?"
 
 msgid "Use these settings?"
@@ -16886,9 +16885,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "ngang"
 
@@ -17192,9 +17188,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "mở cấu hình máy chủ tên"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -17203,9 +17196,6 @@ msgstr ""
 
 msgid "original language"
 msgstr "ngôn ngữ gốc"
-
-msgid "pace7241"
-msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -17460,9 +17450,6 @@ msgstr "khoa học xã hội / tâm linh"
 msgid "softcam"
 msgstr "Khởi động lại softcam"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17543,9 +17530,6 @@ msgstr "TH mặt đất"
 msgid "testing"
 msgstr "đang làm việc"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "gói kênh này được bảo vệ bởi một chốt kiểm soát của cha mẹ"
 
@@ -17610,15 +17594,6 @@ msgstr "thể thao dưới nước"
 msgid "uShare setup"
 msgstr "Thiết lập số dách"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr "không có sẵn"
 
@@ -17661,9 +17636,6 @@ msgstr "chương trình tạp kỹ"
 
 msgid "vertical"
 msgstr "theo chiều dọc"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "chờ tôi ..."

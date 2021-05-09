@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -159,9 +159,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " lisäosaa."
-
-msgid " ms"
-msgstr " ms"
 
 msgid " packages selected."
 msgstr " pakettia valittu."
@@ -1183,6 +1180,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1194,10 +1195,6 @@ msgstr "%s %s vapaata levytilaa"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1852,9 +1849,6 @@ msgstr "Transkoodaus:"
 msgid "ACQUIRING TSID/ONID"
 msgstr "HAETAAN TSID/ONID"
 
-msgid "ADB XMP"
-msgstr ""
-
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgaria"
@@ -2240,6 +2234,10 @@ msgstr ""
 #, fuzzy
 msgid "All slots"
 msgstr "Valitse paikka"
+
+#, fuzzy
+msgid "All supported"
+msgstr "Ei tuettu"
 
 msgid "Allocate"
 msgstr "Varaa"
@@ -3138,11 +3136,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 #
 msgid "C-Band"
 msgstr "C-taajuusalue"
@@ -3402,6 +3395,10 @@ msgstr "Muuta toiston ja viiveen asetuksia?"
 msgid "Change bouquets in quickzap"
 msgstr "Suosikkilistan vaihto listan lopussa"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Muuta toiston ja viiveen asetuksia?"
+
 msgid "Change recording (add time)"
 msgstr "Muuta tallennusta (lisää aikaa)"
 
@@ -3411,9 +3408,6 @@ msgstr "Muuta tallennusta (kesto)"
 #
 msgid "Change recording (endtime)"
 msgstr "Muuta tallennuksen päättymisaikaa"
-
-msgid "Change repeat and delay settings?"
-msgstr "Muuta toiston ja viiveen asetuksia?"
 
 #
 msgid "Change step size"
@@ -3850,6 +3844,11 @@ msgstr ""
 msgid "Config resolution of pictures"
 msgstr "Kuvien resoluutio"
 
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Asetukset"
+
 msgid "Configuration"
 msgstr "Asetukset"
 
@@ -3954,9 +3953,6 @@ msgstr "Määritä nimipalvelimet"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr "Määritä millä laitteilla tallenteiden taustalla poistoa käytetään."
-
-msgid "Configure remote control type"
-msgstr "Määritä kaukosäätimen tyyppi"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Määritä tämän LNB:n DiSEqC-tila."
@@ -4473,14 +4469,6 @@ msgstr "Valoisuus"
 msgid "Cuba"
 msgstr "Kuuba"
 
-#
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "Vakio"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4508,9 +4496,6 @@ msgstr "Käytettävä CEC-osoite"
 #, fuzzy
 msgid "Current crash log"
 msgstr "Valittu lähetin"
-
-msgid "Current device: "
-msgstr "Käytettävä laite: "
 
 msgid "Current event EPG"
 msgstr "Nykyisen tapahtuman ohjelmaopas"
@@ -4994,7 +4979,8 @@ msgstr "Viive taajuusalueen vaihdon jälkeen"
 msgid "Delay after voltage change before motor command"
 msgstr "Viive polarisaation vaihdon jälkeen ennen moottori-komentoa"
 
-msgid "Delay before key repeat starts:"
+#, fuzzy
+msgid "Delay before key repeat starts (ms)"
 msgstr "Viive ennen kuin näppäimen toisto alkaa"
 
 msgid "Delay before sequence repeat"
@@ -5182,7 +5168,8 @@ msgstr "Kanava"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
+#, fuzzy
+msgid "Device name"
 msgstr "Laitenimi:"
 
 #
@@ -5781,9 +5768,6 @@ msgstr "Itäinen raja-arvo asetettu"
 msgid "Ecuador"
 msgstr "Ecuador"
 
-msgid "Edision argus"
-msgstr ""
-
 #
 msgid "Edit"
 msgstr "Muokkaa"
@@ -6157,6 +6141,10 @@ msgstr "Syötä PIN-koodi"
 msgid "Enter URL"
 msgstr "Syötä URL"
 
+#, fuzzy
+msgid "Enter a new name for this device."
+msgstr "Poista välkkyvän rivin peitto tältä kanavalta"
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -6408,7 +6396,12 @@ msgstr "Poistu editorista"
 msgid "Exit inetd recovery"
 msgstr "Poistu editorista"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Poistu syöttölaitteen valinnasta."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Poistu syöttölaitteen valinnasta."
 
 msgid "Exit media player?"
@@ -6870,24 +6863,8 @@ msgid "Force legacy signal stats"
 msgstr "Pakota vanhat signaalitiedot"
 
 #
-#, fuzzy
-msgid "Forever"
-msgstr "Ei koskaan"
-
-#
 msgid "Format"
 msgstr "Alusta"
-
-msgid "Fortis mini"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Fortis standard"
-msgstr "Vakio"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Välitä äänenvoimakkuusnäppäimet"
@@ -7933,14 +7910,19 @@ msgid "Input "
 msgstr "Valinta "
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Syöttölaitteet"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Syöttölaitteen asetukset"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Syöttölaitteen asetukset"
 
 msgid "Input Stream ID"
 msgstr "Anna syötteen tunniste (ID)"
-
-msgid "Input device setup"
-msgstr "Syöttölaitteen asetukset"
 
 #
 msgid "Install"
@@ -8020,7 +8002,8 @@ msgstr "Sisäinen"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+#, fuzzy
+msgid "Interval between keys when repeating (ms)"
 msgstr "Viive näppäimen toiston välissä:"
 
 #, fuzzy
@@ -8065,8 +8048,9 @@ msgstr "Irak"
 msgid "Ireland"
 msgstr "Irlanti"
 
-msgid "Is this setting ok?"
-msgstr "Käytä näitä asetuksia?"
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "Käytä TV:n kaukosäädintä"
 
 msgid "Is this video mode ok?"
 msgstr "Otetaanko tämä video-tila käyttöön?"
@@ -8192,13 +8176,10 @@ msgstr "Kernelin versio:"
 msgid "Key Events"
 msgstr ""
 
-msgid "Keyboard"
-msgstr "Näppäimistö"
-
 #
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Näppäimistön asetukset"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Lapsilukon asetukset"
 
 #
 msgid "Keyboard data entry"
@@ -8207,6 +8188,9 @@ msgstr "Näppäimistön tiedon syöttö"
 #
 msgid "Keyboard map"
 msgstr "Näppäinasettelu"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -8411,9 +8395,6 @@ msgstr "Vapaa-ajan harrastukset"
 
 msgid "Lesotho"
 msgstr "Lesotho"
-
-msgid "Let you change RC type but use it with care."
-msgstr ""
 
 msgid "Let's define enigma2 once more"
 msgstr ""
@@ -9260,11 +9241,6 @@ msgstr "Mozambique"
 #
 msgid "Multi EPG"
 msgstr "Kanavaopas"
-
-#
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Kaukosäätimen tyypin asetus"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG suosikkilistan valinta"
@@ -10151,15 +10127,15 @@ msgstr "Alkuperäinen"
 msgid "Other"
 msgstr "Muu"
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "jatkokoulutus"
+
 msgid "Other Subtitles & lang"
 msgstr ""
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "jatkokoulutus"
 
 msgid "Output"
 msgstr "Ulostulo"
@@ -11038,6 +11014,11 @@ msgid "Press OK to activate the settings."
 msgstr "Ota käyttöön painamalla OK."
 
 #
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Muokkaa painamalla OK."
+
+#
 msgid "Press OK to edit the settings."
 msgstr "Muokkaa painamalla OK."
 
@@ -11614,13 +11595,6 @@ msgstr "Muistutus, olet valinnut ajansiirron tallennuksen."
 #, fuzzy
 msgid "Remote control information"
 msgstr "Kaukosäätimen tyyppi"
-
-msgid "Remote control type"
-msgstr "Kaukosäätimen tyyppi"
-
-#
-msgid "Remote control type setup"
-msgstr "Kaukosäätimen tyypin asetus"
 
 #
 msgid "Removal has completed."
@@ -12593,6 +12567,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -12681,6 +12658,10 @@ msgstr ""
 #
 msgid "Select HDD"
 msgstr "Valitse kiintolevy"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Valitse syöttölaite"
 
 #
 msgid "Select a bouquet"
@@ -12789,9 +12770,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Valitse syöttölaite"
 
-msgid "Select input device."
-msgstr "Valitse syöttölaite."
-
 #
 msgid "Select interface"
 msgstr "Valitse verkkosovitin"
@@ -12820,6 +12798,10 @@ msgstr "Valitse lisättävä palveluntarjoaja..."
 #
 msgid "Select refresh rate"
 msgstr "Valitse virkistystaajuus"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "Käytä TV:n kaukosäädintä"
 
 #
 msgid "Select satellites"
@@ -12888,6 +12870,10 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+#, fuzzy
+msgid "Select the remote control device to be used with the %s %s."
+msgstr "Valitse viritin joka ohjaa moottoroitua lautasta."
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -12912,6 +12898,12 @@ msgid "Select the shifted character set"
 msgstr "Valitse tallennehakemisto"
 
 msgid "Select the shifted character set for the next character only"
+msgstr ""
+
+msgid "Select the time delay before the button starts repeating."
+msgstr ""
+
+msgid "Select the time delay between each repeat of the button."
 msgstr ""
 
 msgid "Select the time zone within the area or region."
@@ -16544,7 +16536,8 @@ msgstr ""
 msgid "Use the wizard to set up basic features"
 msgstr "Käytä avustajaa perusasetusten määrittämiseen"
 
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Käytä näitä syöttölaitteen asetuksia?"
 
 msgid "Use these settings?"
@@ -18533,9 +18526,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "Horisontaali"
@@ -18882,9 +18872,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "avaan nimipalvelimen asetus"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -18893,9 +18880,6 @@ msgstr ""
 
 msgid "original language"
 msgstr "Alkuperäinen kieli"
-
-msgid "pace7241"
-msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -19186,9 +19170,6 @@ msgstr "sosiaalinen/hengellinen tiede"
 msgid "softcam"
 msgstr "Käynnistä softcam uudelleen"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -19280,9 +19261,6 @@ msgstr "Antennivastaanotto"
 msgid "testing"
 msgstr "Työskentelee"
 
-msgid "tf7700"
-msgstr ""
-
 #
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Tämä kanava on suojattu lapsilukolla"
@@ -19356,15 +19334,6 @@ msgstr "vesiurheilu"
 msgid "uShare setup"
 msgstr "Avustettu asennus"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr "ei saatavilla"
 
@@ -19413,9 +19382,6 @@ msgstr "varietee"
 #
 msgid "vertical"
 msgstr "Vertikaali"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 #
 msgid "wait for ci..."

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -164,9 +164,6 @@ msgstr ""
 #
 msgid " extensions."
 msgstr " utökningar."
-
-msgid " ms"
-msgstr " ms"
 
 #
 msgid " packages selected."
@@ -1178,6 +1175,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1189,10 +1190,6 @@ msgstr "%s %s ledigt diskutrymme"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1872,9 +1869,6 @@ msgstr "Omkodning :"
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
-msgid "ADB XMP"
-msgstr ""
-
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgariska"
@@ -2258,6 +2252,10 @@ msgstr "Alla kanaloperatörer"
 #, fuzzy
 msgid "All slots"
 msgstr "Välj plats"
+
+#, fuzzy
+msgid "All supported"
+msgstr "stöds ej"
 
 msgid "Allocate"
 msgstr "Allokera"
@@ -3184,12 +3182,6 @@ msgid "C"
 msgstr "C"
 
 #
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
-#
 msgid "C-Band"
 msgstr "C-Band"
 
@@ -3447,6 +3439,10 @@ msgstr "Ändra upprepnings och fördröjningsinställningar?"
 msgid "Change bouquets in quickzap"
 msgstr "Byt favoritlista med snabbzapp"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Ändra upprepnings och fördröjningsinställningar?"
+
 msgid "Change recording (add time)"
 msgstr "Ändra inspelning (lägg till tid)"
 
@@ -3457,9 +3453,6 @@ msgstr "Ändra inspelning (längd)"
 #
 msgid "Change recording (endtime)"
 msgstr "Ändra inspelning (sluttid)"
-
-msgid "Change repeat and delay settings?"
-msgstr "Ändra upprepnings och fördröjningsinställningar?"
 
 #
 msgid "Change step size"
@@ -3897,6 +3890,12 @@ msgid "Config resolution of pictures"
 msgstr "Konfigurera upplösning på bilder"
 
 #
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Konfiguration"
+
+#
 msgid "Configuration"
 msgstr "Konfiguration"
 
@@ -4009,9 +4008,6 @@ msgstr "Konfigurera namnservers"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr "Konfigurera på vilka enheter som bakgrundsradering ska användas."
-
-msgid "Configure remote control type"
-msgstr "Konfigurera fjärrkontrollstyp"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Konfigurera DiSEqC läget för denna LNB."
@@ -4548,14 +4544,6 @@ msgstr "Ljusstyrka"
 msgid "Cuba"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "standard"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4583,9 +4571,6 @@ msgstr "Nuvarande CEC adress"
 #, fuzzy
 msgid "Current crash log"
 msgstr "Nuvarande transponder"
-
-msgid "Current device: "
-msgstr "Nuvarande enhet : "
 
 msgid "Current event EPG"
 msgstr "Nuvarande program EPG"
@@ -5075,7 +5060,8 @@ msgstr "Fördröjning efter toneburst"
 msgid "Delay after voltage change before motor command"
 msgstr "Fördröjning efter spänningsändring före motorkommando"
 
-msgid "Delay before key repeat starts:"
+#, fuzzy
+msgid "Delay before key repeat starts (ms)"
 msgstr "Fördröjning innan tangentrepetitionen startar :"
 
 msgid "Delay before sequence repeat"
@@ -5258,7 +5244,8 @@ msgstr "Kanal"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
+#, fuzzy
+msgid "Device name"
 msgstr "Enhetens namn :"
 
 #
@@ -5863,9 +5850,6 @@ msgstr "Östra gränsen satt"
 msgid "Ecuador"
 msgstr ""
 
-msgid "Edision argus"
-msgstr ""
-
 #
 msgid "Edit"
 msgstr "Ändra"
@@ -6241,6 +6225,10 @@ msgstr "Ange PIN"
 msgid "Enter URL"
 msgstr "Ange PIN"
 
+#, fuzzy
+msgid "Enter a new name for this device."
+msgstr "Frilägg streckad flimrande linje för denna kanal"
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -6492,7 +6480,12 @@ msgstr "Avsluta editor"
 msgid "Exit inetd recovery"
 msgstr "Avsluta editor"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Avsluta val av inmatningsenhet."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Avsluta val av inmatningsenhet."
 
 msgid "Exit media player?"
@@ -6974,24 +6967,8 @@ msgid "Force legacy signal stats"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Forever"
-msgstr "aldrig"
-
-#
 msgid "Format"
 msgstr "Format"
-
-msgid "Fortis mini"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Fortis standard"
-msgstr "standard"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Volymknappar framåt"
@@ -8041,14 +8018,19 @@ msgid "Input "
 msgstr "Ingång"
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Inmatningsenheter"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Inställningar för inmatningsenhet"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Inställningar för inmatningsenhet"
 
 msgid "Input Stream ID"
 msgstr ""
-
-msgid "Input device setup"
-msgstr "Inställningar för inmatningsenhet"
 
 #
 msgid "Install"
@@ -8131,7 +8113,8 @@ msgstr "Intern"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+#, fuzzy
+msgid "Interval between keys when repeating (ms)"
 msgstr "Intervall mellan tangenttryckningar vid upprepning :"
 
 #, fuzzy
@@ -8175,8 +8158,9 @@ msgstr ""
 msgid "Ireland"
 msgstr ""
 
-msgid "Is this setting ok?"
-msgstr "Använd dessa inställningar?"
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "Använd TV:ns fjärrkontroll"
 
 #
 msgid "Is this video mode ok?"
@@ -8305,13 +8289,9 @@ msgid "Key Events"
 msgstr ""
 
 #
-msgid "Keyboard"
-msgstr "Tangentbord"
-
-#
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Tangentbordsinställning"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Inställningar för föräldrakontroll"
 
 #
 #, fuzzy
@@ -8321,6 +8301,9 @@ msgstr "Tangentbordsinställning"
 #
 msgid "Keyboard map"
 msgstr "Tangentbordslayout"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -8531,9 +8514,6 @@ msgid "Leisure hobbies"
 msgstr "Fritidsintressen"
 
 msgid "Lesotho"
-msgstr ""
-
-msgid "Let you change RC type but use it with care."
 msgstr ""
 
 msgid "Let's define enigma2 once more"
@@ -9377,11 +9357,6 @@ msgstr ""
 #
 msgid "Multi EPG"
 msgstr "Multi EPG"
-
-#
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Fjärrkontrollstyp"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritlistsval"
@@ -10270,15 +10245,15 @@ msgid "Other"
 msgstr "Annan"
 
 #, fuzzy
+msgid "Other Actions"
+msgstr "vidareutbildning"
+
+#, fuzzy
 msgid "Other Subtitles & lang"
 msgstr "Undertextinställningar"
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "vidareutbildning"
 
 msgid "Output"
 msgstr "Utsignal"
@@ -11157,6 +11132,11 @@ msgid "Press OK to activate the settings."
 msgstr "Tryck OK för aktivera inställningarna."
 
 #
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Tryck OK för att ändra inställningar."
+
+#
 msgid "Press OK to edit the settings."
 msgstr "Tryck OK för att ändra inställningar."
 
@@ -11723,15 +11703,6 @@ msgstr "Påminnelse, du har valt att spara timeshift filen."
 #
 #, fuzzy
 msgid "Remote control information"
-msgstr "Fjärrkontrollstyp"
-
-#
-msgid "Remote control type"
-msgstr "Fjärrkontrollstyp"
-
-#
-#, fuzzy
-msgid "Remote control type setup"
 msgstr "Fjärrkontrollstyp"
 
 #
@@ -12717,6 +12688,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -12804,6 +12778,10 @@ msgstr ""
 
 msgid "Select HDD"
 msgstr "Välj HDD"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Välj inmatningsenhet"
 
 #
 msgid "Select a bouquet"
@@ -12912,9 +12890,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Välj inmatningsenhet"
 
-msgid "Select input device."
-msgstr "Välj inmatningsenhet."
-
 #
 msgid "Select interface"
 msgstr "Välj kort"
@@ -12943,6 +12918,10 @@ msgstr "Välj operatör att lägga till..."
 #
 msgid "Select refresh rate"
 msgstr "Välj uppdateringsfrekvens"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "Använd TV:ns fjärrkontroll"
 
 msgid "Select satellites"
 msgstr "Välj satelliter"
@@ -13008,6 +12987,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+msgid "Select the remote control device to be used with the %s %s."
+msgstr ""
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -13033,6 +13015,14 @@ msgstr "Välj film sökväg"
 
 msgid "Select the shifted character set for the next character only"
 msgstr ""
+
+#, fuzzy
+msgid "Select the time delay before the button starts repeating."
+msgstr "Välj sorteringsmetod :"
+
+#, fuzzy
+msgid "Select the time delay between each repeat of the button."
+msgstr "Välj sorteringsmetod :"
 
 #, fuzzy
 msgid "Select the time zone within the area or region."
@@ -16704,7 +16694,8 @@ msgstr "Använd upp / ner pilarna på din fjärrkontroll för att välja. Tryck 
 msgid "Use the wizard to set up basic features"
 msgstr "Använd guiden för grundinställningarna"
 
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Använd dessa inställningar för inmatningsenhet?"
 
 msgid "Use these settings?"
@@ -18728,9 +18719,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "horisontal"
@@ -19075,9 +19063,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "öppna namnserver konfiguration"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -19086,9 +19071,6 @@ msgstr ""
 
 msgid "original language"
 msgstr "originalspråk"
-
-msgid "pace7241"
-msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -19376,9 +19358,6 @@ msgstr "social / andlig vetenskap"
 msgid "softcam"
 msgstr "Omstarts test"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -19470,9 +19449,6 @@ msgstr "Marksänd"
 msgid "testing"
 msgstr "arbetar"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "denna favoritlista är skyddad av föräldraskyddskod"
 
@@ -19545,15 +19521,6 @@ msgstr "vattensport"
 msgid "uShare setup"
 msgstr "Videoinställning"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 #
 msgid "unavailable"
 msgstr "ej tillgänglig"
@@ -19602,9 +19569,6 @@ msgstr "variteuppvisning"
 #
 msgid "vertical"
 msgstr "vertikal"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 #
 msgid "wait for ci..."

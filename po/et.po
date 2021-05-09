@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -150,9 +150,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " laiendused."
-
-msgid " ms"
-msgstr " ms"
 
 msgid " packages selected."
 msgstr " paketti valitud."
@@ -1160,6 +1157,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1170,10 +1171,6 @@ msgstr "%s %s vaba kettaruumi"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1789,9 +1786,6 @@ msgstr "Transkodeerimine: "
 msgid "ACQUIRING TSID/ONID"
 msgstr "TSID/ONID OTSING"
 
-msgid "ADB XMP"
-msgstr ""
-
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgaaria"
@@ -2122,6 +2116,10 @@ msgstr "Kõik levitajad"
 #, fuzzy
 msgid "All slots"
 msgstr "Vali pesa"
+
+#, fuzzy
+msgid "All supported"
+msgstr "pole toetatud"
 
 msgid "Allocate"
 msgstr "Eralda"
@@ -2956,11 +2954,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "C-sagedusala"
 
@@ -3205,6 +3198,10 @@ msgstr "Muuta korduse ja viiteaja seadistusi?"
 msgid "Change bouquets in quickzap"
 msgstr "Lemmiknimekirjade vahetus noolenuppudega"
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Muuta korduse ja viiteaja seadistusi?"
+
 msgid "Change recording (add time)"
 msgstr "Muuda salvestust (lisa aeg)"
 
@@ -3213,9 +3210,6 @@ msgstr "Muuda salvestuse kestust"
 
 msgid "Change recording (endtime)"
 msgstr "Muuda salvestuse lõpuaega"
-
-msgid "Change repeat and delay settings?"
-msgstr "Muuta korduse ja viiteaja seadistusi?"
 
 msgid "Change step size"
 msgstr "Muuda sammu suurust"
@@ -3602,6 +3596,11 @@ msgstr "Säti otsingu detailid"
 msgid "Config resolution of pictures"
 msgstr "Määra piltide eraldusmäär"
 
+#, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Seadistamine"
+
 msgid "Configuration"
 msgstr "Seadistamine"
 
@@ -3703,9 +3702,6 @@ msgstr "Seadista nimeserverid"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr "Määra, millisel andmekandjal kasutatakse taustal kustutamise võimalust."
-
-msgid "Configure remote control type"
-msgstr "Määra puldi tüüp"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Määra selle LNB DiSEqC režiim."
@@ -4204,13 +4200,6 @@ msgstr "Heledus"
 msgid "Cuba"
 msgstr "Kuuba"
 
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "tavaline"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4235,9 +4224,6 @@ msgstr "Praegune CEC aadress"
 #, fuzzy
 msgid "Current crash log"
 msgstr "Hetke transponder"
-
-msgid "Current device: "
-msgstr "Praegune seade: "
 
 msgid "Current event EPG"
 msgstr "Saateinfo"
@@ -4684,7 +4670,8 @@ msgstr "Viide pärast toonipurset"
 msgid "Delay after voltage change before motor command"
 msgstr "Viide pinge muutmise ja mootori käsu vahel"
 
-msgid "Delay before key repeat starts:"
+#, fuzzy
+msgid "Delay before key repeat starts (ms)"
 msgstr "Viiteaeg enne võtme kordamise algust:"
 
 msgid "Delay before sequence repeat"
@@ -4850,7 +4837,8 @@ msgstr "Kanaliinfo"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
+#, fuzzy
+msgid "Device name"
 msgstr "Seadme nimi:"
 
 msgid "DiSEqC"
@@ -5373,9 +5361,6 @@ msgstr "Ida piir on määratud"
 msgid "Ecuador"
 msgstr "Ecuador"
 
-msgid "Edision argus"
-msgstr ""
-
 msgid "Edit"
 msgstr "Muuda"
 
@@ -5708,6 +5693,10 @@ msgstr "Sisesta PIN"
 msgid "Enter URL"
 msgstr "Sisesta URL"
 
+#, fuzzy
+msgid "Enter a new name for this device."
+msgstr "Näita võbeleva katkendjoonega joon selle teenuse puhul"
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -5950,7 +5939,12 @@ msgstr "Välju redaktorist"
 msgid "Exit inetd recovery"
 msgstr "Välju redaktorist"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Välju sisendseadmete valikust."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Välju sisendseadmete valikust."
 
 msgid "Exit media player?"
@@ -6380,22 +6374,8 @@ msgstr "jõuga lubatud"
 msgid "Force legacy signal stats"
 msgstr "Kasuta aegunud signaalistatistikat"
 
-#, fuzzy
-msgid "Forever"
-msgstr "mitte kunagi"
-
 msgid "Format"
 msgstr "Vorming"
-
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "tavaline"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Kasuta helitugevuse nuppe"
@@ -7358,14 +7338,19 @@ msgid "Input "
 msgstr "Sisend "
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Sisendseadmed"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Sisendseadmete seadistamine"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Sisendseadmete seadistamine"
 
 msgid "Input Stream ID"
 msgstr "Sisendvoo ID"
-
-msgid "Input device setup"
-msgstr "Sisendseadmete seadistamine"
 
 msgid "Install"
 msgstr "Paigalda"
@@ -7435,7 +7420,8 @@ msgstr "Sisemine"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+#, fuzzy
+msgid "Interval between keys when repeating (ms)"
 msgstr "Võtme kordamise vahemik:"
 
 #, fuzzy
@@ -7476,8 +7462,9 @@ msgstr "Iraak"
 msgid "Ireland"
 msgstr "Iirimaa"
 
-msgid "Is this setting ok?"
-msgstr "Kasutad neid seadeid?"
+#, fuzzy
+msgid "Is the remote control working okay?"
+msgstr "Kasuta teleri pulti"
 
 msgid "Is this video mode ok?"
 msgstr "Kas see videoseadistus sobib?"
@@ -7588,18 +7575,18 @@ msgstr "Kernel: "
 msgid "Key Events"
 msgstr "Võtmesündmused"
 
-msgid "Keyboard"
-msgstr "Klaviatuur"
-
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Klaviatuuriseaded"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Lapseluku seaded"
 
 msgid "Keyboard data entry"
 msgstr "Klaviatuurilt andmete sisestus"
 
 msgid "Keyboard map"
 msgstr "Klaviatuur"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -7785,9 +7772,6 @@ msgstr "Vaba aja hobid"
 
 msgid "Lesotho"
 msgstr "Lesotho"
-
-msgid "Let you change RC type but use it with care."
-msgstr ""
 
 msgid "Let's define enigma2 once more"
 msgstr ""
@@ -8524,10 +8508,6 @@ msgstr "Mosambiik"
 
 msgid "Multi EPG"
 msgstr "Multi EPG"
-
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Kaugjuhtimispuldi tüübi seadmine"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Lemmiknimekirjade valik kanalite saatekavas"
@@ -9325,15 +9305,15 @@ msgid "Other"
 msgstr "Miski muu"
 
 #, fuzzy
+msgid "Other Actions"
+msgstr "edasine haridus"
+
+#, fuzzy
 msgid "Other Subtitles & lang"
 msgstr "Subtiitrite seaded"
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "edasine haridus"
 
 msgid "Output"
 msgstr "Väljund"
@@ -10103,6 +10083,10 @@ msgstr "Vajuta OK uue välimuse aktiveerimiseks."
 msgid "Press OK to activate the settings."
 msgstr "Seadete aktiveerimiseks vajuta OK."
 
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Sätete muutmiseks vajuta OK."
+
 msgid "Press OK to edit the settings."
 msgstr "Sätete muutmiseks vajuta OK."
 
@@ -10611,12 +10595,6 @@ msgstr "Meenutus, oled valinud ajanihke faili salvestamise."
 #, fuzzy
 msgid "Remote control information"
 msgstr "Puldi tüüp"
-
-msgid "Remote control type"
-msgstr "Puldi tüüp"
-
-msgid "Remote control type setup"
-msgstr "Kaugjuhtimispuldi tüübi seadmine"
 
 msgid "Removal has completed."
 msgstr "Eemaldamine on tehtud."
@@ -11478,6 +11456,9 @@ msgstr "Vali 'A' või 'B', kui antennisüsteem seda nõuab, muudel juhtudel vali
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Vali 'Unicable', kui see tuuner kasutab unicable seadet. Kõigil ülejäänud juhtudel vali 'FBC automaatne'."
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -11565,6 +11546,10 @@ msgstr "Vali kiire DiSEqC, kui antennisüsteem seda toetab. Kui pole kindel, val
 
 msgid "Select HDD"
 msgstr "Vali kõvaketas"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Vali sisendseade"
 
 msgid "Select a bouquet"
 msgstr "Vali lemmiknimekiri"
@@ -11657,9 +11642,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Vali sisendseade"
 
-msgid "Select input device."
-msgstr "Vali sisendseade."
-
 msgid "Select interface"
 msgstr "Vali liides"
 
@@ -11681,6 +11663,10 @@ msgstr "Vali levitaja lisamiseks"
 
 msgid "Select refresh rate"
 msgstr "Vali värskendussagedus"
+
+#, fuzzy
+msgid "Select remote control"
+msgstr "Kasuta teleri pulti"
 
 msgid "Select satellites"
 msgstr "Vali satelliidid"
@@ -11745,6 +11731,10 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Vali unicable seadme vorming. Valikud on 'SCR Unicable' (Unicable I vorming) või 'SCR JESS' (Unicable II vorming)."
 
+#, fuzzy
+msgid "Select the remote control device to be used with the %s %s."
+msgstr "Vali tuuner, mis juhib ajamiga antenni."
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr "Vali satelliit, mis on ühendatud lüliti porti A. Kui pole kindel, vali 'automaatne' ja vastuvõtja üritab seda teha ise. Kui see port on ühendamata, vali 'pole ühendatud'."
 
@@ -11769,6 +11759,14 @@ msgstr "Vali filmi rada"
 
 msgid "Select the shifted character set for the next character only"
 msgstr ""
+
+#, fuzzy
+msgid "Select the time delay before the button starts repeating."
+msgstr "Vali horisontaalne resolutsioon:"
+
+#, fuzzy
+msgid "Select the time delay between each repeat of the button."
+msgstr "Vali horisontaalne resolutsioon:"
 
 #, fuzzy
 msgid "Select the time zone within the area or region."
@@ -15079,7 +15077,8 @@ msgstr "Kasuta valimiseks üles/alla nuppu puldil, siis vajuta OK."
 msgid "Use the wizard to set up basic features"
 msgstr "Kasuta abimeest põhiomaduste seadmiseks"
 
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Kas kasutad neid sisendseadme seadeid?"
 
 msgid "Use these settings?"
@@ -16935,9 +16934,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horisontaal"
 
@@ -17242,9 +17238,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "nimeserveri seaded"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -17253,9 +17246,6 @@ msgstr ""
 
 msgid "original language"
 msgstr "algupärane keel"
-
-msgid "pace7241"
-msgstr ""
 
 msgid "pace7241VFD"
 msgstr ""
@@ -17510,9 +17500,6 @@ msgstr "ühiskonna/hingeteadus"
 msgid "softcam"
 msgstr "Taaskäivita softcam"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17593,9 +17580,6 @@ msgstr "Maapealne TV (DVB-T)"
 msgid "testing"
 msgstr "töös"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "see kanalivalik on kaitstud lapseluku PIN koodiga"
 
@@ -17660,15 +17644,6 @@ msgstr "veesport"
 msgid "uShare setup"
 msgstr "Video seaded"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr "pole saadaval"
 
@@ -17710,9 +17685,6 @@ msgstr "mitmekesine show"
 
 msgid "vertical"
 msgstr "vertikaal"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "ci ootel..."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -158,9 +158,6 @@ msgstr ""
 #
 msgid " extensions."
 msgstr "תוספות"
-
-msgid " ms"
-msgstr "ms"
 
 msgid " packages selected."
 msgstr "חבילות נבחרו"
@@ -1116,6 +1113,10 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1127,10 +1128,6 @@ msgstr "מקום פנוי בכונן הקשיח"
 
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #, python-format
@@ -1736,9 +1733,6 @@ msgstr ""
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
-msgid "ADB XMP"
-msgstr ""
-
 msgid "ADB variant"
 msgstr ""
 
@@ -2109,6 +2103,10 @@ msgstr ""
 
 msgid "All slots"
 msgstr ""
+
+#, fuzzy
+msgid "All supported"
+msgstr "לא נתמך"
 
 msgid "Allocate"
 msgstr ""
@@ -2990,11 +2988,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "C-Band"
 
@@ -3243,6 +3236,10 @@ msgstr ""
 msgid "Change bouquets in quickzap"
 msgstr ""
 
+#, fuzzy
+msgid "Change device settings"
+msgstr "Nameserver settings"
+
 msgid "Change recording (add time)"
 msgstr ""
 
@@ -3253,9 +3250,6 @@ msgstr "שנה הקלטה - משך הקלטה"
 #, fuzzy
 msgid "Change recording (endtime)"
 msgstr "שנה הקלטה - שעת סיום"
-
-msgid "Change repeat and delay settings?"
-msgstr ""
 
 #
 msgid "Change step size"
@@ -3654,6 +3648,11 @@ msgid "Config resolution of pictures"
 msgstr ""
 
 #, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "הגדרת רשת"
+
+#, fuzzy
 msgid "Configuration"
 msgstr "הגדרת רשת"
 
@@ -3759,11 +3758,6 @@ msgstr "Configure nameservers"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
-
-#
-#, fuzzy
-msgid "Configure remote control type"
-msgstr "סוג בקרת הורים"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr ""
@@ -4273,13 +4267,6 @@ msgstr "בהירות"
 msgid "Cuba"
 msgstr ""
 
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "סטנדרטי"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4304,9 +4291,6 @@ msgstr ""
 #, fuzzy
 msgid "Current crash log"
 msgstr "Current Transponder"
-
-msgid "Current device: "
-msgstr ""
 
 msgid "Current event EPG"
 msgstr ""
@@ -4765,7 +4749,7 @@ msgstr ""
 msgid "Delay after voltage change before motor command"
 msgstr ""
 
-msgid "Delay before key repeat starts:"
+msgid "Delay before key repeat starts (ms)"
 msgstr ""
 
 msgid "Delay before sequence repeat"
@@ -4939,8 +4923,10 @@ msgstr "שירות"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
-msgstr ""
+#
+#, fuzzy
+msgid "Device name"
+msgstr "סרוקת שירות"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -5487,9 +5473,6 @@ msgstr ""
 msgid "Ecuador"
 msgstr ""
 
-msgid "Edision argus"
-msgstr ""
-
 msgid "Edit"
 msgstr "ערוך"
 
@@ -5850,6 +5833,9 @@ msgstr ""
 msgid "Enter URL"
 msgstr ""
 
+msgid "Enter a new name for this device."
+msgstr ""
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -6087,7 +6073,11 @@ msgstr "יציאה מהעורך"
 msgid "Exit inetd recovery"
 msgstr "יציאה מהעורך"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Use this video enhancement settings?"
+
+msgid "Exit input device selection and close all menus"
 msgstr ""
 
 msgid "Exit media player?"
@@ -6520,22 +6510,8 @@ msgstr "אופשר"
 msgid "Force legacy signal stats"
 msgstr ""
 
-#, fuzzy
-msgid "Forever"
-msgstr "לעולם"
-
 msgid "Format"
 msgstr "פורמט"
-
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "סטנדרטי"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -7543,13 +7519,18 @@ msgid "Input "
 msgstr "Input"
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Input"
 
-msgid "Input Stream ID"
-msgstr ""
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Input"
 
-msgid "Input device setup"
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Nameserver Setup"
+
+msgid "Input Stream ID"
 msgstr ""
 
 #
@@ -7628,7 +7609,7 @@ msgstr ":ממשק"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+msgid "Interval between keys when repeating (ms)"
 msgstr ""
 
 #, fuzzy
@@ -7673,8 +7654,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Is this setting ok?"
-msgstr "? האם מוד הוידאו הזה בסדר"
+msgid "Is the remote control working okay?"
+msgstr "סוג בקרת הורים"
 
 #
 #, fuzzy
@@ -7796,13 +7777,10 @@ msgstr ":גרסה חדשה"
 msgid "Key Events"
 msgstr ""
 
-msgid "Keyboard"
-msgstr "מקלדת"
-
 #
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "הגדרת מקלדת"
+msgid "Keyboard / Remote Control Setup"
+msgstr "הגדרת בקרת הורים"
 
 #
 #, fuzzy
@@ -7813,6 +7791,9 @@ msgstr "הגדרת מקלדת"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "מיפוי מקלדת"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -8015,9 +7996,6 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
-msgstr ""
-
-msgid "Let you change RC type but use it with care."
 msgstr ""
 
 msgid "Let's define enigma2 once more"
@@ -8819,11 +8797,6 @@ msgstr ""
 #
 msgid "Multi EPG"
 msgstr "Multi EPG"
-
-#
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "סוג בקרת הורים"
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
@@ -9681,15 +9654,15 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "בחר מקום גיבוי"
+
 msgid "Other Subtitles & lang"
 msgstr ""
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "בחר מקום גיבוי"
 
 msgid "Output"
 msgstr ""
@@ -10520,6 +10493,10 @@ msgstr "Press OK to activate the selected skin."
 msgid "Press OK to activate the settings."
 msgstr "Press OK to activate the settings."
 
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Press OK to edit the settings."
+
 msgid "Press OK to edit the settings."
 msgstr "Press OK to edit the settings."
 
@@ -11040,16 +11017,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Remote control information"
-msgstr "סוג בקרת הורים"
-
-#
-#, fuzzy
-msgid "Remote control type"
-msgstr "סוג בקרת הורים"
-
-#
-#, fuzzy
-msgid "Remote control type setup"
 msgstr "סוג בקרת הורים"
 
 #, fuzzy
@@ -11966,6 +11933,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -12054,6 +12024,10 @@ msgstr ""
 #
 msgid "Select HDD"
 msgstr "Select HDD"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Input"
 
 #
 #, fuzzy
@@ -12161,9 +12135,6 @@ msgstr ""
 msgid "Select input device"
 msgstr ""
 
-msgid "Select input device."
-msgstr ""
-
 msgid "Select interface"
 msgstr "בחר ממשק"
 
@@ -12190,6 +12161,11 @@ msgstr "Select provider to add..."
 
 msgid "Select refresh rate"
 msgstr "Select refresh rate"
+
+#
+#, fuzzy
+msgid "Select remote control"
+msgstr "סוג בקרת הורים"
 
 msgid "Select satellites"
 msgstr ""
@@ -12254,6 +12230,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+msgid "Select the remote control device to be used with the %s %s."
+msgstr ""
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -12277,6 +12256,12 @@ msgid "Select the shifted character set"
 msgstr "select the movie path"
 
 msgid "Select the shifted character set for the next character only"
+msgstr ""
+
+msgid "Select the time delay before the button starts repeating."
+msgstr ""
+
+msgid "Select the time delay between each repeat of the button."
 msgstr ""
 
 msgid "Select the time zone within the area or region."
@@ -15778,8 +15763,8 @@ msgstr ".השתמש במקשי השלט על מנת לבחור באפשרות. �
 msgid "Use the wizard to set up basic features"
 msgstr "Use wizard to set up basic features"
 
-#, fuzzy
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Use this video enhancement settings?"
 
 #, fuzzy
@@ -17638,9 +17623,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontal"
 
@@ -17950,9 +17932,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "open nameserver configuration"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -17960,9 +17939,6 @@ msgid "orange"
 msgstr ""
 
 msgid "original language"
-msgstr ""
-
-msgid "pace7241"
 msgstr ""
 
 msgid "pace7241VFD"
@@ -18223,9 +18199,6 @@ msgstr ""
 msgid "softcam"
 msgstr "איתחול בדיקה"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -18302,9 +18275,6 @@ msgstr ""
 msgid "testing"
 msgstr "עובד"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -18374,15 +18344,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "Video הגדרת"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 msgid "unavailable"
 msgstr ""
 
@@ -18428,9 +18389,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "vertical"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 #
 msgid "wait for ci..."

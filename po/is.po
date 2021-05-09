@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-07 15:54+0430\n"
+"POT-Creation-Date: 2021-05-09 17:04+0430\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -154,9 +154,6 @@ msgstr ""
 
 msgid " extensions."
 msgstr " viðbætur."
-
-msgid " ms"
-msgstr " ms"
 
 #
 msgid " packages selected."
@@ -1183,6 +1180,11 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "%s  (%s)"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s  -  Scope: %s"
 msgstr ""
@@ -1195,11 +1197,6 @@ msgstr "laust diskpláss"
 #
 #, fuzzy, python-format
 msgid "%s ( %s Cards )"
-msgstr "%s (%s)\n"
-
-#
-#, fuzzy, python-format
-msgid "%s (%s)"
 msgstr "%s (%s)\n"
 
 #
@@ -1850,9 +1847,6 @@ msgstr ""
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
-msgid "ADB XMP"
-msgstr ""
-
 msgid "ADB variant"
 msgstr ""
 
@@ -2227,6 +2221,10 @@ msgstr ""
 
 msgid "All slots"
 msgstr ""
+
+#, fuzzy
+msgid "All supported"
+msgstr "ekki stutt"
 
 msgid "Allocate"
 msgstr ""
@@ -3100,11 +3098,6 @@ msgstr ""
 msgid "C"
 msgstr "C"
 
-#, fuzzy
-msgctxt "Abbreviation of \"Configurable\""
-msgid "C"
-msgstr "C"
-
 msgid "C-Band"
 msgstr "C-Band"
 
@@ -3350,6 +3343,11 @@ msgstr ""
 msgid "Change bouquets in quickzap"
 msgstr "Skipta á milli rása flétta í rásastökki"
 
+#
+#, fuzzy
+msgid "Change device settings"
+msgstr "Uppsetning nafnaþjóns"
+
 msgid "Change recording (add time)"
 msgstr ""
 
@@ -3362,9 +3360,6 @@ msgstr "breyta upptöku (tíma)"
 #, fuzzy
 msgid "Change recording (endtime)"
 msgstr "breyta upptöku (lokatíma)"
-
-msgid "Change repeat and delay settings?"
-msgstr ""
 
 msgid "Change step size"
 msgstr "Breyta skrefa stærð"
@@ -3756,6 +3751,12 @@ msgstr ""
 
 #
 #, fuzzy
+msgctxt "Abbreviation of 'Configurable'"
+msgid "Configurable"
+msgstr "Stilling nettengingar"
+
+#
+#, fuzzy
 msgid "Configuration"
 msgstr "Stilling nettengingar"
 
@@ -3861,11 +3862,6 @@ msgstr "Stilla nafnaþjón"
 
 msgid "Configure on which devices the background delete option should be used."
 msgstr ""
-
-#
-#, fuzzy
-msgid "Configure remote control type"
-msgstr "Gerð foreldrastýringar"
 
 msgid "Configure the DiSEqC mode for this LNB."
 msgstr ""
@@ -4382,14 +4378,6 @@ msgstr "Birta"
 msgid "Cuba"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Cuberevo standard"
-msgstr "venjulegt"
-
-msgid "Cuberevo universal"
-msgstr ""
-
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4414,9 +4402,6 @@ msgstr ""
 #, fuzzy
 msgid "Current crash log"
 msgstr "Núverandi sendir"
-
-msgid "Current device: "
-msgstr "Núverandi tæki: "
 
 msgid "Current event EPG"
 msgstr ""
@@ -4895,7 +4880,7 @@ msgstr ""
 msgid "Delay after voltage change before motor command"
 msgstr ""
 
-msgid "Delay before key repeat starts:"
+msgid "Delay before key repeat starts (ms)"
 msgstr ""
 
 msgid "Delay before sequence repeat"
@@ -5083,8 +5068,10 @@ msgstr "Rás"
 msgid "Device mounts"
 msgstr ""
 
-msgid "Devicename:"
-msgstr ""
+#
+#, fuzzy
+msgid "Device name"
+msgstr "Leita að rásum"
 
 #
 msgid "DiSEqC"
@@ -5681,9 +5668,6 @@ msgstr ""
 msgid "Ecuador"
 msgstr ""
 
-msgid "Edision argus"
-msgstr ""
-
 #
 msgid "Edit"
 msgstr "Breyta"
@@ -6052,6 +6036,9 @@ msgstr ""
 msgid "Enter URL"
 msgstr ""
 
+msgid "Enter a new name for this device."
+msgstr ""
+
 msgid "Enter an URL where alternative images could be listed for FlashImage"
 msgstr ""
 
@@ -6302,7 +6289,12 @@ msgstr "Hætta í breytingum"
 msgid "Exit inetd recovery"
 msgstr "Hætta í breytingum"
 
-msgid "Exit input device selection."
+#, fuzzy
+msgid "Exit input device selection"
+msgstr "Hætta í inntaks tækja vali."
+
+#, fuzzy
+msgid "Exit input device selection and close all menus"
 msgstr "Hætta í inntaks tækja vali."
 
 msgid "Exit media player?"
@@ -6762,24 +6754,8 @@ msgid "Force legacy signal stats"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Forever"
-msgstr "aldrei"
-
-#
 msgid "Format"
 msgstr "Forma"
-
-msgid "Fortis mini"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Fortis standard"
-msgstr "venjulegt"
-
-msgid "Fortis universal"
-msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -7827,14 +7803,19 @@ msgid "Input "
 msgstr "Inntak"
 
 #, fuzzy
-msgid "Input Devices"
+msgid "Input Device Actions"
 msgstr "Inntaks tæki"
+
+#, fuzzy
+msgid "Input Device Driver Setup"
+msgstr "Inntaks tækja uppsetning"
+
+#, fuzzy
+msgid "Input Driver Setup"
+msgstr "Inntaks tækja uppsetning"
 
 msgid "Input Stream ID"
 msgstr ""
-
-msgid "Input device setup"
-msgstr "Inntaks tækja uppsetning"
 
 #
 msgid "Install"
@@ -7918,7 +7899,7 @@ msgstr "Netkort:"
 msgid "Internet time (NTP)"
 msgstr ""
 
-msgid "Interval between keys when repeating:"
+msgid "Interval between keys when repeating (ms)"
 msgstr ""
 
 #
@@ -7965,9 +7946,10 @@ msgstr ""
 msgid "Ireland"
 msgstr ""
 
+#
 #, fuzzy
-msgid "Is this setting ok?"
-msgstr "Nota þessar stillingar?"
+msgid "Is the remote control working okay?"
+msgstr "Gerð foreldrastýringar"
 
 #
 #, fuzzy
@@ -8098,13 +8080,9 @@ msgid "Key Events"
 msgstr ""
 
 #
-msgid "Keyboard"
-msgstr "Lyklaborð"
-
-#
 #, fuzzy
-msgid "Keyboard Setup"
-msgstr "Uppsetning lyklaborðs"
+msgid "Keyboard / Remote Control Setup"
+msgstr "Uppsetning á foreldrastýringu"
 
 #
 #, fuzzy
@@ -8115,6 +8093,9 @@ msgstr "Uppsetning lyklaborðs"
 #, fuzzy
 msgid "Keyboard map"
 msgstr "Lyklaborðs stilling"
+
+msgid "Keyboard mapping file to be used for keyboard input."
+msgstr ""
 
 msgid "Keymap"
 msgstr ""
@@ -8326,9 +8307,6 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
-msgstr ""
-
-msgid "Let you change RC type but use it with care."
 msgstr ""
 
 msgid "Let's define enigma2 once more"
@@ -9173,11 +9151,6 @@ msgstr ""
 #
 msgid "Multi EPG"
 msgstr "Mörg EPG"
-
-#
-#, fuzzy
-msgid "Multi remote control support"
-msgstr "Gerð foreldrastýringar"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Mörg-EPG rásavanda val"
@@ -10088,15 +10061,15 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
+#, fuzzy
+msgid "Other Actions"
+msgstr "Veldu stað fyrir afrit"
+
 msgid "Other Subtitles & lang"
 msgstr ""
 
 msgid "Other buttons will jump to the help information for that button, if there is help available."
 msgstr ""
-
-#, fuzzy
-msgid "Other functions"
-msgstr "Veldu stað fyrir afrit"
 
 msgid "Output"
 msgstr ""
@@ -10981,6 +10954,11 @@ msgid "Press OK to activate the settings."
 msgstr "Ýtið á OK til að virkja stillingar."
 
 #
+#, fuzzy
+msgid "Press OK to edit the settings of the selected device."
+msgstr "Ýttu á OK til að breyta stillingum."
+
+#
 msgid "Press OK to edit the settings."
 msgstr "Ýttu á OK til að breyta stillingum."
 
@@ -11540,16 +11518,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Remote control information"
-msgstr "Gerð foreldrastýringar"
-
-#
-#, fuzzy
-msgid "Remote control type"
-msgstr "Gerð foreldrastýringar"
-
-#
-#, fuzzy
-msgid "Remote control type setup"
 msgstr "Gerð foreldrastýringar"
 
 #
@@ -12540,6 +12508,9 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
+msgstr ""
+
 msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
 msgstr ""
 
@@ -12629,6 +12600,10 @@ msgstr ""
 #
 msgid "Select HDD"
 msgstr "Veldu harðadisk"
+
+#, fuzzy
+msgid "Select Input Device"
+msgstr "Veldu inntaks tæki"
 
 #
 #, fuzzy
@@ -12739,9 +12714,6 @@ msgstr ""
 msgid "Select input device"
 msgstr "Veldu inntaks tæki"
 
-msgid "Select input device."
-msgstr "Veldu inntaks tæki."
-
 #
 msgid "Select interface"
 msgstr "Veldu netkort"
@@ -12769,6 +12741,11 @@ msgstr "Veldu sendanda til að bæta við..."
 
 msgid "Select refresh rate"
 msgstr "Veldu hressingar tíðni"
+
+#
+#, fuzzy
+msgid "Select remote control"
+msgstr "Gerð foreldrastýringar"
 
 msgid "Select satellites"
 msgstr ""
@@ -12835,6 +12812,9 @@ msgstr ""
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr ""
 
+msgid "Select the remote control device to be used with the %s %s."
+msgstr ""
+
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr ""
 
@@ -12859,6 +12839,12 @@ msgid "Select the shifted character set"
 msgstr "velja slóð að mynd"
 
 msgid "Select the shifted character set for the next character only"
+msgstr ""
+
+msgid "Select the time delay before the button starts repeating."
+msgstr ""
+
+msgid "Select the time delay between each repeat of the button."
 msgstr ""
 
 msgid "Select the time zone within the area or region."
@@ -16506,8 +16492,8 @@ msgstr "Ýttu á up/niður takka á fjarstýringu til að velja. Ýttu svo á OK
 msgid "Use the wizard to set up basic features"
 msgstr "Nota álfinn til að setja upp grunnstillingar"
 
-#, fuzzy
-msgid "Use these input device settings?"
+#, fuzzy, python-format
+msgid "Use these input device settings for '%s' (%s)?"
 msgstr "Nota þessar stillingar fyrir inntaks tæki?"
 
 #, fuzzy
@@ -18469,9 +18455,6 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "lárétt"
@@ -18808,9 +18791,6 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "opna nafnaþjóns stillingar"
 
-msgid "opt9600"
-msgstr ""
-
 msgid "opt9600VFD"
 msgstr ""
 
@@ -18818,9 +18798,6 @@ msgid "orange"
 msgstr ""
 
 msgid "original language"
-msgstr ""
-
-msgid "pace7241"
 msgstr ""
 
 msgid "pace7241VFD"
@@ -19107,9 +19084,6 @@ msgstr ""
 msgid "softcam"
 msgstr "Prufa aftur"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -19197,9 +19171,6 @@ msgstr "Stafrænt í lofti"
 msgid "testing"
 msgstr "er að vinna"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -19271,15 +19242,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "Mynd uppsetning"
 
-msgid "ufs910/922 (rc660)"
-msgstr ""
-
-msgid "ufs912 (rc671)"
-msgstr ""
-
-msgid "ufs913 (rc675)"
-msgstr ""
-
 #
 msgid "unavailable"
 msgstr "ekki tiltækt"
@@ -19327,9 +19289,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "lóðrétt"
-
-msgid "vitamin_hd5000"
-msgstr ""
 
 #
 msgid "wait for ci..."
