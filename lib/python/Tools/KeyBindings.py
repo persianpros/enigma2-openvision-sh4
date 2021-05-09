@@ -754,8 +754,7 @@ def queryKeyBinding(context, action):
 
 
 def getKeyDescription(key):
-	# rcType = config.misc.inputdevices.rcType.value  # This is a proposed new config location.
-	rcType = config.plugins.remotecontroltype.rctype.value
+	rcType = config.inputDevices.rcType.value
 	# print("[KeyBindings] RC type is '%s'." % rcType)
 	if rcType == 10:	# Spark
 		idx = 3

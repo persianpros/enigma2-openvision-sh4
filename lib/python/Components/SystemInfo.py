@@ -200,19 +200,18 @@ model = BoxInfo.getItem("model")
 brand = BoxInfo.getItem("brand")
 displaytype = BoxInfo.getItem("displaytype")
 
+BoxInfo.setItem("DebugLevel", eGetEnigmaDebugLvl())
+BoxInfo.setItem("InDebugMode", eGetEnigmaDebugLvl() >= 4)
+BoxInfo.setItem("ModuleLayout", getModuleLayout(), immutable=True)
+
 # Remote control related data.
 #
-SystemInfo["RCCode"] = BoxInfo.getItem("rctype")
-SystemInfo["RCTypeIndex"] = BoxInfo.getItem("rcidnum")
-SystemInfo["RCName"] = BoxInfo.getItem("rcname")
-SystemInfo["RCImage"] = getRCFile("png")
-SystemInfo["RCMapping"] = getRCFile("xml")
-SystemInfo["RemoteEnable"] = False
-SystemInfo["RemoteRepeat"] = 300
-SystemInfo["RemoteDelay"] = 700
+BoxInfo.setItem("RCImage", getRCFile("png"))
+BoxInfo.setItem("RCMapping", getRCFile("xml"))
+BoxInfo.setItem("RemoteEnable", False)
+BoxInfo.setItem("RemoteRepeat", 300)
+BoxInfo.setItem("RemoteDelay", 700)
 
-SystemInfo["ModuleLayout"] = getModuleLayout()
-SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
 SystemInfo["CommonInterfaceCIDelay"] = fileCheck("/proc/stb/tsmux/rmx_delay")
 for cislot in range(0, SystemInfo["CommonInterface"]):

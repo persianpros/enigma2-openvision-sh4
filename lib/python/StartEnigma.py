@@ -162,7 +162,6 @@ from Components.PluginComponent import plugins
 profile("LOAD:Wizard")
 from Screens.Wizard import wizardManager
 from Screens.StartWizard import *
-import Screens.Rc
 from Tools.BoundFunction import boundFunction
 from Plugins.Plugin import PluginDescriptor
 
@@ -645,10 +644,9 @@ profile("TimeZones")
 import Components.Timezones
 Components.Timezones.InitTimeZones()
 
-profile("keymapparser")
-import keymapparser
-keymapparser.readKeymap(config.usage.keymap.value)
-keymapparser.readKeymap(config.usage.keytrans.value)
+profile("LoadKeymap")
+from Components.ActionMap import loadKeymap
+loadKeymap(config.usage.keymap.value)
 
 profile("Network")
 import Components.Network
@@ -667,9 +665,6 @@ if SystemInfo["RFmodSupport"]:
 profile("Init:CI")
 import Screens.Ci
 Screens.Ci.InitCiConfig()
-
-profile("RcModel")
-import Components.RcModel
 
 profile("EpgCacheSched")
 import Components.EpgLoadSave
