@@ -16,6 +16,7 @@ from enigma import getEnigmaVersionString as getEnigmaVersion
 from Components.Console import Console
 from Components.SystemInfo import SystemInfo
 from Tools.Directories import fileReadLine, fileReadLines
+import os
 
 MODULE_NAME = __name__.split(".")[-1]
 
