@@ -515,7 +515,7 @@ class ImageInformation(InformationBase):
 		info.append(formatLine("P1", _("GCC version"), about.getGccVersion()))
 		info.append(formatLine("P1", _("Glibc version"), about.getGlibcVersion()))
 		info.append(formatLine("P1", _("Python version"), about.getPythonVersionString()))
-		info.append(formatLine("P1", _("Media framework"), about.getGStreamerVersionString()))
+		info.append(formatLine("P1", _("GStreamer version"), about.getGStreamerVersionString().replace("GStreamer", "")))
 		playerVersion = fileReadLine("/proc/stb/player/version", source=MODULE_NAME)
 		if playerVersion:
 			info.append(formatLine("P1", _("Player version"), playerVersion))
