@@ -154,7 +154,7 @@ isensewheel = SENSEWHEEL()
 
 def InitSenseWheel():
 	detected = eQBOXSenseWheel.getInstance().detected()
-	BoxInfo.getItem("SenseWheel") = detected
+	BoxInfo.setItem("SenseWheel", detected)
 	config.sensewheel = ConfigSubsection()
 
 	def setPanelLedsEnable(configElement):
