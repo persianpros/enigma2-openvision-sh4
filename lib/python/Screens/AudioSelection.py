@@ -12,7 +12,7 @@ from Components.config import config, ConfigSubsection, getConfigListEntry, Conf
 from Components.Label import Label
 from Components.Sources.List import List
 from Components.Sources.Boolean import Boolean
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 from Components.VolumeControl import VolumeControl
 from enigma import iPlayableService, eTimer, eSize, eDVBDB, eServiceReference, eServiceCenter, iServiceInformation
 
@@ -90,7 +90,7 @@ class AudioSelection(Screen, ConfigListScreen):
 			service = self.session.nav.getCurrentService()
 			self.audioTracks = audio = service and service.audioTracks()
 			n = audio and audio.getNumberOfTracks() or 0
-			if SystemInfo["CanDownmixAC3"]:
+			if BoxInfo.getItem("CanDownmixAC3"):
 				self.settings.downmix_ac3 = ConfigOnOff(default=config.av.downmix_ac3.value)
 				self.settings.downmix_ac3.addNotifier(self.changeAC3Downmix, initial_call=False)
 				conflist.append(getConfigListEntry(_("AC3 downmix"), self.settings.downmix_ac3, None))
@@ -146,19 +146,19 @@ class AudioSelection(Screen, ConfigListScreen):
 				self["key_yellow"].setBoolean(False)
 				conflist.append(('',))
 
-			if SystemInfo["Has3DSurround"]:
+			if BoxInfo.getItem("Has3DSurround"):
 				choice_list = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))]
 				self.settings.surround_3d = ConfigSelection(choices=choice_list, default=config.av.surround_3d.value)
 				self.settings.surround_3d.addNotifier(self.change3DSurround, initial_call=False)
 				conflist.append(getConfigListEntry(_("3D Surround"), self.settings.surround_3d, None))
 
-			if SystemInfo["Has3DSpeaker"] and config.av.surround_3d.value != "none":
+			if BoxInfo.getItem("Has3DSpeaker") and config.av.surround_3d.value != "none":
 				choice_list = [("center", _("center")), ("wide", _("wide")), ("extrawide", _("extra wide"))]
 				self.settings.surround_3d_speaker = ConfigSelection(choices=choice_list, default=config.av.surround_3d_speaker.value)
 				self.settings.surround_3d_speaker.addNotifier(self.change3DSurroundSpeaker, initial_call=False)
 				conflist.append(getConfigListEntry(_("3D Surround Speaker Position"), self.settings.surround_3d_speaker, None))
 
-			if SystemInfo["HasAutoVolume"]:
+			if BoxInfo.getItem("HasAutoVolume"):
 				choice_list = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))]
 				self.settings.autovolume = ConfigSelection(choices=choice_list, default=config.av.autovolume.value)
 				self.settings.autovolume.addNotifier(self.changeAutoVolume, initial_call=False)
@@ -280,12 +280,12 @@ class AudioSelection(Screen, ConfigListScreen):
 	def changeAC3Downmix(self, downmix):
 		if downmix.value:
 			config.av.downmix_ac3.setValue(True)
-			if SystemInfo["HasMultichannelPCM"]:
+			if BoxInfo.getItem("HasMultichannelPCM"):
 				config.av.multichannel_pcm.setValue(False)
 		else:
 			config.av.downmix_ac3.setValue(False)
 		config.av.downmix_ac3.save()
-		if SystemInfo["HasMultichannelPCM"]:
+		if BoxInfo.getItem("HasMultichannelPCM"):
 			config.av.multichannel_pcm.save()
 		self.fillList()
 

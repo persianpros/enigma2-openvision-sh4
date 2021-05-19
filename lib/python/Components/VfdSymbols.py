@@ -7,7 +7,7 @@ import NavigationInstance
 from Tools.Directories import fileExists
 from Components.ParentalControl import parentalControl
 from Components.ServiceEventTracker import ServiceEventTracker
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 from time import time
 
 POLLTIME = 5 # seconds
@@ -15,7 +15,7 @@ POLLTIME = 5 # seconds
 
 def SymbolsCheck(session, **kwargs):
 		global symbolspoller, POLLTIME
-		if SystemInfo["VFDSymbol"]:
+		if BoxInfo.getItem("VFDSymbol"):
 			POLLTIME = 1
 		symbolspoller = SymbolsCheckPoller(session)
 		symbolspoller.start()
@@ -136,7 +136,7 @@ class SymbolsCheckPoller:
 			return
 
 		print("[VfdSymbols] Write to /proc/stb/lcd/symbol_play")
-		if SystemInfo["SeekStatePlay"]:
+		if BoxInfo.getItem("SeekStatePlay"):
 			open("/proc/stb/lcd/symbol_play", "w").write("1")
 		else:
 			open("/proc/stb/lcd/symbol_play", "w").write("0")
@@ -146,7 +146,7 @@ class SymbolsCheckPoller:
 			return
 
 		print("[VfdSymbols] Write to /proc/stb/lcd/symbol_pause")
-		if SystemInfo["StatePlayPause"]:
+		if BoxInfo.getItem("StatePlayPause"):
 			open("/proc/stb/lcd/symbol_pause", "w").write("1")
 		else:
 			open("/proc/stb/lcd/symbol_pause", "w").write("0")
@@ -156,7 +156,7 @@ class SymbolsCheckPoller:
 			return
 
 		print("[VfdSymbols] Write to /proc/stb/lcd/symbol_power")
-		if SystemInfo["StandbyState"]:
+		if BoxInfo.getItem("StandbyState"):
 			open("/proc/stb/lcd/symbol_power", "w").write("0")
 		else:
 			open("/proc/stb/lcd/symbol_power", "w").write("1")

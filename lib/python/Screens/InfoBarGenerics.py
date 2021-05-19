@@ -13,7 +13,7 @@ from Components.Sources.ServiceEvent import ServiceEvent
 from Components.ServiceList import refreshServiceList
 from Components.Sources.Boolean import Boolean
 from Components.config import config, ConfigBoolean, ConfigClock
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 from Components.UsageConfig import preferredInstantRecordPath, defaultMoviePath
 from Components.VolumeControl import VolumeControl
 from Components.Sources.StaticText import StaticText
@@ -385,7 +385,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 		self.doWriteAlpha(config.av.osd_alpha.value)
 
 	def doWriteAlpha(self, value):
-		if SystemInfo["CanChangeOsdAlpha"]:
+		if BoxInfo.getItem("CanChangeOsdAlpha"):
 #			print("[InfoBarGenerics] Write to /proc/stb/video/alpha")
 			open("/proc/stb/video/alpha", "w").write(str(value))
 			if value == config.av.osd_alpha.value:
@@ -1566,7 +1566,7 @@ class InfoBarSeek:
 	def __seekableStatusChanged(self):
 #		print("seekable status changed!")
 		if not self.isSeekable():
-			SystemInfo["SeekStatePlay"] = False
+			BoxInfo.getItem("SeekStatePlay") = False
 			if os.path.exists("/proc/stb/lcd/symbol_hdd"):
 				print("[InfoBarGenerics] Write to /proc/stb/lcd/symbol_hdd")
 				open("/proc/stb/lcd/symbol_hdd", "w").write("0")
@@ -1649,7 +1649,7 @@ class InfoBarSeek:
 			self.unPauseService()
 
 	def pauseService(self):
-		SystemInfo["StatePlayPause"] = True
+		BoxInfo.getItem("StatePlayPause") = True
 		if self.seekstate == self.SEEK_STATE_PAUSE:
 			if config.seek.on_pause.value == "play":
 				self.unPauseService()
@@ -1664,7 +1664,7 @@ class InfoBarSeek:
 			self.setSeekState(self.SEEK_STATE_PAUSE)
 
 	def unPauseService(self):
-		SystemInfo["StatePlayPause"] = False
+		BoxInfo.getItem("StatePlayPause") = False
 		print("[InfoBarGenerics] unpause")
 		if self.seekstate == self.SEEK_STATE_PLAY:
 			return 0
@@ -2185,8 +2185,8 @@ class InfoBarTimeshift():
 		self.restartSubtitle()
 
 	def setLCDsymbolTimeshift(self):
-		if SystemInfo["LCDsymbol_timeshift"]:
-			open(SystemInfo["LCDsymbol_timeshift"], "w").write(self.timeshiftEnabled() and "1" or "0")
+		if BoxInfo.getItem("LCDsymbol_timeshift"):
+			open(BoxInfo.getItem("LCDsymbol_timeshift"), "w").write(self.timeshiftEnabled() and "1" or "0")
 
 	def __serviceStarted(self):
 		self.pvrStateDialog.hide()
@@ -2304,7 +2304,7 @@ class InfoBarExtensions:
 
 	def __init__(self):
 		self.list = []
-		self.addExtension((lambda: _("Softcam Setup"), self.openSoftcamSetup, lambda: config.misc.softcam_setup.extension_menu.value and SystemInfo["HasSoftcamInstalled"]), "1")
+		self.addExtension((lambda: _("Softcam Setup"), self.openSoftcamSetup, lambda: config.misc.softcam_setup.extension_menu.value and BoxInfo.getItem("HasSoftcamInstalled")), "1")
 		self.addExtension((lambda: _("Manually import from fallback tuner"), self.importChannels, lambda: config.usage.remote_fallback_extension_menu.value and config.usage.remote_fallback_import.value))
 		self["InstantExtensionsActions"] = HelpableActionMap(self, ["InfobarExtensions"], {
 			"extensions": (self.showExtensionSelection, _("Show extensions")),
@@ -2315,7 +2315,7 @@ class InfoBarExtensions:
 		return _("OScam Info")
 
 	def getOScamInfo(self):
-		if SystemInfo["OScamInstalled"] or SystemInfo["NCamInstalled"]:
+		if BoxInfo.getItem("OScamInstalled") or BoxInfo.getItem("NCamInstalled"):
 			return [((boundFunction(self.getOSname), boundFunction(self.openOScamInfo), lambda: True), None)] or []
 		else:
 			return []
@@ -2469,7 +2469,7 @@ class InfoBarPiP:
 
 		self.lastPiPService = None
 
-		if SystemInfo["PIPAvailable"]:
+		if BoxInfo.getItem("PIPAvailable"):
 			self["PiPActions"] = HelpableActionMap(self, ["InfobarPiPActions"], {
 				"activatePiP": (self.activePiP, self.activePiPName),
 			}, prio=0, description=_("PiP Actions"))
