@@ -181,7 +181,7 @@ def InitAVSwitch():
 	iAVSwitch.setInput("ENCODER") # init on startup
 	detected = eAVSwitch.getInstance().haveScartSwitch()
 
-	BoxInfo.getItem("ScartSwitch") = detected
+	BoxInfo.setItem("ScartSwitch", detected)
 
 	if BoxInfo.getItem("CanDownmixAC3"):
 		def setAC3Downmix(configElement):

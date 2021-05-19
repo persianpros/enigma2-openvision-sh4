@@ -27,7 +27,7 @@ def setdvbCiDelay(configElement):
 
 
 def setRelevantPidsRouting(configElement):
-	open(BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % configElement.slotid], "w").write("yes" if configElement.value else "no")
+	open(BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % configElement.slotid), "w").write("yes" if configElement.value else "no")
 
 
 def InitCiConfig():
@@ -40,11 +40,11 @@ def InitCiConfig():
 			config.ci[slot].use_static_pin = ConfigYesNo(default=True)
 			config.ci[slot].static_pin = ConfigPIN(default=0)
 			config.ci[slot].show_ci_messages = ConfigYesNo(default=True)
-			if BoxInfo.getItem("CI%dSupportsHighBitrates" % slot]:
+			if BoxInfo.getItem("CI%dSupportsHighBitrates" % slot):
 				config.ci[slot].canHandleHighBitrates = ConfigYesNo(default=True)
 				config.ci[slot].canHandleHighBitrates.slotid = slot
 				config.ci[slot].canHandleHighBitrates.addNotifier(setCIBitrate)
-			if BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % slot]:
+			if BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % slot):
 				config.ci[slot].relevantPidsRouting = ConfigYesNo(default=False)
 				config.ci[slot].relevantPidsRouting.slotid = slot
 				config.ci[slot].relevantPidsRouting.addNotifier(setRelevantPidsRouting)
@@ -445,9 +445,9 @@ class CiSelection(Screen):
 		self.list.append((_("Reset persistent PIN code"), ConfigNothing(), 6, slot))
 		self.list.append(getConfigListEntry(_("Show CI messages"), config.ci[slot].show_ci_messages, 3, slot))
 		self.list.append(getConfigListEntry(_("Multiple service support"), config.ci[slot].canDescrambleMultipleServices, 3, slot))
-		if BoxInfo.getItem("CI%dSupportsHighBitrates" % slot]:
+		if BoxInfo.getItem("CI%dSupportsHighBitrates" % slot):
 			self.list.append(getConfigListEntry(_("High bitrate support"), config.ci[slot].canHandleHighBitrates, 3, slot))
-		if BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % slot]:
+		if BoxInfo.getItem("CI%dRelevantPidsRoutingSupport" % slot):
 			self.list.append(getConfigListEntry(_("PID Filtering"), config.ci[slot].relevantPidsRouting, 3, slot))
 		if BoxInfo.getItem("CommonInterfaceCIDelay"):
 			self.list.append(getConfigListEntry(_("DVB CI Delay"), config.cimisc.dvbCiDelay, 3, slot))

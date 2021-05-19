@@ -188,8 +188,8 @@ class LCD:
 			print("[Lcd] setLCDMode='%s'." % value)
 			fileWriteLine("/proc/stb/lcd/show_symbols", value)
 		if config.lcd.mode.value == "0":
-			BoxInfo.getItem("SeekStatePlay") = False
-			BoxInfo.getItem("StatePlayPause") = False
+			BoxInfo.setItem("SeekStatePlay", False)
+			BoxInfo.setItem("StatePlayPause", False)
 			if exists("/proc/stb/lcd/symbol_hdd"):
 				fileWriteLine("/proc/stb/lcd/symbol_hdd", "0")
 			if exists("/proc/stb/lcd/symbol_hddprogress"):
@@ -257,7 +257,7 @@ def standbyCounterChanged(configElement):
 
 def InitLcd():
 	detected = eDBoxLCD.getInstance().detected()
-	BoxInfo.getItem("Display") = detected
+	BoxInfo.setItem("Display", detected)
 	config.lcd = ConfigSubsection()
 	if detected:
 		ilcd = LCD()

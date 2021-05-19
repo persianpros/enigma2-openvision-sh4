@@ -1566,7 +1566,7 @@ class InfoBarSeek:
 	def __seekableStatusChanged(self):
 #		print("seekable status changed!")
 		if not self.isSeekable():
-			BoxInfo.getItem("SeekStatePlay") = False
+			BoxInfo.setItem("SeekStatePlay", False)
 			if os.path.exists("/proc/stb/lcd/symbol_hdd"):
 				print("[InfoBarGenerics] Write to /proc/stb/lcd/symbol_hdd")
 				open("/proc/stb/lcd/symbol_hdd", "w").write("0")
@@ -1649,7 +1649,7 @@ class InfoBarSeek:
 			self.unPauseService()
 
 	def pauseService(self):
-		BoxInfo.getItem("StatePlayPause") = True
+		BoxInfo.setItem("StatePlayPause", True)
 		if self.seekstate == self.SEEK_STATE_PAUSE:
 			if config.seek.on_pause.value == "play":
 				self.unPauseService()
@@ -1664,7 +1664,7 @@ class InfoBarSeek:
 			self.setSeekState(self.SEEK_STATE_PAUSE)
 
 	def unPauseService(self):
-		BoxInfo.getItem("StatePlayPause") = False
+		BoxInfo.setItem("StatePlayPause", False)
 		print("[InfoBarGenerics] unpause")
 		if self.seekstate == self.SEEK_STATE_PLAY:
 			return 0

@@ -58,7 +58,7 @@ class StandbyScreen(Screen):
 		self.avswitch = AVSwitch()
 
 		print("[Standby] enter standby")
-		BoxInfo.getItem("StandbyState") = True
+		BoxInfo.setItem("StandbyState", True)
 
 		if os.path.exists("/usr/script/standby_enter.sh"):
 			Console().ePopen("/usr/script/standby_enter.sh")
@@ -175,7 +175,7 @@ class StandbyScreen(Screen):
 
 	def Power(self):
 		print("[Standby] leave standby")
-		BoxInfo.getItem("StandbyState") = False
+		BoxInfo.setItem("StandbyState", False)
 		self.close(True)
 
 		if os.path.exists("/usr/script/StandbyLeave.sh"):

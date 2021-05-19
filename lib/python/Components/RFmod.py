@@ -34,7 +34,7 @@ class RFmod:
 
 def InitRFmod():
 	detected = eRFmod.getInstance().detected()
-	BoxInfo.getItem("RfModulator") = detected
+	BoxInfo.setItem("RfModulator", detected)
 	config.rfmod = ConfigSubsection()
 	if detected:
 		config.rfmod.enable = ConfigOnOff(default=False)

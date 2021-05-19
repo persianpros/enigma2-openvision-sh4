@@ -49,7 +49,7 @@ def getMultibootslots():
 							slot['device'] = device
 							slot['startupfile'] = os.path.basename(file)
 							if 'rootsubdir' in line:
-								BoxInfo.getItem("HasRootSubdir") = True
+								BoxInfo.setItem("HasRootSubdir", True)
 								slot['rootsubdir'] = getparam(line, 'rootsubdir')
 								slot['kernel'] = getparam(line, 'kernel')
 							elif 'sda' in line:
@@ -93,7 +93,7 @@ def GetImagelist():
 	Imagelist = {}
 	tmp.dir = tempfile.mkdtemp(prefix="Multiboot")
 	for slot in sorted(BoxInfo.getItem("canMultiBoot").keys()):
-		Console().ePopen("mount %s %s" % (BoxInfo.getItem("canMultiBoot")[slot]["device"), tmp.dir))
+		Console().ePopen("mount %s %s" % (BoxInfo.getItem("canMultiBoot")[slot]["device"], tmp.dir))
 		BuildVersion = "  "
 		Creator = " "
 		Imagelist[slot] = {"imagename": _("Empty slot")}
@@ -121,7 +121,7 @@ def GetImagelist():
 
 def emptySlot(slot):
 	tmp.dir = tempfile.mkdtemp(prefix="Multiboot")
-	Console().ePopen("mount %s %s" % (BoxInfo.getItem("canMultiBoot")[slot]["device"), tmp.dir))
+	Console().ePopen("mount %s %s" % (BoxInfo.getItem("canMultiBoot")[slot]["device"], tmp.dir))
 	imagedir = os.sep.join(filter(None, [tmp.dir, BoxInfo.getItem("canMultiBoot")[slot].get("rootsubdir", "")]))
 	if os.path.isfile(os.path.join(imagedir, "usr/bin/enigma2")):
 		os.rename((os.path.join(imagedir, "usr/bin/enigma2")), (os.path.join(imagedir, "usr/bin/enigmax")))

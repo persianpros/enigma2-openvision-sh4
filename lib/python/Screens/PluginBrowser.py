@@ -366,7 +366,7 @@ class PluginDownloadBrowser(Screen):
 			parentalControl.open()
 			refreshServiceList()
 		if self.check_softcams:
-			BoxInfo.getItem("HasSoftcamInstalled") = hassoftcaminstalled()
+			BoxInfo.setItem("HasSoftcamInstalled", hassoftcaminstalled())
 		plugins.readPluginList(resolveFilename(SCOPE_PLUGINS))
 		self.container.appClosed.remove(self.runFinished)
 		self.container.dataAvail.remove(self.dataAvail)

@@ -688,7 +688,7 @@ class HarddiskManager:
 			if l and (not device[l - 1].isdigit() or device.startswith("mmcblk")):
 				self.hdd.append(Harddisk(device, removable))
 				self.hdd.sort()
-				BoxInfo.getItem("Harddisk") = True
+				BoxInfo.setItem("Harddisk", True)
 		return error, blacklisted, removable, is_cdrom, partitions, medium_found
 
 	def addHotplugAudiocd(self, device, physdev=None):
@@ -707,7 +707,7 @@ class HarddiskManager:
 			p = Partition(mountpoint="/media/audiocd", description=description, force_mounted=True, device=device)
 			self.partitions.append(p)
 			self.on_partition_list_change("add", p)
-			BoxInfo.getItem("Harddisk") = False
+			BoxInfo.setItem("Harddisk", False)
 		return error, blacklisted, removable, is_cdrom, partitions, medium_found
 
 	def removeHotplugPartition(self, device):
@@ -723,7 +723,7 @@ class HarddiskManager:
 					hdd.stop()
 					self.hdd.remove(hdd)
 					break
-			BoxInfo.getItem("Harddisk") = len(self.hdd) > 0
+			BoxInfo.setItem("Harddisk", len(self.hdd) > 0)
 
 	def HDDCount(self):
 		return len(self.hdd)
@@ -922,4 +922,4 @@ def internalHDDNotSleeping(external=False):
 	return state
 
 
-BoxInfo.getItem("ext4") = isFileSystemSupported("ext4")
+BoxInfo.setItem("ext4", isFileSystemSupported("ext4"))
