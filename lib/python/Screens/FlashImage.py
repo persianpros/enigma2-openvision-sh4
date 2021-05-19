@@ -92,7 +92,7 @@ class SelectImage(Screen):
 			self.imagesList = dict(self.jsonlist)
 
 			for media in ['/media/%s' % x for x in os.listdir('/media')] + (['/media/net/%s' % x for x in os.listdir('/media/net')] if os.path.isdir('/media/net') else []):
-				if not(BoxInfo.getItem('HasMMC'] and "/mmc" in media) and os.path.isdir(media):
+				if not(BoxInfo.getItem('HasMMC') and "/mmc" in media) and os.path.isdir(media):
 					try:
 						getImages(media, [os.path.join(media, x) for x in os.listdir(media) if os.path.splitext(x)[1] == ".zip" and model in x])
 						if "downloaded_images" in os.listdir(media):
