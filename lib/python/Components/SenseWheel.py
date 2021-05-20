@@ -3,7 +3,7 @@
 from __future__ import print_function
 from config import config, ConfigSubsection, ConfigSlider, ConfigOnOff, ConfigEnableDisable
 from enigma import eQBOXSenseWheel
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 
 
 class SENSEWHEEL:
@@ -154,7 +154,7 @@ isensewheel = SENSEWHEEL()
 
 def InitSenseWheel():
 	detected = eQBOXSenseWheel.getInstance().detected()
-	SystemInfo["SenseWheel"] = detected
+	BoxInfo.setItem("SenseWheel", detected)
 	config.sensewheel = ConfigSubsection()
 
 	def setPanelLedsEnable(configElement):

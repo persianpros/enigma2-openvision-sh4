@@ -3,7 +3,7 @@
 from __future__ import print_function
 from Components.config import config, ConfigSubsection, ConfigSlider, ConfigSelection, ConfigBoolean, ConfigNothing, NoSave
 import os
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 
 # The "VideoEnhancement" is the interface to /proc/stb/video/plane.
 
@@ -166,7 +166,7 @@ class VideoEnhancement:
 		else:
 			config.pep.split = NoSave(ConfigNothing())
 
-		if SystemInfo["ScalerSharpness"]:
+		if BoxInfo.getItem("ScalerSharpness"):
 			def setSharpness(config):
 				myval = int(config.value * 256)
 				try:
@@ -259,7 +259,7 @@ class VideoEnhancement:
 		try:
 			x = config.av.scaler_sharpness.value
 		except KeyError:
-			if SystemInfo["ScalerSharpness"]:
+			if BoxInfo.getItem("ScalerSharpness"):
 				def setScaler_sharpness(config):
 					myval = int(config.value)
 					try:

@@ -13,6 +13,7 @@ from Components.Sources.HddState import HddState
 from Components.Converter.Combine import Combine
 from Components.Renderer.FrontpanelLed import FrontpanelLed
 from Components.config import config
+from Components.SystemInfo import BoxInfo
 
 
 class SessionGlobals(Screen):
@@ -28,8 +29,6 @@ class SessionGlobals(Screen):
 		self["RecordState"] = RecordState(session)
 		self["Standby"] = Boolean(fixed=False)
 		self["HddSleepingState"] = HddState(session)
-
-		from Components.SystemInfo import SystemInfo
 
 		combine = Combine(func=lambda s: {(False, False): 0, (False, True): 1, (True, False): 2, (True, True): 3}[(s[0].boolean, s[1].boolean)])
 		combine.connect(self["Standby"])
@@ -91,7 +90,7 @@ class SessionGlobals(Screen):
 		if config.usage.frontledrecstdby_color.value == "4":
 			RecstdbyLed1 = PATTERN_BLINK
 
-		nr_leds = SystemInfo.get("NumFrontpanelLEDs", 0)
+		nr_leds = BoxInfo.getItem("NumFrontpanelLEDs", 0)
 
 		if nr_leds == 1:
 			FrontpanelLed(which=0, boolean=False, patterns=[PATTERN_OFF, PATTERN_BLINK, PATTERN_OFF, PATTERN_BLINK]).connect(combine)

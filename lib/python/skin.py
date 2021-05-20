@@ -5,7 +5,7 @@ from enigma import addFont, eLabel, ePixmap, ePoint, eRect, eSize, eWindow, eWin
 from os.path import basename, dirname, isfile
 
 from Components.config import ConfigSubsection, ConfigText, config
-from Components.SystemInfo import BoxInfo, SystemInfo
+from Components.SystemInfo import BoxInfo
 from Components.Sources.Source import ObsoleteSource
 from Tools.Directories import SCOPE_CONFIG, SCOPE_CURRENT_LCDSKIN, SCOPE_CURRENT_SKIN, SCOPE_FONTS, SCOPE_SKIN, resolveFilename, fileExists
 from Tools.Import import my_import

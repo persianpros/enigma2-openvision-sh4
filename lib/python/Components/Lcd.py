@@ -7,7 +7,7 @@ from usb import busses
 from enigma import eActionMap, eDBoxLCD, eTimer
 
 from Components.config import ConfigNothing, ConfigSelection, ConfigSlider, ConfigSubsection, ConfigYesNo, config
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 from Screens.Screen import Screen
 from Screens.Standby import inTryQuitMainloop
 from Tools.Directories import fileReadLine, fileWriteLine
@@ -188,8 +188,8 @@ class LCD:
 			print("[Lcd] setLCDMode='%s'." % value)
 			fileWriteLine("/proc/stb/lcd/show_symbols", value)
 		if config.lcd.mode.value == "0":
-			SystemInfo["SeekStatePlay"] = False
-			SystemInfo["StatePlayPause"] = False
+			BoxInfo.setItem("SeekStatePlay", False)
+			BoxInfo.setItem("StatePlayPause", False)
 			if exists("/proc/stb/lcd/symbol_hdd"):
 				fileWriteLine("/proc/stb/lcd/symbol_hdd", "0")
 			if exists("/proc/stb/lcd/symbol_hddprogress"):
@@ -257,7 +257,7 @@ def standbyCounterChanged(configElement):
 
 def InitLcd():
 	detected = eDBoxLCD.getInstance().detected()
-	SystemInfo["Display"] = detected
+	BoxInfo.setItem("Display", detected)
 	config.lcd = ConfigSubsection()
 	if detected:
 		ilcd = LCD()
@@ -409,7 +409,7 @@ def InitLcd():
 			config.lcd.contrast = ConfigNothing()
 		config.lcd.standby = ConfigSlider(default=standby_default, limits=(0, 10))
 		config.lcd.dimbright = ConfigSlider(default=standby_default, limits=(0, 10))
-		config.lcd.bright = ConfigSlider(default=SystemInfo["DefaultDisplayBrightness"], limits=(0, 10))
+		config.lcd.bright = ConfigSlider(default=BoxInfo.getItem("DefaultDisplayBrightness"), limits=(0, 10))
 		config.lcd.dimbright.addNotifier(setLCDdimbright)
 		config.lcd.dimbright.apply = lambda: setLCDdimbright(config.lcd.dimbright)
 		config.lcd.dimdelay = ConfigSelection(choices=[
@@ -435,9 +435,9 @@ def InitLcd():
 		config.lcd.flip = ConfigYesNo(default=False)
 		config.lcd.flip.addNotifier(setLCDflipped)
 
-		if SystemInfo["VFD_scroll_repeats"]:
+		if BoxInfo.getItem("VFD_scroll_repeats"):
 			def scroll_repeats(configElement):
-				fileWriteLine(SystemInfo["VFD_scroll_repeats"], configElement.value)
+				fileWriteLine(BoxInfo.getItem("VFD_scroll_repeats"), configElement.value)
 
 			config.usage.vfd_scroll_repeats = ConfigSelection(choices=[
 				("0", _("None")),
@@ -450,9 +450,9 @@ def InitLcd():
 			config.usage.vfd_scroll_repeats.addNotifier(scroll_repeats, immediate_feedback=False)
 		else:
 			config.usage.vfd_scroll_repeats = ConfigNothing()
-		if SystemInfo["VFD_scroll_delay"]:
+		if BoxInfo.getItem("VFD_scroll_delay"):
 			def scroll_delay(configElement):
-				fileWriteLine(SystemInfo["VFD_scroll_delay"], configElement.value)
+				fileWriteLine(BoxInfo.getItem("VFD_scroll_delay"), configElement.value)
 
 			config.usage.vfd_scroll_delay = ConfigSlider(default=150, increment=10, limits=(0, 500))
 			config.usage.vfd_scroll_delay.addNotifier(scroll_delay, immediate_feedback=False)
@@ -463,9 +463,9 @@ def InitLcd():
 		else:
 			config.lcd.hdd = ConfigNothing()
 			config.usage.vfd_scroll_delay = ConfigNothing()
-		if SystemInfo["VFD_initial_scroll_delay"]:
+		if BoxInfo.getItem("VFD_initial_scroll_delay"):
 			def initial_scroll_delay(configElement):
-				fileWriteLine(SystemInfo["VFD_initial_scroll_delay"], configElement.value)
+				fileWriteLine(BoxInfo.getItem("VFD_initial_scroll_delay"), configElement.value)
 
 			config.usage.vfd_initial_scroll_delay = ConfigSelection(choices=[
 				("3000", "3 %s" % _("seconds")),
@@ -478,9 +478,9 @@ def InitLcd():
 			config.usage.vfd_initial_scroll_delay.addNotifier(initial_scroll_delay, immediate_feedback=False)
 		else:
 			config.usage.vfd_initial_scroll_delay = ConfigNothing()
-		if SystemInfo["VFD_final_scroll_delay"]:
+		if BoxInfo.getItem("VFD_final_scroll_delay"):
 			def final_scroll_delay(configElement):
-				fileWriteLine(SystemInfo["VFD_final_scroll_delay"], configElement.value)
+				fileWriteLine(BoxInfo.getItem("VFD_final_scroll_delay"), configElement.value)
 
 			config.usage.vfd_final_scroll_delay = ConfigSelection(choices=[
 				("3000", "3 %s" % _("seconds")),

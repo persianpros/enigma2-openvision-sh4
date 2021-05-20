@@ -230,8 +230,8 @@ eAVSwitch()
 
 eDVBVolumecontrol = None
 
-from Components.SystemInfo import SystemInfo
-if SystemInfo["RFmodSupport"]:
+from Components.SystemInfo import BoxInfo
+if BoxInfo.getItem("RFmodSupport"):
 	class eRFmod:
 		@classmethod
 		def getInstance(self):
@@ -387,7 +387,7 @@ def init_all():
 	import Components.SetupDevices
 	Components.SetupDevices.InitSetupDevices()
 
-	if SystemInfo["RFmodSupport"]:
+	if BoxInfo.getItem("RFmodSupport"):
 		import Components.RFmod
 		Components.RFmod.InitRFmod()
 

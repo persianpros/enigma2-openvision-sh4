@@ -4,7 +4,7 @@ from __future__ import print_function
 from Components.ActionMap import ActionMap, HelpableActionMap, NumberActionMap
 from Components.Sources.StaticText import StaticText
 from Components.ChoiceList import ChoiceList, ChoiceEntryComponent
-from Components.SystemInfo import SystemInfo
+from Components.SystemInfo import BoxInfo
 from Components.config import config, ConfigSubsection, ConfigText, ConfigYesNo
 from Components.PluginComponent import plugins
 from Screens.ChoiceBox import ChoiceBox
@@ -206,7 +206,7 @@ def getHotkeyFunctions():
 	hotkey.functions.append((_("Toggle infoBar"), "Infobar/toggleShow", "InfoBar"))
 	hotkey.functions.append((_("Toggle videomode"), "Infobar/ToggleVideoMode", "InfoBar"))
 	hotkey.functions.append((_("Toggle subtitles show/hide"), "Infobar/toggleSubtitleShown", "InfoBar"))
-	if SystemInfo["PIPAvailable"]:
+	if BoxInfo.getItem("PIPAvailable"):
 		hotkey.functions.append((_("Show PiP"), "Infobar/showPiP", "InfoBar"))
 		hotkey.functions.append((_("Swap PiP"), "Infobar/swapPiP", "InfoBar"))
 		hotkey.functions.append((_("Move PiP"), "Infobar/movePiP", "InfoBar"))
@@ -214,10 +214,10 @@ def getHotkeyFunctions():
 	hotkey.functions.append((_("Activate HbbTV (Redbutton)"), "Infobar/activateRedButton", "InfoBar"))
 	hotkey.functions.append((_("Toggle dashed flickering line for this service"), "Infobar/ToggleHideVBI", "InfoBar"))
 	hotkey.functions.append((_("Do nothing"), "Void", "InfoBar"))
-	if SystemInfo["HasHDMI-CEC"]:
+	if BoxInfo.getItem("HasHDMI-CEC"):
 		hotkey.functions.append((_("HDMI-CEC Source Active"), "Infobar/SourceActiveHdmiCec", "InfoBar"))
 		hotkey.functions.append((_("HDMI-CEC Source Inactive"), "Infobar/SourceInactiveHdmiCec", "InfoBar"))
-	if SystemInfo["HasSoftcamInstalled"]:
+	if BoxInfo.getItem("HasSoftcamInstalled"):
 		hotkey.functions.append((_("Softcam Setup"), "SoftcamSetup", "Setup"))
 	hotkey.functions.append((_("HotKey Setup"), "Module/Screens.Hotkey/HotkeySetup", "Setup"))
 	hotkey.functions.append((_("Software update"), "Module/Screens.SoftwareUpdate/UpdatePlugin", "Setup"))
@@ -256,7 +256,7 @@ def getHotkeyFunctions():
 	hotkey.functions.append((_("Language"), "Module/Screens.LanguageSelection/LanguageSelection", "Setup"))
 	hotkey.functions.append((_("OScam Info"), "Module/Screens.OScamInfo/OscamInfoMenu", "Plugins"))
 	hotkey.functions.append((_("Memory Info"), "Module/Screens.Information/MemoryInformation", "Setup"))
-	if SystemInfo["canMultiBoot"]:
+	if BoxInfo.getItem("canMultiBoot"):
 		hotkey.functions.append((_("Multiboot image selector"), "Module/Screens.FlashImage/MultibootSelection", "Setup"))
 	if os.path.isdir("/etc/ppanels"):
 		for x in [x for x in os.listdir("/etc/ppanels") if x.endswith(".xml")]:
@@ -685,7 +685,7 @@ class InfoBarHotkey():
 					print("[Hotkey] error during executing module %s, screen %s, %s" % (selected[1], selected[2], e))
 					import traceback
 					traceback.print_exc()
-			elif selected[0] == "SoftcamSetup" and SystemInfo["HasSoftcamInstalled"]:
+			elif selected[0] == "SoftcamSetup" and BoxInfo.getItem("HasSoftcamInstalled"):
 				from Screens.SoftcamSetup import SoftcamSetup
 				self.session.open(SoftcamSetup)
 			elif selected[0] == "Setup":
