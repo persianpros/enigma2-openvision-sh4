@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-09 17:04+0430\n"
+"POT-Creation-Date: 2021-05-21 11:46+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -2572,11 +2572,16 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Aspect list..."
-msgstr "Underkanal liste..."
+msgid "Aspect Ratio Actions"
+msgstr "Billed format"
 
 #
 msgid "Aspect ratio"
+msgstr "Billed format"
+
+#
+#, fuzzy
+msgid "Aspect ratio list"
 msgstr "Billed format"
 
 #
@@ -2613,6 +2618,11 @@ msgstr "Lyd"
 msgid "Audio & Video"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Audio Actions"
+msgstr "Lyd indstillinger..."
+
 msgid "Audio PID"
 msgstr "Lyd PID"
 
@@ -2642,7 +2652,8 @@ msgid "Audio language selection 4"
 msgstr "Lydsprogs valg 4"
 
 #
-msgid "Audio options..."
+#, fuzzy
+msgid "Audio options"
 msgstr "Lyd indstillinger..."
 
 msgid "Audio plugins"
@@ -3452,9 +3463,10 @@ msgstr "Ændre gentage og forsinkelse"
 msgid "Change bouquets in quickzap"
 msgstr "Skifte favoritliste i hurtigzap"
 
+#
 #, fuzzy
 msgid "Change device settings"
-msgstr "Ændre gentage og forsinkelse"
+msgstr "Navneserver indstillinger"
 
 msgid "Change recording (add time)"
 msgstr "Tilpas optagelse (tilføj tid)"
@@ -5311,6 +5323,10 @@ msgstr "DiSEqC-tester instillinger"
 msgid "Did you see all eight arrow heads?"
 msgstr "Så du alle otte pilehoveder?"
 
+#, fuzzy
+msgid "Digit entry for service selection"
+msgstr "Afslut input enhedsvalg"
+
 #
 msgid "Digital contour removal"
 msgstr "Digital konturfjernelse"
@@ -6207,6 +6223,11 @@ msgid "End time to ignore shutdown in standby"
 msgstr "Sluttid hvor nedlukning i standby skal ignoreres."
 
 #
+#, fuzzy
+msgid "End timeshift"
+msgstr "Stop tid"
+
+#
 msgid "English"
 msgstr "Engelsk"
 
@@ -6268,10 +6289,6 @@ msgstr ""
 
 msgid "Enter if you are north or south of the equator."
 msgstr ""
-
-#
-msgid "Enter main menu..."
-msgstr "Åbne hoved menu..."
 
 msgid "Enter persistent PIN code"
 msgstr "Indtast vedvarende PIN kode"
@@ -6601,6 +6618,11 @@ msgstr "Udvidet netværk opsætnings plugin..."
 #
 msgid "Extended setup..."
 msgstr "Udvidet opsætning..."
+
+#
+#, fuzzy
+msgid "Extension Actions"
+msgstr "Udvidelser"
 
 #
 msgid "Extensions"
@@ -7136,6 +7158,11 @@ msgstr "Invertering"
 
 #
 #, fuzzy
+msgid "GStreamer version"
+msgstr "Kernel version:"
+
+#
+#, fuzzy
 msgid "GUI Skin"
 msgstr "Indstillings menu"
 
@@ -7540,6 +7567,14 @@ msgstr "Skjul forældrelåste services"
 #
 msgid "Hide player"
 msgstr "Skjul afspiller"
+
+#, fuzzy
+msgid "Hide the InfoBar"
+msgstr "Vis InfoBar"
+
+#, fuzzy
+msgid "Hide the second InfoBar"
+msgstr "Vis anden InfoBar"
 
 msgid "Hide zap errors"
 msgstr "Skjul zap fejl"
@@ -7985,6 +8020,22 @@ msgstr "Infobar slukningstid"
 
 #
 #, fuzzy
+msgid "InfoBar EPG Actions"
+msgstr "Information"
+
+msgid "InfoBar Event View Actions"
+msgstr ""
+
+#
+#, fuzzy
+msgid "InfoBar RDS Actions"
+msgstr "Information"
+
+msgid "InfoBar Show/Hide Actions"
+msgstr ""
+
+#
+#, fuzzy
 msgid "Infobar fade-out speed"
 msgstr "Infobar slukningstid"
 
@@ -8108,12 +8159,13 @@ msgid "Instant record"
 msgstr "Øjeblikkelig optagelse"
 
 #
-msgid "Instant recording location"
-msgstr "Umiddelbar optagelses placering"
+#, fuzzy
+msgid "Instant recording"
+msgstr "Hurtig optagelse..."
 
 #
-msgid "Instant recording..."
-msgstr "Hurtig optagelse..."
+msgid "Instant recording location"
+msgstr "Umiddelbar optagelses placering"
 
 #
 #, fuzzy
@@ -8326,7 +8378,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Keyboard / Remote Control Setup"
-msgstr "Forældrekontrol opsætning"
+msgstr "Fjernbetjeningstype"
 
 #
 #, fuzzy
@@ -8954,6 +9006,10 @@ msgstr "Margin før optagelse (minutter)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Markér service som dedikeret 3D service"
 
+#, fuzzy
+msgid "Marker Actions"
+msgstr "Yderligere indstillinger"
+
 msgid "Marshall Islands"
 msgstr ""
 
@@ -8996,11 +9052,6 @@ msgstr ""
 
 msgid "Mayotte"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Media framework"
-msgstr "Medie afspiller"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -9047,6 +9098,11 @@ msgstr "Hukommelsesindeks"
 #
 msgid "Menu"
 msgstr "Menu"
+
+#
+#, fuzzy
+msgid "Menu Actions"
+msgstr "Placering af film"
 
 #, python-format
 msgid "Menusort (%s)"
@@ -9355,6 +9411,10 @@ msgstr "Bevægelse"
 #, fuzzy
 msgid "Movie"
 msgstr "Flytter"
+
+#, fuzzy
+msgid "Movie List Actions"
+msgstr "Film valg"
 
 #
 #, fuzzy
@@ -10198,6 +10258,10 @@ msgstr "Ingen kanalliste"
 msgid "Open current transponder"
 msgstr "Nuværende transponder"
 
+#, fuzzy
+msgid "Open main menu"
+msgstr "Beskyt hovedmenuen"
+
 msgid "Open select location"
 msgstr "Åben valgte placering"
 
@@ -10294,7 +10358,7 @@ msgstr "Anden"
 
 #, fuzzy
 msgid "Other Actions"
-msgstr "yderligere uddannelse"
+msgstr "Yderligere indstillinger"
 
 #, fuzzy
 msgid "Other Subtitles & lang"
@@ -10463,6 +10527,10 @@ msgstr "Video opsætning"
 msgid "Pause"
 msgstr "Pause"
 
+#, fuzzy
+msgid "Pause and start timeshift"
+msgstr "Gem og genstart timeshift"
+
 #
 msgid "Pause movie at end"
 msgstr "Pause ved filmslutning"
@@ -10512,6 +10580,9 @@ msgid "Peru"
 msgstr ""
 
 msgid "Philippines"
+msgstr ""
+
+msgid "PiP Actions"
 msgstr ""
 
 #
@@ -10634,6 +10705,9 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+msgid "Playback/Seek Actions"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Player version"
@@ -10670,7 +10744,7 @@ msgstr ""
 "Tryk på OK når du er færdig, for at fortsætte."
 
 #, fuzzy
-msgid "Please configure the fallback tuner setup?"
+msgid "Please configure the fallback tuner setup"
 msgstr "Fallback remote receiver URL"
 
 #
@@ -11625,6 +11699,11 @@ msgstr "Optagelses Setup"
 
 #
 #, fuzzy
+msgid "Recording Actions"
+msgstr "Sti til optagelse"
+
+#
+#, fuzzy
 msgid "Recording Paths"
 msgstr "Sti til optagelse"
 
@@ -11691,6 +11770,9 @@ msgstr "Rødfarvet"
 #, fuzzy
 msgid "Red long"
 msgstr "Rødfarvet"
+
+msgid "Red/HbbTV Button Actions"
+msgstr ""
 
 msgid "Reenter PIN"
 msgstr "Genindtast PIN"
@@ -12023,7 +12105,7 @@ msgstr "Nulstil vedvarende PIN kode"
 msgid "Reset playback position"
 msgstr "Nulstil afspilningsposition"
 
-msgid "Reset the selected devices when the GREEN button is pressed."
+msgid "Reset the selected devices and save changes of your config when the GREEN button is pressed."
 msgstr ""
 
 #
@@ -12712,6 +12794,21 @@ msgid "Seek"
 msgstr "Søg"
 
 #
+#, fuzzy
+msgid "Seek back long"
+msgstr "Søg baglæns"
+
+#
+#, fuzzy
+msgid "Seek back medium"
+msgstr "Søg baglæns"
+
+#
+#, fuzzy
+msgid "Seek back short"
+msgstr "Søg baglæns"
+
+#
 msgid "Seek backward"
 msgstr "Søg baglæns"
 
@@ -12726,6 +12823,21 @@ msgstr "Søg forlæns"
 #
 msgid "Seek forward (enter time)"
 msgstr "Søg forlæns (skriv tid)"
+
+#
+#, fuzzy
+msgid "Seek forward long"
+msgstr "Søg forlæns"
+
+#
+#, fuzzy
+msgid "Seek forward medium"
+msgstr "Søg forlæns"
+
+#
+#, fuzzy
+msgid "Seek forward short"
+msgstr "Søg forlæns"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
@@ -13246,10 +13358,18 @@ msgstr "Service & PID's"
 msgid "Service ID"
 msgstr "Service ID"
 
+#, fuzzy
+msgid "Service Selection Actions"
+msgstr "Vælg handling"
+
 #
 #, fuzzy
 msgid "Service Title mode"
 msgstr "Kanal titel modus"
+
+#, fuzzy
+msgid "Service Zap Actions"
+msgstr "Vis kanal type ikoner"
 
 msgid "Service belongs to a parental protected bouquet"
 msgstr "Service er i bouquet forældrebeskyttelse"
@@ -13570,10 +13690,6 @@ msgid "Show EPG for current channel..."
 msgstr "Vis EPG for nuværende kanal..."
 
 #
-msgid "Show EPG..."
-msgstr "Vis EPG..."
-
-#
 #, fuzzy
 msgid "Show Ethernet activity"
 msgstr "Vis alternativer"
@@ -13730,7 +13846,8 @@ msgid "Show extension selection"
 msgstr "Vis udvidelsesselektion"
 
 #
-msgid "Show extensions..."
+#, fuzzy
+msgid "Show extensions"
 msgstr "Se udvidelser..."
 
 msgid "Show favourites list"
@@ -13960,6 +14077,10 @@ msgstr "Vis serviceliste eller film"
 #, fuzzy
 msgid "Show setup default value"
 msgstr "Sæt standard"
+
+#, fuzzy
+msgid "Show sevice event information"
+msgstr "Vi detaljeret programinfo"
 
 msgid "Show single service EPG"
 msgstr "Vis enkelt kanals EPG"
@@ -14597,6 +14718,11 @@ msgstr "Start test"
 msgid "Start Boot Frequency"
 msgstr "Frekvens"
 
+#
+#, fuzzy
+msgid "Start RDS interactive"
+msgstr "Se Rass interaktiv..."
+
 #, fuzzy
 msgid "Start boot frequency"
 msgstr "Alle frekvenser"
@@ -14858,6 +14984,15 @@ msgstr ""
 msgid "Strongest position"
 msgstr "Stærkeste position"
 
+#, fuzzy
+msgid "Sub Service Actions"
+msgstr "Vis subservice selektion"
+
+#
+#, fuzzy
+msgid "Subservice list"
+msgstr "Underkanal liste..."
+
 #
 msgid "Subservice list..."
 msgstr "Underkanal liste..."
@@ -14870,6 +15005,11 @@ msgstr "Underkanaler"
 #, fuzzy
 msgid "Subtitle"
 msgstr "Undertekster"
+
+#
+#, fuzzy
+msgid "Subtitle Actions"
+msgstr "Undertekst vælger"
 
 msgid "Subtitle Quickmenu"
 msgstr "Undertekst hurtigmenu"
@@ -14913,11 +15053,8 @@ msgstr "Undertekst position"
 msgid "Subtitle selection"
 msgstr "Undertekst vælger"
 
-msgid "Subtitle selection..."
-msgstr "Undertekst valg..."
-
 #, fuzzy
-msgid "Subtitle show/hide..."
+msgid "Subtitle show/hide"
 msgstr "Undertekst valg..."
 
 #
@@ -15189,6 +15326,10 @@ msgstr ""
 #, fuzzy
 msgid "Teletext"
 msgstr "Slet"
+
+#, fuzzy
+msgid "Teletext Actions"
+msgstr "Vælg handling"
 
 msgid "Teletext CleanAlgo (resolution reset algorithm)"
 msgstr ""
@@ -15960,6 +16101,11 @@ msgstr "Tidszone"
 msgid "Timer"
 msgstr "Timer"
 
+#
+#, fuzzy
+msgid "Timer Actions"
+msgstr "Timer valg"
+
 msgid "Timer Overview"
 msgstr "Timer oversigt"
 
@@ -16007,9 +16153,6 @@ msgstr "Timer sanity fejl"
 msgid "Timer selection"
 msgstr "Timer valg"
 
-msgid "Timer selection..."
-msgstr "Timer valg..."
-
 #
 msgid "Timer type"
 msgstr "Timer type"
@@ -16027,6 +16170,11 @@ msgstr "Timer"
 #
 msgid "Timeshift"
 msgstr "Tidsforskydning"
+
+#
+#, fuzzy
+msgid "Timeshift Actions"
+msgstr "Placering af tidsforskydning"
 
 msgid "Timeshift Live"
 msgstr "Tidsforskydning Live"
@@ -16091,6 +16239,13 @@ msgstr "Ændre en skæringsmarkør på den nuværende position"
 
 msgid "Toggle dashed flickering line for this service"
 msgstr "Skift stiplet flimrende linje for denne serive"
+
+#, fuzzy
+msgid "Toggle display of the InfoBar"
+msgstr "Skift mellem infoBar"
+
+msgid "Toggle display of the second InfoBar"
+msgstr ""
 
 msgid "Toggle infoBar"
 msgstr "Skift mellem infoBar"
@@ -17084,7 +17239,8 @@ msgid "View photos..."
 msgstr "Vis fotos..."
 
 #
-msgid "View teletext..."
+#, fuzzy
+msgid "View teletext"
 msgstr "Se TekstTV..."
 
 #
@@ -18158,6 +18314,11 @@ msgid "Zimbabwe"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Zoom Actions"
+msgstr "Placering"
+
+#
 msgid "[alternative edit]"
 msgstr "[Alternativ ændring]"
 
@@ -18600,11 +18761,6 @@ msgstr "entertainment (6-14 year old)"
 
 msgid "epg cache backup"
 msgstr "epg cache backup"
-
-#
-#, fuzzy
-msgid "eplayer3"
-msgstr "Skjul afspiller"
 
 msgid "equestrian"
 msgstr "dressur"

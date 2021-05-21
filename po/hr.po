@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-09 17:04+0430\n"
+"POT-Creation-Date: 2021-05-21 11:46+0430\n"
 "PO-Revision-Date: 2021-01-17 18:31+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -2412,10 +2412,14 @@ msgid "Ask user (with default as 'Yes')"
 msgstr ""
 
 #, fuzzy
-msgid "Aspect list..."
-msgstr "Popis podusluga..."
+msgid "Aspect Ratio Actions"
+msgstr "Omjer slike"
 
 msgid "Aspect ratio"
+msgstr "Omjer slike"
+
+#, fuzzy
+msgid "Aspect ratio list"
 msgstr "Omjer slike"
 
 msgid "Assigned CAIds:"
@@ -2450,6 +2454,10 @@ msgstr "Аudio"
 msgid "Audio & Video"
 msgstr "Аudio / videо"
 
+#, fuzzy
+msgid "Audio Actions"
+msgstr "Postavke zvuka..."
+
 msgid "Audio PID"
 msgstr "Аudio PID"
 
@@ -2478,7 +2486,8 @@ msgstr "Odaberite jezik zvuka 3"
 msgid "Audio language selection 4"
 msgstr "Odaberite jezik zvuka 4"
 
-msgid "Audio options..."
+#, fuzzy
+msgid "Audio options"
 msgstr "Postavke zvuka..."
 
 msgid "Audio plugins"
@@ -3218,7 +3227,7 @@ msgstr "Promijenite paket u brzom prebacivanju"
 
 #, fuzzy
 msgid "Change device settings"
-msgstr "Promijenite postavke kašnjenja i ponavljanja?"
+msgstr "Postavke poslužitelja (DNS)"
 
 msgid "Change recording (add time)"
 msgstr "Promijeni snimanje (dodaj vrijeme)"
@@ -4879,6 +4888,10 @@ msgstr "DiSEqC-postavke testera"
 msgid "Did you see all eight arrow heads?"
 msgstr "Jeste li vidjeli svih osam strelica?"
 
+#, fuzzy
+msgid "Digit entry for service selection"
+msgstr "Izlaz iz odabira ulaznog uređaja."
+
 msgid "Digital contour removal"
 msgstr "Digitalno uklanjanje kontura"
 
@@ -5652,6 +5665,10 @@ msgstr "Završetak vremena ignoriranja tajmera mirovanja"
 msgid "End time to ignore shutdown in standby"
 msgstr "Završetak vremena ignoriranja isključenja u stanju čekanja"
 
+#, fuzzy
+msgid "End timeshift"
+msgstr "Vrijeme završetka"
+
 msgid "English"
 msgstr "Engleski"
 
@@ -5706,9 +5723,6 @@ msgstr "Unesite gdje se nalazite u istočnoj ili zapadnoj hemisferi."
 
 msgid "Enter if you are north or south of the equator."
 msgstr "Unesite gdje se nalazite sjeverno ili južno od ekvatora."
-
-msgid "Enter main menu..."
-msgstr "Uđite u glavni izbornik..."
 
 msgid "Enter persistent PIN code"
 msgstr "Unesite trajni PIN kod"
@@ -6012,6 +6026,10 @@ msgstr "Prošireno postavljanje mrežnog dodatka..."
 
 msgid "Extended setup..."
 msgstr "Prošireno postavljanje..."
+
+#, fuzzy
+msgid "Extension Actions"
+msgstr "Proširenja"
 
 msgid "Extensions"
 msgstr "Proširenja"
@@ -6488,6 +6506,10 @@ msgstr "Dodatne mogućnosti"
 msgid "GCC version"
 msgstr "Inverzija"
 
+#, fuzzy
+msgid "GStreamer version"
+msgstr "GStreamer verzija: "
+
 msgid "GUI Skin"
 msgstr "GUI skin"
 
@@ -6862,6 +6884,14 @@ msgstr "Sakrijte zaključane kanale"
 
 msgid "Hide player"
 msgstr "Sakrijte player"
+
+#, fuzzy
+msgid "Hide the InfoBar"
+msgstr "Prikažite info traku"
+
+#, fuzzy
+msgid "Hide the second InfoBar"
+msgstr "Prikažite drugu info traku"
 
 msgid "Hide zap errors"
 msgstr "Sakrijte pogreške prilikom prebacivanja kanala"
@@ -7270,6 +7300,20 @@ msgid "Info bar timeout"
 msgstr "Vrijeme mirovanja info trake"
 
 #, fuzzy
+msgid "InfoBar EPG Actions"
+msgstr "Informacije"
+
+msgid "InfoBar Event View Actions"
+msgstr ""
+
+#, fuzzy
+msgid "InfoBar RDS Actions"
+msgstr "Informacije"
+
+msgid "InfoBar Show/Hide Actions"
+msgstr ""
+
+#, fuzzy
 msgid "Infobar fade-out speed"
 msgstr "Vrijeme mirovanja info trake"
 
@@ -7376,11 +7420,12 @@ msgstr "Instaliranje softvera..."
 msgid "Instant record"
 msgstr "Trenutni zapis"
 
+#, fuzzy
+msgid "Instant recording"
+msgstr "Mjesto snimanja..."
+
 msgid "Instant recording location"
 msgstr "Lokacija mjesta snimanja"
-
-msgid "Instant recording..."
-msgstr "Mjesto snimanja..."
 
 #, fuzzy
 msgid "Interface"
@@ -7570,7 +7615,7 @@ msgstr "Ključni događaji"
 
 #, fuzzy
 msgid "Keyboard / Remote Control Setup"
-msgstr "Postavljanje roditeljske kontrole"
+msgstr "Podešavanje tipa daljinskog upravljača"
 
 msgid "Keyboard data entry"
 msgstr "Unos podataka tipkovnice"
@@ -8116,6 +8161,10 @@ msgstr "Margina prije snimanja (minute)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Označi uslugu kao namjenski 3D kanal"
 
+#, fuzzy
+msgid "Marker Actions"
+msgstr "Dodatne mogućnosti"
+
 msgid "Marshall Islands"
 msgstr "Maršalovi otoci"
 
@@ -8152,10 +8201,6 @@ msgstr "Možda je razlog što se snimanje trenutno izvodi. Zaustavite snimanje p
 
 msgid "Mayotte"
 msgstr "Mayotte"
-
-#, fuzzy
-msgid "Media framework"
-msgstr "Medija player"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8195,6 +8240,10 @@ msgstr "Broj u memoriji"
 
 msgid "Menu"
 msgstr "Izbornik"
+
+#, fuzzy
+msgid "Menu Actions"
+msgstr "Lokacija filma"
 
 #, python-format
 msgid "Menusort (%s)"
@@ -8456,6 +8505,10 @@ msgstr "Kretanje"
 #, fuzzy
 msgid "Movie"
 msgstr "Kretanje"
+
+#, fuzzy
+msgid "Movie List Actions"
+msgstr "Odabir filma"
 
 #, fuzzy
 msgid "Movie List Setup"
@@ -9196,6 +9249,10 @@ msgstr "nema popisa kanala"
 msgid "Open current transponder"
 msgstr "Trenutni transponder"
 
+#, fuzzy
+msgid "Open main menu"
+msgstr "Zaštita glavnog izbornika"
+
 msgid "Open select location"
 msgstr "Otvorite odabranu lokaciju"
 
@@ -9287,7 +9344,7 @@ msgstr "Ostalo"
 
 #, fuzzy
 msgid "Other Actions"
-msgstr "daljnje obrazovanje"
+msgstr "Dodatne mogućnosti"
 
 msgid "Other Subtitles & lang"
 msgstr "Ostali titlovi i jezici"
@@ -9440,6 +9497,10 @@ msgstr "Lozinka"
 msgid "Pause"
 msgstr "Pauza"
 
+#, fuzzy
+msgid "Pause and start timeshift"
+msgstr "Spremite i ponovno pokrenite vremenski pomak"
+
 msgid "Pause movie at end"
 msgstr "Pauzirajte na kraju videozapisa"
 
@@ -9483,6 +9544,10 @@ msgstr "Peru"
 
 msgid "Philippines"
 msgstr "Filipini"
+
+#, fuzzy
+msgid "PiP Actions"
+msgstr "Pozicija"
 
 msgid "PiP setup"
 msgstr "PiP postavke"
@@ -9589,6 +9654,9 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+msgid "Playback/Seek Actions"
+msgstr ""
+
 #, fuzzy
 msgid "Player version"
 msgstr "Verzija kernela: "
@@ -9617,8 +9685,8 @@ msgstr ""
 "Konfigurirajte ili provjerite konfiguraciju imena poslužitelja (DNS) popunjavanjem potrebnih podataka.\n"
 "Kada ste spremni - pritisnite OK za nastavak."
 
-msgid "Please configure the fallback tuner setup?"
-msgstr "Želite li konfigurirati rezervni prijemnik?"
+msgid "Please configure the fallback tuner setup"
+msgstr "Želite li konfigurirati rezervni prijemnik"
 
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
@@ -10447,6 +10515,10 @@ msgid "Recording & Playback Setup"
 msgstr "Postavke snimanja"
 
 #, fuzzy
+msgid "Recording Actions"
+msgstr "Lokacije snimanja"
+
+#, fuzzy
 msgid "Recording Paths"
 msgstr "Lokacije snimanja"
 
@@ -10506,6 +10578,9 @@ msgstr "Crveno obojen"
 #, fuzzy
 msgid "Red long"
 msgstr "dugo"
+
+msgid "Red/HbbTV Button Actions"
+msgstr ""
 
 msgid "Reenter PIN"
 msgstr "Ponovno unesite PIN"
@@ -10796,7 +10871,7 @@ msgstr "Trajno poništavanje PIN-a"
 msgid "Reset playback position"
 msgstr "Poništite položaj reprodukcije"
 
-msgid "Reset the selected devices when the GREEN button is pressed."
+msgid "Reset the selected devices and save changes of your config when the GREEN button is pressed."
 msgstr ""
 
 msgid "Reset video enhancement settings to system defaults?"
@@ -11393,6 +11468,18 @@ msgstr "Sporedan DNS"
 msgid "Seek"
 msgstr "Pozicija"
 
+#, fuzzy
+msgid "Seek back long"
+msgstr "Pomicanje unatrag"
+
+#, fuzzy
+msgid "Seek back medium"
+msgstr "Pomicanje unatrag"
+
+#, fuzzy
+msgid "Seek back short"
+msgstr "Pomicanje unatrag"
+
 msgid "Seek backward"
 msgstr "Pomicanje unatrag"
 
@@ -11404,6 +11491,18 @@ msgstr "Pomicanje naprijed"
 
 msgid "Seek forward (enter time)"
 msgstr "Pomicanje naprijed (unesite vrijeme)"
+
+#, fuzzy
+msgid "Seek forward long"
+msgstr "Pomicanje naprijed"
+
+#, fuzzy
+msgid "Seek forward medium"
+msgstr "Pomicanje naprijed"
+
+#, fuzzy
+msgid "Seek forward short"
+msgstr "Pomicanje naprijed"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
@@ -11874,8 +11973,16 @@ msgid "Service ID"
 msgstr "ID usluge"
 
 #, fuzzy
+msgid "Service Selection Actions"
+msgstr "Radnje za odabir skina"
+
+#, fuzzy
 msgid "Service Title mode"
 msgstr "Način naziva kanala"
+
+#, fuzzy
+msgid "Service Zap Actions"
+msgstr "Prikažite ikone vrste usluga"
 
 msgid "Service belongs to a parental protected bouquet"
 msgstr "Usluga je u paketu roditeljske zaštite"
@@ -12164,9 +12271,6 @@ msgstr "Prikažite EIT sada/sljedeće u info traci"
 msgid "Show EPG for current channel..."
 msgstr "Prikažite EPG za trenutni kanal..."
 
-msgid "Show EPG..."
-msgstr "Prikažite EPG..."
-
 #, fuzzy
 msgid "Show Ethernet activity"
 msgstr "Prikaži alternative"
@@ -12312,7 +12416,8 @@ msgstr "Prikažite prošireni opis"
 msgid "Show extension selection"
 msgstr "Prikažite izbor proširenja"
 
-msgid "Show extensions..."
+#, fuzzy
+msgid "Show extensions"
 msgstr "Prikažite proširenja..."
 
 msgid "Show favourites list"
@@ -12528,6 +12633,10 @@ msgstr "Prikažite popis usluga ili filmova"
 #, fuzzy
 msgid "Show setup default value"
 msgstr "Postavite zadano"
+
+#, fuzzy
+msgid "Show sevice event information"
+msgstr "Prikažite detaljne informacije o događaju"
 
 msgid "Show single service EPG"
 msgstr "Prikažite jednostavne EPG usluge"
@@ -13086,6 +13195,10 @@ msgid "Start Boot Frequency"
 msgstr "Frekvencija"
 
 #, fuzzy
+msgid "Start RDS interactive"
+msgstr "Pogledajte interaktivni Rass..."
+
+#, fuzzy
 msgid "Start boot frequency"
 msgstr "Sve frekvencije"
 
@@ -13315,6 +13428,14 @@ msgstr ""
 msgid "Strongest position"
 msgstr "Najjača pozicija"
 
+#, fuzzy
+msgid "Sub Service Actions"
+msgstr "Prikažite odabir servisa"
+
+#, fuzzy
+msgid "Subservice list"
+msgstr "Popis podusluga..."
+
 msgid "Subservice list..."
 msgstr "Popis podusluga..."
 
@@ -13324,6 +13445,10 @@ msgstr "Podusluge"
 #, fuzzy
 msgid "Subtitle"
 msgstr "Titlovi"
+
+#, fuzzy
+msgid "Subtitle Actions"
+msgstr "Odabir podnaslova"
 
 msgid "Subtitle Quickmenu"
 msgstr "Brzi izbornik titla"
@@ -13365,10 +13490,8 @@ msgstr "Pozicija titla"
 msgid "Subtitle selection"
 msgstr "Odabir podnaslova"
 
-msgid "Subtitle selection..."
-msgstr "Odabir podnaslova..."
-
-msgid "Subtitle show/hide..."
+#, fuzzy
+msgid "Subtitle show/hide"
 msgstr "Prikaži/sakrij titlove..."
 
 msgid "Subtitles"
@@ -13608,6 +13731,10 @@ msgstr "Tanzanija, Ujedinjena Republika"
 #, fuzzy
 msgid "Teletext"
 msgstr "Izbrisati"
+
+#, fuzzy
+msgid "Teletext Actions"
+msgstr "Odaberite radnju"
 
 msgid "Teletext CleanAlgo (resolution reset algorithm)"
 msgstr ""
@@ -14306,6 +14433,10 @@ msgstr "Područje vremenske zone"
 msgid "Timer"
 msgstr "Tajmer"
 
+#, fuzzy
+msgid "Timer Actions"
+msgstr "Odabir tajmera"
+
 msgid "Timer Overview"
 msgstr "Pregled tajmera"
 
@@ -14345,9 +14476,6 @@ msgstr "Pogreška vremena odmora"
 msgid "Timer selection"
 msgstr "Odabir tajmera"
 
-msgid "Timer selection..."
-msgstr "Odabir tajmera..."
-
 msgid "Timer type"
 msgstr "Tip tajmera"
 
@@ -14360,6 +14488,10 @@ msgstr "Tajmer"
 
 msgid "Timeshift"
 msgstr "Vremenski pomak"
+
+#, fuzzy
+msgid "Timeshift Actions"
+msgstr "Lokacija s pomakom vremena"
 
 msgid "Timeshift Live"
 msgstr "Vremenski pomak uživo"
@@ -14416,6 +14548,13 @@ msgstr "Prebacite oznaku izrezivanja na trenutnu poziciju"
 
 msgid "Toggle dashed flickering line for this service"
 msgstr "Prebacite pomičnu liniju za ovu uslugu"
+
+#, fuzzy
+msgid "Toggle display of the InfoBar"
+msgstr "Prebacite info traku"
+
+msgid "Toggle display of the second InfoBar"
+msgstr ""
 
 msgid "Toggle infoBar"
 msgstr "Prebacite info traku"
@@ -15279,7 +15418,8 @@ msgstr "Pogledajte popis dostupnih sistemskih proširenja"
 msgid "View photos..."
 msgstr "Prikažite fotografije..."
 
-msgid "View teletext..."
+#, fuzzy
+msgid "View teletext"
 msgstr "Prikažite teletekst..."
 
 msgid "View video CD..."
@@ -16289,6 +16429,10 @@ msgstr ""
 msgid "Zimbabwe"
 msgstr "Zimbabve"
 
+#, fuzzy
+msgid "Zoom Actions"
+msgstr "Lokacija"
+
 msgid "[alternative edit]"
 msgstr "[alternativno uređivanje]"
 
@@ -16681,10 +16825,6 @@ msgstr "zabava (6-14 godina starosti)"
 
 msgid "epg cache backup"
 msgstr "sigurnosna kopija epg-a"
-
-#, fuzzy
-msgid "eplayer3"
-msgstr "Sakrijte player"
 
 msgid "equestrian"
 msgstr "jahanje"
