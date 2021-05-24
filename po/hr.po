@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-21 11:46+0430\n"
+"POT-Creation-Date: 2021-05-24 14:44+0430\n"
 "PO-Revision-Date: 2021-01-17 18:31+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -109,6 +109,10 @@ msgstr "SSID:"
 msgid "  Transmitting power:"
 msgstr "Način prijenosa"
 
+#, fuzzy
+msgid " (+5 volt terrestrial)"
+msgstr "Zemaljski"
+
 msgid " (0 - all networks)"
 msgstr " (0 - sve mreže)"
 
@@ -145,6 +149,9 @@ msgstr " (veći od bilo kojeg automatskog rotora)"
 msgid " (lower than any auto)"
 msgstr " (niži od bilo kojeg automatskog)"
 
+msgid " - Unicable/JESS LNBs not found"
+msgstr ""
+
 msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
 msgstr ""
 
@@ -153,6 +160,9 @@ msgstr " proširenja."
 
 msgid " packages selected."
 msgstr " izabrano paketa."
+
+msgid " unicable LNB input of rotor"
+msgstr ""
 
 msgid " updates available."
 msgstr " dostupna ažuriranja."
@@ -1338,6 +1348,10 @@ msgstr "-GREŠKA USLUGE:%d\n"
 #, fuzzy
 msgctxt "Hotkey help separator"
 msgid "/"
+msgstr "/s"
+
+#, fuzzy
+msgid "/T"
 msgstr "/s"
 
 msgid "/s"
@@ -2664,9 +2678,6 @@ msgstr "BT 709"
 
 msgid "Back"
 msgstr "Natrag"
-
-msgid "Background"
-msgstr "Pozadina"
 
 msgid "Background color"
 msgstr "Boja pozadine"
@@ -4086,6 +4097,10 @@ msgstr "Nastaviti"
 
 msgid "Continue"
 msgstr "Nastaviti"
+
+#, fuzzy
+msgid "Continue in background"
+msgstr "Nastavite reprodukciju"
 
 msgid "Continue playback"
 msgstr "Nastavite reprodukciju"
@@ -6114,6 +6129,13 @@ msgstr ""
 "FBC - automatski\n"
 "neaktivan"
 
+#, python-format
+msgid "FBC socket %s"
+msgstr ""
+
+msgid "FBC virtual"
+msgstr ""
+
 #, fuzzy
 msgid "FCC enabled"
 msgstr "omogućeno"
@@ -6885,6 +6907,9 @@ msgstr "Sakrijte zaključane kanale"
 msgid "Hide player"
 msgstr "Sakrijte player"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 #, fuzzy
 msgid "Hide the InfoBar"
 msgstr "Prikažite info traku"
@@ -7543,6 +7568,10 @@ msgstr "Japan"
 
 msgid "Jersey"
 msgstr "Jersey"
+
+#, fuzzy
+msgid "Job cancel"
+msgstr "Otkazati"
 
 msgid "Job overview"
 msgstr "Pregled posla"
@@ -12649,6 +12678,10 @@ msgstr "Prikažite ikone statusa na popisu filmova"
 
 msgid "Show status icons in movielist"
 msgstr "Prikažite ikone statusa u popisu filmova"
+
+#, fuzzy
+msgid "Show sub-menu"
+msgstr "Prikažite stupce"
 
 msgid "Show subservice selection"
 msgstr "Prikažite odabir servisa"

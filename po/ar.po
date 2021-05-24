@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-21 11:46+0430\n"
+"POT-Creation-Date: 2021-05-24 14:44+0430\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -108,6 +108,10 @@ msgstr "معرف مجموعة القنوات :"
 msgid "  Transmitting power:"
 msgstr "وضع الإنتقال"
 
+#, fuzzy
+msgid " (+5 volt terrestrial)"
+msgstr "أرضي"
+
 msgid " (0 - all networks)"
 msgstr " (0-جميع الشبكات)"
 
@@ -144,6 +148,9 @@ msgstr " (أعلى من الدواران التلقائي)"
 msgid " (lower than any auto)"
 msgstr " (أقل من أي تلقائي)"
 
+msgid " - Unicable/JESS LNBs not found"
+msgstr ""
+
 msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
 msgstr ""
 
@@ -154,6 +161,9 @@ msgstr "الملحقات."
 #, fuzzy
 msgid " packages selected."
 msgstr "الحزم المختارة."
+
+msgid " unicable LNB input of rotor"
+msgstr ""
 
 #, fuzzy
 msgid " updates available."
@@ -1366,6 +1376,10 @@ msgstr "-خطا في الخدمة:%d\n"
 #, fuzzy
 msgctxt "Hotkey help separator"
 msgid "/"
+msgstr "/s"
+
+#, fuzzy
+msgid "/T"
 msgstr "/s"
 
 msgid "/s"
@@ -2743,9 +2757,6 @@ msgstr "BT 709"
 
 msgid "Back"
 msgstr "خلف"
-
-msgid "Background"
-msgstr "الخلفيه"
 
 msgid "Background color"
 msgstr "لون الخلفية"
@@ -4227,6 +4238,10 @@ msgstr "إستمرار"
 
 msgid "Continue"
 msgstr "إستمرار"
+
+#, fuzzy
+msgid "Continue in background"
+msgstr "إستمرار التشغيل"
 
 msgid "Continue playback"
 msgstr "إستمرار التشغيل"
@@ -6317,6 +6332,13 @@ msgstr ""
 "لاقط أف بي سي التلقائي\n"
 "غير نشط"
 
+#, python-format
+msgid "FBC socket %s"
+msgstr ""
+
+msgid "FBC virtual"
+msgstr ""
+
 #, fuzzy
 msgid "FCC enabled"
 msgstr "تم التفعيل"
@@ -7133,6 +7155,9 @@ msgstr "إخفاء الخدمات الأبوية المقفلة"
 msgid "Hide player"
 msgstr "إخفاء المشغل"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 #, fuzzy
 msgid "Hide the InfoBar"
 msgstr "عرض المعلومات"
@@ -7807,6 +7832,10 @@ msgstr "اليابان"
 
 msgid "Jersey"
 msgstr "جيرسي"
+
+#, fuzzy
+msgid "Job cancel"
+msgstr "إلغاء"
 
 #, fuzzy
 msgid "Job overview"
@@ -13145,6 +13174,10 @@ msgstr "عرض الإيقونات في قائمة الأفلام"
 #, fuzzy
 msgid "Show status icons in movielist"
 msgstr "عرض الإيقونات في قائمة الأفلام"
+
+#, fuzzy
+msgid "Show sub-menu"
+msgstr "عرض الأعمدة"
 
 msgid "Show subservice selection"
 msgstr "عرض تحديد الخدمة الفرعية"

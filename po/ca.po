@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-21 11:46+0430\n"
+"POT-Creation-Date: 2021-05-24 14:44+0430\n"
 "PO-Revision-Date: 2020-11-30 18:56+0100\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: angelodos angelo2807@hotmail.com\n"
@@ -124,6 +124,11 @@ msgstr "SSID:"
 msgid "  Transmitting power:"
 msgstr "Mode transmissió"
 
+#
+#, fuzzy
+msgid " (+5 volt terrestrial)"
+msgstr "Terrestre"
+
 msgid " (0 - all networks)"
 msgstr " (0 - all networks)"
 
@@ -160,6 +165,9 @@ msgstr " (superior al rotor qualsevol auto)"
 msgid " (lower than any auto)"
 msgstr " (superior a qualsevol autol)"
 
+msgid " - Unicable/JESS LNBs not found"
+msgstr ""
+
 msgid " Warning: the selected tuner should not use SCR Unicable type for LNBs because each tuner need a own SCR number."
 msgstr ""
 
@@ -170,6 +178,9 @@ msgstr " extensions."
 #
 msgid " packages selected."
 msgstr " paquet seleccionat"
+
+msgid " unicable LNB input of rotor"
+msgstr ""
 
 #
 msgid " updates available."
@@ -1412,6 +1423,10 @@ msgstr "-SERVEI ERROR:%d\n"
 #, fuzzy
 msgctxt "Hotkey help separator"
 msgid "/"
+msgstr "/s"
+
+#, fuzzy
+msgid "/T"
 msgstr "/s"
 
 msgid "/s"
@@ -2884,10 +2899,6 @@ msgstr "BT 709"
 #
 msgid "Back"
 msgstr "enrere"
-
-#
-msgid "Background"
-msgstr "Fons"
 
 msgid "Background color"
 msgstr "Fons color"
@@ -4425,6 +4436,10 @@ msgstr "Continuar"
 
 msgid "Continue"
 msgstr "Continuar"
+
+#, fuzzy
+msgid "Continue in background"
+msgstr "Continua la reproducció"
 
 msgid "Continue playback"
 msgstr "Continua la reproducció"
@@ -6677,6 +6692,13 @@ msgstr ""
 "FBC automàtic\n"
 "inactiu"
 
+#, python-format
+msgid "FBC socket %s"
+msgstr ""
+
+msgid "FBC virtual"
+msgstr ""
+
 #
 #, fuzzy
 msgid "FCC enabled"
@@ -7517,6 +7539,9 @@ msgstr "Amagueu els serveis de bloqueig parental"
 msgid "Hide player"
 msgstr "Amagar reproductor"
 
+msgid "Hide sub-menu"
+msgstr ""
+
 #, fuzzy
 msgid "Hide the InfoBar"
 msgstr "Mostra Infobar"
@@ -8231,6 +8256,11 @@ msgstr "Japo"
 
 msgid "Jersey"
 msgstr "Jersey"
+
+#
+#, fuzzy
+msgid "Job cancel"
+msgstr "Cancel·lar"
 
 msgid "Job overview"
 msgstr "Visió general de la feina"
@@ -13924,6 +13954,10 @@ msgstr "Mostra les icones d’estat a la llista de pel·lícules"
 
 msgid "Show status icons in movielist"
 msgstr "Mostra les icones d’estat a movielist"
+
+#, fuzzy
+msgid "Show sub-menu"
+msgstr "Mostra les columnes"
 
 msgid "Show subservice selection"
 msgstr "Mostra la selecció del subservici"
