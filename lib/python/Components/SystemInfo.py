@@ -8,8 +8,8 @@ from enigma import Misc_Options, eDVBCIInterfaces, eDVBResourceManager, eGetEnig
 from Tools.Directories import SCOPE_SKIN, fileCheck, fileExists, fileHas, fileReadLine, fileReadLines, pathExists, resolveFilename
 
 MODULE_NAME = __name__.split(".")[-1]
-ENIGMA_KERNEL_MODULE = "openvision.ko"
-PROC_PATH = "/proc/openvision"
+ENIGMA_KERNEL_MODULE = "enigma.ko"
+PROC_PATH = "/proc/enigma"
 
 SystemInfo = {}
 
@@ -304,7 +304,7 @@ SystemInfo["OScamInstalled"] = fileExists("/usr/bin/oscam") or fileExists("/usr/
 SystemInfo["OScamIsActive"] = SystemInfo["OScamInstalled"] and fileExists("/tmp/.oscam/oscam.version")
 SystemInfo["NCamInstalled"] = fileExists("/usr/bin/ncam")
 SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.ncam/ncam.version")
-SystemInfo["OpenVisionModule"] = fileCheck("/proc/openvision/distro")
+SystemInfo["OpenVisionModule"] = fileCheck("/proc/enigma/distro")
 SystemInfo["7segment"] = displaytype == "7segment" or "7seg" in displaytype
 SystemInfo["CanAC3plusTranscode"] = fileExists("/proc/stb/audio/ac3plus_choices")
 SystemInfo["CanDTSHD"] = fileExists("/proc/stb/audio/dtshd_choices")

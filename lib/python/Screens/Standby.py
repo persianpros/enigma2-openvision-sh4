@@ -23,8 +23,8 @@ from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceRefe
 inStandby = None
 infoBarInstance = None
 
-model = BoxInfo.getItem("model")
-brand = BoxInfo.getItem("brand")
+model = BoxInfo.getItem("displaymodel")
+brand = BoxInfo.getItem("displaybrand")
 
 QUIT_SHUTDOWN = 1
 QUIT_REBOOT = 2
