@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-24 14:44+0430\n"
+"POT-Creation-Date: 2021-05-28 00:24+0430\n"
 "PO-Revision-Date: 2021-03-07 03:11+0100\n"
 "Last-Translator: Kuatto\n"
 "Language-Team: Álvaro <mi casa>\n"
@@ -1860,7 +1860,7 @@ msgid "Abort favourites edit"
 msgstr "abortar edición de favoritos"
 
 msgid "About"
-msgstr "Hardware & Software"
+msgstr "Receptor"
 
 msgid "About..."
 msgstr "Acerca de..."
@@ -2755,14 +2755,14 @@ msgid "Benchmark"
 msgstr "Caracteristicas CPU DMIPS RAM de su"
 
 msgid "Benchmark Information"
-msgstr "Información cpu dmips ram"
+msgstr "Información Chipset"
 
 msgid "Benchmark for"
 msgstr "Caracteristicas CPU DMIPS RAM de su"
 
 #, fuzzy
 msgid "Benchmark information"
-msgstr "Información cpu dmips ram"
+msgstr "Información Chipset"
 
 msgid "Benin"
 msgstr "Benin"
@@ -2877,7 +2877,7 @@ msgstr "Botswana"
 msgid "Bouvet Island"
 msgstr "Isla Bouvet"
 
-msgid "Brand/Meta"
+msgid "Brand"
 msgstr ""
 
 msgid "Brazil"
@@ -2905,6 +2905,14 @@ msgstr "Llenando buffer %d%%"
 
 msgid "Buffers"
 msgstr ""
+
+#, fuzzy
+msgid "Build Brand"
+msgstr "Fecha de compilación: "
+
+#, fuzzy
+msgid "Build Model"
+msgstr "Fecha de compilación: "
 
 #, fuzzy
 msgid "Build information"
@@ -3995,7 +4003,7 @@ msgid "Configure which tuner will be preferred, when more than one tuner is avai
 msgstr "Configure qué sintonizador será preferido, cuando haya más de un sintonizador disponible. Si se establece en ‘auto’, el sistema dará prioridad al sintonizador que tenga la menor cantidad de canales/satélites."
 
 msgid "Configure your internal LAN"
-msgstr "Configura su red interna"
+msgstr "Configura su red LAN por cable"
 
 msgid "Configure your network again"
 msgstr "Configure su red de nuevo"
@@ -4004,7 +4012,7 @@ msgid "Configure your network settings and press OK to scan"
 msgstr "Configura tus ajustes de red y pulsa OK para escanear"
 
 msgid "Configure your wireless LAN again"
-msgstr "Configura su red inalámbrica otra vez"
+msgstr "Configura su red inalámbrica WLAN-WiFi"
 
 msgid "Configures which video output connector will be used."
 msgstr "Configura qué conector de salida de video se utilizará."
@@ -4331,7 +4339,7 @@ msgstr ""
 
 #, fuzzy
 msgid "DVB API version"
-msgstr "Versión el controlador DVB: "
+msgstr "Fecha de los Drivers: "
 
 msgid "DVB CI Delay"
 msgstr "Retardo del DVB CI"
@@ -5255,7 +5263,7 @@ msgstr "Mostrar información de género en evento"
 
 #, fuzzy
 msgid "Drivers version"
-msgstr "Versión el controlador DVB: "
+msgstr "Fecha de los Drivers: "
 
 msgid "Drop unconfigured satellites"
 msgstr "Soltar satélites no configurados"
@@ -6085,7 +6093,7 @@ msgstr "FEC:"
 
 #, fuzzy
 msgid "FFmpeg version"
-msgstr "FFmpeg versión: "
+msgstr "Versión FFmpeg: "
 
 msgid "FHD"
 msgstr ""
@@ -6108,7 +6116,7 @@ msgstr "FTP"
 
 #, fuzzy
 msgid "FTP connection failure"
-msgstr "Conexión LAN"
+msgstr "Conexión LAN-Cable"
 
 msgid "FTP passive mode"
 msgstr "FTP modo pasivo"
@@ -6433,7 +6441,7 @@ msgstr "Panel Frontal Display"
 
 #, fuzzy
 msgid "Front processor version"
-msgstr "Versión del procesador frontal: %s"
+msgstr "Procesador frontal: %s"
 
 msgid "Full factory reset"
 msgstr "Restablecimiento completo de fábrica"
@@ -6514,7 +6522,6 @@ msgstr "Género"
 msgid "Geolocation"
 msgstr "Geolocalización"
 
-#, fuzzy
 msgid "Geolocation Information"
 msgstr "Información Geolocalización"
 
@@ -6775,10 +6782,6 @@ msgstr "Disco Duro"
 
 msgid "Harddisk Setup"
 msgstr "Ajustes del Disco Duro"
-
-#, fuzzy
-msgid "Hardware"
-msgstr "Hardware: "
 
 #, fuzzy
 msgid "Hardware information"
@@ -7599,10 +7602,10 @@ msgid "Kyrgyzstan"
 msgstr "Kirguistán"
 
 msgid "LAN adapter"
-msgstr "Adaptador LAN"
+msgstr "Adaptador LAN-Cable"
 
 msgid "LAN connection"
-msgstr "Conexión LAN"
+msgstr "Conexión LAN-Cable"
 
 msgid "LCD Setup"
 msgstr "Ajustes Display"
@@ -7737,6 +7740,10 @@ msgstr "Letón"
 msgid "Leave DVD player?"
 msgstr "¿Salir del reproductor de DVD?"
 
+#, fuzzy
+msgid "Leave movie player"
+msgstr "salir del reproductor de películas…"
+
 msgid "Leave this set to 'yes' unless you fully understand why you are adjusting it."
 msgstr "Deje este ajuste en ‘sí’ a menos que comprenda completamente por qué lo está cambiando."
 
@@ -7840,7 +7847,8 @@ msgstr[1] "Lista de versión %d, encontrados %d canales"
 msgid "List/Fav"
 msgstr ""
 
-msgid "Listen to the radio..."
+#, fuzzy
+msgid "Listen to the radio"
 msgstr "Escuchar la radio…"
 
 msgid "Lists reloaded!"
@@ -7851,6 +7859,10 @@ msgstr "Lituania"
 
 msgid "Lithuanian"
 msgstr "Lituano"
+
+#, fuzzy
+msgid "Live TV Actions"
+msgstr "Acciones configuración de tiempo"
 
 msgid "Load"
 msgstr "Carga"
@@ -7881,7 +7893,7 @@ msgstr "En tiempo local"
 
 #, fuzzy
 msgid "Local information"
-msgstr "Información Geolocalización"
+msgstr "Información de Montajes"
 
 msgid "Local network"
 msgstr "Red local"
@@ -8449,6 +8461,10 @@ msgstr "Selección de película"
 msgid "Movie List Setup"
 msgstr "Configuración Lista Películas"
 
+#, fuzzy
+msgid "Movie Player Actions"
+msgstr "Selección de película"
+
 msgid "Movie location"
 msgstr "Ubicación de las películas"
 
@@ -8491,7 +8507,7 @@ msgstr "Multisat"
 
 #, fuzzy
 msgid "MultiBoot Information"
-msgstr "Información de Montajes"
+msgstr "Información Geolocalización"
 
 #, fuzzy
 msgid "MultiTranscoding"
@@ -9159,12 +9175,16 @@ msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Po
 msgstr "Solo seleccione ‘sí’ si está usando un multiswich que requiere una señal de comando DiSEqC Port-A. Para todas las demás configuraciones, seleccione ‘no’."
 
 #, fuzzy
+msgid "Open Info"
+msgstr "Info"
+
+#, fuzzy
 msgid "Open Vision"
 msgstr "abrir opciones lista"
 
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Información Geolocalización"
+msgstr "Información de Montajes"
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9218,10 +9238,11 @@ msgstr "Extensiones"
 
 #, fuzzy
 msgid "OpenVision Information"
-msgstr "Pantalla Información Ayuda"
+msgstr "Información Geolocalización"
 
+#, fuzzy
 msgid "OpenVision Information Actions"
-msgstr ""
+msgstr "Información Geolocalización"
 
 msgid "OpenVision is an open source project with no commercial funding."
 msgstr ""
@@ -9570,7 +9591,8 @@ msgstr "Reproducir siguiente (volver a canal previo)"
 msgid "Play previous"
 msgstr "Reproduce anterior"
 
-msgid "Play recorded movies..."
+#, fuzzy
+msgid "Play recorded movies"
 msgstr "Reproducir grabaciones…"
 
 msgid "Play with exteplayer"
@@ -10104,6 +10126,12 @@ msgstr ""
 msgid "Press yellow to set this interface as default interface."
 msgstr "Pulse amarillo para establecer esta interfaz como predeterminada."
 
+msgid "Pressing this button multiple times will increase the rate of backward scan."
+msgstr ""
+
+msgid "Pressing this button multiple times will increase the rate of forward scan."
+msgstr ""
+
 msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Anterior"
@@ -10406,6 +10434,10 @@ msgstr "Información Sintonizadores"
 #, fuzzy
 msgid "Receiver Information Actions"
 msgstr "Pantalla Información Ayuda"
+
+#, fuzzy
+msgid "Receiver name"
+msgstr "nombre evento"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11236,6 +11268,10 @@ msgstr "Búsqueda banda %s"
 msgid "Scan additional SR"
 msgstr "Búsqueda SR adicional"
 
+#, fuzzy
+msgid "Scan backwards"
+msgstr "Buscar hacia atrás"
+
 #, python-format
 msgid "Scan completed, %d channel found."
 msgid_plural "Scan completed, %d channels found."
@@ -11250,6 +11286,10 @@ msgstr "Búsqueda ficheros…"
 
 msgid "Scan for local extensions and install them."
 msgstr "Busque extensiones locales e instálelas."
+
+#, fuzzy
+msgid "Scan forwards"
+msgstr "Buscar hacia delante"
 
 msgid "Scan options"
 msgstr "Opciones de Escaneo"
@@ -11505,6 +11545,10 @@ msgstr "Seleccione Fast DiSEqC si su sistema aéreo lo admite. Si no está segur
 
 msgid "Select HDD"
 msgstr "Selecciona HDD"
+
+#, fuzzy
+msgid "Select Info"
+msgstr "Seleccionar CAId"
 
 #, fuzzy
 msgid "Select Input Device"
@@ -12197,7 +12241,7 @@ msgid "Show VCR scart on main menu"
 msgstr "Mostrar VCR scart en menú principal"
 
 msgid "Show WLAN status"
-msgstr "Mostrar status de WLAN"
+msgstr "Mostrar status de WLAN-WiFi"
 
 msgid "Show alsa-utils in plugin browser"
 msgstr "Mostrar alsa-utils en el navegador de plugins"
@@ -12217,7 +12261,7 @@ msgstr "Mostrar fondo en modo radio"
 
 #, fuzzy
 msgid "Show benchmark information"
-msgstr "Información cpu dmips ram"
+msgstr "Información Chipset"
 
 msgid "Show bluez5 in plugin browser"
 msgstr "Mostrar bluez5 en el navegador de plugins"
@@ -12515,14 +12559,16 @@ msgstr "Mostrar selección de subtítulos"
 msgid "Show system information"
 msgstr "Mostrar información de género en evento"
 
-msgid "Show the radio player..."
+#, fuzzy
+msgid "Show the TV player"
+msgstr "Mostrar el reproductor de TV…"
+
+#, fuzzy
+msgid "Show the radio player"
 msgstr "Mostrar el reproductor de radio…"
 
 msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
 msgstr "Muestra la información del servicio en dos líneas en la pantalla de selección de canal. Puede elegir entre la descripción del evento actual debajo del nombre del canal, o la descripción del evento actual junto al nombre del canal y la descripción del evento siguiente en la segunda línea."
-
-msgid "Show the tv player..."
-msgstr "Mostrar el reproductor de TV…"
 
 #, fuzzy
 msgid "Show this plugin in plugin menu"
@@ -12536,7 +12582,7 @@ msgstr "Mostrar tiempo restante/transcurrido"
 
 #, fuzzy
 msgid "Show translation information"
-msgstr "Información Geolocalización"
+msgstr "Mostrar información de género en evento"
 
 msgid "Show transponder info"
 msgstr "Mostrar información del transpondedor"
@@ -12885,6 +12931,10 @@ msgstr "Sonido"
 
 msgid "Sound carrier"
 msgstr "Portadora de sonido"
+
+#, fuzzy
+msgid "Source Brand"
+msgstr "Fuentes"
 
 msgid "Source request"
 msgstr "Solicitud de origen"
@@ -14391,7 +14441,8 @@ msgstr "Mostrar/ocultar"
 msgid "Toggle subtitles show/hide"
 msgstr "Mostrar/ocultar"
 
-msgid "Toggle the tv and the radio player..."
+#, fuzzy
+msgid "Toggle the TV and the radio player"
 msgstr "Alterna la televisión y el reproductor de radio…"
 
 #, fuzzy
@@ -15173,8 +15224,9 @@ msgstr "Configuración de video"
 msgid "Video sync mode"
 msgstr "Modo de video"
 
+#, fuzzy
 msgid "Video wizard"
-msgstr "Asistente de video"
+msgstr "Asistente de Video"
 
 #, python-format
 msgid "Video: %s fps"
@@ -15308,11 +15360,11 @@ msgid "WEP"
 msgstr "WEP"
 
 msgid "WLAN connection"
-msgstr "Conexión WLAN"
+msgstr "Conexión WLAN-WiFi"
 
 #, fuzzy
 msgid "WLAN driver:"
-msgstr "Adaptador LAN"
+msgstr "Adaptador LAN-Cable"
 
 msgid "WMA Pro"
 msgstr ""
@@ -15407,7 +15459,8 @@ msgstr ""
 msgid "Watch movies..."
 msgstr "Ver películas…"
 
-msgid "Watch recordings..."
+#, fuzzy
+msgid "Watch recordings"
 msgstr "Ver grabaciones…"
 
 msgid "Web interface"
@@ -15489,6 +15542,14 @@ msgstr ""
 
 msgid "What type of service scan do you want?"
 msgstr "¿Qué tipo de búsqueda de canal quieres?"
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel down"
+msgstr "cuando esté activo PiPzap cambia canal abajo…"
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel up"
+msgstr "cuando esté activo PiPzap cambia canal arriba…"
 
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Cuando está habilitado, enigma2 cargará bouquets de usuarios no vinculados. Esto significa que los bouquets de usuario que están disponibles, pero que no están incluidos en los archivos bouquets.tv o bouquets.radio, aún se cargarán. Esto le permite, por ejemplo, mantener su propio bouquet de usuario mientras se actualizan las configuraciones instaladas"
@@ -16853,9 +16914,6 @@ msgstr "saltar al capítulo por número"
 msgid "languages"
 msgstr "idiomas"
 
-msgid "leave movie player..."
-msgstr "salir del reproductor de películas…"
-
 msgid "left"
 msgstr "izquierda"
 
@@ -17076,9 +17134,6 @@ msgstr "solo desde el modo de reposo profundo"
 msgid "only from standby"
 msgstr "solo desde el modo de reposo"
 
-msgid "open Info..."
-msgstr ""
-
 msgid "open nameserver configuration"
 msgstr "abrir la configuración del servidor de nombres"
 
@@ -17230,10 +17285,6 @@ msgstr "seleccionar"
 
 msgid "select CAId's"
 msgstr "seleccionar CAIds"
-
-#, fuzzy
-msgid "select Info..."
-msgstr "Selección del temporizador…"
 
 msgid "select menu entry"
 msgstr "seleccionar entrada de menú"
@@ -17483,9 +17534,6 @@ msgstr "puerto uShare"
 
 msgid "uShare setup"
 msgstr "configurar uShare"
-
-msgid "unavailable"
-msgstr "no disponible"
 
 msgid "unconfirmed"
 msgstr "sin confirmar"

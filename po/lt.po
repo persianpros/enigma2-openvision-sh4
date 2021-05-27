@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-24 14:44+0430\n"
+"POT-Creation-Date: 2021-05-28 00:24+0430\n"
 "PO-Revision-Date: 2021-02-18 23:42+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -2896,7 +2896,7 @@ msgstr "Botsvana"
 msgid "Bouvet Island"
 msgstr "Buveto sala"
 
-msgid "Brand/Meta"
+msgid "Brand"
 msgstr ""
 
 msgid "Brazil"
@@ -2925,6 +2925,14 @@ msgstr "Buferizacija %d%%"
 
 msgid "Buffers"
 msgstr ""
+
+#, fuzzy
+msgid "Build Brand"
+msgstr "Informacija"
+
+#, fuzzy
+msgid "Build Model"
+msgstr "Modelis"
 
 #, fuzzy
 msgid "Build information"
@@ -6839,10 +6847,6 @@ msgid "Harddisk Setup"
 msgstr "HDD valdymas"
 
 #, fuzzy
-msgid "Hardware"
-msgstr "Techninė įranga: "
-
-#, fuzzy
 msgid "Hardware information"
 msgstr "Programinės įrangos valdymo informacija"
 
@@ -7812,6 +7816,10 @@ msgstr "Latvių"
 msgid "Leave DVD player?"
 msgstr "Užverti DVD grotuvą?"
 
+#, fuzzy
+msgid "Leave movie player"
+msgstr "išjungti filmų grotuvą..."
+
 msgid "Leave this set to 'yes' unless you fully understand why you are adjusting it."
 msgstr "Palikite šį parametrą \"taip\", nebent jūs visiškai suprantate, kodėl jį koreguojate."
 
@@ -7914,7 +7922,8 @@ msgstr[2] "Sąrašo versija %d, rasta %d kanalų"
 msgid "List/Fav"
 msgstr ""
 
-msgid "Listen to the radio..."
+#, fuzzy
+msgid "Listen to the radio"
 msgstr "Klausytis radijo..."
 
 msgid "Lists reloaded!"
@@ -7925,6 +7934,10 @@ msgstr "Lietuva"
 
 msgid "Lithuanian"
 msgstr "Lietuvių"
+
+#, fuzzy
+msgid "Live TV Actions"
+msgstr "Laikmačio pasirinkimas"
 
 msgid "Load"
 msgstr "Įkelti"
@@ -8532,6 +8545,10 @@ msgstr "Filmo pasirinkimas"
 #, fuzzy
 msgid "Movie List Setup"
 msgstr "Filmų sąrašo meniu"
+
+#, fuzzy
+msgid "Movie Player Actions"
+msgstr "Filmo pasirinkimas"
 
 msgid "Movie location"
 msgstr "Filmo vieta"
@@ -9250,6 +9267,10 @@ msgstr "Tik paleidimo metu"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Pasirinkite tik \"taip\", jei naudojate \"multiswich\", kurio komandinis signalas \"DiSEqC Port-A\" reikalingas. Visoms kitoms sąrankoms pasirinkite \"ne\"."
 
+#, fuzzy
+msgid "Open Info"
+msgstr "Informacija"
+
 msgid "Open Vision"
 msgstr ""
 
@@ -9664,7 +9685,8 @@ msgstr "Paleisti sekantį (grįžti į buvusį kanalą)"
 msgid "Play previous"
 msgstr "Paleisti ankstesnį"
 
-msgid "Play recorded movies..."
+#, fuzzy
+msgid "Play recorded movies"
 msgstr "Žiūrėti įrašytus filmus..."
 
 msgid "Play with exteplayer"
@@ -10210,6 +10232,12 @@ msgstr ""
 msgid "Press yellow to set this interface as default interface."
 msgstr "Spauskite geltoną, kad nustatytumėte šią sąsają kaip numatytąją sąsają."
 
+msgid "Pressing this button multiple times will increase the rate of backward scan."
+msgstr ""
+
+msgid "Pressing this button multiple times will increase the rate of forward scan."
+msgstr ""
+
 msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Ankstesnis"
@@ -10512,6 +10540,10 @@ msgstr "Informacija"
 
 msgid "Receiver Information Actions"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver name"
+msgstr "Įrašymo valdymas"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11361,6 +11393,10 @@ msgstr "Ieškoti %s diapazone"
 msgid "Scan additional SR"
 msgstr "Papildomų SR paieška"
 
+#, fuzzy
+msgid "Scan backwards"
+msgstr "Persukti atgal"
+
 #, python-format
 msgid "Scan completed, %d channel found."
 msgid_plural "Scan completed, %d channels found."
@@ -11376,6 +11412,10 @@ msgstr "Failų paieška..."
 
 msgid "Scan for local extensions and install them."
 msgstr "Skenuokite vietinius paketus ir įdiekite juos."
+
+#, fuzzy
+msgid "Scan forwards"
+msgstr "Persukti pirmyn"
 
 msgid "Scan options"
 msgstr "Paieškos parinktys"
@@ -11634,6 +11674,10 @@ msgstr "Pasirinkite greitą DiSEqC, jei jūsų sistema palaiko tai. Jei jūs ne�
 
 msgid "Select HDD"
 msgstr "Pasirinkite HDD"
+
+#, fuzzy
+msgid "Select Info"
+msgstr "Laikmačio pasirinkimas..."
 
 #, fuzzy
 msgid "Select Input Device"
@@ -12683,14 +12727,16 @@ msgstr "Rodyti subtitrų pasirinkimą"
 msgid "Show system information"
 msgstr "Programinės įrangos valdymo informacija"
 
-msgid "Show the radio player..."
+#, fuzzy
+msgid "Show the TV player"
+msgstr "Rodyti TV grotuvą..."
+
+#, fuzzy
+msgid "Show the radio player"
 msgstr "Rodyti radijo grotuvą..."
 
 msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
 msgstr "Rodyti aptarnavimo informaciją dviejose kanalo pasirinkimo ekrano eilutėse. Galite pasirinkti esamą įvykio aprašą po kanalo pavadinimu arba esamą įvykio aprašą šalia kanalo pavadinimo ir kito įvykio aprašą antroje eilutėje."
-
-msgid "Show the tv player..."
-msgstr "Rodyti TV grotuvą..."
 
 #, fuzzy
 msgid "Show this plugin in plugin menu"
@@ -13063,6 +13109,10 @@ msgstr "Garsas"
 
 msgid "Sound carrier"
 msgstr "Garso nešėjas"
+
+#, fuzzy
+msgid "Source Brand"
+msgstr "Užklausos šaltinis"
 
 msgid "Source request"
 msgstr "Užklausos šaltinis"
@@ -14593,7 +14643,8 @@ msgstr "Perjungti rodyti/slėpti"
 msgid "Toggle subtitles show/hide"
 msgstr "Perjungti subtitrus rodyti / slėpti"
 
-msgid "Toggle the tv and the radio player..."
+#, fuzzy
+msgid "Toggle the TV and the radio player"
 msgstr "Perjungti tv ir radijo grotuvus..."
 
 msgid "Toggle videomode"
@@ -15613,7 +15664,8 @@ msgstr ""
 msgid "Watch movies..."
 msgstr "Žiūrėti filmus..."
 
-msgid "Watch recordings..."
+#, fuzzy
+msgid "Watch recordings"
 msgstr "Žiūrėti įrašus..."
 
 #, fuzzy
@@ -15698,6 +15750,14 @@ msgstr ""
 
 msgid "What type of service scan do you want?"
 msgstr "Kokio tipo kanalų nuskaitymo norite?"
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel down"
+msgstr "kai įjungtas PiP perjungimas, perjungia į žemesnį kanalą..."
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel up"
+msgstr "kai įjungtas PiP perjungimas, perjungia į aukštesnį kanalą..."
 
 #, fuzzy
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
@@ -17075,9 +17135,6 @@ msgstr "peršokti į skyrių pagal numerį"
 msgid "languages"
 msgstr "kalbos"
 
-msgid "leave movie player..."
-msgstr "išjungti filmų grotuvą..."
-
 msgid "left"
 msgstr "kairė"
 
@@ -17300,9 +17357,6 @@ msgstr "tik iš išjungtos būsenos"
 msgid "only from standby"
 msgstr "tik iš budėjimo būsenos"
 
-msgid "open Info..."
-msgstr ""
-
 msgid "open nameserver configuration"
 msgstr "atverti DNS serverio konfigūraciją"
 
@@ -17454,10 +17508,6 @@ msgstr "Atšaukti pasirinkimą"
 
 msgid "select CAId's"
 msgstr "pasirinkite CAId"
-
-#, fuzzy
-msgid "select Info..."
-msgstr "Laikmačio pasirinkimas..."
 
 msgid "select menu entry"
 msgstr "pasirinkite meniu įrašą"
@@ -17710,9 +17760,6 @@ msgstr "vandens sportas"
 #, fuzzy
 msgid "uShare setup"
 msgstr "Vedlio nustatymas"
-
-msgid "unavailable"
-msgstr "nepasiekiamas"
 
 msgid "unconfirmed"
 msgstr "nepatvirtinta"

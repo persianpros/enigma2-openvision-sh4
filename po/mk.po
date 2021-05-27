@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-24 14:44+0430\n"
+"POT-Creation-Date: 2021-05-28 00:24+0430\n"
 "PO-Revision-Date: 2021-02-19 14:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: Muzoss-VELEBRDO\n"
@@ -2760,7 +2760,7 @@ msgstr "Боцвана"
 msgid "Bouvet Island"
 msgstr "Остров Бувет"
 
-msgid "Brand/Meta"
+msgid "Brand"
 msgstr ""
 
 msgid "Brazil"
@@ -2789,6 +2789,14 @@ msgstr "Баферирање %d%%"
 
 msgid "Buffers"
 msgstr ""
+
+#, fuzzy
+msgid "Build Brand"
+msgstr "Информации"
+
+#, fuzzy
+msgid "Build Model"
+msgstr "Модел"
 
 #, fuzzy
 msgid "Build information"
@@ -6706,10 +6714,6 @@ msgid "Harddisk Setup"
 msgstr "Поставки на хард диск"
 
 #, fuzzy
-msgid "Hardware"
-msgstr "Хардвер: "
-
-#, fuzzy
 msgid "Hardware information"
 msgstr "Информации за управувач на софтвер"
 
@@ -7679,6 +7683,10 @@ msgstr "Летонски"
 msgid "Leave DVD player?"
 msgstr "Да се остави ДВД плеер?"
 
+#, fuzzy
+msgid "Leave movie player"
+msgstr "остави го филмскиот плеер ..."
+
 msgid "Leave this set to 'yes' unless you fully understand why you are adjusting it."
 msgstr "Оставете ги овие поставки на „ДА“ освен ако не разберете целосно зошто го прилагодувате."
 
@@ -7780,7 +7788,8 @@ msgstr[1] "Пронајдена е верзија на листа% d, прона
 msgid "List/Fav"
 msgstr ""
 
-msgid "Listen to the radio..."
+#, fuzzy
+msgid "Listen to the radio"
 msgstr "Слушате радио..."
 
 msgid "Lists reloaded!"
@@ -7791,6 +7800,10 @@ msgstr "Литванија"
 
 msgid "Lithuanian"
 msgstr "Литвански"
+
+#, fuzzy
+msgid "Live TV Actions"
+msgstr "Избор на тајмер"
 
 msgid "Load"
 msgstr "Вчитува"
@@ -8398,6 +8411,10 @@ msgstr "Избор на филм"
 #, fuzzy
 msgid "Movie List Setup"
 msgstr "Мени за листа на филмови"
+
+#, fuzzy
+msgid "Movie Player Actions"
+msgstr "Избор на филм"
 
 msgid "Movie location"
 msgstr "Локација на филмот"
@@ -9116,6 +9133,10 @@ msgstr "На почеток"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Изберете „Да“ само ако користите multiswich  за кој е потребен команден сигнал DiSEqC Port-A. За сите други поставувања, изберете \"Не\"."
 
+#, fuzzy
+msgid "Open Info"
+msgstr "Инфо"
+
 msgid "Open Vision"
 msgstr ""
 
@@ -9530,7 +9551,8 @@ msgstr "Пушти следно (враќање на претходниот ка
 msgid "Play previous"
 msgstr "Пушти претходно"
 
-msgid "Play recorded movies..."
+#, fuzzy
+msgid "Play recorded movies"
 msgstr "Репродуцирајте снимени филмови ..."
 
 msgid "Play with exteplayer"
@@ -10076,6 +10098,12 @@ msgstr ""
 msgid "Press yellow to set this interface as default interface."
 msgstr "Притиснете жолто за да го поставите овој интерфејс како стандарден."
 
+msgid "Pressing this button multiple times will increase the rate of backward scan."
+msgstr ""
+
+msgid "Pressing this button multiple times will increase the rate of forward scan."
+msgstr ""
+
 msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Назад"
@@ -10378,6 +10406,10 @@ msgstr "Информации"
 
 msgid "Receiver Information Actions"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver name"
+msgstr "Поставки за снимање"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11227,6 +11259,10 @@ msgstr "Пребарување %s лента"
 msgid "Scan additional SR"
 msgstr "Пребарај други СР"
 
+#, fuzzy
+msgid "Scan backwards"
+msgstr "Пребарај назад"
+
 #, python-format
 msgid "Scan completed, %d channel found."
 msgid_plural "Scan completed, %d channels found."
@@ -11241,6 +11277,10 @@ msgstr "Пребарај датотеки ..."
 
 msgid "Scan for local extensions and install them."
 msgstr "Пребарување на локални екстензии и инсталација."
+
+#, fuzzy
+msgid "Scan forwards"
+msgstr "Пребарај нанапред"
 
 msgid "Scan options"
 msgstr "Опции за пребарување"
@@ -11497,6 +11537,10 @@ msgstr "Изберете Fast DiSEqC ако системот за антена �
 
 msgid "Select HDD"
 msgstr "Изберете HDD"
+
+#, fuzzy
+msgid "Select Info"
+msgstr "Избор на тајмер ..."
 
 #, fuzzy
 msgid "Select Input Device"
@@ -12546,14 +12590,16 @@ msgstr "Прикажи избор на превод"
 msgid "Show system information"
 msgstr "Информации за управувач на софтвер"
 
-msgid "Show the radio player..."
+#, fuzzy
+msgid "Show the TV player"
+msgstr "Покажи го ТВ плеерот ..."
+
+#, fuzzy
+msgid "Show the radio player"
 msgstr "Покажи го радио плеерот ..."
 
 msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
 msgstr "Прикажи го списокот на канали во два реда. Можете да изберете дали тековната програма се прикажува веднаш до името на станицата и следната програма под името на станицата или тековната програма се прикажува под името на станицата."
-
-msgid "Show the tv player..."
-msgstr "Покажи го ТВ плеерот ..."
 
 #, fuzzy
 msgid "Show this plugin in plugin menu"
@@ -12924,6 +12970,10 @@ msgstr "Звук"
 
 msgid "Sound carrier"
 msgstr "Носач на звук"
+
+#, fuzzy
+msgid "Source Brand"
+msgstr "Изворно барање"
 
 msgid "Source request"
 msgstr "Изворно барање"
@@ -14444,7 +14494,8 @@ msgstr "Вклучи / прикажи / скриј"
 msgid "Toggle subtitles show/hide"
 msgstr "Вклучи ги преводите прикажи / скриј"
 
-msgid "Toggle the tv and the radio player..."
+#, fuzzy
+msgid "Toggle the TV and the radio player"
 msgstr "Вклучете ги ТВ и радио плеерот ..."
 
 msgid "Toggle videomode"
@@ -15463,7 +15514,8 @@ msgstr ""
 msgid "Watch movies..."
 msgstr "Гледајте филмови ..."
 
-msgid "Watch recordings..."
+#, fuzzy
+msgid "Watch recordings"
 msgstr "Гледајте снимки ..."
 
 #, fuzzy
@@ -15548,6 +15600,14 @@ msgstr ""
 
 msgid "What type of service scan do you want?"
 msgstr "Каков вид на пребарување на канали сакате да направите?"
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel down"
+msgstr "кога PiPzap овозможи зап-канал надолу ..."
+
+#, fuzzy
+msgid "When PiPzap enabled zap channel up"
+msgstr "кога PiPzap овозможи зап канал нагоре ..."
 
 #, fuzzy
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
@@ -16922,9 +16982,6 @@ msgstr "скок до поглавје по број"
 msgid "languages"
 msgstr "јазици"
 
-msgid "leave movie player..."
-msgstr "остави го филмскиот плеер ..."
-
 msgid "left"
 msgstr "одлево"
 
@@ -17147,9 +17204,6 @@ msgstr "само од дееп стендбај"
 msgid "only from standby"
 msgstr "само од стендбај"
 
-msgid "open Info..."
-msgstr ""
-
 msgid "open nameserver configuration"
 msgstr "отвори ги поставките за DNS"
 
@@ -17301,10 +17355,6 @@ msgstr "Деселектирај"
 
 msgid "select CAId's"
 msgstr "изберете CAId's"
-
-#, fuzzy
-msgid "select Info..."
-msgstr "Избор на тајмер ..."
 
 msgid "select menu entry"
 msgstr "изберете запис во менито"
@@ -17557,9 +17607,6 @@ msgstr "спортови на вода"
 #, fuzzy
 msgid "uShare setup"
 msgstr "Поставки на асистентот"
-
-msgid "unavailable"
-msgstr "недостапно"
 
 msgid "unconfirmed"
 msgstr "непотврдено"
