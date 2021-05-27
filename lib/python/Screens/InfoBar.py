@@ -53,13 +53,12 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
-		self["actions"] = HelpableActionMap(self, ["InfobarActions"],
-			{
-				"showMovies": (self.showMovies, _("Play recorded movies...")),
-				"showRadio": (self.showRadio, _("Show the radio player...")),
-				"showTv": (self.showTv, _("Show the tv player...")),
-				"toggleTvRadio": (self.toggleTvRadio, _("Toggle the tv and the radio player...")),
-			}, prio=2)
+		self["actions"] = HelpableActionMap(self, ["InfobarActions"], {
+			"showMovies": (self.showMovies, _("Play recorded movies")),
+			"showRadio": (self.showRadioButton, _("Show the radio player")),
+			"showTv": (self.showTvButton, _("Show the TV player")),
+			"toggleTvRadio": (self.toggleTvRadio, _("Toggle the TV and the radio player"))
+		}, prio=2, description=_("Live TV Actions"))
 
 		self.radioTV = 0
 		self.allowPiP = True
@@ -75,8 +74,8 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 				InfoBarPlugins, InfoBarServiceErrorPopupSupport, InfoBarHotkey:
 			x.__init__(self)
 
-		self.helpList.append((self["actions"], "InfobarActions", [("showMovies", _("Watch recordings..."))]))
-		self.helpList.append((self["actions"], "InfobarActions", [("showRadio", _("Listen to the radio..."))]))
+		self.helpList.append((self["actions"], "InfobarActions", [("showMovies", _("Watch recordings"))]))
+		self.helpList.append((self["actions"], "InfobarActions", [("showRadio", _("Listen to the radio"))]))
 
 		self.__event_tracker = ServiceEventTracker(screen=self, eventmap={
 				enigma.iPlayableService.evUpdatedEventInfo: self.__eventInfoChanged
@@ -190,21 +189,19 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 	def __init__(self, session, service, slist=None, lastservice=None, infobar=None):
 		Screen.__init__(self, session)
 
-		self["actions"] = HelpableActionMap(self, ["MoviePlayerActions"],
-			{
-				"InfoButtonPressed": (self.openEventView, _("open Info...")),
-				"InfoButtonPressedLong": (self.showEventInfoPlugins, _("select Info...")),
-				"leavePlayer": (self.leavePlayer, _("leave movie player...")),
-				"leavePlayerOnExit": (self.leavePlayerOnExit, _("leave movie player...")),
-				"channelUp": (self.channelUp, _("when PiPzap enabled zap channel up...")),
-				"channelDown": (self.channelDown, _("when PiPzap enabled zap channel down...")),
-			})
+		self["actions"] = HelpableActionMap(self, ["MoviePlayerActions"], {
+			"InfoButtonPressed": (self.openEventView, _("Open Info")),
+			"InfoButtonPressedLong": (self.showEventInfoPlugins, _("Select Info")),
+			"leavePlayer": (self.leavePlayer, _("Leave movie player")),
+			"leavePlayerOnExit": (self.leavePlayerOnExit, _("Leave movie player")),
+			"channelUp": (self.channelUp, _("When PiPzap enabled zap channel up")),
+			"channelDown": (self.channelDown, _("When PiPzap enabled zap channel down"))
+		}, prio=0, description=_("Movie Player Actions"))
 
-		self["DirectionActions"] = HelpableActionMap(self, "DirectionActions",
-			{
-				"left": self.left,
-				"right": self.right
-			}, prio=-2)
+		self["DirectionActions"] = HelpableActionMap(self, "DirectionActions", {
+			"left": (self.left, (_("Scan backwards"), _("Pressing this button multiple times will increase the rate of backward scan."))),
+			"right": (self.right, (_("Scan forwards"), _("Pressing this button multiple times will increase the rate of forward scan.")))
+		}, prio=-2, description=_("Movie Player Actions"))
 
 		self.allowPiP = True
 
