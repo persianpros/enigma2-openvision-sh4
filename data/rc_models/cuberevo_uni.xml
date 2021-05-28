@@ -1,58 +1,58 @@
 <rcs>
-	<!-- AB IPbox / CubeRevo universal-->
-	<rc id="2">
-		<button name="POWERY"      pos="41,38" />	<!-- KEY_POWER-->
-		<button name="MUTE"        pos="97,38" />	<!-- KEY_MUTE-->
-		<button name="TVRADIO"     pos="66,61" />	<!-- KEY_TV2-->
-		<button name="WWW"         pos="99,61" />	<!-- KEY_WWW-->
-		<button name="PIP"         pos="21,84" />	<!-- KEY_SCREEN-->
-		<button name="SWAP"        pos="53,84" />	<!-- KEY_???-->
-		<button name="PIP_SEL"     pos="84,84" />	<!-- KEY_???-->
-		<button name="SUBCH"       pos="112,84" />	<!-- KEY_???-->
-		<button name="CHANNELUP"   pos="34,111" />	<!-- KEY_CHANNELUP-->
-		<button name="RECALL"      pos="68,111" />	<!-- KEY_BACK-->
-		<button name="VOLUMEUP"    pos="102,111" />	<!-- KEY_VOLUMEUP-->
-		<button name="CHANNELDOWN" pos="34,135" />	<!-- KEY_CHANNELDOWN-->
-		<button name="INFO"        pos="68,135" />	<!-- KEY_INFO -->
-		<button name="VOLUMEDOWN"  pos="102,135" />	<!-- KEY_VOLUMEDOWN-->
-		<button name="FAV"         pos="21,162" />	<!-- KEY_FAVORITES-->
-		<button name="CHECK"       pos="53,162" />	<!-- KEY_???-->
-		<button name="ARCHIVE"     pos="84,162" />	<!-- KEY_FILE-->
-		<button name="EPG"         pos="112,162" />	<!-- KEY_EPG-->
-		<button name="UP"          pos="68,188" />	<!-- KEY_UP-->
-		<button name="MENU"        pos="23,211" />	<!-- KEY_MENU-->
-		<button name="LEFT"        pos="45,211" />	<!-- KEY_LEFT-->
-		<button name="OK"          pos="68,211" />	<!-- KEY_OK-->
-		<button name="RIGHT"       pos="91,211" />	<!-- KEY_RIGHT-->
-		<button name="EXIT"        pos="113,211" />	<!-- KEY_EXIT-->
-		<button name="DOWN"        pos="68,233" />	<!-- KEY_DOWN-->
-		<button name="RED"         pos="26,262" />	<!-- KEY_RED-->
-		<button name="GREEN"       pos="53,262" />	<!-- KEY_GREEN-->
-		<button name="YELLOW"      pos="81,262" />	<!-- KEY_YELLOW-->
-		<button name="BLUE"        pos="110,262" />	<!-- KEY_BLUE-->
-		<button name="1"           pos="35,284" />	<!-- KEY_1-->
-		<button name="2"           pos="69,284" />	<!-- KEY_2-->
-		<button name="3"           pos="103,284" />	<!-- KEY_3-->
-		<button name="4"           pos="35,299" />	<!-- KEY_4-->
-		<button name="5"           pos="69,299" />	<!-- KEY_5-->
-		<button name="6"           pos="103,299" />	<!-- KEY_6-->
-		<button name="7"           pos="35,317" />	<!-- KEY_7-->
-		<button name="8"           pos="69,317" />	<!-- KEY_8-->
-		<button name="9"           pos="103,317" />	<!-- KEY_9-->
-		<button name="MUSIC"       pos="35,333" />	<!-- KEY_???-->
-		<button name="0"           pos="69,330" />	<!-- KEY_0-->
-		<button name="PICTURE"     pos="103,330" />	<!-- KEY_???-->
-		<button name="RECORD"      pos="29,358" />	<!-- KEY_RECORD-->
-		<button name="REWIND"      pos="55,358" />	<!-- KEY_REWIND-->
-		<button name="PLAY"        pos="80,358" />	<!-- KEY_PLAY-->
-		<button name="FASTFORWARD" pos="104,358" />	<!-- KEY_FASTFORWARD-->
-		<button name="AGAIN"       pos="29,375" />	<!-- KEY_AGAIN-->
-		<button name="SLOW"        pos="55,375" />	<!-- KEY_SLOW-->
-		<button name="STOP"        pos="80,375" />	<!-- KEY_STOP-->
-		<button name="PAUSE"       pos="104,375" />	<!-- KEY_PAUSE-->
-		<button name="MULTIFEED"   pos="29,393" />	<!-- KEY_???-->
-		<button name="SUBTITLE"    pos="55,393" />	<!-- KEY_SUBTITLE-->
-		<button name="TEXT"        pos="80,393" />	<!-- KEY_TEXT-->
-		<button name="AUDIO"       pos="104,393" />	<!-- KEY_AUDIO-->
+	<!-- AB IPbox / CubeRevo universal -->
+	<rc image="/images/remotes/cuberevo_uni.png">
+		<button id="KEY_POWER" label="POWER" pos="41,43" />
+		<button id="KEY_MUTE" label="MUTE" pos="97,43" />
+		<button id="KEY_TV2" label="TV/RADIO" pos="55,63" />
+		<button id="KEY_WWW" label="WWW" pos="99,63" />
+		<button id="KEY_SCREEN" label="PIP" pos="25,87" />
+		<button id="KEY_F1" label="MOSAIC" pos="55,87" />
+		<button id="KEY_OPTION" label="PIP_SWAP" pos="84,87" />
+		<button id="KEY_F3" label="SUBCH" pos="112,87" />
+		<button id="KEY_CHANNELUP" label="CHANNELUP" pos="44,116" />
+		<button id="KEY_BACK" label="RECALL" pos="70,116" />
+		<button id="KEY_VOLUMEUP" label="VOLUMEUP" pos="102,116" />
+		<button id="KEY_CHANNELDOWN" label="CHANNELDOWN" pos="44,140" />
+		<button id="KEY_INFO" label="INFO" pos="70,140" />
+		<button id="KEY_VOLUMEDOWN" label="VOLUMEDOWN" pos="102,140" />
+		<button id="KEY_FAVORITES" label="FAV" pos="25,168" />
+		<button id="KEY_HELP" label="MARK" pos="53,168" />
+		<button id="KEY_MEDIA" label="MAIL" pos="84,168" />
+		<button id="KEY_EPG" label="EPG" pos="112,168" />
+		<button id="KEY_UP" label="UP" pos="70,193" />
+		<button id="KEY_MENU" label="MENU" pos="25,216" />
+		<button id="KEY_LEFT" label="LEFT" pos="47,216" />
+		<button id="KEY_OK" label="OK" pos="70,216" />
+		<button id="KEY_RIGHT" label="RIGHT" pos="91,216" />
+		<button id="KEY_EXIT" label="EXIT" pos="113,216" />
+		<button id="KEY_DOWN" label="DOWN" pos="70,237" />
+		<button id="KEY_RED" label="RED" pos="28,265" />
+		<button id="KEY_GREEN" label="GREEN" pos="55,265" />
+		<button id="KEY_YELLOW" label="YELLOW" pos="82,265" />
+		<button id="KEY_BLUE" label="BLUE" pos="110,265" />
+		<button id="KEY_1" label="1" pos="35,286" />
+		<button id="KEY_2" label="2" pos="70,286" />
+		<button id="KEY_3" label="3" pos="105,286" />
+		<button id="KEY_4" label="4" pos="35,303" />
+		<button id="KEY_5" label="5" pos="70,303" />
+		<button id="KEY_6" label="6" pos="105,303" />
+		<button id="KEY_7" label="7" pos="35,319" />
+		<button id="KEY_8" label="8" pos="70,319" />
+		<button id="KEY_9" label="9" pos="105,319" />
+		<button id="KEY_F5" label="MUSIC" pos="35,336" />
+		<button id="KEY_0" label="0" pos="70,336" />
+		<button id="KEY_MEDIA" label="PHOTO" pos="105,336" />
+		<button id="KEY_RECORD" label="RECORD" pos="32,362" />
+		<button id="KEY_REWIND" label="REWIND" pos="57,362" />
+		<button id="KEY_PLAY" label="PLAY" pos="81,362" />
+		<button id="KEY_FASTFORWARD" label="FASTFORWARD" pos="105,362" />
+		<button id="KEY_AGAIN" label="AGAIN" pos="32,378" />
+		<button id="KEY_SLOW" label="SLOW" pos="57,378" />
+		<button id="KEY_STOP" label="STOP" pos="81,378" />
+		<button id="KEY_PAUSE" label="PAUSE" pos="105,378" />
+		<button id="KEY_F8" label="F8" pos="32,395" />
+		<button id="KEY_SUBTITLE" label="SUBTITLE" pos="57,395" />
+		<button id="KEY_TEXT" label="TEXT" pos="81,395" />
+		<button id="KEY_AUDIO" label="AUDIO" pos="105,395" />
 	</rc>
 </rcs>

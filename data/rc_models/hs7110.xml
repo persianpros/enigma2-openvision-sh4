@@ -1,57 +1,57 @@
 <rcs>
-	<!-- Fortis HS7110//HS7119-->
-	<rc id="2">
-		<button name="MUTE"        pos="91,29" />	<!-- KEY_MUTE-->
-		<button name="POWER"       pos="33,29" />	<!-- KEY_POWER-->
-		<!--button name="V.FORMAT" pos="63,44" /-->	<!-- KEY_ZOOM-->
-		<button name="RESOLUTION"  pos="89,52" />	<!-- KEY_SWITCHVIDEOMODE-->
-		<button name="1"           pos="32,53" />	<!-- KEY_1-->
-		<button name="2"           pos="61,53" />	<!-- KEY_2-->
-		<button name="3"           pos="89,53" />	<!-- KEY_3-->
-		<button name="4"           pos="31,76" />	<!-- KEY_4-->
-		<button name="5"           pos="61,76" />	<!-- KEY_5-->
-		<button name="6"           pos="91,76" />	<!-- KEY_6-->
-		<button name="7"           pos="30,98" />	<!-- KEY_7-->
-		<button name="8"           pos="61,98" />	<!-- KEY_8-->
-		<button name="9"           pos="92,98" />	<!-- KEY_9-->
-		<button name="INFO"        pos="99,376" />	<!-- KEY_HELP THIS IS WRONG SHOULD BE KEY_INFO -->
-		<button name="0"           pos="61,120" />	<!-- KEY_0-->
-		<button name="RECALL"      pos="97,236" />	<!-- KEY_BACK-->
-		<button name="VOLUMEUP"    pos="26,261" />	<!-- KEY_VOLUMEUP-->
-		<button name="MENU"        pos="27,208" />	<!-- KEY_MENU-->
-		<button name="CHANNELUP"   pos="98,261" />	<!-- KEY_CHANNELUP-->
-		<button name="VOLUMEDOWN"  pos="28,285" />	<!-- KEY_VOLUMEDOWN-->
-		<button name="EXIT"        pos="97,208" />	<!-- KEY_EXIT-->
-		<button name="CHANNELDOWN" pos="98,285" />	<!-- KEY_CHANNELDOWN-->
-		<button name="UP"          pos="62,141" />	<!-- KEY_UP-->
-		<button name="LEFT"        pos="36,168" />	<!-- KEY_LEFT-->
-		<button name="OK"          pos="62,168" />	<!-- KEY_OK-->
-		<button name="RIGHT"       pos="88,168" />	<!-- KEY_RIGHT-->
-		<button name="DOWN"        pos="62,194" />	<!-- KEY_DOWN-->
-		<button name="PAGEUP"      pos="28,376" />	<!-- KEY_PAGEUP-->
-		<button name="EPG"         pos="63,236" />	<!-- KEY_EPG-->
-		<button name="PAGEDOWN"    pos="51,376" />	<!-- KEY_PAGEDOWN-->
-		<button name="REWIND"      pos="29,310" />	<!-- KEY_REWIND-->
-		<button name="PLAY"        pos="63,259" />	<!-- KEY_PLAY-->
-		<button name="FASTFORWARD" pos="98,310" />	<!-- KEY_FASTFORWARD-->
-		<button name="PREVIOUS"    pos="29,330" />	<!-- KEY_PREVIOUS--> 
-		<button name="RECORD"      pos="64,330" />	<!-- KEY_RECORD-->
-		<button name="NEXT"        pos="98,330" />	<!-- KEY_NEXT-->
-		<button name="PLAYLIST"    pos="63,217" />	<!-- KEY_FILE-->
-		<button name="PAUSE"       pos="63,287" />	<!-- KEY_PAUSE-->
-		<button name="STOP"        pos="63,310" />	<!-- KEY_STOP-->
-		<!--button name="CHECK"    pos="90,358" /-->	<!-- KEY_HELP-->
-		<button name="RED"         pos="27,351" />	<!-- KEY_RED-->
-		<button name="GREEN"       pos="51,351" />	<!-- KEY_GREEN-->
-		<button name="YELLOW"      pos="75,351" />	<!-- KEY_YELLOW-->
-		<button name="BLUE"        pos="99,351" />	<!-- KEY_BLUE-->
-		<button name="PIP"         pos="39,400" />	<!-- KEY_SCREEN-->
-		<button name="PIP_SWAP"    pos="63,400" />	<!-- KEY_GOTO-->
-		<button name="PIP_LIST"    pos="88,400" />	<!-- KEY_AUX-->
-		<!--button name="SLEEP"    pos="90,391" /-->	<!-- KEY_PROGRAM-->
-		<button name="FAV"         pos="27,236" />	<!-- KEY_FAVORITES-->
-		<button name="TVRADIO"     pos="76,376" />	<!-- KEY_TV2-->
-		<button name="SUBTITLE"    pos="31,120" />	<!-- KEY_SUBTITLE-->
-		<button name="TEXT"        pos="94,120" />	<!-- KEY_TEXT-->
+	<!-- Fortis HS7110//HS7119 -->
+	<rc image="/images/remotes/hl101.png">
+		<button id="KEY_MUTE" label="MUTE" pos="91,29" />
+		<button id="KEY_POWER" label="POWER" pos="33,29" />
+		<button id="KEY_ZOOM" label="V.FORMAT" pos="63,44" />
+		<button id="KEY_SWITCHVIDEOMODE" label="RESOLUTION" pos="89,52" />
+		<button id="KEY_1" label="1" pos="32,53" />
+		<button id="KEY_2" label="2" pos="61,53" />
+		<button id="KEY_3" label="3" pos="89,53" />
+		<button id="KEY_4" label="4" pos="31,76" />
+		<button id="KEY_5" label="5" pos="61,76" />
+		<button id="KEY_6" label="6" pos="91,76" />
+		<button id="KEY_7" label="7" pos="30,98" />
+		<button id="KEY_8" label="8" pos="61,98" />
+		<button id="KEY_9" label="9" pos="92,98" />
+		<button id="KEY_HELP" remap="KEY_INFO" label="INFO" pos="99,376" /><!-- KEY_HELP THIS IS WRONG SHOULD BE KEY_INFO -->
+		<button id="KEY_0" label="0" pos="61,120" />
+		<button id="KEY_BACK" label="RECALL" pos="97,236" />
+		<button id="KEY_VOLUMEUP" label="VOLUMEUP" pos="26,261" />
+		<button id="KEY_MENU" label="MENU" pos="27,208" />
+		<button id="KEY_CHANNELUP" label="CHANNELUP" pos="98,261" />
+		<button id="KEY_VOLUMEDOWN" label="VOLUMEDOWN" pos="28,285" />
+		<button id="KEY_EXIT" label="EXIT" pos="97,208" />
+		<button id="KEY_CHANNELDOWN" label="CHANNELDOWN" pos="98,285" />
+		<button id="KEY_UP" label="UP" pos="62,141" />
+		<button id="KEY_LEFT" label="LEFT" pos="36,168" />
+		<button id="KEY_OK" label="OK" pos="62,168" />
+		<button id="KEY_RIGHT" label="RIGHT" pos="88,168" />
+		<button id="KEY_DOWN" label="DOWN" pos="62,194" />
+		<button id="KEY_PAGEUP" label="PAGEUP" pos="28,376" />
+		<button id="KEY_EPG" label="EPG" pos="63,236" />
+		<button id="KEY_PAGEDOWN" label="PAGEDOWN" pos="51,376" />
+		<button id="KEY_REWIND" label="REWIND" pos="29,310" />
+		<button id="KEY_PLAY" label="PLAY" pos="63,259" />
+		<button id="KEY_FASTFORWARD" label="FASTFORWARD" pos="98,310" />
+		<button id="KEY_PREVIOUS" label="PREVIOUS" pos="29,330" /> 
+		<button id="KEY_RECORD" label="RECORD" pos="64,330" />
+		<button id="KEY_NEXT" label="NEXT" pos="98,330" />
+		<button id="KEY_FILE" label="PLAYLIST" pos="63,217" />
+		<button id="KEY_PAUSE" label="PAUSE" pos="63,287" />
+		<button id="KEY_STOP" label="STOP" pos="63,310" />
+		<button id="KEY_HELP" label="CHECK" pos="90,358" />
+		<button id="KEY_RED" label="RED" pos="27,351" />
+		<button id="KEY_GREEN" label="GREEN" pos="51,351" />
+		<button id="KEY_YELLOW" label="YELLOW" pos="75,351" />
+		<button id="KEY_BLUE" label="BLUE" pos="99,351" />
+		<button id="KEY_SCREEN" label="PIP" pos="39,400" />
+		<button id="KEY_GOTO" label="PIP_SWAP" pos="63,400" />
+		<button id="KEY_AUX" label="PIP_LIST" pos="88,400" />
+		<button id="KEY_PROGRAM" label="SLEEP" pos="90,391" />
+		<button id="KEY_FAVORITES" label="FAV" pos="27,236" />
+		<button id="KEY_TV2" label="TVRADIO" pos="76,376" />
+		<button id="KEY_SUBTITLE" label="SUBTITLE" pos="31,120" />
+		<button id="KEY_TEXT" label="TEXT" pos="94,120" />
 	</rc>
 </rcs>

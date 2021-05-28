@@ -1,44 +1,44 @@
 <rcs>
 	<!-- Kathrein UFS913 -->
-	<rc id="2">
-		<button name="TVRADIO"     pos="34,36" />	<!-- KEY_TV2 -->
-		<button name="POWER"       pos="80,35" />	<!-- KEY_POWER -->
-		<button name="1"           pos="35,64" />	<!-- KEY_1 -->
-		<button name="2"           pos="66,64" />	<!-- KEY_2 -->
-		<button name="3"           pos="97,64" />	<!-- KEY_3 -->
-		<button name="4"           pos="35,94" />	<!-- KEY_4 -->
-		<button name="5"           pos="66,94" />	<!-- KEY_5 -->
-		<button name="6"           pos="97,94" />	<!-- KEY_6 -->
-		<button name="7"           pos="35,118" />	<!-- KEY_7 -->
-		<button name="8"           pos="68,118" />	<!-- KEY_8 -->
-		<button name="9"           pos="97,118" />	<!-- KEY_9 -->
-		<button name="MENU"        pos="35,148" />	<!-- KEY_MENU -->
-		<button name="0"           pos="66,148" />	<!-- KEY_0 -->
-		<button name="TEXT"        pos="96,148" />	<!-- KEY_TEXT -->
-		<button name="VOLUMEDOWN"  pos="35,178" />	<!-- KEY_VOLUMEDOWN -->
-		<button name="CHANNELUP"   pos="64,178" />	<!-- KEY_CHANNELUP -->
-		<button name="VOLUMEUP"    pos="96,178" />	<!-- KEY_VOLUMEUP -->
-		<button name="MUTE"        pos="34,210" />	<!-- KEY_MUTE -->
-		<button name="CHANNELDOWN" pos="64,210" />	<!-- KEY_CHANNELDOWN -->
-		<button name="INFO"        pos="96,210" />	<!-- KEY_INFO -->
-		<button name="RED"         pos="29,243" />	<!-- KEY_RED -->
-		<button name="GREEN"       pos="53,243" />	<!-- KEY_GREEN -->
-		<button name="YELLOW"      pos="76,243" />	<!-- KEY_YELLOW -->
-		<button name="BLUE"        pos="100,243" />	<!-- KEY_BLUE -->
-		<button name="EPG"         pos="33,273" />	<!-- KEY_EPG -->
-		<button name="UP"          pos="64,274" />	<!-- KEY_UP -->
-		<button name="MEDIA"       pos="97,274" />	<!-- KEY_FILE -->
-		<button name="LEFT"        pos="33,306" />	<!-- KEY_LEFT -->
-		<button name="OK"          pos="64,306" />	<!-- KEY_OK -->
-		<button name="RIGHT"       pos="97,306" />	<!-- KEY_RIGHT -->
-		<button name="BACK"        pos="36,337" />	<!-- KEY_EXIT -->
-		<button name="DOWN"        pos="64,338" />	<!-- KEY_DOWN -->
-		<button name="PORTAL"      pos="100,337" />	<!-- KEY_WWW -->
-		<button name="REWIND"      pos="33,367" />	<!-- KEY_REWIND -->
-		<button name="PLAY"        pos="64,367" />	<!-- KEY_PLAY -->
-		<button name="FASTFORWARD" pos="96,367" />	<!-- KEY_FASTFORWARD -->
-		<button name="PAUSE"       pos="33,393" />	<!-- KEY_PAUSE -->
-		<button name="RECORD"      pos="64,393" />	<!-- KEY_RECORD -->
-		<button name="STOP"        pos="96,393" />	<!-- KEY_STOP -->
+	<rc image="/images/remotes/ufs913.png">
+		<button id="KEY_TV2" label="TVRADIO" pos="34,36" />
+		<button id="KEY_POWER" label="POWER" pos="80,35" />
+		<button id="KEY_1" label="1" pos="35,64" />
+		<button id="KEY_2" label="2" pos="66,64" />
+		<button id="KEY_3" label="3" pos="97,64" />
+		<button id="KEY_4" label="4" pos="35,94" />
+		<button id="KEY_5" label="5" pos="66,94" />
+		<button id="KEY_6" label="6" pos="97,94" />
+		<button id="KEY_7" label="7" pos="35,118" />
+		<button id="KEY_8" label="8" pos="68,118" />
+		<button id="KEY_9" label="9" pos="97,118" />
+		<button id="KEY_MENU" label="MENU" pos="35,148" />
+		<button id="KEY_0" label="0" pos="66,148" />
+		<button id="KEY_TEXT" label="TEXT" pos="96,148" />
+		<button id="KEY_VOLUMEDOWN" label="VOLUMEDOWN" pos="35,178" />
+		<button id="KEY_CHANNELUP" label="CHANNELUP" pos="64,178" />
+		<button id="KEY_VOLUMEUP" label="VOLUMEUP" pos="96,178" />
+		<button id="KEY_MUTE" label="MUTE" pos="34,210" />
+		<button id="KEY_CHANNELDOWN" label="CHANNELDOWN" pos="64,210" />
+		<button id="KEY_INFO" label="INFO" pos="96,210" />
+		<button id="KEY_RED" label="RED" pos="29,243" />
+		<button id="KEY_GREEN" label="GREEN" pos="53,243" />
+		<button id="KEY_YELLOW" label="YELLOW" pos="76,243" />
+		<button id="KEY_BLUE" label="BLUE" pos="100,243" />
+		<button id="KEY_EPG" label="EPG" pos="33,273" />
+		<button id="KEY_UP" label="UP" pos="64,274" />
+		<button id="KEY_FILE" label="MEDIA" pos="97,274" />
+		<button id="KEY_LEFT" label="LEFT" pos="33,306" />
+		<button id="KEY_OK" label="OK" pos="64,306" />
+		<button id="KEY_RIGHT" label="RIGHT" pos="97,306" />
+		<button id="KEY_EXIT" label="BACK" pos="36,337" />
+		<button id="KEY_DOWN" label="DOWN" pos="64,338" />
+		<button id="KEY_WWW" label="PORTAL" pos="100,337" />
+		<button id="KEY_REWIND" label="REWIND" pos="33,367" />
+		<button id="KEY_PLAY" label="PLAY" pos="64,367" />
+		<button id="KEY_FASTFORWARD" label="FASTFORWARD" pos="96,367" />
+		<button id="KEY_PAUSE" label="PAUSE" pos="33,393" />
+		<button id="KEY_RECORD" label="RECORD" pos="64,393" />
+		<button id="KEY_STOP" label="STOP" pos="96,393" />
 	</rc>
 </rcs>

@@ -1,55 +1,55 @@
 <rcs>
 	<!-- Spiderbox HD HL-101 / Opticum 9500HD / Orton 9500HD -->
-	<rc id="2">
-		<button name="POWER"       pos="33,33" />	<!-- KEY_POWER-->
-		<button name="TIME"        pos="31,61" />	<!-- KEY_PROGRAM-->
-		<button name="U"           pos="54,61" />	<!-- KEY_U-->
-		<button name="V.FORMAT"    pos="77,61" />	<!-- KEY_ZOOM-->
-		<button name="MUTE"        pos="100,61" />	<!-- KEY_MUTE-->
-		<button name="TV/SAT"      pos="31,82" />	<!-- KEY_AUX-->
-		<button name="TV/RADIO"    pos="54,82" />	<!-- KEY_TV2-->
-		<button name="FIND"        pos="77,82" />	<!-- KEY_SUBTITLE-->
-		<button name="FAV"         pos="100,82" />	<!-- KEY_FAVORITES-->
-		<button name="1"           pos="37,107" />	<!-- KEY_1-->
-		<button name="2"           pos="66,107" />	<!-- KEY_2-->
-		<button name="3"           pos="94,107" />	<!-- KEY_3-->
-		<button name="4"           pos="37,132" />	<!-- KEY_4-->
-		<button name="5"           pos="66,132" />	<!-- KEY_5-->
-		<button name="6"           pos="94,132" />	<!-- KEY_6-->
-		<button name="7"           pos="37,156" />	<!-- KEY_7-->
-		<button name="8"           pos="66,156" />	<!-- KEY_8-->
-		<button name="9"           pos="94,156" />	<!-- KEY_9-->
-		<button name="MENU"        pos="37,181" />	<!-- KEY_MENU-->
-		<button name="0"           pos="66,181" />	<!-- KEY_0-->
-		<button name="INFO"        pos="94,181" />	<!-- KEY_INFO-->
-		<button name="EPG"         pos="31,212" />	<!-- KEY_EPG-->
-		<button name="EXIT"        pos="98,212" />	<!-- KEY_EXIT-->
-		<button name="UP/P+"       pos="66,227" />	<!-- KEY_UP-->
-		<button name="LEFT/V-"     pos="41,250" />	<!-- KEY_LEFT-->
-		<button name="OK/LIST"     pos="65,250" />	<!-- KEY_OK-->
-		<button name="RIGHT/V+"    pos="89,250" />	<!-- KEY_RIGHT-->
-		<button name="DOWN/P-"     pos="66,269" />	<!-- KEY_DOWN-->
-		<button name="RECALL"      pos="31,285" />	<!-- KEY_BACK-->
-		<button name="RECORD"      pos="98,285" />	<!-- KEY_RECORD-->
-		<button name="PLAY"        pos="30,312" />	<!-- KEY_PLAY-->
-		<button name="REWIND"      pos="54,312" />	<!-- KEY_REWIND-->
-		<button name="PAUSE"       pos="77,312" />	<!-- KEY_PAUSE-->
-		<button name="FASTFORWARD" pos="100,312" />	<!-- KEY_FASTFORWARD-->
-		<button name="STOP"        pos="30,334" />	<!-- KEY_STOP-->
-		<button name="SLOW"        pos="54,334" />	<!-- KEY_SLOW-->
-		<button name="PREVIOUS"    pos="77,334" />	<!-- KEY_PREVIOUS-->
-		<button name="NEXT"        pos="100,334" />	<!-- KEY_NEXT-->
-		<button name="ARCHIVE"     pos="30,356" />	<!-- KEY_FILE-->
-		<button name="PIPSWAP"     pos="54,356" />	<!-- KEY_OPTION-->
-		<button name="PLAYMODE"    pos="77,356" />	<!-- KEY_W-->
-		<button name="USB"         pos="100,356" />	<!-- KEY_MEDIA-->
-		<button name="AUDIO"       pos="30,379" />	<!-- KEY_AUDIO-->
-		<button name="SAT"         pos="54,379" />	<!-- KEY_SAT-->
-		<button name="F1"          pos="77,379" />	<!-- KEY_F1-->
-		<button name="F2"          pos="100,35" />	<!-- KEY_F2-->
-		<button name="RED"         pos="30,401" />	<!-- KEY_RED-->
-		<button name="GREEN"       pos="54,401" />	<!-- KEY_GREEN-->
-		<button name="YELLOW"      pos="77,401" />	<!-- KEY_YELLOW-->
-		<button name="BLUE"        pos="100,401" />	<!-- KEY_BLUE-->
+	<rc image="/images/remotes/hl101.png">
+		<button id="KEY_POWER" label="POWER" pos="33,33" />
+		<button id="KEY_PROGRAM" label="TIME" pos="31,61" />
+		<button id="KEY_U" label="U" pos="54,61" />
+		<button id="KEY_ZOOM" label="V.FORMAT" pos="77,61" />
+		<button id="KEY_MUTE" label="MUTE" pos="100,61" />
+		<button id="KEY_AUX" label="TV/SAT" pos="31,82" />
+		<button id="KEY_TV2" label="TV/RADIO" pos="54,82" />
+		<button id="KEY_SUBTITLE" label="FIND" pos="77,82" />
+		<button id="KEY_FAVORITES" label="FAV" pos="100,82" />
+		<button id="KEY_1" label="1" pos="37,107" />
+		<button id="KEY_2" label="2" pos="66,107" />
+		<button id="KEY_3" label="3" pos="94,107" />
+		<button id="KEY_4" label="4" pos="37,132" />
+		<button id="KEY_5" label="5" pos="66,132" />
+		<button id="KEY_6" label="6" pos="94,132" />
+		<button id="KEY_7" label="7" pos="37,156" />
+		<button id="KEY_8" label="8" pos="66,156" />
+		<button id="KEY_9" label="9" pos="94,156" />
+		<button id="KEY_MENU" label="MENU" pos="37,181" />
+		<button id="KEY_0" label="0" pos="66,181" />
+		<button id="KEY_INFO" label="INFO" pos="94,181" />
+		<button id="KEY_EPG" label="EPG" pos="31,212" />
+		<button id="KEY_EXIT" label="EXIT" pos="98,212" />
+		<button id="KEY_UP" label="UP/P+" pos="66,227" />
+		<button id="KEY_LEFT" label="LEFT/V-" pos="41,250" />
+		<button id="KEY_OK" label="OK/LIST" pos="65,250" />
+		<button id="KEY_RIGHT" label="RIGHT/V+" pos="89,250" />
+		<button id="KEY_DOWN" label="DOWN/P-" pos="66,269" />
+		<button id="KEY_BACK" label="RECALL" pos="31,285" />
+		<button id="KEY_RECORD" label="RECORD" pos="98,285" />
+		<button id="KEY_PLAY" label="PLAY" pos="30,312" />
+		<button id="KEY_REWIND" label="REWIND" pos="54,312" />
+		<button id="KEY_PAUSE" label="PAUSE" pos="77,312" />
+		<button id="KEY_FASTFORWARD" label="FASTFORWARD" pos="100,312" />
+		<button id="KEY_STOP" label="STOP" pos="30,334" />
+		<button id="KEY_SLOW" label="SLOW" pos="54,334" />
+		<button id="KEY_PREVIOUS" label="PREVIOUS" pos="77,334" />
+		<button id="KEY_NEXT" label="NEXT" pos="100,334" />
+		<button id="KEY_FILE" label="ARCHIVE" pos="30,356" />
+		<button id="KEY_OPTION" label="PIPSWAP" pos="54,356" />
+		<button id="KEY_W" label="PLAYMODE" pos="77,356" />
+		<button id="KEY_MEDIA" label="USB" pos="100,356" />
+		<button id="KEY_AUDIO" label="AUDIO" pos="30,379" />
+		<button id="KEY_SAT" label="SAT" pos="54,379" />
+		<button id="KEY_F1" label="F1" pos="77,379" />
+		<button id="KEY_F2" label="F2" pos="100,35" />
+		<button id="KEY_RED" label="RED" pos="30,401" />
+		<button id="KEY_GREEN" label="GREEN" pos="54,401" />
+		<button id="KEY_YELLOW" label="YELLOW" pos="77,401" />
+		<button id="KEY_BLUE" label="BLUE" pos="100,401" />
 	</rc>
 </rcs>

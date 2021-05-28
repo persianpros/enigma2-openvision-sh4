@@ -1,60 +1,60 @@
 <rcs>
-	<!-- Spark RC12-->
-	<rc id="2">
-		<button name="POWER"       pos="53,19" />	<!-- KEY_POWER-->
-		<button name="V.FORMAT"    pos="25,36" />	<!-- KEY_SWITCHVIDEOMODE-->
-		<button name="TV/SAT"      pos="45,36" />	<!-- KEY_AUX-->
-		<button name="TIME"        pos="64,36" />	<!-- KEY_PROGRAM-->
-		<button name="MUTE"        pos="83,36" />	<!-- KEY_MUTE-->
-		<button name="1"           pos="26,56" />	<!-- KEY_1-->
-		<button name="2"           pos="54,56" />	<!-- KEY_2-->
-		<button name="3"           pos="82,56" />	<!-- KEY_3-->
-		<button name="4"           pos="26,78" />	<!-- KEY_4-->
-		<button name="5"           pos="54,78" />	<!-- KEY_5-->
-		<button name="6"           pos="82,78" />	<!-- KEY_6-->
-		<button name="7"           pos="26,100" />	<!-- KEY_7-->
-		<button name="8"           pos="53,100" />	<!-- KEY_8-->
-		<button name="9"           pos="82,100" />	<!-- KEY_9-->
-		<button name="TV/RADIO"    pos="26,123" />	<!-- KEY_TV2-->
-		<button name="0"           pos="54,122" />	<!-- KEY_0-->
-		<button name="RECALL"      pos="81,123" />	<!-- KEY_BACK-->
-		<button name="PAGE+"       pos="27,146" />	<!-- KEY_CHANNELUP-->
-		<button name="PAGE-"       pos="27,174" />	<!-- KEY_CHANNELDOWN-->
-		<button name="FIND"        pos="53,147" />	<!-- KEY_SUBTITLE-->
-		<button name="FOLDER"      pos="53,172" />	<!-- KEY_FILE-->
-		<button name="VOL+"        pos="80,146" />	<!-- KEY_VOLUMEUP-->
-		<button name="VOL-"        pos="80,174" />	<!-- KEY_VOLUMEDOWN-->
-		<button name="MENU"        pos="24,196" />	<!-- KEY_MENU-->
-		<button name="INFO"        pos="81,196" />	<!-- KEY_INFO-->
-		<button name="UP"          pos="53,206" />	<!-- KEY_UP-->
-		<button name="LEFT"        pos="31,230" />	<!-- KEY_LEFT-->
-		<button name="OK"          pos="53,230" />	<!-- KEY_OK-->
-		<button name="RIGHT"       pos="76,230" />	<!-- KEY_RIGHT-->
-		<button name="DOWN"        pos="53,250" />	<!-- KEY_DOWN-->
-		<button name="EXIT"        pos="101,265" />	<!-- KEY_EXIT-->
-		<button name="EPG"         pos="81,265" />	<!-- KEY_EPG-->
-		<button name="PORTAL"      pos="53,280" />	<!-- KEY_OPEN -->
-		<button name="FAV"         pos="23,286" />	<!-- KEY_FAVORITES-->
-		<button name="SAT"         pos="81,286" />	<!-- KEY_SAT-->
-		<button name="RED"         pos="23,305" />	<!-- KEY_RED-->
-		<button name="GREEN"       pos="44,305" />	<!-- KEY_GREEN-->
-		<button name="YELLOW"      pos="62,305" />	<!-- KEY_YELLOW-->
-		<button name="BLUE"        pos="81,305" />	<!-- KEY_BLUE-->
-		<button name="RECORD"      pos="23,324" />	<!-- KEY_RECORD-->
-		<button name="STOP"        pos="44,324" />	<!-- KEY_STOP-->
-		<button name="PAUSE"       pos="62,324" />	<!-- KEY_PAUSE-->
-		<button name="PLAY"        pos="83,324" />	<!-- KEY_PLAY-->
-		<button name="PREV"        pos="23,341" />	<!-- KEY_PREVIOUS-->
-		<button name="NEXT"        pos="44,341" />	<!-- KEY_NEXT-->
-		<button name="REWIND"      pos="62,341" />	<!-- KEY_REWIND-->
-		<button name="FASTFORWARD" pos="83,341" />	<!-- KEY_FASTFORWARD-->
-		<button name="FAST"        pos="23,358" />	<!-- KEY_F-->
-		<button name="SLOW"        pos="44,358" />	<!-- KEY_SLOW-->
-		<button name="PLAY_MODE"   pos="62,358" />	<!-- KEY_W-->
-		<button name="USB"         pos="83,358" />	<!-- KEY_MEDIA-->
-		<button name="Tms"         pos="23,374" />	<!-- KEY_TIME-->
-		<button name="F1"          pos="44,374" />	<!-- KEY_F1-->
-		<button name="F2"          pos="62,374" />	<!-- KEY_F2-->
-		<button name="F3"          pos="83,374" />	<!-- KEY_F3-->
+	<!-- Spark RC12 -->
+	<rc image="/images/remotes/spark.png">
+		<button id="KEY_POWER" label="POWER" pos="53,19" />
+		<button id="KEY_SWITCHVIDEOMODE" label="V.FORMAT" pos="25,36" />
+		<button id="KEY_AUX" label="TV/SAT" pos="45,36" />
+		<button id="KEY_PROGRAM" label="TIME" pos="64,36" />
+		<button id="KEY_MUTE" label="MUTE" pos="83,36" />
+		<button id="KEY_1" label="1" pos="26,56" />
+		<button id="KEY_2" label="2" pos="54,56" />
+		<button id="KEY_3" label="3" pos="82,56" />
+		<button id="KEY_4" label="4" pos="26,78" />
+		<button id="KEY_5" label="5" pos="54,78" />
+		<button id="KEY_6" label="6" pos="82,78" />
+		<button id="KEY_7" label="7" pos="26,100" />
+		<button id="KEY_8" label="8" pos="53,100" />
+		<button id="KEY_9" label="9" pos="82,100" />
+		<button id="KEY_TV2" label="TV/RADIO" pos="26,123" />
+		<button id="KEY_0" label="0" pos="54,122" />
+		<button id="KEY_BACK" label="RECALL" pos="81,123" />
+		<button id="KEY_CHANNELUP" label="PAGE+" pos="27,146" />
+		<button id="KEY_CHANNELDOWN" label="PAGE-" pos="27,174" />
+		<button id="KEY_SUBTITLE" label="FIND" pos="53,147" />
+		<button id="KEY_FILE" label="FOLDER" pos="53,172" />
+		<button id="KEY_VOLUMEUP" label="VOL+" pos="80,146" />
+		<button id="KEY_VOLUMEDOWN" label="VOL-" pos="80,174" />
+		<button id="KEY_MENU" label="MENU" pos="24,196" />
+		<button id="KEY_INFO" label="INFO" pos="81,196" />
+		<button id="KEY_UP" label="UP" pos="53,206" />
+		<button id="KEY_LEFT" label="LEFT" pos="31,230" />
+		<button id="KEY_OK" label="OK" pos="53,230" />
+		<button id="KEY_RIGHT" label="RIGHT" pos="76,230" />
+		<button id="KEY_DOWN" label="DOWN" pos="53,250" />
+		<button id="KEY_EXIT" label="EXIT" pos="101,265" />
+		<button id="KEY_EPG" label="EPG" pos="81,265" />
+		<button id="KEY_OPEN" label="PORTAL" pos="53,280" />
+		<button id="KEY_FAVORITES" label="FAV" pos="23,286" />
+		<button id="KEY_SAT" label="SAT" pos="81,286" />
+		<button id="KEY_RED" label="RED" pos="23,305" />
+		<button id="KEY_GREEN" label="GREEN" pos="44,305" />
+		<button id="KEY_YELLOW" label="YELLOW" pos="62,305" />
+		<button id="KEY_BLUE" label="BLUE" pos="81,305" />
+		<button id="KEY_RECORD" label="RECORD" pos="23,324" />
+		<button id="KEY_STOP" label="STOP" pos="44,324" />
+		<button id="KEY_PAUSE" label="PAUSE" pos="62,324" />
+		<button id="KEY_PLAY" label="PLAY" pos="83,324" />
+		<button id="KEY_PREVIOUS" label="PREV" pos="23,341" />
+		<button id="KEY_NEXT" label="NEXT" pos="44,341" />
+		<button id="KEY_REWIND" label="REWIND" pos="62,341" />
+		<button id="KEY_FASTFORWARD" label="FASTFORWARD" pos="83,341" />
+		<button id="KEY_F" label="FAST" pos="23,358" />
+		<button id="KEY_SLOW" label="SLOW" pos="44,358" />
+		<button id="KEY_W" label="PLAY_MODE" pos="62,358" />
+		<button id="KEY_MEDIA" label="USB" pos="83,358" />
+		<button id="KEY_TIME" label="Tms" pos="23,374" />
+		<button id="KEY_F1" label="F1" pos="44,374" />
+		<button id="KEY_F2" label="F2" pos="62,374" />
+		<button id="KEY_F3" label="F3" pos="83,374" />
 	</rc>
 </rcs>
