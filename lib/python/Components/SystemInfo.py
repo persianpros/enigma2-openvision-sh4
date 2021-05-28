@@ -15,7 +15,7 @@ from Tools.Directories import SCOPE_SKIN, fileCheck, fileContains, fileReadLine,
 
 MODULE_NAME = __name__.split(".")[-1]
 ENIGMA_KERNEL_MODULE = "enigma.ko"
-PROC_PATH = "/proc/enigma"
+PROC_PATH = "/proc/openvision"
 
 SystemInfo = {}
 
