@@ -219,6 +219,8 @@ BoxInfo.setItem("RemoteEnable", False)
 BoxInfo.setItem("RemoteRepeat", 300)
 BoxInfo.setItem("RemoteDelay", 700)
 
+BoxInfo.setItem("multiboot", 0 if BoxInfo.getItem("distro", "").lower() == "openvision" else 1, immutable=True)
+
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
 SystemInfo["CommonInterfaceCIDelay"] = fileCheck("/proc/stb/tsmux/rmx_delay")
 for cislot in range(BoxInfo.getItem("CommonInterface", 0)):
