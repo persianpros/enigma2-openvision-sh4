@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1372,9 +1372,8 @@ msgctxt "Hotkey help separator"
 msgid "/"
 msgstr "/s"
 
-#, fuzzy
 msgid "/T"
-msgstr "/s"
+msgstr ""
 
 msgid "/s"
 msgstr "/s"
@@ -2026,8 +2025,18 @@ msgstr "Lägg till"
 
 #
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "Lägg till bokmärke"
+
+#
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "Lägg till tjänst"
+
+#
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Lägg till bokmärke"
 
 #
 msgid "Add a mark"
@@ -2383,10 +2392,6 @@ msgstr "Inkludera alltid ECM meddelanden i inspelningar. Detta överskrider den 
 
 msgid "American Samoa"
 msgstr ""
-
-#
-msgid "An empty filename is illegal."
-msgstr "Ett tomt filnamn är inte tillåtet."
 
 #
 msgid "An error occurred while downloading the packetlist. Please try again."
@@ -2935,6 +2940,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr ""
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr "Baskiska"
 
@@ -2949,7 +2957,8 @@ msgstr "Starttid"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Beteende av '0' knappen i BiB-läge"
 
-msgid "Behavior of 'pause and ok' when paused"
+#, fuzzy
+msgid "Behavior of PAUSE and OK when paused"
 msgstr "Beteende av 'paus och OK' vid pausad"
 
 #
@@ -3061,6 +3070,11 @@ msgid "Bonaire, Sint Eustatius and Saba"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "Bokmärken"
+
+#
 msgid "Bookmarks"
 msgstr "Bokmärken"
 
@@ -3115,9 +3129,6 @@ msgstr ""
 msgid "Bouvet Island"
 msgstr ""
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr ""
 
@@ -3150,12 +3161,12 @@ msgstr ""
 #
 #, fuzzy
 msgid "Build Brand"
-msgstr "Information"
+msgstr "Bitrate :"
 
 #
 #, fuzzy
 msgid "Build Model"
-msgstr "Läge "
+msgstr "Bitrate :"
 
 #
 #, fuzzy
@@ -3373,6 +3384,11 @@ msgstr ""
 msgid "Cancel execution?"
 msgstr "Kanallista"
 
+#
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "Kanallista"
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -3475,6 +3491,9 @@ msgstr "Byt favoritlista med snabbzapp"
 #, fuzzy
 msgid "Change device settings"
 msgstr "Namnserverinställningar"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "Ändra inspelning (lägg till tid)"
@@ -4534,17 +4553,9 @@ msgstr "Skapa DVD-ISO"
 msgid "Create directory"
 msgstr "Skapa bibliotek"
 
-msgid "Create new folder and exit"
-msgstr "Skapa en ny mapp och avsluta"
-
 #, fuzzy
 msgid "Create separate radio userbouquet"
 msgstr "Skapa separat favoritlista för radio"
-
-#
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "Skapande av katalog %s misslyckades."
 
 msgid "Creating filesystem"
 msgstr "Skapar filsystem"
@@ -5006,6 +5017,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Debug to file"
@@ -5133,6 +5147,11 @@ msgstr ""
 msgid "Delete"
 msgstr "Ta bort"
 
+#
+#, fuzzy
+msgid "Delete Bookmark"
+msgstr "Bokmärken"
+
 #, fuzzy
 msgid "Delete EPG Cache"
 msgstr "Radera timer"
@@ -5154,11 +5173,21 @@ msgstr "Ta bort alla loggfiler"
 msgid "Delete all the text"
 msgstr "Ta bort post i spellista"
 
+#
+#, fuzzy
+msgid "Delete bookmark"
+msgstr "Ta bort bokmärke"
+
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
 
 msgid "Delete character under cursor or select PM times"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Delete directory"
+msgstr "Skapa bibliotek"
 
 #
 msgid "Delete entry"
@@ -5254,6 +5283,9 @@ msgstr "URL för reserv fjärrmottagare"
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "URL för reserv fjärrmottagare"
 
+msgid "Detailed debug logs"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr "Detaljer för plugin : "
 
@@ -5345,6 +5377,10 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "Direkt uppspelning av länkade titlar utan meny"
 
+#, fuzzy
+msgid "Directories"
+msgstr "Katalog"
+
 msgid "Directory"
 msgstr "Katalog"
 
@@ -5352,6 +5388,30 @@ msgstr "Katalog"
 #, python-format
 msgid "Directory %s does not exist."
 msgstr "Bibliotek %s finns ej."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "Bibliotek %s finns ej."
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "Bibliotek %s finns ej."
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "Bibliotek %s finns ej."
+
+#
+#, fuzzy
+msgid "Directory Actions"
+msgstr "Biblioteksbläddrare"
 
 #
 msgid "Directory browser"
@@ -5446,6 +5506,11 @@ msgstr "Display och Användargränssnitt"
 #, fuzzy
 msgid "Display brightness"
 msgstr "Displayinställningar"
+
+#
+#, fuzzy
+msgid "Display context menu"
+msgstr "Visa 4:3 sändning som"
 
 msgid "Display message before playing next movie"
 msgstr "Visa meddelande innan nästa film spelas"
@@ -5547,6 +5612,16 @@ msgid "Do you really want to delete ?"
 msgstr "Vill du verkligen ta bort %s?"
 
 #
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "Vill du verkligen ta bort %s?"
+
+#
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "Vill du verkligen ta bort %s?"
+
+#
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "Vill du verkligen ta bort %s?"
@@ -5596,11 +5671,6 @@ msgid ""
 msgstr ""
 "Vill du verkligen ta bort\n"
 "pluginet \"%s\"?"
-
-#
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "Vill du verkligen ta bort bibliotek %s från disken?"
 
 #
 #, python-format
@@ -6079,9 +6149,6 @@ msgstr "Aktivera favoritlistsval i multi EPG"
 msgid "Enable client mode"
 msgstr "Aktivera flyttläge"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -6132,6 +6199,18 @@ msgstr "Aktivera"
 
 msgid "Enable teletext caching"
 msgstr "Aktivera teletext cache"
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
+msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
 msgstr ""
@@ -6285,6 +6364,16 @@ msgstr ""
 msgid "Enter if you are north or south of the equator."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "Vänligen ange namn till det nya biblioteket"
+
+#
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "Startbibliotek"
+
 msgid "Enter persistent PIN code"
 msgstr "Ange beständig PIN-kod"
 
@@ -6418,6 +6507,40 @@ msgid ""
 msgstr ""
 "Fel : %s\n"
 "Försöka igen?"
+
+#
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "Sökvägen %s existerar redan."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "Ogiltigt bibliotek valt : %s"
+
+#
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "Ogiltig sökväg"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 #
 #, fuzzy
@@ -6971,6 +7094,11 @@ msgid "Flash Image"
 msgstr "Flash"
 
 #
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "Skapande av katalog %s misslyckades."
+
+#
 #, fuzzy
 msgid "Flash type"
 msgstr "Flash"
@@ -7019,6 +7147,9 @@ msgid "Force enabled"
 msgstr "aktiverad"
 
 msgid "Force legacy signal stats"
+msgstr ""
+
+msgid "Force zap to recording service in standby"
 msgstr ""
 
 #
@@ -7801,6 +7932,9 @@ msgstr ""
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -7965,6 +8099,22 @@ msgstr "Inkludera ECM i http strömmar"
 msgid "Include EIT in http streams"
 msgstr "Inkludera EIT i http strömmar"
 
+#, fuzzy
+msgid "Include action map data"
+msgstr "Inkludera AIT i http strömmar"
+
+#
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "Tangentbordsinställning"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "Konfigurera fjärrkontrollstyp"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -8055,10 +8205,6 @@ msgstr "Initiera"
 
 msgid "Initial fast forward speed"
 msgstr "Initial snabbspolningshastighet framåt"
-
-#
-msgid "Initial location in new timers"
-msgstr "Initial filmplats för nya timers"
 
 msgid "Initial lock ratio"
 msgstr "Initial låst ratio"
@@ -8203,15 +8349,6 @@ msgstr "Intervall mellan tangenttryckningar vid upprepning :"
 #, fuzzy
 msgid "Invalid"
 msgstr "ogiltig typ"
-
-#
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "Ogiltigt bibliotek valt : %s"
-
-#
-msgid "Invalid location"
-msgstr "Ogiltig sökväg"
 
 msgid "Invalid transponder data"
 msgstr "Ogiltig transponderdata"
@@ -8720,10 +8857,8 @@ msgstr "Litauiska"
 msgid "Lithuanian"
 msgstr "Litauiska"
 
-#
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "Timerval"
+msgstr ""
 
 #
 msgid "Load"
@@ -8780,14 +8915,18 @@ msgstr "Lokalt nätverk"
 msgid "Location"
 msgstr "Sökväg"
 
-#
-msgid "Location for instant recordings"
-msgstr "Plats för direktinspelningar"
+#, fuzzy
+msgid "Location Box Context Menu"
+msgstr "Skydda menytjänst"
 
 #
 #, fuzzy
 msgid "Location information"
 msgstr "Information"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "Välj åtgärd"
 
 msgid "Lock ratio"
 msgstr "Lås ratio"
@@ -9198,6 +9337,14 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Läge"
 
+#, fuzzy
+msgid "Mode down a line"
+msgstr "Gå ner i listan"
+
+#, fuzzy
+msgid "Mode down a screen"
+msgstr "Stoppa bild"
+
 #
 #, fuzzy
 msgid "Model"
@@ -9312,6 +9459,11 @@ msgstr "flytta ner till sista posten"
 
 #
 #, fuzzy
+msgid "Move down to last line"
+msgstr "flytta ner till sista posten"
+
+#
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "flytta ner till nästa post"
 
@@ -9399,6 +9551,11 @@ msgstr "flytta upp till första posten"
 
 #
 #, fuzzy
+msgid "Move up to first line"
+msgstr "flytta upp till första posten"
+
+#
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "flytta upp till föregående post"
 
@@ -9431,10 +9588,6 @@ msgstr "Meny för filmlista"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "Filmval"
-
-#
-msgid "Movie location"
-msgstr "Filmplats"
 
 msgid "Movie selection"
 msgstr "Filmval"
@@ -9812,6 +9965,9 @@ msgstr ""
 "(Timeout vid läsning av PAT)"
 
 msgid "No data received yet"
+msgstr ""
+
+msgid "No debug logs"
 msgstr ""
 
 msgid "No delay"
@@ -10475,6 +10631,10 @@ msgstr "Pan & Scan"
 msgid "Panama"
 msgstr ""
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "Välj åtgärd"
+
 msgid "Panic to"
 msgstr "Panik till"
 
@@ -10710,6 +10870,14 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+#, fuzzy
+msgid "Playback Setup"
+msgstr "Spela nästa"
+
+#, fuzzy
+msgid "Playback, Recording & Timeshift"
+msgstr "Uppspelning av mediefiler"
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -10785,10 +10953,6 @@ msgstr "Vänligen ange nytt filnamn"
 msgid "Please enter filename (empty = use current date)"
 msgstr "Vänligen ange filnamn (tomt = använd dagens datum)"
 
-#
-msgid "Please enter name of the new directory"
-msgstr "Vänligen ange namn till det nya biblioteket"
-
 msgid "Please enter new description:"
 msgstr "Vänligen ange ny beskrivning :"
 
@@ -10853,6 +11017,11 @@ msgstr "Vänligen välj en tjänst..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "Vänligen välj en tjänst..."
+
+#
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "Vänligen välj en spellista..."
 
 #
 #, fuzzy
@@ -11504,6 +11673,10 @@ msgstr "Fråga"
 msgid "Quick"
 msgstr "Snabb"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "Välj åtgärd"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -11683,7 +11856,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "Inspellningsinställningar"
+msgstr "Kanalnamn"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11705,18 +11878,9 @@ msgstr "Inspelningstid begränsad på grund av timerkonflikt med %s"
 msgid "Recording"
 msgstr "Spelar in"
 
-#, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "Inspellningsinställningar"
-
 #
 #, fuzzy
 msgid "Recording Actions"
-msgstr "Sökvägar för inspelningar"
-
-#
-#, fuzzy
-msgid "Recording Paths"
 msgstr "Sökvägar för inspelningar"
 
 msgid "Recording Setup"
@@ -11724,10 +11888,6 @@ msgstr "Inspellningsinställningar"
 
 msgid "Recording in progress"
 msgstr "Inspelning pågår"
-
-#
-msgid "Recording paths"
-msgstr "Sökvägar för inspelningar"
 
 msgid "Recording type"
 msgstr "Inpelningstyp"
@@ -11741,11 +11901,6 @@ msgstr "Inspelningar"
 
 #
 msgid "Recordings always have priority"
-msgstr "Inspelningar har alltid prioritet"
-
-#
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "Inspelningar har alltid prioritet"
 
 #
@@ -11825,6 +11980,11 @@ msgstr "Ladda om"
 
 msgid "Reload blacklists"
 msgstr "Ladda om svartlistor"
+
+#
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "Ta bort bokmärke"
 
 #, fuzzy
 msgid "Reloading EPG Cache..."
@@ -11939,10 +12099,6 @@ msgid "Remove currently selected title"
 msgstr "Ta bort vald titel"
 
 #
-msgid "Remove directory"
-msgstr "Ta bort bibliotek"
-
-#
 msgid "Remove entry"
 msgstr "Ta bort post"
 
@@ -11982,11 +12138,6 @@ msgstr "Ta bort titel"
 msgid "Removing"
 msgstr "Tar bort"
 
-#
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "Ta bort biblioteket %s misslyckades. (Troligen ej tomt.)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "Ta bort partitionstabellen"
@@ -11998,6 +12149,11 @@ msgstr "Ta bort kabel-tv kanaler"
 #
 msgid "Rename"
 msgstr "Byt namn"
+
+#
+#, fuzzy
+msgid "Rename directory"
+msgstr "Ta bort bibliotek"
 
 msgid "Rename entry"
 msgstr "Döp om kanal"
@@ -12137,14 +12293,6 @@ msgstr "Omstart"
 #, fuzzy
 msgid "Restart GUI"
 msgstr "Starta om GUI nu?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "Starta om enigma"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
-msgstr "Starta om enigma"
 
 #
 msgid "Restart GUI now?"
@@ -12419,6 +12567,9 @@ msgstr "Motorinstallation"
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 #
 msgid "SNR"
 msgstr "SNR"
@@ -12578,9 +12729,6 @@ msgstr "Spara och avsluta"
 #, fuzzy
 msgid "Save and activate the currently selected skin"
 msgstr "Tryck OK för aktivera valt utseende."
-
-msgid "Save and exit"
-msgstr "Spara och avsluta"
 
 msgid "Save and restart timeshift"
 msgstr "Spara och starta om timeshift"
@@ -12968,13 +13116,27 @@ msgstr ""
 msgid "Select HDD"
 msgstr "Välj HDD"
 
+#
 #, fuzzy
 msgid "Select Info"
-msgstr "Timerval..."
+msgstr "Välj CAId"
 
 #, fuzzy
 msgid "Select Input Device"
 msgstr "Välj inmatningsenhet"
+
+#, fuzzy
+msgid "Select Location"
+msgstr "Välj sökväg"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "Välj sökväg"
+
+#
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "Plats för timeshift"
 
 #
 msgid "Select a bouquet"
@@ -13087,9 +13249,6 @@ msgstr "Välj inmatningsenhet"
 msgid "Select interface"
 msgstr "Välj kort"
 
-msgid "Select location"
-msgstr "Välj sökväg"
-
 #
 #, fuzzy
 msgid "Select menu entry"
@@ -13150,6 +13309,9 @@ msgid "Select the User Band to be assigned to this tuner. This is an index into 
 msgstr ""
 
 msgid "Select the character or action under the keyboard cursor"
+msgstr ""
+
+msgid "Select the currently highlighted location and exit"
 msgstr ""
 
 #
@@ -13544,6 +13706,18 @@ msgid "Set the MAC address of your receiver.\n"
 msgstr "Testa nätverkskonfigurationen för din mottagare.\n"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
+msgstr ""
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
 msgstr ""
 
 #, fuzzy
@@ -14569,10 +14743,6 @@ msgstr "Ljud"
 msgid "Sound carrier"
 msgstr "Ljudbärare"
 
-#, fuzzy
-msgid "Source Brand"
-msgstr "Källbegäran"
-
 msgid "Source request"
 msgstr "Källbegäran"
 
@@ -15175,8 +15345,14 @@ msgid "Switch to TV mode"
 msgstr "Växla till TV läge"
 
 #
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "Byt till bokmärke"
+
+#
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "Växla till föregående kanal"
 
 #
 msgid "Switch to filelist"
@@ -15217,6 +15393,11 @@ msgstr "Växla till föregående underkanal"
 
 msgid "Switch to radio mode"
 msgstr "Växla till radioläge"
+
+#
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "byt till nästa position"
 
 msgid "Switzerland"
 msgstr ""
@@ -15552,15 +15733,6 @@ msgid "The detailed information is intended for developers only."
 msgstr ""
 
 #
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"Biblioteket %s är inte skrivbart.\n"
-"Säkerställ att du har valt ett skrivbart bibliotek."
-
-#
 msgid "The following files were found..."
 msgstr "Följande filer hittades..."
 
@@ -15741,8 +15913,10 @@ msgid "There is no signal to lock on !"
 msgstr "Det finns ingen signal att låsa på!"
 
 #
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "Det är inte säkert att det finns tillräckligt med utrymme på vald partition.\n"
@@ -15756,6 +15930,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -16210,6 +16387,11 @@ msgstr "Plats för timeshift"
 
 msgid "Timeshift Live"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Timeshift Setup"
+msgstr "Timeshift"
 
 msgid "Timeshift is running. Select an action.\n"
 msgstr "Timeshift körs. Välj en åtgärd.\n"
@@ -16755,10 +16937,6 @@ msgstr "Uppdatera och du får själv välja om du vill starta om"
 msgid "Update and reboot (recommended)"
 msgstr "Uppdatera och starta om (rekommenderas)"
 
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Automatisk Sökning"
-
 #
 msgid "Update channel list only"
 msgstr "Uppdatera endast kanallistan"
@@ -16948,7 +17126,7 @@ msgstr "Använd dessa inställningar för inmatningsenhet?"
 msgid "Use these settings?"
 msgstr "Använd dessa inställningar?"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 #
@@ -17757,7 +17935,8 @@ msgstr "Vid aktiverad har denna inställning mer vikt än 'föredragen tuner fö
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr "Vid aktiverad har denna inställning mer vikt än 'föredragen tuner'."
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+#, fuzzy
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr "Vid aktiverad startas timeshift automatiskt i bakgrunden vid en angiven tid."
 
 #

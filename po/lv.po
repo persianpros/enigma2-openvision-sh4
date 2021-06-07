@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -1352,9 +1352,8 @@ msgctxt "Hotkey help separator"
 msgid "/"
 msgstr "/s"
 
-#, fuzzy
 msgid "/T"
-msgstr "/s"
+msgstr ""
 
 msgid "/s"
 msgstr "/s"
@@ -1939,8 +1938,16 @@ msgid "Add"
 msgstr "Pievienot"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "Grāmatzīme"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "Pievienot kanālu"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Grāmatzīme"
 
 msgid "Add a mark"
 msgstr "Pievienot iezīmi"
@@ -2252,9 +2259,6 @@ msgstr "Vienmēr iekļaut ECM informāciju ierakstos. Globāli ignorē individu�
 
 msgid "American Samoa"
 msgstr "Amerikāņu Samoa"
-
-msgid "An empty filename is illegal."
-msgstr "Faila nosaukums nevar būt tukšs."
 
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr "Kļūda lejupielādējot pakotņu sarakstu. Lūdzu mēģiniet vēlreiz."
@@ -2734,6 +2738,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr "Pamata info"
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr "Basku"
 
@@ -2746,7 +2753,8 @@ msgstr "Sākuma laiks"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "0 taustiņa nozīme PiP režīmā"
 
-msgid "Behavior of 'pause and ok' when paused"
+#, fuzzy
+msgid "Behavior of PAUSE and OK when paused"
 msgstr "Taustiņu 'pauze un ok' darbība pauzē"
 
 msgid "Behavior when a movie is started"
@@ -2849,6 +2857,10 @@ msgstr "Bolīvija"
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "Bonaire, Sint Eustatius un Saba"
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "Grāmatzīmes"
+
 msgid "Bookmarks"
 msgstr "Grāmatzīmes"
 
@@ -2897,9 +2909,6 @@ msgstr "Botsvāna"
 msgid "Bouvet Island"
 msgstr "Bouvet sala"
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr "Brazīlija"
 
@@ -2929,11 +2938,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Build Brand"
-msgstr "Informācija"
+msgstr "Kompilēšanas datums:"
 
 #, fuzzy
 msgid "Build Model"
-msgstr "Modelis"
+msgstr "Kompilēšanas datums:"
 
 #, fuzzy
 msgid "Build information"
@@ -3155,6 +3164,10 @@ msgstr "Atcelt teksta izmaiņas un iziet"
 msgid "Cancel execution?"
 msgstr "Atcelt izpildi?"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "Kanālu izvēle"
+
 msgid "Cancelled upon user request"
 msgstr "Atcelts pēc lietotāja pieprasījuma"
 
@@ -3247,6 +3260,9 @@ msgstr "Mainīt buķetes ātrās slēgšanas režīmā"
 #, fuzzy
 msgid "Change device settings"
 msgstr "DNS iestatījumi"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "Mainīt ierakstu (pievienot laiku)"
@@ -4203,15 +4219,8 @@ msgstr "Izveidot DVD-ISO"
 msgid "Create directory"
 msgstr "Izveidot mapi"
 
-msgid "Create new folder and exit"
-msgstr "Izveidot jaunu mapi un iziet"
-
 msgid "Create separate radio userbouquet"
 msgstr "Izveidot atsevišķu radio buķeti"
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "Neizdevās izveidot mapi %s."
 
 msgid "Creating filesystem"
 msgstr "Izveido failu sistēmu"
@@ -4631,6 +4640,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 msgid "Debug to file"
 msgstr "Rakstīt darbību failā"
 
@@ -4745,6 +4757,10 @@ msgid "Delete"
 msgstr "Dzēst"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "Grāmatzīmes"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "Dzēst imidžu"
 
@@ -4763,12 +4779,20 @@ msgid "Delete all the text"
 msgstr "Dzēst visu tekstu"
 
 #, fuzzy
+msgid "Delete bookmark"
+msgstr "Dzēst"
+
+#, fuzzy
 msgid "Delete character to left of cursor or select AM times"
 msgstr "Dzēst burtu pa kreisi no kursora"
 
 #, fuzzy
 msgid "Delete character under cursor or select PM times"
 msgstr "Dzēst burtu zem kursora"
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "Izveidot mapi"
 
 msgid "Delete entry"
 msgstr "Dzēst ierakstu "
@@ -4847,6 +4871,9 @@ msgstr "DVB-C attālinātā rezerves uztvērēja adrese"
 
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "DVB-T attālinātā rezerves uztvērēja adrese"
+
+msgid "Detailed debug logs"
+msgstr ""
 
 msgid "Details for plugin: "
 msgstr "Spraudņu papildinformācija: "
@@ -4928,12 +4955,36 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "Saistīto nosaukumu tiešā atskaņošana bez izvēlnes"
 
+#, fuzzy
+msgid "Directories"
+msgstr "Mape"
+
 msgid "Directory"
 msgstr "Mape"
 
 #, python-format
 msgid "Directory %s does not exist."
 msgstr "Mape %s neeksistē."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "Mape %s neeksistē."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "Mape %s neeksistē."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "Mape %s neeksistē."
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "Mapju pārlūks"
 
 msgid "Directory browser"
 msgstr "Mapju pārlūks"
@@ -5011,6 +5062,10 @@ msgstr "Attēla un lietotāja interfeiss"
 #, fuzzy
 msgid "Display brightness"
 msgstr "Displeja noformējums"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "Attēlot 4:3 saturu"
 
 msgid "Display message before playing next movie"
 msgstr "Parādīt paziņojumu pirms atskaņo nākošo filmu"
@@ -5094,6 +5149,14 @@ msgstr "Vai tiešām vēlaties dzēst %s?"
 msgid "Do you really want to delete ?"
 msgstr "Vai tiešām vēlaties dzēst %s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "Vai tiešām vēlaties dzēst %s?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "Vai tiešām vēlaties dzēst %s?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "Vai tiešām vēlaties dzēst %s?"
@@ -5137,10 +5200,6 @@ msgid ""
 msgstr ""
 "Vai tiešām vēlaties dzēst\n"
 "spraudni \"%s \"?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "Vai tiešām vēlaties dzēst mapi %s no diska?"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5563,9 +5622,6 @@ msgstr "Aktivizēt buķešu izvēli multi-EPG"
 msgid "Enable client mode"
 msgstr "Aktivizēt pārvietošanas režīmu"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5610,6 +5666,18 @@ msgstr "Aktivizēt"
 
 msgid "Enable teletext caching"
 msgstr "Aktivizēt teleteksta kešošanu"
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
+msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
 msgstr "Iespējojiet šo iestatījumu, ja jūsu antenai ir nepieciešams spriegums"
@@ -5742,6 +5810,14 @@ msgstr "Ievadiet, ja esat austrumu vai rietumu puslodē."
 
 msgid "Enter if you are north or south of the equator."
 msgstr "Ievadiet, ja esat uz ziemeļiem vai uz dienvidiem no ekvatora."
+
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "Lūdzu ievadiet jaunās mapes nosaukumu"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "Sākuma mape"
 
 msgid "Enter persistent PIN code"
 msgstr "Ievadiet patstāvīgo PIN kodu"
@@ -5880,6 +5956,37 @@ msgid ""
 msgstr ""
 "Kļūda: %s\n"
 "Atkārtot?"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "Ceļš %s jau eksistē."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "Izvēlēta nepareiza mape: %s"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "Nederīga vieta"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 msgid "Estonia"
 msgstr "Igaunija"
@@ -6366,6 +6473,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "Uzstādīt"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "Neizdevās izveidot mapi %s."
+
 #, fuzzy
 msgid "Flash type"
 msgstr "Uzstādīt"
@@ -6411,6 +6522,9 @@ msgstr "piespiedu aktivizēts"
 
 msgid "Force legacy signal stats"
 msgstr "Piespiedu mantoto signālu statistika"
+
+msgid "Force zap to recording service in standby"
+msgstr ""
 
 msgid "Format"
 msgstr "Formatēt"
@@ -7126,6 +7240,9 @@ msgstr "Ja iestatīts 'jā', signāla vērtības (SNR utt.) tiks aprēķinātas 
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr "Ja iestatīts 'jā', uz TV tieks sūtītas vienādas komandas gan izslēdzoties, gan pārslēdzoties gaidstāvē."
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Ja izmanto vairākus nesaistītus slēdžus (uncommitted switches), DiSEqC komandas ir jānosūta vairākas reizes. Iestatiet nesaistīto slēdžu skaitu, atskaitot vienu."
 
@@ -7279,6 +7396,21 @@ msgstr "Ietvert ECM http plūsmās"
 msgid "Include EIT in http streams"
 msgstr "Ietvert EIT http plūsmās"
 
+#, fuzzy
+msgid "Include action map data"
+msgstr "Ietvert AIT http plūsmās"
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "Tastatūras dati"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "Konfigurēt vadības pults tipu"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7358,9 +7490,6 @@ msgstr "Inic"
 
 msgid "Initial fast forward speed"
 msgstr "Sākotnējais pārtīšanas ātrums"
-
-msgid "Initial location in new timers"
-msgstr "Sākotnējā atrašanās vieta jaunam taimerim"
 
 msgid "Initial lock ratio"
 msgstr "Sākotnējā noenkurošanās attiecība"
@@ -7488,13 +7617,6 @@ msgstr "Intervāls starp taustiņiem, kad atkārtojas:"
 #, fuzzy
 msgid "Invalid"
 msgstr "nepareizs veids"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "Izvēlēta nepareiza mape: %s"
-
-msgid "Invalid location"
-msgstr "Nederīga vieta"
 
 msgid "Invalid transponder data"
 msgstr "Nederīgi transpondera dati"
@@ -7939,9 +8061,8 @@ msgstr "Lietuva"
 msgid "Lithuanian"
 msgstr "Lietuviešu"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "Taimeru izvēle"
+msgstr ""
 
 msgid "Load"
 msgstr "Ielādēt"
@@ -7989,12 +8110,17 @@ msgstr "Valoda"
 msgid "Location"
 msgstr "Atrašanās vieta"
 
-msgid "Location for instant recordings"
-msgstr "Ierakstu atrašanās vieta"
+#, fuzzy
+msgid "Location Box Context Menu"
+msgstr "Aizsargāt papildus izvēlnes"
 
 #, fuzzy
 msgid "Location information"
 msgstr "Informācija"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "Noformējuma izvēlnes darbības"
 
 msgid "Lock ratio"
 msgstr "Noenkurošanās attiecība"
@@ -8358,6 +8484,14 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Režīms"
 
+#, fuzzy
+msgid "Mode down a line"
+msgstr "Iet uz saraksta leju"
+
+#, fuzzy
+msgid "Mode down a screen"
+msgstr "Noturēt ekrānu"
+
 msgid "Model"
 msgstr "Modelis"
 
@@ -8454,6 +8588,10 @@ msgid "Move down to last entry"
 msgstr "pārvietot lejup uz pēdējo ierakstu"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "pārvietot lejup uz pēdējo ierakstu"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "pārvietot lejup uz nākamo ierakstu"
 
@@ -8523,6 +8661,10 @@ msgid "Move up to first entry"
 msgstr "pārvietot augšup uz pirmo ierakstu"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "pārvietot augšup uz pirmo ierakstu"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "pārvietot augšup uz iepriekšējo ierakstu"
 
@@ -8553,9 +8695,6 @@ msgstr "Mediju saraksta izvēlne"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "Mediju faili"
-
-msgid "Movie location"
-msgstr "Mediju atrašanās vieta"
 
 msgid "Movie selection"
 msgstr "Mediju faili"
@@ -8891,6 +9030,9 @@ msgstr ""
 
 msgid "No data received yet"
 msgstr "Vēl nav saņemti dati"
+
+msgid "No debug logs"
+msgstr ""
 
 msgid "No delay"
 msgstr "Nav aiztures"
@@ -9488,6 +9630,10 @@ msgstr "Panorāma"
 msgid "Panama"
 msgstr "Panama"
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "Noformējuma izvēlnes darbības"
+
 msgid "Panic to"
 msgstr "Panikā pārslēgt uz"
 
@@ -9699,6 +9845,14 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+#, fuzzy
+msgid "Playback Setup"
+msgstr "Atskaņot nākošo"
+
+#, fuzzy
+msgid "Playback, Recording & Timeshift"
+msgstr "Atskaņot mediju failus"
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -9762,9 +9916,6 @@ msgstr "Lūdzu ievadiet jauno faila nosaukumu"
 msgid "Please enter filename (empty = use current date)"
 msgstr "Lūdzu ievadiet faila nosaukumu (tukšs = lietot pašreizējo datumu)"
 
-msgid "Please enter name of the new directory"
-msgstr "Lūdzu ievadiet jaunās mapes nosaukumu"
-
 msgid "Please enter new description:"
 msgstr "Lūdzu ievadiet jauno aprakstu:"
 
@@ -9818,6 +9969,10 @@ msgstr "Lūdzu izvēlieties papildkanālu..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "Lūdzu izvēlieties papildkanālu..."
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "Lūdzu izvēlieties repertuāru..."
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10387,6 +10542,10 @@ msgstr "Jautājums"
 msgid "Quick"
 msgstr "Ātrais"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "Noformējuma izvēlnes darbības"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10547,7 +10706,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "Ieraksta iestatījumi"
+msgstr "Kanāla nosaukums"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10566,15 +10725,7 @@ msgid "Recording"
 msgstr "Ieraksta"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "Ieraksta iestatījumi"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "Ierakstīšanas ceļš"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "Ierakstīšanas ceļš"
 
 msgid "Recording Setup"
@@ -10582,9 +10733,6 @@ msgstr "Ieraksta iestatījumi"
 
 msgid "Recording in progress"
 msgstr "Ieraksts notiek"
-
-msgid "Recording paths"
-msgstr "Ierakstīšanas ceļš"
 
 msgid "Recording type"
 msgstr "Ieraksta veids"
@@ -10596,10 +10744,6 @@ msgid "Recordings"
 msgstr "Ieraksti"
 
 msgid "Recordings always have priority"
-msgstr "Ierakstiem vienmēr ir prioritāte"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "Ierakstiem vienmēr ir prioritāte"
 
 #, fuzzy
@@ -10673,6 +10817,10 @@ msgstr "Pārlādēt"
 
 msgid "Reload blacklists"
 msgstr "Pārlādēt melno sarakstu"
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "Dzēst"
 
 #, fuzzy
 msgid "Reloading EPG Cache..."
@@ -10773,9 +10921,6 @@ msgstr "Dzēst pabeigtos taimerus pēc (dienām)"
 msgid "Remove currently selected title"
 msgstr "Dzēst pašreiz izvēlēto virsrakstu"
 
-msgid "Remove directory"
-msgstr "Dzēst mapi"
-
 msgid "Remove entry"
 msgstr "Dzēst ierakstu"
 
@@ -10810,10 +10955,6 @@ msgstr "Dzēst virsrakstu"
 msgid "Removing"
 msgstr "Noņem"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "Neizdevās izdzēst mapi %s. (Varbūt nav tukša.)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "Dzēst partīciju tabulu"
@@ -10824,6 +10965,10 @@ msgstr "Dzēst kabeļu kanālus"
 
 msgid "Rename"
 msgstr "Pārsaukt"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "Dzēst mapi"
 
 msgid "Rename entry"
 msgstr "Pārsaukt ierakstu"
@@ -10947,14 +11092,6 @@ msgstr "Pārstartēt uztvērēju"
 #, fuzzy
 msgid "Restart GUI"
 msgstr "Pārstartēt?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "Pārstartēt testa režīmā"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
-msgstr "Pārstartēt standarta režīmā"
 
 msgid "Restart GUI now?"
 msgstr "Pārstartēt?"
@@ -11186,6 +11323,9 @@ msgstr "Pozicioniera iestatījumi"
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 msgid "SNR"
 msgstr "SNR"
 
@@ -11322,9 +11462,6 @@ msgstr "Saglabāt vai ievadīt tekstu un iziet"
 
 msgid "Save and activate the currently selected skin"
 msgstr "Saglabājiet un aktivizējiet izvēlēto noformējumu"
-
-msgid "Save and exit"
-msgstr "Saglabāt un iziet"
 
 msgid "Save and restart timeshift"
 msgstr "Saglabāt un pārstartēt laika aizturi"
@@ -11681,11 +11818,23 @@ msgstr "Izvēlieties cieto disku"
 
 #, fuzzy
 msgid "Select Info"
-msgstr "Taimeru izvēle..."
+msgstr "CAId izvēle"
 
 #, fuzzy
 msgid "Select Input Device"
 msgstr "Izvēlieties ievades ierīci"
+
+#, fuzzy
+msgid "Select Location"
+msgstr "Izvēlieties atrašanās vietu"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "Izvēlieties atrašanās vietu"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "Laika aiztures vieta"
 
 msgid "Select a bouquet"
 msgstr "Izvēlieties buķeti"
@@ -11781,9 +11930,6 @@ msgstr "Izvēlieties ievades ierīci"
 msgid "Select interface"
 msgstr "Izvēlieties interfeisu"
 
-msgid "Select location"
-msgstr "Izvēlieties atrašanās vietu"
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "norādīt izvēlnes ierakstu"
@@ -11837,6 +11983,9 @@ msgstr "Izvēlieties joslu (User Band) kuru piešķirt šim uztvērējam. Tas ir
 
 msgid "Select the character or action under the keyboard cursor"
 msgstr "Izvēlieties darbību virtuālās tastatūras kursoram"
+
+msgid "Select the currently highlighted location and exit"
+msgstr ""
 
 msgid "Select the locale from a menu"
 msgstr "Izvēlieties lokalizāciju"
@@ -12194,6 +12343,18 @@ msgstr "Pārbaudīt uztvērēja tīkla iestatījumus.\n"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "OpenWebif lietotāja ID attālinātā uztvērējā"
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
+msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
@@ -13114,10 +13275,6 @@ msgstr "Skaņa"
 msgid "Sound carrier"
 msgstr "Nesēja skaņa"
 
-#, fuzzy
-msgid "Source Brand"
-msgstr "Аvots"
-
 msgid "Source request"
 msgstr "Аvots"
 
@@ -13654,8 +13811,13 @@ msgstr "Pārslēgt kanālu uz augšu"
 msgid "Switch to TV mode"
 msgstr "Pārslēgt uz TV režīmu"
 
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "Iet uz grāmatzīmēm"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "Pārslēgt iepriekšējo kanālu"
 
 msgid "Switch to filelist"
 msgstr "Iet uz failu sarakstu"
@@ -13689,6 +13851,10 @@ msgstr "Pārslēgt uz iepriekšējo papildkanālu"
 
 msgid "Switch to radio mode"
 msgstr "Pārslēgt uz radio režīmu"
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "pārslēgt uz nākamo leņķi"
 
 msgid "Switzerland"
 msgstr "Šveice"
@@ -13999,14 +14165,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"Mape %s nav rakstāma.\n"
-"Pārliecinieties, ka jūs izvēlieties ierakstāmu direktoriju."
-
 msgid "The following files were found..."
 msgstr "Tika atrasti sekojoši faili..."
 
@@ -14164,8 +14322,10 @@ msgstr "Pašlaik atjauninājumi nav pieejami."
 msgid "There is no signal to lock on !"
 msgstr "Pašlaik nav signāla uz ko noenkuroties!"
 
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "Izvēlētajā sadaļā var nebūt pietiekami daudz vietas.\n"
@@ -14178,6 +14338,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -14569,6 +14732,10 @@ msgid "Timeshift Actions"
 msgstr "Laika aiztures vieta"
 
 msgid "Timeshift Live"
+msgstr "Laika aizture dzīvajā"
+
+#, fuzzy
+msgid "Timeshift Setup"
 msgstr "Laika aizture dzīvajā"
 
 msgid "Timeshift is running. Select an action.\n"
@@ -15040,9 +15207,6 @@ msgstr "Atjaunināt un pārstartēt"
 msgid "Update and reboot (recommended)"
 msgstr "Atjaunināt un pārstartēt (ieteicams)"
 
-msgid "Update bookmarks"
-msgstr "Atjaunot grāmatzīmes"
-
 msgid "Update channel list only"
 msgstr "Atjaunināt tikai kanālu sarakstu"
 
@@ -15216,7 +15380,7 @@ msgstr "Lietot šos ievades ierīces iestatījumus?"
 msgid "Use these settings?"
 msgstr "Lietot šos iestatījumus?"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -15944,7 +16108,8 @@ msgstr "Ja ieslēgts, šis iestatījums tiks lietots 'Ieteicamais uztvērējs ie
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr "Ja ieslēgts, šis iestatījums tiks lietots 'Ieteicamais uztvērējs' vietā."
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+#, fuzzy
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr "Ja ieslēgts, pēc norādītā laika laika aizture sāksies fonā automātiski."
 
 msgid "When enabled, use DHCP for the IP configuration."

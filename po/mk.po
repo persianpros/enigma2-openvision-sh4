@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2021-02-19 14:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: Muzoss-VELEBRDO\n"
@@ -1215,9 +1215,8 @@ msgctxt "Hotkey help separator"
 msgid "/"
 msgstr "/s"
 
-#, fuzzy
 msgid "/T"
-msgstr "/s"
+msgstr ""
 
 msgid "/s"
 msgstr "/s"
@@ -1802,8 +1801,16 @@ msgid "Add"
 msgstr "Додај"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "Додај обележувач"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "Додај услуга"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "Додај обележувач"
 
 msgid "Add a mark"
 msgstr "Додај ознака"
@@ -2115,9 +2122,6 @@ msgstr "Секогаш вклучувај ECM пораки во снимките
 
 msgid "American Samoa"
 msgstr "Американска Самоа"
-
-msgid "An empty filename is illegal."
-msgstr "Празно име на датотека е нелегално."
 
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr "Настана грешка при преземање. Ве молиме обидете се повторно."
@@ -2597,6 +2601,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr "Основни информации за PID"
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr "Баскиски"
 
@@ -2609,7 +2616,8 @@ msgstr "Сега почнувам"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Однесување на копчето „0“ во PiP"
 
-msgid "Behavior of 'pause and ok' when paused"
+#, fuzzy
+msgid "Behavior of PAUSE and OK when paused"
 msgstr "Однесување на „пауза и ok' кога ќе паузира"
 
 msgid "Behavior when a movie is started"
@@ -2712,6 +2720,10 @@ msgstr "Боливија (Повеќенационална Држава)"
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "Бонаер, Синт Евстатиј и Саба"
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "Обележувачи"
+
 msgid "Bookmarks"
 msgstr "Обележувачи"
 
@@ -2760,9 +2772,6 @@ msgstr "Боцвана"
 msgid "Bouvet Island"
 msgstr "Остров Бувет"
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr "Бразил"
 
@@ -2792,11 +2801,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Build Brand"
-msgstr "Информации"
+msgstr "Датум на обработка: "
 
 #, fuzzy
 msgid "Build Model"
-msgstr "Модел"
+msgstr "Датум на обработка: "
 
 #, fuzzy
 msgid "Build information"
@@ -3018,6 +3027,10 @@ msgstr "Завршете ги сите промени во текстот и о�
 msgid "Cancel execution?"
 msgstr "Да се ​​откаже извршувањето?"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "Избор на канал"
+
 msgid "Cancelled upon user request"
 msgstr "Откажано по барање на корисникот"
 
@@ -3110,6 +3123,9 @@ msgstr "Променете го букетот со промена на кана
 #, fuzzy
 msgid "Change device settings"
 msgstr "Поставки за DNS"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "Променете го снимањето (додај време на снимање)"
@@ -4066,15 +4082,8 @@ msgstr "Креирај ДВД-ИСО"
 msgid "Create directory"
 msgstr "Креирај директориум"
 
-msgid "Create new folder and exit"
-msgstr "Креирај нова папка и излези"
-
 msgid "Create separate radio userbouquet"
 msgstr "Креирај посебен кориснички букет за радио"
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "Не успеав да го создадам директориумот% s."
 
 msgid "Creating filesystem"
 msgstr "Креирај систем на датотеки"
@@ -4494,6 +4503,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 msgid "Debug to file"
 msgstr "Отстранување грешки во датотеката"
 
@@ -4608,6 +4620,10 @@ msgid "Delete"
 msgstr "Избриши"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "Обележувачи"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "Избриши имиџ"
 
@@ -4626,12 +4642,20 @@ msgid "Delete all the text"
 msgstr "Избришете го целиот текст"
 
 #, fuzzy
+msgid "Delete bookmark"
+msgstr "Отстрани обележувач"
+
+#, fuzzy
 msgid "Delete character to left of cursor or select AM times"
 msgstr "Избришете го карактерот лево од курсорот"
 
 #, fuzzy
 msgid "Delete character under cursor or select PM times"
 msgstr "Избришете го знакот под курсорот"
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "Креирај директориум"
 
 msgid "Delete entry"
 msgstr "Избришете го записот"
@@ -4710,6 +4734,9 @@ msgstr "Дестинација на резервниот тјунер за DVB-C
 
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "Дестинација на резервниот тјунер за DVB-T"
+
+msgid "Detailed debug logs"
+msgstr ""
 
 msgid "Details for plugin: "
 msgstr "Детали за плагин: "
@@ -4791,12 +4818,36 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "Директна репродукција на поврзани наслови без менија"
 
+#, fuzzy
+msgid "Directories"
+msgstr "Директориум"
+
 msgid "Directory"
 msgstr "Директориум"
 
 #, python-format
 msgid "Directory %s does not exist."
 msgstr "Директориумот% s не постои."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "Директориумот% s не постои."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "Директориумот% s не постои."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "Директориумот% s не постои."
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "Прелистувач на директориуми"
 
 msgid "Directory browser"
 msgstr "Прелистувач на директориуми"
@@ -4874,6 +4925,10 @@ msgstr "Екран и кориснички интерфејс"
 #, fuzzy
 msgid "Display brightness"
 msgstr "Скин за Екран"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "Прикажи екран 4: 3 како"
 
 msgid "Display message before playing next movie"
 msgstr "Покажете порака пред да започне следниот филм"
@@ -4957,6 +5012,14 @@ msgstr "Дали навистина сакате да избришете% s?"
 msgid "Do you really want to delete ?"
 msgstr "Дали навистина сакате да избришете% s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "Дали навистина сакате да избришете% s?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "Дали навистина сакате да избришете% s?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "Дали навистина сакате да избришете% s?"
@@ -5000,10 +5063,6 @@ msgid ""
 msgstr ""
 "Дали навистина сакате да го отстраните\n"
 "плагинот „% s“?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "Дали навистина сакате да ги отстраните директориумите %s од дискот?"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5425,9 +5484,6 @@ msgstr "Активирајте го изборот на букет во мулт
 msgid "Enable client mode"
 msgstr "Активирајте го режимот за движење"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5472,6 +5528,18 @@ msgstr "Овозможи"
 
 msgid "Enable teletext caching"
 msgstr "Активирајте телетекст меморија"
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
+msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
 msgstr "Активирајте ја оваа поставка ако вашиот антенски систем бара напојување"
@@ -5604,6 +5672,14 @@ msgstr "Внесете ако сте во источната или западн
 
 msgid "Enter if you are north or south of the equator."
 msgstr "Внесете ако сте северно или јужно од екваторот."
+
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "Внесете го името на новиот директориум"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "Почетен директориум"
 
 msgid "Enter persistent PIN code"
 msgstr "Внесете постојан ПИН-код"
@@ -5742,6 +5818,37 @@ msgid ""
 msgstr ""
 "Грешка:% s\n"
 "Обидете се повторно?"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "Патеката %s веќе постои."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "Избран е невалиден директориум: %s"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "Невалидна локација"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 msgid "Estonia"
 msgstr "Естонија"
@@ -6228,6 +6335,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "Флеш Имиџ"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "Не успеав да го создадам директориумот% s."
+
 #, fuzzy
 msgid "Flash type"
 msgstr "Флеш Имиџ"
@@ -6273,6 +6384,9 @@ msgstr "принудно овозможена"
 
 msgid "Force legacy signal stats"
 msgstr "Принудени статистики за наследниот сигнал"
+
+msgid "Force zap to recording service in standby"
+msgstr ""
 
 msgid "Format"
 msgstr "Форматирање"
@@ -6988,6 +7102,9 @@ msgstr "Ако е избрано „Да“, вредноста на сигна�
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr "Ако е поставено на „да“, истите команди ќе бидат испратени до телевизорот за настани во дееп стендбај, како што се испраќаат за време на редовни настани во стендбај."
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Ако се користат неколку неконтригирани switches  - прекинувачи, командите DiSEqC мора да се испраќаат неколку пати. Поставете го бројот на неповрзани switches -  прекинувачи на ланецот минус еден."
 
@@ -7141,6 +7258,21 @@ msgstr "Вклучете ECM во http стримови"
 msgid "Include EIT in http streams"
 msgstr "Вклучете го ЕИТ во http стримови"
 
+#, fuzzy
+msgid "Include action map data"
+msgstr "Вклучете AIT во http стримови"
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "Внесување податоци за тастатура"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "Конфигурирај тип на далечински управувач"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7220,9 +7352,6 @@ msgstr "Иницијализира"
 
 msgid "Initial fast forward speed"
 msgstr "Почетна брза брзина нанапред"
-
-msgid "Initial location in new timers"
-msgstr "Почетно место за нови тајмери"
 
 msgid "Initial lock ratio"
 msgstr "Почетен однос на сигнал"
@@ -7350,13 +7479,6 @@ msgstr "Интервал на повторување на копчињата:"
 #, fuzzy
 msgid "Invalid"
 msgstr "невалиден тип"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "Избран е невалиден директориум: %s"
-
-msgid "Invalid location"
-msgstr "Невалидна локација"
 
 msgid "Invalid transponder data"
 msgstr "Невалидни податоци за транспондер"
@@ -7801,9 +7923,8 @@ msgstr "Литванија"
 msgid "Lithuanian"
 msgstr "Литвански"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "Избор на тајмер"
+msgstr ""
 
 msgid "Load"
 msgstr "Вчитува"
@@ -7851,12 +7972,17 @@ msgstr "Локално"
 msgid "Location"
 msgstr "Локациjа"
 
-msgid "Location for instant recordings"
-msgstr "Локација за инстант снимки"
+#, fuzzy
+msgid "Location Box Context Menu"
+msgstr "Заштитете ги контекстните менија"
 
 #, fuzzy
 msgid "Location information"
 msgstr "Информации"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "Акции за избор на Скин"
 
 msgid "Lock ratio"
 msgstr "Однос на сигнал"
@@ -8220,6 +8346,14 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Режим"
 
+#, fuzzy
+msgid "Mode down a line"
+msgstr "Движете се надолу по листот"
+
+#, fuzzy
+msgid "Mode down a screen"
+msgstr "Држете слика"
+
 msgid "Model"
 msgstr "Модел"
 
@@ -8316,6 +8450,10 @@ msgid "Move down to last entry"
 msgstr "движете се надолу до последниот влез"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "движете се надолу до последниот влез"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "преминете надолу на следниот влез"
 
@@ -8385,6 +8523,10 @@ msgid "Move up to first entry"
 msgstr "преминете нагоре до првиот влез"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "преминете нагоре до првиот влез"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "преминете на претходниот запис"
 
@@ -8415,9 +8557,6 @@ msgstr "Мени за листа на филмови"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "Избор на филм"
-
-msgid "Movie location"
-msgstr "Локација на филмот"
 
 msgid "Movie selection"
 msgstr "Избор на филм"
@@ -8753,6 +8892,9 @@ msgstr ""
 
 msgid "No data received yet"
 msgstr "Сè уште не се добиени податоци"
+
+msgid "No debug logs"
+msgstr ""
 
 msgid "No delay"
 msgstr "Без одложување"
@@ -9350,6 +9492,10 @@ msgstr "Pan&scan"
 msgid "Panama"
 msgstr "Панама"
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "Акции за избор на Скин"
+
 msgid "Panic to"
 msgstr "Паника до"
 
@@ -9561,6 +9707,14 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+#, fuzzy
+msgid "Playback Setup"
+msgstr "Пушти следно"
+
+#, fuzzy
+msgid "Playback, Recording & Timeshift"
+msgstr "Репродуцирајте медиумски датотеки"
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -9624,9 +9778,6 @@ msgstr "Внесете ново име на датотека"
 msgid "Please enter filename (empty = use current date)"
 msgstr "Внесете име на датотека (празно = користете го тековниот датум)"
 
-msgid "Please enter name of the new directory"
-msgstr "Внесете го името на новиот директориум"
-
 msgid "Please enter new description:"
 msgstr "Внесете нов опис:"
 
@@ -9680,6 +9831,10 @@ msgstr "Ве молиме изберете потКанал ..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "Ве молиме изберете потКанал ..."
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "Изберете плејлиста ..."
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10249,6 +10404,10 @@ msgstr "Прашање"
 msgid "Quick"
 msgstr "Брзо"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "Акции за избор на Скин"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10409,7 +10568,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "Поставки за снимање"
+msgstr "Име на Канал"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10428,15 +10587,7 @@ msgid "Recording"
 msgstr "Снимање"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "Поставки за снимање"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "Патеки за снимање"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "Патеки за снимање"
 
 msgid "Recording Setup"
@@ -10444,9 +10595,6 @@ msgstr "Поставки за снимање"
 
 msgid "Recording in progress"
 msgstr "Снимањето е во тек"
-
-msgid "Recording paths"
-msgstr "Патеки за снимање"
 
 msgid "Recording type"
 msgstr "Вид на снимање"
@@ -10458,10 +10606,6 @@ msgid "Recordings"
 msgstr "Снимки"
 
 msgid "Recordings always have priority"
-msgstr "Снимките секогаш имаат приоритет"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "Снимките секогаш имаат приоритет"
 
 #, fuzzy
@@ -10535,6 +10679,10 @@ msgstr "Повторно вчитување"
 
 msgid "Reload blacklists"
 msgstr "Вчитување на црни листи"
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "Отстрани обележувач"
 
 #, fuzzy
 msgid "Reloading EPG Cache..."
@@ -10635,9 +10783,6 @@ msgstr "Отстранете ги завршените тајмери по (де
 msgid "Remove currently selected title"
 msgstr "Отстранете го моментално избраниот наслов"
 
-msgid "Remove directory"
-msgstr "Отстрани директориум"
-
 msgid "Remove entry"
 msgstr "Отстрани елемент"
 
@@ -10672,10 +10817,6 @@ msgstr "Отстранете го насловот"
 msgid "Removing"
 msgstr "Отстрани"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "Не успеа да се отстрани директориумот% s. (не е празно.)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "Отстранување на табелата за партиции"
@@ -10686,6 +10827,10 @@ msgstr "Отстранете ги кабелските канали"
 
 msgid "Rename"
 msgstr "Преименувај"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "Отстрани директориум"
 
 msgid "Rename entry"
 msgstr "Преименувај го записот"
@@ -10809,14 +10954,6 @@ msgstr "Рестарт"
 #, fuzzy
 msgid "Restart GUI"
 msgstr "Рестарт GUI сега?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "Рестар енигма во модус на дебагирање"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
-msgstr "Рестарт енигма во стандарден модус"
 
 msgid "Restart GUI now?"
 msgstr "Рестарт GUI сега?"
@@ -11048,6 +11185,9 @@ msgstr "Поставки за роторот"
 msgid "SINGLE LAYER DVD"
 msgstr "ДВД со еден слој"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 msgid "SNR"
 msgstr "SNR"
 
@@ -11184,9 +11324,6 @@ msgstr "Внесете текст и зачувајте, а потоа изле�
 
 msgid "Save and activate the currently selected skin"
 msgstr "Притиснете Зачувај за да го активирате нагласениот Скин"
-
-msgid "Save and exit"
-msgstr "Зачувај и излези"
 
 msgid "Save and restart timeshift"
 msgstr "Зачувај и рестартирај timeshift"
@@ -11540,11 +11677,23 @@ msgstr "Изберете HDD"
 
 #, fuzzy
 msgid "Select Info"
-msgstr "Избор на тајмер ..."
+msgstr "Изберете CAId"
 
 #, fuzzy
 msgid "Select Input Device"
 msgstr "Изберете влезен уред"
+
+#, fuzzy
+msgid "Select Location"
+msgstr "Изберете локација"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "Изберете локација"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "Локација за Timeshift"
 
 msgid "Select a bouquet"
 msgstr "Изберете букет"
@@ -11640,9 +11789,6 @@ msgstr "Изберете влезен уред"
 msgid "Select interface"
 msgstr "Изберете интерфејс"
 
-msgid "Select location"
-msgstr "Изберете локација"
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "изберете запис во менито"
@@ -11696,6 +11842,9 @@ msgstr "Изберете ја корисничката лента што ќе м
 
 msgid "Select the character or action under the keyboard cursor"
 msgstr "Изберете го карактерот или дејството под курсорот на тастатурата"
+
+msgid "Select the currently highlighted location and exit"
+msgstr ""
 
 msgid "Select the locale from a menu"
 msgstr "Изберете ја локацијата од менито"
@@ -12053,6 +12202,18 @@ msgstr "Тестирајте ја мрежната конфигурација н
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Поставете го Корисничкиот ID на OpenWebif од вашиот резервен тјунер"
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
+msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
@@ -12971,10 +13132,6 @@ msgstr "Звук"
 msgid "Sound carrier"
 msgstr "Носач на звук"
 
-#, fuzzy
-msgid "Source Brand"
-msgstr "Изворно барање"
-
 msgid "Source request"
 msgstr "Изворно барање"
 
@@ -13509,8 +13666,13 @@ msgstr "Префрли го каналот нагоре"
 msgid "Switch to TV mode"
 msgstr "Промени во режим на ТВ"
 
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "Префрлете се на обележувачи"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "Префрли се на претходниот канал"
 
 msgid "Switch to filelist"
 msgstr "Префрли се на списокот со датотеки"
@@ -13544,6 +13706,10 @@ msgstr "Префрли се на претходниот потканал"
 
 msgid "Switch to radio mode"
 msgstr "Промени во режим на радио"
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "преминете на следниот агол"
 
 msgid "Switzerland"
 msgstr "Швајцарија"
@@ -13855,14 +14021,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"Директориумот% s не може да се запише.\n"
-"Проверете дали имате наведено директориум за пишување."
-
 msgid "The following files were found..."
 msgstr "Пронајдени се следниве датотеки ..."
 
@@ -14015,8 +14173,10 @@ msgstr "Нема достапни ажурирања."
 msgid "There is no signal to lock on !"
 msgstr "Нема сигнал!"
 
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "Нема доволно простор на избраната партиција.\n"
@@ -14029,6 +14189,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -14420,6 +14583,10 @@ msgid "Timeshift Actions"
 msgstr "Локација за Timeshift"
 
 msgid "Timeshift Live"
+msgstr "Timeshift Live"
+
+#, fuzzy
+msgid "Timeshift Setup"
 msgstr "Timeshift Live"
 
 msgid "Timeshift is running. Select an action.\n"
@@ -14891,9 +15058,6 @@ msgstr "Ажурирајте и рестартирајте"
 msgid "Update and reboot (recommended)"
 msgstr "Ажурирање и рестартирање (препорачано)"
 
-msgid "Update bookmarks"
-msgstr "Ажурирање на обележувачи"
-
 msgid "Update channel list only"
 msgstr "Ажурирајте само список со канали"
 
@@ -15066,7 +15230,7 @@ msgstr "Користете ги поставките за влезниот ур�
 msgid "Use these settings?"
 msgstr "Користете ги овие поставки?"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -15798,7 +15962,8 @@ msgstr "Ако е активирана оваа опција, оваа пост�
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr "Ако е активирана оваа опција, оваа поставка има поголема тежина од „Претпочитан приемник“."
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+#, fuzzy
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr "Ако е активирана оваа опција, timeshift  започнува автоматски во позадина по одредено време."
 
 msgid "When enabled, use DHCP for the IP configuration."

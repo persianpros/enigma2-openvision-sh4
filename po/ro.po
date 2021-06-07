@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -1739,8 +1739,16 @@ msgid "Add"
 msgstr "Adauga"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "adauga bookmark"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "adauga Serviciu"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "adauga bookmark"
 
 msgid "Add a mark"
 msgstr "Adauga un mark"
@@ -2065,9 +2073,6 @@ msgstr ""
 
 msgid "American Samoa"
 msgstr ""
-
-msgid "An empty filename is illegal."
-msgstr "Este illegal un gol filename."
 
 #, fuzzy
 msgid "An error occurred while downloading the packetlist. Please try again."
@@ -2566,6 +2571,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr ""
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr ""
 
@@ -2578,7 +2586,7 @@ msgstr "Momentul inceperii"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Efectul butonului 0 in modul PiP (imagine in imagine)"
 
-msgid "Behavior of 'pause and ok' when paused"
+msgid "Behavior of PAUSE and OK when paused"
 msgstr ""
 
 msgid "Behavior when a movie is started"
@@ -2678,6 +2686,10 @@ msgstr ""
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr ""
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "Semne de carte"
+
 msgid "Bookmarks"
 msgstr "Semne de carte"
 
@@ -2727,9 +2739,6 @@ msgstr ""
 msgid "Bouvet Island"
 msgstr ""
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr ""
 
@@ -2756,9 +2765,8 @@ msgstr ""
 msgid "Buffers"
 msgstr ""
 
-#, fuzzy
 msgid "Build Brand"
-msgstr "Informatii"
+msgstr ""
 
 #, fuzzy
 msgid "Build Model"
@@ -2968,6 +2976,10 @@ msgstr ""
 msgid "Cancel execution?"
 msgstr "Selectie canal"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "Selectie canal"
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -3057,6 +3069,9 @@ msgstr "Permite schimbarea buchetului prin zapping"
 #, fuzzy
 msgid "Change device settings"
 msgstr "Setari nume server"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr ""
@@ -4017,15 +4032,8 @@ msgstr "Creeaza DVD-ISO"
 msgid "Create directory"
 msgstr "Creaza director"
 
-msgid "Create new folder and exit"
-msgstr ""
-
 msgid "Create separate radio userbouquet"
 msgstr ""
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "Crearea directorului %s a esuat"
 
 #, fuzzy
 msgid "Creating filesystem"
@@ -4452,6 +4460,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 #, fuzzy
 msgid "Debug to file"
 msgstr "sterge file"
@@ -4570,6 +4581,10 @@ msgid "Delete"
 msgstr "Sterge"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "Semne de carte"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "sterge file"
 
@@ -4589,11 +4604,19 @@ msgstr "sterge file"
 msgid "Delete all the text"
 msgstr "sterge intrare playlist"
 
+#, fuzzy
+msgid "Delete bookmark"
+msgstr "elimina bookmark-ul"
+
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
 
 msgid "Delete character under cursor or select PM times"
 msgstr ""
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "Creaza director"
 
 msgid "Delete entry"
 msgstr "Sterge articol"
@@ -4678,6 +4701,9 @@ msgstr ""
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr ""
 
+msgid "Detailed debug logs"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr ""
 
@@ -4757,12 +4783,35 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "Redare directa a titlurilor fara meniu"
 
+msgid "Directories"
+msgstr ""
+
 msgid "Directory"
 msgstr ""
 
 #, fuzzy, python-format
 msgid "Directory %s does not exist."
 msgstr "Directorul %s nu exista."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "Directorul %s nu exista."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "Directorul %s nu exista."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "Directorul %s nu exista."
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "Alege locatia copiei de siguranta"
 
 msgid "Directory browser"
 msgstr ""
@@ -4842,6 +4891,10 @@ msgstr "Afisaj si interfata utilizator"
 #, fuzzy
 msgid "Display brightness"
 msgstr "Configurare afisaj"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "Afiseaza continutul format 4:3 ca"
 
 msgid "Display message before playing next movie"
 msgstr ""
@@ -4931,6 +4984,14 @@ msgstr "Confirmati stergerea %s?"
 msgid "Do you really want to delete ?"
 msgstr "Confirmati stergerea %s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "Confirmati stergerea %s?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "Confirmati stergerea %s?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "Confirmati stergerea %s?"
@@ -4972,10 +5033,6 @@ msgid ""
 msgstr ""
 "Confirmati descarcarea\n"
 "pluginului \"%s\"?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "Confirmati stergerea directorului %s de pe disc?"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5396,9 +5453,6 @@ msgstr "activeaza editare bouquet"
 msgid "Enable client mode"
 msgstr "Activeaza mod mutare"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5441,6 +5495,18 @@ msgid "Enable swap:"
 msgstr "Activeaza"
 
 msgid "Enable teletext caching"
+msgstr ""
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
@@ -5575,6 +5641,14 @@ msgstr ""
 msgid "Enter if you are north or south of the equator."
 msgstr ""
 
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "Va rugam introduceti numele noului director"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "Start director"
+
 msgid "Enter persistent PIN code"
 msgstr ""
 
@@ -5702,6 +5776,37 @@ msgid ""
 msgstr ""
 "Eroare: %s\n"
 "Mai incerc o data?"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "Directia %s exista deja."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "Director selectat nevalid: %s"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "Locatie nevalida"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 msgid "Estonia"
 msgstr ""
@@ -6182,6 +6287,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "Flash"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "Crearea directorului %s a esuat"
+
 #, fuzzy
 msgid "Flash type"
 msgstr "Flash"
@@ -6224,6 +6333,9 @@ msgid "Force enabled"
 msgstr "activat"
 
 msgid "Force legacy signal stats"
+msgstr ""
+
+msgid "Force zap to recording service in standby"
 msgstr ""
 
 msgid "Format"
@@ -6943,6 +7055,9 @@ msgstr ""
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -7089,6 +7204,20 @@ msgstr ""
 msgid "Include EIT in http streams"
 msgstr ""
 
+msgid "Include action map data"
+msgstr ""
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "Configurare tastatura"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "Tip control parental"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7170,9 +7299,6 @@ msgstr "Initializare"
 #, fuzzy
 msgid "Initial fast forward speed"
 msgstr "Vitezele pentru Repede Inainte"
-
-msgid "Initial location in new timers"
-msgstr ""
 
 msgid "Initial lock ratio"
 msgstr ""
@@ -7299,14 +7425,6 @@ msgstr ""
 
 #, fuzzy
 msgid "Invalid"
-msgstr "Locatie nevalida"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "Director selectat nevalid: %s"
-
-#, fuzzy
-msgid "Invalid location"
 msgstr "Locatie nevalida"
 
 msgid "Invalid transponder data"
@@ -7762,9 +7880,8 @@ msgstr "Lituaniana"
 msgid "Lithuanian"
 msgstr "Lituaniana"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "Selectare timer"
+msgstr ""
 
 msgid "Load"
 msgstr "Incarca"
@@ -7812,12 +7929,16 @@ msgstr "Retea locala"
 msgid "Location"
 msgstr "Locatie"
 
-msgid "Location for instant recordings"
+msgid "Location Box Context Menu"
 msgstr ""
 
 #, fuzzy
 msgid "Location information"
 msgstr "Informatii"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "Alege locatia copiei de siguranta"
 
 msgid "Lock ratio"
 msgstr ""
@@ -8186,6 +8307,12 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Mod"
 
+msgid "Mode down a line"
+msgstr ""
+
+msgid "Mode down a screen"
+msgstr ""
+
 #, fuzzy
 msgid "Model"
 msgstr "Mod"
@@ -8282,6 +8409,10 @@ msgid "Move down to last entry"
 msgstr "muta jos la ultima intrare"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "muta jos la ultima intrare"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "muta jos la urmatoarea intrare"
 
@@ -8356,6 +8487,10 @@ msgid "Move up to first entry"
 msgstr "muta sus la prima intrare"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "muta sus la prima intrare"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "muta sus la anterioara intrare"
 
@@ -8385,9 +8520,6 @@ msgstr "Meniu lista filme"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "Selectare timer"
-
-msgid "Movie location"
-msgstr ""
 
 #, fuzzy
 msgid "Movie selection"
@@ -8726,6 +8858,9 @@ msgstr ""
 " (Timeout reading PAT)"
 
 msgid "No data received yet"
+msgstr ""
+
+msgid "No debug logs"
 msgstr ""
 
 msgid "No delay"
@@ -9334,6 +9469,10 @@ msgstr "Pan&Scan"
 msgid "Panama"
 msgstr ""
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "Alege locatia copiei de siguranta"
+
 msgid "Panic to"
 msgstr ""
 
@@ -9554,6 +9693,12 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+msgid "Playback Setup"
+msgstr ""
+
+msgid "Playback, Recording & Timeshift"
+msgstr ""
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -9612,9 +9757,6 @@ msgstr "Va rugam introduceti un nou nume de fisier"
 msgid "Please enter filename (empty = use current date)"
 msgstr "Va rugam introduceti numele fisierului (gol = foloseste data curenta)"
 
-msgid "Please enter name of the new directory"
-msgstr "Va rugam introduceti numele noului director"
-
 msgid "Please enter new description:"
 msgstr ""
 
@@ -9669,6 +9811,10 @@ msgstr "Va rugam selectati un subserviciu..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "Va rugam selectati un subserviciu..."
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "Va rugam selectati o lista de redare..."
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10236,6 +10382,10 @@ msgstr ""
 msgid "Quick"
 msgstr "Rapid"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "Alege locatia copiei de siguranta"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10394,7 +10544,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "Inregistrare"
+msgstr "Scanare Serviciu"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10414,24 +10564,13 @@ msgid "Recording"
 msgstr "Inregistrare"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "Reluare redare"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "Inregistrari"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "Inregistrari"
 
 msgid "Recording Setup"
 msgstr ""
 
 msgid "Recording in progress"
-msgstr ""
-
-msgid "Recording paths"
 msgstr ""
 
 msgid "Recording type"
@@ -10444,10 +10583,6 @@ msgid "Recordings"
 msgstr "Inregistrari"
 
 msgid "Recordings always have priority"
-msgstr "Inregistrarile au intotdeauna prioritate"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "Inregistrarile au intotdeauna prioritate"
 
 #, fuzzy
@@ -10520,6 +10655,10 @@ msgstr "Reincarcare"
 
 msgid "Reload blacklists"
 msgstr ""
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "elimina bookmark-ul"
 
 msgid "Reloading EPG Cache..."
 msgstr ""
@@ -10620,9 +10759,6 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "Eliminare titlu curent selectat"
 
-msgid "Remove directory"
-msgstr "Elimina directorul"
-
 msgid "Remove entry"
 msgstr "Elimina intrarea"
 
@@ -10657,10 +10793,6 @@ msgstr "Stergere titlu"
 msgid "Removing"
 msgstr "Stergere"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "Stergere drector %s esuata. (Probabil nu este gol.)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "Stergere titlu"
@@ -10671,6 +10803,10 @@ msgstr "Stergere"
 
 msgid "Rename"
 msgstr "Redenumire"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "Elimina directorul"
 
 msgid "Rename entry"
 msgstr ""
@@ -10790,14 +10926,6 @@ msgstr "Restart"
 
 #, fuzzy
 msgid "Restart GUI"
-msgstr "Restart GUI acum?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "Restartati acum?"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
 msgstr "Restart GUI acum?"
 
 msgid "Restart GUI now?"
@@ -11038,6 +11166,9 @@ msgstr "Configurare Pozitioner"
 msgid "SINGLE LAYER DVD"
 msgstr ""
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 msgid "SNR"
 msgstr "SNR"
 
@@ -11173,9 +11304,6 @@ msgstr ""
 #, fuzzy
 msgid "Save and activate the currently selected skin"
 msgstr "Eliminare titlu curent selectat"
-
-msgid "Save and exit"
-msgstr ""
 
 msgid "Save and restart timeshift"
 msgstr ""
@@ -11544,6 +11672,18 @@ msgid "Select Input Device"
 msgstr "Alegeti un film"
 
 #, fuzzy
+msgid "Select Location"
+msgstr "Alege locatia copiei de siguranta"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "Alege locatia copiei de siguranta"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "Alege locatia copiei de siguranta"
+
+#, fuzzy
 msgid "Select a bouquet"
 msgstr "Alegeti un film"
 
@@ -11645,9 +11785,6 @@ msgstr ""
 msgid "Select interface"
 msgstr ""
 
-msgid "Select location"
-msgstr ""
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "selecteaza intrarea meniu"
@@ -11703,6 +11840,9 @@ msgid "Select the User Band to be assigned to this tuner. This is an index into 
 msgstr ""
 
 msgid "Select the character or action under the keyboard cursor"
+msgstr ""
+
+msgid "Select the currently highlighted location and exit"
 msgstr ""
 
 #, fuzzy
@@ -12066,6 +12206,18 @@ msgid "Set the MAC address of your receiver.\n"
 msgstr "iesire configurare nameserver"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
+msgstr ""
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
 msgstr ""
 
 msgid "Set the default sorting method."
@@ -12990,9 +13142,6 @@ msgstr "Sunet"
 msgid "Sound carrier"
 msgstr "Purtatoare audio"
 
-msgid "Source Brand"
-msgstr ""
-
 msgid "Source request"
 msgstr ""
 
@@ -13537,8 +13686,13 @@ msgstr ""
 msgid "Switch to TV mode"
 msgstr ""
 
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "Mergi la bookmarks"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "Schimba la subserviciul anterior"
 
 #, fuzzy
 msgid "Switch to filelist"
@@ -13579,6 +13733,10 @@ msgstr "Schimba la subserviciul anterior"
 
 msgid "Switch to radio mode"
 msgstr ""
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "mergi la urmatorul unghi"
 
 msgid "Switzerland"
 msgstr ""
@@ -13884,12 +14042,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-
 msgid "The following files were found..."
 msgstr "Urmatoarele fisiere nu au fost gasite..."
 
@@ -14033,8 +14185,10 @@ msgstr ""
 msgid "There is no signal to lock on !"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "S-ar putea sa nu existe spatiu suficient pe partitia selectata.\n"
@@ -14047,6 +14201,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -14433,6 +14590,10 @@ msgstr "Timeshift"
 
 msgid "Timeshift Live"
 msgstr ""
+
+#, fuzzy
+msgid "Timeshift Setup"
+msgstr "Timeshift"
 
 msgid "Timeshift is running. Select an action.\n"
 msgstr ""
@@ -14909,10 +15070,6 @@ msgid "Update and reboot (recommended)"
 msgstr ""
 
 #, fuzzy
-msgid "Update bookmarks"
-msgstr "Scanare automata"
-
-#, fuzzy
 msgid "Update channel list only"
 msgstr "canalul urmator in istoric"
 
@@ -15089,7 +15246,7 @@ msgstr "Inchideti fara sa salvati setarile?"
 msgid "Use these settings?"
 msgstr "Revenire la setarile sistemului"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -15813,7 +15970,7 @@ msgstr ""
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr ""
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr ""
 
 #, fuzzy

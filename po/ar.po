@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -1378,9 +1378,8 @@ msgctxt "Hotkey help separator"
 msgid "/"
 msgstr "/s"
 
-#, fuzzy
 msgid "/T"
-msgstr "/s"
+msgstr ""
 
 msgid "/s"
 msgstr "/s"
@@ -1984,8 +1983,16 @@ msgid "Add"
 msgstr "إضافة"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "إضافة علامة مرجعية"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "إضافة خدمة"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "إضافة علامة مرجعية"
 
 msgid "Add a mark"
 msgstr "أضف علامه"
@@ -2309,9 +2316,6 @@ msgstr ""
 
 msgid "American Samoa"
 msgstr "ساموا الأمريكية"
-
-msgid "An empty filename is illegal."
-msgstr "اسم ملف فارغ غير قانوني."
 
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr "حدث خطأ أثناء تنزيل قائمة الحزم. حاول مرة اخرى."
@@ -2817,6 +2821,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr ""
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr "الباسكي"
 
@@ -2831,7 +2838,7 @@ msgid "Behavior of '0' button in PiP mode"
 msgstr "سلوك مفتاح 0 في وضع خاصية قناة داخل قناة"
 
 #, fuzzy
-msgid "Behavior of 'pause and ok' when paused"
+msgid "Behavior of PAUSE and OK when paused"
 msgstr "السلوك 'التوقف' عندما توقفت"
 
 msgid "Behavior when a movie is started"
@@ -2935,6 +2942,10 @@ msgstr "بوليفيا (دولة متعددة القوميات)"
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr "بونير، سينت أوستاتيوس وسابا"
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "الاشارات المرجعيه"
+
 msgid "Bookmarks"
 msgstr "الاشارات المرجعيه"
 
@@ -2983,9 +2994,6 @@ msgstr "بوتسوانا"
 msgid "Bouvet Island"
 msgstr "جزيرة بوفيت"
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr "البرازيل"
 
@@ -3015,11 +3023,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Build Brand"
-msgstr "معلومات"
+msgstr "البنية: %s"
 
 #, fuzzy
 msgid "Build Model"
-msgstr "نموذج"
+msgstr "البنية: %s"
 
 #, fuzzy
 msgid "Build information"
@@ -3227,6 +3235,10 @@ msgstr ""
 msgid "Cancel execution?"
 msgstr "إختيار القناة"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "إختيار القناة"
+
 msgid "Cancelled upon user request"
 msgstr "إلغاء بناء علي طلب المستخدم"
 
@@ -3324,6 +3336,9 @@ msgstr "التنقل بين الباقات بشكل أسرع"
 #, fuzzy
 msgid "Change device settings"
 msgstr "إعدادات اسم الخادم"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "تغيير التسجيل (إضافة وقت)"
@@ -4344,16 +4359,9 @@ msgstr "تكوين دى فى دى إيزو"
 msgid "Create directory"
 msgstr "إنشاء المسار"
 
-msgid "Create new folder and exit"
-msgstr ""
-
 #, fuzzy
 msgid "Create separate radio userbouquet"
 msgstr "استعاده باقات المستخدم المحذوفة"
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "فشل إنشاء %s المجلد."
 
 msgid "Creating filesystem"
 msgstr "إنشاء نظام الملفات"
@@ -4781,6 +4789,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 #, fuzzy
 msgid "Debug to file"
 msgstr "حذف الملف"
@@ -4899,6 +4910,10 @@ msgid "Delete"
 msgstr "حذف"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "الاشارات المرجعيه"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "حذف المؤقت"
 
@@ -4918,11 +4933,19 @@ msgstr "حذف كل البدائل"
 msgid "Delete all the text"
 msgstr "حذف قائمة التشغيل المدخلة"
 
+#, fuzzy
+msgid "Delete bookmark"
+msgstr "إزالة العلامة المرجعية"
+
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
 
 msgid "Delete character under cursor or select PM times"
 msgstr ""
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "إنشاء المسار"
 
 msgid "Delete entry"
 msgstr "مسح المدخل"
@@ -5008,6 +5031,9 @@ msgstr "تمكين الريموت الإحتياطي في الرسيفر"
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "تمكين الريموت الإحتياطي في الرسيفر"
 
+msgid "Detailed debug logs"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr "تفاصيل الإضافات: "
 
@@ -5089,12 +5115,36 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "عرض مباشر لعناوين مربوطه بدون قائمه"
 
+#, fuzzy
+msgid "Directories"
+msgstr "الدليل"
+
 msgid "Directory"
 msgstr "الدليل"
 
 #, python-format
 msgid "Directory %s does not exist."
 msgstr "المجلد %s غير موجود."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "المجلد %s غير موجود."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "المجلد %s غير موجود."
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "المجلد %s غير موجود."
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "تصفح الدليل"
 
 msgid "Directory browser"
 msgstr "تصفح الدليل"
@@ -5177,6 +5227,10 @@ msgstr "واجهة العرض والمستخدم"
 #, fuzzy
 msgid "Display brightness"
 msgstr "لوحة تحكم عرض الإضاءة"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "محتوى أبعاد شاشة العرض 4:3"
 
 msgid "Display message before playing next movie"
 msgstr "عرض رسالة قبل تشغيل الفيلم القادم"
@@ -5266,6 +5320,14 @@ msgstr "هل تريد فعلا مسح %s?"
 msgid "Do you really want to delete ?"
 msgstr "هل تريد فعلا مسح %s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "هل تريد فعلا مسح %s?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "هل تريد فعلا مسح %s?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "هل تريد فعلا مسح %s?"
@@ -5304,10 +5366,6 @@ msgid ""
 "Do you really want to remove\n"
 "the plugin \"%s\"?"
 msgstr "هل تريد فعلا حذف البلج إنز \"%s\"?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "هل تريد فعلا حذف الدليل %s من القرص؟"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5764,9 +5822,6 @@ msgstr "تمكين تعديل الباقة"
 msgid "Enable client mode"
 msgstr "تمكين وضع التحريك للقنوات"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5813,6 +5868,18 @@ msgstr "تفعيل"
 
 msgid "Enable teletext caching"
 msgstr "تمكين الترجمة المختبئة"
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
+msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
 msgstr "تمكين هذا الاعداد إذا كان النظام الجوي الخاص بك يحتاج إلى طاقة"
@@ -5951,6 +6018,14 @@ msgstr "ادخل إذا كنت في الشرق أو نصف الكره الغرب
 msgid "Enter if you are north or south of the equator."
 msgstr "ادخل إذا كنت في الشمال أو الجنوب من خط الاستواء."
 
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "من فضلك أدخل أسم الدليل الجديد"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "ملفات البداية"
+
 msgid "Enter persistent PIN code"
 msgstr "أدخل الرمز السري"
 
@@ -6080,6 +6155,37 @@ msgid ""
 msgstr ""
 "خطأ: %s\n"
 "إعادة المحاوله ؟"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "المسار %s موجود مسبقا."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "تم إختيار دليل غير صالح: %s"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "موقع غير صالح"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 msgid "Estonia"
 msgstr "استونيا"
@@ -6589,6 +6695,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "الشحن"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "فشل إنشاء %s المجلد."
+
 #, fuzzy
 msgid "Flash type"
 msgstr "الشحن"
@@ -6633,6 +6743,9 @@ msgstr "تم التفعيل"
 
 msgid "Force legacy signal stats"
 msgstr "فرض إحصاءات الإشارات القديمة"
+
+msgid "Force zap to recording service in standby"
+msgstr ""
 
 msgid "Format"
 msgstr "تهئية"
@@ -7385,6 +7498,9 @@ msgstr "إذا تم تعيينها على قيم إشارة 'نعم' (معدل �
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -7542,6 +7658,21 @@ msgstr "يشمل عرض معلومات التشفير في روابط البث"
 msgid "Include EIT in http streams"
 msgstr "يشمل جدول عرض الأحداث في روابط البث"
 
+#, fuzzy
+msgid "Include action map data"
+msgstr "يشمل الاحداث المباشرة في روابط البث"
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "خريطة لوحة المفاتيح"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "إعدادات نوع جهاز التحكم عن بعد"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7625,10 +7756,6 @@ msgstr "التهيئة"
 
 msgid "Initial fast forward speed"
 msgstr "أولوية التسريع إلى الامام"
-
-#, fuzzy
-msgid "Initial location in new timers"
-msgstr "نسبه القفل الاوليه"
 
 msgid "Initial lock ratio"
 msgstr "نسبه القفل الاوليه"
@@ -7761,13 +7888,6 @@ msgstr "الفاصل الزمني بين المفاتيح عند التكرار:
 #, fuzzy
 msgid "Invalid"
 msgstr "نوع غير صالح"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "تم إختيار دليل غير صالح: %s"
-
-msgid "Invalid location"
-msgstr "موقع غير صالح"
 
 msgid "Invalid transponder data"
 msgstr "بيانات مرسله غير صالحه"
@@ -8220,9 +8340,8 @@ msgstr "ليتوانيا"
 msgid "Lithuanian"
 msgstr "اللتوانية"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "إختيار المؤقت"
+msgstr ""
 
 msgid "Load"
 msgstr "تحميل"
@@ -8272,12 +8391,16 @@ msgid "Location"
 msgstr "مكان"
 
 #, fuzzy
-msgid "Location for instant recordings"
-msgstr "بدء التسجيل الفوري"
+msgid "Location Box Context Menu"
+msgstr "حماية قوائم السياق"
 
 #, fuzzy
 msgid "Location information"
 msgstr "معلومات"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "حدد الاجراء"
 
 msgid "Lock ratio"
 msgstr "إقفال توسيع الشاشة"
@@ -8651,6 +8774,14 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "النظام"
 
+#, fuzzy
+msgid "Mode down a line"
+msgstr "الانتقال إلى أخر القائمة"
+
+#, fuzzy
+msgid "Mode down a screen"
+msgstr "تجميد الشاشة"
+
 msgid "Model"
 msgstr "نموذج"
 
@@ -8749,6 +8880,10 @@ msgid "Move down to last entry"
 msgstr "أنتقل للأسفل إلى الإدخال السابق"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "أنتقل للأسفل إلى الإدخال السابق"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "أنتقل للأسفل إلى الإدخال التالي"
 
@@ -8822,6 +8957,10 @@ msgid "Move up to first entry"
 msgstr "تحرك للأعلى إلى المدخل الأول"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "تحرك للأعلى إلى المدخل الأول"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "تحرك للأعلى المدخل السابق"
 
@@ -8852,9 +8991,6 @@ msgstr "ضبط قائمة الأفلام"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "أختيار الأفلام"
-
-msgid "Movie location"
-msgstr "مكان الفيلم"
 
 msgid "Movie selection"
 msgstr "أختيار الأفلام"
@@ -9205,6 +9341,9 @@ msgstr ""
 #, fuzzy
 msgid "No data received yet"
 msgstr "نوع عنوان استقبال المضيف"
+
+msgid "No debug logs"
+msgstr ""
 
 msgid "No delay"
 msgstr "بدون تأخير"
@@ -9835,6 +9974,10 @@ msgstr "تنسيق وتعريض الصورة"
 msgid "Panama"
 msgstr "بنما"
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "حدد الاجراء"
+
 msgid "Panic to"
 msgstr "الرجوع للخلف"
 
@@ -10052,6 +10195,14 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+#, fuzzy
+msgid "Playback Setup"
+msgstr "تشغيل التالي"
+
+#, fuzzy
+msgid "Playback, Recording & Timeshift"
+msgstr "تشغيل ملفات الوسائط"
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -10117,10 +10268,6 @@ msgstr "من فضلك أدخل أسم جديد للملف"
 msgid "Please enter filename (empty = use current date)"
 msgstr "من فضلك أدخل أسم الملف (فارغ= استخدم التارخ الحالي)"
 
-#, fuzzy
-msgid "Please enter name of the new directory"
-msgstr "من فضلك أدخل أسم الدليل الجديد"
-
 msgid "Please enter new description:"
 msgstr "الرجاء إدخال وصف جديد:"
 
@@ -10174,6 +10321,10 @@ msgstr "من فضلك أختار الخدمه الفرعيه..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "من فضلك أختار الخدمه الفرعيه..."
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "من فضلك أختار قائمة التشغيل..."
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10759,6 +10910,10 @@ msgstr "سؤال"
 msgid "Quick"
 msgstr "سريع"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "حدد الاجراء"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10925,7 +11080,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "نوع التسجيل"
+msgstr "أسم القناة"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10945,15 +11100,7 @@ msgid "Recording"
 msgstr "تسجيل"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "نوع التسجيل"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "تسجيلات"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "تسجيلات"
 
 #, fuzzy
@@ -10962,10 +11109,6 @@ msgstr "نوع التسجيل"
 
 msgid "Recording in progress"
 msgstr "التسجيل قيد التشغيل"
-
-#, fuzzy
-msgid "Recording paths"
-msgstr "تسجيلات"
 
 msgid "Recording type"
 msgstr "نوع التسجيل"
@@ -10977,10 +11120,6 @@ msgid "Recordings"
 msgstr "تسجيلات"
 
 msgid "Recordings always have priority"
-msgstr "التسجيلات لها الأولوية دائمآ"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "التسجيلات لها الأولوية دائمآ"
 
 #, fuzzy
@@ -11056,6 +11195,10 @@ msgstr "إعادة تحميل"
 
 msgid "Reload blacklists"
 msgstr "إعادة تحميل القوائم السوداء"
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "إزالة العلامة المرجعية"
 
 #, fuzzy
 msgid "Reloading EPG Cache..."
@@ -11158,10 +11301,6 @@ msgstr "إزالة المؤقتات المكتملة بعد (أيام)"
 msgid "Remove currently selected title"
 msgstr "حذف العنوان الحالي المختار"
 
-#, fuzzy
-msgid "Remove directory"
-msgstr "حذف الدليل"
-
 msgid "Remove entry"
 msgstr "حذف الباقة"
 
@@ -11196,10 +11335,6 @@ msgstr "حذف عنوان"
 msgid "Removing"
 msgstr "جاري الحذف"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "فشل حذف %s (.قد يكون فارغ) ."
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "حذف جدول التقسيم"
@@ -11210,6 +11345,10 @@ msgstr "حذف قنوات الكيبل"
 
 msgid "Rename"
 msgstr "إعادة التسميه"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "حذف الدليل"
 
 msgid "Rename entry"
 msgstr "إعادة التسمية"
@@ -11334,14 +11473,6 @@ msgstr "إعادة التشغيل"
 #, fuzzy
 msgid "Restart GUI"
 msgstr "هل تريد إعادة تشغيل الاينجما2 الان ؟"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "إعادة تشغيل الانجما 2"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
-msgstr "إعادة تشغيل الانجما 2"
 
 msgid "Restart GUI now?"
 msgstr "هل تريد إعادة تشغيل الاينجما2 الان ؟"
@@ -11588,6 +11719,9 @@ msgstr "ضبط الموتور"
 msgid "SINGLE LAYER DVD"
 msgstr "ديفيدي أحادي الشاشة"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 #, fuzzy
 msgid "SNR"
 msgstr "الإشارة:"
@@ -11729,9 +11863,6 @@ msgstr "حفظ و خروج"
 #, fuzzy
 msgid "Save and activate the currently selected skin"
 msgstr "أضغط موافق لتفعيل السكن المختار."
-
-msgid "Save and exit"
-msgstr "حفظ و خروج"
 
 #, fuzzy
 msgid "Save and restart timeshift"
@@ -12116,11 +12247,23 @@ msgstr "تحديد"
 
 #, fuzzy
 msgid "Select Info"
-msgstr "تحديد المؤقت..."
+msgstr "أختيار كايد"
 
 #, fuzzy
 msgid "Select Input Device"
 msgstr "إختيار الجهاز المدخل"
+
+#, fuzzy
+msgid "Select Location"
+msgstr "حدد الموقع"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "حدد الموقع"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "موقع ملفات التايم شفت"
 
 #, fuzzy
 msgid "Select a bouquet"
@@ -12224,9 +12367,6 @@ msgstr "إختيار الجهاز المدخل"
 msgid "Select interface"
 msgstr "أختار الواجهة"
 
-msgid "Select location"
-msgstr "حدد الموقع"
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "أختار القائمة المدخلة"
@@ -12281,6 +12421,9 @@ msgid "Select the User Band to be assigned to this tuner. This is an index into 
 msgstr ""
 
 msgid "Select the character or action under the keyboard cursor"
+msgstr ""
+
+msgid "Select the currently highlighted location and exit"
 msgstr ""
 
 #, fuzzy
@@ -12670,6 +12813,18 @@ msgstr ""
 #, fuzzy
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "ادخل عنوان الايبي الخاص بالرسيفر لاستخدامه للمؤالفات الاحتياطية."
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
+msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
@@ -13634,10 +13789,6 @@ msgstr "صـوت"
 msgid "Sound carrier"
 msgstr "مزود نقل الصوت"
 
-#, fuzzy
-msgid "Source Brand"
-msgstr "طلب المصدر"
-
 msgid "Source request"
 msgstr "طلب المصدر"
 
@@ -14193,8 +14344,12 @@ msgid "Switch to TV mode"
 msgstr "التبديل إلى وضع التلفزيون"
 
 #, fuzzy
-msgid "Switch to bookmarks"
+msgid "Switch to bookmarks panel"
 msgstr "الانتقال الى العلامات المرجعية"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "التحكم في القناة السابقة"
 
 msgid "Switch to filelist"
 msgstr "الانتقال الى قائمة الملفات"
@@ -14234,6 +14389,10 @@ msgstr "التبديل إلى الخدمة الفرعية السابقة"
 
 msgid "Switch to radio mode"
 msgstr "التبديل إلى وضع الراديو"
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "الانتقال الى الزاوية التالية"
 
 msgid "Switzerland"
 msgstr "سويسرا"
@@ -14551,14 +14710,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"الدليل %s غير قابل للكتابة.\n"
-"تأكد من إختيار دليل يمكنك الكتابة فيه."
-
 msgid "The following files were found..."
 msgstr "تم العثور على هذه الملفات..."
 
@@ -14706,7 +14857,8 @@ msgstr "لا توجد اشاره للقفل !"
 
 #, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "قد لا يكون هناك مساحه كافيه على القسم المختار..\n"
@@ -14719,6 +14871,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -15142,6 +15297,10 @@ msgstr "موقع ملفات التايم شفت"
 
 #, fuzzy
 msgid "Timeshift Live"
+msgstr "التحكم الزمني في البث المباشر"
+
+#, fuzzy
+msgid "Timeshift Setup"
 msgstr "التحكم الزمني في البث المباشر"
 
 msgid "Timeshift is running. Select an action.\n"
@@ -15635,10 +15794,6 @@ msgstr "ترقية وإعادة تشغيل النظام"
 msgid "Update and reboot (recommended)"
 msgstr "ترقية وإعادة تشغيل النظام"
 
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "إضافة علامة مرجعية"
-
 msgid "Update channel list only"
 msgstr "تحديث قائمة القنوات فقط"
 
@@ -15822,7 +15977,7 @@ msgstr "هل تستخدم إعدادات جهاز الإدخال هذه؟"
 msgid "Use these settings?"
 msgstr "إستخدام هذه الإعدادات؟"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -16586,7 +16741,7 @@ msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr "عند التمكين، يكون هذا العدد أكثر وزنا من 'المؤالف المفضل'."
 
 #, fuzzy
-msgid "When enabled, timeshift starts automatically in background after specified time."
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr "عند التمكين، التحكم الزمني في البث المباشر يبدأ تلقائيا في الخلفية بعد الوقت المحدد."
 
 msgid "When enabled, use DHCP for the IP configuration."

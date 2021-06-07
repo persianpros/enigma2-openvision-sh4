@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -1829,8 +1829,16 @@ msgid "Add"
 msgstr "เพิ่ม"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "เพิ่มบุ๊คมาร์ค"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "เพิ่มบริการ"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "เพิ่มบุ๊คมาร์ค"
 
 msgid "Add a mark"
 msgstr "เพิ่มจุด"
@@ -2156,9 +2164,6 @@ msgstr ""
 
 msgid "American Samoa"
 msgstr ""
-
-msgid "An empty filename is illegal."
-msgstr "ชื่อไฟล์ห้ามเป็นช่องว่าง"
 
 #, fuzzy
 msgid "An error occurred while downloading the packetlist. Please try again."
@@ -2653,6 +2658,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr ""
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr ""
 
@@ -2665,7 +2673,7 @@ msgstr "เวลาเริ่ม"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "เมื่อกด 0 ใน PiP ให้"
 
-msgid "Behavior of 'pause and ok' when paused"
+msgid "Behavior of PAUSE and OK when paused"
 msgstr ""
 
 msgid "Behavior when a movie is started"
@@ -2766,6 +2774,10 @@ msgstr ""
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr ""
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "บุ๊คมาร์ค"
+
 msgid "Bookmarks"
 msgstr "บุ๊คมาร์ค"
 
@@ -2815,9 +2827,6 @@ msgstr ""
 msgid "Bouvet Island"
 msgstr ""
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr ""
 
@@ -2846,11 +2855,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Build Brand"
-msgstr "ข้อมูล"
+msgstr "บิทเรท:"
 
 #, fuzzy
 msgid "Build Model"
-msgstr "โหมด"
+msgstr "บิทเรท:"
 
 #, fuzzy
 msgid "Build information"
@@ -3056,6 +3065,10 @@ msgstr ""
 msgid "Cancel execution?"
 msgstr "เลือกช่องรายการ"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "เลือกช่องรายการ"
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -3146,6 +3159,9 @@ msgstr "เปลี่ยนกลุ่มรายการเมื่อย
 #, fuzzy
 msgid "Change device settings"
 msgstr "ตั้งค่า Nameserver"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr ""
@@ -4113,15 +4129,8 @@ msgstr "สร้างแผ่นดีวีดีแบบ ISO"
 msgid "Create directory"
 msgstr "สร้างโฟล์เดอร์"
 
-msgid "Create new folder and exit"
-msgstr ""
-
 msgid "Create separate radio userbouquet"
 msgstr ""
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "ไม่สามารถสร้างโฟลเดอร์ %s ได้"
 
 #, fuzzy
 msgid "Creating filesystem"
@@ -4551,6 +4560,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 #, fuzzy
 msgid "Debug to file"
 msgstr "ลบไฟล์"
@@ -4669,6 +4681,10 @@ msgid "Delete"
 msgstr "ลบ"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "บุ๊คมาร์ค"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "ลบไฟล์"
 
@@ -4688,11 +4704,19 @@ msgstr "ลบไฟล์"
 msgid "Delete all the text"
 msgstr "ลบรายการนี้"
 
+#, fuzzy
+msgid "Delete bookmark"
+msgstr "ลบบุ๊คมาร์ค"
+
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
 
 msgid "Delete character under cursor or select PM times"
 msgstr ""
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "สร้างโฟล์เดอร์"
 
 msgid "Delete entry"
 msgstr "ลบรายการ"
@@ -4777,6 +4801,9 @@ msgstr ""
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr ""
 
+msgid "Detailed debug logs"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr ""
 
@@ -4856,12 +4883,36 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "เล่นทันที ไม่ต้องแสดงเมนู"
 
+#, fuzzy
+msgid "Directories"
+msgstr "ดูโฟล์เดอร์"
+
 msgid "Directory"
 msgstr ""
 
 #, fuzzy, python-format
 msgid "Directory %s does not exist."
 msgstr "ไม่พบโฟล์เดอร์ %s ในระบบ"
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "ไม่พบโฟล์เดอร์ %s ในระบบ"
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "ไม่พบโฟล์เดอร์ %s ในระบบ"
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "ไม่พบโฟล์เดอร์ %s ในระบบ"
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "ดูโฟล์เดอร์"
 
 msgid "Directory browser"
 msgstr "ดูโฟล์เดอร์"
@@ -4941,6 +4992,10 @@ msgstr "การแสดงผลและส่วนติดต่อผู
 #, fuzzy
 msgid "Display brightness"
 msgstr "ตั้งค่าการแสดงผล"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "แสดงรายการ 4:3 แบบ"
 
 msgid "Display message before playing next movie"
 msgstr ""
@@ -5030,6 +5085,14 @@ msgstr "ท่านต้องการที่จะลบ %s ออกจ�
 msgid "Do you really want to delete ?"
 msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "ท่านต้องการที่จะลบ %s ออกจากระบบหรือไม่?"
@@ -5071,10 +5134,6 @@ msgid ""
 msgstr ""
 "ท่านต้องการที่จะโหลด\n"
 "Plugin \"%s\" นี้หรือไม่?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "ท่านต้องการที่จะลบโฟล์เดอร์ %s ออกจากระบบหรือไม่?"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5496,9 +5555,6 @@ msgstr "แก้ไขกลุ่มรายการ"
 msgid "Enable client mode"
 msgstr "ทำการเคลื่อนย้าย"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5541,6 +5597,18 @@ msgid "Enable swap:"
 msgstr "เปิดใช้"
 
 msgid "Enable teletext caching"
+msgstr ""
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
@@ -5676,6 +5744,14 @@ msgstr ""
 msgid "Enter if you are north or south of the equator."
 msgstr ""
 
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "กรุณาป้อนชื่อโฟล์เดอร์ใหม่"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "โฟล์เดอร์เริ่มต้น"
+
 msgid "Enter persistent PIN code"
 msgstr ""
 
@@ -5803,6 +5879,37 @@ msgid ""
 msgstr ""
 "ผิดพลาด: %s\n"
 "ทำอีกครั้งหรือไม่?"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "พาธ %s นี้มีแล้วในระบบ"
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "โฟล์เดอร์นี้: %s ไม่ถูกต้อง"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "ปลายทางไม่ถูกต้อง"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 #, fuzzy
 msgid "Estonia"
@@ -6287,6 +6394,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "แฟรช"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "ไม่สามารถสร้างโฟลเดอร์ %s ได้"
+
 #, fuzzy
 msgid "Flash type"
 msgstr "แฟรช"
@@ -6329,6 +6440,9 @@ msgid "Force enabled"
 msgstr "ใช้งานแล้ว"
 
 msgid "Force legacy signal stats"
+msgstr ""
+
+msgid "Force zap to recording service in standby"
 msgstr ""
 
 msgid "Format"
@@ -7050,6 +7164,9 @@ msgstr ""
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -7202,6 +7319,20 @@ msgstr ""
 msgid "Include EIT in http streams"
 msgstr ""
 
+msgid "Include action map data"
+msgstr ""
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "ตั้งค่าแป้นพิมพ์"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "ชนิดการควบคุมอายุ"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7283,9 +7414,6 @@ msgstr "เตรียม"
 #, fuzzy
 msgid "Initial fast forward speed"
 msgstr "ความเร็วในการกรอเดินหน้า"
-
-msgid "Initial location in new timers"
-msgstr ""
 
 msgid "Initial lock ratio"
 msgstr ""
@@ -7412,14 +7540,6 @@ msgstr ""
 
 #, fuzzy
 msgid "Invalid"
-msgstr "ปลายทางไม่ถูกต้อง"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "โฟล์เดอร์นี้: %s ไม่ถูกต้อง"
-
-#, fuzzy
-msgid "Invalid location"
 msgstr "ปลายทางไม่ถูกต้อง"
 
 msgid "Invalid transponder data"
@@ -7876,9 +7996,8 @@ msgstr "ภาษาลิธูเนี่ยน"
 msgid "Lithuanian"
 msgstr "ภาษาลิธูเนี่ยน"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "เลือกการตั้งเวลา"
+msgstr ""
 
 msgid "Load"
 msgstr "โหลด"
@@ -7926,12 +8045,16 @@ msgstr "Local Network"
 msgid "Location"
 msgstr "สถานที่"
 
-msgid "Location for instant recordings"
+msgid "Location Box Context Menu"
 msgstr ""
 
 #, fuzzy
 msgid "Location information"
 msgstr "ข้อมูล"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "เลือกที่ที่จะสำรอง"
 
 msgid "Lock ratio"
 msgstr ""
@@ -8301,6 +8424,12 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "โหมด"
 
+msgid "Mode down a line"
+msgstr ""
+
+msgid "Mode down a screen"
+msgstr ""
+
 #, fuzzy
 msgid "Model"
 msgstr "โหมด"
@@ -8397,6 +8526,10 @@ msgid "Move down to last entry"
 msgstr "ย้ายลงไปท้ายสุด"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "ย้ายลงไปท้ายสุด"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "ย้ายลงไป"
 
@@ -8471,6 +8604,10 @@ msgid "Move up to first entry"
 msgstr "ย้ายไปบนสุด"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "ย้ายไปบนสุด"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "ย้ายไปก่อนหน้านี้"
 
@@ -8500,9 +8637,6 @@ msgstr "เมนูรายการภาพยนต์"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "เลือกการตั้งเวลา"
-
-msgid "Movie location"
-msgstr ""
 
 #, fuzzy
 msgid "Movie selection"
@@ -8842,6 +8976,9 @@ msgstr ""
 "(Timeout reading PAT)"
 
 msgid "No data received yet"
+msgstr ""
+
+msgid "No debug logs"
 msgstr ""
 
 msgid "No delay"
@@ -9454,6 +9591,10 @@ msgstr "Pan&Scan"
 msgid "Panama"
 msgstr ""
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "เลือกที่ที่จะสำรอง"
+
 msgid "Panic to"
 msgstr ""
 
@@ -9674,6 +9815,12 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+msgid "Playback Setup"
+msgstr ""
+
+msgid "Playback, Recording & Timeshift"
+msgstr ""
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -9736,9 +9883,6 @@ msgstr "กรุณป้อนชื่อไฟล์ใหม่"
 msgid "Please enter filename (empty = use current date)"
 msgstr "กรุณาป้อนชื่อไฟล์ (เป็นช่องว่าง = ใช้วันที่ปัจจุบันแทน)"
 
-msgid "Please enter name of the new directory"
-msgstr "กรุณาป้อนชื่อโฟล์เดอร์ใหม่"
-
 msgid "Please enter new description:"
 msgstr ""
 
@@ -9793,6 +9937,10 @@ msgstr "กรุณาเลือกบริการย่อย..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "กรุณาเลือกบริการย่อย..."
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "กรุณาเลือกสารบัญรายการ..."
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10366,6 +10514,10 @@ msgstr ""
 msgid "Quick"
 msgstr "เร็ว"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "เลือกที่ที่จะสำรอง"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10524,7 +10676,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "กำลังบันทึกรายการ"
+msgstr "ค้นหาบริการ"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10544,24 +10696,13 @@ msgid "Recording"
 msgstr "กำลังบันทึกรายการ"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "กำลังกลับมาเล่นที่เดิม"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "กำลังบันทึกรายการ"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "กำลังบันทึกรายการ"
 
 msgid "Recording Setup"
 msgstr ""
 
 msgid "Recording in progress"
-msgstr ""
-
-msgid "Recording paths"
 msgstr ""
 
 msgid "Recording type"
@@ -10574,10 +10715,6 @@ msgid "Recordings"
 msgstr "กำลังบันทึกรายการ"
 
 msgid "Recordings always have priority"
-msgstr "บันทึกรายการสำคัญมากกว่า"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "บันทึกรายการสำคัญมากกว่า"
 
 #, fuzzy
@@ -10650,6 +10787,10 @@ msgstr "โหลดใหม่"
 
 msgid "Reload blacklists"
 msgstr ""
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "ลบบุ๊คมาร์ค"
 
 msgid "Reloading EPG Cache..."
 msgstr ""
@@ -10751,9 +10892,6 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "ลบเชื่อเรื่องที่เลือกออก"
 
-msgid "Remove directory"
-msgstr "ลบโฟล์เดอร์ออก"
-
 msgid "Remove entry"
 msgstr "ลบรายการนี้ออก"
 
@@ -10788,10 +10926,6 @@ msgstr "ลบเรื่อง"
 msgid "Removing"
 msgstr "กำลังลบออก"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "การลบโฟล์เดอร์ %s ล้มเหลว (อาจมีข้อมูลอยู่)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "ลบเรื่อง"
@@ -10802,6 +10936,10 @@ msgstr "กำลังลบออก"
 
 msgid "Rename"
 msgstr "เปลี่ยนชื่อ"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "ลบโฟล์เดอร์ออก"
 
 msgid "Rename entry"
 msgstr ""
@@ -10921,14 +11059,6 @@ msgstr "เริ่มระบบใหม่"
 
 #, fuzzy
 msgid "Restart GUI"
-msgstr "เริ่มทำงานใหม่ (GUI) ตอนนี้หรือไม่?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "ต้องการเริ่มระบบใหม่หรือไม่ (Restart)?"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
 msgstr "เริ่มทำงานใหม่ (GUI) ตอนนี้หรือไม่?"
 
 msgid "Restart GUI now?"
@@ -11169,6 +11299,9 @@ msgstr "ตั้งค่าตัวขับจาน"
 msgid "SINGLE LAYER DVD"
 msgstr ""
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 msgid "SNR"
 msgstr "SNR"
 
@@ -11305,9 +11438,6 @@ msgstr ""
 #, fuzzy
 msgid "Save and activate the currently selected skin"
 msgstr "กดปุ่ม OK เพื่อเริ่มใช้สกินที่เลือกไว้"
-
-msgid "Save and exit"
-msgstr ""
 
 msgid "Save and restart timeshift"
 msgstr ""
@@ -11676,6 +11806,18 @@ msgid "Select Input Device"
 msgstr "เลือกอินเตอร์เฟซ"
 
 #, fuzzy
+msgid "Select Location"
+msgstr "เลือกที่ที่จะสำรอง"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "เลือกที่ที่จะสำรอง"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "เลือกที่ที่จะสำรอง"
+
+#, fuzzy
 msgid "Select a bouquet"
 msgstr "เลือกภาพยนต์"
 
@@ -11777,9 +11919,6 @@ msgstr ""
 msgid "Select interface"
 msgstr "เลือกอินเตอร์เฟซ"
 
-msgid "Select location"
-msgstr ""
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "เลือกเมนูจากรายการ"
@@ -11835,6 +11974,9 @@ msgid "Select the User Band to be assigned to this tuner. This is an index into 
 msgstr ""
 
 msgid "Select the character or action under the keyboard cursor"
+msgstr ""
+
+msgid "Select the currently highlighted location and exit"
 msgstr ""
 
 #, fuzzy
@@ -12199,6 +12341,18 @@ msgid "Set the MAC address of your receiver.\n"
 msgstr "ออกจากการตั้งค่า Nameserver"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
+msgstr ""
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
 msgstr ""
 
 msgid "Set the default sorting method."
@@ -13129,9 +13283,6 @@ msgstr "เสียง"
 msgid "Sound carrier"
 msgstr "Soundcarrier"
 
-msgid "Source Brand"
-msgstr ""
-
 msgid "Source request"
 msgstr ""
 
@@ -13676,8 +13827,13 @@ msgstr ""
 msgid "Switch to TV mode"
 msgstr ""
 
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "เข้าสู่บุ๊คมาร์ค"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "ไปบริการย่อยก่อนหน้า"
 
 #, fuzzy
 msgid "Switch to filelist"
@@ -13718,6 +13874,10 @@ msgstr "ไปบริการย่อยก่อนหน้า"
 
 msgid "Switch to radio mode"
 msgstr ""
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "เลือกมุมมองอันต่อไป"
 
 msgid "Switzerland"
 msgstr ""
@@ -14022,12 +14182,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-
 msgid "The following files were found..."
 msgstr "พบไฟล์เหล่านี้..."
 
@@ -14167,8 +14321,10 @@ msgstr ""
 msgid "There is no signal to lock on !"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "เนื้อที่บนพาร์ทิชั่นที่เลือกไม่พอ\n"
@@ -14181,6 +14337,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -14571,6 +14730,10 @@ msgstr "ควบคุมรายการสด"
 
 msgid "Timeshift Live"
 msgstr ""
+
+#, fuzzy
+msgid "Timeshift Setup"
+msgstr "ควบคุมรายการสด"
 
 msgid "Timeshift is running. Select an action.\n"
 msgstr ""
@@ -15048,10 +15211,6 @@ msgid "Update and reboot (recommended)"
 msgstr ""
 
 #, fuzzy
-msgid "Update bookmarks"
-msgstr "ค้นหาอัตโนมัติ"
-
-#, fuzzy
 msgid "Update channel list only"
 msgstr "รายการต่อไปในหน่วยความจำ"
 
@@ -15228,7 +15387,7 @@ msgstr "ยอมรับการตั้งค่านี้?"
 msgid "Use these settings?"
 msgstr "นำสำรองการตั้งค่าต่างๆ กลับมาใช้"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -15952,7 +16111,7 @@ msgstr ""
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr ""
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr ""
 
 #, fuzzy

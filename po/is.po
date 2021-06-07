@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -1997,8 +1997,18 @@ msgstr "Viðbót"
 
 #
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "bæta við bókamerki"
+
+#
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "bæta við rás"
+
+#
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "bæta við bókamerki"
 
 #
 msgid "Add a mark"
@@ -2348,9 +2358,6 @@ msgstr ""
 
 msgid "American Samoa"
 msgstr ""
-
-msgid "An empty filename is illegal."
-msgstr "Það þarf að vera skráarnafn."
 
 #
 #, fuzzy
@@ -2865,6 +2872,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr ""
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr ""
 
@@ -2877,7 +2887,7 @@ msgstr "Byrjunar tími"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Virkun 0 hnapps í PiP-ham"
 
-msgid "Behavior of 'pause and ok' when paused"
+msgid "Behavior of PAUSE and OK when paused"
 msgstr ""
 
 msgid "Behavior when a movie is started"
@@ -2980,6 +2990,10 @@ msgstr ""
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr ""
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "Bókamerki"
+
 msgid "Bookmarks"
 msgstr "Bókamerki"
 
@@ -3033,9 +3047,6 @@ msgstr ""
 msgid "Bouvet Island"
 msgstr ""
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr ""
 
@@ -3062,15 +3073,13 @@ msgstr ""
 msgid "Buffers"
 msgstr ""
 
-#
 #, fuzzy
 msgid "Build Brand"
-msgstr "Upplýsingar"
+msgstr "Bitahraði:"
 
-#
 #, fuzzy
 msgid "Build Model"
-msgstr "Hamur"
+msgstr "Bitahraði:"
 
 #
 #, fuzzy
@@ -3280,6 +3289,10 @@ msgstr ""
 msgid "Cancel execution?"
 msgstr "Rása val"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "Rása val"
+
 msgid "Cancelled upon user request"
 msgstr ""
 
@@ -3375,6 +3388,9 @@ msgstr "Skipta á milli rása flétta í rásastökki"
 #, fuzzy
 msgid "Change device settings"
 msgstr "Uppsetning nafnaþjóns"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr ""
@@ -4364,15 +4380,8 @@ msgstr "Búa til DVD-ISO"
 msgid "Create directory"
 msgstr "Búa til möppu"
 
-msgid "Create new folder and exit"
-msgstr ""
-
 msgid "Create separate radio userbouquet"
 msgstr ""
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "Tókst ekki að búa möppuna %s."
 
 #, fuzzy
 msgid "Creating filesystem"
@@ -4818,6 +4827,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Debug to file"
@@ -4946,6 +4958,10 @@ msgstr ""
 msgid "Delete"
 msgstr "Eyða"
 
+#, fuzzy
+msgid "Delete Bookmark"
+msgstr "Bókamerki"
+
 #
 #, fuzzy
 msgid "Delete EPG Cache"
@@ -4971,11 +4987,21 @@ msgstr "eyða skrá"
 msgid "Delete all the text"
 msgstr "eyða atriði úr spilunarlista"
 
+#
+#, fuzzy
+msgid "Delete bookmark"
+msgstr "eyða bókamerki"
+
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
 
 msgid "Delete character under cursor or select PM times"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Delete directory"
+msgstr "Búa til möppu"
 
 #
 msgid "Delete entry"
@@ -5072,6 +5098,9 @@ msgstr ""
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr ""
 
+msgid "Detailed debug logs"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr "Upplýsingar um íforrit:"
 
@@ -5164,6 +5193,11 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "Spila beint tengda titla án valmyndar"
 
+#
+#, fuzzy
+msgid "Directories"
+msgstr "Möppu vafri"
+
 msgid "Directory"
 msgstr ""
 
@@ -5171,6 +5205,30 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Directory %s does not exist."
 msgstr "Mappa %s ekki til."
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "Mappa %s ekki til."
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "Mappa %s ekki til."
+
+#
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "Mappa %s ekki til."
+
+#
+#, fuzzy
+msgid "Directory Actions"
+msgstr "Möppu vafri"
 
 #
 msgid "Directory browser"
@@ -5264,6 +5322,11 @@ msgstr "Skjár og notenda viðmót"
 #, fuzzy
 msgid "Display brightness"
 msgstr "Uppsetning skjás"
+
+#
+#, fuzzy
+msgid "Display context menu"
+msgstr "Sýna 4:3 innihald sem"
 
 msgid "Display message before playing next movie"
 msgstr ""
@@ -5366,6 +5429,16 @@ msgid "Do you really want to delete ?"
 msgstr "Viltu virkilega eyða %s?"
 
 #
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "Viltu virkilega eyða %s?"
+
+#
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "Viltu virkilega eyða %s?"
+
+#
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "Viltu virkilega eyða %s?"
@@ -5410,11 +5483,6 @@ msgid ""
 msgstr ""
 "Viltu örugglega hala niður\n"
 "íforritinu \"%s\"?"
-
-#
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "Viltu örugglega eyða möppunni %s af diskinum?"
 
 #
 #, python-format
@@ -5887,9 +5955,6 @@ msgstr "byrja féttu breytingu"
 msgid "Enable client mode"
 msgstr "Virkja færlsu stöðu"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5936,6 +6001,18 @@ msgid "Enable swap:"
 msgstr "Virkja"
 
 msgid "Enable teletext caching"
+msgstr ""
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
 msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
@@ -6089,6 +6166,16 @@ msgstr ""
 msgid "Enter if you are north or south of the equator."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "Sláðu inn nafn á nýju möppunni"
+
+#
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "Byrjunar mappa"
+
 msgid "Enter persistent PIN code"
 msgstr ""
 
@@ -6220,6 +6307,40 @@ msgid ""
 msgstr ""
 "Villa: %s\n"
 "Reyna aftur?"
+
+#
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "Slóðin %s er þegar til."
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "Ógild mappa valin: %s"
+
+#
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "Ógildur staður"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 #
 #, fuzzy
@@ -6753,6 +6874,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr "Forritun"
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "Tókst ekki að búa möppuna %s."
+
 #
 #, fuzzy
 msgid "Flash type"
@@ -6800,6 +6925,9 @@ msgid "Force enabled"
 msgstr "virkt"
 
 msgid "Force legacy signal stats"
+msgstr ""
+
+msgid "Force zap to recording service in standby"
 msgstr ""
 
 #
@@ -7586,6 +7714,9 @@ msgstr ""
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -7744,6 +7875,22 @@ msgstr ""
 msgid "Include EIT in http streams"
 msgstr ""
 
+msgid "Include action map data"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "Uppsetning lyklaborðs"
+
+#
+#, fuzzy
+msgid "Include remote control data"
+msgstr "Gerð foreldrastýringar"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7836,9 +7983,6 @@ msgstr "Stilli"
 #, fuzzy
 msgid "Initial fast forward speed"
 msgstr "Byrjunar hraði hraðspólunar áfram"
-
-msgid "Initial location in new timers"
-msgstr "Sjálfgefin staður í nýjum tímastillingum"
 
 msgid "Initial lock ratio"
 msgstr ""
@@ -7981,16 +8125,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Invalid"
-msgstr "Ógildur staður"
-
-#
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "Ógild mappa valin: %s"
-
-#
-#, fuzzy
-msgid "Invalid location"
 msgstr "Ógildur staður"
 
 msgid "Invalid transponder data"
@@ -8504,10 +8638,8 @@ msgstr "Litháíska"
 msgid "Lithuanian"
 msgstr "Litháíska"
 
-#
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "Tímastillinga val"
+msgstr ""
 
 #
 msgid "Load"
@@ -8563,13 +8695,18 @@ msgstr "Nærnet"
 msgid "Location"
 msgstr "Staðsetning"
 
-msgid "Location for instant recordings"
+#, fuzzy
+msgid "Location Box Context Menu"
 msgstr "Staðsetning fyrir skyndi upptökur"
 
 #
 #, fuzzy
 msgid "Location information"
 msgstr "Upplýsingar"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "Veldu stað fyrir afrit"
 
 msgid "Lock ratio"
 msgstr ""
@@ -8982,6 +9119,12 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Hamur"
 
+msgid "Mode down a line"
+msgstr ""
+
+msgid "Mode down a screen"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Model"
@@ -9095,6 +9238,11 @@ msgstr "fara niður í síðasta atriði"
 
 #
 #, fuzzy
+msgid "Move down to last line"
+msgstr "fara niður í síðasta atriði"
+
+#
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "fara niður í næsta atriði"
 
@@ -9181,6 +9329,11 @@ msgstr "fara upp í fyrsta atriði"
 
 #
 #, fuzzy
+msgid "Move up to first line"
+msgstr "fara upp í fyrsta atriði"
+
+#
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "fara upp í næsta atriði"
 
@@ -9211,9 +9364,6 @@ msgstr "Bíómynda valmynd"
 
 #, fuzzy
 msgid "Movie Player Actions"
-msgstr "Staðsetning bíómynda"
-
-msgid "Movie location"
 msgstr "Staðsetning bíómynda"
 
 #, fuzzy
@@ -9605,6 +9755,9 @@ msgstr ""
 "(Rann út á tíma við lestur PAT)"
 
 msgid "No data received yet"
+msgstr ""
+
+msgid "No debug logs"
 msgstr ""
 
 msgid "No delay"
@@ -10281,6 +10434,10 @@ msgstr "Pan&Scan"
 msgid "Panama"
 msgstr ""
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "Veldu stað fyrir afrit"
+
 msgid "Panic to"
 msgstr ""
 
@@ -10527,6 +10684,12 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+msgid "Playback Setup"
+msgstr ""
+
+msgid "Playback, Recording & Timeshift"
+msgstr ""
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -10597,10 +10760,6 @@ msgstr "Sláðu inn nýtt skráarnafn"
 msgid "Please enter filename (empty = use current date)"
 msgstr "Sláðu inn skráarnafn (tómt = nota núverandi dag)"
 
-#
-msgid "Please enter name of the new directory"
-msgstr "Sláðu inn nafn á nýju möppunni"
-
 msgid "Please enter new description:"
 msgstr ""
 
@@ -10666,6 +10825,11 @@ msgstr "Vinsamlega veldu undirrás..."
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "Vinsamlega veldu undirrás..."
+
+#
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "Vinsamlega veldu spilunarlista..."
 
 #
 #, fuzzy
@@ -11311,6 +11475,10 @@ msgstr ""
 msgid "Quick"
 msgstr "Hratt"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "Veldu stað fyrir afrit"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -11488,7 +11656,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Receiver name"
-msgstr "Upptaka"
+msgstr "Leita að rásum"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -11511,17 +11679,8 @@ msgstr "Upptöku tími takmarkaður vegna annarar tímastillingar, %s"
 msgid "Recording"
 msgstr "Upptaka"
 
-#
-#, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "Held áfram spilun"
-
 #, fuzzy
 msgid "Recording Actions"
-msgstr "Upptöku slóð"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "Upptöku slóð"
 
 msgid "Recording Setup"
@@ -11529,9 +11688,6 @@ msgstr ""
 
 msgid "Recording in progress"
 msgstr ""
-
-msgid "Recording paths"
-msgstr "Upptöku slóð"
 
 msgid "Recording type"
 msgstr ""
@@ -11546,11 +11702,6 @@ msgstr "Upptökur"
 
 #
 msgid "Recordings always have priority"
-msgstr "Upptaka hefur alltaf forgang"
-
-#
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "Upptaka hefur alltaf forgang"
 
 #
@@ -11630,6 +11781,11 @@ msgstr "Endurlesa"
 
 msgid "Reload blacklists"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "eyða bókamerki"
 
 msgid "Reloading EPG Cache..."
 msgstr ""
@@ -11749,10 +11905,6 @@ msgid "Remove currently selected title"
 msgstr "Taka út þegar valinn titil"
 
 #
-msgid "Remove directory"
-msgstr "Eyða möppu"
-
-#
 msgid "Remove entry"
 msgstr "Taka út"
 
@@ -11793,11 +11945,6 @@ msgid "Removing"
 msgstr "Eyði"
 
 #
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "Tókst ekki að taka út möppuna %s. (kannski ekki tóm.)"
-
-#
 #, fuzzy
 msgid "Removing partition table."
 msgstr "Taka út titil"
@@ -11810,6 +11957,11 @@ msgstr "Eyði"
 #
 msgid "Rename"
 msgstr "Endurnefna"
+
+#
+#, fuzzy
+msgid "Rename directory"
+msgstr "Eyða möppu"
 
 msgid "Rename entry"
 msgstr ""
@@ -11946,16 +12098,6 @@ msgstr "Endurræsa"
 #
 #, fuzzy
 msgid "Restart GUI"
-msgstr "Endurræsa gluggakerfi núna?"
-
-#
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "Viltu örugglega endurræsa núna?"
-
-#
-#, fuzzy
-msgid "Restart GUI in standard mode"
 msgstr "Endurræsa gluggakerfi núna?"
 
 #
@@ -12227,6 +12369,9 @@ msgstr "Uppsetning mótors"
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 #
 msgid "SNR"
 msgstr "SNR"
@@ -12380,9 +12525,6 @@ msgstr ""
 #, fuzzy
 msgid "Save and activate the currently selected skin"
 msgstr "Ýttu á OK til að velja valið skinn."
-
-msgid "Save and exit"
-msgstr ""
 
 msgid "Save and restart timeshift"
 msgstr ""
@@ -12787,6 +12929,18 @@ msgstr "veldu CAId"
 msgid "Select Input Device"
 msgstr "Veldu inntaks tæki"
 
+#, fuzzy
+msgid "Select Location"
+msgstr "Veldu stað fyrir afrit"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "Sjálfgefin staðsetning bíómynda"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "Staður fyrir lifandi pásu"
+
 #
 #, fuzzy
 msgid "Select a bouquet"
@@ -12900,9 +13054,6 @@ msgstr "Veldu inntaks tæki"
 msgid "Select interface"
 msgstr "Veldu netkort"
 
-msgid "Select location"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Select menu entry"
@@ -12964,6 +13115,9 @@ msgid "Select the User Band to be assigned to this tuner. This is an index into 
 msgstr ""
 
 msgid "Select the character or action under the keyboard cursor"
+msgstr ""
+
+msgid "Select the currently highlighted location and exit"
 msgstr ""
 
 #
@@ -13367,6 +13521,18 @@ msgid "Set the MAC address of your receiver.\n"
 msgstr "fara úr nafnaþjóns stillingum"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
+msgstr ""
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
 msgstr ""
 
 msgid "Set the default sorting method."
@@ -14404,9 +14570,6 @@ msgstr "Hljóð"
 msgid "Sound carrier"
 msgstr "Hljóðburðarbylgja"
 
-msgid "Source Brand"
-msgstr ""
-
 msgid "Source request"
 msgstr ""
 
@@ -15019,8 +15182,14 @@ msgid "Switch to TV mode"
 msgstr ""
 
 #
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "Fara á bókamerki"
+
+#
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "Skipta á fyrri undirrás"
 
 #
 #, fuzzy
@@ -15068,6 +15237,11 @@ msgstr "Skipta á fyrri undirrás"
 
 msgid "Switch to radio mode"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "skipta í næstu sýn"
 
 msgid "Switzerland"
 msgstr ""
@@ -15400,14 +15574,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"Mappan %s er ekki skrifanleg.\n"
-"Vertu viss um að velja möppu sem má skrifa í."
-
 #
 msgid "The following files were found..."
 msgstr "Eftirfarandi skrár fundust..."
@@ -15569,8 +15735,10 @@ msgid "There is no signal to lock on !"
 msgstr ""
 
 #
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "Það gæti verið of lítið pláss á valinni disksneið,\n"
@@ -15584,6 +15752,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -16006,6 +16177,11 @@ msgstr "Staður fyrir lifandi pásu"
 
 msgid "Timeshift Live"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Timeshift Setup"
+msgstr "Lifandi pása"
 
 msgid "Timeshift is running. Select an action.\n"
 msgstr ""
@@ -16537,10 +16713,6 @@ msgstr ""
 msgid "Update and reboot (recommended)"
 msgstr ""
 
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Sjálfvirk leit"
-
 #
 #, fuzzy
 msgid "Update channel list only"
@@ -16733,7 +16905,7 @@ msgstr "Nota þessar stillingar fyrir inntaks tæki?"
 msgid "Use these settings?"
 msgstr "Nota þessar stillingar?"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 #
@@ -17528,7 +17700,7 @@ msgstr ""
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr ""
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr ""
 
 #

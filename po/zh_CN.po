@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-28 00:24+0430\n"
+"POT-Creation-Date: 2021-06-07 16:13+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -1769,8 +1769,16 @@ msgid "Add"
 msgstr "添加"
 
 #, fuzzy
+msgid "Add / Delete bookmark"
+msgstr "添加书签"
+
+#, fuzzy
 msgid "Add BISS CaID to service"
 msgstr "添加频道"
+
+#, fuzzy
+msgid "Add Bookmark"
+msgstr "添加书签"
 
 msgid "Add a mark"
 msgstr "增加标记"
@@ -2084,9 +2092,6 @@ msgstr "录制时总是包含ECM信息。将在全部范围内覆盖个人定时
 
 msgid "American Samoa"
 msgstr ""
-
-msgid "An empty filename is illegal."
-msgstr "一个空的文件名是非法的。"
 
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr "下载升级包列表发生未知错误，请重试。"
@@ -2567,6 +2572,9 @@ msgstr ""
 msgid "Basic PID info"
 msgstr "基本PID信息"
 
+msgid "Basic debug logs"
+msgstr ""
+
 msgid "Basque"
 msgstr "巴斯克"
 
@@ -2579,7 +2587,8 @@ msgstr "开始时间"
 msgid "Behavior of '0' button in PiP mode"
 msgstr "按“0”键启用画中画模式"
 
-msgid "Behavior of 'pause and ok' when paused"
+#, fuzzy
+msgid "Behavior of PAUSE and OK when paused"
 msgstr "暂停时，OK键和pause键的功能"
 
 msgid "Behavior when a movie is started"
@@ -2680,6 +2689,10 @@ msgstr ""
 msgid "Bonaire, Sint Eustatius and Saba"
 msgstr ""
 
+#, fuzzy
+msgid "Bookmark Actions"
+msgstr "书签"
+
 msgid "Bookmarks"
 msgstr "书签"
 
@@ -2728,9 +2741,6 @@ msgstr ""
 msgid "Bouvet Island"
 msgstr ""
 
-msgid "Brand"
-msgstr ""
-
 msgid "Brazil"
 msgstr ""
 
@@ -2760,11 +2770,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Build Brand"
-msgstr "信息"
+msgstr "编译日期: "
 
 #, fuzzy
 msgid "Build Model"
-msgstr "型号"
+msgstr "编译日期: "
 
 #, fuzzy
 msgid "Build information"
@@ -2985,6 +2995,10 @@ msgstr "取消任何文本更改并退出"
 msgid "Cancel execution?"
 msgstr "取消执行?"
 
+#, fuzzy
+msgid "Cancel the location selection"
+msgstr "频道选择"
+
 msgid "Cancelled upon user request"
 msgstr "根据用户请求取消"
 
@@ -3077,6 +3091,9 @@ msgstr "快速切换自定义列表"
 #, fuzzy
 msgid "Change device settings"
 msgstr "DNS设置"
+
+msgid "Change directory / Select bookmark"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "更改记录（增加时间）"
@@ -4032,15 +4049,8 @@ msgstr "创建DVD-ISO"
 msgid "Create directory"
 msgstr "创建目录"
 
-msgid "Create new folder and exit"
-msgstr "创建新文件夹并退出"
-
 msgid "Create separate radio userbouquet"
 msgstr "创建单独的电台用户组"
-
-#, python-format
-msgid "Creating directory %s failed."
-msgstr "创建目录%s 失败。"
 
 msgid "Creating filesystem"
 msgstr "创建文件系统"
@@ -4455,6 +4465,9 @@ msgstr ""
 msgid "Debug log time format *"
 msgstr ""
 
+msgid "Debug logging *"
+msgstr ""
+
 msgid "Debug to file"
 msgstr "调试到文件"
 
@@ -4570,6 +4583,10 @@ msgid "Delete"
 msgstr "删除"
 
 #, fuzzy
+msgid "Delete Bookmark"
+msgstr "书签"
+
+#, fuzzy
 msgid "Delete EPG Cache"
 msgstr "删除固件"
 
@@ -4589,12 +4606,20 @@ msgid "Delete all the text"
 msgstr "删除所有文本"
 
 #, fuzzy
+msgid "Delete bookmark"
+msgstr "移除书签"
+
+#, fuzzy
 msgid "Delete character to left of cursor or select AM times"
 msgstr "删除文本缓冲区光标左侧的字符"
 
 #, fuzzy
 msgid "Delete character under cursor or select PM times"
 msgstr "删除文本缓冲区光标下的字符"
+
+#, fuzzy
+msgid "Delete directory"
+msgstr "创建目录"
 
 msgid "Delete entry"
 msgstr "删除项目"
@@ -4673,6 +4698,9 @@ msgstr "DVB-C备用远程接收器的目标"
 
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "DVB-T备用远程接收器的目标"
+
+msgid "Detailed debug logs"
+msgstr ""
 
 msgid "Details for plugin: "
 msgstr "插件信息: "
@@ -4754,12 +4782,36 @@ msgstr ""
 msgid "Direct playback of linked titles without menu"
 msgstr "直接播放链接标题，不使用菜单"
 
+#, fuzzy
+msgid "Directories"
+msgstr "目录"
+
 msgid "Directory"
 msgstr "目录"
 
 #, python-format
 msgid "Directory %s does not exist."
 msgstr "目录 %s 不存在。"
+
+#, python-format
+msgid "Directory '%s' can't be linked to recordings!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Directory '%s' does not exist!"
+msgstr "目录 %s 不存在。"
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writable!"
+msgstr "目录 %s 不存在。"
+
+#, fuzzy, python-format
+msgid "Directory '%s' not writeable!"
+msgstr "目录 %s 不存在。"
+
+#, fuzzy
+msgid "Directory Actions"
+msgstr "目录浏览"
 
 msgid "Directory browser"
 msgstr "目录浏览"
@@ -4837,6 +4889,10 @@ msgstr "显示和用户界面"
 #, fuzzy
 msgid "Display brightness"
 msgstr "显示皮肤"
+
+#, fuzzy
+msgid "Display context menu"
+msgstr "显示 4:3 内容为"
 
 msgid "Display message before playing next movie"
 msgstr "播放下一个电影前显示信息"
@@ -4920,6 +4976,14 @@ msgstr "是否真的要删除 %s?"
 msgid "Do you really want to delete ?"
 msgstr "是否真的要删除 %s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' bookmark?"
+msgstr "是否真的要删除 %s?"
+
+#, fuzzy, python-format
+msgid "Do you really want to delete the '%s' directory?"
+msgstr "是否真的要删除 %s?"
+
 #, fuzzy
 msgid "Do you really want to delete this timer?"
 msgstr "是否真的要删除 %s?"
@@ -4957,10 +5021,6 @@ msgid ""
 "Do you really want to remove\n"
 "the plugin \"%s\"?"
 msgstr "您确实要删除插件\"%s\"吗?"
-
-#, python-format
-msgid "Do you really want to remove directory %s from the disk?"
-msgstr "是否真的要从磁盘上删除目录%s ?"
 
 #, python-format
 msgid "Do you really want to remove your bookmark of %s?"
@@ -5382,9 +5442,6 @@ msgstr "启用多路EPG自定义列表选择"
 msgid "Enable client mode"
 msgstr "允许移动模式"
 
-msgid "Enable debug logs *"
-msgstr ""
-
 msgid "Enable fade-out functionality"
 msgstr ""
 
@@ -5430,6 +5487,18 @@ msgstr "启用"
 
 msgid "Enable teletext caching"
 msgstr "启用图文电视缓冲"
+
+msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add keyboard keymap data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add remote control data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add screen names and resolution data to the debug log file."
+msgstr ""
 
 msgid "Enable this setting if your aerial system needs power"
 msgstr "如果天线系统需要电源，请启用此设置"
@@ -5562,6 +5631,14 @@ msgstr "如果你在东半球或西半球，请输入。"
 
 msgid "Enter if you are north or south of the equator."
 msgstr "如果你在赤道以北或以南，请输入。"
+
+#, fuzzy
+msgid "Enter name of new directory:"
+msgstr "为新的目录重命名"
+
+#, fuzzy
+msgid "Enter new directory name:"
+msgstr "开始目录"
 
 msgid "Enter persistent PIN code"
 msgstr "输入持久性的PIN码"
@@ -5700,6 +5777,37 @@ msgid ""
 msgstr ""
 "错误: %s\n"
 "重试?"
+
+#, fuzzy, python-format
+msgid "Error: Directory '%s' already exists!"
+msgstr "路径 %s 已经存在。"
+
+#, python-format
+msgid "Error: File or directory '%s' already exists!"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Error: Invalid directory '%s' selected!"
+msgstr "选择了无效目录: %s"
+
+#, fuzzy
+msgid "Error: Invalid location!"
+msgstr "无效的位置"
+
+msgid "Error: The filename may not be blank!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to create directory '%s'!"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to delete directory '%s'! (Diretory may not be empty.)"
+msgstr ""
+
+#, python-format
+msgid "Error: Unable to rename directory '%s' to '%s'!"
+msgstr ""
 
 msgid "Estonia"
 msgstr ""
@@ -6185,6 +6293,10 @@ msgstr ""
 msgid "Flash Image"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Flash directory '%s' not allowed!"
+msgstr "创建目录%s 失败。"
+
 #, fuzzy
 msgid "Flash type"
 msgstr "列表类型"
@@ -6230,6 +6342,9 @@ msgstr "强制启用"
 
 msgid "Force legacy signal stats"
 msgstr "强制传统信号统计"
+
+msgid "Force zap to recording service in standby"
+msgstr ""
 
 msgid "Format"
 msgstr "格式化"
@@ -6944,6 +7059,9 @@ msgstr "如果设置为“是”，信号值（信噪比等）将从API V3计算
 msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
 msgstr ""
 
+msgid "If the upper panel is active pressing OK will change the current directory.  If the lower panel is active pressing OK will select the current bookmark and exit."
+msgstr ""
+
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "如果使用多个未提交的开关，则必须多次发送diseqc命令。设置为链中未提交的开关数减去1。"
 
@@ -7094,6 +7212,21 @@ msgstr "媒体流里包含ECM"
 msgid "Include EIT in http streams"
 msgstr "媒体流里包含EIT"
 
+#, fuzzy
+msgid "Include action map data"
+msgstr "媒体流里包含AIT"
+
+#, fuzzy
+msgid "Include keyboard data"
+msgstr "键盘数据输入"
+
+#, fuzzy
+msgid "Include remote control data"
+msgstr "配置遥控类型"
+
+msgid "Include screen load data"
+msgstr ""
+
 #, python-format
 msgid ""
 "Incorrect format for skip value: '%s'\n"
@@ -7173,9 +7306,6 @@ msgstr "初始化"
 
 msgid "Initial fast forward speed"
 msgstr "初始快进速度"
-
-msgid "Initial location in new timers"
-msgstr "在新的定时器初始位置"
 
 msgid "Initial lock ratio"
 msgstr "初始锁定系数"
@@ -7302,13 +7432,6 @@ msgstr "按键重复间隔。"
 #, fuzzy
 msgid "Invalid"
 msgstr "无效的类型"
-
-#, python-format
-msgid "Invalid directory selected: %s"
-msgstr "选择了无效目录: %s"
-
-msgid "Invalid location"
-msgstr "无效的位置"
 
 msgid "Invalid transponder data"
 msgstr "无效转发器数据"
@@ -7753,9 +7876,8 @@ msgstr ""
 msgid "Lithuanian"
 msgstr "立陶宛语"
 
-#, fuzzy
 msgid "Live TV Actions"
-msgstr "定时器选择"
+msgstr ""
 
 msgid "Load"
 msgstr "加载"
@@ -7803,12 +7925,17 @@ msgstr ""
 msgid "Location"
 msgstr "位置"
 
-msgid "Location for instant recordings"
-msgstr "实时录像的位置"
+#, fuzzy
+msgid "Location Box Context Menu"
+msgstr "保护扩展菜单"
 
 #, fuzzy
 msgid "Location information"
 msgstr "信息"
+
+#, fuzzy
+msgid "LocationBox Actions"
+msgstr "皮肤选择操作"
 
 msgid "Lock ratio"
 msgstr "锁定比例"
@@ -8172,6 +8299,14 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "视频输出模式"
 
+#, fuzzy
+msgid "Mode down a line"
+msgstr "转到列表末尾"
+
+#, fuzzy
+msgid "Mode down a screen"
+msgstr "定屏"
+
 msgid "Model"
 msgstr "型号"
 
@@ -8268,6 +8403,10 @@ msgid "Move down to last entry"
 msgstr "向下移动到最后项目"
 
 #, fuzzy
+msgid "Move down to last line"
+msgstr "向下移动到最后项目"
+
+#, fuzzy
 msgid "Move down to next entry"
 msgstr "向下移动到下一个项目"
 
@@ -8337,6 +8476,10 @@ msgid "Move up to first entry"
 msgstr "向上移动到第一个项目"
 
 #, fuzzy
+msgid "Move up to first line"
+msgstr "向上移动到第一个项目"
+
+#, fuzzy
 msgid "Move up to previous entry"
 msgstr "向上移动到上一个项目"
 
@@ -8367,9 +8510,6 @@ msgstr "电影列表菜单"
 #, fuzzy
 msgid "Movie Player Actions"
 msgstr "电影选项"
-
-msgid "Movie location"
-msgstr "影片位置"
 
 msgid "Movie selection"
 msgstr "电影选项"
@@ -8703,6 +8843,9 @@ msgstr ""
 
 msgid "No data received yet"
 msgstr "尚未收到数据"
+
+msgid "No debug logs"
+msgstr ""
 
 msgid "No delay"
 msgstr "无延迟"
@@ -9300,6 +9443,10 @@ msgstr "全景扫描"
 msgid "Panama"
 msgstr ""
 
+#, fuzzy
+msgid "Panel Selection Actions"
+msgstr "皮肤选择操作"
+
 msgid "Panic to"
 msgstr ""
 
@@ -9510,6 +9657,14 @@ msgstr ""
 msgid "Play with gstreamer"
 msgstr ""
 
+#, fuzzy
+msgid "Playback Setup"
+msgstr "播放下一个"
+
+#, fuzzy
+msgid "Playback, Recording & Timeshift"
+msgstr "回放媒体文件"
+
 msgid "Playback/Seek Actions"
 msgstr ""
 
@@ -9573,9 +9728,6 @@ msgstr "请输入一个新的文件名"
 msgid "Please enter filename (empty = use current date)"
 msgstr "请输入文件名 (空=使用当时日期命名)"
 
-msgid "Please enter name of the new directory"
-msgstr "为新的目录重命名"
-
 msgid "Please enter new description:"
 msgstr "请输入一个新的说明："
 
@@ -9629,6 +9781,10 @@ msgstr "请选择一个子频道。。。"
 #, fuzzy
 msgid "Please select an 3D modus..."
 msgstr "请选择一个子频道。。。"
+
+#, fuzzy
+msgid "Please select an acceptable directory."
+msgstr "请选择一个播放列表。。。"
 
 #, fuzzy
 msgid "Please select an aspect ratio..."
@@ -10198,6 +10354,10 @@ msgstr "问题"
 msgid "Quick"
 msgstr "快速"
 
+#, fuzzy
+msgid "Quick Select Actions"
+msgstr "皮肤选择操作"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -10356,7 +10516,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Receiver name"
-msgstr "录制设置"
+msgstr "频道名称"
 
 msgid "Receiver or driver does not support FCC"
 msgstr ""
@@ -10375,15 +10535,7 @@ msgid "Recording"
 msgstr "正在录制"
 
 #, fuzzy
-msgid "Recording & Playback Setup"
-msgstr "录制设置"
-
-#, fuzzy
 msgid "Recording Actions"
-msgstr "录像路径"
-
-#, fuzzy
-msgid "Recording Paths"
 msgstr "录像路径"
 
 msgid "Recording Setup"
@@ -10391,9 +10543,6 @@ msgstr "录制设置"
 
 msgid "Recording in progress"
 msgstr "正在录像"
-
-msgid "Recording paths"
-msgstr "录像路径"
 
 msgid "Recording type"
 msgstr "录制类型"
@@ -10405,10 +10554,6 @@ msgid "Recordings"
 msgstr "正在录制"
 
 msgid "Recordings always have priority"
-msgstr "总是优先录制"
-
-#, fuzzy
-msgid "Recordings, Playback & Timeshift"
 msgstr "总是优先录制"
 
 #, fuzzy
@@ -10482,6 +10627,10 @@ msgstr "重新加载"
 
 msgid "Reload blacklists"
 msgstr "重新加载黑名单"
+
+#, fuzzy
+msgid "Reload bookmarks"
+msgstr "移除书签"
 
 #, fuzzy
 msgid "Reloading EPG Cache..."
@@ -10582,9 +10731,6 @@ msgstr "已完成定时器保留的天数"
 msgid "Remove currently selected title"
 msgstr "移除当前选择的标题"
 
-msgid "Remove directory"
-msgstr "移除目录"
-
 msgid "Remove entry"
 msgstr "删除条目"
 
@@ -10619,10 +10765,6 @@ msgstr "移除标题"
 msgid "Removing"
 msgstr "正在删除。。。"
 
-#, python-format
-msgid "Removing directory %s failed. (Maybe not empty.)"
-msgstr "删除 %s 目录失败。 (很可能不是空目录。)"
-
 #, fuzzy
 msgid "Removing partition table."
 msgstr "移除分区表"
@@ -10633,6 +10775,10 @@ msgstr "移除有线电视频道"
 
 msgid "Rename"
 msgstr "改名"
+
+#, fuzzy
+msgid "Rename directory"
+msgstr "移除目录"
 
 msgid "Rename entry"
 msgstr "重命名入口"
@@ -10760,14 +10906,6 @@ msgstr "重启机器"
 #, fuzzy
 msgid "Restart GUI"
 msgstr "立即重启接收机GUI?"
-
-#, fuzzy
-msgid "Restart GUI in debug mode"
-msgstr "重启调试模式"
-
-#, fuzzy
-msgid "Restart GUI in standard mode"
-msgstr "重启标准模式"
 
 msgid "Restart GUI now?"
 msgstr "立即重启接收机GUI?"
@@ -10999,6 +11137,9 @@ msgstr "位置设置(DiSEqC 1.2)"
 msgid "SINGLE LAYER DVD"
 msgstr "单层DVD"
 
+msgid "SMS style QuickSelect location selection"
+msgstr ""
+
 msgid "SNR"
 msgstr "SNR"
 
@@ -11133,9 +11274,6 @@ msgstr "保存/输入文本并退出"
 
 msgid "Save and activate the currently selected skin"
 msgstr "保存并激活当前所选皮肤。"
-
-msgid "Save and exit"
-msgstr "保存并退出"
 
 msgid "Save and restart timeshift"
 msgstr "保存并重启时移"
@@ -11486,11 +11624,23 @@ msgstr "选择硬盘"
 
 #, fuzzy
 msgid "Select Info"
-msgstr "定时器选项"
+msgstr "选择CAId"
 
 #, fuzzy
 msgid "Select Input Device"
 msgstr "输入设备"
+
+#, fuzzy
+msgid "Select Location"
+msgstr "选择位置"
+
+#, fuzzy
+msgid "Select Movie Location"
+msgstr "选择位置"
+
+#, fuzzy
+msgid "Select Timeshift Location"
+msgstr "时光平移位置"
 
 msgid "Select a bouquet"
 msgstr "选择自定义组"
@@ -11586,9 +11736,6 @@ msgstr "输入设备"
 msgid "Select interface"
 msgstr "选择接口"
 
-msgid "Select location"
-msgstr "选择位置"
-
 #, fuzzy
 msgid "Select menu entry"
 msgstr "选择菜单项目"
@@ -11642,6 +11789,9 @@ msgstr "选择要分配给此调谐器的用户波段。这是SCR开关或SCR �
 
 msgid "Select the character or action under the keyboard cursor"
 msgstr "选择键盘光标下的字符或操作"
+
+msgid "Select the currently highlighted location and exit"
+msgstr ""
 
 msgid "Select the locale from a menu"
 msgstr "从菜单中选择区域设置"
@@ -11998,6 +12148,18 @@ msgstr "测试机顶盒的网络配置。\n"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "从备用调谐器设置OpenWebif的用户ID"
+
+msgid "Set the default location for your instant recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your recordings. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timers. Press OK to add new locations, LEFT/RIGHT to select from any existing locations."
+msgstr ""
+
+msgid "Set the default location for your timeshift files. Press OK to add new locations, LEFT/RIGHT to select any existing locations."
+msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
@@ -12922,10 +13084,6 @@ msgstr "声音"
 msgid "Sound carrier"
 msgstr "声音运营商"
 
-#, fuzzy
-msgid "Source Brand"
-msgstr "源目录"
-
 msgid "Source request"
 msgstr "源目录"
 
@@ -13461,8 +13619,13 @@ msgstr "切换到上一个频道"
 msgid "Switch to TV mode"
 msgstr "切换到电视模式"
 
-msgid "Switch to bookmarks"
+#, fuzzy
+msgid "Switch to bookmarks panel"
 msgstr "切换到书签"
+
+#, fuzzy
+msgid "Switch to directories panel"
+msgstr "切换到前一个频道"
 
 msgid "Switch to filelist"
 msgstr "切换到文件列表"
@@ -13496,6 +13659,10 @@ msgstr "切换到前一个子频道"
 
 msgid "Switch to radio mode"
 msgstr "切换到广播模式"
+
+#, fuzzy
+msgid "Switch to the other panel"
+msgstr "切换到下一个角度"
 
 msgid "Switzerland"
 msgstr ""
@@ -13806,14 +13973,6 @@ msgstr ""
 msgid "The detailed information is intended for developers only."
 msgstr ""
 
-#, python-format
-msgid ""
-"The directory %s is not writable.\n"
-"Make sure you select a writable directory instead."
-msgstr ""
-"目录 %s 不可写入.\n"
-"确保你选择了一个可写目录."
-
 msgid "The following files were found..."
 msgstr "下列文件已找到。。。"
 
@@ -13974,8 +14133,10 @@ msgstr "没有可用更新。"
 msgid "There is no signal to lock on !"
 msgstr "没有可以锁定的信号"
 
+#, fuzzy
 msgid ""
-"There might not be enough Space on the selected Partition.\n"
+"There may not be enough space on the selected location.\n"
+"\n"
 "Do you really want to continue?"
 msgstr ""
 "所选的分区上可能没有足够的空间。\n"
@@ -13988,6 +14149,9 @@ msgid "This allows you change the font size relative to skin size, so 1 increase
 msgstr ""
 
 msgid "This allows you to set the number of digits you can input when selecting channels using number input."
+msgstr ""
+
+msgid "This can be useful when using the CI(+) module. After the end of the recording, the service will be automatically stopped."
 msgstr ""
 
 #, python-format
@@ -14380,6 +14544,10 @@ msgid "Timeshift Actions"
 msgstr "时光平移位置"
 
 msgid "Timeshift Live"
+msgstr "直播"
+
+#, fuzzy
+msgid "Timeshift Setup"
 msgstr "直播"
 
 msgid "Timeshift is running. Select an action.\n"
@@ -14854,9 +15022,6 @@ msgstr "更新并重启"
 msgid "Update and reboot (recommended)"
 msgstr "更新并重启（建议这样做）"
 
-msgid "Update bookmarks"
-msgstr "更新书签"
-
 msgid "Update channel list only"
 msgstr "仅仅升级频道列表"
 
@@ -15028,7 +15193,7 @@ msgstr "使用此输入的设备设置吗?"
 msgid "Use these settings?"
 msgstr "使用这些设置?"
 
-msgid "Use this option to select if debug logs of internal enigma2 activities are created.  These logs can be helpful for developers in finding and fixing problems."
+msgid "Use this option to select if debug logs of internal enigma2 activities are created and, if so, how much detail will be logged.  These logs can be helpful for developers in finding and fixing problems."
 msgstr ""
 
 msgid "Use this video enhancement settings?"
@@ -15760,7 +15925,8 @@ msgstr "一旦启用，此设置将有比录制首选调谐器更大的适用范
 msgid "When enabled, this setting has more weight than 'Preferred tuner'."
 msgstr "一旦启用，此设置将拥有比首选调谐器更大的适用范围。"
 
-msgid "When enabled, timeshift starts automatically in background after specified time."
+#, fuzzy
+msgid "When enabled, timeshift starts automatically in background after the specified time."
 msgstr "一旦启用，时移将在后台按指定时间之后自动启动。"
 
 msgid "When enabled, use DHCP for the IP configuration."
