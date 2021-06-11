@@ -177,11 +177,12 @@ class ConfigOptions(Screen, ConfigListScreen):
 	def __init__(self, session):
 	        Screen.__init__(self, session)
 	        self.session = session
+	        self.restartbox = None
 		self.skinName = ["PartnerboxEntryConfigScreen"]
 		self.setTitle(_("System options configuration"))
 		self["key_red"] = self["red"] = Label(_("Cancel"))
 		if brand == "fulan":
-			self["key_green"] = self["green"] = Label(_("OK (reboots)"))
+			self["key_green"] = self["green"] = Label(_("OK"))
 #			self["key_blue"] = self["blue"] = Label(_("Test overclock"))
 		else:
 			self["key_green"] = self["green"] = Label(_("OK"))
@@ -291,19 +292,20 @@ class ConfigOptions(Screen, ConfigListScreen):
 		ConfigListScreen.keySave(self)
 		if config.plugins.systemoptions.swap.value == True:
 			dummy = open('/tmp/setswap', 'a')
-	 		self.close()
+	 	self.close()
 
 	def keySaveSpark(self):
 		ConfigListScreen.keySave(self)
 		if config.plugins.systemoptions.swap.value == True:
 			dummy = open('/tmp/setswap', 'a')
-	 		self.close()
-		restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('The receiver needs to be restarted to apply the new options.\n \nRebooting in a moment!\n'), MessageBox.TYPE_INFO, timeout=8)
-		restartbox.setTitle(_('Reboot receiver'))
+#		sleep(5.0)
+#		self.restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('The receiver needs to be restarted to apply the new options.\n\nRebooting in a moment!'), type = MessageBox.TYPE_INFO, timeout = 8)
+#		self.restartbox.setTitle(_('Reboot receiver'))
+#		self.close()
 
 	def keyYellow(self):
-		restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('Do you really want to restart the receiver now?'), MessageBox.TYPE_YESNO)
-		restartbox.setTitle(_('Reboot receiver'))
+		self.restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('Do you really want to restart the receiver now?'), type = MessageBox.TYPE_YESNO, default = False)
+		self.restartbox.setTitle(_('Reboot receiver'))
 
 #	if brand == "fulan":
 #		def keyBlue(self):
