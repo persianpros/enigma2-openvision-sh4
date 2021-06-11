@@ -304,7 +304,7 @@ class ConfigOptions(Screen, ConfigListScreen):
 #		self.close()
 
 	def keyYellow(self):
-		self.restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('Do you really want to restart the receiver now?'), type = MessageBox.TYPE_YESNO, default = False)
+		self.restartbox = self.session.openWithCallback(self.restartE2, MessageBox, _('Do you really want to restart the receiver now?'), type=MessageBox.TYPE_YESNO, default=False)
 		self.restartbox.setTitle(_('Reboot receiver'))
 
 #	if brand == "fulan":
