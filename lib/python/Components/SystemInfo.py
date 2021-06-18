@@ -185,9 +185,9 @@ def getBootdevice():
 
 
 def getRCFile(ext):
-	filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "%s.%s" % (BoxInfo.getItem("rcname"), ext)))
+	filename = resolveFilename(SCOPE_SKIN, pathjoin("rc", "%s.%s" % (BoxInfo.getItem("rcname"), ext)))
 	if not isfile(filename):
-		filename = resolveFilename(SCOPE_SKIN, pathjoin("rc_models", "spark.%s" % ext))
+		filename = resolveFilename(SCOPE_SKIN, pathjoin("rc", "spark.%s" % ext))
 	return filename
 
 
