@@ -43,7 +43,7 @@ def getFPVersion():
 	if isfile("/proc/stb/info/micomver"):
 		version = fileReadLine("/proc/stb/info/micomver", "unknown", source=MODULE_NAME)
 	elif isfile("/proc/stb/fp/version"):
-		version = long(fileReadLine("/proc/stb/fp/version", "0", source=MODULE_NAME))
+		version = int(fileReadLine("/proc/stb/fp/version", "0", source=MODULE_NAME))
 	else:
 		try:
 			with open("/dev/dbox/fp0") as fd:
