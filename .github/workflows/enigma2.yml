@@ -1,0 +1,24 @@
+name: enigma2
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: install prerequisites
+      run: |
+        sudo apt-get -q update
+        sudo apt-get install automake
+        sudo apt-get install git
+        sudo apt-get install build-essential
+        sudo apt-get install gettext
+    - name: compile enigma2 python
+      run: |
+        python -m compileall .
+        find . -type f -name "*.po" -exec msgfmt {} -o {}.mo \;
+        echo done!
