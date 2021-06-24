@@ -9,10 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    strategy:
     steps:
-      run: |
-        sudo apt-get -q update
     - name: install prerequisites
       run: |
         sudo apt-get -q update
