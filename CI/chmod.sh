@@ -13,6 +13,7 @@ echo "chmod files"
 find . -type d -print0 | xargs -0 chmod 0755
 find . -type f -print0 | xargs -0 chmod 0644
 find . -type f -name "*.sh" -exec chmod +x {} \;
+find . -type f -name "*.in" -exec chmod +x {} \;
 git add -u
 git add *
 git commit -m "chmod files"
