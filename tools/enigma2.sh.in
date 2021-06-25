@@ -62,24 +62,17 @@ while : ; do
 	else
 		SEARCHDIRS="@sysconfdir@/enigma2/skin_common @sysconfdir@/enigma2 @datadir@/enigma2/skin_default @datadir@/enigma2"
 	fi
-	if [ -x "@bindir@/exteplayer3" ]; then
-		for DIR in "$SEARCHDIRS"
+	if [ -x "@bindir@/exteplayer3" -o -x "@bindir@/showiframe" ]; then
+		for DIR in $SEARCHDIRS
 		do
-			if [ -d "${DIR}" ] && [ -f "${DIR}/bootlogo.mp4" ]; then
+			if [ -d ${DIR} ] && [ -f ${DIR}/bootlogo.mp4 ]; then
 				"@bindir@/exteplayer3" "${DIR}/bootlogo.mp4"
+				break
+			elif [ -d ${DIR} ] && [ -f ${DIR}/bootlogo.mvi ]; then
+				"@bindir@/showiframe" "${DIR}/bootlogo.mvi"
 				break
 			fi
 		done
-	else
-		if [ -x "@bindir@/showiframe" ]; then
-			for DIR in "${SEARCHDIRS}"
-			do
-				if [ -d "${DIR}" ] && [ -f "${DIR}/bootlogo.mvi" ]; then
-					"@bindir@/showiframe" "${DIR}/bootlogo.mvi"
-					break
-				fi
-			done
-		fi
 	fi
 
 	# Hook to execute scripts always before enigma2 start.
@@ -95,7 +88,7 @@ while : ; do
 	# Start enigma.
 	sync
 
-	(sleep 1; echo "Enigma2 is the main application so adjust oom score!"; PID=$(pidof enigma2); \
+	(sleep 0.1; echo "Enigma2 is the main application so adjust oom score!"; PID=$(pidof enigma2); \
 		[ -e "/proc/${PID}/oom_score_adj" ] && echo "-999" > "/proc/${PID}/oom_score_adj" || echo "-17" > "/proc/${PID}/oom_adj";) &
 
 	# Set the debug level to be used for enigma2 logging.
@@ -159,7 +152,7 @@ while : ; do
 		4)
 			/sbin/rmmod lcd
 			"@sbindir@/fpupgrade" --upgrade 2>&1 | tee /home/root/fpupgrade.log
-			sleep 1;
+			sleep 0.1;
 			/sbin/rmmod fp
 			/sbin/modprobe fp
 			/sbin/reboot
