@@ -44,16 +44,19 @@ def profile(checkPoint):
 				percentage = timeStamp * (PERCENTAGE_END - PERCENTAGE_START) / totalTime + PERCENTAGE_START
 			else:
 				percentage = PERCENTAGE_START
-			fileWriteLine("/proc/progress", "%d \n" % percentage, source=MODULE_NAME)
+			if isfile("/proc/progress"):
+				fileWriteLine("/proc/progress", "%d \n" % percentage, source=MODULE_NAME)
 			if (percentage > 1) and (percentage < 98):
 				value = 1
-				fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
+				if isfile("/proc/stb/lcd/symbol_circle"):
+					fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
 				if percentage > 20:
 					evfd.getInstance().vfd_write_string("-%02d-" % percentage)
 			elif percentage > 98:
 				value = 0
-				fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
-				open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
+				if isfile("/proc/stb/lcd/symbol_circle"):
+					fileWriteLine("/proc/stb/lcd/symbol_circle", "%1d \n" % value, source=MODULE_NAME)
+					open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
 
 
 def profileFinal():
