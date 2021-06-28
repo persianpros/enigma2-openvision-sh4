@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -120,6 +120,22 @@ msgstr " (0 - 所有网络)"
 msgid " (Channel %s)"
 msgstr " (频道 %s)"
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr " （禁用）"
+
+#, fuzzy
+msgid " (Higher than any auto)"
+msgstr " （比所有转速都高）"
+
+#, fuzzy
+msgid " (Higher than rotor any auto)"
+msgstr " （比所有马达转速都高）"
+
+#, fuzzy
+msgid " (Lower than any auto)"
+msgstr " （比所有转速都低）"
+
 #, python-format
 msgid " (Partition %d)"
 msgstr " (分区 %d)"
@@ -136,18 +152,6 @@ msgstr " (电视)"
 #, fuzzy
 msgid " (auto detection)"
 msgstr "音频选择"
-
-msgid " (disabled)"
-msgstr " （禁用）"
-
-msgid " (higher than any auto)"
-msgstr " （比所有转速都高）"
-
-msgid " (higher than rotor any auto)"
-msgstr " （比所有马达转速都高）"
-
-msgid " (lower than any auto)"
-msgstr " （比所有转速都低）"
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr ""
@@ -1470,10 +1474,6 @@ msgstr "<影片默认位置>"
 msgid "<Last timer location>"
 msgstr "<最后一个计时器位置>"
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "按OK键可执行附加功能"
-
 msgid "<unknown>"
 msgstr "<未知>"
 
@@ -1650,9 +1650,6 @@ msgstr ""
 #, fuzzy
 msgid "ADB variant"
 msgstr "保加利亚"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -1956,10 +1953,6 @@ msgstr "频道"
 msgid "All ages"
 msgstr "所有年龄"
 
-#, fuzzy
-msgid "All caps"
-msgstr "所有年龄"
-
 msgid "All frequency"
 msgstr "所有频率"
 
@@ -2165,12 +2158,6 @@ msgstr "确定要移除这个项目吗？"
 
 msgid "Are you sure to restore all deleted images"
 msgstr "你确定要恢复所有已删除固件？"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "测试机顶盒的网络配置。\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2676,10 +2663,6 @@ msgid "Blue"
 msgstr "蓝色"
 
 #, fuzzy
-msgid "Blue LED brightness"
-msgstr "亮度"
-
-#, fuzzy
 msgid "Blue long"
 msgstr "蓝色"
 
@@ -3058,10 +3041,6 @@ msgstr "中心位置"
 msgid "Center DVB subtitles"
 msgstr "中心DVB字幕"
 
-#, fuzzy
-msgid "Center text"
-msgstr "中心"
-
 msgid "Center time-labels and remove date"
 msgstr "中置时间标签并移除时间数据"
 
@@ -3080,10 +3059,6 @@ msgstr "更改语言"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "配置重复和延迟设置？"
 
 msgid "Change bouquets in quickzap"
 msgstr "快速切换自定义列表"
@@ -4079,14 +4054,7 @@ msgstr "定时器"
 msgid "Cron manager"
 msgstr "没有资源管理器"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "亮度"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -4480,10 +4448,6 @@ msgstr "深度休眠"
 
 msgid "Deep standby"
 msgstr "深度休眠"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
-msgstr "深度休眠LED"
 
 msgid "Default"
 msgstr "缺省值"
@@ -4888,10 +4852,6 @@ msgstr "显示皮肤"
 
 msgid "Display and userinterface"
 msgstr "显示和用户界面"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "显示皮肤"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5407,9 +5367,6 @@ msgstr "启用OpenTV EPG"
 
 msgid "Enable OpenTV EPG"
 msgstr "启用OpenTV EPG"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "启用卫星 EPG"
@@ -6307,6 +6264,10 @@ msgstr "创建目录%s 失败。"
 msgid "Flash type"
 msgstr "列表类型"
 
+#, fuzzy
+msgid "Flashing"
+msgstr "时尚"
+
 msgid "Flashing Image"
 msgstr ""
 
@@ -6422,23 +6383,10 @@ msgstr "星期五"
 msgid "From:"
 msgstr "来自:"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "电影列表配置"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 #, fuzzy
@@ -7144,6 +7092,10 @@ msgstr ""
 "要安装的固件无效\n"
 "%s"
 
+#, fuzzy
+msgid "Images"
+msgstr "固件: "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7344,7 +7296,8 @@ msgstr "驾驶"
 msgid "Input"
 msgstr "输入"
 
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "输入 "
 
 #, fuzzy
@@ -7361,6 +7314,10 @@ msgstr "输入设备"
 
 msgid "Input Stream ID"
 msgstr "输入流媒体ID"
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "转到位置"
 
 msgid "Install"
 msgstr "安装"
@@ -7650,10 +7607,6 @@ msgid "LED Standby"
 msgstr "一般待机"
 
 #, fuzzy
-msgid "LED brightness"
-msgstr "亮度"
-
-#, fuzzy
 msgid "LED brightness during deep standby."
 msgstr "在深度待机期间打开电源指示灯。"
 
@@ -7676,30 +7629,6 @@ msgstr ""
 #, fuzzy
 msgid "LED color during standby"
 msgstr "待机期间保持LED通电工作"
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "更多设置"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "显示皮肤"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "电影列表配置"
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -7965,14 +7894,6 @@ msgstr "记录日志到 /tmp目录"
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "亮度"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "亮度"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8801,6 +8722,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "接下来"
 
+#, fuzzy
+msgid "Next Image"
+msgstr "删除固件"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -9033,6 +8958,10 @@ msgstr "未安装"
 msgid "Not associated"
 msgstr "不关联"
 
+#, fuzzy
+msgid "Not configured"
+msgstr "未设置"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9056,6 +8985,10 @@ msgstr "注意：一旦启用，并且你想唤醒后进入待机模式，设置
 #, fuzzy
 msgid "Nothing"
 msgstr "什么都不做"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "从未连接"
 
 msgid ""
 "Nothing to scan!\n"
@@ -9990,6 +9923,10 @@ msgstr "存贮位置"
 msgid "Positioner"
 msgstr "星位"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "定位器（选择卫星）"
+
 msgid "Positioner (selecting satellites)"
 msgstr "定位器（选择卫星）"
 
@@ -10000,9 +9937,6 @@ msgid "Positioner setup log"
 msgstr "定位器设置日志"
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 #, fuzzy
@@ -10215,6 +10149,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "预览"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "固件: "
+
 msgid "Preview"
 msgstr "预览"
 
@@ -10383,10 +10321,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "命令顺序"
-
-#, fuzzy
 msgid "RC name"
 msgstr "改名"
 
@@ -10493,6 +10427,9 @@ msgstr "升级前段处理器并立即重启吗?"
 msgid "Really update your settop box and reboot now?"
 msgstr "确定此时要升级接收机并重启吗？"
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr ""
 
@@ -10500,15 +10437,15 @@ msgstr ""
 msgid "Reboot receiver"
 msgstr "开始目录"
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "亮度"
-
 msgid "Recall to previous service"
 msgstr "返回之前的频道"
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "信息"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10569,17 +10506,6 @@ msgstr "录制设置"
 
 msgid "Red"
 msgstr "红色"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "深度休眠"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "待机"
 
 msgid "Red button..."
 msgstr "红色按钮"
@@ -10657,6 +10583,10 @@ msgstr "记住服务密码"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr "提醒，你已经选择保存时移文件。"
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "删除条目"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11413,19 +11343,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr "滚动延迟"
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "收藏设置"
-
-#, fuzzy
-msgid "Scroll pause"
-msgstr "滚动重复"
-
 msgid "Scroll repeats"
-msgstr "滚动重复"
-
-#, fuzzy
-msgid "Scroll text"
 msgstr "滚动重复"
 
 msgid "Scrolling delay (software renderer)"
@@ -11775,9 +11693,6 @@ msgstr "选择Softcam插件"
 msgid "Select sort method:"
 msgstr "排序方式："
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 msgid "Select target folder"
 msgstr "选择目标文件夹"
 
@@ -12112,10 +12027,6 @@ msgstr "设为默认"
 msgid "Set end time"
 msgstr "设置结束时间"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "设为默认"
-
 msgid "Set fixed"
 msgstr "设为已修复"
 
@@ -12124,10 +12035,6 @@ msgstr "设置外部字幕帧速（fps）"
 
 msgid "Set interface as default Interface"
 msgstr "将网卡设为默认"
-
-#, fuzzy
-msgid "Set led"
-msgstr "设为已修复"
 
 msgid "Set limits"
 msgstr "设置极限"
@@ -12308,14 +12215,6 @@ msgid "Show EPG for current channel..."
 msgstr "显示当前频道的EPG"
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "显示备选频道"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "显示频道加密图标"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "小进展"
 
@@ -12397,10 +12296,6 @@ msgstr "显示菜单或插件编号"
 
 msgid "Show channel numbers in channel selection"
 msgstr "选择频道时显示频道编号"
-
-#, fuzzy
-msgid "Show clock"
-msgstr "显示列"
 
 msgid "Show columns"
 msgstr "显示列"
@@ -12484,10 +12379,6 @@ msgid "Show icon for new/unseen items"
 msgstr "为 新的/未查看的项目显示图标"
 
 #, fuzzy
-msgid "Show icons"
-msgstr "显示列"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "显示电影"
 
@@ -12561,6 +12452,10 @@ msgstr "保护插件浏览器"
 msgid "Show multi channel EPG"
 msgstr "多个-EPG"
 
+#, fuzzy
+msgid "Show next image"
+msgstr "显示电影"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr "从远程接收器url导入频道和/或epg未完成时显示通知"
 
@@ -12572,30 +12467,6 @@ msgstr "导入通道失败时显示通知"
 
 msgid "Show notification when import channels was successful"
 msgstr "导入通道成功时显示通知"
-
-#, fuzzy
-msgid "Show on LED display"
-msgstr "显示Picon"
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr " 在待机状态下打开显示器。"
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "显示Picon"
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr " 在待机状态下打开显示器。"
-
-#, fuzzy
-msgid "Show on display"
-msgstr "开机显示"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr " 在待机状态下打开显示器。"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12633,8 +12504,16 @@ msgid "Show positioner position"
 msgstr "显示定位器所处位置"
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "切换到前一个频道"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "保护插件浏览器"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "输入IP地址"
 
 msgid "Show record clock icons"
 msgstr "显示记录时钟图标"
@@ -13112,12 +12991,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "西班牙语"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -13196,20 +13069,8 @@ msgstr "一般待机"
 msgid "Standby & Restart"
 msgstr "待机 / 重启"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "待机LED"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "待机LED"
-
 msgid "Standby after current event"
 msgstr "当前时间之后待机"
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "待机在"
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14458,10 +14319,6 @@ msgstr "定时器选择"
 msgid "Time import should start"
 msgstr ""
 
-#, fuzzy
-msgid "Time mode"
-msgstr "脉冲模式"
-
 msgid "Time scale"
 msgstr "时间跨度"
 
@@ -14664,9 +14521,6 @@ msgstr "顶部和底部"
 
 msgid "Top and bottom"
 msgstr "顶部和底部"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -14872,12 +14726,6 @@ msgstr "高频头/设备类型"
 msgid "Type of scan"
 msgstr "扫描类型"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -14973,14 +14821,6 @@ msgstr "最后diseqc命令发出的延迟时间"
 msgid "Uninstall"
 msgstr "卸载"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "调谐器类型"
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "调谐器配置"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -15060,10 +14900,6 @@ msgstr "更新软件目录"
 
 msgid "Upper case"
 msgstr ""
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "仅仅升级频道列表"
 
 #, fuzzy
 msgid "Uptime"
@@ -15283,60 +15119,6 @@ msgstr ""
 msgid "VCR Scart"
 msgstr "录像机"
 
-#, fuzzy
-msgid "VFD brightness"
-msgstr "亮度"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD播放器"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "电影列表配置"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 msgid "VLAN connection"
 msgstr "局域网连接"
 
@@ -15498,15 +15280,16 @@ msgstr ""
 msgid "Virgin Islands (U.S.)"
 msgstr ""
 
-msgid "Virtual KeyBoard Functions"
+#, fuzzy
+msgid "Virtual KeyBoard"
+msgstr "虚拟键盘"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "虚拟键盘功能"
 
 msgid "Virtual KeyBoard Text:"
 msgstr "虚拟键盘文本："
-
-#, fuzzy
-msgid "Virtual Keyboard"
-msgstr "虚拟键盘"
 
 msgid "Virtual keyboard"
 msgstr "虚拟键盘"
@@ -16049,6 +15832,9 @@ msgstr "当内容为16：9横纵比时，选择是否拉伸画面。"
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "当内容为4：3横纵比时，选择是否拉伸画面。"
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr ""
@@ -16623,9 +16409,6 @@ msgstr "深度休眠"
 msgid "auto standby"
 msgstr "一直开着"
 
-msgid "automatic"
-msgstr "自动"
-
 msgid "back"
 msgstr "后退"
 
@@ -16651,12 +16434,6 @@ msgstr "黑&白"
 msgid "blacklist"
 msgstr "黑名单"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "蓝色"
 
@@ -16671,10 +16448,6 @@ msgstr "广播／新闻"
 
 msgid "by date"
 msgstr "按日期"
-
-#, fuzzy
-msgid "cable"
-msgstr "有线"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16702,18 +16475,6 @@ msgstr "中心，环绕"
 #, fuzzy
 msgid "change sides"
 msgstr "更改定时器"
-
-#, fuzzy
-msgid "channel name"
-msgstr "频道信息"
-
-#, fuzzy
-msgid "channel number"
-msgstr "使用快速扫描频道编号"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "频道名称和频道编号"
 
 msgid "chapters"
 msgstr "章节"
@@ -16754,10 +16515,6 @@ msgstr "检测通过"
 msgid "connected"
 msgstr "已连接"
 
-#, fuzzy
-msgid "continuous"
-msgstr "继续"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -16781,16 +16538,8 @@ msgstr "新闻/时政"
 msgid "daily"
 msgstr "每天"
 
-#, fuzzy
-msgid "date"
-msgstr "更新"
-
 msgid "day"
 msgstr "天"
-
-#, fuzzy
-msgid "day and date"
-msgstr "按日期"
 
 msgid "delete cut"
 msgstr "删除剪辑"
@@ -16983,9 +16732,6 @@ msgstr "空闲"
 msgid "from"
 msgstr "来自: "
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "进阶指导"
 
@@ -17054,21 +16800,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "水平"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17160,9 +16891,6 @@ msgstr "将长按(红/绿/黄/蓝) 分配给插件或 E2 功能。"
 
 msgid "magazines/reports/documentary"
 msgstr "杂志/报道/纪录片"
-
-msgid "manual"
-msgstr "手动"
 
 msgid "martial sports"
 msgstr "武术运动"
@@ -17302,10 +17030,6 @@ msgstr "没有发现卫星前端！"
 msgid "not_tested"
 msgstr "还未测试"
 
-#, fuzzy
-msgid "nothing"
-msgstr "什么都不做"
-
 msgid "nothing connected"
 msgstr "从未连接"
 
@@ -17330,13 +17054,6 @@ msgstr "开"
 msgid "on READ ONLY medium."
 msgstr "只读介质。"
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "显示所有标签"
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "一次"
 
@@ -17349,20 +17066,8 @@ msgstr "唤醒电视"
 msgid "open nameserver configuration"
 msgstr "打开DNS设置"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "原始语言"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 msgid "pass"
 msgstr "通过"
@@ -17540,10 +17245,6 @@ msgstr "随机播放"
 msgid "shut down"
 msgstr "关机"
 
-#, fuzzy
-msgid "signal quality"
-msgstr "连接质量"
-
 msgid "simple"
 msgstr "简单"
 
@@ -17606,12 +17307,6 @@ msgstr "社会/精神科学"
 #, fuzzy
 msgid "softcam"
 msgstr "重启softcam插件"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -17677,10 +17372,6 @@ msgid "tennis/squash"
 msgstr "网球/壁球"
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "地面波"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "地面波"
 
@@ -17695,23 +17386,6 @@ msgstr "这个录像"
 
 msgid "this service is protected by a parental control pin"
 msgstr "此频道受家长控制。"
-
-#, fuzzy
-msgid "time"
-msgstr "结束时间"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "是并保存"
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "切换时间, 章节, 音频,字幕信息"

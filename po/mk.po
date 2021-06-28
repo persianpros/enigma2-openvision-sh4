@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2021-02-19 14:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: Muzoss-VELEBRDO\n"
@@ -120,6 +120,22 @@ msgstr " (0 - сите мрежи)"
 msgid " (Channel %s)"
 msgstr " (Канал %s)"
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr " Деактивирано"
+
+#, fuzzy
+msgid " (Higher than any auto)"
+msgstr " (повисоко од кое било автоматско)"
+
+#, fuzzy
+msgid " (Higher than rotor any auto)"
+msgstr " (повисоко од роторот било кое автоматско)"
+
+#, fuzzy
+msgid " (Lower than any auto)"
+msgstr " (пониско од кое било автоматско)"
+
 #, python-format
 msgid " (Partition %d)"
 msgstr " (Партиција %d)"
@@ -136,18 +152,6 @@ msgstr " (ТВ)"
 #, fuzzy
 msgid " (auto detection)"
 msgstr "До избор на аудио"
-
-msgid " (disabled)"
-msgstr " Деактивирано"
-
-msgid " (higher than any auto)"
-msgstr " (повисоко од кое било автоматско)"
-
-msgid " (higher than rotor any auto)"
-msgstr " (повисоко од роторот било кое автоматско)"
-
-msgid " (lower than any auto)"
-msgstr " (пониско од кое било автоматско)"
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr ""
@@ -1500,10 +1504,6 @@ msgstr ""
 msgid "<Last timer location>"
 msgstr ""
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Притиснете OK за да го вклучите изборот."
-
 msgid "<unknown>"
 msgstr "(непознат)"
 
@@ -1680,9 +1680,6 @@ msgstr "СТЕКНУВАЊЕ TSID / ONID"
 #, fuzzy
 msgid "ADB variant"
 msgstr "Бугарски"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -1987,10 +1984,6 @@ msgstr "Канали"
 msgid "All ages"
 msgstr "Сите возрасти"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Сите возрасти"
-
 msgid "All frequency"
 msgstr "Сите фреквенции"
 
@@ -2195,12 +2188,6 @@ msgstr "Дали навистина сакате да го избришете о
 
 msgid "Are you sure to restore all deleted images"
 msgstr "Дали сте сигурни дека сакате да ги вратите сите избришани имиџи"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Тестирајте ја мрежната конфигурација на приемникот.\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2707,10 +2694,6 @@ msgid "Blue"
 msgstr "Сино"
 
 #, fuzzy
-msgid "Blue LED brightness"
-msgstr "Светлост"
-
-#, fuzzy
 msgid "Blue long"
 msgstr "Сино"
 
@@ -3090,10 +3073,6 @@ msgstr "центрирај"
 msgid "Center DVB subtitles"
 msgstr "Центар за DVB преводи"
 
-#, fuzzy
-msgid "Center text"
-msgstr "центрирано"
-
 msgid "Center time-labels and remove date"
 msgstr "Центрирајте ги временските ознаки и отстранете ги датумите"
 
@@ -3112,10 +3091,6 @@ msgstr "Промени го јазикот"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Да се ​​променат вредностите за повторување и одложување?"
 
 msgid "Change bouquets in quickzap"
 msgstr "Променете го букетот со промена на канал"
@@ -4112,15 +4087,8 @@ msgstr "Тајмер"
 msgid "Cron manager"
 msgstr "нема управител на ресурси"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Светлост"
-
 msgid "Cuba"
 msgstr "Куба"
-
-msgid "CuberevoVFD"
-msgstr ""
 
 msgid "Curacao"
 msgstr "Куракао"
@@ -4518,10 +4486,6 @@ msgstr "Deep standby"
 
 msgid "Deep standby"
 msgstr "Deep standby"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
-msgstr "Deep Standby LED"
 
 msgid "Default"
 msgstr "Стандард"
@@ -4924,10 +4888,6 @@ msgstr "Скин за Екран"
 
 msgid "Display and userinterface"
 msgstr "Екран и кориснички интерфејс"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "Скин за Екран"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5450,9 +5410,6 @@ msgstr "Овозможете OpenTV EPG"
 
 msgid "Enable OpenTV EPG"
 msgstr "Овозможете OpenTV EPG"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Овозможете ViaSat EPG"
@@ -6349,6 +6306,10 @@ msgstr "Не успеав да го создадам директориумот%
 msgid "Flash type"
 msgstr "Флеш Имиџ"
 
+#, fuzzy
+msgid "Flashing"
+msgstr "Флеширање Имиџ"
+
 msgid "Flashing Image"
 msgstr "Флеширање Имиџ"
 
@@ -6464,23 +6425,10 @@ msgstr "Петок"
 msgid "From:"
 msgstr "Од:"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Поставки за списокот  со филмови"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 #, fuzzy
@@ -7190,6 +7138,10 @@ msgstr ""
 "Имиџот што треба да се инсталира е неважечки\n"
 "% s"
 
+#, fuzzy
+msgid "Images"
+msgstr "Имиџ: "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7390,7 +7342,8 @@ msgstr "автомобилизам"
 msgid "Input"
 msgstr "Влез"
 
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Влез "
 
 #, fuzzy
@@ -7407,6 +7360,10 @@ msgstr "Поставки на влезен уред"
 
 msgid "Input Stream ID"
 msgstr "Внесете ID на Стрим"
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Оди на позиција"
 
 msgid "Install"
 msgstr "Инсталираj"
@@ -7696,10 +7653,6 @@ msgid "LED Standby"
 msgstr "Стендбај"
 
 #, fuzzy
-msgid "LED brightness"
-msgstr "Светлост"
-
-#, fuzzy
 msgid "LED brightness during deep standby."
 msgstr "Вклучете го LED на копчето за напојување на предниот панел во режим на подготвеност."
 
@@ -7722,30 +7675,6 @@ msgstr ""
 #, fuzzy
 msgid "LED color during standby"
 msgstr "Вклучете го LED на копчето за напојување на предниот панел во режим на подготвеност."
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "Конфигурација"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "Скин за Екран"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Поставки за списокот  со филмови"
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8012,14 +7941,6 @@ msgstr "Регистрирајте ги резултатите на / tmp"
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Светлост"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Светлост"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8850,6 +8771,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Следно"
 
+#, fuzzy
+msgid "Next Image"
+msgstr "Избриши имиџ"
+
 msgid "Nicaragua"
 msgstr "Никарагва"
 
@@ -9082,6 +9007,10 @@ msgstr "Не е инсталирано"
 msgid "Not associated"
 msgstr "Не се поврзани"
 
+#, fuzzy
+msgid "Not configured"
+msgstr "не е конфигуриран"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9105,6 +9034,10 @@ msgstr "Белешка: Ако е овозможена оваа опција и 
 #, fuzzy
 msgid "Nothing"
 msgstr "Ништо"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "ништо поврзано"
 
 msgid ""
 "Nothing to scan!\n"
@@ -10040,6 +9973,10 @@ msgstr "Позиција зачувана на индекс"
 msgid "Positioner"
 msgstr "Позиционер"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Позиционер (избор на сателити)"
+
 msgid "Positioner (selecting satellites)"
 msgstr "Позиционер (избор на сателити)"
 
@@ -10051,10 +9988,6 @@ msgstr "Протокол за поставување позиционер"
 
 msgid "Power LED can be turned on or off here."
 msgstr ""
-
-#, fuzzy
-msgid "Power LED colour"
-msgstr "ЛЕД-напојување"
 
 #, fuzzy
 msgid "Power LED state during deep-standby."
@@ -10266,6 +10199,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Назад"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Имиџ: "
+
 msgid "Preview"
 msgstr "Преглед"
 
@@ -10434,10 +10371,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "Командна наредба"
-
-#, fuzzy
 msgid "RC name"
 msgstr "Преименувај"
 
@@ -10545,6 +10478,9 @@ msgstr "Навистина сакате да се ажурира пред-про
 msgid "Really update your settop box and reboot now?"
 msgstr "Дали навистина сакате да го ажурирате приемникот и потоа да го рестартирате?"
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr "Рестарт"
 
@@ -10552,15 +10488,15 @@ msgstr "Рестарт"
 msgid "Reboot receiver"
 msgstr "Главен директориум"
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Светлост"
-
 msgid "Recall to previous service"
 msgstr "Назад на последниот канал"
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Информации"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10621,17 +10557,6 @@ msgstr "Поставки за снимање"
 
 msgid "Red"
 msgstr "Црвена"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "одете во дееп стендбај"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Ставете го ТВ во стендбај"
 
 msgid "Red button..."
 msgstr "Црвено копче ..."
@@ -10709,6 +10634,10 @@ msgstr "Запомнете го PIN-кодот на каналот"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr "Потсетник за зачувување на датотеката за timeshift ."
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "Отстрани елемент"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11466,19 +11395,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr "Доцнење на лизгање"
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Поставки за колекцијата"
-
-#, fuzzy
-msgid "Scroll pause"
-msgstr "Скролувајте повторено"
-
 msgid "Scroll repeats"
-msgstr "Скролувајте повторено"
-
-#, fuzzy
-msgid "Scroll text"
 msgstr "Скролувајте повторено"
 
 msgid "Scrolling delay (software renderer)"
@@ -11828,9 +11745,6 @@ msgstr "Изберете софткам"
 msgid "Select sort method:"
 msgstr "Изберете метод на сортирање:"
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 msgid "Select target folder"
 msgstr "Изберете целна папка"
 
@@ -12166,10 +12080,6 @@ msgstr "Поставете стандардно"
 msgid "Set end time"
 msgstr "Поставете време на завршување"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Поставете стандардно"
-
 msgid "Set fixed"
 msgstr "Поставен фиксен"
 
@@ -12178,10 +12088,6 @@ msgstr "Поставете fps за надворешни преводи"
 
 msgid "Set interface as default Interface"
 msgstr "Поставете го интерфејсот како стандарден интерфејс"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Поставен фиксен"
 
 msgid "Set limits"
 msgstr "Поставете граници"
@@ -12362,14 +12268,6 @@ msgid "Show EPG for current channel..."
 msgstr "Прикажи EPG за тековниот канал ..."
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Прикажи алтернативи"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Покажи крипто икони"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Мал напредок"
 
@@ -12451,10 +12349,6 @@ msgstr "Покажи нумерирање на менито или плагин�
 
 msgid "Show channel numbers in channel selection"
 msgstr "Покажи го бројот на каналот во списокот за избор на канали"
-
-#, fuzzy
-msgid "Show clock"
-msgstr "Прикажи колони"
 
 msgid "Show columns"
 msgstr "Прикажи колони"
@@ -12538,10 +12432,6 @@ msgid "Show icon for new/unseen items"
 msgstr "Покажи икона за нови / невидени записи"
 
 #, fuzzy
-msgid "Show icons"
-msgstr "Прикажи колони"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "Прикажи филмови"
 
@@ -12615,6 +12505,10 @@ msgstr "Заштитете го прелистувачот на плагин"
 msgid "Show multi channel EPG"
 msgstr "Прикажи повеќеканален EPG"
 
+#, fuzzy
+msgid "Show next image"
+msgstr "Прикажи филмови"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr "Покажи известување ако увозните канали и / или EPG од URL-то на далечинскиот приемник не се завршени"
 
@@ -12626,30 +12520,6 @@ msgstr "Покажи известување ако увозните канали
 
 msgid "Show notification when import channels was successful"
 msgstr "Покажи известување кога увозните канали биле успешни"
-
-#, fuzzy
-msgid "Show on LED display"
-msgstr "Покажи пикони на екранот"
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Вклучете го екранот во стендбај"
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "Покажи пикони на екранот"
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Вклучете го екранот во стендбај"
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Вклучете го екранот"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Вклучете го екранот во стендбај"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12687,8 +12557,16 @@ msgid "Show positioner position"
 msgstr "Покажи позиција на роторот"
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "Префрли се на претходниот канал"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Заштитете го прелистувачот на плагин"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "Внеси IP адреса"
 
 msgid "Show record clock icons"
 msgstr "Покажи икони за снимање"
@@ -13160,12 +13038,6 @@ msgstr "Шпанија"
 msgid "Spanish"
 msgstr "Шпански"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 #, fuzzy
 msgid "Special"
 msgstr "Специјално 1"
@@ -13245,20 +13117,8 @@ msgstr "Стендбај"
 msgid "Standby & Restart"
 msgstr "Стендбај / рестарт"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Стендбај ЛЕД"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Стендбај ЛЕД"
-
 msgid "Standby after current event"
 msgstr "Во Стендбај по тековната програма"
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Во стендбај "
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14497,10 +14357,6 @@ msgstr "Избор на тајмер"
 msgid "Time import should start"
 msgstr ""
 
-#, fuzzy
-msgid "Time mode"
-msgstr "Режим на тон"
-
 msgid "Time scale"
 msgstr "Временска скала"
 
@@ -14702,9 +14558,6 @@ msgstr "Горе и долу"
 
 msgid "Top and bottom"
 msgstr "Горе и долу"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -14908,12 +14761,6 @@ msgstr "Вид на LNB / уред"
 msgid "Type of scan"
 msgstr "Вид на пребарување"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -15009,14 +14856,6 @@ msgstr "Доцнење по последната команда на DiSEqC \""
 msgid "Uninstall"
 msgstr "Деинсталирање"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Тип на тјунер"
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Конфигурација на тјунер"
-
 msgid "United Arab Emirates"
 msgstr "Обединети Арапски Емирати"
 
@@ -15097,10 +14936,6 @@ msgstr "Се ажурира каталогот на софтвер"
 
 msgid "Upper case"
 msgstr "Големи букви"
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Ажурирајте само список со канали"
 
 #, fuzzy
 msgid "Uptime"
@@ -15320,60 +15155,6 @@ msgstr "Узбекистан"
 msgid "VCR Scart"
 msgstr "VCR scart"
 
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Светлост"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "ДВД плеер"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Поставки за списокот  со филмови"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 msgid "VLAN connection"
 msgstr "ВЛАН врска"
 
@@ -15536,15 +15317,16 @@ msgstr "Девствени острови (Британски)"
 msgid "Virgin Islands (U.S.)"
 msgstr "Девствени острови (САД)"
 
-msgid "Virtual KeyBoard Functions"
+#, fuzzy
+msgid "Virtual KeyBoard"
+msgstr "Виртуелна тастатура"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Функции на виртуелна тастатура"
 
 msgid "Virtual KeyBoard Text:"
 msgstr "Текст на виртуелна тастатура:"
-
-#, fuzzy
-msgid "Virtual Keyboard"
-msgstr "Виртуелна тастатура"
 
 msgid "Virtual keyboard"
 msgstr "Виртуелна тастатура"
@@ -16086,6 +15868,9 @@ msgstr "Кога содржината има размер 16: 9, изберет�
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Кога содржината има размер на размер 4: 3, изберете дали ќе ја размерите / истегнете сликата."
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr "Кога ресиверот ќе се вклучи од стендбај или дееп стендбај, тој ќе испрати команда до ТВ да го изнесе и тој стендбај."
@@ -16654,9 +16439,6 @@ msgstr "одете во дееп стендбај"
 msgid "auto standby"
 msgstr "Не оди во стендбај"
 
-msgid "automatic"
-msgstr "автоматски"
-
 msgid "back"
 msgstr "враќај се"
 
@@ -16682,12 +16464,6 @@ msgstr "црно-бел"
 msgid "blacklist"
 msgstr "црна листа"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "сина"
 
@@ -16702,10 +16478,6 @@ msgstr "радиодифузија / печат"
 
 msgid "by date"
 msgstr "по датум"
-
-#, fuzzy
-msgid "cable"
-msgstr "Кабел"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16733,18 +16505,6 @@ msgstr "центриран, завиткан"
 #, fuzzy
 msgid "change sides"
 msgstr "Променете го тајмерот"
-
-#, fuzzy
-msgid "channel name"
-msgstr "Информации за каналот"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Број на канали и пикон"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "Број и име на каналот"
 
 msgid "chapters"
 msgstr "поглавја"
@@ -16785,10 +16545,6 @@ msgstr "потврдено"
 msgid "connected"
 msgstr "поврзано"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Продолжи"
-
 msgid "controlled by HDMI"
 msgstr "контролирана од HDMI"
 
@@ -16812,16 +16568,8 @@ msgstr "вести / тековни работи (општи)"
 msgid "daily"
 msgstr "дневно"
 
-#, fuzzy
-msgid "date"
-msgstr "Ажурирање"
-
 msgid "day"
 msgstr "ден"
-
-#, fuzzy
-msgid "day and date"
-msgstr "по датум"
 
 msgid "delete cut"
 msgstr "избриши сечи"
@@ -17014,9 +16762,6 @@ msgstr "слободни"
 msgid "from"
 msgstr "од"
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "понатамошно образование"
 
@@ -17085,21 +16830,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "хоризонтално"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17191,9 +16921,6 @@ msgstr "долго"
 
 msgid "magazines/reports/documentary"
 msgstr "списанија / извештаи / документарен филм"
-
-msgid "manual"
-msgstr "рачно"
 
 msgid "martial sports"
 msgstr "воени спортови"
@@ -17333,10 +17060,6 @@ msgstr "Не е пронајден сателитски тјунер!"
 msgid "not_tested"
 msgstr "не_тестирано"
 
-#, fuzzy
-msgid "nothing"
-msgstr "Ништо"
-
 msgid "nothing connected"
 msgstr "ништо поврзано"
 
@@ -17361,13 +17084,6 @@ msgstr "на"
 msgid "on READ ONLY medium."
 msgstr "на READ ONLY медиум."
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "прикажи ги сите ознаки"
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "еднаш"
 
@@ -17380,20 +17096,8 @@ msgstr "само од стендбај"
 msgid "open nameserver configuration"
 msgstr "отвори ги поставките за DNS"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "оригинален јазик"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 msgid "pass"
 msgstr "премин"
@@ -17570,10 +17274,6 @@ msgstr "мешање"
 msgid "shut down"
 msgstr "исклучи"
 
-#, fuzzy
-msgid "signal quality"
-msgstr "Квалитет на сигналот"
-
 msgid "simple"
 msgstr "едноставно"
 
@@ -17636,12 +17336,6 @@ msgstr "социјална / духовна наука"
 #, fuzzy
 msgid "softcam"
 msgstr "Рестарт софткам"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -17707,10 +17401,6 @@ msgid "tennis/squash"
 msgstr "тенис / сквош"
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "Терестријална"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Терестријална"
 
@@ -17725,23 +17415,6 @@ msgstr "оваа снимка"
 
 msgid "this service is protected by a parental control pin"
 msgstr "овој канал е заштитена со родителска контрола"
-
-#, fuzzy
-msgid "time"
-msgstr "Време на завршување"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "Да и зачувај"
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "време, поглавје, аудио, информации за превод"

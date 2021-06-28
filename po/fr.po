@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2021-06-05 17:33+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
@@ -119,6 +119,22 @@ msgstr " (0 - tous les réseaux)"
 msgid " (Channel %s)"
 msgstr " (Chaîne %s)"
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr " (Désactivé)"
+
+#, fuzzy
+msgid " (Higher than any auto)"
+msgstr " (supérieur à n'importe quel auto)"
+
+#, fuzzy
+msgid " (Higher than rotor any auto)"
+msgstr " (supérieur à n'importe quel rotor auto)"
+
+#, fuzzy
+msgid " (Lower than any auto)"
+msgstr " (inférieur à n'importe quel auto)"
+
 #, python-format
 msgid " (Partition %d)"
 msgstr " (Partition %d)"
@@ -134,18 +150,6 @@ msgstr " (TV)"
 
 msgid " (auto detection)"
 msgstr " (détection automatique)"
-
-msgid " (disabled)"
-msgstr " (Désactivé)"
-
-msgid " (higher than any auto)"
-msgstr " (supérieur à n'importe quel auto)"
-
-msgid " (higher than rotor any auto)"
-msgstr " (supérieur à n'importe quel rotor auto)"
-
-msgid " (lower than any auto)"
-msgstr " (inférieur à n'importe quel auto)"
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr " - Unicable/JESS LNBs non trouvé"
@@ -1622,10 +1626,6 @@ msgstr "<Emplacement par défaut des films>"
 msgid "<Last timer location>"
 msgstr "<Emplacement dernière programmation>"
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Appuyez sur ‘OK’ pour attacher une fonction."
-
 msgid "<unknown>"
 msgstr "<inconnu>"
 
@@ -1802,9 +1802,6 @@ msgstr "ACQUISITION DE TSID/ONID"
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgare"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -2109,10 +2106,6 @@ msgstr "Services"
 msgid "All ages"
 msgstr "Tous les âges"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Tous les âges"
-
 msgid "All frequency"
 msgstr "Toutes les fréquences"
 
@@ -2317,12 +2310,6 @@ msgstr "Êtes-vous sûr de vouloir supprimer cette entrée?"
 
 msgid "Are you sure to restore all deleted images"
 msgstr "Êtes-vous sûr de vouloir restaurer toutes les images effacées?"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Tester la configuration réseau de votre récepteur.\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2829,10 +2816,6 @@ msgid "Blue"
 msgstr "Bleu"
 
 #, fuzzy
-msgid "Blue LED brightness"
-msgstr "Luminosité"
-
-#, fuzzy
 msgid "Blue long"
 msgstr "Bleu"
 
@@ -3212,10 +3195,6 @@ msgstr "Centré"
 msgid "Center DVB subtitles"
 msgstr "Sous-titres DVB centrés"
 
-#, fuzzy
-msgid "Center text"
-msgstr "Centré"
-
 msgid "Center time-labels and remove date"
 msgstr "Centrer les time-labels et supprimer la date"
 
@@ -3234,10 +3213,6 @@ msgstr "Changer la langue"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Modifier les paramètres de répétition et de retard?"
 
 msgid "Change bouquets in quickzap"
 msgstr "Changer les bouquets en zapping rapide"
@@ -4234,15 +4209,8 @@ msgstr "Programmation"
 msgid "Cron manager"
 msgstr "aucun gestionnaire de ressource"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Luminosité"
-
 msgid "Cuba"
 msgstr "Cuba"
-
-msgid "CuberevoVFD"
-msgstr ""
 
 msgid "Curacao"
 msgstr "Curacao"
@@ -4640,10 +4608,6 @@ msgstr "Veille profonde"
 
 msgid "Deep standby"
 msgstr "Veille profonde"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
-msgstr "LED en veille profonde"
 
 msgid "Default"
 msgstr "Par défaut"
@@ -5046,10 +5010,6 @@ msgstr "Thème/Skin de l’affichage"
 
 msgid "Display and userinterface"
 msgstr "Affichage et interface utilisateur"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "Thème/Skin de l’affichage"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5572,9 +5532,6 @@ msgstr "Activer EPG OpenTV"
 
 msgid "Enable OpenTV EPG"
 msgstr "Activer EPG OpenTV"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Activer EPG ViaSat"
@@ -6471,6 +6428,10 @@ msgstr "Échec création répertoire %s."
 msgid "Flash type"
 msgstr "Flasher image"
 
+#, fuzzy
+msgid "Flashing"
+msgstr "Flashage de l’image"
+
 msgid "Flashing Image"
 msgstr "Flashage de l’image"
 
@@ -6587,23 +6548,10 @@ msgstr "Vendredi"
 msgid "From:"
 msgstr "De:"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Configuration de la liste de films"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 #, fuzzy
@@ -7310,6 +7258,10 @@ msgstr ""
 "L'image à installer est invalide\n"
 "%s"
 
+#, fuzzy
+msgid "Images"
+msgstr "Image: "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7510,7 +7462,8 @@ msgstr "Automobile"
 msgid "Input"
 msgstr "Entrée"
 
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Entrée "
 
 #, fuzzy
@@ -7527,6 +7480,10 @@ msgstr "Paramètres du périphérique d’entrée"
 
 msgid "Input Stream ID"
 msgstr "Saisir le Stream ID"
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Aller à la position"
 
 msgid "Install"
 msgstr "Installer"
@@ -7817,10 +7774,6 @@ msgid "LED Standby"
 msgstr "Veille"
 
 #, fuzzy
-msgid "LED brightness"
-msgstr "Luminosité"
-
-#, fuzzy
 msgid "LED brightness during deep standby."
 msgstr "Allumer la LED d’alimentation pendant la veille profonde."
 
@@ -7844,30 +7797,6 @@ msgstr "Forcer le zap vers le service à enregistrer en veille"
 #, fuzzy
 msgid "LED color during standby"
 msgstr "Allumer la LED d’alimentation pendant la veille."
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "Configuration"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "Thème/Skin de l’affichage"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Configuration de la liste de films"
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8134,14 +8063,6 @@ msgstr "Loguer les résultats dans /tmp"
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Luminosité"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Luminosité"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8972,6 +8893,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Suivant"
 
+#, fuzzy
+msgid "Next Image"
+msgstr "Supprimer l’image"
+
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
@@ -9204,6 +9129,10 @@ msgstr "Non installé"
 msgid "Not associated"
 msgstr "Non-Associé"
 
+#, fuzzy
+msgid "Not configured"
+msgstr "Pas configuré"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9227,6 +9156,10 @@ msgstr "Note: lorsqu’activé, et que vous voulez mettre votre récepteur en ve
 #, fuzzy
 msgid "Nothing"
 msgstr "Ne rien faire"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "Rien n'est connecté"
 
 msgid ""
 "Nothing to scan!\n"
@@ -10162,6 +10095,10 @@ msgstr "Position enregistrée à l'indice"
 msgid "Positioner"
 msgstr "Positionneur"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Positionneur (sélection satellites)"
+
 msgid "Positioner (selecting satellites)"
 msgstr "Positionneur (sélection satellites)"
 
@@ -10173,10 +10110,6 @@ msgstr "Log de la configuration du positionneur"
 
 msgid "Power LED can be turned on or off here."
 msgstr ""
-
-#, fuzzy
-msgid "Power LED colour"
-msgstr "LED d'alimentation"
 
 #, fuzzy
 msgid "Power LED state during deep-standby."
@@ -10388,6 +10321,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Précédent"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Image: "
+
 msgid "Preview"
 msgstr "Aperçu"
 
@@ -10556,10 +10493,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "Ordre de la commande"
-
-#, fuzzy
 msgid "RC name"
 msgstr "Renommer"
 
@@ -10667,6 +10600,9 @@ msgstr "Voulez-vous vraiment mettre à jour le frontprocessor et redémarrer mai
 msgid "Really update your settop box and reboot now?"
 msgstr "Voulez-vous vraiment mettre à jour votre décodeur et redémarrer maintenant?"
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr "Reboot"
 
@@ -10674,15 +10610,15 @@ msgstr "Reboot"
 msgid "Reboot receiver"
 msgstr "Répertoire racine"
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Luminosité"
-
 msgid "Recall to previous service"
 msgstr "Retour au service précédent"
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Informations"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10743,17 +10679,6 @@ msgstr "Configuration enregistrement"
 
 msgid "Red"
 msgstr "Rouge"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "Mettre en veille profonde"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Mettre la TV en veille"
 
 msgid "Red button..."
 msgstr "Bouton rouge..."
@@ -10831,6 +10756,10 @@ msgstr "Enregistrer PIN service"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr "Rappel, vous avez choisi de sauvegarder votre fichier PauseDirect."
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "Supprimer l'entrée"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11588,19 +11517,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr "Délai du défilement"
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Paramètres de la collection"
-
-#, fuzzy
-msgid "Scroll pause"
-msgstr "Répétition du défilement"
-
 msgid "Scroll repeats"
-msgstr "Répétition du défilement"
-
-#, fuzzy
-msgid "Scroll text"
 msgstr "Répétition du défilement"
 
 msgid "Scrolling delay (software renderer)"
@@ -11950,9 +11867,6 @@ msgstr "Sélectionner un Softcam"
 msgid "Select sort method:"
 msgstr "Sélectionner la méthode de tri:"
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 msgid "Select target folder"
 msgstr "Sélectionner le dossier cible"
 
@@ -12288,10 +12202,6 @@ msgstr "Définir par défaut"
 msgid "Set end time"
 msgstr "Régler l'heure de fin"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Définir par défaut"
-
 msgid "Set fixed"
 msgstr "Définir fixée"
 
@@ -12300,10 +12210,6 @@ msgstr "Régler le fps pour les sous-titres externes"
 
 msgid "Set interface as default Interface"
 msgstr "Utiliser l'interface comme interface par défaut"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Définir fixée"
 
 msgid "Set limits"
 msgstr "Fixer les limites"
@@ -12484,14 +12390,6 @@ msgid "Show EPG for current channel..."
 msgstr "Afficher l’EPG de la chaîne actuelle ..."
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Afficher alternatifs"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Afficher les icônes de cryptage"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Faible progression"
 
@@ -12573,10 +12471,6 @@ msgstr "Afficher les numéros des menus ou des plugins"
 
 msgid "Show channel numbers in channel selection"
 msgstr "Afficher le numéro des chaînes dans la sélection des chaînes"
-
-#, fuzzy
-msgid "Show clock"
-msgstr "Afficher colonnes"
 
 msgid "Show columns"
 msgstr "Afficher colonnes"
@@ -12660,10 +12554,6 @@ msgid "Show icon for new/unseen items"
 msgstr "Afficher l'icône pour les nouveaux éléments"
 
 #, fuzzy
-msgid "Show icons"
-msgstr "Afficher colonnes"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "Afficher les films"
 
@@ -12737,6 +12627,10 @@ msgstr "Protéger les extensions du navigateur"
 msgid "Show multi channel EPG"
 msgstr "Afficher l'EPG multi chaîne"
 
+#, fuzzy
+msgid "Show next image"
+msgstr "Afficher les films"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr "Afficher une notification lorsque l’import des chaînes et/ou EPG du récepteur distant n’a pas réussi"
 
@@ -12748,30 +12642,6 @@ msgstr "Afficher une notification lorsque l’import des chaînes n’a pas réu
 
 msgid "Show notification when import channels was successful"
 msgstr "Afficher une notification lorsque l’import des chaînes a réussi"
-
-#, fuzzy
-msgid "Show on LED display"
-msgstr "Afficher les picons dans l'affichage avant"
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Activer l’écran en mode veille"
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "Afficher les picons dans l'affichage avant"
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Activer l’écran en mode veille"
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Allumage de l’affichage"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Activer l’écran en mode veille"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12809,8 +12679,16 @@ msgid "Show positioner position"
 msgstr "Afficher la position du positionneur"
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "Basculer vers la chaîne précédente"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Protéger les extensions du navigateur"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "Entrer l’adresse IP"
 
 msgid "Show record clock icons"
 msgstr "Afficher un icône d’horloge pour les enregistrements"
@@ -13283,12 +13161,6 @@ msgstr "Espagne"
 msgid "Spanish"
 msgstr "Espagnol"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 #, fuzzy
 msgid "Special"
 msgstr "Spécial 1"
@@ -13368,20 +13240,8 @@ msgstr "Veille"
 msgid "Standby & Restart"
 msgstr "Veille / Redémarrage"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "LED en veille"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "LED en veille"
-
 msgid "Standby after current event"
 msgstr "Mise en veille après l'évènement actuel"
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Mise en veille dans "
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14637,10 +14497,6 @@ msgstr "Sélection de programmation"
 msgid "Time import should start"
 msgstr ""
 
-#, fuzzy
-msgid "Time mode"
-msgstr "Mode tonalité"
-
 msgid "Time scale"
 msgstr "Echelle de temps"
 
@@ -14842,9 +14698,6 @@ msgstr "Haut et Bas"
 
 msgid "Top and bottom"
 msgstr "Haut et Bas"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -15048,12 +14901,6 @@ msgstr "Type de LNB/périphérique"
 msgid "Type of scan"
 msgstr "Type de recherche"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -15153,14 +15000,6 @@ msgstr "Délai après la dernière commande diseqc"
 msgid "Uninstall"
 msgstr "Désinstaller"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Type tuner"
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Configuration tuner"
-
 msgid "United Arab Emirates"
 msgstr "Émirats Arabes Unis"
 
@@ -15241,10 +15080,6 @@ msgstr "Mise à jour du catalogue logiciel"
 
 msgid "Upper case"
 msgstr "Majuscules"
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Mettre à jour seulement la liste des chaînes"
 
 #, fuzzy
 msgid "Uptime"
@@ -15464,60 +15299,6 @@ msgstr "Ouzbékistan"
 msgid "VCR Scart"
 msgstr "Péritel magnétoscope"
 
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Luminosité"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "Lecteur DVD"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Configuration de la liste de films"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 msgid "VLAN connection"
 msgstr "Connexion VLAN"
 
@@ -15680,15 +15461,16 @@ msgstr "Îles Vierges (britanniques)"
 msgid "Virgin Islands (U.S.)"
 msgstr "Îles Vierges (USA)"
 
-msgid "Virtual KeyBoard Functions"
+#, fuzzy
+msgid "Virtual KeyBoard"
+msgstr "Clavier virtuel"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Fonctions du clavier virtuel"
 
 msgid "Virtual KeyBoard Text:"
 msgstr "Texte du clavier virtuel:"
-
-#, fuzzy
-msgid "Virtual Keyboard"
-msgstr "Clavier virtuel"
 
 msgid "Virtual keyboard"
 msgstr "Clavier virtuel"
@@ -16226,6 +16008,9 @@ msgstr "Lorsque le contenu a un format d'image 16:9, choisir de redimensionner/�
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Lorsque le contenu a un format d'image 4:3, choisir de redimensionner/étirer l'image."
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr "Lorsque le récepteur se réveille de veille ou de veille profonde, il enverra une commande au téléviseur pour le sortir de veille aussi."
@@ -16801,9 +16586,6 @@ msgstr "Mettre en veille profonde"
 msgid "auto standby"
 msgstr "Pas de veille"
 
-msgid "automatic"
-msgstr "Automatique"
-
 msgid "back"
 msgstr "Retour"
 
@@ -16829,12 +16611,6 @@ msgstr "Noir & Blanc"
 msgid "blacklist"
 msgstr "Liste noire (blacklist)"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "Bleu"
 
@@ -16849,10 +16625,6 @@ msgstr "Diffusion/Presse"
 
 msgid "by date"
 msgstr "Par date"
-
-#, fuzzy
-msgid "cable"
-msgstr "Câble"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16880,18 +16652,6 @@ msgstr "Centré, enveloppé"
 #, fuzzy
 msgid "change sides"
 msgstr "Changer programmation"
-
-#, fuzzy
-msgid "channel name"
-msgstr "Info chaîne"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Numéro de la chaîne et picon"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "Numéro de la chaîne et nom du service"
 
 msgid "chapters"
 msgstr "Chapitres"
@@ -16932,10 +16692,6 @@ msgstr "Confirmé"
 msgid "connected"
 msgstr "Connecté"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Continuer"
-
 msgid "controlled by HDMI"
 msgstr "Contrôlé par HDMI"
 
@@ -16959,16 +16715,8 @@ msgstr "Nouvelles/Actualités (général)"
 msgid "daily"
 msgstr "Quotidien"
 
-#, fuzzy
-msgid "date"
-msgstr "Mise à jour"
-
 msgid "day"
 msgstr "Jour"
-
-#, fuzzy
-msgid "day and date"
-msgstr "Par date"
 
 msgid "delete cut"
 msgstr "Supprimer la coupe"
@@ -17161,9 +16909,6 @@ msgstr "Libre"
 msgid "from"
 msgstr "de"
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "Formation continue"
 
@@ -17232,21 +16977,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "Horizontale"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17338,9 +17068,6 @@ msgstr "long"
 
 msgid "magazines/reports/documentary"
 msgstr "Magazines/Rapports/Documentaires"
-
-msgid "manual"
-msgstr "Manuel"
 
 msgid "martial sports"
 msgstr "Sports martiaux"
@@ -17479,10 +17206,6 @@ msgstr "frontend non valide"
 msgid "not_tested"
 msgstr "pas_testé"
 
-#, fuzzy
-msgid "nothing"
-msgstr "Ne rien faire"
-
 msgid "nothing connected"
 msgstr "Rien n'est connecté"
 
@@ -17507,13 +17230,6 @@ msgstr "Marche"
 msgid "on READ ONLY medium."
 msgstr "Sur support en LECTURE SEULE"
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "Voir toutes les étiquettes"
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "Une fois"
 
@@ -17526,20 +17242,8 @@ msgstr "seulement depuis la veille"
 msgid "open nameserver configuration"
 msgstr "Ouvrir configuration serveur de nom"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "Langue originale"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 msgid "pass"
 msgstr "Passe"
@@ -17715,10 +17419,6 @@ msgstr "Aléatoire"
 msgid "shut down"
 msgstr "Éteindre"
 
-#, fuzzy
-msgid "signal quality"
-msgstr "Qualité du signal"
-
 msgid "simple"
 msgstr "Simple"
 
@@ -17781,12 +17481,6 @@ msgstr "Science sociale/Spirituelle"
 #, fuzzy
 msgid "softcam"
 msgstr "Redémarrer softcam"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -17852,10 +17546,6 @@ msgid "tennis/squash"
 msgstr "Tennis/Squash"
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "Terrestre"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Terrestre"
 
@@ -17870,23 +17560,6 @@ msgstr "Cet enregistrement"
 
 msgid "this service is protected by a parental control pin"
 msgstr "Ce service est protégé par un PIN contrôle parental"
-
-#, fuzzy
-msgid "time"
-msgstr "Heure de fin"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "Oui et sauvegarder"
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Commuter temps, chapitre, audio, info sous-titres"

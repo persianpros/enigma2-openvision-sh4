@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -115,6 +115,19 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr "Dezactivat"
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -129,18 +142,6 @@ msgid " (TV)"
 msgstr ""
 
 msgid " (auto detection)"
-msgstr ""
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
 msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
@@ -1466,10 +1467,6 @@ msgstr ""
 msgid "<Last timer location>"
 msgstr ""
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Apasati OK pentru a edita setarile."
-
 msgid "<unknown>"
 msgstr "<necunoscut>"
 
@@ -1620,9 +1617,6 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "ADB variant"
-msgstr ""
-
-msgid "ADBVFD"
 msgstr ""
 
 msgid "AFP"
@@ -1941,9 +1935,6 @@ msgstr "Servicii"
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -2152,12 +2143,6 @@ msgstr ""
 
 msgid "Are you sure to restore all deleted images"
 msgstr ""
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "iesire configurare nameserver"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2673,10 +2658,6 @@ msgstr ""
 msgid "Blue"
 msgstr ""
 
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Luminozitate"
-
 msgid "Blue long"
 msgstr ""
 
@@ -3038,9 +3019,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -3058,9 +3036,6 @@ msgid "Change Language"
 msgstr ""
 
 msgid "Change PIN Pressing [OK]"
-msgstr ""
-
-msgid "Change VFD display settings"
 msgstr ""
 
 msgid "Change bouquets in quickzap"
@@ -4064,14 +4039,7 @@ msgstr "Timer"
 msgid "Cron manager"
 msgstr "Manager pachet"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Luminozitate"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -4476,10 +4444,6 @@ msgstr "Oprire completa"
 
 #, fuzzy
 msgid "Deep standby"
-msgstr "Oprire completa"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Oprire completa"
 
 msgid "Default"
@@ -4890,10 +4854,6 @@ msgstr "Configurare afisaj"
 #, fuzzy
 msgid "Display and userinterface"
 msgstr "Afisaj si interfata utilizator"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "Configurare afisaj"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5418,9 +5378,6 @@ msgid "Enable OpenSSH:"
 msgstr ""
 
 msgid "Enable OpenTV EPG"
-msgstr ""
-
-msgid "Enable VFD display"
 msgstr ""
 
 msgid "Enable ViaSat EPG"
@@ -6302,6 +6259,10 @@ msgid "Flash type"
 msgstr "Flash"
 
 #, fuzzy
+msgid "Flashing"
+msgstr "Flash"
+
+#, fuzzy
 msgid "Flashing Image"
 msgstr "Flash"
 
@@ -6416,23 +6377,10 @@ msgstr "Vineri"
 msgid "From:"
 msgstr ""
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Configurare tuner"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -7135,6 +7083,10 @@ msgid ""
 "%s"
 msgstr ""
 
+#, fuzzy
+msgid "Images"
+msgstr "Flash"
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7337,8 +7289,8 @@ msgstr ""
 msgid "Input"
 msgstr "Intrare"
 
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Intrare"
 
 msgid "Input Device Actions"
@@ -7352,6 +7304,10 @@ msgstr ""
 
 msgid "Input Stream ID"
 msgstr ""
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Goto pozitie"
 
 msgid "Install"
 msgstr "Instalare"
@@ -7649,10 +7605,6 @@ msgstr "Configurare"
 msgid "LED Standby"
 msgstr "Asteptare"
 
-#, fuzzy
-msgid "LED brightness"
-msgstr "Luminozitate"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -7672,30 +7624,6 @@ msgid "LED color during recording in standby"
 msgstr ""
 
 msgid "LED color during standby"
-msgstr ""
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "Configurare retea"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "Configurare afisaj"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Configurare tuner"
-
-msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
 msgid "LIRC remote"
@@ -7968,14 +7896,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Luminozitate"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Luminozitate"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8816,6 +8736,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
 
+#, fuzzy
+msgid "Next Image"
+msgstr "sterge file"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -9056,6 +8980,10 @@ msgstr "Instalare"
 msgid "Not associated"
 msgstr ""
 
+#, fuzzy
+msgid "Not configured"
+msgstr "confirmat"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9079,6 +9007,10 @@ msgstr ""
 #, fuzzy
 msgid "Nothing"
 msgstr "nu face nimic"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "nimic conectat"
 
 msgid ""
 "Nothing to scan!\n"
@@ -10021,6 +9953,10 @@ msgstr ""
 msgid "Positioner"
 msgstr "Pozitioner"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Elimina satelitul selectat"
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -10031,9 +9967,6 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power LED state during deep-standby."
@@ -10245,6 +10178,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr ""
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Flash"
+
 msgid "Preview"
 msgstr ""
 
@@ -10412,10 +10349,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "Ordinea comenzilor"
-
-#, fuzzy
 msgid "RC name"
 msgstr "Redenumire"
 
@@ -10522,21 +10455,24 @@ msgstr ""
 msgid "Really update your settop box and reboot now?"
 msgstr ""
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr "Repornire sistem"
 
 msgid "Reboot receiver"
 msgstr ""
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Luminozitate"
-
 msgid "Recall to previous service"
 msgstr ""
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Informatii"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10597,16 +10533,6 @@ msgid "Recover inetd"
 msgstr "Inregistrare"
 
 msgid "Red"
-msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "treci la deep standby"
-
-msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -10683,6 +10609,10 @@ msgstr ""
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "Elimina intrarea"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11451,17 +11381,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Setari colectie"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -11826,9 +11746,6 @@ msgstr "Alegeti un film"
 msgid "Select sort method:"
 msgstr ""
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #, fuzzy
 msgid "Select target folder"
 msgstr "Alege directorul destinatie"
@@ -12172,9 +12089,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "Momentul incheierii"
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
@@ -12183,10 +12097,6 @@ msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "Setare interfata ca interfata implicita"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Momentul incheierii"
 
 msgid "Set limits"
 msgstr ""
@@ -12369,14 +12279,6 @@ msgid "Show EPG for current channel..."
 msgstr "Arata bara de informatii la schimbarea evenimentelor"
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Arata alternative"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Arata Informatii"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "In curs de desfasurare"
 
@@ -12457,10 +12359,6 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
-#, fuzzy
-msgid "Show clock"
-msgstr "Arata Informatii"
-
 msgid "Show columns"
 msgstr ""
 
@@ -12540,10 +12438,6 @@ msgid "Show icon for new/unseen items"
 msgstr ""
 
 #, fuzzy
-msgid "Show icons"
-msgstr "Arata Informatii"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "Sateliti"
 
@@ -12618,6 +12512,10 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+#, fuzzy
+msgid "Show next image"
+msgstr "Sateliti"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -12629,28 +12527,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-msgid "Show on LED display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Vezi lista cu Display disponibile si extemsiile Interfata user"
-
-msgid "Show on VFD display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Vezi lista cu Display disponibile si extemsiile Interfata user"
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Arata player-ul radio"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Vezi lista cu Display disponibile si extemsiile Interfata user"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12685,8 +12561,16 @@ msgid "Show positioner position"
 msgstr ""
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "Schimba la subserviciul anterior"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Browser-ul plugin"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP Address"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -13171,12 +13055,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spaniola"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -13255,20 +13133,8 @@ msgstr "Asteptare"
 msgid "Standby & Restart"
 msgstr "Asteptare / Restart"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Asteptare"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Asteptare"
-
 msgid "Standby after current event"
 msgstr ""
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Luminozitate"
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14496,10 +14362,6 @@ msgid "Time import should start"
 msgstr ""
 
 #, fuzzy
-msgid "Time mode"
-msgstr "Mod ton"
-
-#, fuzzy
 msgid "Time scale"
 msgstr "Selectare timer"
 
@@ -14710,9 +14572,6 @@ msgstr ""
 msgid "Top and bottom"
 msgstr ""
 
-msgid "TopfieldVFD"
-msgstr ""
-
 msgid "Total"
 msgstr ""
 
@@ -14921,12 +14780,6 @@ msgstr "Tipul scanarii"
 msgid "Type of scan"
 msgstr "Tipul scanarii"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -15020,13 +14873,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-msgid "UnionTunerType"
-msgstr ""
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Configurare tuner"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -15108,10 +14954,6 @@ msgstr ""
 
 msgid "Upper case"
 msgstr ""
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "canalul urmator in istoric"
 
 msgid "Uptime"
 msgstr ""
@@ -15338,60 +15180,6 @@ msgid "VCR Scart"
 msgstr "VCR scart"
 
 #, fuzzy
-msgid "VFD brightness"
-msgstr "Luminozitate"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "Player DVD"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Configurare tuner"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
-#, fuzzy
 msgid "VLAN connection"
 msgstr "Locatie"
 
@@ -15562,15 +15350,15 @@ msgid "Virgin Islands (U.S.)"
 msgstr ""
 
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "Tastatura Virtuala"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Tastatura Virtuala"
 
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "Tastatura Virtuala"
-
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "Tastatura Virtuala"
 
 #, fuzzy
@@ -16087,6 +15875,9 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
+msgstr ""
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
@@ -16622,10 +16413,6 @@ msgstr "treci la deep standby"
 msgid "auto standby"
 msgstr "fara standby"
 
-#, fuzzy
-msgid "automatic"
-msgstr "Automat"
-
 msgid "back"
 msgstr "inapoi"
 
@@ -16651,12 +16438,6 @@ msgstr ""
 msgid "blacklist"
 msgstr "lista neagra"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "albastru"
 
@@ -16672,10 +16453,6 @@ msgstr ""
 #, fuzzy
 msgid "by date"
 msgstr "sorteaza dupa data"
-
-#, fuzzy
-msgid "cable"
-msgstr "Cablu"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16701,17 +16478,6 @@ msgid "centered, wrapped"
 msgstr ""
 
 msgid "change sides"
-msgstr ""
-
-#, fuzzy
-msgid "channel name"
-msgstr "%d servicii gasite!"
-
-#, fuzzy
-msgid "channel number"
-msgstr "%d servicii gasite!"
-
-msgid "channel number and name"
 msgstr ""
 
 msgid "chapters"
@@ -16750,9 +16516,6 @@ msgstr "confirmat"
 msgid "connected"
 msgstr "conectat"
 
-msgid "continuous"
-msgstr ""
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -16774,16 +16537,8 @@ msgstr ""
 msgid "daily"
 msgstr "zilnic"
 
-#, fuzzy
-msgid "date"
-msgstr "Updateza"
-
 msgid "day"
 msgstr "ziua"
-
-#, fuzzy
-msgid "day and date"
-msgstr "sorteaza dupa data"
 
 msgid "delete cut"
 msgstr "sterge decupare"
@@ -16971,9 +16726,6 @@ msgstr "liber"
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -17042,21 +16794,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "orizontal"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17146,9 +16883,6 @@ msgstr ""
 
 msgid "magazines/reports/documentary"
 msgstr ""
-
-msgid "manual"
-msgstr "manual"
 
 msgid "martial sports"
 msgstr ""
@@ -17284,10 +17018,6 @@ msgstr ""
 msgid "not_tested"
 msgstr ""
 
-#, fuzzy
-msgid "nothing"
-msgstr "nu face nimic"
-
 msgid "nothing connected"
 msgstr "nimic conectat"
 
@@ -17312,12 +17042,6 @@ msgstr "pornit"
 msgid "on READ ONLY medium."
 msgstr "la READ ONLY mediu"
 
-msgid "on all mounts"
-msgstr ""
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "odata"
 
@@ -17330,19 +17054,7 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "deschide configurarea nameserverului"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
-msgstr ""
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 msgid "pass"
@@ -17520,9 +17232,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-msgid "signal quality"
-msgstr ""
-
 msgid "simple"
 msgstr "simplu"
 
@@ -17584,12 +17293,6 @@ msgstr ""
 #, fuzzy
 msgid "softcam"
 msgstr "Test restart"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 msgid "special (general)"
 msgstr ""
@@ -17653,10 +17356,6 @@ msgid "tennis/squash"
 msgstr ""
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "Terestru"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Terestru"
 
@@ -17671,22 +17370,6 @@ msgstr "aceasta inregistrare"
 
 msgid "this service is protected by a parental control pin"
 msgstr "acest serviciu este protejat de pin pentru control parental"
-
-#, fuzzy
-msgid "time"
-msgstr "Momentul incheierii"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "schimba ceas, capitol, audio, info sutitrari"

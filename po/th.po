@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -118,6 +118,19 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr "ไม่ใช้งาน"
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -132,18 +145,6 @@ msgid " (TV)"
 msgstr ""
 
 msgid " (auto detection)"
-msgstr ""
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
 msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
@@ -1555,10 +1556,6 @@ msgstr ""
 msgid "<Last timer location>"
 msgstr ""
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "กดปุ่ม OK เพื่อเปลี่ยน"
-
 msgid "<unknown>"
 msgstr "<ไม่ทราบ>"
 
@@ -1709,9 +1706,6 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "ADB variant"
-msgstr ""
-
-msgid "ADBVFD"
 msgstr ""
 
 msgid "AFP"
@@ -2031,9 +2025,6 @@ msgstr "บริการต่างๆ"
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -2243,12 +2234,6 @@ msgstr ""
 
 msgid "Are you sure to restore all deleted images"
 msgstr ""
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "ออกจากการตั้งค่า Nameserver"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2761,10 +2746,6 @@ msgstr "Block noise reduction"
 msgid "Blue"
 msgstr ""
 
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "ความสว่าง"
-
 msgid "Blue long"
 msgstr ""
 
@@ -3127,9 +3108,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -3148,9 +3126,6 @@ msgid "Change Language"
 msgstr "ภาษา"
 
 msgid "Change PIN Pressing [OK]"
-msgstr ""
-
-msgid "Change VFD display settings"
 msgstr ""
 
 msgid "Change bouquets in quickzap"
@@ -4161,14 +4136,7 @@ msgstr "ตั้งเวลา"
 msgid "Cron manager"
 msgstr "ตัวจัดการส่วนประกอบ"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "ความสว่าง"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -4576,10 +4544,6 @@ msgstr "Deep Standby"
 
 #, fuzzy
 msgid "Deep standby"
-msgstr "Deep Standby"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Deep Standby"
 
 msgid "Default"
@@ -4991,10 +4955,6 @@ msgstr "ตั้งค่าการแสดงผล"
 #, fuzzy
 msgid "Display and userinterface"
 msgstr "การแสดงผลและส่วนติดต่อผู้ใช้"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "ตั้งค่าการแสดงผล"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5520,9 +5480,6 @@ msgid "Enable OpenSSH:"
 msgstr ""
 
 msgid "Enable OpenTV EPG"
-msgstr ""
-
-msgid "Enable VFD display"
 msgstr ""
 
 msgid "Enable ViaSat EPG"
@@ -6409,6 +6366,10 @@ msgid "Flash type"
 msgstr "แฟรช"
 
 #, fuzzy
+msgid "Flashing"
+msgstr "แฟรช"
+
+#, fuzzy
 msgid "Flashing Image"
 msgstr "แฟรช"
 
@@ -6523,23 +6484,10 @@ msgstr "วันศุกร์"
 msgid "From:"
 msgstr ""
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "ตั้งค่า Tuner"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -7249,6 +7197,10 @@ msgid ""
 "%s"
 msgstr ""
 
+#, fuzzy
+msgid "Images"
+msgstr "แฟรช"
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7452,8 +7404,8 @@ msgstr ""
 msgid "Input"
 msgstr "นำเข้า (Input)"
 
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "นำเข้า (Input)"
 
 msgid "Input Device Actions"
@@ -7467,6 +7419,10 @@ msgstr ""
 
 msgid "Input Stream ID"
 msgstr ""
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "ไปยังตำแหน่ง"
 
 msgid "Install"
 msgstr "ติดตั้ง"
@@ -7764,10 +7720,6 @@ msgstr "ตั้งค่า"
 msgid "LED Standby"
 msgstr "Standby"
 
-#, fuzzy
-msgid "LED brightness"
-msgstr "ความสว่าง"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -7787,30 +7739,6 @@ msgid "LED color during recording in standby"
 msgstr ""
 
 msgid "LED color during standby"
-msgstr ""
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "ตั้งค่าเครือข่าย"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "ตั้งค่าการแสดงผล"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "ตั้งค่า Tuner"
-
-msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
 msgid "LIRC remote"
@@ -8084,14 +8012,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "ความสว่าง"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "ความสว่าง"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8934,6 +8854,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
 
+#, fuzzy
+msgid "Next Image"
+msgstr "ลบไฟล์"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -9176,6 +9100,10 @@ msgstr "ติดตั้ง"
 msgid "Not associated"
 msgstr ""
 
+#, fuzzy
+msgid "Not configured"
+msgstr "ยืนยันแล้ว"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9199,6 +9127,10 @@ msgstr ""
 #, fuzzy
 msgid "Nothing"
 msgstr "ไม่ต้องทำอะไร"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "ไม่พบการเชื่อมต่อ"
 
 msgid ""
 "Nothing to scan!\n"
@@ -10153,6 +10085,10 @@ msgstr ""
 msgid "Positioner"
 msgstr "ตัวขับจาน"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "ลบดาวเทียมนี้ออก"
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -10163,9 +10099,6 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power LED state during deep-standby."
@@ -10377,6 +10310,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr ""
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "แฟรช"
+
 msgid "Preview"
 msgstr ""
 
@@ -10544,10 +10481,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "เรียงลำดับคำสั่ง"
-
-#, fuzzy
 msgid "RC name"
 msgstr "เปลี่ยนชื่อ"
 
@@ -10654,21 +10587,24 @@ msgstr ""
 msgid "Really update your settop box and reboot now?"
 msgstr ""
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr "เริ่มระบบใหม่ (Reboot)"
 
 msgid "Reboot receiver"
 msgstr ""
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "ความสว่าง"
-
 msgid "Recall to previous service"
 msgstr ""
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "ข้อมูล"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10729,16 +10665,6 @@ msgid "Recover inetd"
 msgstr "กำลังบันทึกรายการ"
 
 msgid "Red"
-msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "เข้าสู่โหมด Deep standby"
-
-msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -10815,6 +10741,10 @@ msgstr ""
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "ลบรายการนี้ออก"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11585,17 +11515,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "ตั้งค่าคอลเลคชั่น"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -11960,9 +11880,6 @@ msgstr "เลือกภาพยนต์"
 msgid "Select sort method:"
 msgstr ""
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #, fuzzy
 msgid "Select target folder"
 msgstr "เลือกโฟล์เดอร์ปลายทาง"
@@ -12307,9 +12224,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "เวลาสิ้นสุด"
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
@@ -12318,10 +12232,6 @@ msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "ตั้งให้อินเตอร์เฟซนี้เป็นค่าเริ่มต้น"
-
-#, fuzzy
-msgid "Set led"
-msgstr "เวลาสิ้นสุด"
 
 msgid "Set limits"
 msgstr ""
@@ -12505,14 +12415,6 @@ msgid "Show EPG for current channel..."
 msgstr "แสดงแถบรายการเมื่อมีการเปลี่ยนรายการ"
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "แสดงทางเลือกอื่น"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "แสดงข้อมูล"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "กำลังทำงาน"
 
@@ -12593,10 +12495,6 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
-#, fuzzy
-msgid "Show clock"
-msgstr "แสดงข้อมูล"
-
 msgid "Show columns"
 msgstr ""
 
@@ -12676,10 +12574,6 @@ msgid "Show icon for new/unseen items"
 msgstr ""
 
 #, fuzzy
-msgid "Show icons"
-msgstr "แสดงข้อมูล"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "ดาวเทียม"
 
@@ -12755,6 +12649,10 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+#, fuzzy
+msgid "Show next image"
+msgstr "ดาวเทียม"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -12766,28 +12664,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-msgid "Show on LED display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
-
-msgid "Show on VFD display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
-
-#, fuzzy
-msgid "Show on display"
-msgstr "แสดงเครื่องเล่นวิทยุ..."
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12822,8 +12698,16 @@ msgid "Show positioner position"
 msgstr ""
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "ไปบริการย่อยก่อนหน้า"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "แสดงปลั๊กอิน"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP Address"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -13312,12 +13196,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "ภาษาสเปน"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -13396,20 +13274,8 @@ msgstr "Standby"
 msgid "Standby & Restart"
 msgstr "ปิดเครื่อง"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Standby"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Standby"
-
 msgid "Standby after current event"
 msgstr ""
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "ความสว่าง"
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14636,10 +14502,6 @@ msgid "Time import should start"
 msgstr ""
 
 #, fuzzy
-msgid "Time mode"
-msgstr "Tone mode"
-
-#, fuzzy
 msgid "Time scale"
 msgstr "เลือกการตั้งเวลา"
 
@@ -14850,9 +14712,6 @@ msgstr ""
 msgid "Top and bottom"
 msgstr ""
 
-msgid "TopfieldVFD"
-msgstr ""
-
 msgid "Total"
 msgstr ""
 
@@ -15061,12 +14920,6 @@ msgstr "ประเภทการค้นหา"
 msgid "Type of scan"
 msgstr "ประเภทการค้นหา"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -15161,13 +15014,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-msgid "UnionTunerType"
-msgstr ""
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "ตั้งค่า Tuner"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -15249,10 +15095,6 @@ msgstr ""
 
 msgid "Upper case"
 msgstr ""
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "รายการต่อไปในหน่วยความจำ"
 
 msgid "Uptime"
 msgstr ""
@@ -15479,60 +15321,6 @@ msgid "VCR Scart"
 msgstr "VCR scart"
 
 #, fuzzy
-msgid "VFD brightness"
-msgstr "ความสว่าง"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "เครื่องเล่นดีวีดี"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "ตั้งค่า Tuner"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
-#, fuzzy
 msgid "VLAN connection"
 msgstr "ไม่พบการเชื่อมต่อ"
 
@@ -15703,15 +15491,15 @@ msgid "Virgin Islands (U.S.)"
 msgstr ""
 
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "แป้นพิมพ์จำลอง"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "แป้นพิมพ์จำลอง"
 
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "แป้นพิมพ์จำลอง"
-
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "แป้นพิมพ์จำลอง"
 
 #, fuzzy
@@ -16228,6 +16016,9 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
+msgstr ""
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
@@ -16772,10 +16563,6 @@ msgstr "เข้าสู่โหมด Deep standby"
 msgid "auto standby"
 msgstr "ไม่ Standby"
 
-#, fuzzy
-msgid "automatic"
-msgstr "อัตโนมัติ"
-
 msgid "back"
 msgstr "กลับ"
 
@@ -16801,12 +16588,6 @@ msgstr ""
 msgid "blacklist"
 msgstr "รายการต้องห้าม"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "น้ำเงิน"
 
@@ -16822,10 +16603,6 @@ msgstr ""
 #, fuzzy
 msgid "by date"
 msgstr "เรียงตามวันที่"
-
-#, fuzzy
-msgid "cable"
-msgstr "เคเบิ้ล"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16853,17 +16630,6 @@ msgstr ""
 #, fuzzy
 msgid "change sides"
 msgstr "เปลี่ยน Step"
-
-#, fuzzy
-msgid "channel name"
-msgstr "บริการนี้ %d ไม่มี!"
-
-#, fuzzy
-msgid "channel number"
-msgstr "บริการนี้ %d ไม่มี!"
-
-msgid "channel number and name"
-msgstr ""
 
 msgid "chapters"
 msgstr "บทที่"
@@ -16901,10 +16667,6 @@ msgstr "ยืนยันแล้ว"
 msgid "connected"
 msgstr "เชื่อมต่อแล้ว"
 
-#, fuzzy
-msgid "continuous"
-msgstr "ทำต่อ"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -16926,16 +16688,8 @@ msgstr ""
 msgid "daily"
 msgstr "รายวัน"
 
-#, fuzzy
-msgid "date"
-msgstr "ปรุบปรุง"
-
 msgid "day"
 msgstr "วัน"
-
-#, fuzzy
-msgid "day and date"
-msgstr "เรียงตามวันที่"
 
 msgid "delete cut"
 msgstr "ลบส่วนตัดต่อ"
@@ -17123,9 +16877,6 @@ msgstr "เหลืออยู่"
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -17194,21 +16945,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "แนวนอน (H)"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17298,9 +17034,6 @@ msgstr ""
 
 msgid "magazines/reports/documentary"
 msgstr ""
-
-msgid "manual"
-msgstr "ทำเอง"
 
 msgid "martial sports"
 msgstr ""
@@ -17436,10 +17169,6 @@ msgstr ""
 msgid "not_tested"
 msgstr ""
 
-#, fuzzy
-msgid "nothing"
-msgstr "ไม่ต้องทำอะไร"
-
 msgid "nothing connected"
 msgstr "ไม่พบการเชื่อมต่อ"
 
@@ -17464,12 +17193,6 @@ msgstr "เปิด"
 msgid "on READ ONLY medium."
 msgstr "บนสื่อบันทึกอ่านได้อย่างเดียว"
 
-msgid "on all mounts"
-msgstr ""
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "ครั้งเดียว"
 
@@ -17482,19 +17205,7 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "ตั้งค่า Nameserver"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
-msgstr ""
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 msgid "pass"
@@ -17672,10 +17383,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-#, fuzzy
-msgid "signal quality"
-msgstr "คุณภาพการเชื่อมต่อ:"
-
 msgid "simple"
 msgstr "แบบง่าย"
 
@@ -17737,12 +17444,6 @@ msgstr ""
 #, fuzzy
 msgid "softcam"
 msgstr "เริ่มทดสอบใหม่"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 msgid "special (general)"
 msgstr ""
@@ -17806,10 +17507,6 @@ msgid "tennis/squash"
 msgstr ""
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "ภาคพื้นดิน"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "ภาคพื้นดิน"
 
@@ -17824,22 +17521,6 @@ msgstr "กำลังถูกบันทึก"
 
 msgid "this service is protected by a parental control pin"
 msgstr "บริการนี้ถูกควบคุมอายุรับชม"
-
-#, fuzzy
-msgid "time"
-msgstr "เวลาสิ้นสุด"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "สลับช่วงเวลา ตอนที่ เสียง หรือซับไตเติ้ล"

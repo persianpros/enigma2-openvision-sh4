@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -131,6 +131,20 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+#
+#, fuzzy
+msgid " (Disabled)"
+msgstr "Onemogućeno"
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -145,18 +159,6 @@ msgid " (TV)"
 msgstr ""
 
 msgid " (auto detection)"
-msgstr ""
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
 msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
@@ -1710,11 +1712,6 @@ msgid "<Last timer location>"
 msgstr "<Zadnja lokacija tajmera> "
 
 #
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Pritisnite OK da prebacite izbor."
-
-#
 msgid "<unknown>"
 msgstr "<nepoznato>"
 
@@ -1883,9 +1880,6 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "ADB variant"
-msgstr ""
-
-msgid "ADBVFD"
 msgstr ""
 
 msgid "AFP"
@@ -2263,9 +2257,6 @@ msgstr "Kanali"
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -2488,13 +2479,6 @@ msgstr ""
 
 msgid "Are you sure to restore all deleted images"
 msgstr ""
-
-#
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Napustite konfiguraciju nejmservera"
 
 #
 msgid ""
@@ -3077,11 +3061,6 @@ msgstr "Blokiraj smanjenje šuma"
 msgid "Blue"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Osvetljenje"
-
 msgid "Blue long"
 msgstr ""
 
@@ -3477,9 +3456,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -3500,9 +3476,6 @@ msgid "Change Language"
 msgstr "Jezik"
 
 msgid "Change PIN Pressing [OK]"
-msgstr ""
-
-msgid "Change VFD display settings"
 msgstr ""
 
 #
@@ -4623,15 +4596,7 @@ msgstr "Tajmer"
 msgid "Cron manager"
 msgstr "Menadžer paketa"
 
-#
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Osvetljenje"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -5083,11 +5048,6 @@ msgstr "Isključi Drimbox"
 #
 #, fuzzy
 msgid "Deep standby"
-msgstr "Isključi Drimbox"
-
-#
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Isključi Drimbox"
 
 msgid "Default"
@@ -5558,11 +5518,6 @@ msgstr "Postavke displeja"
 #, fuzzy
 msgid "Display and userinterface"
 msgstr "Displej i korisnički interfejs"
-
-#
-#, fuzzy
-msgid "Display brightness"
-msgstr "Postavke displeja"
 
 #
 #, fuzzy
@@ -6171,9 +6126,6 @@ msgid "Enable OpenSSH:"
 msgstr ""
 
 msgid "Enable OpenTV EPG"
-msgstr ""
-
-msgid "Enable VFD display"
 msgstr ""
 
 msgid "Enable ViaSat EPG"
@@ -7167,6 +7119,11 @@ msgstr "Fleš"
 
 #
 #, fuzzy
+msgid "Flashing"
+msgstr "Fleš"
+
+#
+#, fuzzy
 msgid "Flashing Image"
 msgstr "Fleš"
 
@@ -7297,24 +7254,10 @@ msgstr "Petak"
 msgid "From:"
 msgstr ""
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Konfiguracija tjunera"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -8088,6 +8031,11 @@ msgid ""
 "%s"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Images"
+msgstr "Fleš"
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -8315,8 +8263,8 @@ msgid "Input"
 msgstr "Ulaz "
 
 #
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Ulaz "
 
 #, fuzzy
@@ -8333,6 +8281,11 @@ msgstr "Podešavanje ulaznog uređaja "
 
 msgid "Input Stream ID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Idi na poziciju"
 
 #
 msgid "Install"
@@ -8675,11 +8628,6 @@ msgstr "Podešavanje"
 msgid "LED Standby"
 msgstr "Spreman"
 
-#
-#, fuzzy
-msgid "LED brightness"
-msgstr "Osvetljenje"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -8701,33 +8649,6 @@ msgid "LED color during recording in standby"
 msgstr ""
 
 msgid "LED color during standby"
-msgstr ""
-
-#
-#, fuzzy
-msgid "LED configuration"
-msgstr "Mrežna konfiguracija"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#
-#, fuzzy
-msgid "LED display"
-msgstr "Postavke displeja"
-
-#
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Konfiguracija tjunera"
-
-msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
 msgid "LIRC remote"
@@ -9045,16 +8966,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Osvetljenje"
-
-#
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Osvetljenje"
 
 #
 #, fuzzy
@@ -10027,6 +9938,11 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Next Image"
+msgstr "Obriši datoteku"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -10306,6 +10222,11 @@ msgstr "Instalisati"
 msgid "Not associated"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Not configured"
+msgstr "nije konfigurisano"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -10331,6 +10252,11 @@ msgstr ""
 #, fuzzy
 msgid "Nothing"
 msgstr "ne čini ništa "
+
+#
+#, fuzzy
+msgid "Nothing connected"
+msgstr "ništa nije spojeno"
 
 #
 msgid ""
@@ -11421,6 +11347,11 @@ msgstr ""
 msgid "Positioner"
 msgstr "Pozicioner"
 
+#
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Uklonite izabrani satelit"
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -11432,9 +11363,6 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power LED state during deep-standby."
@@ -11670,6 +11598,11 @@ msgid "Prev"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Prev Image"
+msgstr "Fleš"
+
+#
 msgid "Preview"
 msgstr "Pregled"
 
@@ -11854,11 +11787,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "RC command set"
-msgstr "Redosled komandi"
-
-#
-#, fuzzy
 msgid "RC name"
 msgstr "Preimenovati"
 
@@ -11979,6 +11907,9 @@ msgstr ""
 msgid "Really update your settop box and reboot now?"
 msgstr ""
 
+msgid "Rear"
+msgstr ""
+
 #
 msgid "Reboot"
 msgstr "Podići"
@@ -11986,16 +11917,16 @@ msgstr "Podići"
 msgid "Reboot receiver"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Osvetljenje"
-
 msgid "Recall to previous service"
 msgstr ""
 
 msgid "Receiver"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Informacije"
 
 #
 #, fuzzy
@@ -12066,17 +11997,6 @@ msgid "Recover inetd"
 msgstr "Snimanje"
 
 msgid "Red"
-msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "pokreni isključivanje drimboxa"
-
-msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -12158,6 +12078,11 @@ msgstr "Zapamti PIN kanala"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remote Control"
+msgstr "Obriši unos"
 
 #
 #, fuzzy
@@ -13051,18 +12976,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Postavke kolekcije"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -13472,9 +13386,6 @@ msgstr "Odaberi film"
 msgid "Select sort method:"
 msgstr ""
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Select target folder"
@@ -13860,9 +13771,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "Podesi završno vreme"
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
@@ -13872,11 +13780,6 @@ msgstr ""
 #
 msgid "Set interface as default Interface"
 msgstr "Postavi interfejs kao osnovni interfejs"
-
-#
-#, fuzzy
-msgid "Set led"
-msgstr "Podesi završno vreme"
 
 msgid "Set limits"
 msgstr ""
@@ -14081,16 +13984,6 @@ msgstr "Prikaži info traku pri promeni događaja"
 
 #
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Prikaži alternative"
-
-#
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Prikaži info"
-
-#
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "U toku"
 
@@ -14178,11 +14071,6 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Show clock"
-msgstr "Prikaži info"
-
 msgid "Show columns"
 msgstr ""
 
@@ -14266,11 +14154,6 @@ msgstr ""
 
 msgid "Show icon for new/unseen items"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show icons"
-msgstr "Prikaži info"
 
 #
 #, fuzzy
@@ -14362,6 +14245,11 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show next image"
+msgstr "Sateliti"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -14373,32 +14261,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-msgid "Show on LED display"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
-
-msgid "Show on VFD display"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
-
-#
-#, fuzzy
-msgid "Show on display"
-msgstr "Prikaži radio plejer ..."
-
-#
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
 
 #
 #, fuzzy
@@ -14437,8 +14299,18 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Show previous image"
+msgstr "prebaci na prethodni podkanal "
+
+#
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Pretraživač dodataka"
+
+#
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP Adresa"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -14997,12 +14869,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Španski"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -15086,23 +14952,8 @@ msgstr "Spreman"
 msgid "Standby & Restart"
 msgstr "Spreman / restart"
 
-#
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Spreman"
-
-#
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Spreman"
-
 msgid "Standby after current event"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Osvetljenje"
 
 #
 #, fuzzy, python-format
@@ -16480,11 +16331,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Time mode"
-msgstr "Ton mod"
-
-#
-#, fuzzy
 msgid "Time scale"
 msgstr "Izbor tajmera "
 
@@ -16727,9 +16573,6 @@ msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
-msgstr ""
-
-msgid "TopfieldVFD"
 msgstr ""
 
 msgid "Total"
@@ -16976,12 +16819,6 @@ msgstr "Tip skeniranja"
 msgid "Type of scan"
 msgstr "Tip skeniranja"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -17084,16 +16921,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr "Deinstaliraj"
 
-#
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Tip tjunera"
-
-#
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Konfiguracija tjunera"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -17186,11 +17013,6 @@ msgstr "Ažuriranje kataloga softvera"
 
 msgid "Upper case"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "sledeći kanal u istoriji"
 
 msgid "Uptime"
 msgstr ""
@@ -17441,63 +17263,6 @@ msgstr ""
 msgid "VCR Scart"
 msgstr "VCR skart"
 
-#
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Osvetljenje"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD plejer"
-
-#
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Konfiguracija tjunera"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 #, fuzzy
 msgid "VLAN connection"
 msgstr "LAN veza"
@@ -17702,17 +17467,17 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "Virtuelna tastatura"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Virtuelna tastatura"
 
 #
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "Virtuelna tastatura"
-
-#
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "Virtuelna tastatura"
 
 #
@@ -18255,6 +18020,9 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
+msgstr ""
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
@@ -18857,11 +18625,6 @@ msgid "auto standby"
 msgstr "ne stanje pripravnosti"
 
 #
-#, fuzzy
-msgid "automatic"
-msgstr "Automatski"
-
-#
 msgid "back"
 msgstr "natrag"
 
@@ -18891,12 +18654,6 @@ msgstr ""
 msgid "blacklist"
 msgstr "crna lista"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 #
 msgid "blue"
 msgstr "Plavo"
@@ -18914,11 +18671,6 @@ msgstr ""
 #, fuzzy
 msgid "by date"
 msgstr "sortiraj po datumu"
-
-#
-#, fuzzy
-msgid "cable"
-msgstr "Kabel"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -18949,19 +18701,6 @@ msgstr ""
 #, fuzzy
 msgid "change sides"
 msgstr "Promeni veličinu koraka"
-
-#
-#, fuzzy
-msgid "channel name"
-msgstr "%d kanala pronađeno!"
-
-#
-#, fuzzy
-msgid "channel number"
-msgstr "%d kanala pronađeno!"
-
-msgid "channel number and name"
-msgstr ""
 
 #
 msgid "chapters"
@@ -19005,11 +18744,6 @@ msgstr "Potvrđeno"
 msgid "connected"
 msgstr "Povezano"
 
-#
-#, fuzzy
-msgid "continuous"
-msgstr "Nastaviti"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -19033,18 +18767,8 @@ msgid "daily"
 msgstr "dnevno"
 
 #
-#, fuzzy
-msgid "date"
-msgstr "Ažuriranje"
-
-#
 msgid "day"
 msgstr "Dan"
-
-#
-#, fuzzy
-msgid "day and date"
-msgstr "sortiraj po datumu"
 
 #
 msgid "delete cut"
@@ -19255,9 +18979,6 @@ msgstr "slobodno"
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -19332,21 +19053,6 @@ msgstr ""
 #
 msgid "horizontal"
 msgstr "horizontalno"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -19446,10 +19152,6 @@ msgstr ""
 
 msgid "magazines/reports/documentary"
 msgstr ""
-
-#
-msgid "manual"
-msgstr "ručno"
 
 msgid "martial sports"
 msgstr ""
@@ -19605,11 +19307,6 @@ msgid "not_tested"
 msgstr ""
 
 #
-#, fuzzy
-msgid "nothing"
-msgstr "ne čini ništa "
-
-#
 msgid "nothing connected"
 msgstr "ništa nije spojeno"
 
@@ -19639,12 +19336,6 @@ msgstr "uključi"
 msgid "on READ ONLY medium."
 msgstr "na mediju samo za čitanje"
 
-msgid "on all mounts"
-msgstr ""
-
-msgid "on hdd"
-msgstr ""
-
 #
 msgid "once"
 msgstr "jednom"
@@ -19659,19 +19350,7 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "Otvori konfiguraciju nejmservera "
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
-msgstr ""
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 #
@@ -19881,11 +19560,6 @@ msgid "shut down"
 msgstr "isključi "
 
 #
-#, fuzzy
-msgid "signal quality"
-msgstr "Kvalitet linka:"
-
-#
 msgid "simple"
 msgstr "jednostavno"
 
@@ -19949,12 +19623,6 @@ msgstr ""
 #, fuzzy
 msgid "softcam"
 msgstr "Ponovite test"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 msgid "special (general)"
 msgstr ""
@@ -20027,11 +19695,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "terrestrial"
-msgstr "Zemaljski"
-
-#
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Zemaljski"
 
@@ -20049,23 +19712,6 @@ msgstr "ovo snimanje"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "kanal je zaštićen s pin kodom roditeljske kontrole"
-
-#
-#, fuzzy
-msgid "time"
-msgstr "Završno vreme"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
-msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -126,6 +126,20 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+#
+#, fuzzy
+msgid " (Disabled)"
+msgstr "Óvirkt"
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -140,18 +154,6 @@ msgid " (TV)"
 msgstr ""
 
 msgid " (auto detection)"
-msgstr ""
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
 msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
@@ -1694,11 +1696,6 @@ msgstr "<Sjálfgefinn staður bíómynda>"
 msgid "<Last timer location>"
 msgstr "<Síðasti staður tímastillinga>"
 
-#
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Ýttu á OK til að velja á milli."
-
 msgid "<unknown>"
 msgstr "<óþekkt>"
 
@@ -1862,9 +1859,6 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "ADB variant"
-msgstr ""
-
-msgid "ADBVFD"
 msgstr ""
 
 msgid "AFP"
@@ -2222,9 +2216,6 @@ msgstr "Rásir"
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -2440,13 +2431,6 @@ msgstr ""
 
 msgid "Are you sure to restore all deleted images"
 msgstr ""
-
-#
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "fara úr nafnaþjóns stillingum"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2977,10 +2961,6 @@ msgstr "Suð deyfing"
 msgid "Blue"
 msgstr ""
 
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Birta"
-
 msgid "Blue long"
 msgstr ""
 
@@ -3353,9 +3333,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -3376,9 +3353,6 @@ msgid "Change Language"
 msgstr "Tungumál"
 
 msgid "Change PIN Pressing [OK]"
-msgstr ""
-
-msgid "Change VFD display settings"
 msgstr ""
 
 msgid "Change bouquets in quickzap"
@@ -4415,14 +4389,7 @@ msgstr "Tímastilling"
 msgid "Cron manager"
 msgstr "Hugbúnaðarpakka stjóri"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Birta"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -4846,11 +4813,6 @@ msgstr "Djúp biðstaða"
 #
 #, fuzzy
 msgid "Deep standby"
-msgstr "Djúp biðstaða"
-
-#
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Djúp biðstaða"
 
 #
@@ -5320,11 +5282,6 @@ msgstr "Uppsetning skjás"
 #, fuzzy
 msgid "Display and userinterface"
 msgstr "Skjár og notenda viðmót"
-
-#
-#, fuzzy
-msgid "Display brightness"
-msgstr "Uppsetning skjás"
 
 #
 #, fuzzy
@@ -5917,9 +5874,6 @@ msgid "Enable OpenSSH:"
 msgstr ""
 
 msgid "Enable OpenTV EPG"
-msgstr ""
-
-msgid "Enable VFD display"
 msgstr ""
 
 msgid "Enable ViaSat EPG"
@@ -6891,6 +6845,11 @@ msgstr "Forritun"
 
 #
 #, fuzzy
+msgid "Flashing"
+msgstr "Forritun"
+
+#
+#, fuzzy
 msgid "Flashing Image"
 msgstr "Forritun"
 
@@ -7019,23 +6978,10 @@ msgstr "Föstudagur"
 msgid "From:"
 msgstr ""
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Handvirk stilling"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -7801,6 +7747,11 @@ msgid ""
 "%s"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Images"
+msgstr "Forritun"
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -8024,8 +7975,8 @@ msgid "Input"
 msgstr "Inntak"
 
 #
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Inntak"
 
 #, fuzzy
@@ -8042,6 +7993,11 @@ msgstr "Inntaks tækja uppsetning"
 
 msgid "Input Stream ID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Fara á staðsetningu"
 
 #
 msgid "Install"
@@ -8376,10 +8332,6 @@ msgstr "Uppsetning"
 msgid "LED Standby"
 msgstr "Biðstaða"
 
-#, fuzzy
-msgid "LED brightness"
-msgstr "Birta"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -8400,32 +8352,6 @@ msgid "LED color during recording in standby"
 msgstr ""
 
 msgid "LED color during standby"
-msgstr ""
-
-#
-#, fuzzy
-msgid "LED configuration"
-msgstr "Stilling nettengingar"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#
-#, fuzzy
-msgid "LED display"
-msgstr "Uppsetning skjás"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Handvirk stilling"
-
-msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
 msgid "LIRC remote"
@@ -8737,14 +8663,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Birta"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Birta"
 
 #
 #, fuzzy
@@ -9707,6 +9625,11 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Next Image"
+msgstr "eyða skrá"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -9985,6 +9908,10 @@ msgstr "Setja inn"
 msgid "Not associated"
 msgstr "Ekki tengt"
 
+#, fuzzy
+msgid "Not configured"
+msgstr "ekki stillt"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -10010,6 +9937,11 @@ msgstr ""
 #, fuzzy
 msgid "Nothing"
 msgstr "ekki gera neitt"
+
+#
+#, fuzzy
+msgid "Nothing connected"
+msgstr "ekkert tengt"
 
 #
 msgid ""
@@ -11077,6 +11009,11 @@ msgstr ""
 msgid "Positioner"
 msgstr "Mótorstýring"
 
+#
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Eyða völdum gervihnetti"
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -11088,9 +11025,6 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power LED state during deep-standby."
@@ -11324,6 +11258,11 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Prev Image"
+msgstr "Forritun"
+
 msgid "Preview"
 msgstr "Forsýn"
 
@@ -11505,10 +11444,6 @@ msgstr ""
 msgid "RC code"
 msgstr ""
 
-#, fuzzy
-msgid "RC command set"
-msgstr "Röðun skipana"
-
 #
 #, fuzzy
 msgid "RC name"
@@ -11631,6 +11566,9 @@ msgstr ""
 msgid "Really update your settop box and reboot now?"
 msgstr ""
 
+msgid "Rear"
+msgstr ""
+
 #
 msgid "Reboot"
 msgstr "Endurræsi"
@@ -11638,15 +11576,16 @@ msgstr "Endurræsi"
 msgid "Reboot receiver"
 msgstr ""
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Birta"
-
 msgid "Recall to previous service"
 msgstr ""
 
 msgid "Receiver"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Upplýsingar"
 
 #
 #, fuzzy
@@ -11718,17 +11657,6 @@ msgid "Recover inetd"
 msgstr "Upptaka"
 
 msgid "Red"
-msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "fara í djúpsvefn"
-
-msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -11810,6 +11738,11 @@ msgstr "Muna eftir PIN númeri rásar"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remote Control"
+msgstr "Taka út"
 
 #
 #, fuzzy
@@ -12689,17 +12622,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Stillingar safns"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -13101,9 +13024,6 @@ msgstr "Veldu mynd"
 msgid "Select sort method:"
 msgstr ""
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #, fuzzy
 msgid "Select target folder"
 msgstr "Velja úttaks möppu"
@@ -13484,9 +13404,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "Stilla loka tíma"
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
@@ -13496,10 +13413,6 @@ msgstr ""
 #
 msgid "Set interface as default Interface"
 msgstr "Gera að sjálfgefnu korti"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Stilla loka tíma"
 
 msgid "Set limits"
 msgstr ""
@@ -13701,16 +13614,6 @@ msgstr "Sýna upplýsinga borða við breytingu á atriði"
 
 #
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Súna valkosti"
-
-#
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Sýna upplýsingar"
-
-#
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Í vinnslu"
 
@@ -13797,11 +13700,6 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Show clock"
-msgstr "Sýna upplýsingar"
-
 msgid "Show columns"
 msgstr ""
 
@@ -13883,11 +13781,6 @@ msgstr ""
 
 msgid "Show icon for new/unseen items"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show icons"
-msgstr "Sýna upplýsingar"
 
 #
 #, fuzzy
@@ -13975,6 +13868,11 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show next image"
+msgstr "Gervihnettir"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -13986,32 +13884,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-msgid "Show on LED display"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Skoða lista af tiltækum Skjá og viðmóts viðbótum."
-
-msgid "Show on VFD display"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Skoða lista af tiltækum Skjá og viðmóts viðbótum."
-
-#
-#, fuzzy
-msgid "Show on display"
-msgstr "Sýna útvarpsspilara..."
-
-#
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Skoða lista af tiltækum Skjá og viðmóts viðbótum."
 
 #
 #, fuzzy
@@ -14048,9 +13920,19 @@ msgstr "Sýna færslu mótors"
 msgid "Show positioner position"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show previous image"
+msgstr "Skipta á fyrri undirrás"
+
 #, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Íforrita leit"
+
+#
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP Netfang"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -14602,12 +14484,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spænska"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -14691,22 +14567,8 @@ msgstr "Biðstaða"
 msgid "Standby & Restart"
 msgstr "Biðstaða / Endurræsing"
 
-#
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Biðstaða"
-
-#
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Biðstaða"
-
 msgid "Standby after current event"
 msgstr ""
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Birta"
 
 #, fuzzy, python-format
 msgid "Standby fan %d PWM"
@@ -16065,11 +15927,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Time mode"
-msgstr "Tón stilling"
-
-#
-#, fuzzy
 msgid "Time scale"
 msgstr "Tímastillinga val"
 
@@ -16308,9 +16165,6 @@ msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
-msgstr ""
-
-msgid "TopfieldVFD"
 msgstr ""
 
 msgid "Total"
@@ -16555,12 +16409,6 @@ msgstr "Gerð leitunar"
 msgid "Type of scan"
 msgstr "Gerð leitunar"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -16659,15 +16507,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr "Taka út"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Gerð móttakara"
-
-#
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Stilling móttakara"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -16756,11 +16595,6 @@ msgstr "Uppfæri efnisyfirlit hugbúnaðar"
 
 msgid "Upper case"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "næsta rás í sögu"
 
 msgid "Uptime"
 msgstr ""
@@ -17010,61 +16844,6 @@ msgid "VCR Scart"
 msgstr "Vídeó scart"
 
 #, fuzzy
-msgid "VFD brightness"
-msgstr "Birta"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD spilari"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Handvirk stilling"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
-#, fuzzy
 msgid "VLAN connection"
 msgstr "LAN tenging"
 
@@ -17266,17 +17045,17 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "Sýndar lyklaborð"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Sýndar lyklaborð"
 
 #
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "Sýndar lyklaborð"
-
-#
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "Sýndar lyklaborð"
 
 #
@@ -17818,6 +17597,9 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
+msgstr ""
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
@@ -18407,10 +18189,6 @@ msgstr "fara í djúpsvefn"
 msgid "auto standby"
 msgstr "ekki biðstaða"
 
-#, fuzzy
-msgid "automatic"
-msgstr "Sjálfvirkt"
-
 #
 msgid "back"
 msgstr "til baka"
@@ -18441,12 +18219,6 @@ msgstr ""
 msgid "blacklist"
 msgstr "svarti listi"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 #
 msgid "blue"
 msgstr "blár"
@@ -18464,10 +18236,6 @@ msgstr ""
 #, fuzzy
 msgid "by date"
 msgstr "raða eftir dagsetningu"
-
-#, fuzzy
-msgid "cable"
-msgstr "Kapalkerfi"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -18495,19 +18263,6 @@ msgstr ""
 #, fuzzy
 msgid "change sides"
 msgstr "Breyta skrefa stærð"
-
-#
-#, fuzzy
-msgid "channel name"
-msgstr "%d rásir fundnar!"
-
-#
-#, fuzzy
-msgid "channel number"
-msgstr "%d rásir fundnar!"
-
-msgid "channel number and name"
-msgstr ""
 
 #
 msgid "chapters"
@@ -18551,11 +18306,6 @@ msgstr "staðfest"
 msgid "connected"
 msgstr "tengt"
 
-#
-#, fuzzy
-msgid "continuous"
-msgstr "Áfram"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -18579,18 +18329,8 @@ msgid "daily"
 msgstr "daglega"
 
 #
-#, fuzzy
-msgid "date"
-msgstr "Uppfæra"
-
-#
 msgid "day"
 msgstr "dagur"
-
-#
-#, fuzzy
-msgid "day and date"
-msgstr "raða eftir dagsetningu"
 
 #
 msgid "delete cut"
@@ -18800,9 +18540,6 @@ msgstr "laust"
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -18877,21 +18614,6 @@ msgstr ""
 #
 msgid "horizontal"
 msgstr "lárétt"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -18991,10 +18713,6 @@ msgstr ""
 
 msgid "magazines/reports/documentary"
 msgstr ""
-
-#
-msgid "manual"
-msgstr "handvirkt"
 
 msgid "martial sports"
 msgstr ""
@@ -19149,11 +18867,6 @@ msgid "not_tested"
 msgstr ""
 
 #
-#, fuzzy
-msgid "nothing"
-msgstr "ekki gera neitt"
-
-#
 msgid "nothing connected"
 msgstr "ekkert tengt"
 
@@ -19183,12 +18896,6 @@ msgstr "á"
 msgid "on READ ONLY medium."
 msgstr "á READ ONLY disk."
 
-msgid "on all mounts"
-msgstr ""
-
-msgid "on hdd"
-msgstr ""
-
 #
 msgid "once"
 msgstr "einu sinni"
@@ -19203,19 +18910,7 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "opna nafnaþjóns stillingar"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
-msgstr ""
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 #
@@ -19423,11 +19118,6 @@ msgid "shut down"
 msgstr "slökkva"
 
 #
-#, fuzzy
-msgid "signal quality"
-msgstr "Gæði tengingar:"
-
-#
 msgid "simple"
 msgstr "einfalt"
 
@@ -19492,12 +19182,6 @@ msgstr ""
 #, fuzzy
 msgid "softcam"
 msgstr "Prufa aftur"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 msgid "special (general)"
 msgstr ""
@@ -19568,11 +19252,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "terrestrial"
-msgstr "Stafrænt í lofti"
-
-#
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Stafrænt í lofti"
 
@@ -19590,23 +19269,6 @@ msgstr "þessi upptaka"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "þessi rás er læst með kóða"
-
-#
-#, fuzzy
-msgid "time"
-msgstr "Loka tími"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
-msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"

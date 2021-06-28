@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,18 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+msgid " (Disabled)"
+msgstr ""
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -115,18 +127,6 @@ msgid " (TV)"
 msgstr ""
 
 msgid " (auto detection)"
-msgstr ""
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
 msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
@@ -1443,9 +1443,6 @@ msgstr ""
 msgid "<Last timer location>"
 msgstr ""
 
-msgid "<Press OK to perform action>"
-msgstr ""
-
 msgid "<unknown>"
 msgstr ""
 
@@ -1579,9 +1576,6 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "ADB variant"
-msgstr ""
-
-msgid "ADBVFD"
 msgstr ""
 
 msgid "AFP setup"
@@ -1854,9 +1848,6 @@ msgstr ""
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -2015,11 +2006,6 @@ msgid "Are you sure to remove this entry?"
 msgstr ""
 
 msgid "Are you sure to restore all deleted images"
-msgstr ""
-
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
 msgstr ""
 
 msgid ""
@@ -2426,9 +2412,6 @@ msgstr ""
 msgid "Blue"
 msgstr ""
 
-msgid "Blue LED brightness"
-msgstr ""
-
 msgid "Blue long"
 msgstr ""
 
@@ -2757,9 +2740,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -2776,9 +2756,6 @@ msgid "Change Language"
 msgstr ""
 
 msgid "Change PIN Pressing [OK]"
-msgstr ""
-
-msgid "Change VFD display settings"
 msgstr ""
 
 msgid "Change device settings"
@@ -3352,13 +3329,7 @@ msgstr ""
 msgid "Cron manager"
 msgstr ""
 
-msgid "Cross brightness"
-msgstr ""
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -3695,9 +3666,6 @@ msgstr ""
 msgid "Deep standby"
 msgstr ""
 
-msgid "Deepstandby LED brightness"
-msgstr ""
-
 msgid "Default"
 msgstr ""
 
@@ -4021,9 +3989,6 @@ msgid "Display Skin"
 msgstr ""
 
 msgid "Display and userinterface"
-msgstr ""
-
-msgid "Display brightness"
 msgstr ""
 
 msgid "Display context menu"
@@ -4442,9 +4407,6 @@ msgid "Enable FCC"
 msgstr ""
 
 msgid "Enable OpenSSH:"
-msgstr ""
-
-msgid "Enable VFD display"
 msgstr ""
 
 msgid "Enable auto cable scan"
@@ -5170,6 +5132,9 @@ msgstr ""
 msgid "Flash type"
 msgstr ""
 
+msgid "Flashing"
+msgstr ""
+
 msgid "Flashing Image"
 msgstr ""
 
@@ -5275,19 +5240,7 @@ msgstr ""
 msgid "From:"
 msgstr ""
 
-msgid "Front panel display configuration"
-msgstr ""
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
+msgid "Front"
 msgstr ""
 
 msgid "Front processor version"
@@ -6030,7 +5983,8 @@ msgstr ""
 msgid "Input"
 msgstr ""
 
-msgid "Input "
+#, python-format
+msgid "Input %d"
 msgstr ""
 
 msgid "Input Device Actions"
@@ -6270,30 +6224,6 @@ msgstr ""
 msgid "LAN connection"
 msgstr ""
 
-msgid "LED brightness"
-msgstr ""
-
-msgid "LED configuration"
-msgstr ""
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display"
-msgstr ""
-
-msgid "LED display configuration"
-msgstr ""
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
 msgid "LIRC remote"
 msgstr ""
 
@@ -6518,12 +6448,6 @@ msgstr ""
 
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
-msgstr ""
-
-msgid "Logo brightness"
-msgstr ""
-
-msgid "Logo brightness *"
 msgstr ""
 
 msgid "Long filenames"
@@ -7203,6 +7127,9 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr ""
 
+msgid "Next Image"
+msgstr ""
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -7418,6 +7345,9 @@ msgstr ""
 msgid "Not associated"
 msgstr ""
 
+msgid "Not configured"
+msgstr ""
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -7435,6 +7365,9 @@ msgid "Note: when enabled, and you do want standby mode after wake up, set optio
 msgstr ""
 
 msgid "Nothing"
+msgstr ""
+
+msgid "Nothing connected"
 msgstr ""
 
 msgid ""
@@ -8143,6 +8076,9 @@ msgstr ""
 msgid "Positioner"
 msgstr ""
 
+msgid "Positioner (Selecting satellites)"
+msgstr ""
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -8150,9 +8086,6 @@ msgid "Positioner setup"
 msgstr ""
 
 msgid "Positioner setup log"
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
@@ -8283,6 +8216,9 @@ msgstr ""
 
 msgctxt "button label, 'previous screen'"
 msgid "Prev"
+msgstr ""
+
+msgid "Prev Image"
 msgstr ""
 
 msgid "Preview"
@@ -8444,9 +8380,6 @@ msgstr ""
 msgid "RC code"
 msgstr ""
 
-msgid "RC command set"
-msgstr ""
-
 msgid "RC name"
 msgstr ""
 
@@ -8539,16 +8472,19 @@ msgstr ""
 msgid "Really update your settop box and reboot now?"
 msgstr ""
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr ""
 
 msgid "Reboot receiver"
 msgstr ""
 
-msgid "Rec LED brightness"
+msgid "Recall to previous service"
 msgstr ""
 
-msgid "Recall to previous service"
+msgid "Receiver Image Actions"
 msgstr ""
 
 msgid "Receiver Information"
@@ -8598,15 +8534,6 @@ msgid "Recover inetd"
 msgstr ""
 
 msgid "Red"
-msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-msgid "Red LED on in deep standby"
-msgstr ""
-
-msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -8670,6 +8597,9 @@ msgid "Remember service PIN"
 msgstr ""
 
 msgid "Reminder, you have chosen to save timeshift file."
+msgstr ""
+
+msgid "Remote Control"
 msgstr ""
 
 msgid "Remote control information"
@@ -9328,18 +9258,6 @@ msgstr ""
 msgid "Schedule EPG and channel list import"
 msgstr ""
 
-msgid "Scroll delay"
-msgstr ""
-
-msgid "Scroll long strings"
-msgstr ""
-
-msgid "Scroll pause"
-msgstr ""
-
-msgid "Scroll text"
-msgstr ""
-
 msgid "Search"
 msgstr ""
 
@@ -9624,9 +9542,6 @@ msgid "Select slot"
 msgstr ""
 
 msgid "Select sort method:"
-msgstr ""
-
-msgid "Select spark7162 dvb-t/c tuner mode"
 msgstr ""
 
 msgid "Select target folder"
@@ -9915,16 +9830,10 @@ msgstr ""
 msgid "Set end time"
 msgstr ""
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
 msgid "Set interface as default Interface"
-msgstr ""
-
-msgid "Set led"
 msgstr ""
 
 msgid "Set limits"
@@ -10057,12 +9966,6 @@ msgstr ""
 msgid "Show EPG for current channel..."
 msgstr ""
 
-msgid "Show Ethernet activity"
-msgstr ""
-
-msgid "Show HDD icons"
-msgstr ""
-
 msgid "Show InfoBar"
 msgstr ""
 
@@ -10082,9 +9985,6 @@ msgid "Show benchmark information"
 msgstr ""
 
 msgid "Show bouquet selection menu"
-msgstr ""
-
-msgid "Show clock"
 msgstr ""
 
 msgid "Show default after description"
@@ -10118,9 +10018,6 @@ msgid "Show help"
 msgstr ""
 
 msgid "Show icon for new/unseen items"
-msgstr ""
-
-msgid "Show icons"
 msgstr ""
 
 msgid "Show image items"
@@ -10162,6 +10059,9 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+msgid "Show next image"
+msgstr ""
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -10174,24 +10074,6 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show on LED display"
-msgstr ""
-
-msgid "Show on LED display in standby"
-msgstr ""
-
-msgid "Show on VFD display"
-msgstr ""
-
-msgid "Show on VFD display in standby"
-msgstr ""
-
-msgid "Show on display"
-msgstr ""
-
-msgid "Show on display in standby"
-msgstr ""
-
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr ""
 
@@ -10199,6 +10081,12 @@ msgid "Show packages to be updated"
 msgstr ""
 
 msgid "Show picons in the movie list."
+msgstr ""
+
+msgid "Show previous image"
+msgstr ""
+
+msgid "Show receiver image(s)"
 msgstr ""
 
 msgid "Show record clock icons"
@@ -10560,12 +10448,6 @@ msgstr ""
 msgid "Spanish"
 msgstr ""
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -10635,16 +10517,7 @@ msgstr ""
 msgid "Standby"
 msgstr ""
 
-msgid "Standby LED brightness"
-msgstr ""
-
-msgid "Standby LED colour"
-msgstr ""
-
 msgid "Standby after current event"
-msgstr ""
-
-msgid "Standby brightness"
 msgstr ""
 
 #, python-format
@@ -11577,9 +11450,6 @@ msgstr ""
 msgid "Time import should start"
 msgstr ""
 
-msgid "Time mode"
-msgstr ""
-
 msgid "Time scale"
 msgstr ""
 
@@ -11734,9 +11604,6 @@ msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
-msgstr ""
-
-msgid "TopfieldVFD"
 msgstr ""
 
 msgid "Total"
@@ -11908,12 +11775,6 @@ msgstr ""
 msgid "Type of scan"
 msgstr ""
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -12002,12 +11863,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-msgid "UnionTunerType"
-msgstr ""
-
-msgid "UnionTunerType config"
-msgstr ""
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -12085,9 +11940,6 @@ msgid "Updating software catalog"
 msgstr ""
 
 msgid "Upper case"
-msgstr ""
-
-msgid "Uppercase letters only"
 msgstr ""
 
 msgid "Uptime"
@@ -12236,57 +12088,6 @@ msgstr ""
 msgid "Uzbekistan"
 msgstr ""
 
-msgid "VFD brightness"
-msgstr ""
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD display"
-msgstr ""
-
-msgid "VFD display configuration"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 msgid "VLAN connection"
 msgstr ""
 
@@ -12426,13 +12227,13 @@ msgstr ""
 msgid "Virgin Islands (U.S.)"
 msgstr ""
 
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr ""
+
+msgid "Virtual KeyBoard Actions"
 msgstr ""
 
 msgid "Virtual KeyBoard Text:"
-msgstr ""
-
-msgid "Virtual Keyboard"
 msgstr ""
 
 #, python-format
@@ -13125,9 +12926,6 @@ msgstr ""
 msgid "auto standby"
 msgstr ""
 
-msgid "automatic"
-msgstr ""
-
 msgid "back"
 msgstr ""
 
@@ -13153,12 +12951,6 @@ msgstr ""
 msgid "blacklist"
 msgstr ""
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr ""
 
@@ -13172,9 +12964,6 @@ msgid "broadcasting/press"
 msgstr ""
 
 msgid "by date"
-msgstr ""
-
-msgid "cable"
 msgstr ""
 
 msgid "cable (DVB-C)"
@@ -13199,15 +12988,6 @@ msgid "centered, wrapped"
 msgstr ""
 
 msgid "change sides"
-msgstr ""
-
-msgid "channel name"
-msgstr ""
-
-msgid "channel number"
-msgstr ""
-
-msgid "channel number and name"
 msgstr ""
 
 msgid "chapters"
@@ -13240,9 +13020,6 @@ msgstr ""
 msgid "connected"
 msgstr ""
 
-msgid "continuous"
-msgstr ""
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -13264,13 +13041,7 @@ msgstr ""
 msgid "daily"
 msgstr ""
 
-msgid "date"
-msgstr ""
-
 msgid "day"
-msgstr ""
-
-msgid "day and date"
 msgstr ""
 
 msgid "delete cut"
@@ -13453,9 +13224,6 @@ msgstr ""
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr ""
 
@@ -13520,21 +13288,6 @@ msgid "hh:mmam/pm"
 msgstr ""
 
 msgid "horizontal"
-msgstr ""
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
 msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
@@ -13622,9 +13375,6 @@ msgid "longest"
 msgstr ""
 
 msgid "magazines/reports/documentary"
-msgstr ""
-
-msgid "manual"
 msgstr ""
 
 msgid "martial sports"
@@ -13759,9 +13509,6 @@ msgstr ""
 msgid "not_tested"
 msgstr ""
 
-msgid "nothing"
-msgstr ""
-
 msgid "nothing connected"
 msgstr ""
 
@@ -13786,12 +13533,6 @@ msgstr ""
 msgid "on READ ONLY medium."
 msgstr ""
 
-msgid "on all mounts"
-msgstr ""
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr ""
 
@@ -13804,19 +13545,7 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr ""
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
-msgstr ""
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 msgid "pass"
@@ -13981,9 +13710,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-msgid "signal quality"
-msgstr ""
-
 msgid "simple"
 msgstr ""
 
@@ -14043,12 +13769,6 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "softcam"
-msgstr ""
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
 msgstr ""
 
 msgid "special (general)"
@@ -14111,9 +13831,6 @@ msgstr ""
 msgid "tennis/squash"
 msgstr ""
 
-msgid "terrestrial"
-msgstr ""
-
 msgid "terrestrial (DVB-T)"
 msgstr ""
 
@@ -14127,21 +13844,6 @@ msgid "this recording"
 msgstr ""
 
 msgid "this service is protected by a parental control pin"
-msgstr ""
-
-msgid "time"
-msgstr ""
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
 msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
@@ -15136,6 +14838,9 @@ msgstr ""
 msgid "Initial scroll delay"
 msgstr ""
 
+msgid "Input scroll position"
+msgstr ""
+
 msgid "Instant recording location"
 msgstr ""
 
@@ -15401,6 +15106,9 @@ msgid "Save EPG data"
 msgstr ""
 
 msgid "Save every (in hours)"
+msgstr ""
+
+msgid "Scroll delay"
 msgstr ""
 
 msgid "Scroll repeats"
@@ -16171,6 +15879,9 @@ msgstr ""
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
 msgstr ""
 
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
+
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
@@ -16509,6 +16220,9 @@ msgid "Filesystem Check"
 msgstr ""
 
 msgid "Front Panel Display"
+msgstr ""
+
+msgid "Images"
 msgstr ""
 
 msgid "Inadyn"

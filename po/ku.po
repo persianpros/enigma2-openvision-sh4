@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Kurdish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2013-04-22 04:29+0330\n"
 "Last-Translator: dimili21\n"
 "Language-Team: \n"
@@ -119,6 +119,19 @@ msgstr ""
 msgid " (Channel %s)"
 msgstr ""
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr "Disabled"
+
+msgid " (Higher than any auto)"
+msgstr ""
+
+msgid " (Higher than rotor any auto)"
+msgstr ""
+
+msgid " (Lower than any auto)"
+msgstr ""
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -135,18 +148,6 @@ msgstr " (TV)"
 #, fuzzy
 msgid " (auto detection)"
 msgstr "To audio selection"
-
-msgid " (disabled)"
-msgstr ""
-
-msgid " (higher than any auto)"
-msgstr ""
-
-msgid " (higher than rotor any auto)"
-msgstr ""
-
-msgid " (lower than any auto)"
-msgstr ""
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr ""
@@ -1614,10 +1615,6 @@ msgstr "<Default Nava Filma>"
 msgid "<Last timer location>"
 msgstr "<Last timer location>"
 
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Press OK to toggle the selection."
-
 msgid "<unknown>"
 msgstr "<unknown>"
 
@@ -1793,9 +1790,6 @@ msgstr ""
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgari"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -2100,10 +2094,6 @@ msgstr "Services"
 msgid "All ages"
 msgstr "Hemu Kes"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Hemu Kes"
-
 msgid "All frequency"
 msgstr ""
 
@@ -2314,12 +2304,6 @@ msgstr ""
 #, fuzzy
 msgid "Are you sure to restore all deleted images"
 msgstr "Permanently remove all deleted items"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Test the network configuration of your receiver.\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2827,10 +2811,6 @@ msgstr "Dengé zéde kémke"
 msgid "Blue"
 msgstr ""
 
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Ronahi"
-
 msgid "Blue long"
 msgstr ""
 
@@ -3195,9 +3175,6 @@ msgstr "center"
 msgid "Center DVB subtitles"
 msgstr "Center DVB subtitles"
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -3217,10 +3194,6 @@ msgstr "Ziman"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Change repeat and delay settings?"
 
 msgid "Change bouquets in quickzap"
 msgstr "Zu Buketa çédki"
@@ -4227,14 +4200,7 @@ msgstr "Vext"
 msgid "Cron manager"
 msgstr "Packet manager"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Ronahi"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -4634,10 +4600,6 @@ msgid "Deep Standby"
 msgstr "Deep standby"
 
 msgid "Deep standby"
-msgstr "Deep standby"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Deep standby"
 
 msgid "Default"
@@ -5046,10 +5008,6 @@ msgstr "Çékirina Roniya Ekran"
 
 msgid "Display and userinterface"
 msgstr "Display and userinterface"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "Çékirina Roniya Ekran"
 
 #, fuzzy
 msgid "Display context menu"
@@ -5582,9 +5540,6 @@ msgstr "Enable EIT EPG"
 #, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Enable EIT EPG"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Enable ViaSat EPG"
@@ -6470,6 +6425,10 @@ msgid "Flash type"
 msgstr "Flash"
 
 #, fuzzy
+msgid "Flashing"
+msgstr "Flash"
+
+#, fuzzy
 msgid "Flashing Image"
 msgstr "Flash"
 
@@ -6585,23 +6544,10 @@ msgstr "İn"
 msgid "From:"
 msgstr "From:"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Movie list configuration"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -7308,6 +7254,10 @@ msgid ""
 "%s"
 msgstr ""
 
+#, fuzzy
+msgid "Images"
+msgstr "Image: "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -7508,8 +7458,8 @@ msgstr "motoring"
 msgid "Input"
 msgstr "Input"
 
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Input"
 
 #, fuzzy
@@ -7526,6 +7476,10 @@ msgstr "Input device setup"
 
 msgid "Input Stream ID"
 msgstr ""
+
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Goto position"
 
 msgid "Install"
 msgstr "Install"
@@ -7813,10 +7767,6 @@ msgstr "Çékirin"
 msgid "LED Standby"
 msgstr "Standby"
 
-#, fuzzy
-msgid "LED brightness"
-msgstr "Ronahi"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -7837,30 +7787,6 @@ msgid "LED color during recording in standby"
 msgstr ""
 
 msgid "LED color during standby"
-msgstr ""
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "Çékirin"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "Çékirina Roniya Ekran"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Movie list configuration"
-
-msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
 msgid "LIRC remote"
@@ -8129,14 +8055,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Ronahi"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Ronahi"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -8981,6 +8899,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Next"
 
+#, fuzzy
+msgid "Next Image"
+msgstr "Delete file"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -9220,6 +9142,10 @@ msgstr "Install"
 msgid "Not associated"
 msgstr "Not associated"
 
+#, fuzzy
+msgid "Not configured"
+msgstr "not configured"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -9243,6 +9169,10 @@ msgstr ""
 #, fuzzy
 msgid "Nothing"
 msgstr "Do nothing"
+
+#, fuzzy
+msgid "Nothing connected"
+msgstr "nothing connected"
 
 msgid ""
 "Nothing to scan!\n"
@@ -10184,6 +10114,10 @@ msgstr "Position stored at index"
 msgid "Positioner"
 msgstr "Positioner"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Remove selected satellite"
+
 msgid "Positioner (selecting satellites)"
 msgstr ""
 
@@ -10194,9 +10128,6 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 msgid "Power LED state during deep-standby."
@@ -10407,6 +10338,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Prev"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Image: "
+
 msgid "Preview"
 msgstr "Preview"
 
@@ -10575,10 +10510,6 @@ msgid "RC code"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "Command order"
-
-#, fuzzy
 msgid "RC name"
 msgstr "Rename"
 
@@ -10685,6 +10616,9 @@ msgstr "Really update the frontprocessor and reboot now?"
 msgid "Really update your settop box and reboot now?"
 msgstr "Really update your settop box and reboot now?"
 
+msgid "Rear"
+msgstr ""
+
 msgid "Reboot"
 msgstr "Reboot"
 
@@ -10692,15 +10626,15 @@ msgstr "Reboot"
 msgid "Reboot receiver"
 msgstr "Root directory"
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Ronahi"
-
 msgid "Recall to previous service"
 msgstr ""
 
 msgid "Receiver"
 msgstr ""
+
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Hakké İmagéda"
 
 #, fuzzy
 msgid "Receiver Information"
@@ -10761,17 +10695,6 @@ msgstr "Recording"
 
 msgid "Red"
 msgstr ""
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "go to deep standby"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Put TV in standby"
 
 msgid "Red button..."
 msgstr "Red button..."
@@ -10847,6 +10770,10 @@ msgstr "Remember service PIN"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
+
+#, fuzzy
+msgid "Remote Control"
+msgstr "Remove entry"
 
 #, fuzzy
 msgid "Remote control information"
@@ -11610,17 +11537,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Eyara Kolleksiyon"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -11974,9 +11891,6 @@ msgstr "Select a movie"
 msgid "Select sort method:"
 msgstr ""
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 msgid "Select target folder"
 msgstr "Select target folder"
 
@@ -12314,10 +12228,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "Set end time"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Set fixed"
-
 msgid "Set fixed"
 msgstr "Set fixed"
 
@@ -12326,10 +12236,6 @@ msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "Set interface as default Interface"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Set fixed"
 
 msgid "Set limits"
 msgstr "Set limits"
@@ -12511,14 +12417,6 @@ msgid "Show EPG for current channel..."
 msgstr "Show EPG for current channel..."
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Show alternatives"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Show info"
-
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Small progress"
 
@@ -12598,10 +12496,6 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr "Show channel numbers in channel selection"
 
-#, fuzzy
-msgid "Show clock"
-msgstr "Show info"
-
 msgid "Show columns"
 msgstr ""
 
@@ -12679,10 +12573,6 @@ msgid "Show icon for new/unseen items"
 msgstr "Show icon for new/unseen items"
 
 #, fuzzy
-msgid "Show icons"
-msgstr "Show info"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "Satellites"
 
@@ -12755,6 +12645,10 @@ msgstr ""
 msgid "Show multi channel EPG"
 msgstr ""
 
+#, fuzzy
+msgid "Show next image"
+msgstr "Satellites"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -12766,28 +12660,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-msgid "Show on LED display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "View list of available display and userinterface extensions."
-
-msgid "Show on VFD display"
-msgstr ""
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "View list of available display and userinterface extensions."
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Show the radio player..."
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "View list of available display and userinterface extensions."
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -12823,8 +12695,16 @@ msgid "Show positioner position"
 msgstr ""
 
 #, fuzzy
+msgid "Show previous image"
+msgstr "Switch to previous channel"
+
+#, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Show crypto info in infobar"
+
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP address"
 
 msgid "Show record clock icons"
 msgstr ""
@@ -13307,12 +13187,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spanish"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 #, fuzzy
 msgid "Special"
 msgstr "special events"
@@ -13394,20 +13268,8 @@ msgstr "Standby"
 msgid "Standby & Restart"
 msgstr "Bigiri / Nu Vegeri"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Standby"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Standby"
-
 msgid "Standby after current event"
 msgstr ""
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Ronahi"
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -14630,10 +14492,6 @@ msgstr "Timer selection"
 msgid "Time import should start"
 msgstr ""
 
-#, fuzzy
-msgid "Time mode"
-msgstr "Tone mode"
-
 msgid "Time scale"
 msgstr "Time scale"
 
@@ -14838,9 +14696,6 @@ msgstr "Top and bottom"
 
 msgid "Top and bottom"
 msgstr "Top and bottom"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -15049,12 +14904,6 @@ msgstr "Type of scan"
 msgid "Type of scan"
 msgstr "Type of scan"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -15151,14 +15000,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr "Uninstall"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Tuner type"
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Çékirina Tuner "
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -15240,10 +15081,6 @@ msgstr "Updating software catalog"
 
 msgid "Upper case"
 msgstr ""
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Update channel list only"
 
 msgid "Uptime"
 msgstr ""
@@ -15463,60 +15300,6 @@ msgid "VCR Scart"
 msgstr "VCR scart"
 
 #, fuzzy
-msgid "VFD brightness"
-msgstr "Ronahi"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD player"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Movie list configuration"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
-#, fuzzy
 msgid "VLAN connection"
 msgstr "LAN connection"
 
@@ -15681,15 +15464,15 @@ msgid "Virgin Islands (U.S.)"
 msgstr ""
 
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "Virtual keyboard"
+
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Virtual keyboard"
 
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "Virtual keyboard"
-
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "Virtual keyboard"
 
 msgid "Virtual keyboard"
@@ -16229,6 +16012,9 @@ msgstr "When the content has an aspect ratio of 16:9, choose whether to scale/st
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr ""
@@ -16791,9 +16577,6 @@ msgstr "go to deep standby"
 msgid "auto standby"
 msgstr "No standby"
 
-msgid "automatic"
-msgstr "automatic"
-
 msgid "back"
 msgstr "back"
 
@@ -16819,12 +16602,6 @@ msgstr "black & white"
 msgid "blacklist"
 msgstr "blacklist"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "blue"
 
@@ -16839,10 +16616,6 @@ msgstr "broadcasting/press"
 
 msgid "by date"
 msgstr "by date"
-
-#, fuzzy
-msgid "cable"
-msgstr "Qablo"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -16870,17 +16643,6 @@ msgstr ""
 #, fuzzy
 msgid "change sides"
 msgstr "Change step size"
-
-#, fuzzy
-msgid "channel name"
-msgstr "%d services found!"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Use fastscan channel numbering"
-
-msgid "channel number and name"
-msgstr ""
 
 msgid "chapters"
 msgstr "chapters"
@@ -16921,10 +16683,6 @@ msgstr "confirmed"
 msgid "connected"
 msgstr "connected"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Dowmke"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -16947,16 +16705,8 @@ msgstr "news/current affairs (general)"
 msgid "daily"
 msgstr "daily"
 
-#, fuzzy
-msgid "date"
-msgstr "Update"
-
 msgid "day"
 msgstr "day"
-
-#, fuzzy
-msgid "day and date"
-msgstr "by date"
 
 msgid "delete cut"
 msgstr "delete cut"
@@ -17147,9 +16897,6 @@ msgstr "free"
 msgid "from"
 msgstr ""
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "further education"
 
@@ -17218,21 +16965,6 @@ msgstr ""
 
 msgid "horizontal"
 msgstr "horizontal"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -17323,9 +17055,6 @@ msgstr ""
 
 msgid "magazines/reports/documentary"
 msgstr "magazines/reports/documentary"
-
-msgid "manual"
-msgstr "manual"
 
 msgid "martial sports"
 msgstr "martial sports"
@@ -17465,10 +17194,6 @@ msgstr "invalid type"
 msgid "not_tested"
 msgstr ""
 
-#, fuzzy
-msgid "nothing"
-msgstr "Do nothing"
-
 msgid "nothing connected"
 msgstr "nothing connected"
 
@@ -17493,13 +17218,6 @@ msgstr "on"
 msgid "on READ ONLY medium."
 msgstr "on READ ONLY medium."
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "show all tags"
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "once"
 
@@ -17512,20 +17230,8 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "open nameserver configuration"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "original language"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 msgid "pass"
 msgstr "pass"
@@ -17703,10 +17409,6 @@ msgstr "shuffle"
 msgid "shut down"
 msgstr "shut down"
 
-#, fuzzy
-msgid "signal quality"
-msgstr "Signal quality"
-
 msgid "simple"
 msgstr "simple"
 
@@ -17769,12 +17471,6 @@ msgstr "social/spiritual science"
 #, fuzzy
 msgid "softcam"
 msgstr "Restart test"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -17840,10 +17536,6 @@ msgid "tennis/squash"
 msgstr "tennis/squash"
 
 #, fuzzy
-msgid "terrestrial"
-msgstr "Terrestrial"
-
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Terrestrial"
 
@@ -17858,22 +17550,6 @@ msgstr "this recording"
 
 msgid "this service is protected by a parental control pin"
 msgstr "this service is protected by a parental control pin"
-
-#, fuzzy
-msgid "time"
-msgstr "Vext derbas bu"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "toggle time, chapter, audio, subtitle info"

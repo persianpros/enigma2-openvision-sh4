@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -129,6 +129,23 @@ msgstr " (0 - kaikissa verkoissa)"
 msgid " (Channel %s)"
 msgstr " (Kanava %s)"
 
+#
+#, fuzzy
+msgid " (Disabled)"
+msgstr " (ei käytössä)"
+
+#, fuzzy
+msgid " (Higher than any auto)"
+msgstr " (korkeampi kuin mikä tahansa autom.)"
+
+#, fuzzy
+msgid " (Higher than rotor any auto)"
+msgstr " (korkeampi kuin kääntömoottori mikä tahansa autom.)"
+
+#, fuzzy
+msgid " (Lower than any auto)"
+msgstr " (alhaisempi kuin mikä tahansa autom.)"
+
 #, python-format
 msgid " (Partition %d)"
 msgstr " (Osio %d)"
@@ -145,19 +162,6 @@ msgstr " (TV)"
 #, fuzzy
 msgid " (auto detection)"
 msgstr "Avaa äänivalinta"
-
-#
-msgid " (disabled)"
-msgstr " (ei käytössä)"
-
-msgid " (higher than any auto)"
-msgstr " (korkeampi kuin mikä tahansa autom.)"
-
-msgid " (higher than rotor any auto)"
-msgstr " (korkeampi kuin kääntömoottori mikä tahansa autom.)"
-
-msgid " (lower than any auto)"
-msgstr " (alhaisempi kuin mikä tahansa autom.)"
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr ""
@@ -1672,11 +1676,6 @@ msgid "<Last timer location>"
 msgstr "<Viimeisin ajastushakemisto>"
 
 #
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Muuta valintaa OK-näppäimellä."
-
-#
 msgid "<unknown>"
 msgstr "<tuntematon>"
 
@@ -1866,9 +1865,6 @@ msgstr "HAETAAN TSID/ONID"
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgaria"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -2231,10 +2227,6 @@ msgstr "Palvelut"
 msgid "All ages"
 msgstr "Kaikenikäisille"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Kaikenikäisille"
-
 #
 msgid "All frequency"
 msgstr "Kaikki taajuudet"
@@ -2453,12 +2445,6 @@ msgstr "Haluatko poistaa tämän kohteen?"
 #, fuzzy
 msgid "Are you sure to restore all deleted images"
 msgstr "Poista poistetut pysyvästi"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Testaa vastaanottimesi verkkomääritykset.\n"
 
 #
 msgid ""
@@ -3011,11 +2997,6 @@ msgstr "Pakkausneliöiden pehmennys"
 msgid "Blue"
 msgstr "Sininen"
 
-#
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Valoisuus"
-
 #, fuzzy
 msgid "Blue long"
 msgstr "Sininen"
@@ -3408,10 +3389,6 @@ msgstr "Keskellä"
 msgid "Center DVB subtitles"
 msgstr "Keskitä DVB-tekstitys"
 
-#, fuzzy
-msgid "Center text"
-msgstr "Keskitetty"
-
 msgid "Center time-labels and remove date"
 msgstr "Keskitä aikaleimat ja poista päiväys"
 
@@ -3431,10 +3408,6 @@ msgstr "Kielivalinta"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Muuta toiston ja viiveen asetuksia?"
 
 #
 msgid "Change bouquets in quickzap"
@@ -4509,16 +4482,8 @@ msgstr "Ajastukset"
 msgid "Cron manager"
 msgstr "Ei tiedostovalikkoa"
 
-#
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Valoisuus"
-
 msgid "Cuba"
 msgstr "Kuuba"
-
-msgid "CuberevoVFD"
-msgstr ""
 
 msgid "Curacao"
 msgstr "Curacao"
@@ -4952,10 +4917,6 @@ msgstr "Virransäästötila"
 
 msgid "Deep standby"
 msgstr "Virransäästötila"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
-msgstr "Virransäästötilan LED"
 
 #
 msgid "Default"
@@ -5424,10 +5385,6 @@ msgstr "Etupaneelin näyttö"
 #
 msgid "Display and userinterface"
 msgstr "Näyttö ja käyttöliittymä"
-
-#, fuzzy
-msgid "Display brightness"
-msgstr "Etupaneelin näyttö"
 
 #
 #, fuzzy
@@ -6026,9 +5983,6 @@ msgstr "Ota käyttöön EIT EPG"
 #, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Ota käyttöön EIT EPG"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Ota käyttöön ViaSat EPG"
@@ -7005,6 +6959,10 @@ msgstr "Hakemiston %s luominen epäonnistui."
 msgid "Flash type"
 msgstr "Asenna ohjelmistokuva"
 
+#, fuzzy
+msgid "Flashing"
+msgstr "Asennetaan ohjelmistokuvaa"
+
 msgid "Flashing Image"
 msgstr "Asennetaan ohjelmistokuvaa"
 
@@ -7133,23 +7091,10 @@ msgstr "Perjantai"
 msgid "From:"
 msgstr "Mistä:"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Tallenneluettelon asetukset"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -7911,6 +7856,10 @@ msgid ""
 "%s"
 msgstr ""
 
+#, fuzzy
+msgid "Images"
+msgstr "Ohjelmisto: "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -8137,7 +8086,8 @@ msgstr "Valitse"
 
 #
 #  Monivalintaikkunoiden otsikkopalkin teksti
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Valinta "
 
 #, fuzzy
@@ -8154,6 +8104,11 @@ msgstr "Syöttölaitteen asetukset"
 
 msgid "Input Stream ID"
 msgstr "Anna syötteen tunniste (ID)"
+
+#
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Mene sijaintiin"
 
 #
 msgid "Install"
@@ -8477,11 +8432,6 @@ msgstr "Asetukset"
 msgid "LED Standby"
 msgstr "Valmiustila"
 
-#
-#, fuzzy
-msgid "LED brightness"
-msgstr "Valoisuus"
-
 msgid "LED brightness during deep standby."
 msgstr ""
 
@@ -8504,30 +8454,6 @@ msgstr ""
 #, fuzzy
 msgid "LED color during standby"
 msgstr "Kytke virta-LED päälle valmiustilassa."
-
-#, fuzzy
-msgid "LED configuration"
-msgstr "Asetukset"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#, fuzzy
-msgid "LED display"
-msgstr "Etupaneelin näyttö"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Tallenneluettelon asetukset"
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8835,16 +8761,6 @@ msgstr ""
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Valoisuus"
-
-#
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Valoisuus"
 
 #
 #, fuzzy
@@ -9805,6 +9721,11 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Seuraava"
 
+#
+#, fuzzy
+msgid "Next Image"
+msgstr "Poista ohjelmistokuva"
+
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
@@ -10077,6 +9998,11 @@ msgstr "Asenna"
 msgid "Not associated"
 msgstr "Ei assosioitu"
 
+#
+#, fuzzy
+msgid "Not configured"
+msgstr "Ei määritetty"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -10102,6 +10028,11 @@ msgstr "Määritä herätetäänkö vastaanotin automaattisesti määriteltynä 
 #, fuzzy
 msgid "Nothing"
 msgstr "Älä tee mitään"
+
+#
+#, fuzzy
+msgid "Nothing connected"
+msgstr "Ei kytketty"
 
 #
 msgid ""
@@ -11153,6 +11084,11 @@ msgid "Positioner"
 msgstr "Kääntömoottori"
 
 #
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Kääntömoottori (satelliittien valinta)"
+
+#
 msgid "Positioner (selecting satellites)"
 msgstr "Kääntömoottori (satelliittien valinta)"
 
@@ -11165,9 +11101,6 @@ msgid "Positioner setup log"
 msgstr "Kääntömoottorin asetusloki"
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 #, fuzzy
@@ -11404,6 +11337,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Edellinen"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Ohjelmisto: "
+
 msgid "Preview"
 msgstr "Esikatselu"
 
@@ -11597,11 +11534,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "RC command set"
-msgstr "Käskyjen järjestys"
-
-#
-#, fuzzy
 msgid "RC name"
 msgstr "Uudelleennimeä"
 
@@ -11724,6 +11656,9 @@ msgstr "Päivitetäänkö etuprosessori nyt ja käynnistetään uudelleen?"
 msgid "Really update your settop box and reboot now?"
 msgstr "Päivitetäänkö vastaanotin nyt ja käynnistetään uudelleen?"
 
+msgid "Rear"
+msgstr ""
+
 #
 msgid "Reboot"
 msgstr "Käynnistä laite uudelleen"
@@ -11732,16 +11667,16 @@ msgstr "Käynnistä laite uudelleen"
 msgid "Reboot receiver"
 msgstr "Päähakemisto"
 
-#
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Valoisuus"
-
 msgid "Recall to previous service"
 msgstr "Palaa edelliselle kanavalle"
 
 msgid "Receiver"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Tietoja"
 
 #
 #, fuzzy
@@ -11812,18 +11747,6 @@ msgstr "Tallenne"
 
 msgid "Red"
 msgstr "Punainen"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "Siirry virransäästötilaan"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Laita TV valmiustilaan"
 
 msgid "Red button..."
 msgstr "Punainen näppäin..."
@@ -11906,6 +11829,11 @@ msgstr "Muista kanavan PIN"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr "Muistutus, olet valinnut ajansiirron tallennuksen."
+
+#
+#, fuzzy
+msgid "Remote Control"
+msgstr "Poista valittu"
 
 #, fuzzy
 msgid "Remote control information"
@@ -12771,18 +12699,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Kokoelman asetukset"
-
-msgid "Scroll pause"
-msgstr ""
-
 msgid "Scroll repeats"
-msgstr ""
-
-msgid "Scroll text"
 msgstr ""
 
 msgid "Scrolling delay (software renderer)"
@@ -13174,9 +13091,6 @@ msgstr "Valitse softcam"
 msgid "Select sort method:"
 msgstr "Valitse lajittelutapa"
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #
 msgid "Select target folder"
 msgstr "Valitse kohdehakemisto"
@@ -13549,10 +13463,6 @@ msgstr "Oletus"
 msgid "Set end time"
 msgstr "Aseta loppumisaika"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Oletus"
-
 msgid "Set fixed"
 msgstr "Aseta kiinteäksi"
 
@@ -13562,10 +13472,6 @@ msgstr "Aseta ulkoisen tekstityksen nopeus (fps)"
 #
 msgid "Set interface as default Interface"
 msgstr "Määritä sovitin oletussovittimeksi"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Aseta kiinteäksi"
 
 msgid "Set limits"
 msgstr "Aseta rajat"
@@ -13761,16 +13667,6 @@ msgstr "Näytä nykyisen kanavan ohjelmaopas..."
 
 #
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Näytä vaihtoehtoiset kanavat"
-
-#
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Näytä salauksen kuvakkeet"
-
-#
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Pieni etenemispalkki"
 
@@ -13859,10 +13755,6 @@ msgstr "Numeroi valikot ja/tai lisäosat"
 msgid "Show channel numbers in channel selection"
 msgstr "Näytä kanavanumerot kanavalistassa"
 
-#, fuzzy
-msgid "Show clock"
-msgstr "Näytä sarakkeet"
-
 msgid "Show columns"
 msgstr "Näytä sarakkeet"
 
@@ -13950,10 +13842,6 @@ msgstr "Apua"
 msgid "Show icon for new/unseen items"
 msgstr "Näytä kuvake uusille/katselemattomille"
 
-#, fuzzy
-msgid "Show icons"
-msgstr "Näytä sarakkeet"
-
 #
 #, fuzzy
 msgid "Show image items"
@@ -14037,6 +13925,11 @@ msgstr "Suojaa lisäosavalikko"
 msgid "Show multi channel EPG"
 msgstr "Näytä useamman kanavan ohjelmaopas"
 
+#
+#, fuzzy
+msgid "Show next image"
+msgstr "Näytä tallennukset"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr "Näytä ilmoitus kun kanavien ja/tai ohjelmaoppaan tuonti etävastaanottimelta ei onnistunut"
 
@@ -14048,30 +13941,6 @@ msgstr "Näytä ilmoitus kun tuonti epäonnistui"
 
 msgid "Show notification when import channels was successful"
 msgstr "Näytä ilmoitus kun tuonti onnistui"
-
-#, fuzzy
-msgid "Show on LED display"
-msgstr "Näytä kanavalogot"
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Näytä saatavilla olevat näyttö- ja käyttöliittymälaajennukset."
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "Näytä kanavalogot"
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Näytä saatavilla olevat näyttö- ja käyttöliittymälaajennukset."
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Näytä kanavalogot"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Näytä saatavilla olevat näyttö- ja käyttöliittymälaajennukset."
 
 #
 #, fuzzy
@@ -14111,9 +13980,19 @@ msgstr "Näytä kuvake kääntömoottorin liikkuessa"
 msgid "Show positioner position"
 msgstr "Näytä kääntömoottorin asentotieto"
 
+#
+#, fuzzy
+msgid "Show previous image"
+msgstr "Vaihda edelliselle kanavalle"
+
 #, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Suojaa lisäosavalikko"
+
+#
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "Syötä IP-osoite"
 
 msgid "Show record clock icons"
 msgstr "Näytä tallennuksien ikonit"
@@ -14658,12 +14537,6 @@ msgstr "Espania"
 msgid "Spanish"
 msgstr "Espanja"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 msgid "Special"
 msgstr ""
 
@@ -14746,23 +14619,8 @@ msgid "Standby & Restart"
 msgstr "Sammutusvalikko"
 
 #
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Valmiustila LED"
-
-#
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Valmiustila LED"
-
-#
 msgid "Standby after current event"
 msgstr "Aseta valmiustilaan menossa olevan ohjelman jälkeen"
-
-#
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Valmiustilaan kun kulunut "
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -16139,11 +15997,6 @@ msgid "Time import should start"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Time mode"
-msgstr "22KHz-ääni"
-
-#
 msgid "Time scale"
 msgstr "Aika-asteikko"
 
@@ -16376,9 +16229,6 @@ msgstr "Ylä ja ala"
 
 msgid "Top and bottom"
 msgstr "Ylä ja ala"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -16615,12 +16465,6 @@ msgstr "LNB/laitteen tyyppi"
 msgid "Type of scan"
 msgstr "Hakutapa"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -16723,15 +16567,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr "Poista asennus"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Virittimen tyyppi"
-
-#
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Virittimien asetukset"
-
 msgid "United Arab Emirates"
 msgstr "United Arab Emirates"
 
@@ -16818,10 +16653,6 @@ msgstr "Päivitetään ohjelmistoluetteloa"
 
 msgid "Upper case"
 msgstr "Isot kirjaimet"
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Päivitä vain kanavalista"
 
 #
 #, fuzzy
@@ -17070,62 +16901,6 @@ msgstr "Uzbekistan"
 msgid "VCR Scart"
 msgstr "SCART-läpivienti"
 
-#
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Valoisuus"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD-soitin"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Tallenneluettelon asetukset"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 msgid "VLAN connection"
 msgstr "VLAN-yhteys"
 
@@ -17310,16 +17085,17 @@ msgid "Virgin Islands (U.S.)"
 msgstr "Virgin Islands (U.S.)"
 
 #
-msgid "Virtual KeyBoard Functions"
+#, fuzzy
+msgid "Virtual KeyBoard"
+msgstr "Virtuaalinen näppäimistö"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Virtuaalisen näppäimistön toiminnot"
 
 msgid "Virtual KeyBoard Text:"
 msgstr "Virtuaalisen näppäimistön teksti:"
-
-#
-#, fuzzy
-msgid "Virtual Keyboard"
-msgstr "Virtuaalinen näppäimistö"
 
 #
 msgid "Virtual keyboard"
@@ -17883,6 +17659,9 @@ msgstr "Kun ohjelman kuvasuhde on 16:9, valitse skaalataanko/venytetäänkö kuv
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Kun ohjelman kuvasuhde on 4:3, valitse skaalataanko/venytetäänkö kuvaa."
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr ""
@@ -18496,9 +18275,6 @@ msgstr "Siirry virransäästötilaan"
 msgid "auto standby"
 msgstr "Ei valmiustilaa"
 
-msgid "automatic"
-msgstr "automaattinen"
-
 #
 #  Tämä teksti näytetään monessa valikossa EXIT-napin
 #  kaltaisena poistumistoimintona.
@@ -18531,12 +18307,6 @@ msgstr "Mustavalkoinen"
 msgid "blacklist"
 msgstr "Kielletyt"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 #
 msgid "blue"
 msgstr "Sininen"
@@ -18552,11 +18322,6 @@ msgstr "lähetys/lehdistö"
 
 msgid "by date"
 msgstr "Aikajärjestys"
-
-#
-#, fuzzy
-msgid "cable"
-msgstr "Kaapeli (DVB-C)"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -18586,18 +18351,6 @@ msgstr "Keskellä, sovitettu"
 #, fuzzy
 msgid "change sides"
 msgstr "Muuta ajastusta"
-
-#, fuzzy
-msgid "channel name"
-msgstr "Kanavatiedot"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Kanavanumero ja logo"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "Kanavanumero ja nimi"
 
 #
 msgid "chapters"
@@ -18644,10 +18397,6 @@ msgstr "Vahvistettu"
 msgid "connected"
 msgstr "Kytketty"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Jatka"
-
 msgid "controlled by HDMI"
 msgstr "HDMI:n määrittelemä"
 
@@ -18673,17 +18422,8 @@ msgid "daily"
 msgstr "Päivittäin"
 
 #
-#, fuzzy
-msgid "date"
-msgstr "Päivitä"
-
-#
 msgid "day"
 msgstr "päivä"
-
-#, fuzzy
-msgid "day and date"
-msgstr "Aikajärjestys"
 
 #
 msgid "delete cut"
@@ -18897,9 +18637,6 @@ msgstr "vapaana"
 msgid "from"
 msgstr "tulosta"
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "jatkokoulutus"
 
@@ -18974,21 +18711,6 @@ msgstr ""
 #
 msgid "horizontal"
 msgstr "Horisontaali"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -19091,10 +18813,6 @@ msgstr "Pitkä"
 
 msgid "magazines/reports/documentary"
 msgstr "makasiini/raportti/dokumentti"
-
-#
-msgid "manual"
-msgstr "Manuaalinen"
 
 msgid "martial sports"
 msgstr "kamppailulajit"
@@ -19255,11 +18973,6 @@ msgid "not_tested"
 msgstr ""
 
 #
-#, fuzzy
-msgid "nothing"
-msgstr "Älä tee mitään"
-
-#
 msgid "nothing connected"
 msgstr "Ei kytketty"
 
@@ -19289,13 +19002,6 @@ msgstr "Päällä"
 msgid "on READ ONLY medium."
 msgstr "Vain-luku levystä."
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "Näytä kaikki avainsanat"
-
-msgid "on hdd"
-msgstr ""
-
 #
 msgid "once"
 msgstr "Kerran"
@@ -19310,20 +19016,8 @@ msgstr "Vain valmiustilasta"
 msgid "open nameserver configuration"
 msgstr "avaan nimipalvelimen asetus"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "Alkuperäinen kieli"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 #
 msgid "pass"
@@ -19532,11 +19226,6 @@ msgid "shut down"
 msgstr "Sammuta"
 
 #
-#, fuzzy
-msgid "signal quality"
-msgstr "Yhteyden laatu:"
-
-#
 msgid "simple"
 msgstr "Suppea"
 
@@ -19602,12 +19291,6 @@ msgstr "sosiaalinen/hengellinen tiede"
 #, fuzzy
 msgid "softcam"
 msgstr "Käynnistä softcam uudelleen"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -19682,11 +19365,6 @@ msgstr "tennis/squash"
 
 #
 #, fuzzy
-msgid "terrestrial"
-msgstr "Antennivastaanotto"
-
-#
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Antennivastaanotto"
 
@@ -19705,24 +19383,6 @@ msgstr "Tämä tallennus"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "Tämä kanava on suojattu lapsilukolla"
-
-#
-#, fuzzy
-msgid "time"
-msgstr "Lopetusaika"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "Kyllä ja tallenna"
-
-msgid "time, day and date"
-msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"

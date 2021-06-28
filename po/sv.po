@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 10:14+0430\n"
+"POT-Creation-Date: 2021-06-28 09:30+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -134,6 +134,22 @@ msgstr "(0 - alla nätverk)"
 msgid " (Channel %s)"
 msgstr " (Kanal %s)"
 
+#, fuzzy
+msgid " (Disabled)"
+msgstr "(avaktiverad)"
+
+#, fuzzy
+msgid " (Higher than any auto)"
+msgstr "(högre än något auto)"
+
+#, fuzzy
+msgid " (Higher than rotor any auto)"
+msgstr "(högre än rotor något auto)"
+
+#, fuzzy
+msgid " (Lower than any auto)"
+msgstr "(lägre än något auto)"
+
 #, python-format
 msgid " (Partition %d)"
 msgstr ""
@@ -150,18 +166,6 @@ msgstr " (TV)"
 #, fuzzy
 msgid " (auto detection)"
 msgstr "Till ljudval"
-
-msgid " (disabled)"
-msgstr "(avaktiverad)"
-
-msgid " (higher than any auto)"
-msgstr "(högre än något auto)"
-
-msgid " (higher than rotor any auto)"
-msgstr "(högre än rotor något auto)"
-
-msgid " (lower than any auto)"
-msgstr "(lägre än något auto)"
 
 msgid " - Unicable/JESS LNBs not found"
 msgstr ""
@@ -1690,11 +1694,6 @@ msgid "<Last timer location>"
 msgstr "<Timerns senaste plats>"
 
 #
-#, fuzzy
-msgid "<Press OK to perform action>"
-msgstr "Tryck OK för att växla val."
-
-#
 msgid "<unknown>"
 msgstr "<okänd>"
 
@@ -1886,9 +1885,6 @@ msgstr ""
 #, fuzzy
 msgid "ADB variant"
 msgstr "Bulgariska"
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -2251,10 +2247,6 @@ msgstr "Kanaler"
 msgid "All ages"
 msgstr "Alla åldersgrupper"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Alla åldersgrupper"
-
 msgid "All frequency"
 msgstr "Alla frekvenser"
 
@@ -2472,12 +2464,6 @@ msgstr "Är du säker på att ta bort denna posten?"
 #, fuzzy
 msgid "Are you sure to restore all deleted images"
 msgstr "Är du säker på att ta bort alla kabel-tv kanaler?"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Testa nätverkskonfigurationen för din mottagare.\n"
 
 #
 msgid ""
@@ -3054,11 +3040,6 @@ msgstr "Blockera brusreducering"
 msgid "Blue"
 msgstr "Blå"
 
-#
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Ljusstyrka"
-
 #, fuzzy
 msgid "Blue long"
 msgstr "Blå"
@@ -3454,10 +3435,6 @@ msgstr "centrera"
 msgid "Center DVB subtitles"
 msgstr "Centrera DVB undertexter"
 
-#, fuzzy
-msgid "Center text"
-msgstr "centrerad"
-
 msgid "Center time-labels and remove date"
 msgstr "Centrera tidsmärken och ta bort datum"
 
@@ -3478,10 +3455,6 @@ msgstr "Språk"
 
 msgid "Change PIN Pressing [OK]"
 msgstr ""
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Ändra upprepnings och fördröjningsinställningar?"
 
 #
 msgid "Change bouquets in quickzap"
@@ -4588,15 +4561,7 @@ msgstr "Timer"
 msgid "Cron manager"
 msgstr "ingen resurshanterare"
 
-#
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Ljusstyrka"
-
 msgid "Cuba"
-msgstr ""
-
-msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -5035,11 +5000,6 @@ msgstr "Stäng av"
 
 #
 msgid "Deep standby"
-msgstr "Stäng av"
-
-#
-#, fuzzy
-msgid "Deepstandby LED brightness"
 msgstr "Stäng av"
 
 #
@@ -5504,11 +5464,6 @@ msgstr "Displayinställningar"
 #
 msgid "Display and userinterface"
 msgstr "Display och Användargränssnitt"
-
-#
-#, fuzzy
-msgid "Display brightness"
-msgstr "Displayinställningar"
 
 #
 #, fuzzy
@@ -6112,9 +6067,6 @@ msgstr "Aktivera EIT EPG"
 #, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Aktivera EIT EPG"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktivera ViaSat EPG"
@@ -7111,6 +7063,11 @@ msgstr "Flash"
 
 #
 #, fuzzy
+msgid "Flashing"
+msgstr "Flash"
+
+#
+#, fuzzy
 msgid "Flashing Image"
 msgstr "Flash"
 
@@ -7241,23 +7198,10 @@ msgstr "Fredag"
 msgid "From:"
 msgstr "Från :"
 
+msgid "Front"
+msgstr ""
+
 msgid "Front Panel Display"
-msgstr ""
-
-#, fuzzy
-msgid "Front panel display configuration"
-msgstr "Konfiguration av filmlista"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for Spark"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
-
-msgid "Front panel display control Spark"
 msgstr ""
 
 msgid "Front processor version"
@@ -8021,6 +7965,10 @@ msgid ""
 "%s"
 msgstr ""
 
+#, fuzzy
+msgid "Images"
+msgstr "Image : "
+
 msgid "Immediately restart selected devices."
 msgstr ""
 
@@ -8247,8 +8195,8 @@ msgid "Input"
 msgstr "Ingång"
 
 #
-#, fuzzy
-msgid "Input "
+#, fuzzy, python-format
+msgid "Input %d"
 msgstr "Ingång"
 
 #, fuzzy
@@ -8265,6 +8213,11 @@ msgstr "Inställningar för inmatningsenhet"
 
 msgid "Input Stream ID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Input scroll position"
+msgstr "Gå till position"
 
 #
 msgid "Install"
@@ -8595,11 +8548,6 @@ msgstr "Inställningar"
 msgid "LED Standby"
 msgstr "Viloläge"
 
-#
-#, fuzzy
-msgid "LED brightness"
-msgstr "Ljusstyrka"
-
 #, fuzzy
 msgid "LED brightness during deep standby."
 msgstr "Slå på powerlampan i viloläge."
@@ -8624,32 +8572,6 @@ msgstr ""
 #, fuzzy
 msgid "LED color during standby"
 msgstr "Slå på powerlampan i viloläge."
-
-#
-#, fuzzy
-msgid "LED configuration"
-msgstr "Konfiguration"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-#
-#, fuzzy
-msgid "LED display"
-msgstr "Displayinställningar"
-
-#, fuzzy
-msgid "LED display configuration"
-msgstr "Konfiguration av filmlista"
-
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8957,16 +8879,6 @@ msgstr "Logga resultat till /tmp"
 #, python-format
 msgid "Logfile '%s' (%d/%d)"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Ljusstyrka"
-
-#
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Ljusstyrka"
 
 #, fuzzy
 msgid "Logs Setup"
@@ -9919,6 +9831,10 @@ msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Nästa"
 
+#, fuzzy
+msgid "Next Image"
+msgstr "Radera timer"
+
 msgid "Nicaragua"
 msgstr ""
 
@@ -10188,6 +10104,11 @@ msgstr "Installera"
 msgid "Not associated"
 msgstr "Ej associerad"
 
+#
+#, fuzzy
+msgid "Not configured"
+msgstr "ej konfigurerad"
+
 msgid "Not currently mounted."
 msgstr ""
 
@@ -10213,6 +10134,11 @@ msgstr "Obs : Vid aktiverad, om du vill ha viloläge efter uppstart, ställ in a
 #, fuzzy
 msgid "Nothing"
 msgstr "Gör inget"
+
+#
+#, fuzzy
+msgid "Nothing connected"
+msgstr "inget anslutet"
 
 #
 msgid ""
@@ -11271,6 +11197,10 @@ msgstr "Position sparad vid index"
 msgid "Positioner"
 msgstr "Motor"
 
+#, fuzzy
+msgid "Positioner (Selecting satellites)"
+msgstr "Positioner (väljer satelliter)"
+
 msgid "Positioner (selecting satellites)"
 msgstr "Positioner (väljer satelliter)"
 
@@ -11282,9 +11212,6 @@ msgid "Positioner setup log"
 msgstr "Motorinstallationslogg"
 
 msgid "Power LED can be turned on or off here."
-msgstr ""
-
-msgid "Power LED colour"
 msgstr ""
 
 #, fuzzy
@@ -11520,6 +11447,10 @@ msgctxt "button label, 'previous screen'"
 msgid "Prev"
 msgstr "Föregående"
 
+#, fuzzy
+msgid "Prev Image"
+msgstr "Image : "
+
 #
 msgid "Preview"
 msgstr "Förhandsgranskning"
@@ -11704,11 +11635,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "RC command set"
-msgstr "Kommandoordning"
-
-#
-#, fuzzy
 msgid "RC name"
 msgstr "Byt namn"
 
@@ -11830,6 +11756,9 @@ msgstr "Vill du verkligen uppdatera frontprocessorn och starta om nu?"
 msgid "Really update your settop box and reboot now?"
 msgstr "Vill du verkligen uppdatera din mottagare och starta om nu?"
 
+msgid "Rear"
+msgstr ""
+
 #
 msgid "Reboot"
 msgstr "Omstart"
@@ -11838,16 +11767,16 @@ msgstr "Omstart"
 msgid "Reboot receiver"
 msgstr "Rotkatalog"
 
-#
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Ljusstyrka"
-
 msgid "Recall to previous service"
 msgstr "Återkalla till föregående kanal"
 
 msgid "Receiver"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Receiver Image Actions"
+msgstr "Information"
 
 #
 #, fuzzy
@@ -11917,18 +11846,6 @@ msgstr "Inspellningsinställningar"
 
 msgid "Red"
 msgstr "Röd"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "stäng av mottagaren"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Sätt TV:n i viloläge"
 
 msgid "Red button..."
 msgstr "Röd knapp..."
@@ -12011,6 +11928,11 @@ msgstr "Kom ihåg service PIN"
 
 msgid "Reminder, you have chosen to save timeshift file."
 msgstr "Påminnelse, du har valt att spara timeshift filen."
+
+#
+#, fuzzy
+msgid "Remote Control"
+msgstr "Ta bort post"
 
 #
 #, fuzzy
@@ -12887,20 +12809,7 @@ msgstr ""
 msgid "Scroll delay"
 msgstr "Skrollfördröjning"
 
-#
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Samlingsinställning"
-
-#, fuzzy
-msgid "Scroll pause"
-msgstr "Skrollupprepningar"
-
 msgid "Scroll repeats"
-msgstr "Skrollupprepningar"
-
-#, fuzzy
-msgid "Scroll text"
 msgstr "Skrollupprepningar"
 
 msgid "Scrolling delay (software renderer)"
@@ -13295,9 +13204,6 @@ msgstr "Välj plats"
 msgid "Select sort method:"
 msgstr "Välj sorteringsmetod :"
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 #
 msgid "Select target folder"
 msgstr "Välj målkatalog"
@@ -13669,10 +13575,6 @@ msgstr "Ange standard"
 msgid "Set end time"
 msgstr "Sätt sluttid"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Ange standard"
-
 msgid "Set fixed"
 msgstr "Fixera"
 
@@ -13682,10 +13584,6 @@ msgstr "Ställ in fps för externa undertexter"
 #
 msgid "Set interface as default Interface"
 msgstr "Sätt Interface som standard Interface"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Fixera"
 
 msgid "Set limits"
 msgstr "Sätt gränserna"
@@ -13883,15 +13781,6 @@ msgstr "Visa EPG för aktuell kanal ..."
 
 #
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Visa alternativ"
-
-#, fuzzy
-msgid "Show HDD icons"
-msgstr "Visa krypteringsikoner"
-
-#
-#, fuzzy
 msgid "Show HDD progress"
 msgstr "Liten tidslinje"
 
@@ -13977,10 +13866,6 @@ msgstr "Visa menynummer"
 
 msgid "Show channel numbers in channel selection"
 msgstr "Visa kanalnummer i kanallistan"
-
-#, fuzzy
-msgid "Show clock"
-msgstr "Visa Kolumner"
 
 msgid "Show columns"
 msgstr "Visa Kolumner"
@@ -14070,10 +13955,6 @@ msgid "Show icon for new/unseen items"
 msgstr "Visa ikoner för nya / osedda objekt"
 
 #, fuzzy
-msgid "Show icons"
-msgstr "Visa Kolumner"
-
-#, fuzzy
 msgid "Show image items"
 msgstr "Visa filmer"
 
@@ -14154,6 +14035,10 @@ msgstr "Skydda pluginhanterare"
 msgid "Show multi channel EPG"
 msgstr "Visa multikanal EPG"
 
+#, fuzzy
+msgid "Show next image"
+msgstr "Visa filmer"
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -14165,33 +14050,6 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
-
-#, fuzzy
-msgid "Show on LED display"
-msgstr "Visa picons i display"
-
-#
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Visa lista över tillgängliga Display och Användargränssnittutökningar."
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "Visa picons i display"
-
-#
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Visa lista över tillgängliga Display och Användargränssnittutökningar."
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Ta bort alla loggfiler"
-
-#
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Visa lista över tillgängliga Display och Användargränssnittutökningar."
 
 #
 #, fuzzy
@@ -14230,9 +14088,19 @@ msgstr "Visa ikon vid positionsrörelse"
 msgid "Show positioner position"
 msgstr "Visa rotorposition"
 
+#
+#, fuzzy
+msgid "Show previous image"
+msgstr "Växla till föregående kanal"
+
 #, fuzzy
 msgid "Show python in plugin browser"
 msgstr "Skydda pluginhanterare"
+
+#
+#, fuzzy
+msgid "Show receiver image(s)"
+msgstr "IP adress"
 
 msgid "Show record clock icons"
 msgstr "Visa klockikoner för inspelning"
@@ -14776,12 +14644,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spanska"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 #, fuzzy
 msgid "Special"
 msgstr "speciella evenemang"
@@ -14868,20 +14730,8 @@ msgstr "Viloläge"
 msgid "Standby & Restart"
 msgstr "Viloläge / Omstart"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Viloläges LED"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Viloläges LED"
-
 msgid "Standby after current event"
 msgstr "Viloläge efter aktuellt program"
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Viloläge om"
 
 #
 #, python-format
@@ -16279,11 +16129,6 @@ msgstr "Timerval"
 msgid "Time import should start"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Time mode"
-msgstr "Tonläge"
-
 msgid "Time scale"
 msgstr "Tidskala"
 
@@ -16521,9 +16366,6 @@ msgstr "Längst upp och längst ner"
 
 msgid "Top and bottom"
 msgstr "Längst upp och längst ner"
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -16767,12 +16609,6 @@ msgstr "Typ av sökning"
 msgid "Type of scan"
 msgstr "Typ av sökning"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UBINIZE"
 msgstr ""
 
@@ -16880,16 +16716,6 @@ msgstr "Fördröjning efter senaste diseqc kommando"
 msgid "Uninstall"
 msgstr "Avinstallera"
 
-#
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Tunertyp"
-
-#
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Tunerkonfiguration"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -16980,11 +16806,6 @@ msgstr "Uppdaterar mjukvarukatalogen"
 
 msgid "Upper case"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Uppdatera endast kanallistan"
 
 #, fuzzy
 msgid "Uptime"
@@ -17224,62 +17045,6 @@ msgstr ""
 msgid "VCR Scart"
 msgstr "VCR scart"
 
-#
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Ljusstyrka"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-msgid "VFD configuration for Opticum HD 9600 series"
-msgstr ""
-
-#
-#, fuzzy
-msgid "VFD display"
-msgstr "DVD Spelare"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Konfiguration av filmlista"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162/Edision argus VIP"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Opticum HD 9600 series"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162/Edision argus VIP"
-msgstr ""
-
 #, fuzzy
 msgid "VLAN connection"
 msgstr "LAN anslutning"
@@ -17476,17 +17241,17 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Virtual KeyBoard Functions"
+msgid "Virtual KeyBoard"
+msgstr "Virtuellt tangentbord"
+
+#
+#, fuzzy
+msgid "Virtual KeyBoard Actions"
 msgstr "Virtuellt tangentbord"
 
 #
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
-msgstr "Virtuellt tangentbord"
-
-#
-#, fuzzy
-msgid "Virtual Keyboard"
 msgstr "Virtuellt tangentbord"
 
 #
@@ -18059,6 +17824,9 @@ msgstr "När innehållet har ett bildförhållande på 16:9, välj om man ska sk
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "När innehållet har ett bildförhållande på 4:3, välj om man ska skala / sträcka bilden."
+
+msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
+msgstr ""
 
 msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
 msgstr ""
@@ -18689,10 +18457,6 @@ msgid "auto standby"
 msgstr "Inget viloläge"
 
 #
-msgid "automatic"
-msgstr "Automatisk"
-
-#
 msgid "back"
 msgstr "tillbaka"
 
@@ -18722,12 +18486,6 @@ msgstr "svart & vit"
 msgid "blacklist"
 msgstr "svartlista"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 #
 msgid "blue"
 msgstr "blå"
@@ -18744,11 +18502,6 @@ msgstr "tv / press"
 #
 msgid "by date"
 msgstr "efter datum"
-
-#
-#, fuzzy
-msgid "cable"
-msgstr "Kabel"
 
 msgid "cable (DVB-C)"
 msgstr ""
@@ -18777,18 +18530,6 @@ msgstr "centrerad, radbrytning"
 #, fuzzy
 msgid "change sides"
 msgstr "Ändra timer"
-
-#, fuzzy
-msgid "channel name"
-msgstr "Kanal info"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Kanalnummer och picon"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "Kanalnummer och kanalnamn"
 
 #
 msgid "chapters"
@@ -18835,10 +18576,6 @@ msgstr "bekräftad"
 msgid "connected"
 msgstr "ansluten"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Forsätt"
-
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -18864,18 +18601,8 @@ msgid "daily"
 msgstr "daglig"
 
 #
-#, fuzzy
-msgid "date"
-msgstr "Uppdatera"
-
-#
 msgid "day"
 msgstr "dag"
-
-#
-#, fuzzy
-msgid "day and date"
-msgstr "efter datum"
 
 #
 msgid "delete cut"
@@ -19088,9 +18815,6 @@ msgstr "fri"
 msgid "from"
 msgstr "från"
 
-msgid "fs9000VFD"
-msgstr ""
-
 msgid "further education"
 msgstr "vidareutbildning"
 
@@ -19165,21 +18889,6 @@ msgstr ""
 #
 msgid "horizontal"
 msgstr "horisontal"
-
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
 
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
@@ -19282,10 +18991,6 @@ msgstr "lång"
 
 msgid "magazines/reports/documentary"
 msgstr "tidningar / rapporter / dokumentär"
-
-#
-msgid "manual"
-msgstr "manuell"
 
 msgid "martial sports"
 msgstr "kampsport"
@@ -19444,11 +19149,6 @@ msgid "not_tested"
 msgstr "inte_testad"
 
 #
-#, fuzzy
-msgid "nothing"
-msgstr "Gör inget"
-
-#
 msgid "nothing connected"
 msgstr "inget anslutet"
 
@@ -19478,13 +19178,6 @@ msgstr "på"
 msgid "on READ ONLY medium."
 msgstr "på READ ONLY media."
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "visa alla taggar"
-
-msgid "on hdd"
-msgstr ""
-
 #
 msgid "once"
 msgstr "en gång"
@@ -19499,20 +19192,8 @@ msgstr "endast från viloläge"
 msgid "open nameserver configuration"
 msgstr "öppna namnserver konfiguration"
 
-msgid "opt9600VFD"
-msgstr ""
-
-msgid "orange"
-msgstr ""
-
 msgid "original language"
 msgstr "originalspråk"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 #
 #
@@ -19719,10 +19400,6 @@ msgstr "blanda"
 msgid "shut down"
 msgstr "stäng av"
 
-#, fuzzy
-msgid "signal quality"
-msgstr "Signalkvalitet"
-
 #
 msgid "simple"
 msgstr "enkelt"
@@ -19789,12 +19466,6 @@ msgstr "social / andlig vetenskap"
 #, fuzzy
 msgid "softcam"
 msgstr "Omstarts test"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -19869,11 +19540,6 @@ msgstr "tennis / squash"
 
 #
 #, fuzzy
-msgid "terrestrial"
-msgstr "Marksänd"
-
-#
-#, fuzzy
 msgid "terrestrial (DVB-T)"
 msgstr "Marksänd"
 
@@ -19891,24 +19557,6 @@ msgstr "denna inspelning"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "denna kanal är föräldraskyddad"
-
-#
-#, fuzzy
-msgid "time"
-msgstr "Sluttid"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "Ja och spara"
-
-msgid "time, day and date"
-msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"
