@@ -291,7 +291,7 @@ def getDriverInstalledDate():
 
 
 def getPythonVersionString():
-	process = Popen(("/usr/bin/python", "-V"), stdout=PIPE, stderr=PIPE)
+	process = Popen(("/usr/bin/python", "-V"), stdout=PIPE, stderr=PIPE, text=True)
 	stdout, stderr = process.communicate()
 	if process.returncode == 0:
 		return stderr.strip().split()[1]
@@ -340,7 +340,7 @@ def getBoxUptime():
 
 
 def getGlibcVersion():
-	process = Popen(("/lib/libc.so.6"), stdout=PIPE, stderr=PIPE)
+	process = Popen(("/lib/libc.so.6"), stdout=PIPE, stderr=PIPE, text=True)
 	stdout, stderr = process.communicate()
 	if process.returncode == 0:
 		for line in stdout.split("\n"):
@@ -354,7 +354,7 @@ def getGlibcVersion():
 
 
 def getGccVersion():
-	process = Popen(("/lib/libc.so.6"), stdout=PIPE, stderr=PIPE)
+	process = Popen(("/lib/libc.so.6"), stdout=PIPE, stderr=PIPE, text=True)
 	stdout, stderr = process.communicate()
 	if process.returncode == 0:
 		for line in stdout.split("\n"):
