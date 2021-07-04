@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2020-12-05 15:11+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1234,6 +1234,22 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "Nincs elérhető frissítés"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1633,6 +1649,14 @@ msgstr "<ismeretlen>"
 msgid "=NO STREAM\n"
 msgstr "=NINCS ADATFOLYAM\n"
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr "??"
 
@@ -1880,10 +1904,6 @@ msgstr "Aktuális konfiguráció aktiválása"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "Aktuális konfiguráció aktiválása"
 
 msgid "Activate Picture in Picture"
 msgstr "Kép-a-Képben bekapcsolása"
@@ -4229,6 +4249,10 @@ msgid "Current CEC address"
 msgstr "Aktuális CEC cím"
 
 #, fuzzy
+msgid "Current MAC address"
+msgstr "Aktuális CEC cím"
+
+#, fuzzy
 msgid "Current crash log"
 msgstr "Aktuális transzponder"
 
@@ -5168,6 +5192,10 @@ msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Fel szeretné írni ezt a gyűjteményt a DVD lemezre?"
 
 #, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "Biztos benne, hogy frissíteni szeretné ezt a csomagot:\n"
+
+#, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr "Szeretne eltávolítani minden crash logfile-t?"
 
@@ -5606,6 +5634,9 @@ msgstr "Engedélyezve"
 msgid "Enable teletext caching"
 msgstr "Teletext gyorsítótárazása"
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -5624,7 +5655,8 @@ msgstr "Engedélyezze ezt a beállítást, ha a földi antennája tápellátást
 msgid "Enable timer conflict detection"
 msgstr "Időzítő ütközés észlelése"
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+#, fuzzy
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr "Minden igaz/hamis, igen/nem, ki/be és engedélyezve/letiltva beállítás grafikus kapcsolóként jelenjen meg."
 
 msgid "Enable volume control with arrow buttons"
@@ -6007,10 +6039,6 @@ msgstr "Kilépés az EPG-ből"
 
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "Kilépés a névszerver beállításaiból"
-
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "Kilépés a névszerver beállításaiból"
 
 msgid "Exit editor"
@@ -8088,16 +8116,21 @@ msgid "Luxembourgish"
 msgstr "Luxemburgi"
 
 #, fuzzy
+msgid "MAC Address Setup"
+msgstr "Háttértár beállítások"
+
+#, fuzzy
 msgid "MAC address"
 msgstr "IP cím"
 
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Adapter beállításai"
-
-#, fuzzy
 msgid "MAC address setup"
 msgstr "Háttértár beállítások"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -8793,10 +8826,6 @@ msgid "Network Information Actions"
 msgstr "Hálózati beállítások"
 
 #, fuzzy
-msgid "Network MAC settings"
-msgstr "Hálózati beállítások aktiválása"
-
-#, fuzzy
 msgid "Network Setup"
 msgstr "Hálózati beállítások"
 
@@ -9115,6 +9144,10 @@ msgstr "Nincs megadva"
 
 msgid "Not Installed"
 msgstr "Nincs telepítve"
+
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "IP cím"
 
 msgid "Not associated"
 msgstr "Nem-csatlakozott"
@@ -10235,6 +10268,10 @@ msgstr "Nyomja le a MENÜ gombot a távírányítón további opciókért."
 msgid "Press OK on your remote control to continue."
 msgstr "Nyomja le az OK gombot a távirányítón a folytatáshoz."
 
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Az OK gombbal módosíthatja a beállításokat."
+
 #, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Nyomja le az OK gombot az új %s kinézet aktiválásához."
@@ -10277,10 +10314,6 @@ msgstr "Nyomja meg az OK gombot a naplófájlok mappájának kiválasztásához.
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "Nyomja le az OK gombot a CAId ki/bejelöléséhez."
-
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Az OK gombbal módosíthatja a beállításokat."
 
 msgid "Press OK to toggle the selection"
 msgstr "Nyomja le az OK gombot a kijelölés változtatásához"
@@ -10478,23 +10511,29 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr "Dánia"
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
-
 #, fuzzy
-msgid "RC name"
+msgid "RC default name"
 msgstr "Átnevezés"
 
 #, fuzzy
-msgid "RC type"
-msgstr "típus"
+msgid "RC default type"
+msgstr "Ismétlés típusa"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#, fuzzy
+msgid "RC detected type"
+msgstr "Ismétlés típusa"
+
+#, fuzzy
+msgid "RC identification"
+msgstr "Kommunikáció"
+
+#, fuzzy
+msgid "RC selected name"
+msgstr "Gyűjtemény neve"
+
+#, fuzzy
+msgid "RC selected type"
+msgstr "Ismétlés típusa"
 
 msgid "REC"
 msgstr "Felvétel"
@@ -12171,6 +12210,10 @@ msgstr "A CI hozzárendelés beállítása az elérhető szolgáltatások érzé
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "IP cím"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -12362,6 +12405,10 @@ msgstr "Info megjelenítése"
 msgid "Show Audioselection"
 msgstr "Hangsáv választásának megjelenítése"
 
+#, fuzzy
+msgid "Show Boolean values as graphical switch"
+msgstr "Igaz/hamis mutatása grafikus kapcsolóként"
+
 msgid "Show CI messages"
 msgstr "CI üzenetek mutatása"
 
@@ -12416,14 +12463,15 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Transzponder infó megjelenítése"
 
-msgid "Show True/False as graphical switch"
-msgstr "Igaz/hamis mutatása grafikus kapcsolóként"
-
 msgid "Show VCR scart on main menu"
 msgstr "VCR Scart opció megjelenítése a főmenüben"
 
 msgid "Show WLAN status"
 msgstr "A vezeték nélküli hálózat állapotának megjelenítése"
+
+#, fuzzy
+msgid "Show additional slider value"
+msgstr "Animáció megjelenítése amikor a szoftver foglalt"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
@@ -16121,10 +16169,6 @@ msgstr "Igen, mindig"
 msgid "Yes, and delete this movie"
 msgstr "Igen, és felvétel törlése"
 
-#, fuzzy
-msgid "Yes, but not in multi selections"
-msgstr "igen, de nem több kijelöléssel"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Igen, törölje ezt a filmet és térjen vissza a filmlistához"
 
@@ -16718,9 +16762,6 @@ msgstr "ECM felvétel és dekódolás"
 msgid "detective/thriller"
 msgstr "dekektív/thriller"
 
-msgid "disable"
-msgstr "letiltás"
-
 #, fuzzy
 msgid "disable cuts (edit)"
 msgstr "Kedvencek módosításának engedélyezése"
@@ -16773,9 +16814,6 @@ msgstr "beágyazott"
 msgid "empty"
 msgstr "üres"
 
-msgid "enable"
-msgstr "engedélyezés"
-
 #, fuzzy
 msgid "enable cuts (preview)"
 msgstr "intor képernyő engedélyezése"
@@ -16815,6 +16853,12 @@ msgstr "hiba a keresés indításakor"
 
 msgid "error while scanning"
 msgstr "hiba a keresés közben"
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
 
 msgid "execute cuts and exit"
 msgstr ""
@@ -17162,9 +17206,6 @@ msgstr "nincs erőforrás-kezelő"
 
 msgid "no storage devices found"
 msgstr "nem található semmilyen háttértár"
-
-msgid "none"
-msgstr "nincs"
 
 msgid "normal"
 msgstr "hagyományos"

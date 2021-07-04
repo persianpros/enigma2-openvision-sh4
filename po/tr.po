@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1220,6 +1220,22 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "Güncelleme yok"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1618,6 +1634,14 @@ msgstr "<Bilinmeyen>"
 msgid "=NO STREAM\n"
 msgstr ""
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr "??"
 
@@ -1864,10 +1888,6 @@ msgstr "Geçerli yapılandırmayı etkinleştirin"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "Geçerli yapılandırmayı etkinleştirin"
 
 msgid "Activate Picture in Picture"
 msgstr "Resim içinde resim (RiR) 'i etkinleştir"
@@ -4230,6 +4250,10 @@ msgid "Current CEC address"
 msgstr "Güncel CEC adresi"
 
 #, fuzzy
+msgid "Current MAC address"
+msgstr "Güncel CEC adresi"
+
+#, fuzzy
 msgid "Current crash log"
 msgstr "Geçerli transponder"
 
@@ -5191,6 +5215,10 @@ msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Bu koleksiyonu DVD medyasına yazmak istiyor musunuz?"
 
 #, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "Seçilen paketi güncellemek istiyor musunuz?:\n"
+
+#, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr "Kanal listesini yüklemek istiyor musunuz?"
 
@@ -5638,6 +5666,9 @@ msgstr "Etkin"
 msgid "Enable teletext caching"
 msgstr "Teletext önbelleğini etkinleştir"
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -5656,7 +5687,7 @@ msgstr ""
 msgid "Enable timer conflict detection"
 msgstr "Zamanlayıcı çakışma algılamasını etkinleştir."
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr ""
 
 msgid "Enable volume control with arrow buttons"
@@ -6035,10 +6066,6 @@ msgstr "EPG'den Çık"
 
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "İsim sunucusu ayarlarından Çık"
-
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "İsim sunucusu ayarlarından Çık"
 
 msgid "Exit editor"
@@ -8137,16 +8164,21 @@ msgid "Luxembourgish"
 msgstr "Lüksemburgca"
 
 #, fuzzy
+msgid "MAC Address Setup"
+msgstr "HDD Ayarı"
+
+#, fuzzy
 msgid "MAC address"
 msgstr "IP adresi"
 
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Ağ donanım ayarları"
-
-#, fuzzy
 msgid "MAC address setup"
 msgstr "HDD Ayarı"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -8857,10 +8889,6 @@ msgid "Network Information Actions"
 msgstr "Ağ yapılandırması..."
 
 #, fuzzy
-msgid "Network MAC settings"
-msgstr "Ağ ayarlarını etkinleştir"
-
-#, fuzzy
 msgid "Network Setup"
 msgstr "Ağ kurulumu"
 
@@ -9185,6 +9213,10 @@ msgstr "Tanımlanmamış"
 #, fuzzy
 msgid "Not Installed"
 msgstr "Yükle"
+
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "IP adresi"
 
 msgid "Not associated"
 msgstr "İlişkili değil"
@@ -10314,6 +10346,10 @@ msgstr "Ek seçenekler için uzaktan kumanda üzerindeki MENU düğmesine basın
 msgid "Press OK on your remote control to continue."
 msgstr "Devam etmek için kumandanızın OK tuşuna basın."
 
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Düzenlemek için OK tuşuna basın."
+
 #, fuzzy, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Arayüzü etkinleştirmek için OK'a basın."
@@ -10359,10 +10395,6 @@ msgstr "%s klasörü oluşturulamadı."
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "CAId seçmek/bırakmak için OK'a basın."
-
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Düzenlemek için OK tuşuna basın."
 
 msgid "Press OK to toggle the selection"
 msgstr "Seçimi tamamlamak için OK bas"
@@ -10560,23 +10592,29 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr ""
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
-
 #, fuzzy
-msgid "RC name"
+msgid "RC default name"
 msgstr "Ad değiştir "
 
 #, fuzzy
-msgid "RC type"
-msgstr "Liste tipi"
+msgid "RC default type"
+msgstr "Çeşidi yineleyin"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#, fuzzy
+msgid "RC detected type"
+msgstr "Çeşidi yineleyin"
+
+#, fuzzy
+msgid "RC identification"
+msgstr "İletişim"
+
+#, fuzzy
+msgid "RC selected name"
+msgstr "Koleksiyon adı"
+
+#, fuzzy
+msgid "RC selected type"
+msgstr "Çeşidi yineleyin"
 
 msgid "REC"
 msgstr ""
@@ -12274,6 +12312,10 @@ msgstr ""
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "IP adresi"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -12467,6 +12509,9 @@ msgstr "Bilgisi göster"
 msgid "Show Audioselection"
 msgstr "Ses Seçimini Göster"
 
+msgid "Show Boolean values as graphical switch"
+msgstr ""
+
 msgid "Show CI messages"
 msgstr ""
 
@@ -12521,14 +12566,15 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Transponder bilgisini göster"
 
-msgid "Show True/False as graphical switch"
-msgstr ""
-
 msgid "Show VCR scart on main menu"
 msgstr "Ana menüde VCR scart göster"
 
 msgid "Show WLAN status"
 msgstr "WLAN durumunu göster"
+
+#, fuzzy
+msgid "Show additional slider value"
+msgstr "Meşgulken Animasyon Göster"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
@@ -16276,9 +16322,6 @@ msgstr "Evet, her zaman"
 msgid "Yes, and delete this movie"
 msgstr "Evet, bu filmi sil."
 
-msgid "Yes, but not in multi selections"
-msgstr ""
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Evet, bu filmi sil ve film listesine dön"
 
@@ -16861,9 +16904,6 @@ msgstr "Çözmeden ECM kaydet"
 msgid "detective/thriller"
 msgstr "Dedektif/Gerilim"
 
-msgid "disable"
-msgstr "Pasif"
-
 #, fuzzy
 msgid "disable cuts (edit)"
 msgstr "Favori düzenlemeyi aç"
@@ -16916,9 +16956,6 @@ msgstr ""
 msgid "empty"
 msgstr "Boş"
 
-msgid "enable"
-msgstr "Etkin"
-
 msgid "enable cuts (preview)"
 msgstr ""
 
@@ -16957,6 +16994,12 @@ msgstr "Tarama başlayamıyor"
 
 msgid "error while scanning"
 msgstr "Tarama yapılırken hata"
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
 
 msgid "execute cuts and exit"
 msgstr ""
@@ -17304,9 +17347,6 @@ msgstr "Kaynak Yöneticisi bulunamadı."
 
 msgid "no storage devices found"
 msgstr "Hiçbir depolama aygıtı bulunamadı"
-
-msgid "none"
-msgstr "Yok"
 
 msgid "normal"
 msgstr "Normal"

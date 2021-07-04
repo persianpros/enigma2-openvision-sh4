@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2021-02-20 16:11+0100\n"
 "Last-Translator: Luis A. Martínez <luis.a.martinez@gmail.com>\n"
 "Language-Team: LAMS\n"
@@ -1273,6 +1273,23 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "No hai actualizacións dispoñibles"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1722,6 +1739,14 @@ msgstr "<desconocido>"
 msgid "=NO STREAM\n"
 msgstr "=SEN FLUXO\n"
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 #
 msgid "??"
 msgstr "??"
@@ -1993,11 +2018,6 @@ msgstr "Activar a configuración actual"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "Activar a configuración actual"
 
 #
 msgid "Activate Picture in Picture"
@@ -4587,6 +4607,10 @@ msgstr "Novas de actualidade"
 msgid "Current CEC address"
 msgstr "Enderezo CEC actual"
 
+#, fuzzy
+msgid "Current MAC address"
+msgstr "Enderezo CEC actual"
+
 #
 #, fuzzy
 msgid "Current crash log"
@@ -5633,6 +5657,11 @@ msgstr "Queres restaurar a configuración?"
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Queres gravar esta colección a discos DVD?"
 
+#
+#, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "Queres actualizar o paquete:\n"
+
 #, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr "Queres eliminar todos os ficheiros de rexistro de fallos"
@@ -6124,6 +6153,9 @@ msgstr "Activar"
 msgid "Enable teletext caching"
 msgstr "Activar o almacenamento en caché de teletexto"
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -6142,7 +6174,8 @@ msgstr "Activa este parámetro se o teu sistema aéreo necesita enerxía"
 msgid "Enable timer conflict detection"
 msgstr "Activar a detección de conflitos do temporizador"
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+#, fuzzy
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr "Activar para amosar todas as opcións de configuración do tipo verdadeiro/falso, si/non e activar/desactivar como un interruptor gráfico."
 
 msgid "Enable volume control with arrow buttons"
@@ -6565,11 +6598,6 @@ msgstr "Saír da EPG"
 #
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "Saír da configuración do servidor de nomes"
-
-#
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "Saír da configuración do servidor de nomes"
 
 #
@@ -8859,18 +8887,23 @@ msgstr "Luxemburgués"
 
 #
 #, fuzzy
+msgid "MAC Address Setup"
+msgstr "Configuración do disco duro"
+
+#
+#, fuzzy
 msgid "MAC address"
 msgstr "Enderezo IP"
 
 #
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Configuración do adaptador"
-
-#
-#, fuzzy
 msgid "MAC address setup"
 msgstr "Configuración do disco duro"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -9656,11 +9689,6 @@ msgstr "Configuración de rede"
 
 #
 #, fuzzy
-msgid "Network MAC settings"
-msgstr "Activar a configuración de rede"
-
-#
-#, fuzzy
 msgid "Network Setup"
 msgstr "Configurar de rede"
 
@@ -10022,6 +10050,11 @@ msgstr "Non definido"
 #
 msgid "Not Installed"
 msgstr "Non instalado"
+
+#
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "Enderezo IP"
 
 msgid "Not associated"
 msgstr "Non asociado"
@@ -11260,6 +11293,11 @@ msgid "Press OK on your remote control to continue."
 msgstr "Preme OK no mando a distancia para continuar."
 
 #
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Preme OK para editar a configuración."
+
+#
 #, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Preme OK para activar a skin %s seleccionada."
@@ -11311,11 +11349,6 @@ msgstr "Preme OK para seleccionar a localización do ficheiro de rexistro."
 #
 msgid "Press OK to select/deselect a CAId."
 msgstr "Preme OK para seleccionar/deseleccionar un CAId."
-
-#
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Preme OK para editar a configuración."
 
 msgid "Press OK to toggle the selection"
 msgstr "Preme OK para alternar a selección"
@@ -11530,24 +11563,35 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr "Dinamarca"
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
+#
+#, fuzzy
+msgid "RC default name"
+msgstr "Renomear"
 
 #
 #, fuzzy
-msgid "RC name"
-msgstr "Renomear"
+msgid "RC default type"
+msgstr "Repetir tipo"
 
+#
 #, fuzzy
-msgid "RC type"
-msgstr "tipo"
+msgid "RC detected type"
+msgstr "Repetir tipo"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#
+#, fuzzy
+msgid "RC identification"
+msgstr "Comunicación"
+
+#
+#, fuzzy
+msgid "RC selected name"
+msgstr "Nome da colección"
+
+#
+#, fuzzy
+msgid "RC selected type"
+msgstr "Repetir tipo"
 
 msgid "REC"
 msgstr "REC"
@@ -13425,6 +13469,11 @@ msgstr "Establecer a asignación de CI para a detección de servizos dispoñible
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "Enderezo IP"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -13627,6 +13676,10 @@ msgstr "Amosar información"
 msgid "Show Audioselection"
 msgstr "Amosar audioselección"
 
+#, fuzzy
+msgid "Show Boolean values as graphical switch"
+msgstr "Amosar Verdadeiro/Falso coma un interruptor gráfico"
+
 msgid "Show CI messages"
 msgstr "Amosar mensaxes de CI"
 
@@ -13685,15 +13738,16 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Amosar información do transpondedor"
 
-msgid "Show True/False as graphical switch"
-msgstr "Amosar Verdadeiro/Falso coma un interruptor gráfico"
-
 msgid "Show VCR scart on main menu"
 msgstr "Amosar euroconector VCR no menú principal"
 
 #
 msgid "Show WLAN status"
 msgstr "Amosar estado de WLAN"
+
+#, fuzzy
+msgid "Show additional slider value"
+msgstr "Amosar animación mentres está ocupado"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
@@ -17751,10 +17805,6 @@ msgstr "Si, siempre"
 msgid "Yes, and delete this movie"
 msgstr "Si, e borrar esta película"
 
-#, fuzzy
-msgid "Yes, but not in multi selections"
-msgstr "si, pero non en seleccións múltiples"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Si, borrar esta película e volver á lista de películas"
 
@@ -18399,10 +18449,6 @@ msgid "detective/thriller"
 msgstr "detectives/thriller"
 
 #
-msgid "disable"
-msgstr "desactivar"
-
-#
 #, fuzzy
 msgid "disable cuts (edit)"
 msgstr "Activar a edición de favoritos"
@@ -18460,10 +18506,6 @@ msgstr "incrustado"
 msgid "empty"
 msgstr "baleiro"
 
-#
-msgid "enable"
-msgstr "activar"
-
 #, fuzzy
 msgid "enable cuts (preview)"
 msgstr "activar a pantalla de inicio"
@@ -18507,6 +18549,12 @@ msgstr "erro ao iniciar o escaneo"
 
 msgid "error while scanning"
 msgstr "erro ao escanear"
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
 
 msgid "execute cuts and exit"
 msgstr ""
@@ -18895,10 +18943,6 @@ msgstr "ningún administrador de recursos"
 
 msgid "no storage devices found"
 msgstr "non se atoparon dispositivos de almacenamento"
-
-#
-msgid "none"
-msgstr "ningún"
 
 msgid "normal"
 msgstr "normal"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1231,6 +1231,22 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "Uuendusi ei ole"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1632,6 +1648,14 @@ msgstr "<tundmatu>"
 msgid "=NO STREAM\n"
 msgstr "=VOOGU EI OLE\n"
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr "??"
 
@@ -1880,10 +1904,6 @@ msgstr "Jõusta praegused seaded"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "Jõusta praegused seaded"
 
 msgid "Activate Picture in Picture"
 msgstr "Ava pilt-pildis"
@@ -4234,6 +4254,10 @@ msgid "Current CEC address"
 msgstr "Praegune CEC aadress"
 
 #, fuzzy
+msgid "Current MAC address"
+msgstr "Praegune CEC aadress"
+
+#, fuzzy
 msgid "Current crash log"
 msgstr "Hetke transponder"
 
@@ -5185,6 +5209,10 @@ msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Kas kirjutada see valik DVD plaadile?"
 
 #, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "Kas soovid parendada paketti:\n"
+
+#, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr "Kas soovid eemaldada kõik kokkuvarisemise logifailid"
 
@@ -5630,6 +5658,9 @@ msgstr "Luba"
 msgid "Enable teletext caching"
 msgstr "Luba teleteksti puhverdamine"
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -5648,7 +5679,8 @@ msgstr "Luba see, kui välisantenn vajab toidet."
 msgid "Enable timer conflict detection"
 msgstr "Luba taimerikonflikti tuvastus"
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+#, fuzzy
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr "Kuva valikud 'jah/ei', 'tõene/väär', 'sees/väljas' ja 'luba/keela' graafilise lülitina."
 
 msgid "Enable volume control with arrow buttons"
@@ -6033,10 +6065,6 @@ msgstr "Sulge saatekava"
 
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "Välju nimeserverite seadistusest"
-
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "Välju nimeserverite seadistusest"
 
 msgid "Exit editor"
@@ -8125,16 +8153,21 @@ msgid "Luxembourgish"
 msgstr "Luksemburgi"
 
 #, fuzzy
+msgid "MAC Address Setup"
+msgstr "Kõvaketta seaded"
+
+#, fuzzy
 msgid "MAC address"
 msgstr "IP aadress"
 
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Võrgukaardi seaded"
-
-#, fuzzy
 msgid "MAC address setup"
 msgstr "Kõvaketta seaded"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -8841,10 +8874,6 @@ msgid "Network Information Actions"
 msgstr "Võrgu seadistamine"
 
 #, fuzzy
-msgid "Network MAC settings"
-msgstr "Aktiveeri võrguseaded"
-
-#, fuzzy
 msgid "Network Setup"
 msgstr "Võrgu häälestamine"
 
@@ -9165,6 +9194,10 @@ msgstr "Määramata"
 #, fuzzy
 msgid "Not Installed"
 msgstr "Paigalda"
+
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "IP aadress"
 
 msgid "Not associated"
 msgstr "Pole seotud"
@@ -10287,6 +10320,10 @@ msgstr "Vajuta MENU puldil lisavõimaluste kasutamiseks."
 msgid "Press OK on your remote control to continue."
 msgstr "Jätkamiseks vajuta OK."
 
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Sätete muutmiseks vajuta OK."
+
 #, fuzzy, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Vajuta OK uue välimuse aktiveerimiseks."
@@ -10331,10 +10368,6 @@ msgstr "Vali logifaili kaust"
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "Vajuta OK valik/valik maha CAId."
-
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Sätete muutmiseks vajuta OK."
 
 msgid "Press OK to toggle the selection"
 msgstr "Vajuta OK valiku muutmiseks"
@@ -10533,23 +10566,29 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr "Taani"
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
-
 #, fuzzy
-msgid "RC name"
+msgid "RC default name"
 msgstr "Muuda nimi"
 
 #, fuzzy
-msgid "RC type"
-msgstr "tüüp"
+msgid "RC default type"
+msgstr "Kordamise liik"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#, fuzzy
+msgid "RC detected type"
+msgstr "Kordamise liik"
+
+#, fuzzy
+msgid "RC identification"
+msgstr "Suhtlus"
+
+#, fuzzy
+msgid "RC selected name"
+msgstr "Valiku nimi"
+
+#, fuzzy
+msgid "RC selected type"
+msgstr "Kordamise liik"
 
 msgid "REC"
 msgstr "REC"
@@ -12248,6 +12287,10 @@ msgstr ""
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "IP aadress"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -12440,6 +12483,10 @@ msgstr "Näita infot"
 msgid "Show Audioselection"
 msgstr "Näita helivalikut"
 
+#, fuzzy
+msgid "Show Boolean values as graphical switch"
+msgstr "SEES/VÄLJAS kuvamine graafilise lülitina"
+
 msgid "Show CI messages"
 msgstr "Näita CI teateid"
 
@@ -12494,14 +12541,15 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Näita transponderi infot"
 
-msgid "Show True/False as graphical switch"
-msgstr "SEES/VÄLJAS kuvamine graafilise lülitina"
-
 msgid "Show VCR scart on main menu"
 msgstr "Näita VCR Scart peamenüüs"
 
 msgid "Show WLAN status"
 msgstr "Näita WiFi Olekut"
+
+#, fuzzy
+msgid "Show additional slider value"
+msgstr "Näita hõivatud oleku puhul animatsiooni"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
@@ -16249,9 +16297,6 @@ msgstr "Jah, alati"
 msgid "Yes, and delete this movie"
 msgstr "Jah, kustuta see salvestis"
 
-msgid "Yes, but not in multi selections"
-msgstr ""
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Jah, kustuta see salvestis ja mine tagasi salvestiste nimekirja"
 
@@ -16846,9 +16891,6 @@ msgstr "dekodeeri ja salvesta ecm"
 msgid "detective/thriller"
 msgstr "detektiiv/triller"
 
-msgid "disable"
-msgstr "keela"
-
 #, fuzzy
 msgid "disable cuts (edit)"
 msgstr "Luba lemmikute muutmine"
@@ -16901,9 +16943,6 @@ msgstr "sisseehitatud"
 msgid "empty"
 msgstr "tühi"
 
-msgid "enable"
-msgstr "luba"
-
 #, fuzzy
 msgid "enable cuts (preview)"
 msgstr "luba tervitusaken"
@@ -16943,6 +16982,12 @@ msgstr "otsingu alustamise viga"
 
 msgid "error while scanning"
 msgstr "viga otsingu teostamisel"
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
 
 msgid "execute cuts and exit"
 msgstr ""
@@ -17291,9 +17336,6 @@ msgstr "pole ressursi juhti"
 
 msgid "no storage devices found"
 msgstr "andmekandjaid ei leitud"
-
-msgid "none"
-msgstr "midagi ei leitud"
 
 msgid "normal"
 msgstr "normaalne"

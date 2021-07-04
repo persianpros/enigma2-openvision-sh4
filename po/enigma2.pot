@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1081,6 +1081,22 @@ msgid "%s/%s: %s"
 msgstr ""
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#, python-format
+msgid "%s: Not Available"
+msgstr ""
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1449,6 +1465,14 @@ msgstr ""
 msgid "=NO STREAM\n"
 msgstr ""
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr ""
 
@@ -1640,9 +1664,6 @@ msgid "Activate IPv6 configuration"
 msgstr ""
 
 msgid "Activate Keymap now?"
-msgstr ""
-
-msgid "Activate MAC address configuration"
 msgstr ""
 
 msgid "Activate Picture in Picture"
@@ -3347,6 +3368,9 @@ msgstr ""
 msgid "Current CEC address"
 msgstr ""
 
+msgid "Current MAC address"
+msgstr ""
+
 msgid "Current crash log"
 msgstr ""
 
@@ -4125,6 +4149,9 @@ msgstr ""
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr ""
 
+msgid "Do you want to change the current MAC address?\n"
+msgstr ""
+
 msgid "Do you want to delete all log files?"
 msgstr ""
 
@@ -4800,9 +4827,6 @@ msgid "Exit EPG"
 msgstr ""
 
 msgid "Exit IPv6 configuration"
-msgstr ""
-
-msgid "Exit MAC address configuration"
 msgstr ""
 
 msgid "Exit editor"
@@ -6472,10 +6496,15 @@ msgstr ""
 msgid "Luxembourgish"
 msgstr ""
 
+msgid "MAC Address Setup"
+msgstr ""
+
 msgid "MAC address"
 msgstr ""
 
-msgid "MAC address settings"
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
 msgstr ""
 
 msgid "MENU"
@@ -7058,9 +7087,6 @@ msgstr ""
 msgid "Network Information Actions"
 msgstr ""
 
-msgid "Network MAC settings"
-msgstr ""
-
 msgid "Network Setup"
 msgstr ""
 
@@ -7340,6 +7366,9 @@ msgid "Not Defined"
 msgstr ""
 
 msgid "Not Installed"
+msgstr ""
+
+msgid "Not a valid MAC address"
 msgstr ""
 
 msgid "Not associated"
@@ -8145,6 +8174,9 @@ msgstr ""
 msgid "Press OK on your remote control to continue."
 msgstr ""
 
+msgid "Press OK to activate the MAC address."
+msgstr ""
+
 #, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr ""
@@ -8185,9 +8217,6 @@ msgid "Press OK to select the save location of the log file."
 msgstr ""
 
 msgid "Press OK to select/deselect a CAId."
-msgstr ""
-
-msgid "Press OK to set the MAC address."
 msgstr ""
 
 msgid "Press OK to toggle the selection"
@@ -8374,20 +8403,22 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr ""
 
-msgid "RC ID number"
+msgid "RC default name"
 msgstr ""
 
-msgid "RC code"
+msgid "RC default type"
 msgstr ""
 
-msgid "RC name"
+msgid "RC detected type"
 msgstr ""
 
-msgid "RC type"
+msgid "RC identification"
 msgstr ""
 
-#, python-format
-msgid "RC type:|%s"
+msgid "RC selected name"
+msgstr ""
+
+msgid "RC selected type"
 msgstr ""
 
 msgid "REC"
@@ -9807,6 +9838,9 @@ msgid "Services"
 msgstr ""
 
 msgid "Set PIN Pressing [OK]"
+msgstr ""
+
+msgid "Set a new MAC address"
 msgstr ""
 
 msgid "Set a temporary sort method for this directory"
@@ -12573,9 +12607,6 @@ msgstr ""
 msgid "Yes, and delete this movie"
 msgstr ""
 
-msgid "Yes, but not in multi selections"
-msgstr ""
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr ""
 
@@ -13062,9 +13093,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr ""
-
 msgid "disable cuts (edit)"
 msgstr ""
 
@@ -13113,9 +13141,6 @@ msgstr ""
 msgid "empty"
 msgstr ""
 
-msgid "enable"
-msgstr ""
-
 msgid "enable cuts (preview)"
 msgstr ""
 
@@ -13152,6 +13177,12 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
+
 msgid "execute cuts and exit"
 msgstr ""
 
@@ -13177,9 +13208,6 @@ msgid "extrawide"
 msgstr ""
 
 msgid "failed"
-msgstr ""
-
-msgid "false"
 msgstr ""
 
 msgid "fashion"
@@ -13483,9 +13511,6 @@ msgid "no resource manager"
 msgstr ""
 
 msgid "no storage devices found"
-msgstr ""
-
-msgid "none"
 msgstr ""
 
 msgid "normal"
@@ -13855,9 +13880,6 @@ msgstr ""
 msgid "tourism/travel"
 msgstr ""
 
-msgid "true"
-msgstr ""
-
 msgid "type"
 msgstr ""
 
@@ -13993,6 +14015,9 @@ msgstr ""
 msgid "zapped"
 msgstr ""
 
+msgid "false"
+msgstr ""
+
 msgid "2678400000"
 msgstr ""
 
@@ -14000,6 +14025,9 @@ msgid "Default task"
 msgstr ""
 
 msgid "IGNORE"
+msgstr ""
+
+msgid "true"
 msgstr ""
 
 msgid "Refresh rate selection."
@@ -14706,6 +14734,9 @@ msgstr ""
 msgid "Enable teletext caching"
 msgstr ""
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -14718,7 +14749,7 @@ msgstr ""
 msgid "Enable this option to add screen names and resolution data to the debug log file."
 msgstr ""
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr ""
 
 msgid "Enable volume control with arrow buttons"
@@ -15186,6 +15217,9 @@ msgstr ""
 msgid "Setup mode"
 msgstr ""
 
+msgid "Show Boolean values as graphical switch"
+msgstr ""
+
 msgid "Show Display Icons"
 msgstr ""
 
@@ -15216,10 +15250,10 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr ""
 
-msgid "Show True/False as graphical switch"
+msgid "Show VCR scart on main menu"
 msgstr ""
 
-msgid "Show VCR scart on main menu"
+msgid "Show additional slider value"
 msgstr ""
 
 msgid "Show alsa-utils in plugin browser"

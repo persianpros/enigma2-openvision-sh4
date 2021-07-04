@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2021-03-06\n"
 "Last-Translator: LinuxSTV\n"
 "Language-Team: \n"
@@ -1236,6 +1236,22 @@ msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "Pembaruan tidak tersedia"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1636,6 +1652,14 @@ msgstr "<tak dikenal>"
 msgid "=NO STREAM\n"
 msgstr "=Tidak ada stream\n"
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr "??"
 
@@ -1886,10 +1910,6 @@ msgstr "Aktifkan setelan saat ini"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "Aktifkan setelan saat ini"
 
 msgid "Activate Picture in Picture"
 msgstr "Aktifkan PiP"
@@ -4283,6 +4303,10 @@ msgid "Current CEC address"
 msgstr "Alamat CEC saat ini"
 
 #, fuzzy
+msgid "Current MAC address"
+msgstr "Alamat CEC saat ini"
+
+#, fuzzy
 msgid "Current crash log"
 msgstr "Transponder saat ini"
 
@@ -5246,6 +5270,10 @@ msgid "Do you want to burn this collection to DVD medium?"
 msgstr "Anda ingin membakar koleksi ini ke media DVD?"
 
 #, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "Anda ingin menaiktingkatkan paket:\n"
+
+#, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr "Anda ingin menghapus semua berkas log crash"
 
@@ -5694,6 +5722,9 @@ msgstr "Aktifkan"
 msgid "Enable teletext caching"
 msgstr "Aktifkan penyembunyian teleteks"
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -5712,7 +5743,8 @@ msgstr "Aktifkan pengaturan ini jika sistem antena anda butuh daya"
 msgid "Enable timer conflict detection"
 msgstr "Aktifkan deteksi konflik pewaktu"
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+#, fuzzy
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr "Aktifkan untuk menampilkan pilihan pengaturan benar/salah semua, ya/tidak, hidup/mati dan aktifkan/matikan sebagai tombol grafis"
 
 msgid "Enable volume control with arrow buttons"
@@ -6108,10 +6140,6 @@ msgstr "Keluar dari EPG"
 
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "Keluar dari konfigurasi nameserver"
-
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "Keluar dari konfigurasi nameserver"
 
 msgid "Exit editor"
@@ -8235,16 +8263,21 @@ msgid "Luxembourgish"
 msgstr "Luxemburg"
 
 #, fuzzy
+msgid "MAC Address Setup"
+msgstr "Pengaturan harddisk"
+
+#, fuzzy
 msgid "MAC address"
 msgstr "Alamat IP"
 
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Penyetelan adapter"
-
-#, fuzzy
 msgid "MAC address setup"
 msgstr "Pengaturan harddisk"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -8964,10 +8997,6 @@ msgid "Network Information Actions"
 msgstr "Pengaturan jaringan"
 
 #, fuzzy
-msgid "Network MAC settings"
-msgstr "Aktifkan penyetelan jaringan"
-
-#, fuzzy
 msgid "Network Setup"
 msgstr "Atur Jaringan"
 
@@ -9293,6 +9322,10 @@ msgstr "Tak ditetapkan"
 #, fuzzy
 msgid "Not Installed"
 msgstr "Pasang"
+
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "Alamat IP"
 
 msgid "Not associated"
 msgstr "Tak diasosiasikan"
@@ -10425,6 +10458,10 @@ msgstr "Tekan MENU pada remote kontrol anda untuk opsi tambahan."
 msgid "Press OK on your remote control to continue."
 msgstr "Tekan OK pada remote kontrol anda untuk melanjutkan."
 
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Tekan OK untuk merubah pengaturan."
+
 #, fuzzy, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Tekan OK untuk mengaktifkan tampilan."
@@ -10469,10 +10506,6 @@ msgstr "Pilih direktori untuk berkaslog."
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "Tekan OK untuk memilih/tidak memilih CAID."
-
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Tekan OK untuk merubah pengaturan."
 
 msgid "Press OK to toggle the selection"
 msgstr "Tekan OK untuk alihkan pilihan"
@@ -10671,23 +10704,29 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr "Denmark"
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
-
 #, fuzzy
-msgid "RC name"
+msgid "RC default name"
 msgstr "Ganti nama"
 
 #, fuzzy
-msgid "RC type"
-msgstr "Jenis DVB"
+msgid "RC default type"
+msgstr "Tipe ulang"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#, fuzzy
+msgid "RC detected type"
+msgstr "Tipe ulang"
+
+#, fuzzy
+msgid "RC identification"
+msgstr "Komunikasi"
+
+#, fuzzy
+msgid "RC selected name"
+msgstr "Nama koleksi"
+
+#, fuzzy
+msgid "RC selected type"
+msgstr "Tipe ulang"
 
 msgid "REC"
 msgstr "REK"
@@ -12398,6 +12437,10 @@ msgstr "Set penetapan CI untuk deteksi ketersediaan layanan."
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "Alamat IP"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -12591,6 +12634,10 @@ msgstr "Tampilkan info"
 msgid "Show Audioselection"
 msgstr "Tampilkan pilihan Audio"
 
+#, fuzzy
+msgid "Show Boolean values as graphical switch"
+msgstr "Tampilkan Benar/Salah sbg saklar grafis"
+
 msgid "Show CI messages"
 msgstr "Tampilkan pesan CI"
 
@@ -12645,14 +12692,15 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Tampilkan info transponder"
 
-msgid "Show True/False as graphical switch"
-msgstr "Tampilkan Benar/Salah sbg saklar grafis"
-
 msgid "Show VCR scart on main menu"
 msgstr "Tampilkan scart VCR pada menu utama"
 
 msgid "Show WLAN status"
 msgstr "Tampilkan status WLAN"
+
+#, fuzzy
+msgid "Show additional slider value"
+msgstr "Tampilkan animasi saat sibuk"
 
 #, fuzzy
 msgid "Show alsa-utils in plugin browser"
@@ -16412,10 +16460,6 @@ msgstr "Ya, selalu"
 msgid "Yes, and delete this movie"
 msgstr "Ya, dan hapus film ini"
 
-#, fuzzy
-msgid "Yes, but not in multi selections"
-msgstr "ya, tapi tidak pada pilihan multi"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Ya, hapus film ini dan kembali ke daftar film"
 
@@ -17015,9 +17059,6 @@ msgstr "descramble dan rekam ecm"
 msgid "detective/thriller"
 msgstr "detektif/thriller"
 
-msgid "disable"
-msgstr "matikan"
-
 #, fuzzy
 msgid "disable cuts (edit)"
 msgstr "Aktifkan ubah favorit"
@@ -17070,9 +17111,6 @@ msgstr "tertanam"
 msgid "empty"
 msgstr "kosong"
 
-msgid "enable"
-msgstr "aktifkan"
-
 #, fuzzy
 msgid "enable cuts (preview)"
 msgstr "aktifkan layar intro"
@@ -17112,6 +17150,12 @@ msgstr "gagal memulai pindaian"
 
 msgid "error while scanning"
 msgstr "gagal saat memindai"
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
+msgstr ""
 
 msgid "execute cuts and exit"
 msgstr ""
@@ -17460,9 +17504,6 @@ msgstr "tidak ada pengelola sumberdaya"
 
 msgid "no storage devices found"
 msgstr "Perangkat penyimpanan tidak ditemukan"
-
-msgid "none"
-msgstr "tidak ada"
 
 msgid "normal"
 msgstr "normal"

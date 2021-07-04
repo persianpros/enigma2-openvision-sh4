@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-28 09:30+0430\n"
+"POT-Creation-Date: 2021-07-04 19:49+0430\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1186,6 +1186,23 @@ msgid "%s/%s: %s"
 msgstr ""
 
 #, python-format
+msgid "%s: %s Free:%s Used:%s (%s%%)"
+msgstr ""
+
+#, python-format
+msgid "%s: %s Used:%s Free:%s"
+msgstr ""
+
+#, python-format
+msgid "%s: %s, in use: %s%%"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "%s: Not Available"
+msgstr "עדכונים זמינים"
+
+#, python-format
 msgid "%s?"
 msgstr ""
 
@@ -1592,6 +1609,14 @@ msgstr "<לא ידוע>"
 msgid "=NO STREAM\n"
 msgstr ""
 
+#, python-format
+msgid "?%s-recursive?"
+msgstr ""
+
+#, python-format
+msgid "?%s?"
+msgstr ""
+
 msgid "??"
 msgstr "؟؟"
 
@@ -1826,10 +1851,6 @@ msgstr "activate current configuration"
 
 msgid "Activate Keymap now?"
 msgstr ""
-
-#, fuzzy
-msgid "Activate MAC address configuration"
-msgstr "activate current configuration"
 
 #
 msgid "Activate Picture in Picture"
@@ -4295,6 +4316,11 @@ msgstr "Current value: "
 msgid "Current CEC address"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Current MAC address"
+msgstr "IP כתובת"
+
 #, fuzzy
 msgid "Current crash log"
 msgstr "Current Transponder"
@@ -5283,6 +5309,10 @@ msgid "Do you want to burn this collection to DVD medium?"
 msgstr "האם ברצונך לצרוב את התוכן לדי.וי.די"
 
 #, fuzzy
+msgid "Do you want to change the current MAC address?\n"
+msgstr "?האם ברצונך לשדרג את החבילה\n"
+
+#, fuzzy
 msgid "Do you want to delete all log files?"
 msgstr ":האם ברצונך להתקין את החבילה\n"
 
@@ -5752,6 +5782,9 @@ msgstr "אפשר"
 msgid "Enable teletext caching"
 msgstr ""
 
+msgid "Enable the current value of the slider at end of the slider bar."
+msgstr ""
+
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr ""
 
@@ -5770,7 +5803,7 @@ msgstr ""
 msgid "Enable timer conflict detection"
 msgstr ""
 
-msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
+msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable set up options as a graphical switch."
 msgstr ""
 
 msgid "Enable volume control with arrow buttons"
@@ -6165,10 +6198,6 @@ msgstr ""
 
 #, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "exit nameserver configuration"
-
-#, fuzzy
-msgid "Exit MAC address configuration"
 msgstr "exit nameserver configuration"
 
 msgid "Exit editor"
@@ -8364,19 +8393,23 @@ msgstr ""
 msgid "Luxembourgish"
 msgstr ""
 
+#, fuzzy
+msgid "MAC Address Setup"
+msgstr "הגדרת כונן קשיח"
+
 #
 #, fuzzy
 msgid "MAC address"
 msgstr "IP כתובת"
 
-#
-#, fuzzy
-msgid "MAC address settings"
-msgstr "הגדרת מתאם"
-
 #, fuzzy
 msgid "MAC address setup"
 msgstr "הגדרת כונן קשיח"
+
+msgid ""
+"MAC address successfully changed.\n"
+"New MAC address is: "
+msgstr ""
 
 msgid "MENU"
 msgstr ""
@@ -9128,11 +9161,6 @@ msgstr "...הגדרת רשת"
 msgid "Network Information Actions"
 msgstr "...הגדרת רשת"
 
-#
-#, fuzzy
-msgid "Network MAC settings"
-msgstr "הפעל הגדרות רשת"
-
 #, fuzzy
 msgid "Network Setup"
 msgstr "Network setup"
@@ -9485,6 +9513,11 @@ msgstr "User defined"
 #, fuzzy
 msgid "Not Installed"
 msgstr "התקן"
+
+#
+#, fuzzy
+msgid "Not a valid MAC address"
+msgstr "IP כתובת"
 
 msgid "Not associated"
 msgstr ""
@@ -10680,6 +10713,10 @@ msgstr ""
 msgid "Press OK on your remote control to continue."
 msgstr " על השלט על מנת להמשיך OK לחץ  "
 
+#, fuzzy
+msgid "Press OK to activate the MAC address."
+msgstr "Press OK to edit the settings."
+
 #, fuzzy, python-format
 msgid "Press OK to activate the selected %s skin."
 msgstr "Press OK to activate the selected skin."
@@ -10727,10 +10764,6 @@ msgstr ".נכשלה %s יצירת תיקייה"
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "Press OK to select/deselect a CAId."
-
-#, fuzzy
-msgid "Press OK to set the MAC address."
-msgstr "Press OK to edit the settings."
 
 msgid "Press OK to toggle the selection"
 msgstr ""
@@ -10932,24 +10965,29 @@ msgstr ""
 msgid "RAM benchmark"
 msgstr ""
 
-msgid "RC ID number"
-msgstr ""
-
-msgid "RC code"
-msgstr ""
-
 #, fuzzy
-msgid "RC name"
+msgid "RC default name"
 msgstr "שנה שם"
 
-#
 #, fuzzy
-msgid "RC type"
-msgstr "Test Type"
+msgid "RC default type"
+msgstr "Repeat Type"
 
-#, python-format
-msgid "RC type:|%s"
-msgstr ""
+#, fuzzy
+msgid "RC detected type"
+msgstr "Repeat Type"
+
+#, fuzzy
+msgid "RC identification"
+msgstr "תקשורת"
+
+#, fuzzy
+msgid "RC selected name"
+msgstr "שם האוסף"
+
+#, fuzzy
+msgid "RC selected type"
+msgstr "Repeat Type"
 
 msgid "REC"
 msgstr ""
@@ -12752,6 +12790,11 @@ msgstr ""
 msgid "Set PIN Pressing [OK]"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Set a new MAC address"
+msgstr "IP כתובת"
+
 msgid "Set a temporary sort method for this directory"
 msgstr ""
 
@@ -12955,6 +12998,9 @@ msgstr "הצג מידע"
 msgid "Show Audioselection"
 msgstr ""
 
+msgid "Show Boolean values as graphical switch"
+msgstr ""
+
 msgid "Show CI messages"
 msgstr ""
 
@@ -13011,9 +13057,6 @@ msgstr ""
 msgid "Show Transponder Remaining/Elapsed as"
 msgstr "Transponder הראה מידע על ה"
 
-msgid "Show True/False as graphical switch"
-msgstr ""
-
 msgid "Show VCR scart on main menu"
 msgstr ""
 
@@ -13021,6 +13064,9 @@ msgstr ""
 #, fuzzy
 msgid "Show WLAN status"
 msgstr "הצג סטטוס רשת אלחוטית"
+
+msgid "Show additional slider value"
+msgstr ""
 
 msgid "Show alsa-utils in plugin browser"
 msgstr ""
@@ -16934,9 +16980,6 @@ msgstr ""
 msgid "Yes, and delete this movie"
 msgstr "כן, ומחק את הסרט הזה"
 
-msgid "Yes, but not in multi selections"
-msgstr ""
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr ""
 
@@ -17511,9 +17554,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr "הפסק"
-
 #
 #, fuzzy
 msgid "disable cuts (edit)"
@@ -17564,9 +17604,6 @@ msgstr ""
 msgid "empty"
 msgstr "ריק"
 
-msgid "enable"
-msgstr "אפשר"
-
 msgid "enable cuts (preview)"
 msgstr ""
 
@@ -17604,6 +17641,12 @@ msgid "error starting scanning"
 msgstr ""
 
 msgid "error while scanning"
+msgstr ""
+
+msgid "eth0"
+msgstr ""
+
+msgid "evremote2 is present"
 msgstr ""
 
 msgid "execute cuts and exit"
@@ -17958,10 +18001,6 @@ msgstr ""
 
 msgid "no storage devices found"
 msgstr ""
-
-#
-msgid "none"
-msgstr "none"
 
 msgid "normal"
 msgstr ""
